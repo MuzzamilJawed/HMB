@@ -25,7 +25,7 @@
         "id": "zTxs1T00yl_KSqap2M-PU",
         "status": "ACTIVE",
         "_id": "610134a1d1f5e860b1e8c751",
-        "name": "Grid layout",
+        "name": "LIMIT MANAGEMENT",
         "icon": "FaGripHorizontal",
         "attributes": {
           "gridProps": [],
@@ -45,7 +45,7 @@
             "alignItems": "flex-start"
           },
           "direction": "row",
-          "name": "Grid layout"
+          "name": "LIMIT MANAGEMENT"
         },
         "group": "Layout",
         "type": "sidebarItem",
@@ -784,7 +784,6 @@
                                                           "name": "Drop down",
                                                           "stateName": "fromInstrument",
                                                           "allValues": true,
-                                                          "label": "From Account Number",
                                                           "dataSource": "",
                                                           "dataKey": "",
                                                           "dataValue": "",
@@ -795,10 +794,16 @@
                                                           },
                                                           "layoutProperties": {
                                                             "autocomplete": {
-                                                              "//": "Use this class to style autocomplete component in dropdown."
+                                                              "//": "Use this class to style autocomplete component in dropdown.",
+                                                              "background": "#F0F0F0",
+                                                              "border-radius": "10px"
                                                             },
                                                             "textField": {
-                                                              "//": "Use this class to style textField component in dropdown."
+                                                              "//": "Use this class to style textField component in dropdown.",
+                                                              "padding-left": "15px",
+                                                              "padding-bottom": "3px",
+                                                              "padding-top": "15px",
+                                                              "width": "97%"
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style dropdown element."
@@ -817,7 +822,9 @@
                                                             }
                                                           ],
                                                           "variant": "standard",
-                                                          "selectedDataType": 1
+                                                          "selectedDataType": 1,
+                                                          "disableUnderline": true,
+                                                          "placeholder": "From Account Number"
                                                         },
                                                         "type": "20003",
                                                         "events": [],
@@ -1046,7 +1053,6 @@
                                                           "name": "Drop down",
                                                           "stateName": "fromInstrument",
                                                           "allValues": true,
-                                                          "label": "From Account Number",
                                                           "dataSource": "",
                                                           "dataKey": "",
                                                           "dataValue": "",
@@ -1057,10 +1063,16 @@
                                                           },
                                                           "layoutProperties": {
                                                             "autocomplete": {
-                                                              "//": "Use this class to style autocomplete component in dropdown."
+                                                              "//": "Use this class to style autocomplete component in dropdown.",
+                                                              "background": "#F0F0F0",
+                                                              "border-radius": "10px"
                                                             },
                                                             "textField": {
-                                                              "//": "Use this class to style textField component in dropdown."
+                                                              "//": "Use this class to style textField component in dropdown.",
+                                                              "padding-left": "15px",
+                                                              "padding-bottom": "3px",
+                                                              "padding-top": "15px",
+                                                              "width": "97%"
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style dropdown element."
@@ -1079,7 +1091,9 @@
                                                             }
                                                           ],
                                                           "variant": "standard",
-                                                          "selectedDataType": 1
+                                                          "selectedDataType": 1,
+                                                          "placeholder": "From Account Number",
+                                                          "disableUnderline": true
                                                         },
                                                         "type": "20003",
                                                         "events": [],
@@ -1797,13 +1811,13 @@
     "gitBranchName": "master",
     "_id": "whZ8YwldPcGnF4nT8U9i6",
     "createdBy": "masood",
-    "updatedAt": "8/1/2023",
-    "createdAt": "8/1/2023",
+    "updatedAt": "8/10/2023",
+    "createdAt": "8/10/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
     "id": "zTxs1T00yl_KSqap2M-PU",
-    "name": "Grid layout",
+    "name": "LIMIT MANAGEMENT",
     "type": "10001",
     "attributes": {
       "gridProps": [
@@ -1843,7 +1857,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "LIMIT MANAGEMENT"
     },
     "layout": null,
     "events": [],
@@ -2697,11 +2711,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-0-0-1-0-0-0-0-0-0",
     "screenId": "whZ8YwldPcGnF4nT8U9i6",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2763,7 +2777,6 @@
       "name": "Drop down",
       "stateName": "fromInstrument",
       "allValues": true,
-      "label": "From Account Number",
       "dataSource": "",
       "dataKey": "",
       "dataValue": "",
@@ -2771,10 +2784,16 @@
       "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
         "autocomplete": {
-          "//": "Use this class to style autocomplete component in dropdown."
+          "//": "Use this class to style autocomplete component in dropdown.",
+          "background": "#F0F0F0",
+          "border-radius": "10px"
         },
         "textField": {
-          "//": "Use this class to style textField component in dropdown."
+          "//": "Use this class to style textField component in dropdown.",
+          "padding-left": "15px",
+          "padding-bottom": "3px",
+          "padding-top": "15px",
+          "width": "97%"
         },
         "inputProps": { "//": "Use this class to style dropdown element." },
         "mainContainer": "autocomplete",
@@ -2786,7 +2805,9 @@
       },
       "dropdownOptions": [{ "code": "ACCOUNT", "name": "account" }],
       "variant": "standard",
-      "selectedDataType": 1
+      "selectedDataType": 1,
+      "disableUnderline": true,
+      "placeholder": "From Account Number"
     },
     "type": "20003",
     "events": [],
@@ -2794,10 +2815,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Drop down", "type": "20003" },
     "path": "0-0-0-0-0-0-1-0-0-0-1-0-0",
     "screenId": "whZ8YwldPcGnF4nT8U9i6",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -2946,11 +2967,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-0-0-1-1-0-0-0-0-0",
     "screenId": "whZ8YwldPcGnF4nT8U9i6",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3012,7 +3033,6 @@
       "name": "Drop down",
       "stateName": "fromInstrument",
       "allValues": true,
-      "label": "From Account Number",
       "dataSource": "",
       "dataKey": "",
       "dataValue": "",
@@ -3020,10 +3040,16 @@
       "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
         "autocomplete": {
-          "//": "Use this class to style autocomplete component in dropdown."
+          "//": "Use this class to style autocomplete component in dropdown.",
+          "background": "#F0F0F0",
+          "border-radius": "10px"
         },
         "textField": {
-          "//": "Use this class to style textField component in dropdown."
+          "//": "Use this class to style textField component in dropdown.",
+          "padding-left": "15px",
+          "padding-bottom": "3px",
+          "padding-top": "15px",
+          "width": "97%"
         },
         "inputProps": { "//": "Use this class to style dropdown element." },
         "mainContainer": "autocomplete",
@@ -3035,7 +3061,9 @@
       },
       "dropdownOptions": [{ "code": "channel", "name": "channel" }],
       "variant": "standard",
-      "selectedDataType": 1
+      "selectedDataType": 1,
+      "placeholder": "From Account Number",
+      "disableUnderline": true
     },
     "type": "20003",
     "events": [],
@@ -3043,10 +3071,10 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Drop down", "type": "20003" },
     "path": "0-0-0-0-0-0-1-1-0-0-1-0-0",
     "screenId": "whZ8YwldPcGnF4nT8U9i6",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -3224,11 +3252,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Button", "type": "20006" },
     "events": [],
     "path": "0-0-0-0-0-0-2-1-0-0-0",
     "screenId": "whZ8YwldPcGnF4nT8U9i6",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

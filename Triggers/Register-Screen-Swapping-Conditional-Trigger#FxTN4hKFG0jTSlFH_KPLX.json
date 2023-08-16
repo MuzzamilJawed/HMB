@@ -1,0 +1,98 @@
+{
+  "_id": "FxTN4hKFG0jTSlFH_KPLX",
+  "id": "JFP_QXyMSfJaxjI-j9FV6",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Register Screen Swapping Conditional Trigger",
+  "old_name": "Register Screen Swapping Conditional Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": {
+                "==": [
+                  { "var": "currentScreen.form.fromInstrument.code" },
+                  "Passport"
+                ]
+              },
+              "triggerName": "Swap Default Register  to Passport Register Widgit",
+              "triggerId": "9AAhWPo60orCPggPahRhY",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "DJE120CkXcVQBS9QQkV-a",
+                      "nextWidgetId": "dK7a7KQjhYDaFAZWVv4eB",
+                      "gridRadioValue": "Grid",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.form.fromInstrument" }, null]
+              },
+              "triggerName": "Swap Default grid layout to Default Registration Widget",
+              "triggerId": "HiTKJ9wjX6Z4Pv9ZCkF_x",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "8D6EByHcrsWgB5eIJYIH0",
+                      "nextWidgetId": "FFL0gNN7yCzwmpNlUKR2r",
+                      "gridRadioValue": "Grid",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [
+                  { "var": "currentScreen.form.fromInstrument.code" },
+                  "CNIC"
+                ]
+              },
+              "triggerName": "Swap  Default Register  to CNIC Register Widget",
+              "triggerId": "bWCU3DBrY72LkEk6sCIWI",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "8D6EByHcrsWgB5eIJYIH0",
+                      "nextWidgetId": "N21rtsxsH5miV9Ylsiumj",
+                      "gridRadioValue": "Grid",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.mphwljyoa0hBoe6m6XyKlh4tKL9vm7zY",
+  "updatedAt": "8/2/2023",
+  "createdAt": "8/2/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
