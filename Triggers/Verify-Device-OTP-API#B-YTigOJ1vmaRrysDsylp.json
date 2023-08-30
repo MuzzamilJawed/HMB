@@ -1,0 +1,63 @@
+{
+  "id": "j5ZOG713Qob0oUEVWKsbT",
+  "_id": "B-YTigOJ1vmaRrysDsylp",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Verify Device OTP API",
+  "old_name": "Verify Device OTP API",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "otpresponse",
+          "url": "/deviceManagement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "validation",
+              "value": "validation"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "trustedDevice",
+              "value": "trustedDevice"
+            },
+            { "type": 4, "name": "Static", "key": "action", "value": "A" }
+          ],
+          "baseURL": "64e7585f98b0d14b84aba3ff",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Swapped OTP TO DASHBOARD",
+            "triggerId": "CfCxlaP4xkTeeGbDnhAJI"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.1m1llipticzGizXGGPZVdtd4I6_77Np8",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

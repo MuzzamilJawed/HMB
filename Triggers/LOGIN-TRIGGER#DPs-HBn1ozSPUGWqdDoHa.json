@@ -1,0 +1,78 @@
+{
+  "id": "phWeF-bLOYBeTP9ybIZOn",
+  "_id": "DPs-HBn1ozSPUGWqdDoHa",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "LOGIN TRIGGER",
+  "old_name": "LOGIN TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "userProfile",
+          "url": "/validateLoginPassword",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": true,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005",
+            "Accept": "application/json",
+            "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+            "locale": "en-ltr"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "loginPin", "value": "null" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "loginType",
+              "value": "CREDENTIALS"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "username",
+              "value": "username"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "password",
+              "value": "password"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            }
+          ],
+          "baseURL": "64e7048f98b0d14b84ab8cf8",
+          "storeType": 3
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "content.isTrustedDevice" }, true] },
+            "triggerName": "NAVIGATE LOGIN TO OTP SCREEN TRIGGER",
+            "triggerId": "qKM1fin0Xo495U1AGBbzA",
+            "httpStatus": 200
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

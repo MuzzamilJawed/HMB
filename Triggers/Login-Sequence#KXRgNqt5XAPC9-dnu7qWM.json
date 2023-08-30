@@ -1,0 +1,169 @@
+{
+  "_id": "KXRgNqt5XAPC9-dnu7qWM",
+  "id": "DycharlcGgs4hN7vdRYuw",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Login Sequence",
+  "old_name": "Login Sequence",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "IJEw8wmh2t5qqmeVtqXVV",
+              "name": "Mapping Device properties ",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "destinationBindingKey": "device",
+                      "sourceBindingKey": "device",
+                      "sourceStoreType": 3,
+                      "destinationStoreType": 3,
+                      "filterList": [
+                        {
+                          "key": "deviceKey",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentSession.device.deviceKey" }
+                        },
+                        {
+                          "key": "name",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentSession.device.name" }
+                        },
+                        {
+                          "key": "osType",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentSession.device.osType" }
+                        },
+                        {
+                          "key": "os",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentSession.device.os" }
+                        },
+                        {
+                          "key": "imei",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [true, "111111111111111", "111111111111111"]
+                          }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+              "_id": "mloELpnE4Ce8uyy3-IyGx",
+              "updatedAt": "8/29/2023",
+              "createdAt": "8/29/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "phWeF-bLOYBeTP9ybIZOn",
+              "_id": "DPs-HBn1ozSPUGWqdDoHa",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "LOGIN TRIGGER",
+              "old_name": "LOGIN TRIGGER",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "userProfile",
+                      "url": "/validateLoginPassword",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005",
+                        "Accept": "application/json",
+                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                        "locale": "en-ltr"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "loginPin",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "loginType",
+                          "value": "CREDENTIALS"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "username",
+                          "value": "username"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "password",
+                          "value": "password"
+                        },
+                        {
+                          "type": 3,
+                          "name": "Current session",
+                          "key": "device",
+                          "value": "device"
+                        }
+                      ],
+                      "baseURL": "64e7048f98b0d14b84ab8cf8",
+                      "storeType": 3
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": {
+                          "==": [{ "var": "content.isTrustedDevice" }, true]
+                        },
+                        "triggerName": "NAVIGATE LOGIN TO OTP SCREEN TRIGGER",
+                        "triggerId": "qKM1fin0Xo495U1AGBbzA",
+                        "httpStatus": 200
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+              "updatedAt": "8/29/2023",
+              "createdAt": "8/29/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["IJEw8wmh2t5qqmeVtqXVV", "phWeF-bLOYBeTP9ybIZOn"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

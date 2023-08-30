@@ -46,7 +46,8 @@
             "alignItems": "flex-start"
           },
           "direction": "row",
-          "name": "LOGIN SCREEN"
+          "name": "LOGIN SCREEN",
+          "cssClassNames": [{ "cssClassName": "preloginScreenModalBody " }]
         },
         "group": "Layout",
         "type": "10001",
@@ -60,11 +61,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "BNRisHRd1ptig5y3gsE6V",
+            "id": "vfbPS7TWJY0xAoo6aF5VE",
             "gridProps": [
               {
                 "type": "10001",
@@ -502,7 +503,8 @@
                                                       "//": "Use this class to style link component.",
                                                       "color": "#BBBFC2 !important",
                                                       "border": "#19612F !important",
-                                                      "font-family": "Circular Std",
+                                                      "font-family": "Circular Std !important",
+                                                      "text-decoration": "none !important",
                                                       "font-size": "15px",
                                                       "cursor": "pointer",
                                                       "font-style": "normal",
@@ -877,7 +879,8 @@
                                                       "//": "Use this class to style link component.",
                                                       "color": "#BBBFC2 !important",
                                                       "border": "#19612F !important",
-                                                      "font-family": "Circular Std",
+                                                      "font-family": "Circular Std !important",
+                                                      "text-decoration": "none !important",
                                                       "font-size": "15px",
                                                       "cursor": "pointer",
                                                       "font-style": "normal",
@@ -1174,18 +1177,182 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-                                                            "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-                                                            "serviceType": "1",
+                                                            "triggerId": "DycharlcGgs4hN7vdRYuw",
+                                                            "triggerName": "Login Sequence",
+                                                            "serviceType": "2",
                                                             "attributes": {
-                                                              "fromWidgetId": "kn-g6dLXYigHhX9bj8Z88",
-                                                              "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                              "gridRadioValue": "Screen",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "editableForm": false
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "IJEw8wmh2t5qqmeVtqXVV",
+                                                                  "name": "Mapping Device properties ",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "destinationBindingKey": "device",
+                                                                          "sourceBindingKey": "device",
+                                                                          "sourceStoreType": 3,
+                                                                          "destinationStoreType": 3,
+                                                                          "filterList": [
+                                                                            {
+                                                                              "key": "deviceKey",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentSession.device.deviceKey"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "name",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentSession.device.name"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "osType",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentSession.device.osType"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "os",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentSession.device.os"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "imei",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  "111111111111111",
+                                                                                  "111111111111111"
+                                                                                ]
+                                                                              }
+                                                                            }
+                                                                          ],
+                                                                          "targettedType": "object"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+                                                                  "_id": "mloELpnE4Ce8uyy3-IyGx",
+                                                                  "updatedAt": "8/29/2023",
+                                                                  "createdAt": "8/29/2023",
+                                                                  "createdBy": "masood",
+                                                                  "updatedBy": "masood"
+                                                                },
+                                                                {
+                                                                  "id": "phWeF-bLOYBeTP9ybIZOn",
+                                                                  "_id": "DPs-HBn1ozSPUGWqdDoHa",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "LOGIN TRIGGER",
+                                                                  "old_name": "LOGIN TRIGGER",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "userProfile",
+                                                                          "url": "/validateLoginPassword",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": true,
+                                                                          "loginTrigger": "loginTrigger",
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005",
+                                                                            "Accept": "application/json",
+                                                                            "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                                                                            "locale": "en-ltr"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "loginPin",
+                                                                              "value": "null"
+                                                                            },
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "loginType",
+                                                                              "value": "CREDENTIALS"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "username",
+                                                                              "value": "username"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "password",
+                                                                              "value": "password"
+                                                                            },
+                                                                            {
+                                                                              "type": 3,
+                                                                              "name": "Current session",
+                                                                              "key": "device",
+                                                                              "value": "device"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64e7048f98b0d14b84ab8cf8",
+                                                                          "storeType": 3
+                                                                        },
+                                                                        "responseHandler": [
+                                                                          {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "content.isTrustedDevice"
+                                                                                },
+                                                                                true
+                                                                              ]
+                                                                            },
+                                                                            "triggerName": "NAVIGATE LOGIN TO OTP SCREEN TRIGGER",
+                                                                            "triggerId": "qKM1fin0Xo495U1AGBbzA",
+                                                                            "httpStatus": 200
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+                                                                  "updatedAt": "8/29/2023",
+                                                                  "createdAt": "8/29/2023",
+                                                                  "createdBy": "masood",
+                                                                  "updatedBy": "masood"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "IJEw8wmh2t5qqmeVtqXVV",
+                                                                "phWeF-bLOYBeTP9ybIZOn"
+                                                              ]
                                                             },
-                                                            "type": "2",
-                                                            "name": "On click"
+                                                            "type": "4",
+                                                            "name": "On Submit"
                                                           }
                                                         ],
                                                         "path": "0-0-0-0-0-0-0-0-5-1-0-0-0"
@@ -7720,8 +7887,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -7745,8 +7911,8 @@
     "gitBranchName": "master",
     "_id": "kn-g6dLXYigHhX9bj8Z88",
     "createdBy": "masood",
-    "updatedAt": "8/9/2023",
-    "createdAt": "8/9/2023",
+    "updatedAt": "8/29/2023",
+    "createdAt": "8/29/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7792,7 +7958,8 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "LOGIN SCREEN"
+      "name": "LOGIN SCREEN",
+      "cssClassNames": [{ "cssClassName": "preloginScreenModalBody " }]
     },
     "layout": null,
     "events": [],
@@ -8495,7 +8662,8 @@
           "//": "Use this class to style link component.",
           "color": "#BBBFC2 !important",
           "border": "#19612F !important",
-          "font-family": "Circular Std",
+          "font-family": "Circular Std !important",
+          "text-decoration": "none !important",
           "font-size": "15px",
           "cursor": "pointer",
           "font-style": "normal",
@@ -8776,7 +8944,8 @@
           "//": "Use this class to style link component.",
           "color": "#BBBFC2 !important",
           "border": "#19612F !important",
-          "font-family": "Circular Std",
+          "font-family": "Circular Std !important",
+          "text-decoration": "none !important",
           "font-size": "15px",
           "cursor": "pointer",
           "font-style": "normal",
@@ -9051,11 +9220,11 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-        "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "1"
+        "triggerId": "DycharlcGgs4hN7vdRYuw",
+        "triggerName": "Login Sequence",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "2"
       }
     ],
     "path": "0-0-0-0-0-0-0-0-5-1-0-0-0",
@@ -12081,11 +12250,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Web view", "type": "20034" },
     "events": [],
     "path": "0-0-0-1-0-0-0-0-0-0-0-3-0-0-0-0-0-1-0-0-0",
     "screenId": "kn-g6dLXYigHhX9bj8Z88",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

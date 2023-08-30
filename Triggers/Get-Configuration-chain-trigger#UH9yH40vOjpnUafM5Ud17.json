@@ -1,0 +1,195 @@
+{
+  "id": "Kx9RIoCEJ1SBdcCSUbrI4",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Get Configuration chain trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "m-acxmSE0MfJ2AbuAkhRa",
+              "name": "static lookUp keys for get Configuration API",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "lookupValues",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          true,
+                          [
+                            "USER_IDEN_TYPE",
+                            "REGISTER_CARD_TYPES",
+                            "AVAILABLE_CHANNELS",
+                            "CREDIT_CARD_TYPE",
+                            "ACCOUNT_STATUS",
+                            "ACCOUNT_TYPE",
+                            "USERNAME_POLICY",
+                            "BANK_LIST",
+                            "CHARGES_PAY_INSTRUCT",
+                            "COUNTRY",
+                            "CURRENCY",
+                            "TRANSFER_REASONS",
+                            "DEPOSIT_TYPE",
+                            "LOAN_TYPE",
+                            "PASSWORD_POLICY",
+                            "CARD_STATUS",
+                            "PFM_GOAL_TERMS_CONDITIONS",
+                            "CARD_MERCHANT_CONTROL",
+                            "CARD_CHANNEL",
+                            "CARD_LIMIT_TYPE",
+                            "BENE_TYPE",
+                            "STATE_LIST",
+                            "NATIONALITY_LIST",
+                            "DELIVERY_BRANCH",
+                            "DELIVERY_OPTION",
+                            "CARD_REASON",
+                            "VIRTUAL_CARD_TYPE",
+                            "VIRTUAL_CARD_DENOMINATION",
+                            "VIRTUAL_CARD_EXPIRY",
+                            "VIRTUAL_CARD_CATEGORY",
+                            "LANGUAGES",
+                            "ACTIVITY_STATUS",
+                            "ACTIVITY_TYPE",
+                            "THEME"
+                          ],
+                          [
+                            "USER_IDEN_TYPE",
+                            "REGISTER_CARD_TYPES",
+                            "AVAILABLE_CHANNELS",
+                            "CREDIT_CARD_TYPE",
+                            "ACCOUNT_STATUS",
+                            "ACCOUNT_TYPE",
+                            "USERNAME_POLICY",
+                            "BANK_LIST",
+                            "CHARGES_PAY_INSTRUCT",
+                            "COUNTRY",
+                            "CURRENCY",
+                            "TRANSFER_REASONS",
+                            "DEPOSIT_TYPE",
+                            "LOAN_TYPE",
+                            "PASSWORD_POLICY",
+                            "CARD_STATUS",
+                            "PFM_GOAL_TERMS_CONDITIONS",
+                            "CARD_MERCHANT_CONTROL",
+                            "CARD_CHANNEL",
+                            "CARD_LIMIT_TYPE",
+                            "BENE_TYPE",
+                            "STATE_LIST",
+                            "NATIONALITY_LIST",
+                            "DELIVERY_BRANCH",
+                            "DELIVERY_OPTION",
+                            "CARD_REASON",
+                            "VIRTUAL_CARD_TYPE",
+                            "VIRTUAL_CARD_DENOMINATION",
+                            "VIRTUAL_CARD_EXPIRY",
+                            "VIRTUAL_CARD_CATEGORY",
+                            "LANGUAGES",
+                            "ACTIVITY_STATUS",
+                            "ACTIVITY_TYPE",
+                            "THEME"
+                          ]
+                        ]
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.45b8qmb2d49vnj3uHf60YrX-B8GbCKGp",
+              "_id": "y6l8Nw-oY65NH4FMrZAdv",
+              "updatedAt": "8/23/2023",
+              "createdAt": "8/23/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "lWGY6JNGiZOkVr-LbtRBN",
+              "_id": "hHCmOLrW0h6uT48nZF6df",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getTutorials",
+              "old_name": "getTutorials",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "response",
+                      "responseReturnValue": "content.configurations.systemConfiguration.tutorialsList",
+                      "url": "getConfiguration",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001",
+                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                        "locale": "en-ltr"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "isSystemConfiguration",
+                          "value": "true"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "isSecurityConfiguration",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64e4667e98b0d14b84ab39c4",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.45b8qmb2d49vnj3uHf60YrX-B8GbCKGp",
+              "updatedAt": "8/23/2023",
+              "createdAt": "8/23/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["m-acxmSE0MfJ2AbuAkhRa", "lWGY6JNGiZOkVr-LbtRBN"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.45b8qmb2d49vnj3uHf60YrX-B8GbCKGp",
+  "_id": "UH9yH40vOjpnUafM5Ud17",
+  "updatedAt": "8/23/2023",
+  "createdAt": "8/23/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

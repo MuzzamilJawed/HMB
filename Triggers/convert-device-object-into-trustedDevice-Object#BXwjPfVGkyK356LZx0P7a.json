@@ -1,0 +1,59 @@
+{
+  "id": "5pfIblEnBR_xAfAsiZIVB",
+  "_id": "BXwjPfVGkyK356LZx0P7a",
+  "name": "convert device object into trustedDevice Object",
+  "old_name": "convert device object into trustedDevice Object",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "trustedDevice",
+          "sourceBindingKey": "device",
+          "sourceStoreType": 3,
+          "destinationStoreType": 3,
+          "filterList": [
+            {
+              "key": "deviceKey",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.deviceKey" }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.name" },
+              "key": "name"
+            },
+            {
+              "changeValueConditonally": true,
+              "key": "os",
+              "logic": { "var": "currentSession.device.os" }
+            },
+            {
+              "key": "osType",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.osType" }
+            },
+            {
+              "key": "imei",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "111111111111111", "111111111111111"] }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

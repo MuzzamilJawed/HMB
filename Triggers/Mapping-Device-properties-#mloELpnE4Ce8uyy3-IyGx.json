@@ -1,0 +1,68 @@
+{
+  "id": "IJEw8wmh2t5qqmeVtqXVV",
+  "_id": "mloELpnE4Ce8uyy3-IyGx",
+  "name": "Mapping Device properties ",
+  "old_name": "Mapping Device properties ",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "destinationBindingKey": "device",
+          "sourceBindingKey": "device",
+          "sourceStoreType": 3,
+          "destinationStoreType": 3,
+          "filterList": [
+            {
+              "key": "imei",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "111111111111111", "111111111111111"] }
+            },
+            {
+              "key": "deviceKey",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  true,
+                  "717185371687d903d6c7e25710963045",
+                  "717185371687d903d6c7e25710963045"
+                ]
+              }
+            },
+            {
+              "key": "name",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  true,
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                ]
+              }
+            },
+            {
+              "key": "osType",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "Win32", "Win32"] }
+            },
+            {
+              "key": "os",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "Web", "Web"] }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

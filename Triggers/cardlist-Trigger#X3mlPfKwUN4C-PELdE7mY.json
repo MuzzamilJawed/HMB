@@ -1,0 +1,53 @@
+{
+  "id": "5HDYOzxtsDeLZI2KMx_Gz",
+  "_id": "X3mlPfKwUN4C-PELdE7mY",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "cardlist Trigger",
+  "old_name": "cardlist Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "cardlist",
+          "responseReturnValue": "content.debitCardList",
+          "url": "/cardList",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": true,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "cardNature",
+              "value": "ALL"
+            },
+            { "type": 4, "name": "Static", "key": "syncing", "value": "true" },
+            { "type": 4, "name": "Static", "key": "update", "value": "true" }
+          ],
+          "baseURL": "64edeadf808dbe2b1493cfc9",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.6gqovk7j3aYVaWVe_S1DiQKpWnNE3Q4",
+  "updatedAt": "8/29/2023",
+  "createdAt": "8/29/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "0i6Vnftu_DBLecu91jynh",
+  "_id": "GrUes7h7nk770rt82iecG",
+  "name": "verify device static header",
+  "old_name": "verify device static header",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "validation",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "splitOtp",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            },
+            {
+              "key": "is2FA",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "1", "1"] }
+            },
+            {
+              "key": "tranCode",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.tranCode" }
+            },
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.emailPin" }
+            },
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.oddq4at2zg09DueRDtr0vEArGXcaTmR",
+  "updatedAt": "8/25/2023",
+  "createdAt": "8/25/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
