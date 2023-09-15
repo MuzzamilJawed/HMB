@@ -1,0 +1,189 @@
+{
+  "id": "kXuHTNFUacblCtX8pnsdo",
+  "_id": "7bKIkNX_0Djwt0BNiGyaU",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Donation Payment Trigger",
+  "old_name": "Donation Payment Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "donationResponse",
+          "url": "/transfer",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "getData.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "getData.bankImd"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountIban",
+              "value": "getData.iban"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "getData.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountTitle",
+              "value": "getData.accountTitle"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromCurrency",
+              "value": "getData.currency"
+            },
+            { "type": 1, "name": "Form", "key": "rda", "value": "getData.rda" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestNumber",
+              "value": "DonationTtile.content.requestNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestDate",
+              "value": "DonationTtile.content.requestDate"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountNumber",
+              "value": "selectedObject.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountTitle",
+              "value": "selectedObject.accountTitle"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toCurrency",
+              "value": "selectedObject.currency"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "purposeOfPayment",
+              "value": "Others"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "instrumentType",
+              "value": "A"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "orgCode",
+              "value": "selectedObject.id"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "transactionCurrency",
+              "value": "selectedObject.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "actualAmount",
+              "value": "amount"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "amountInWords",
+              "value": "PKR One"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "convertedAmount",
+              "value": "amount"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "exchangeRate",
+              "value": "amount"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "executionType",
+              "value": "PAY_NOW"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "returnBalance",
+              "value": "true"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferType",
+              "value": "DONATION"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferToOption",
+              "value": "beneficiary"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "noOfOccurrences",
+              "value": "0"
+            },
+            { "type": 4, "name": "Static", "key": "state", "value": "false" }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.g1coybs14c7bGRWC4CF1O3pY5dzw7Nez",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

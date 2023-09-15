@@ -1,0 +1,56 @@
+{
+  "id": "AAWMCmkPb4gY6xu5tw2eF",
+  "_id": "s3fOpAsxvNzs-js1nTFW_",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getMiniStatement",
+  "old_name": "getMiniStatement",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "accountMiniStatement",
+          "responseReturnValue": "content.transactions",
+          "url": "/miniStatement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "branchCode",
+              "value": "null"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "fromInstrument.accountId"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.wyec0tk624fMmipItxpbrcRzAC8vyyPl",
+  "updatedAt": "9/12/2023",
+  "createdAt": "9/12/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

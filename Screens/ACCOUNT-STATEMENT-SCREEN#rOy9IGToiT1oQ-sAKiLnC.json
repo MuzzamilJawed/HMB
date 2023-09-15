@@ -146,7 +146,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "xtiOCJFHqvHyMXcBb21Lx",
+                            "id": "NxdWR0p5eWkXCOuxdydeb",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -154,7 +154,7 @@
                                 "gridProps": [
                                   {
                                     "type": "column",
-                                    "id": "SZgmpsAuLf_HtaN9QcORP",
+                                    "id": "Wi-syITVzqVmt2Tk01FO1",
                                     "gridProps": [
                                       {
                                         "id": "H5sKBXvrm87m12V4ofNch",
@@ -230,8 +230,7 @@
                                       "md": 12,
                                       "sm": 12,
                                       "xs": 12
-                                    },
-                                    "path": "0-0-0-1-0-0-0-0"
+                                    }
                                   }
                                 ],
                                 "path": "0-0-0-1-0-0-0",
@@ -286,12 +285,11 @@
                               "md": 6,
                               "sm": 6,
                               "xs": 6
-                            },
-                            "path": "0-0-0-1-0-0"
+                            }
                           },
                           {
                             "type": "column",
-                            "id": "bHc8kDJebL-8nYWQO3l-N",
+                            "id": "7fGhU5KGzce1lRuYhOzd1",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -406,8 +404,7 @@
                               "md": 6,
                               "sm": 6,
                               "xs": 6
-                            },
-                            "path": "0-0-0-1-0-1"
+                            }
                           }
                         ],
                         "path": "0-0-0-1-0",
@@ -11523,7 +11520,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "NZcsU8rCcXG7zfuMYlb8c",
+                                                            "id": "GgsZfExTYtLCNq-YgU3Yf",
                                                             "gridProps": [
                                                               {
                                                                 "id": "gPgpblW3OfS8jAR3LmxoT",
@@ -11537,9 +11534,9 @@
                                                                   "name": "Drop down",
                                                                   "stateName": "fromInstrument",
                                                                   "allValues": true,
-                                                                  "dataSource": "",
-                                                                  "dataKey": "",
-                                                                  "dataValue": "",
+                                                                  "dataSource": "dropDownStatementAccountList",
+                                                                  "dataKey": "accountStatementConcate",
+                                                                  "dataValue": "accountStatementConcate",
                                                                   "mandatory": true,
                                                                   "validate": {
                                                                     "required": false,
@@ -11569,19 +11566,62 @@
                                                                     "sm": 12,
                                                                     "xs": 12
                                                                   },
-                                                                  "dropdownOptions": [
-                                                                    {
-                                                                      "code": "Searchaccount",
-                                                                      "name": "Searchaccount"
-                                                                    }
-                                                                  ],
+                                                                  "dropdownOptions": [],
                                                                   "variant": "standard",
-                                                                  "selectedDataType": 1,
+                                                                  "selectedDataType": 0,
                                                                   "disableUnderline": true,
-                                                                  "placeholder": "Select Account"
+                                                                  "placeholder": "Select Account",
+                                                                  "storeType": 2
                                                                 },
                                                                 "type": "20003",
-                                                                "events": [],
+                                                                "events": [
+                                                                  {
+                                                                    "triggerId": "AAWMCmkPb4gY6xu5tw2eF",
+                                                                    "triggerName": "getMiniStatement",
+                                                                    "serviceType": "8",
+                                                                    "attributes": {
+                                                                      "loaderWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "messageWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "responseStateKey": "accountMiniStatement",
+                                                                      "url": "/miniStatement",
+                                                                      "checksum": true,
+                                                                      "encryption": true,
+                                                                      "isDeviceDetails": true,
+                                                                      "loginTrigger": false,
+                                                                      "formData": false,
+                                                                      "logoutTrigger": false,
+                                                                      "headers": {
+                                                                        "Content-Type": "application/json",
+                                                                        "Accept": "application/json",
+                                                                        "channel_key": "001",
+                                                                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                                                                        "locale": "en-ltr"
+                                                                      },
+                                                                      "requestBody": [
+                                                                        {
+                                                                          "type": 2,
+                                                                          "name": "Current screen",
+                                                                          "key": "branchCode",
+                                                                          "value": "\"\""
+                                                                        },
+                                                                        {
+                                                                          "type": 2,
+                                                                          "name": "Current screen",
+                                                                          "key": "accountNumber",
+                                                                          "value": "1541718"
+                                                                        }
+                                                                      ],
+                                                                      "baseURL": "64f9a08b683922479c062070",
+                                                                      "storeType": 2
+                                                                    },
+                                                                    "type": "1",
+                                                                    "name": "On initialization"
+                                                                  }
+                                                                ],
                                                                 "order": 10,
                                                                 "version": "1.0.0",
                                                                 "isLatest": true,
@@ -11599,12 +11639,96 @@
                                                               "md": 12,
                                                               "sm": 12,
                                                               "xs": 12
-                                                            },
-                                                            "path": "0-0-1-0-0-1-0-0-0-0-1-0-0-0"
+                                                            }
                                                           }
                                                         ],
                                                         "path": "0-0-1-0-0-1-0-0-0-0-1-0-0",
-                                                        "events": [],
+                                                        "events": [
+                                                          {
+                                                            "triggerId": "55znhNq-lzQUP7s8vAeaf",
+                                                            "triggerName": "getAllAccountsWithBalance",
+                                                            "serviceType": "8",
+                                                            "attributes": {
+                                                              "loaderWidgetIds": [
+                                                                906070
+                                                              ],
+                                                              "messageWidgetIds": [
+                                                                906070
+                                                              ],
+                                                              "responseStateKey": "accountdetails",
+                                                              "responseReturnValue": "content.casaAccounts",
+                                                              "url": "/getAllAccountsWithBalance",
+                                                              "checksum": true,
+                                                              "encryption": true,
+                                                              "isDeviceDetails": true,
+                                                              "loginTrigger": false,
+                                                              "formData": false,
+                                                              "logoutTrigger": false,
+                                                              "headers": {
+                                                                "Content-Type": "application/json",
+                                                                "Accept": "application/json",
+                                                                "channel_key": "005"
+                                                              },
+                                                              "requestBody": [
+                                                                {
+                                                                  "type": 4,
+                                                                  "name": "Static",
+                                                                  "key": "status",
+                                                                  "value": "A"
+                                                                },
+                                                                {
+                                                                  "type": 4,
+                                                                  "name": "Static",
+                                                                  "key": "accountType",
+                                                                  "value": "ALL"
+                                                                },
+                                                                {
+                                                                  "type": 4,
+                                                                  "name": "Static",
+                                                                  "key": "currentFilter",
+                                                                  "value": "ALL"
+                                                                },
+                                                                {
+                                                                  "type": 4,
+                                                                  "name": "Static",
+                                                                  "key": "includeBalance",
+                                                                  "value": "true"
+                                                                }
+                                                              ],
+                                                              "baseURL": "64f9a08b683922479c062070",
+                                                              "storeType": 2
+                                                            },
+                                                            "type": "1",
+                                                            "name": "On initialization"
+                                                          },
+                                                          {
+                                                            "triggerId": "BsWrl4PSUvlvUSoKOiuHx",
+                                                            "triggerName": "ACCOUNT_STATEMENT_DROPDOWN_LIST",
+                                                            "serviceType": "11",
+                                                            "attributes": {
+                                                              "requestBody": [],
+                                                              "storeType": "",
+                                                              "selectedObjectBindingKey": "selectedObject",
+                                                              "dataType": "object",
+                                                              "destinationBindingKey": "dropDownStatementAccountList",
+                                                              "sourceBindingKey": "accountDetailsId",
+                                                              "sourceStoreType": 2,
+                                                              "destinationStoreType": 2,
+                                                              "filterList": [
+                                                                {
+                                                                  "key": "accountNumber",
+                                                                  "changeValueConditonally": false
+                                                                },
+                                                                {
+                                                                  "key": "accountTitle"
+                                                                }
+                                                              ],
+                                                              "targettedType": "array"
+                                                            },
+                                                            "type": "1",
+                                                            "name": "On initialization"
+                                                          }
+                                                        ],
                                                         "attributes": {
                                                           "gridProps": [],
                                                           "label": "Header",
@@ -11635,7 +11759,17 @@
                                                           "20010",
                                                           "widget"
                                                         ],
-                                                        "name": "Grid layout"
+                                                        "name": "Grid layout",
+                                                        "dimensions": {
+                                                          "rows": 1,
+                                                          "columns": 1,
+                                                          "colSize0xs": 12,
+                                                          "colSize0sm": 12,
+                                                          "colSize0md": 12,
+                                                          "colSize0lg": 12,
+                                                          "colSize0xl": 12
+                                                        },
+                                                        "readOnly": true
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -11943,6 +12077,110 @@
                                                     "type": "column",
                                                     "id": "KeOx0ApBzP5wo6cU5Le9p",
                                                     "gridProps": [
+                                                      {
+                                                        "type": "10001",
+                                                        "name": "Grid layout",
+                                                        "id": "t_1lKPlSb_3ssu0MiPh18",
+                                                        "gridProps": [
+                                                          {
+                                                            "type": "column",
+                                                            "id": "aVDG8POKPZiwwbLxWoYWG",
+                                                            "gridProps": [
+                                                              {
+                                                                "type": "20009",
+                                                                "name": "List layout",
+                                                                "id": "Qpmx8QUgF1cemnr-8ykcm",
+                                                                "gridProps": [
+                                                                  {
+                                                                    "type": "column",
+                                                                    "id": "EDpKUW7lPcuPsZhmoLcEA",
+                                                                    "gridProps": [],
+                                                                    "layoutProperties": {
+                                                                      "xl": 12,
+                                                                      "lg": 12,
+                                                                      "md": 12,
+                                                                      "sm": 12,
+                                                                      "xs": 12
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "allowedContainers": [
+                                                                  "10001",
+                                                                  "20009",
+                                                                  "widget",
+                                                                  "noLayout",
+                                                                  "20010"
+                                                                ],
+                                                                "attributes": {
+                                                                  "gridProps": [],
+                                                                  "label": "Header",
+                                                                  "listItemSize": {
+                                                                    "xs": "12",
+                                                                    "sm": "12",
+                                                                    "md": "12",
+                                                                    "lg": "12",
+                                                                    "xl": "12"
+                                                                  },
+                                                                  "layoutProperties": {
+                                                                    "itemStyle": {
+                                                                      "padding": "10px"
+                                                                    },
+                                                                    "listLayout": {
+                                                                      "padding": "5px"
+                                                                    },
+                                                                    "mainContainer": "listLayout"
+                                                                  },
+                                                                  "storeType": 2,
+                                                                  "dataSource": "accountMiniStatement"
+                                                                },
+                                                                "events": [],
+                                                                "component": {
+                                                                  "type": "20009",
+                                                                  "content": "List layout"
+                                                                }
+                                                              }
+                                                            ],
+                                                            "layoutProperties": {
+                                                              "xl": 12,
+                                                              "lg": 12,
+                                                              "md": 12,
+                                                              "sm": 12,
+                                                              "xs": 12
+                                                            }
+                                                          }
+                                                        ],
+                                                        "allowedContainers": [
+                                                          "10001",
+                                                          "20030",
+                                                          "noLayout",
+                                                          "20010",
+                                                          "widget"
+                                                        ],
+                                                        "attributes": {
+                                                          "gridProps": [],
+                                                          "label": "Header",
+                                                          "layoutProperties": {
+                                                            "gridLayout": {
+                                                              "//": "Use this class to style grid layout component.",
+                                                              "padding": "5px",
+                                                              "spacing": 0
+                                                            },
+                                                            "mainContainer": "gridLayout"
+                                                          },
+                                                          "layoutProps": {
+                                                            "direction": "row",
+                                                            "justifyContent": "flex-start",
+                                                            "alignItems": "flex-start"
+                                                          },
+                                                          "direction": "row",
+                                                          "name": "Grid layout"
+                                                        },
+                                                        "events": [],
+                                                        "component": {
+                                                          "type": "10001",
+                                                          "content": "Grid layout"
+                                                        }
+                                                      },
                                                       {
                                                         "type": "10001",
                                                         "name": "Grid layout",
@@ -13950,9 +14188,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "rOy9IGToiT1oQ-sAKiLnC",
-    "createdBy": "masood",
-    "updatedAt": "8/24/2023",
-    "createdAt": "8/24/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "9/12/2023",
+    "createdAt": "9/12/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -24512,7 +24750,20 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "55znhNq-lzQUP7s8vAeaf",
+        "triggerName": "getAllAccountsWithBalance",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "BsWrl4PSUvlvUSoKOiuHx",
+        "triggerName": "ACCOUNT_STATEMENT_DROPDOWN_LIST",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "rOy9IGToiT1oQ-sAKiLnC",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -24532,9 +24783,9 @@
       "name": "Drop down",
       "stateName": "fromInstrument",
       "allValues": true,
-      "dataSource": "",
-      "dataKey": "",
-      "dataValue": "",
+      "dataSource": "dropDownStatementAccountList",
+      "dataKey": "accountStatementConcate",
+      "dataValue": "accountStatementConcate",
       "mandatory": true,
       "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
@@ -24561,14 +24812,23 @@
         "sm": 12,
         "xs": 12
       },
-      "dropdownOptions": [{ "code": "Searchaccount", "name": "Searchaccount" }],
+      "dropdownOptions": [],
       "variant": "standard",
-      "selectedDataType": 1,
+      "selectedDataType": 0,
       "disableUnderline": true,
-      "placeholder": "Select Account"
+      "placeholder": "Select Account",
+      "storeType": 2
     },
     "type": "20003",
-    "events": [],
+    "events": [
+      {
+        "triggerId": "AAWMCmkPb4gY6xu5tw2eF",
+        "triggerName": "getMiniStatement",
+        "name": "On initialization",
+        "type": "1",
+        "serviceType": "8"
+      }
+    ],
     "order": 10,
     "version": "1.0.0",
     "isLatest": true,
@@ -24790,6 +25050,25 @@
     "attributes": {
       "gridProps": [
         {
+          "componentId": "t_1lKPlSb_3ssu0MiPh18",
+          "componentType": "10001",
+          "id": "t_1lKPlSb_3ssu0MiPh18",
+          "position": {
+            "i": "t_1lKPlSb_3ssu0MiPh18",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
           "componentId": "o24C4UU-7A662lJcGwKmR",
           "componentType": "10001",
           "id": "o24C4UU-7A662lJcGwKmR",
@@ -24921,6 +25200,89 @@
       },
       "direction": "row",
       "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "rOy9IGToiT1oQ-sAKiLnC",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "t_1lKPlSb_3ssu0MiPh18",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "Qpmx8QUgF1cemnr-8ykcm",
+          "componentType": "20009",
+          "id": "Qpmx8QUgF1cemnr-8ykcm",
+          "position": {
+            "i": "Qpmx8QUgF1cemnr-8ykcm",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "rOy9IGToiT1oQ-sAKiLnC",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Qpmx8QUgF1cemnr-8ykcm",
+    "name": "List layout",
+    "type": "20009",
+    "attributes": {
+      "gridProps": [],
+      "label": "Header",
+      "listItemSize": {
+        "xs": "12",
+        "sm": "12",
+        "md": "12",
+        "lg": "12",
+        "xl": "12"
+      },
+      "layoutProperties": {
+        "itemStyle": { "padding": "10px" },
+        "listLayout": { "padding": "5px" },
+        "mainContainer": "listLayout"
+      },
+      "storeType": 2,
+      "dataSource": "accountMiniStatement"
     },
     "layout": null,
     "events": [],

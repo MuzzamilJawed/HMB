@@ -1,0 +1,109 @@
+{
+  "id": "NmhpLyT9kZXcOmjqleze_",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "OTP_AND_DELETING_DEVICE_CHAIN_TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "c0L242046RHhhDbvcOhe_",
+              "_id": "oInNOp-tZpuJUM8Nd_U9X",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "SEND_OTP_FOR_DELETION_DEVICE",
+              "old_name": "SEND_OTP_FOR_DELETION_DEVICE",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "OtpResponse",
+                      "url": "/generateOTP",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tranCode",
+                          "value": "smsOtp"
+                        }
+                      ],
+                      "baseURL": "65015c4b61f0645ad866ef4a",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "DELETING_DEVICE_CHAIN_TRIGGER",
+                        "triggerId": "344eioClVfjXF8c9cetiD"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
+              "updatedAt": "9/14/2023",
+              "createdAt": "9/14/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "E8J1s071gENYQJD0nByov",
+              "gitBranchName": "master",
+              "name": "OTP_MODAL_FOR_DEVICE_MANAGEMENT_SCREEN",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "widgetId": "7K493GXZY_GEd7PReqBrF",
+                      "content": "",
+                      "type": "",
+                      "modalId": "kZ4ZUwlfmfkiFbzSPmIz5"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
+              "_id": "xib_OevoNi4ae9Qa0oHMi",
+              "updatedAt": "9/14/2023",
+              "createdAt": "9/14/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["c0L242046RHhhDbvcOhe_", "E8J1s071gENYQJD0nByov"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
+  "_id": "j9Xvtv8Nif1-wk01c_59g",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

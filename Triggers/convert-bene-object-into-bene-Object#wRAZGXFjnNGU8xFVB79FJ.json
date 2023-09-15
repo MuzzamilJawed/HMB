@@ -1,0 +1,96 @@
+{
+  "id": "lOONpwXzERn9ZktBE5vQg",
+  "_id": "wRAZGXFjnNGU8xFVB79FJ",
+  "name": "convert bene object into bene Object",
+  "old_name": "convert bene object into bene Object",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "destinationBindingKey": "beneficiary",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "bankCode",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.bankName.bankCode" }
+            },
+            {
+              "key": "instrumentType",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "A", "A"] }
+            },
+            {
+              "key": "mobile",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.mobile" }
+            },
+            {
+              "key": "bankBIC",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.bankName.bankCode" }
+            },
+            {
+              "key": "alias",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.alias" }
+            },
+            {
+              "key": "beneficiaryFlag",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "A", "A"] }
+            },
+            {
+              "key": "email",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.email" }
+            },
+            {
+              "key": "isFavorite",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] }
+            },
+            {
+              "key": "beneficiaryType",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "L", "L"] }
+            },
+            {
+              "key": "bankName",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.bankName.bankName" }
+            },
+            {
+              "key": "bankIMD",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.bankName.bankIMD" }
+            },
+            {
+              "key": "accountNumber",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.getData.accountNumber" }
+            },
+            {
+              "key": "accountTitle",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.getData.accountTitle" }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+  "updatedAt": "9/8/2023",
+  "createdAt": "9/8/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

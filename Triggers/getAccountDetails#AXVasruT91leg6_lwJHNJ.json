@@ -1,0 +1,87 @@
+{
+  "id": "3RjSGRLbTfSi3nnIXITSp",
+  "_id": "AXVasruT91leg6_lwJHNJ",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getAccountDetails",
+  "old_name": "getAccountDetails",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "getData",
+          "responseReturnValue": "content",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeCode",
+              "value": "null"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeDetail",
+              "value": "null"
+            },
+            { "type": 4, "name": "Static", "key": "amount", "value": "0.0" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankName",
+              "value": "bankName.bankName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "bankName.bankIMD"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "accountId",
+              "value": "1541718"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Swapped add bene",
+            "triggerId": "4qCZzzCjxy7arV9qc9fjJ"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+  "updatedAt": "9/8/2023",
+  "createdAt": "9/8/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

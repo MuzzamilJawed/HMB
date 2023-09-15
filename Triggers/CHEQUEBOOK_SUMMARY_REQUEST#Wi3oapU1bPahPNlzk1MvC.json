@@ -1,0 +1,61 @@
+{
+  "id": "YYUTMkLElEArFKd9xwyvH",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHEQUEBOOK_SUMMARY_REQUEST",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "chequeSummary",
+          "responseReturnValue": "content.chequeSummary",
+          "url": "/chequeInfo",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "accountId",
+              "value": "1541718"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "fromDate",
+              "value": "12-09-2022"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "flowType",
+              "value": "CHEQUE_SUMMARY"
+            }
+          ],
+          "baseURL": "65003e4e61f0645ad866d812",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.pe5b3l6sjc9zb_bNkBWauH6qTLAMz3ps",
+  "_id": "Wi3oapU1bPahPNlzk1MvC",
+  "updatedAt": "9/12/2023",
+  "createdAt": "9/12/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

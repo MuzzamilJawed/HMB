@@ -1,0 +1,93 @@
+{
+  "id": "3M2P520lFTp2eYT_vNAXj",
+  "_id": "R-V0biX4RhmDujZ4LLNgt",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getAccountTitleZakat",
+  "old_name": "getAccountTitleZakat",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "getAccountTitle",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "accountNumber",
+              "value": "selectedObject.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "getData.bankImd"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toCurrency",
+              "value": "selectedObject.name"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accNo",
+              "value": "getData.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "getData.accountId"
+            },
+            { "type": 1, "name": "Form", "key": "rda", "value": "getData.rda" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeDetail",
+              "value": "null"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeCode",
+              "value": "null"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "zakat to confirm Zakat",
+            "triggerId": "3zPt_h5iQEOwZ8sDVV5WI"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

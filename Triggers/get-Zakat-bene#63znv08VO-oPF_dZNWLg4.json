@@ -1,0 +1,146 @@
+{
+  "id": "le0TSBdlezlFantE7aoXt",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "get Zakat bene",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "55znhNq-lzQUP7s8vAeaf",
+              "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getAllAccountsWithBalance",
+              "old_name": "getAllAccountsWithBalance",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "A"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "currentFilter",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "includeBalance",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+              "updatedAt": "9/13/2023",
+              "createdAt": "9/13/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "0-6aBXABzvCu07a7o_SX4",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "fetchDonationOrganizationBeneficiaries Trigger",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "zakatList",
+                      "responseReturnValue": "content.donationOrganizations",
+                      "url": "/fetchDonationOrganizationBeneficiaries",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "transferType",
+                          "value": "ZAKAAT"
+                        }
+                      ],
+                      "baseURL": "64f968d3683922479c0616ba",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
+              "_id": "Az8OT-TVSvWh_sWVbrqdj",
+              "updatedAt": "9/14/2023",
+              "createdAt": "9/14/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["55znhNq-lzQUP7s8vAeaf", "0-6aBXABzvCu07a7o_SX4"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
+  "_id": "63znv08VO-oPF_dZNWLg4",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

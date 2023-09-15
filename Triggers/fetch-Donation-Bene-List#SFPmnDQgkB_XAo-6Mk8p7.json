@@ -1,0 +1,50 @@
+{
+  "id": "JWZPDNqhdta_cueTMQgBD",
+  "_id": "SFPmnDQgkB_XAo-6Mk8p7",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "fetch Donation Bene List",
+  "old_name": "fetch Donation Bene List",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "donationList",
+          "responseReturnValue": "content.donationOrganizations",
+          "url": "/fetchDonationOrganizationBeneficiaries",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferType",
+              "value": "donation"
+            }
+          ],
+          "baseURL": "64f968d3683922479c0616ba",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.g1coybs14c7bGRWC4CF1O3pY5dzw7Nez",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

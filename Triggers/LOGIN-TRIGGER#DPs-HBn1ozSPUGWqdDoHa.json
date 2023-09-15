@@ -24,10 +24,7 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "channel_key": "005",
-            "Accept": "application/json",
-            "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
-            "locale": "en-ltr"
+            "channel_key": "005"
           },
           "requestBody": [
             { "type": 4, "name": "Static", "key": "loginPin", "value": "null" },
@@ -54,25 +51,33 @@
               "name": "Current session",
               "key": "device",
               "value": "device"
-            }
+            },
+            { "type": 4, "name": "Static", "key": "location", "value": "null" },
+            { "type": 4, "name": "Static", "key": "contryCode", "value": "PK" }
           ],
-          "baseURL": "64e7048f98b0d14b84ab8cf8",
+          "baseURL": "64f6fe5b683922479c05e511",
           "storeType": 3
         },
         "responseHandler": [
           {
-            "logic": { "==": [{ "var": "content.isTrustedDevice" }, true] },
+            "logic": { "==": [{ "var": "content.isTrustedDevice" }, false] },
             "triggerName": "NAVIGATE LOGIN TO OTP SCREEN TRIGGER",
             "triggerId": "qKM1fin0Xo495U1AGBbzA",
             "httpStatus": 200
+          },
+          {
+            "logic": { "==": [{ "var": "content.isTrustedDevice" }, true] },
+            "httpStatus": 200,
+            "triggerName": "Login to dashboard",
+            "triggerId": "ELIOJXwcjZ-eTgLM9KgXR"
           }
         ]
       }
     }
   ],
-  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
-  "updatedAt": "8/29/2023",
-  "createdAt": "8/29/2023",
+  "csrf": "0.2ttor0ycvndBDdoOgU7FcGngh94jGZKs",
+  "updatedAt": "9/7/2023",
+  "createdAt": "9/7/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

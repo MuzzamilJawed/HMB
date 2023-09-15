@@ -1,0 +1,75 @@
+{
+  "id": "ZnK3rIYfz5xaJkGIQNooG",
+  "_id": "uESzOO7FTQ_jGz7OuZMZJ",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "accountMaintenancestatement",
+  "old_name": "accountMaintenancestatement",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "accountMaintenanceResponse",
+          "url": "/accountMaintenance/statement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            { "type": 4, "name": "Static", "key": "dateFrom", "value": "null" },
+            { "type": 4, "name": "Static", "key": "dateTo", "value": "null" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "user_id",
+              "value": "user_id"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectedAccount.accountId"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "account maintenance to withholding",
+            "triggerId": "S5Fp2mI_hmeraic0zQ4a_"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

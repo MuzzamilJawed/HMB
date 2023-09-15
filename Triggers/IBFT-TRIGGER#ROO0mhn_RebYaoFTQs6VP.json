@@ -1,0 +1,148 @@
+{
+  "_id": "ROO0mhn_RebYaoFTQs6VP",
+  "id": "BgFncn_7WS3z4vBHZaczR",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "IBFT TRIGGER",
+  "old_name": "IBFT TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "_kJxp-3jSIm0fI_Vgiwe6",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getBanks",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "banksData",
+                      "responseReturnValue": "content",
+                      "url": "banks",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001",
+                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                        "locale": "en-ltr"
+                      },
+                      "requestBody": [],
+                      "baseURL": "64cb74d4033f4f6908922b8f",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.fe8xm4mifsn7EfkvRoteDtzw4MmBjD1f",
+              "_id": "gFqqv2tBH7C-5QkghVrMe",
+              "updatedAt": "8/31/2023",
+              "createdAt": "8/31/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "55znhNq-lzQUP7s8vAeaf",
+              "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getAllAccountsWithBalance",
+              "old_name": "getAllAccountsWithBalance",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "ACTIVE"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "syncing",
+                          "value": "false"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountUpdate",
+                          "value": "true"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "cacheFlag",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.j60t77pvaxoTDfOvzNtvpqxv48jCBMC",
+              "updatedAt": "9/7/2023",
+              "createdAt": "9/7/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["_kJxp-3jSIm0fI_Vgiwe6", "55znhNq-lzQUP7s8vAeaf"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.j60t77pvaxoTDfOvzNtvpqxv48jCBMC",
+  "updatedAt": "9/7/2023",
+  "createdAt": "9/7/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

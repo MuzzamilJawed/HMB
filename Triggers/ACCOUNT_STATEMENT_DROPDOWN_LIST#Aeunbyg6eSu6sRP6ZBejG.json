@@ -1,0 +1,47 @@
+{
+  "id": "BsWrl4PSUvlvUSoKOiuHx",
+  "_id": "Aeunbyg6eSu6sRP6ZBejG",
+  "name": "ACCOUNT_STATEMENT_DROPDOWN_LIST",
+  "old_name": "ACCOUNT_STATEMENT_DROPDOWN_LIST",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "object",
+          "destinationBindingKey": "dropDownStatementAccountList",
+          "sourceBindingKey": "accountdetails",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            { "key": "accountNumber", "changeValueConditonally": false },
+            { "key": "accountTitle" },
+            {
+              "key": "accountStatementConcate",
+              "changeValueConditonally": true,
+              "logic": {
+                "cat": [
+                  { "var": "accountNumber" },
+                  "-",
+                  { "var": "accountTitle" }
+                ]
+              }
+            }
+          ],
+          "targettedType": "array"
+        }
+      }
+    }
+  ],
+  "csrf": "0.dbie0hgl97qPr5JABYbSfuNmob5qgZM0",
+  "updatedAt": "9/12/2023",
+  "createdAt": "9/12/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "RgOtS0Wh0uegXnhAY5eFJ",
+  "_id": "aa0M_wtatQg7_NgLB4xim",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "DORMANCY_REMOVAL_API_TRIGGER",
+  "old_name": "DORMANCY_REMOVAL_API_TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "responseOfApi",
+          "responseReturnValue": "message",
+          "url": "/dormancy/reverse",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "fromInstrument.accountId"
+            },
+            { "type": 1, "name": "Form", "key": "purpose", "value": "purpose" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.y3yqm3fq2mDPEnVzuPiljiBXgTsCpES",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

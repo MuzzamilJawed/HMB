@@ -1,0 +1,126 @@
+{
+  "_id": "eRpR7m4qNi1pOcCSyrqH_",
+  "id": "S_VmAT1cB5LZPZRpnlSNM",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "populate Bene",
+  "old_name": "populate Bene",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "N-EQtbm2SiWtKN9Hb2pjY",
+              "_id": "ZyXvKDXIAVkZ7IR-c_eVc",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "fetchBillBeneficiaries",
+              "old_name": "fetchBillBeneficiaries",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "fetchBill",
+                      "responseReturnValue": "content.consumers",
+                      "url": "fetchBillBeneficiaries",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001",
+                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                        "locale": "en-ltr"
+                      },
+                      "requestBody": [],
+                      "baseURL": "64a5172300c049655055627f",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.fe8xm4mifsn7EfkvRoteDtzw4MmBjD1f",
+              "updatedAt": "8/31/2023",
+              "createdAt": "8/31/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "5bgMe4xtpQkC2-48vHWeY",
+              "_id": "ot5SyKSS8TbYkYE1MVHBG",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Fetch Bene",
+              "old_name": "Fetch Bene",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "bene",
+                      "responseReturnValue": "content.beneficiaries",
+                      "url": "beneficiaryList",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001",
+                        "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
+                        "locale": "en-ltr"
+                      },
+                      "requestBody": [],
+                      "baseURL": "64cb74d4033f4f6908922b8f",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "concate bill bene data",
+                        "triggerId": "2t1zubPZDO_TaGro1Q-tY"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.tfpq690ba50Ubj46GRWRJUd5oz3xL56",
+              "updatedAt": "9/1/2023",
+              "createdAt": "9/1/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["N-EQtbm2SiWtKN9Hb2pjY", "5bgMe4xtpQkC2-48vHWeY"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+  "updatedAt": "9/7/2023",
+  "createdAt": "9/7/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

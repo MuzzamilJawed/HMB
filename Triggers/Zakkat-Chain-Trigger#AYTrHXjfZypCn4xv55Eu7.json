@@ -1,0 +1,285 @@
+{
+  "_id": "AYTrHXjfZypCn4xv55Eu7",
+  "id": "orzFl9QhQKvzy5b1PWQVu",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Zakkat Chain Trigger",
+  "old_name": "Zakkat Chain Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "myQKiAf7esTmLdi6rVuNQ",
+              "name": "beneficiaryManagementValidation",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "validation",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+              "_id": "fqg5-G76nZO-ZMYuM7TAo",
+              "updatedAt": "9/8/2023",
+              "createdAt": "9/8/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "3OtueWWfWGy-leGms5dkQ",
+              "_id": "RxFX6IgUq3FWcIGqRG4NW",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "transferZakat",
+              "old_name": "transferZakat",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "zakatResponse",
+                      "url": "/transfer",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "getData.accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "bankIMD",
+                          "value": "getData.bankImd"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountIban",
+                          "value": "getData.iban"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountNumber",
+                          "value": "getData.accountNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountTitle",
+                          "value": "getData.accountTitle"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromCurrency",
+                          "value": "getData.currency"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "rda",
+                          "value": "getData.rda"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "requestNumber",
+                          "value": "getAccountTitle.content.requestNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "requestDate",
+                          "value": "getAccountTitle.content.requestDate"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "toAccountNumber",
+                          "value": "selectedObject.accountNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "toAccountTitle",
+                          "value": "selectedObject.accountTitle"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "toCurrency",
+                          "value": "selectedObject.currency"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "purposeOfPayment",
+                          "value": "Others"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "instrumentType",
+                          "value": "A"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "orgCode",
+                          "value": "selectedObject.id"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "transactionCurrency",
+                          "value": "selectedObject.currency"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "actualAmount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "amountInWords",
+                          "value": "PKR One"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "convertedAmount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "exchangeRate",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "executionType",
+                          "value": "PAY_NOW"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "returnBalance",
+                          "value": "true"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "transferType",
+                          "value": "DONATION"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "transferToOption",
+                          "value": "beneficiary"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "noOfOccurrences",
+                          "value": "0"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "state",
+                          "value": "false"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        }
+                      ],
+                      "baseURL": "6502f5a7c9bf2957746c9973",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.7gioem1molt6L0SOp-WsJle3FVK_hzWh",
+              "updatedAt": "9/15/2023",
+              "createdAt": "9/15/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["myQKiAf7esTmLdi6rVuNQ", "3OtueWWfWGy-leGms5dkQ"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.jyikfxzqbqj8c5DYfXXED9IXHJfDUFKA",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

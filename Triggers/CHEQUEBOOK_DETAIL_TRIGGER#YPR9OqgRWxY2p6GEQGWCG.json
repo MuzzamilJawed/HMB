@@ -1,0 +1,67 @@
+{
+  "id": "d1vxJnTP1MSSm-d7l3M9E",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHEQUEBOOK_DETAIL_TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "chequeDetail",
+          "responseReturnValue": "content.chequeDetail",
+          "url": "/chequeInfo",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "flowType",
+              "value": "CHEQUE_DETAIL"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "fromDate",
+              "value": "12-07-2023"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "accountId",
+              "value": "1541718"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "toDate",
+              "value": "12-09-2023"
+            }
+          ],
+          "baseURL": "65003e4e61f0645ad866d812",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.f5g7ktad4nn36ksge70vLC-Y-NNPs9IM",
+  "_id": "YPR9OqgRWxY2p6GEQGWCG",
+  "updatedAt": "9/12/2023",
+  "createdAt": "9/12/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

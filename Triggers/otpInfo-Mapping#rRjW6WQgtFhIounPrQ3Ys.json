@@ -1,0 +1,49 @@
+{
+  "id": "TCicpprTZFn8DYos69xXs",
+  "name": "otpInfo Mapping",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "destinationBindingKey": "otpInfo",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
+            },
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] }
+            },
+            {
+              "key": "splitOtp",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+  "_id": "rRjW6WQgtFhIounPrQ3Ys",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

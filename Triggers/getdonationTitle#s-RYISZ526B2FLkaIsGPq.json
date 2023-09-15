@@ -1,0 +1,93 @@
+{
+  "id": "dCzuCcJ4ZzLZUb6OlL_DR",
+  "_id": "s-RYISZ526B2FLkaIsGPq",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getdonationTitle",
+  "old_name": "getdonationTitle",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "DonationTtile",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "accountNumber",
+              "value": "selectedObject.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "getData.bankImd"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toCurrency",
+              "value": "selectedObject.name"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accNo",
+              "value": "getData.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "getData.accountId"
+            },
+            { "type": 1, "name": "Form", "key": "rda", "value": "getData.rda" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeDetail",
+              "value": "null"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "olPaymentPurposeCode",
+              "value": "null"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "donation Form to donation Confirm",
+            "triggerId": "mDAQXv4JGhVUxGV1y2LOm"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.g1coybs14c7bGRWC4CF1O3pY5dzw7Nez",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

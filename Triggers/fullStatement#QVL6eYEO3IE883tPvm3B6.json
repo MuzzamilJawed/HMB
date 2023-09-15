@@ -1,0 +1,102 @@
+{
+  "id": "M21eG40Q3hFjBDDA8xhpr",
+  "_id": "QVL6eYEO3IE883tPvm3B6",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "fullStatement",
+  "old_name": "fullStatement",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "fullStatementResponse",
+          "responseReturnValue": "message",
+          "successMessageBindingKey": "successMessage",
+          "errorMessageBindingKey": "errorMessage",
+          "url": "/fullStatement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "displayOption",
+              "value": "onScreen"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "branchName",
+              "value": "null"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "searchCriteria",
+              "value": "dateRange"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "quickRange",
+              "value": "null"
+            },
+            { "type": 4, "name": "Static", "key": "isByDate", "value": "1" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "fromInstrument.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountCurrency",
+              "value": "fromInstrument.currency"
+            },
+            { "type": 1, "name": "Form", "key": "toDate", "value": "toDate" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromDate",
+              "value": "fromDate"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountType",
+              "value": "fromInstrument.accountType"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Email_POP_UP_Modal",
+            "triggerId": "Y3ol1-nTtdvx3rWqoy9h5"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.cee2kpafxvs4KR9M47UyNIHWt-9czzoI",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

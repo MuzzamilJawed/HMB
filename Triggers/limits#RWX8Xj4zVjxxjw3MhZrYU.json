@@ -1,0 +1,61 @@
+{
+  "id": "rSLlV3bkE4PjkwZ9UNyDO",
+  "_id": "RWX8Xj4zVjxxjw3MhZrYU",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "limits",
+  "old_name": "limits",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "limitsResponse",
+          "url": "/limits",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "accountNumber",
+              "value": "selectedAccount.accountNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "channelID",
+              "value": "null"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "selectedAccount.rda"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

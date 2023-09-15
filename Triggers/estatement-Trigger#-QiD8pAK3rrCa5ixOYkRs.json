@@ -1,0 +1,73 @@
+{
+  "id": "54FfK26Mg5jVaAnwN16fX",
+  "_id": "-QiD8pAK3rrCa5ixOYkRs",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "estatement Trigger",
+  "old_name": "estatement Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "estatmentResponse",
+          "url": "/estatement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userEmail",
+              "value": "userEmail"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "eStatementSubSwitch",
+              "value": "null"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "eStatementSubFrequeny",
+              "value": "eStatementSubSwitch.code"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectAccount.accountId"
+            }
+          ],
+          "baseURL": "65003e4e61f0645ad866d812",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.vho698gs6fL9E6TAiWIT9lP5WAOnOqs",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "myQKiAf7esTmLdi6rVuNQ",
+  "name": "beneficiaryManagementValidation",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "validation",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
+            },
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] }
+            },
+            {
+              "key": "splitOtp",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+  "_id": "fqg5-G76nZO-ZMYuM7TAo",
+  "updatedAt": "9/8/2023",
+  "createdAt": "9/8/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

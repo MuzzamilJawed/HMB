@@ -1,0 +1,102 @@
+{
+  "id": "4vkm7glhrkqQgg_tVCN_l",
+  "_id": "_zJJh1OlzCCIII4jNYGNY",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "payOrder",
+  "old_name": "payOrder",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "payOrderResponse",
+          "url": "/payOrder",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "accountSelect.accountId"
+            },
+            { "type": 1, "name": "Form", "key": "address", "value": "address" },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            { "type": 1, "name": "Form", "key": "beneDOB", "value": "beneDOB" },
+            { "type": 1, "name": "Form", "key": "beneNTN", "value": "beneNTN" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "beneRelation",
+              "value": "beneRelation"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "contactNumber",
+              "value": "contactNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "favouring",
+              "value": "favouring"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "providedpin",
+              "value": "null"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "payorderType",
+              "value": "null"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "purposeCode",
+              "value": "payorderbene.paymentCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "for",
+              "value": "payorderbene.paymentCode"
+            },
+            { "type": 4, "name": "Static", "key": "cnic", "value": "null" }
+          ],
+          "baseURL": "65003e4e61f0645ad866d812",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

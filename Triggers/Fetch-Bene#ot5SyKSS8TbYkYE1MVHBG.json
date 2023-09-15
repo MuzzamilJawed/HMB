@@ -1,0 +1,64 @@
+{
+  "id": "5bgMe4xtpQkC2-48vHWeY",
+  "_id": "ot5SyKSS8TbYkYE1MVHBG",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Fetch Bene",
+  "old_name": "Fetch Bene",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "fetchBene",
+          "responseReturnValue": "content.beneficiaries",
+          "url": "/beneficiaryList",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": true,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "inquiry", "value": "true" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "instrumentType",
+              "value": "A"
+            },
+            { "type": 4, "name": "Static", "key": "tFlag", "value": "N" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferType",
+              "value": "null"
+            }
+          ],
+          "baseURL": "64f968d3683922479c0616ba",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "concate bill bene data",
+            "triggerId": "2t1zubPZDO_TaGro1Q-tY"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+  "updatedAt": "9/7/2023",
+  "createdAt": "9/7/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

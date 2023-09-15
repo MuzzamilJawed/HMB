@@ -469,7 +469,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "oDBHoMETyyse_fRR_U-87",
+                                            "id": "nuiI2LIeKgI0PakhRJE6X",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -586,9 +586,9 @@
                                                           "name": "Drop down",
                                                           "stateName": "fromInstrument",
                                                           "allValues": true,
-                                                          "dataSource": "",
-                                                          "dataKey": "",
-                                                          "dataValue": "",
+                                                          "dataSource": "accountdetails",
+                                                          "dataKey": "accountNumber",
+                                                          "dataValue": "accountNumber",
                                                           "mandatory": true,
                                                           "validate": {
                                                             "required": false,
@@ -619,20 +619,13 @@
                                                             "sm": 12,
                                                             "xs": 12
                                                           },
-                                                          "dropdownOptions": [
-                                                            {
-                                                              "code": "Current",
-                                                              "name": "Current"
-                                                            },
-                                                            {
-                                                              "code": "Saving",
-                                                              "name": "Saving"
-                                                            }
-                                                          ],
+                                                          "dropdownOptions": [],
                                                           "variant": "standard",
-                                                          "selectedDataType": 1,
+                                                          "selectedDataType": 0,
                                                           "disableUnderline": true,
-                                                          "placeholder": "Select Account"
+                                                          "placeholder": "Select Account",
+                                                          "storeType": 2,
+                                                          "hideCondition": {}
                                                         },
                                                         "type": "20003",
                                                         "events": [],
@@ -697,7 +690,7 @@
                                                 "gridProps": [
                                                   {
                                                     "type": "column",
-                                                    "id": "eqsZbq9v6loPBz78-b-XG",
+                                                    "id": "xemZdVqLbS0gz6v4X1_PV",
                                                     "gridProps": [
                                                       {
                                                         "type": "10001",
@@ -853,12 +846,14 @@
                                                                                     "sm": 12,
                                                                                     "xs": 12
                                                                                   },
-                                                                                  "label": "3554301000001352",
+                                                                                  "label": "fromInstrument.accountNumber",
                                                                                   "cssClassNames": [
                                                                                     {
                                                                                       "cssClassName": "Label_Type_Detail_Css"
                                                                                     }
-                                                                                  ]
+                                                                                  ],
+                                                                                  "searchInState": true,
+                                                                                  "storeType": 1
                                                                                 },
                                                                                 "icon": "FaFont",
                                                                                 "group": "Form",
@@ -1138,12 +1133,14 @@
                                                                                     "sm": 12,
                                                                                     "xs": 12
                                                                                   },
-                                                                                  "label": "Waseem Khan",
+                                                                                  "label": "fromInstrument.accountTitle",
                                                                                   "cssClassNames": [
                                                                                     {
                                                                                       "cssClassName": "Label_Type_Detail_Css"
                                                                                     }
-                                                                                  ]
+                                                                                  ],
+                                                                                  "searchInState": true,
+                                                                                  "storeType": 1
                                                                                 },
                                                                                 "icon": "FaFont",
                                                                                 "group": "Form",
@@ -1397,12 +1394,14 @@
                                                                                     "sm": 12,
                                                                                     "xs": 12
                                                                                   },
-                                                                                  "label": "Current Account",
+                                                                                  "label": "fromInstrument.accountType",
                                                                                   "cssClassNames": [
                                                                                     {
                                                                                       "cssClassName": "Label_Type_Detail_Css"
                                                                                     }
-                                                                                  ]
+                                                                                  ],
+                                                                                  "searchInState": true,
+                                                                                  "storeType": 1
                                                                                 },
                                                                                 "icon": "FaFont",
                                                                                 "group": "Form",
@@ -1600,8 +1599,7 @@
                                                       "md": 12,
                                                       "sm": 12,
                                                       "xs": 12
-                                                    },
-                                                    "path": "0-0-1-0-0-0-1-1-0-0-2-0"
+                                                    }
                                                   }
                                                 ],
                                                 "path": "0-0-1-0-0-0-1-1-0-0-2",
@@ -1624,7 +1622,17 @@
                                                   },
                                                   "direction": "row",
                                                   "name": "Grid layout",
-                                                  "cssClassNames": []
+                                                  "cssClassNames": [],
+                                                  "hideCondition": {
+                                                    "logic": {
+                                                      "==": [
+                                                        {
+                                                          "var": "currentScreen.form.fromInstrument"
+                                                        },
+                                                        null
+                                                      ]
+                                                    }
+                                                  }
                                                 },
                                                 "component": {
                                                   "type": "10001",
@@ -1645,8 +1653,7 @@
                                                   "colSize0sm": 12,
                                                   "colSize0md": 12,
                                                   "colSize0lg": 12,
-                                                  "colSize0xl": 12,
-                                                  "layoutProperties": null
+                                                  "colSize0xl": 12
                                                 },
                                                 "readOnly": true
                                               }
@@ -1657,12 +1664,65 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-1-0-0-0-1-1-0-0"
+                                            }
                                           }
                                         ],
                                         "path": "0-0-1-0-0-0-1-1-0",
-                                        "events": [],
+                                        "events": [
+                                          {
+                                            "triggerId": "55znhNq-lzQUP7s8vAeaf",
+                                            "triggerName": "getAllAccountsWithBalance",
+                                            "serviceType": "8",
+                                            "attributes": {
+                                              "loaderWidgetIds": [906070],
+                                              "messageWidgetIds": [906070],
+                                              "responseStateKey": "accountdetails",
+                                              "responseReturnValue": "content.casaAccounts",
+                                              "url": "/getAllAccountsWithBalance",
+                                              "checksum": true,
+                                              "encryption": true,
+                                              "isDeviceDetails": true,
+                                              "loginTrigger": false,
+                                              "formData": false,
+                                              "logoutTrigger": false,
+                                              "headers": {
+                                                "Content-Type": "application/json",
+                                                "Accept": "application/json",
+                                                "channel_key": "005"
+                                              },
+                                              "requestBody": [
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "status",
+                                                  "value": "A"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "accountType",
+                                                  "value": "ALL"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "currentFilter",
+                                                  "value": "ALL"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "includeBalance",
+                                                  "value": "true"
+                                                }
+                                              ],
+                                              "baseURL": "64f9a08b683922479c062070",
+                                              "storeType": 2
+                                            },
+                                            "type": "1",
+                                            "name": "On initialization"
+                                          }
+                                        ],
                                         "attributes": {
                                           "gridProps": [],
                                           "label": "Header",
@@ -1693,7 +1753,17 @@
                                           "20010",
                                           "widget"
                                         ],
-                                        "name": "Grid layout"
+                                        "name": "Grid layout",
+                                        "dimensions": {
+                                          "rows": 1,
+                                          "columns": 1,
+                                          "colSize0xs": 12,
+                                          "colSize0sm": 12,
+                                          "colSize0md": 12,
+                                          "colSize0lg": 12,
+                                          "colSize0xl": 12
+                                        },
+                                        "readOnly": true
                                       }
                                     ],
                                     "layoutProperties": {
@@ -1941,7 +2011,7 @@
                                                           },
                                                           "placeholder": "Enter Cheque Number",
                                                           "disableUnderline": true,
-                                                          "stateName": "receiver",
+                                                          "stateName": "chqNum1",
                                                           "cssClassNames": [
                                                             {
                                                               "cssClassName": "emptyTextField3"
@@ -2150,7 +2220,7 @@
                                                             "errorMsg": "This field is required"
                                                           },
                                                           "placeholder": "Enter Cheque Number",
-                                                          "stateName": "cheq",
+                                                          "stateName": "chqNum3",
                                                           "cssClassNames": [
                                                             {
                                                               "cssClassName": "emptyTextField3 "
@@ -2360,7 +2430,7 @@
                                                             "errorMsg": "This field is required"
                                                           },
                                                           "placeholder": "Enter Cheque Number",
-                                                          "stateName": "csk",
+                                                          "stateName": "chqNum5",
                                                           "disableUnderline": true,
                                                           "cssClassNames": [
                                                             {
@@ -2656,7 +2726,7 @@
                                                               "cssClassName": "emptyTextField3 "
                                                             }
                                                           ],
-                                                          "stateName": "cheque"
+                                                          "stateName": "chqNum2"
                                                         },
                                                         "icon": "FaWindowMinimize",
                                                         "group": "Form",
@@ -2870,7 +2940,7 @@
                                                             "errorMsg": "This field is required"
                                                           },
                                                           "placeholder": "Enter Cheque Number",
-                                                          "stateName": "ck",
+                                                          "stateName": "chqNum4",
                                                           "disableUnderline": true,
                                                           "cssClassNames": [
                                                             {
@@ -3284,6 +3354,22 @@
                                             "id": "zI7gHWOU87ADDA4MYrBbS",
                                             "gridProps": [
                                               {
+                                                "id": "HTVcQAsR9scuqhFb4HHd_",
+                                                "type": "20031",
+                                                "triggerName": "STOP_CHEQUE_MODAL_SHOW",
+                                                "attributes": {
+                                                  "widgetId": "_L8VYQhsrFKTeUm5uK5rH",
+                                                  "layoutProperties": {
+                                                    "xl": 12,
+                                                    "lg": 12,
+                                                    "md": 12,
+                                                    "sm": 12,
+                                                    "xs": 12
+                                                  }
+                                                },
+                                                "component": { "type": "20031" }
+                                              },
+                                              {
                                                 "id": "Fs4EhcwrGTEMATxouK_ia",
                                                 "status": "ACTIVE",
                                                 "attributes": {
@@ -3333,15 +3419,14 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "WzVrwHszCEti1PjzoXk0m",
-                                                    "triggerName": "NAVIGATE_PAYEE_TO_CONFIRM",
-                                                    "serviceType": "1",
+                                                    "triggerId": "QONt-1zy7LguvAsJRHVvZ",
+                                                    "triggerName": "STOP_CHEQUE_MODAL_SHOW",
+                                                    "serviceType": "9",
                                                     "attributes": {
-                                                      "fromWidgetId": "kCWSlexO5DOIMrXKqnp8l",
-                                                      "nextWidgetId": "SkzIkpCvq1E-lW1HYl_G5",
-                                                      "gridRadioValue": "Screen",
-                                                      "selectedObjectBindingKey": "selectedObject",
-                                                      "editableForm": false
+                                                      "widgetId": "_L8VYQhsrFKTeUm5uK5rH",
+                                                      "content": "",
+                                                      "type": "",
+                                                      "modalId": "HTVcQAsR9scuqhFb4HHd_"
                                                     },
                                                     "type": "2",
                                                     "name": "On click"
@@ -3610,9 +3695,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "htM8heNVlrovukdIDt6C4",
-    "createdBy": "masood",
-    "updatedAt": "8/18/2023",
-    "createdAt": "8/18/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "9/15/2023",
+    "createdAt": "9/15/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4307,7 +4392,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "55znhNq-lzQUP7s8vAeaf",
+        "triggerName": "getAllAccountsWithBalance",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "htM8heNVlrovukdIDt6C4",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -4455,9 +4547,9 @@
       "name": "Drop down",
       "stateName": "fromInstrument",
       "allValues": true,
-      "dataSource": "",
-      "dataKey": "",
-      "dataValue": "",
+      "dataSource": "accountdetails",
+      "dataKey": "accountNumber",
+      "dataValue": "accountNumber",
       "mandatory": true,
       "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
@@ -4485,14 +4577,13 @@
         "sm": 12,
         "xs": 12
       },
-      "dropdownOptions": [
-        { "code": "Current", "name": "Current" },
-        { "code": "Saving", "name": "Saving" }
-      ],
+      "dropdownOptions": [],
       "variant": "standard",
-      "selectedDataType": 1,
+      "selectedDataType": 0,
       "disableUnderline": true,
-      "placeholder": "Select Account"
+      "placeholder": "Select Account",
+      "storeType": 2,
+      "hideCondition": {}
     },
     "type": "20003",
     "events": [],
@@ -4550,7 +4641,12 @@
       },
       "direction": "row",
       "name": "Grid layout",
-      "cssClassNames": []
+      "cssClassNames": [],
+      "hideCondition": {
+        "logic": {
+          "==": [{ "var": "currentScreen.form.fromInstrument" }, null]
+        }
+      }
     },
     "layout": null,
     "events": [],
@@ -4858,8 +4954,10 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "3554301000001352",
-      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }]
+      "label": "fromInstrument.accountNumber",
+      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
+      "searchInState": true,
+      "storeType": 1
     },
     "icon": "FaFont",
     "group": "Form",
@@ -5085,8 +5183,10 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Waseem Khan",
-      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }]
+      "label": "fromInstrument.accountTitle",
+      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
+      "searchInState": true,
+      "storeType": 1
     },
     "icon": "FaFont",
     "group": "Form",
@@ -5311,8 +5411,10 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Current Account",
-      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }]
+      "label": "fromInstrument.accountType",
+      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
+      "searchInState": true,
+      "storeType": 1
     },
     "icon": "FaFont",
     "group": "Form",
@@ -5701,7 +5803,7 @@
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Cheque Number",
       "disableUnderline": true,
-      "stateName": "receiver",
+      "stateName": "chqNum1",
       "cssClassNames": [{ "cssClassName": "emptyTextField3" }]
     },
     "icon": "FaWindowMinimize",
@@ -5883,7 +5985,7 @@
       },
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Cheque Number",
-      "stateName": "cheq",
+      "stateName": "chqNum3",
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }],
       "disableUnderline": true
     },
@@ -6066,7 +6168,7 @@
       },
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Cheque Number",
-      "stateName": "csk",
+      "stateName": "chqNum5",
       "disableUnderline": true,
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
     },
@@ -6364,7 +6466,7 @@
       "placeholder": "Enter Cheque Number",
       "disableUnderline": true,
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }],
-      "stateName": "cheque"
+      "stateName": "chqNum2"
     },
     "icon": "FaWindowMinimize",
     "group": "Form",
@@ -6545,7 +6647,7 @@
       },
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Cheque Number",
-      "stateName": "ck",
+      "stateName": "chqNum4",
       "disableUnderline": true,
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
     },
@@ -6792,6 +6894,18 @@
             "sm": 12,
             "xs": 12
           },
+          "componentId": "HTVcQAsR9scuqhFb4HHd_",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
           "componentId": "Fs4EhcwrGTEMATxouK_ia",
           "componentType": "20006",
           "order": 1
@@ -6818,6 +6932,22 @@
     "events": [],
     "subType": "component",
     "screenId": "htM8heNVlrovukdIDt6C4",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "HTVcQAsR9scuqhFb4HHd_",
+    "type": "20031",
+    "triggerName": "STOP_CHEQUE_MODAL_SHOW",
+    "attributes": {
+      "widgetId": "_L8VYQhsrFKTeUm5uK5rH",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "htM8heNVlrovukdIDt6C4",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -6868,11 +6998,11 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "WzVrwHszCEti1PjzoXk0m",
-        "triggerName": "NAVIGATE_PAYEE_TO_CONFIRM",
+        "triggerId": "QONt-1zy7LguvAsJRHVvZ",
+        "triggerName": "STOP_CHEQUE_MODAL_SHOW",
         "name": "On click",
         "type": "2",
-        "serviceType": "1"
+        "serviceType": "9"
       }
     ],
     "path": "0-0-1-0-0-0-3-2-0-0-0",

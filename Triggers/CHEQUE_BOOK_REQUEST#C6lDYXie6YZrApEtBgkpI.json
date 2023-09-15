@@ -1,0 +1,74 @@
+{
+  "id": "Caj591Ap6QVmFh5w6FTHo",
+  "_id": "C6lDYXie6YZrApEtBgkpI",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHEQUE_BOOK_REQUEST",
+  "old_name": "CHEQUE_BOOK_REQUEST",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "fullStatementResponse",
+          "responseReturnValue": "message",
+          "url": "/chequeBookRequest",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "flowType",
+              "value": "CHEQUE_BOOK_REQUEST"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isNonPersonalizedChequeBook",
+              "value": "null"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "fromInstrument.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "numberOfLeaves",
+              "value": "numberOfLeaves.code"
+            }
+          ],
+          "baseURL": "65003e4e61f0645ad866d812",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Email_POP_UP_Modal",
+            "triggerId": "Y3ol1-nTtdvx3rWqoy9h5"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.tlpsmbhduve95wkbJa2eGiNDjII3BiEp",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

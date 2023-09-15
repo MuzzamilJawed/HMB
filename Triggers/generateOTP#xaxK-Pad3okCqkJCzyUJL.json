@@ -1,0 +1,55 @@
+{
+  "id": "W1Zrgxusxlzo0b_mfI92d",
+  "_id": "xaxK-Pad3okCqkJCzyUJL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "generateOTP",
+  "old_name": "generateOTP",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "generateOTPResponse",
+          "url": "/generateOTP",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "tranCode",
+              "value": "tranCode"
+            }
+          ],
+          "baseURL": "65015c4b61f0645ad866ef4a",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Swap Dashbboard to PayOrder",
+            "triggerId": "g3eUwcym-FGwrl--A9y2q"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.pxm4iskn3phpPFm_PyVTUg_yfoOlzwYF",
+  "updatedAt": "9/15/2023",
+  "createdAt": "9/15/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MIFlqgLNnNSe2FMlFM52U",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "DELETING_DEVICE_TRIGGER D",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "deletingDeviceReponse",
+          "url": "/deviceManagement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "validation",
+              "value": "validation"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "trustedDevice",
+              "value": "trustedDevice"
+            },
+            { "type": 4, "name": "Static", "key": "action", "value": "D" }
+          ],
+          "baseURL": "65015c4b61f0645ad866ef4a",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
+  "_id": "VdG_BTr4KgCoKitDeXfOr",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

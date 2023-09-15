@@ -1,0 +1,191 @@
+{
+  "id": "gLktwCUbMfKapJECrJQZM",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "PayOrder Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "TCicpprTZFn8DYos69xXs",
+              "name": "otpInfo Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+              "_id": "rRjW6WQgtFhIounPrQ3Ys",
+              "updatedAt": "9/13/2023",
+              "createdAt": "9/13/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "4vkm7glhrkqQgg_tVCN_l",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "payOrder",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "payOrderResponse",
+                      "url": "/payOrder",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "address",
+                          "value": "address"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "amount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneDOB",
+                          "value": "beneDOB"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneNTN",
+                          "value": "beneNTN"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneRelation",
+                          "value": "beneRelation"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "cnic",
+                          "value": "cnic"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "contactNumber",
+                          "value": "contactNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "favouring",
+                          "value": "favouring"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "payorderType",
+                          "value": "payorderType"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "purposeCode",
+                          "value": "purposeCode"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "for",
+                          "value": "for"
+                        }
+                      ],
+                      "baseURL": "65003e4e61f0645ad866d812",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+              "_id": "_zJJh1OlzCCIII4jNYGNY",
+              "updatedAt": "9/13/2023",
+              "createdAt": "9/13/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["TCicpprTZFn8DYos69xXs", "4vkm7glhrkqQgg_tVCN_l"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+  "_id": "kDiDUXjeR-FfBNqJSUt5v",
+  "updatedAt": "9/13/2023",
+  "createdAt": "9/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

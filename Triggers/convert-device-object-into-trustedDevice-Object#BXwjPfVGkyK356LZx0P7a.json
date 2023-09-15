@@ -21,11 +21,6 @@
           "destinationStoreType": 3,
           "filterList": [
             {
-              "key": "deviceKey",
-              "changeValueConditonally": true,
-              "logic": { "var": "currentSession.device.deviceKey" }
-            },
-            {
               "changeValueConditonally": true,
               "logic": { "var": "currentSession.device.name" },
               "key": "name"
@@ -44,6 +39,41 @@
               "key": "imei",
               "changeValueConditonally": true,
               "logic": { "if": [true, "111111111111111", "111111111111111"] }
+            },
+            {
+              "key": "notificationEnabled",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] }
+            },
+            {
+              "key": "ip",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "countryCode"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "dateTime"
+            },
+            {
+              "key": "fcmToken",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "0101010101", "0101010101"] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] },
+              "key": "isNotificationEnabled"
+            },
+            {
+              "key": "deviceKey",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.deviceKey" }
             }
           ],
           "targettedType": "object"
@@ -51,9 +81,9 @@
       }
     }
   ],
-  "csrf": "0.vw6w5achw2moGDeZCvY_wWjpbMji3MAZ",
-  "updatedAt": "8/29/2023",
-  "createdAt": "8/29/2023",
+  "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+  "updatedAt": "9/7/2023",
+  "createdAt": "9/7/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

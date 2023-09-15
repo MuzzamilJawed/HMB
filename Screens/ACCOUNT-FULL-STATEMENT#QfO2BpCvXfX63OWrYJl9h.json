@@ -6,6 +6,19 @@
     "attributes": {
       "gridProps": [
         {
+          "componentId": "MCK2ovPvWRitICZzE3Y60",
+          "componentType": "10001",
+          "id": "MCK2ovPvWRitICZzE3Y60",
+          "position": {
+            "i": "MCK2ovPvWRitICZzE3Y60",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+        },
+        {
           "componentId": "-4m1Z1-3VeCgYn5evaYxI",
           "componentType": "10001",
           "id": "-4m1Z1-3VeCgYn5evaYxI",
@@ -21,6 +34,28 @@
       ]
     },
     "layout": [
+      {
+        "type": "10001",
+        "id": "MCK2ovPvWRitICZzE3Y60",
+        "gridProps": [
+          {
+            "type": "column",
+            "id": "wfWpDS5YZ7YUDBhnRv2bs",
+            "gridProps": [
+              {
+                "id": "OvKDmfAHiu_SWCo4wEsGA",
+                "name": "Email_POP_UP_Modal",
+                "type": "20031",
+                "attributes": {
+                  "widgetId": "7cJXJmMn-MeoFj3D45cG9",
+                  "layoutProperties": {}
+                },
+                "component": { "type": "20031" }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "-4m1Z1-3VeCgYn5evaYxI",
         "status": "ACTIVE",
@@ -48,7 +83,7 @@
           "name": "ACCOUNT FULL STATEMENT"
         },
         "group": "Layout",
-        "type": "sidebarItem",
+        "type": "10001",
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
@@ -59,11 +94,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "1",
         "gridProps": [
           {
             "type": "column",
-            "id": "C7xHmRQmPXTy8A3nfYIgB",
+            "id": "mv2BXldiVAabT8oc2DQYw",
             "gridProps": [
               {
                 "type": "10001",
@@ -72,7 +107,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "3c87KpNkm6cfWicH-BV3y",
+                    "id": "hcwzYGFi3274LhA38loUl",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -133,12 +168,11 @@
                       "md": 10,
                       "sm": 10,
                       "xs": 10
-                    },
-                    "path": "0-0-0-0"
+                    }
                   },
                   {
                     "type": "column",
-                    "id": "Vj5Jo6YohDCUcXnPdpuXe",
+                    "id": "hFK-8cmNrP7iaE0x2NAJe",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -246,8 +280,7 @@
                       "md": 2,
                       "sm": 2,
                       "xs": 2
-                    },
-                    "path": "0-0-0-1"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -276,7 +309,61 @@
                   "direction": "row",
                   "name": "Grid layout"
                 },
-                "events": [],
+                "events": [
+                  {
+                    "triggerId": "55znhNq-lzQUP7s8vAeaf",
+                    "triggerName": "getAllAccountsWithBalance",
+                    "serviceType": "8",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "A"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "currentFilter",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "includeBalance",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "type": "1",
+                    "name": "On initialization"
+                  }
+                ],
                 "component": { "type": "10001", "content": "Grid layout" },
                 "path": "0-0-0",
                 "dimensions": {
@@ -296,13 +383,29 @@
                 "readOnly": true
               },
               {
+                "id": "qdeXjzoQ91VVhJl9GugNN",
+                "name": "Email_POP_UP_Modal",
+                "type": "20031",
+                "attributes": {
+                  "widgetId": "7cJXJmMn-MeoFj3D45cG9",
+                  "layoutProperties": {
+                    "xl": 12,
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xs": 12
+                  }
+                },
+                "component": { "type": "20031" }
+              },
+              {
                 "type": "10001",
                 "name": "AccountTable",
                 "id": "P_DzeGPSFz4AE-L-g6kJv",
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "o7tzgJ1xdnfm8Qb0I-Pmc",
+                    "id": "lQ2JXWDc5yJyBbBUvUR-9",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -820,9 +923,9 @@
                                                   "name": "Drop down",
                                                   "stateName": "fromInstrument",
                                                   "allValues": true,
-                                                  "dataSource": "",
-                                                  "dataKey": "",
-                                                  "dataValue": "",
+                                                  "dataSource": "accountdetails",
+                                                  "dataKey": "accountNumber",
+                                                  "dataValue": "accountNumber",
                                                   "mandatory": true,
                                                   "validate": {
                                                     "required": false,
@@ -852,25 +955,12 @@
                                                     "sm": 12,
                                                     "xs": 12
                                                   },
-                                                  "dropdownOptions": [
-                                                    {
-                                                      "code": "Current",
-                                                      "name": "Current"
-                                                    },
-                                                    {
-                                                      "code": "SAVING",
-                                                      "name": "SAVING"
-                                                    },
-                                                    {
-                                                      "code": "RAAST",
-                                                      "name": "RAAST"
-                                                    }
-                                                  ],
+                                                  "dropdownOptions": [],
                                                   "variant": "standard",
-                                                  "selectedDataType": 1,
+                                                  "selectedDataType": 0,
                                                   "placeholder": "From Account Number",
                                                   "disableUnderline": true,
-                                                  "storeType": 1,
+                                                  "storeType": 2,
                                                   "defaultKey": "md"
                                                 },
                                                 "type": "20003",
@@ -2052,6 +2142,262 @@
                                                   "content": "Grid layout"
                                                 },
                                                 "path": "0-0-1-0-0-0-3-1-0-0-1"
+                                              },
+                                              {
+                                                "type": "10001",
+                                                "name": "Grid layout",
+                                                "id": "MJjSamKJBuxJ52gMdyXPx",
+                                                "gridProps": [
+                                                  {
+                                                    "type": "column",
+                                                    "id": "8w8IvcbQyJuRzoTJfRUD2",
+                                                    "gridProps": [
+                                                      {
+                                                        "type": "10001",
+                                                        "name": "Grid layout",
+                                                        "id": "UhJtoJYkrbzEnALx-1VXw",
+                                                        "gridProps": [
+                                                          {
+                                                            "type": "column",
+                                                            "id": "Q1_49H8ffarC9Nk-DhG3u",
+                                                            "gridProps": [
+                                                              {
+                                                                "id": "XEtgf4i8qfHFnbZChb0OI",
+                                                                "status": "ACTIVE",
+                                                                "name": "Date picker",
+                                                                "icon": "FaCalendarDay",
+                                                                "group": "Form",
+                                                                "updatedAt": "23-Aug-2021",
+                                                                "createdAt": "23-Aug-2021",
+                                                                "order": 3,
+                                                                "type": "20027",
+                                                                "attributes": {
+                                                                  "name": "Calendar",
+                                                                  "label": "",
+                                                                  "stateName": "fromDate",
+                                                                  "format": "dd-MM-yyyy",
+                                                                  "variant": "standard",
+                                                                  "validate": {
+                                                                    "required": false,
+                                                                    "errorMsg": "",
+                                                                    "isCalendar": true
+                                                                  },
+                                                                  "layoutProperties": {
+                                                                    "dateCalendar": {
+                                                                      "//": "Use this class to style calender component."
+                                                                    },
+                                                                    "mainContainer": "dateCalendar",
+                                                                    "xl": 12,
+                                                                    "lg": 12,
+                                                                    "md": 12,
+                                                                    "sm": 12,
+                                                                    "xs": 12
+                                                                  },
+                                                                  "placeholder": "Select Date",
+                                                                  "disableUnderline": true
+                                                                },
+                                                                "version": "1.0.0",
+                                                                "isLatest": true,
+                                                                "projectType": "web",
+                                                                "component": {
+                                                                  "content": "Date picker",
+                                                                  "type": "20027"
+                                                                },
+                                                                "event": [],
+                                                                "path": "0-0-1-0-0-0-3-1-0-0-2-0-0-0-0"
+                                                              }
+                                                            ],
+                                                            "layoutProperties": {
+                                                              "xl": 12,
+                                                              "lg": 12,
+                                                              "md": 12,
+                                                              "sm": 12,
+                                                              "xs": 12
+                                                            }
+                                                          }
+                                                        ],
+                                                        "allowedContainers": [
+                                                          "10001",
+                                                          "20030",
+                                                          "noLayout",
+                                                          "20010",
+                                                          "widget"
+                                                        ],
+                                                        "attributes": {
+                                                          "gridProps": [],
+                                                          "label": "Header",
+                                                          "layoutProperties": {
+                                                            "gridLayout": {
+                                                              "//": "Use this class to style grid layout component.",
+                                                              "padding": "5px",
+                                                              "spacing": 0
+                                                            },
+                                                            "mainContainer": "gridLayout"
+                                                          },
+                                                          "layoutProps": {
+                                                            "direction": "row",
+                                                            "justifyContent": "flex-start",
+                                                            "alignItems": "flex-start"
+                                                          },
+                                                          "direction": "row",
+                                                          "name": "Grid layout"
+                                                        },
+                                                        "events": [],
+                                                        "component": {
+                                                          "type": "10001",
+                                                          "content": "Grid layout"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "layoutProperties": {
+                                                      "xl": 6,
+                                                      "lg": 6,
+                                                      "md": 6,
+                                                      "sm": 6,
+                                                      "xs": 6
+                                                    }
+                                                  },
+                                                  {
+                                                    "type": "column",
+                                                    "id": "V1wosT1g9DO1FAzwGM_Nt",
+                                                    "gridProps": [
+                                                      {
+                                                        "type": "10001",
+                                                        "name": "Grid layout",
+                                                        "id": "0fCl1qJW4U9swdv-WxRuf",
+                                                        "gridProps": [
+                                                          {
+                                                            "type": "column",
+                                                            "id": "bxxjKLR_nzTcDe9CMw_pB",
+                                                            "gridProps": [
+                                                              {
+                                                                "id": "xhMNox0gSpBvWso6QP3v1",
+                                                                "status": "ACTIVE",
+                                                                "name": "Date picker",
+                                                                "icon": "FaCalendarDay",
+                                                                "group": "Form",
+                                                                "updatedAt": "23-Aug-2021",
+                                                                "createdAt": "23-Aug-2021",
+                                                                "order": 3,
+                                                                "type": "20027",
+                                                                "attributes": {
+                                                                  "name": "Calendar",
+                                                                  "label": "",
+                                                                  "stateName": "toDate",
+                                                                  "format": "dd-MM-yyyy",
+                                                                  "variant": "standard",
+                                                                  "validate": {
+                                                                    "required": false,
+                                                                    "errorMsg": "",
+                                                                    "isCalendar": true
+                                                                  },
+                                                                  "layoutProperties": {
+                                                                    "dateCalendar": {
+                                                                      "//": "Use this class to style calender component."
+                                                                    },
+                                                                    "mainContainer": "dateCalendar",
+                                                                    "xl": 12,
+                                                                    "lg": 12,
+                                                                    "md": 12,
+                                                                    "sm": 12,
+                                                                    "xs": 12
+                                                                  },
+                                                                  "placeholder": "select Date",
+                                                                  "disableUnderline": true
+                                                                },
+                                                                "version": "1.0.0",
+                                                                "isLatest": true,
+                                                                "projectType": "web",
+                                                                "component": {
+                                                                  "content": "Date picker",
+                                                                  "type": "20027"
+                                                                },
+                                                                "event": [],
+                                                                "path": "0-0-1-0-0-0-3-1-0-0-2-1-0-0-0"
+                                                              }
+                                                            ],
+                                                            "layoutProperties": {
+                                                              "xl": 12,
+                                                              "lg": 12,
+                                                              "md": 12,
+                                                              "sm": 12,
+                                                              "xs": 12
+                                                            }
+                                                          }
+                                                        ],
+                                                        "allowedContainers": [
+                                                          "10001",
+                                                          "20030",
+                                                          "noLayout",
+                                                          "20010",
+                                                          "widget"
+                                                        ],
+                                                        "attributes": {
+                                                          "gridProps": [],
+                                                          "label": "Header",
+                                                          "layoutProperties": {
+                                                            "gridLayout": {
+                                                              "//": "Use this class to style grid layout component.",
+                                                              "padding": "5px",
+                                                              "spacing": 0
+                                                            },
+                                                            "mainContainer": "gridLayout"
+                                                          },
+                                                          "layoutProps": {
+                                                            "direction": "row",
+                                                            "justifyContent": "flex-start",
+                                                            "alignItems": "flex-start"
+                                                          },
+                                                          "direction": "row",
+                                                          "name": "Grid layout"
+                                                        },
+                                                        "events": [],
+                                                        "component": {
+                                                          "type": "10001",
+                                                          "content": "Grid layout"
+                                                        }
+                                                      }
+                                                    ],
+                                                    "layoutProperties": {
+                                                      "xl": 6,
+                                                      "lg": 6,
+                                                      "md": 6,
+                                                      "sm": 6,
+                                                      "xs": 6
+                                                    }
+                                                  }
+                                                ],
+                                                "allowedContainers": [
+                                                  "10001",
+                                                  "20030",
+                                                  "noLayout",
+                                                  "20010",
+                                                  "widget"
+                                                ],
+                                                "attributes": {
+                                                  "gridProps": [],
+                                                  "label": "Header",
+                                                  "layoutProperties": {
+                                                    "gridLayout": {
+                                                      "//": "Use this class to style grid layout component.",
+                                                      "padding": "5px",
+                                                      "spacing": 0
+                                                    },
+                                                    "mainContainer": "gridLayout"
+                                                  },
+                                                  "layoutProps": {
+                                                    "direction": "row",
+                                                    "justifyContent": "flex-start",
+                                                    "alignItems": "flex-start"
+                                                  },
+                                                  "direction": "row",
+                                                  "name": "Grid layout"
+                                                },
+                                                "events": [],
+                                                "component": {
+                                                  "type": "10001",
+                                                  "content": "Grid layout"
+                                                }
                                               }
                                             ],
                                             "layoutProperties": {
@@ -2373,8 +2719,94 @@
                                                   "content": "Button",
                                                   "type": "20006"
                                                 },
-                                                "events": [],
-                                                "path": "0-0-1-0-0-0-4-2-0-0-0"
+                                                "events": [
+                                                  {
+                                                    "triggerId": "M21eG40Q3hFjBDDA8xhpr",
+                                                    "triggerName": "fullStatement",
+                                                    "serviceType": "8",
+                                                    "attributes": {
+                                                      "loaderWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "messageWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "responseStateKey": "fullStatementResponse",
+                                                      "url": "/fullStatement",
+                                                      "checksum": true,
+                                                      "encryption": true,
+                                                      "isDeviceDetails": true,
+                                                      "loginTrigger": false,
+                                                      "formData": false,
+                                                      "logoutTrigger": false,
+                                                      "headers": {
+                                                        "Content-Type": "application/json",
+                                                        "channel_key": "005"
+                                                      },
+                                                      "requestBody": [
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "displayOption",
+                                                          "value": "onScreen"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "branchName",
+                                                          "value": "null"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "searchCriteria",
+                                                          "value": "dateRange"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "quickRange",
+                                                          "value": "null"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "isByDate",
+                                                          "value": "1"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "accountNumber",
+                                                          "value": "fromInstrument.accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "accountCurrency",
+                                                          "value": "fromInstrument.currency"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "toDate",
+                                                          "value": "toDate"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "fromDate",
+                                                          "value": "fromDate"
+                                                        }
+                                                      ],
+                                                      "baseURL": "64f9a08b683922479c062070",
+                                                      "storeType": 2
+                                                    },
+                                                    "type": "4",
+                                                    "name": "On Submit"
+                                                  }
+                                                ],
+                                                "path": "1-0-2-0-0-0-4-2-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -2538,8 +2970,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-1-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -2566,11 +2997,11 @@
                     "alignItems": "flex-start"
                   },
                   "direction": "row",
-                  "name": "Grid layout"
+                  "name": "AccountTable"
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-1",
+                "path": "1-0-2",
                 "dimensions": {
                   "rows": 1,
                   "columns": 1,
@@ -2578,8 +3009,7 @@
                   "colSize0sm": 12,
                   "colSize0md": 12,
                   "colSize0lg": 12,
-                  "colSize0xl": 12,
-                  "name": null
+                  "colSize0xl": 12
                 },
                 "readOnly": true
               }
@@ -2590,11 +3020,20 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+        "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
+        "dimensions": {
+          "rows": 1,
+          "columns": 1,
+          "colSize0xs": 12,
+          "colSize0sm": 12,
+          "colSize0md": 12,
+          "colSize0lg": 12,
+          "colSize0xl": 12
+        },
+        "readOnly": true
       }
     ],
     "events": [],
@@ -2604,9 +3043,47 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "QfO2BpCvXfX63OWrYJl9h",
-    "createdBy": "masood",
-    "updatedAt": "8/24/2023",
-    "createdAt": "8/24/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "9/14/2023",
+    "createdAt": "9/14/2023",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "MCK2ovPvWRitICZzE3Y60",
+    "name": "Component",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {},
+          "componentId": "OvKDmfAHiu_SWCo4wEsGA",
+          "componentType": "20031",
+          "order": 1
+        }
+      ]
+    },
+    "layout": null,
+    "subType": "component",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "OvKDmfAHiu_SWCo4wEsGA",
+    "name": "Email_POP_UP_Modal",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "7cJXJmMn-MeoFj3D45cG9",
+      "layoutProperties": {}
+    },
+    "component": { "type": "20031" },
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2633,6 +3110,18 @@
             "sm": 12,
             "xs": 12
           }
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "qdeXjzoQ91VVhJl9GugNN",
+          "componentType": "20031",
+          "order": 1
         },
         {
           "componentId": "P_DzeGPSFz4AE-L-g6kJv",
@@ -2738,7 +3227,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "55znhNq-lzQUP7s8vAeaf",
+        "triggerName": "getAllAccountsWithBalance",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "QfO2BpCvXfX63OWrYJl9h",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -2868,6 +3364,22 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
+    "id": "qdeXjzoQ91VVhJl9GugNN",
+    "name": "Email_POP_UP_Modal",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "7cJXJmMn-MeoFj3D45cG9",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
     "id": "P_DzeGPSFz4AE-L-g6kJv",
     "name": "AccountTable",
     "type": "10001",
@@ -2908,7 +3420,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "AccountTable"
     },
     "layout": null,
     "events": [],
@@ -3542,9 +4054,9 @@
       "name": "Drop down",
       "stateName": "fromInstrument",
       "allValues": true,
-      "dataSource": "",
-      "dataKey": "",
-      "dataValue": "",
+      "dataSource": "accountdetails",
+      "dataKey": "accountNumber",
+      "dataValue": "accountNumber",
       "mandatory": true,
       "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
@@ -3571,16 +4083,12 @@
         "sm": 12,
         "xs": 12
       },
-      "dropdownOptions": [
-        { "code": "Current", "name": "Current" },
-        { "code": "SAVING", "name": "SAVING" },
-        { "code": "RAAST", "name": "RAAST" }
-      ],
+      "dropdownOptions": [],
       "variant": "standard",
-      "selectedDataType": 1,
+      "selectedDataType": 0,
       "placeholder": "From Account Number",
       "disableUnderline": true,
-      "storeType": 1,
+      "storeType": 2,
       "defaultKey": "md"
     },
     "type": "20003",
@@ -4277,6 +4785,25 @@
             "sm": 12,
             "xs": 12
           }
+        },
+        {
+          "componentId": "MJjSamKJBuxJ52gMdyXPx",
+          "componentType": "10001",
+          "id": "MJjSamKJBuxJ52gMdyXPx",
+          "position": {
+            "i": "MJjSamKJBuxJ52gMdyXPx",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
         }
       ],
       "label": "Header",
@@ -4599,6 +5126,237 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
+    "id": "MJjSamKJBuxJ52gMdyXPx",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "UhJtoJYkrbzEnALx-1VXw",
+          "componentType": "10001",
+          "id": "UhJtoJYkrbzEnALx-1VXw",
+          "position": {
+            "i": "UhJtoJYkrbzEnALx-1VXw",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+        },
+        {
+          "componentId": "0fCl1qJW4U9swdv-WxRuf",
+          "componentType": "10001",
+          "id": "0fCl1qJW4U9swdv-WxRuf",
+          "position": {
+            "i": "0fCl1qJW4U9swdv-WxRuf",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "UhJtoJYkrbzEnALx-1VXw",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "XEtgf4i8qfHFnbZChb0OI",
+          "componentType": "20027",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "XEtgf4i8qfHFnbZChb0OI",
+    "status": "ACTIVE",
+    "name": "Date picker",
+    "icon": "FaCalendarDay",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 3,
+    "type": "20027",
+    "attributes": {
+      "name": "Calendar",
+      "label": "",
+      "stateName": "fromDate",
+      "format": "dd-MM-yyyy",
+      "variant": "standard",
+      "validate": { "required": false, "errorMsg": "", "isCalendar": true },
+      "layoutProperties": {
+        "dateCalendar": { "//": "Use this class to style calender component." },
+        "mainContainer": "dateCalendar",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "placeholder": "Select Date",
+      "disableUnderline": true
+    },
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Date picker", "type": "20027" },
+    "event": [],
+    "path": "0-0-1-0-0-0-3-1-0-0-2-0-0-0-0",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "0fCl1qJW4U9swdv-WxRuf",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "xhMNox0gSpBvWso6QP3v1",
+          "componentType": "20027",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "xhMNox0gSpBvWso6QP3v1",
+    "status": "ACTIVE",
+    "name": "Date picker",
+    "icon": "FaCalendarDay",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 3,
+    "type": "20027",
+    "attributes": {
+      "name": "Calendar",
+      "label": "",
+      "stateName": "toDate",
+      "format": "dd-MM-yyyy",
+      "variant": "standard",
+      "validate": { "required": false, "errorMsg": "", "isCalendar": true },
+      "layoutProperties": {
+        "dateCalendar": { "//": "Use this class to style calender component." },
+        "mainContainer": "dateCalendar",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "placeholder": "select Date",
+      "disableUnderline": true
+    },
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Date picker", "type": "20027" },
+    "event": [],
+    "path": "0-0-1-0-0-0-3-1-0-0-2-1-0-0-0",
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
     "id": "an0DdNB4mDmrO53_LBmgw",
     "name": "Grid layout",
     "type": "10001",
@@ -4864,8 +5622,16 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
-    "path": "0-0-1-0-0-0-4-2-0-0-0",
+    "events": [
+      {
+        "triggerId": "M21eG40Q3hFjBDDA8xhpr",
+        "triggerName": "fullStatement",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "8"
+      }
+    ],
+    "path": "1-0-2-0-0-0-4-2-0-0-0",
     "screenId": "QfO2BpCvXfX63OWrYJl9h",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

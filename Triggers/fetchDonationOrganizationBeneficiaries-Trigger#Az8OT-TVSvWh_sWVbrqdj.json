@@ -1,0 +1,50 @@
+{
+  "id": "0-6aBXABzvCu07a7o_SX4",
+  "_id": "Az8OT-TVSvWh_sWVbrqdj",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "fetchDonationOrganizationBeneficiaries Trigger",
+  "old_name": "fetchDonationOrganizationBeneficiaries Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "zakatList",
+          "responseReturnValue": "content.donationOrganizations",
+          "url": "/fetchDonationOrganizationBeneficiaries",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferType",
+              "value": "ZAKAAT"
+            }
+          ],
+          "baseURL": "64f968d3683922479c0616ba",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
+  "updatedAt": "9/14/2023",
+  "createdAt": "9/14/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
