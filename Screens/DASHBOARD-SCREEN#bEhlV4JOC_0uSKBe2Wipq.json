@@ -960,7 +960,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "2DuwD4kJg2gWH81ZoBqxi",
+                            "id": "52BejChWuXC3BO1TwO3N4",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -1278,12 +1278,12 @@
                         },
                         "events": [
                           {
-                            "triggerId": "9knXtVwLEonMs8IDevhCi",
-                            "triggerName": "NAVIGATE_TO_DEVICE_MANAGEMENT_SCREEN",
+                            "triggerId": "7PTGcIrSrgEXd-2XRCJDp",
+                            "triggerName": "NAVIGATE_TO_CARD_REQUEST_SCREEN",
                             "serviceType": "1",
                             "attributes": {
                               "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                              "nextWidgetId": "xMaecm_ElqB-doDrM3rJb",
+                              "nextWidgetId": "aEmgnt0YjDr42ejV7jJEb",
                               "gridRadioValue": "Screen",
                               "selectedObjectBindingKey": "selectedObject",
                               "editableForm": false
@@ -9391,7 +9391,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "JQqpjKqSsShhRLKX60Nk2",
+                                                            "id": "x9i56pP3JWsShaP1o5514",
                                                             "gridProps": [
                                                               {
                                                                 "id": "6NV5lZ2Ma2Sxp2M7dBk9z",
@@ -9475,15 +9475,105 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "3G5gz948z3qFzvKyP7uHY",
-                                                            "triggerName": "NAVIGATE_TO_DORMANCY_REMOVAL_SCREEN",
-                                                            "serviceType": "1",
+                                                            "triggerId": "mMtmceJxMDHe7j6X0B-sE",
+                                                            "triggerName": "CHAIN_TRIGGER_FOR_CARD_REQUEST",
+                                                            "serviceType": "2",
                                                             "attributes": {
-                                                              "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                              "nextWidgetId": "8ky01TGmNEqMywGZk2vCG",
-                                                              "gridRadioValue": "Screen",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "editableForm": false
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "7PTGcIrSrgEXd-2XRCJDp",
+                                                                  "name": "NAVIGATE_TO_CARD_REQUEST_SCREEN",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "1",
+                                                                      "command": {
+                                                                        "type": "2",
+                                                                        "attributes": {
+                                                                          "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
+                                                                          "nextWidgetId": "aEmgnt0YjDr42ejV7jJEb",
+                                                                          "gridRadioValue": "Screen",
+                                                                          "selectedObjectBindingKey": "selectedObject",
+                                                                          "editableForm": false
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.jyckxjuhrvsaOFdx96xKxQ3PES3q4hAQ",
+                                                                  "_id": "AoMyDcfQ-eV9DbNhnv4Sz",
+                                                                  "updatedAt": "9/20/2023",
+                                                                  "createdAt": "9/20/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                },
+                                                                {
+                                                                  "id": "oBGaaJoo7TE0eJwoEWXPx",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "FECTHING CARD TYPES",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "cardTypes",
+                                                                          "responseReturnValue": "content.cardName",
+                                                                          "successMessageBindingKey": "successMessage",
+                                                                          "errorMessageBindingKey": "errorMessage",
+                                                                          "url": "/cardTypes",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "inquiry",
+                                                                              "value": "null"
+                                                                            },
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "temp",
+                                                                              "value": "null"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": []
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.i5lvigamudaVD8ElLjUVN4e3VfqapJw",
+                                                                  "_id": "2_rctnyQq-GYqZkLnbhRj",
+                                                                  "updatedAt": "9/20/2023",
+                                                                  "createdAt": "9/20/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "7PTGcIrSrgEXd-2XRCJDp",
+                                                                "oBGaaJoo7TE0eJwoEWXPx"
+                                                              ]
                                                             },
                                                             "type": "2",
                                                             "name": "On click"
@@ -10190,7 +10280,7 @@
                                                 "gridProps": [
                                                   {
                                                     "type": "column",
-                                                    "id": "5NyZm-nn7ygubcPy41l-p",
+                                                    "id": "QMicGy5q_GDtYdZPXn84C",
                                                     "gridProps": [
                                                       {
                                                         "type": "10001",
@@ -10326,7 +10416,7 @@
                                                   },
                                                   {
                                                     "type": "column",
-                                                    "id": "OmgciKtndnRXq1-vpdtrj",
+                                                    "id": "Z4SEy6tkkXmMp__jBx5lv",
                                                     "gridProps": [
                                                       {
                                                         "type": "10001",
@@ -10445,7 +10535,7 @@
                                                   },
                                                   {
                                                     "type": "column",
-                                                    "id": "kUw67IdOtrgmtweY-33HT",
+                                                    "id": "g4OY6pekfMa7o2KMkxK9k",
                                                     "gridProps": [
                                                       {
                                                         "type": "10001",
@@ -10584,15 +10674,44 @@
                                                 "path": "0-0-2-0-0-2-0-0-0-0-0",
                                                 "events": [
                                                   {
-                                                    "triggerId": "FLy_xj-qnvLdlUev_ydgB",
-                                                    "triggerName": "zakat List",
-                                                    "serviceType": "1",
+                                                    "triggerId": "EaLUWS59fRY-ghPt3s3Lt",
+                                                    "triggerName": "Userprofile",
+                                                    "serviceType": "8",
                                                     "attributes": {
-                                                      "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                      "nextWidgetId": "dbztCHq929PZ6LEL6BUed",
-                                                      "gridRadioValue": "Screen",
-                                                      "selectedObjectBindingKey": "selectedObject",
-                                                      "editableForm": false
+                                                      "loaderWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "messageWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "responseStateKey": "userProfileResponse",
+                                                      "url": "/profile",
+                                                      "checksum": true,
+                                                      "encryption": true,
+                                                      "isDeviceDetails": false,
+                                                      "loginTrigger": false,
+                                                      "formData": false,
+                                                      "logoutTrigger": false,
+                                                      "headers": {
+                                                        "Content-Type": "application/json",
+                                                        "channel_key": "005"
+                                                      },
+                                                      "requestBody": [
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "inquiry",
+                                                          "value": "null"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "temp",
+                                                          "value": "null"
+                                                        }
+                                                      ],
+                                                      "baseURL": "6508273fc9bf2957746cb550",
+                                                      "storeType": 2
                                                     },
                                                     "type": "2",
                                                     "name": "On click"
@@ -15912,8 +16031,8 @@
     "gitBranchName": "master",
     "_id": "bEhlV4JOC_0uSKBe2Wipq",
     "createdBy": "muhammad.asad",
-    "updatedAt": "9/15/2023",
-    "createdAt": "9/15/2023",
+    "updatedAt": "9/20/2023",
+    "createdAt": "9/20/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -16784,8 +16903,8 @@
     "layout": null,
     "events": [
       {
-        "triggerId": "9knXtVwLEonMs8IDevhCi",
-        "triggerName": "NAVIGATE_TO_DEVICE_MANAGEMENT_SCREEN",
+        "triggerId": "7PTGcIrSrgEXd-2XRCJDp",
+        "triggerName": "NAVIGATE_TO_CARD_REQUEST_SCREEN",
         "name": "On click",
         "type": "2"
       }
@@ -24287,8 +24406,8 @@
     "layout": null,
     "events": [
       {
-        "triggerId": "3G5gz948z3qFzvKyP7uHY",
-        "triggerName": "NAVIGATE_TO_DORMANCY_REMOVAL_SCREEN",
+        "triggerId": "mMtmceJxMDHe7j6X0B-sE",
+        "triggerName": "CHAIN_TRIGGER_FOR_CARD_REQUEST",
         "name": "On click",
         "type": "2"
       }
@@ -25018,8 +25137,8 @@
     "layout": null,
     "events": [
       {
-        "triggerId": "FLy_xj-qnvLdlUev_ydgB",
-        "triggerName": "zakat List",
+        "triggerId": "EaLUWS59fRY-ghPt3s3Lt",
+        "triggerName": "Userprofile",
         "name": "On click",
         "type": "2"
       }

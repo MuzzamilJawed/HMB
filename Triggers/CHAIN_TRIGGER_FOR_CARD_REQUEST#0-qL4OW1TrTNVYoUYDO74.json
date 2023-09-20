@@ -1,0 +1,112 @@
+{
+  "id": "mMtmceJxMDHe7j6X0B-sE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHAIN_TRIGGER_FOR_CARD_REQUEST",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "7PTGcIrSrgEXd-2XRCJDp",
+              "name": "NAVIGATE_TO_CARD_REQUEST_SCREEN",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
+                      "nextWidgetId": "aEmgnt0YjDr42ejV7jJEb",
+                      "gridRadioValue": "Screen",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.jyckxjuhrvsaOFdx96xKxQ3PES3q4hAQ",
+              "_id": "AoMyDcfQ-eV9DbNhnv4Sz",
+              "updatedAt": "9/20/2023",
+              "createdAt": "9/20/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "oBGaaJoo7TE0eJwoEWXPx",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "FECTHING CARD TYPES",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "cardTypes",
+                      "responseReturnValue": "content.cardName",
+                      "successMessageBindingKey": "successMessage",
+                      "errorMessageBindingKey": "errorMessage",
+                      "url": "/cardTypes",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "inquiry",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "temp",
+                          "value": "null"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.i5lvigamudaVD8ElLjUVN4e3VfqapJw",
+              "_id": "2_rctnyQq-GYqZkLnbhRj",
+              "updatedAt": "9/20/2023",
+              "createdAt": "9/20/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["7PTGcIrSrgEXd-2XRCJDp", "oBGaaJoo7TE0eJwoEWXPx"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.i5lvigamudaVD8ElLjUVN4e3VfqapJw",
+  "_id": "0-qL4OW1TrTNVYoUYDO74",
+  "updatedAt": "9/20/2023",
+  "createdAt": "9/20/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

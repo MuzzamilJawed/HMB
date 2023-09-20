@@ -1,0 +1,174 @@
+{
+  "id": "mJNG4BJ_DlW69duuCjGKc",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Investment Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "TCicpprTZFn8DYos69xXs",
+              "name": "otpInfo Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+              "_id": "rRjW6WQgtFhIounPrQ3Ys",
+              "updatedAt": "9/13/2023",
+              "createdAt": "9/13/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "ZOJ6kqEH88cWQIM2jPD0Q",
+              "_id": "hY4zsMgONJKcKPnK-J5lI",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Investment",
+              "old_name": "Investment",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "investmentResponse",
+                      "url": "/cdc/submit",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "investmentTypeCode",
+                          "value": "selectedObject.investmentTypeCode"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "emailAddress",
+                          "value": "emailAddress"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "borkerName",
+                          "value": "selectedObject.borkerName"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "investmentTypeValue",
+                          "value": "selectedObject.investmentTypeValue"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "getData.accountId"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "brokerId",
+                          "value": "selectedObject.brokerId"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "userConsent",
+                          "value": "true"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "mobileNumber",
+                          "value": "mobileNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.76bjnipl9o9F9In34y2YVsxFkNMRGDY",
+              "updatedAt": "9/18/2023",
+              "createdAt": "9/18/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["TCicpprTZFn8DYos69xXs", "ZOJ6kqEH88cWQIM2jPD0Q"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.76bjnipl9o9F9In34y2YVsxFkNMRGDY",
+  "_id": "-HcaxWL0MEhfkq5OxfU1B",
+  "updatedAt": "9/18/2023",
+  "createdAt": "9/18/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

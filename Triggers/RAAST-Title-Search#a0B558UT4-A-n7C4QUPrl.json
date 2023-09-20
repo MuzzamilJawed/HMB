@@ -1,0 +1,70 @@
+{
+  "id": "xFDbBGjpvL1RAczoseUlo",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "RAAST Title Search",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "RAASTTitleResponse",
+          "url": "/raast/titlesearch",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccount",
+              "value": "getData.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "toAccount",
+              "value": "toAccount"
+            },
+            { "type": 1, "name": "Form", "key": "purpose", "value": "purpose" },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "aliasType",
+              "value": "aliasType"
+            },
+            { "type": 1, "name": "Form", "key": "rda", "value": "getData.rda" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "getData.accountNumber"
+            },
+            { "type": 4, "name": "Static", "key": "bicCode", "value": "null" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.6u22x2vwhlsYq1HOPPbq20GPDa0mj8Xu",
+  "_id": "a0B558UT4-A-n7C4QUPrl",
+  "updatedAt": "9/18/2023",
+  "createdAt": "9/18/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

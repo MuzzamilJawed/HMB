@@ -1,0 +1,55 @@
+{
+  "id": "kfLJjlPFzFtdWOArWJ-Xp",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "cardUsage Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "cardUsageResponse",
+          "url": "/cardusage",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromDate",
+              "value": "fromDate"
+            },
+            { "type": 1, "name": "Form", "key": "toDate", "value": "toDate" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "cardNumber",
+              "value": "selectedCard.cardNumber"
+            }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.6u22x2vwhlsYq1HOPPbq20GPDa0mj8Xu",
+  "_id": "dIXBARXcw7C7zk2SUmMy_",
+  "updatedAt": "9/18/2023",
+  "createdAt": "9/18/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
