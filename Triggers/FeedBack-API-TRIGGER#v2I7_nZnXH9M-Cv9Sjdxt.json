@@ -1,0 +1,51 @@
+{
+  "id": "p93LyWV6yeZQBY6trsTu0",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "FeedBack API TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "responseOfFeedBack",
+          "successMessageBindingKey": "successMessage",
+          "errorMessageBindingKey": "errorMessage",
+          "url": "/feedback ",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "feedback",
+              "value": "feedback"
+            },
+            { "type": 4, "name": "Static", "key": "rating", "value": "5" }
+          ],
+          "baseURL": "6508273fc9bf2957746cb550",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.8kcuqju35rhUuG2K-VotHztN9F0jlsbq",
+  "_id": "v2I7_nZnXH9M-Cv9Sjdxt",
+  "updatedAt": "9/20/2023",
+  "createdAt": "9/20/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}
