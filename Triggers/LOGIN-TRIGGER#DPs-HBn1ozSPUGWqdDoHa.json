@@ -15,11 +15,12 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "userProfile",
+          "successMessageBindingKey": "successMessage",
           "errorMessageBindingKey": "errorMessage",
           "url": "/validateLoginPassword",
           "checksum": true,
           "encryption": true,
-          "isDeviceDetails": true,
+          "isDeviceDetails": false,
           "loginTrigger": "loginTrigger",
           "formData": false,
           "logoutTrigger": false,
@@ -73,15 +74,16 @@
             "triggerId": "ELIOJXwcjZ-eTgLM9KgXR"
           },
           {
-            "httpStatus": 400,
-            "triggerName": "Show LOGIN Error MODAL",
-            "triggerId": "1QobTbCLyrhUhP4oGcyvD"
+            "httpStatus": 200,
+            "triggerName": "FeedBack Show Modal Trigger",
+            "triggerId": "8wT9g9iXX-ZMU1ZOB0Mnu",
+            "logic": { "==": [{ "var": "code" }, 0] }
           }
         ]
       }
     }
   ],
-  "csrf": "0.4ii3k8be7uyn_UkRMm8DX-DH7M0Eves9",
+  "csrf": "0.kmzyvdezzlhmRYK0Z2F06mgx5XQLh-U2",
   "updatedAt": "9/20/2023",
   "createdAt": "9/20/2023",
   "createdBy": "masood",

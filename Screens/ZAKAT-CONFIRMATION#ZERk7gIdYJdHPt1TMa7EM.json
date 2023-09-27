@@ -2602,7 +2602,12 @@
                                                     "sm": 12,
                                                     "xs": 12
                                                   },
-                                                  "label": "Amount"
+                                                  "label": "Amount",
+                                                  "cssClassNames": [
+                                                    {
+                                                      "cssClassName": "Label_Type_Css "
+                                                    }
+                                                  ]
                                                 },
                                                 "icon": "FaFont",
                                                 "group": "Form",
@@ -2678,14 +2683,14 @@
                                       {
                                         "type": "10001",
                                         "name": "Grid layout",
-                                        "id": "Qoo-_6wsHTvRDXR52sffw",
+                                        "id": "TCh9nh_VhoGNej933wQd_",
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "11cVC9nXcCRx7sqezVtSS",
+                                            "id": "Pr9HCZcSsIgQISVvOAXuN",
                                             "gridProps": [
                                               {
-                                                "id": "i_Fu_jEIjNxsPIsRbAIkG",
+                                                "id": "OJGvKrfln3WsdOGPBdthv",
                                                 "status": "ACTIVE",
                                                 "name": "Label",
                                                 "attributes": {
@@ -2704,6 +2709,11 @@
                                                     "xs": 12
                                                   },
                                                   "label": "amount",
+                                                  "cssClassNames": [
+                                                    {
+                                                      "cssClassName": "Label_Type_Detail_Css "
+                                                    }
+                                                  ],
                                                   "searchInState": true,
                                                   "storeType": 1
                                                 },
@@ -2722,59 +2732,6 @@
                                                 },
                                                 "events": [],
                                                 "path": "0-0-1-0-0-0-1-1-0-0-0"
-                                              },
-                                              {
-                                                "id": "Q7fS2N4L5v8FgIqWMnRJI",
-                                                "status": "ACTIVE",
-                                                "name": "Password",
-                                                "icon": "FaKey",
-                                                "group": "Form",
-                                                "attributes": {
-                                                  "label": "Password",
-                                                  "variant": "standard",
-                                                  "stateName": "smsPin",
-                                                  "label-locale-key": "",
-                                                  "maxLength": "100",
-                                                  "value": "password",
-                                                  "readOnly": false,
-                                                  "tooltip": "",
-                                                  "font-family": "Verdana",
-                                                  "mandatory": true,
-                                                  "storeType": 0,
-                                                  "name": "Password",
-                                                  "tooltipState": "",
-                                                  "layoutProperties": {
-                                                    "textField": {
-                                                      "//": "Use this class to style password field component."
-                                                    },
-                                                    "inputProps": {
-                                                      "//": "Use this class to style password field element."
-                                                    },
-                                                    "mainContainer": "textField",
-                                                    "xl": 12,
-                                                    "lg": 12,
-                                                    "md": 12,
-                                                    "sm": 12,
-                                                    "xs": 12
-                                                  },
-                                                  "validate": {
-                                                    "required": false,
-                                                    "errorMsg": "Password is required"
-                                                  }
-                                                },
-                                                "updatedAt": "23-Aug-2021",
-                                                "createdAt": "23-Aug-2021",
-                                                "type": "20008",
-                                                "order": 11,
-                                                "version": "1.0.0",
-                                                "isLatest": true,
-                                                "projectType": "web",
-                                                "component": {
-                                                  "content": "Password",
-                                                  "type": "20008"
-                                                },
-                                                "events": [],
-                                                "path": "0-0-1-0-0-0-1-1-0-0-1"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -2885,6 +2842,67 @@
                                   "colSize1md": 6,
                                   "colSize1lg": 6,
                                   "colSize1xl": 6
+                                },
+                                "readOnly": true
+                              },
+                              {
+                                "type": "10001",
+                                "name": "Grid layout",
+                                "id": "lEv9OcG4uWuZnoNK1qi0E",
+                                "gridProps": [
+                                  {
+                                    "type": "column",
+                                    "id": "2mDmcCyAtnQ1SjsmUk_As",
+                                    "gridProps": [],
+                                    "layoutProperties": {
+                                      "xl": 12,
+                                      "lg": 12,
+                                      "md": 12,
+                                      "sm": 12,
+                                      "xs": 12
+                                    }
+                                  }
+                                ],
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
+                                "attributes": {
+                                  "gridProps": [],
+                                  "label": "Header",
+                                  "layoutProperties": {
+                                    "gridLayout": {
+                                      "//": "Use this class to style grid layout component.",
+                                      "padding": "5px 40px",
+                                      "spacing": 0
+                                    },
+                                    "mainContainer": "gridLayout"
+                                  },
+                                  "layoutProps": {
+                                    "direction": "row",
+                                    "justifyContent": "flex-start",
+                                    "alignItems": "flex-start"
+                                  },
+                                  "direction": "row",
+                                  "name": "Grid layout"
+                                },
+                                "events": [],
+                                "component": {
+                                  "type": "10001",
+                                  "content": "Grid layout"
+                                },
+                                "path": "0-0-1-0-0-0-2",
+                                "dimensions": {
+                                  "rows": 1,
+                                  "columns": 1,
+                                  "colSize0xs": 12,
+                                  "colSize0sm": 12,
+                                  "colSize0md": 12,
+                                  "colSize0lg": 12,
+                                  "colSize0xl": 12
                                 },
                                 "readOnly": true
                               },
@@ -3118,10 +3136,26 @@
                                             "id": "Z5XFh2p-GVgxCuR5pp1Qy",
                                             "gridProps": [
                                               {
+                                                "id": "lJsK_M3-3C6D8GiuRmT59",
+                                                "type": "20031",
+                                                "triggerName": "Zakat_Error_Trigger",
+                                                "attributes": {
+                                                  "widgetId": "AKLk7Tt6OG17KZC9A0LNl",
+                                                  "layoutProperties": {
+                                                    "xl": 12,
+                                                    "lg": 12,
+                                                    "md": 12,
+                                                    "sm": 12,
+                                                    "xs": 12
+                                                  }
+                                                },
+                                                "component": { "type": "20031" }
+                                              },
+                                              {
                                                 "id": "aCx1mPrrtY261JJUW2HOk",
                                                 "status": "ACTIVE",
                                                 "attributes": {
-                                                  "label": "Next",
+                                                  "label": "SUBMIT",
                                                   "variant": "contained",
                                                   "name": "Button",
                                                   "label-locale-key": "",
@@ -3167,301 +3201,242 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "orzFl9QhQKvzy5b1PWQVu",
-                                                    "triggerName": "Zakkat Chain Trigger",
-                                                    "serviceType": "2",
+                                                    "triggerId": "3OtueWWfWGy-leGms5dkQ",
+                                                    "triggerName": "transferZakat",
+                                                    "serviceType": "8",
                                                     "attributes": {
-                                                      "delay": "",
-                                                      "triggers": [
+                                                      "loaderWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "messageWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "responseStateKey": "zakatResponse",
+                                                      "url": "/transfer",
+                                                      "checksum": true,
+                                                      "encryption": true,
+                                                      "isDeviceDetails": false,
+                                                      "loginTrigger": "loginTrigger",
+                                                      "formData": false,
+                                                      "logoutTrigger": false,
+                                                      "headers": {
+                                                        "Content-Type": "application/json",
+                                                        "channel_key": "005"
+                                                      },
+                                                      "requestBody": [
                                                         {
-                                                          "id": "TCicpprTZFn8DYos69xXs",
-                                                          "name": "otpInfo Mapping",
-                                                          "projectId": "640ee2a26ead56231ce8350b",
-                                                          "gitBranchName": "master",
-                                                          "services": [
-                                                            {
-                                                              "type": "11",
-                                                              "command": {
-                                                                "type": "6",
-                                                                "attributes": {
-                                                                  "destinationBindingKey": "otpInfo",
-                                                                  "sourceBindingKey": "form",
-                                                                  "sourceStoreType": 2,
-                                                                  "destinationStoreType": 2,
-                                                                  "filterList": [
-                                                                    {
-                                                                      "key": "smsPin",
-                                                                      "changeValueConditonally": true,
-                                                                      "logic": {
-                                                                        "var": "currentScreen.form.smsPin"
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "key": "emailPin",
-                                                                      "changeValueConditonally": true,
-                                                                      "logic": {
-                                                                        "if": [
-                                                                          true,
-                                                                          null,
-                                                                          null
-                                                                        ]
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "key": "splitOtp",
-                                                                      "changeValueConditonally": true,
-                                                                      "logic": {
-                                                                        "if": [
-                                                                          true,
-                                                                          false,
-                                                                          false
-                                                                        ]
-                                                                      }
-                                                                    },
-                                                                    {
-                                                                      "changeValueConditonally": true,
-                                                                      "logic": {
-                                                                        "if": [
-                                                                          true,
-                                                                          "OTP",
-                                                                          "OTP"
-                                                                        ]
-                                                                      },
-                                                                      "key": "validationType"
-                                                                    }
-                                                                  ],
-                                                                  "targettedType": "object"
-                                                                }
-                                                              }
-                                                            }
-                                                          ],
-                                                          "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
-                                                          "_id": "rRjW6WQgtFhIounPrQ3Ys",
-                                                          "updatedAt": "9/13/2023",
-                                                          "createdAt": "9/13/2023",
-                                                          "createdBy": "masood",
-                                                          "updatedBy": "masood"
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "accountId",
+                                                          "value": "getData.accountId"
                                                         },
                                                         {
-                                                          "id": "3OtueWWfWGy-leGms5dkQ",
-                                                          "_id": "RxFX6IgUq3FWcIGqRG4NW",
-                                                          "projectId": "640ee2a26ead56231ce8350b",
-                                                          "gitBranchName": "master",
-                                                          "name": "transferZakat",
-                                                          "old_name": "transferZakat",
-                                                          "status": "ACTIVE",
-                                                          "services": [
-                                                            {
-                                                              "type": "8",
-                                                              "command": {
-                                                                "type": "1",
-                                                                "attributes": {
-                                                                  "loaderWidgetIds": [
-                                                                    906070
-                                                                  ],
-                                                                  "messageWidgetIds": [
-                                                                    906070
-                                                                  ],
-                                                                  "responseStateKey": "zakatResponse",
-                                                                  "url": "/transfer",
-                                                                  "checksum": true,
-                                                                  "encryption": true,
-                                                                  "isDeviceDetails": false,
-                                                                  "loginTrigger": "loginTrigger",
-                                                                  "formData": false,
-                                                                  "logoutTrigger": false,
-                                                                  "headers": {
-                                                                    "Content-Type": "application/json",
-                                                                    "channel_key": "005"
-                                                                  },
-                                                                  "requestBody": [
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "accountId",
-                                                                      "value": "getData.accountId"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "bankIMD",
-                                                                      "value": "getData.bankImd"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "fromAccountIban",
-                                                                      "value": "getData.iban"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "fromAccountNumber",
-                                                                      "value": "getData.accountNumber"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "fromAccountTitle",
-                                                                      "value": "getData.accountTitle"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "fromCurrency",
-                                                                      "value": "getData.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "rda",
-                                                                      "value": "getData.rda"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "requestNumber",
-                                                                      "value": "getAccountTitle.content.requestNumber"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "requestDate",
-                                                                      "value": "getAccountTitle.content.requestDate"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "toAccountNumber",
-                                                                      "value": "selectedObject.accountNumber"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "toAccountTitle",
-                                                                      "value": "selectedObject.accountTitle"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "toCurrency",
-                                                                      "value": "selectedObject.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "purposeOfPayment",
-                                                                      "value": "Others"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "instrumentType",
-                                                                      "value": "A"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "orgCode",
-                                                                      "value": "selectedObject.id"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "transactionCurrency",
-                                                                      "value": "selectedObject.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "actualAmount",
-                                                                      "value": "amount"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "amountInWords",
-                                                                      "value": "PKR One"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "convertedAmount",
-                                                                      "value": "amount"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "exchangeRate",
-                                                                      "value": "amount"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "executionType",
-                                                                      "value": "PAY_NOW"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "returnBalance",
-                                                                      "value": "true"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "transferType",
-                                                                      "value": "DONATION"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "transferToOption",
-                                                                      "value": "beneficiary"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "noOfOccurrences",
-                                                                      "value": "0"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "state",
-                                                                      "value": "false"
-                                                                    },
-                                                                    {
-                                                                      "type": 2,
-                                                                      "name": "Current screen",
-                                                                      "key": "otpInfo",
-                                                                      "value": "otpInfo"
-                                                                    }
-                                                                  ],
-                                                                  "baseURL": "6502f5a7c9bf2957746c9973",
-                                                                  "storeType": 2
-                                                                },
-                                                                "responseHandler": []
-                                                              }
-                                                            }
-                                                          ],
-                                                          "csrf": "0.7gioem1molt6L0SOp-WsJle3FVK_hzWh",
-                                                          "updatedAt": "9/15/2023",
-                                                          "createdAt": "9/15/2023",
-                                                          "createdBy": "masood",
-                                                          "updatedBy": "masood"
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "actualAmount",
+                                                          "value": "amount"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "amountInWords",
+                                                          "value": "PKR One"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "bankIMD",
+                                                          "value": "getData.bankImd"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "beneficiary",
+                                                          "value": "true"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "convertedAmount",
+                                                          "value": "amount"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "exchangeRate",
+                                                          "value": "amount"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "executionType",
+                                                          "value": "PAY_NOW"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "fromAccountIban",
+                                                          "value": "getData.iban"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "fromAccountNumber",
+                                                          "value": "getData.accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "fromAccountTitle",
+                                                          "value": "getData.accountTitle"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "fromCurrency",
+                                                          "value": "getData.currency"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "instrumentType",
+                                                          "value": "A"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "noOfOccurrences",
+                                                          "value": 0
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "orgCode",
+                                                          "value": "selectedObject.accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "otpVisible",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "purposeOfPayment",
+                                                          "value": "Others"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "rda",
+                                                          "value": "getData.rda"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "requestNumber",
+                                                          "value": "getAccountTitle.content.requestNumber"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "requestDate",
+                                                          "value": "getAccountTitle.content.requestDate"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "returnBalance",
+                                                          "value": "true"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "saveAsBene",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "state",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "toAccountNumber",
+                                                          "value": "selectedObject.accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "toAccountTitle",
+                                                          "value": "selectedObject.accountTitle"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "transactionCurrency",
+                                                          "value": "selectedObject.currency"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "toCurrency",
+                                                          "value": "selectedObject.currency"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "transferToOption",
+                                                          "value": "beneficiary"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "transferType",
+                                                          "value": "ZAKAAT"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "raast",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "byCard",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "isByCard",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "isRaast",
+                                                          "value": "false"
+                                                        },
+                                                        {
+                                                          "type": 4,
+                                                          "name": "Static",
+                                                          "key": "localIsRaast",
+                                                          "value": "false"
                                                         }
                                                       ],
-                                                      "triggerIds": [
-                                                        "TCicpprTZFn8DYos69xXs",
-                                                        "3OtueWWfWGy-leGms5dkQ"
-                                                      ]
+                                                      "baseURL": "6502f5a7c9bf2957746c9973",
+                                                      "storeType": 2
                                                     },
                                                     "type": "2",
                                                     "name": "On click"
                                                   }
                                                 ],
-                                                "path": "0-0-1-0-0-0-2-2-0-0-0"
+                                                "path": "0-0-1-0-0-0-3-2-0-0-1"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -3725,8 +3700,8 @@
     "gitBranchName": "master",
     "_id": "ZERk7gIdYJdHPt1TMa7EM",
     "createdBy": "masood",
-    "updatedAt": "9/15/2023",
-    "createdAt": "9/15/2023",
+    "updatedAt": "9/26/2023",
+    "createdAt": "9/26/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4078,6 +4053,25 @@
           "id": "DZpLjPlg4QgEb0BnDo8yK",
           "position": {
             "i": "DZpLjPlg4QgEb0BnDo8yK",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "lEv9OcG4uWuZnoNK1qi0E",
+          "componentType": "10001",
+          "id": "lEv9OcG4uWuZnoNK1qi0E",
+          "position": {
+            "i": "lEv9OcG4uWuZnoNK1qi0E",
             "x": null,
             "y": null,
             "w": null,
@@ -6185,11 +6179,11 @@
           "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
         },
         {
-          "componentId": "Qoo-_6wsHTvRDXR52sffw",
+          "componentId": "TCh9nh_VhoGNej933wQd_",
           "componentType": "10001",
-          "id": "Qoo-_6wsHTvRDXR52sffw",
+          "id": "TCh9nh_VhoGNej933wQd_",
           "position": {
-            "i": "Qoo-_6wsHTvRDXR52sffw",
+            "i": "TCh9nh_VhoGNej933wQd_",
             "x": null,
             "y": null,
             "w": null,
@@ -6286,7 +6280,8 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Amount"
+      "label": "Amount",
+      "cssClassNames": [{ "cssClassName": "Label_Type_Css " }]
     },
     "icon": "FaFont",
     "group": "Form",
@@ -6307,7 +6302,7 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Qoo-_6wsHTvRDXR52sffw",
+    "id": "TCh9nh_VhoGNej933wQd_",
     "name": "Grid layout",
     "type": "10001",
     "attributes": {
@@ -6320,20 +6315,8 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "i_Fu_jEIjNxsPIsRbAIkG",
+          "componentId": "OJGvKrfln3WsdOGPBdthv",
           "componentType": "20002",
-          "order": 1
-        },
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "Q7fS2N4L5v8FgIqWMnRJI",
-          "componentType": "20008",
           "order": 1
         }
       ],
@@ -6365,7 +6348,7 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "i_Fu_jEIjNxsPIsRbAIkG",
+    "id": "OJGvKrfln3WsdOGPBdthv",
     "status": "ACTIVE",
     "name": "Label",
     "attributes": {
@@ -6382,6 +6365,7 @@
         "xs": 12
       },
       "label": "amount",
+      "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css " }],
       "searchInState": true,
       "storeType": 1
     },
@@ -6404,54 +6388,34 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Q7fS2N4L5v8FgIqWMnRJI",
-    "status": "ACTIVE",
-    "name": "Password",
-    "icon": "FaKey",
-    "group": "Form",
+    "id": "lEv9OcG4uWuZnoNK1qi0E",
+    "name": "Grid layout",
+    "type": "10001",
     "attributes": {
-      "label": "Password",
-      "variant": "standard",
-      "stateName": "smsPin",
-      "label-locale-key": "",
-      "maxLength": "100",
-      "value": "password",
-      "readOnly": false,
-      "tooltip": "",
-      "font-family": "Verdana",
-      "mandatory": true,
-      "storeType": 0,
-      "name": "Password",
-      "tooltipState": "",
+      "gridProps": [],
+      "label": "Header",
       "layoutProperties": {
-        "textField": {
-          "//": "Use this class to style password field component."
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px 40px",
+          "spacing": 0
         },
-        "inputProps": {
-          "//": "Use this class to style password field element."
-        },
-        "mainContainer": "textField",
-        "xl": 12,
-        "lg": 12,
-        "md": 12,
-        "sm": 12,
-        "xs": 12
+        "mainContainer": "gridLayout"
       },
-      "validate": { "required": false, "errorMsg": "Password is required" }
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
     },
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "type": "20008",
-    "order": 11,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "web",
-    "subType": "component",
-    "component": { "content": "Password", "type": "20008" },
+    "layout": null,
     "events": [],
-    "path": "0-0-1-0-0-0-1-1-0-0-1",
+    "subType": "component",
     "screenId": "ZERk7gIdYJdHPt1TMa7EM",
     "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -6679,6 +6643,18 @@
             "sm": 12,
             "xs": 12
           },
+          "componentId": "lJsK_M3-3C6D8GiuRmT59",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
           "componentId": "aCx1mPrrtY261JJUW2HOk",
           "componentType": "20006",
           "order": 1
@@ -6711,10 +6687,26 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
+    "id": "lJsK_M3-3C6D8GiuRmT59",
+    "type": "20031",
+    "triggerName": "Zakat_Error_Trigger",
+    "attributes": {
+      "widgetId": "AKLk7Tt6OG17KZC9A0LNl",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "ZERk7gIdYJdHPt1TMa7EM",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
     "id": "aCx1mPrrtY261JJUW2HOk",
     "status": "ACTIVE",
     "attributes": {
-      "label": "Next",
+      "label": "SUBMIT",
       "variant": "contained",
       "name": "Button",
       "label-locale-key": "",
@@ -6755,14 +6747,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "orzFl9QhQKvzy5b1PWQVu",
-        "triggerName": "Zakkat Chain Trigger",
+        "triggerId": "3OtueWWfWGy-leGms5dkQ",
+        "triggerName": "transferZakat",
         "name": "On click",
         "type": "2",
-        "serviceType": "2"
+        "serviceType": "8"
       }
     ],
-    "path": "0-0-1-0-0-0-2-2-0-0-0",
+    "path": "0-0-1-0-0-0-3-2-0-0-1",
     "screenId": "ZERk7gIdYJdHPt1TMa7EM",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

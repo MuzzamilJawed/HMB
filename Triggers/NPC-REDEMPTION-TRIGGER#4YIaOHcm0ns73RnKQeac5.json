@@ -1,0 +1,153 @@
+{
+  "id": "dAtEd0SuSEg1eruNSif2O",
+  "_id": "4YIaOHcm0ns73RnKQeac5",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "NPC REDEMPTION TRIGGER",
+  "old_name": "NPC REDEMPTION TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "npcRedemptionResponse",
+          "url": "/npc/submit",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "selectAccount.accountNumber"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "certString",
+              "value": "certiType.name"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "certType",
+              "value": "certiType.code"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "currencyId",
+              "value": "currency.typeCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "currencyString",
+              "value": "currency.currency"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "rateString",
+              "value": "expectedRate.npcDesc"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "tenureString",
+              "value": "tenureSelect.tenure"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "tenor",
+              "value": "tenureSelect.id"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "tenorDescription",
+              "value": "tenureSelect.tenure"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 400,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "NPC_SUCCESS_MODAL_TRIGGER",
+            "triggerId": "r5HMfjFyaVSDWusA8llx-",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.p0t6zda11yQ_xAK2i0dt-NuKlahIDC-",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

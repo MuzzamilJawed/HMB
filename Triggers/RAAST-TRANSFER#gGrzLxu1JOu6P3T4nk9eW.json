@@ -1,0 +1,89 @@
+{
+  "id": "vvrChI8_P72aQzTeNg4cW",
+  "_id": "gGrzLxu1JOu6P3T4nk9eW",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "RAAST TRANSFER",
+  "old_name": "RAAST TRANSFER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "transferResponse",
+          "url": "/raast/transfer",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestNumber",
+              "value": "responseOfRaastTitleSearch.requestNumber"
+            },
+            { "type": 4, "name": "Static", "key": "raast", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "beneficiary",
+              "value": "false"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isBeneficiary",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "isRaast", "value": "false" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "RAAST RECEIPT",
+            "triggerId": "SNwRQIjbkXyjBFsjQAaKM",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

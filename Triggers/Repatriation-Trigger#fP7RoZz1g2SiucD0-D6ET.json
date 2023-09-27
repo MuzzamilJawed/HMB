@@ -1,0 +1,67 @@
+{
+  "id": "WbCuAUQYr3pTMBwQxtwN1",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Repatriation Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "repatriationResponse",
+          "url": "/npc/repatriation",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectedAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "selectedAccoun.accountNumbert"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankName",
+              "value": "selectedAccount.bankName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "beneficiaryName",
+              "value": "beneficiaryName"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.bnc3ory4ij4eHPJErzqHQB3zJIadTT6",
+  "_id": "fP7RoZz1g2SiucD0-D6ET",
+  "updatedAt": "9/25/2023",
+  "createdAt": "9/25/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

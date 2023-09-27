@@ -1,0 +1,98 @@
+{
+  "id": "HNzXTdMkCg6hm5x6tqNF1",
+  "_id": "V4fLbRSSuJvLYl80Qh9GD",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "RAAST_TITLE_SEARCH_API_TRIGGER",
+  "old_name": "RAAST_TITLE_SEARCH_API_TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "responseOfRaastTitleSearch",
+          "successMessageBindingKey": "successMessage",
+          "errorMessageBindingKey": "errorMessage",
+          "url": "/raast/titlesearch",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccount",
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "toAccount",
+              "value": "toAccount"
+            },
+            { "type": 1, "name": "Form", "key": "purpose", "value": "purpose" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 500,
+            "triggerName": "RAAST_TITLE_SEARCH_ERROR_SHOW_MODAL",
+            "triggerId": "JQRzX_9Xu7ifkdamxwv7g"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "RAAST_TITLE_SEARCH_ERROR_SHOW_MODAL",
+            "triggerId": "JQRzX_9Xu7ifkdamxwv7g"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "RAAST_TITLE_SEARCH_ERROR_SHOW_MODAL",
+            "triggerId": "JQRzX_9Xu7ifkdamxwv7g"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "RAAST_TITLE_SEARCH_ERROR_SHOW_MODAL",
+            "triggerId": "JQRzX_9Xu7ifkdamxwv7g"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "RAAST_TITLE_SEARCH_ERROR_SHOW_MODAL",
+            "triggerId": "JQRzX_9Xu7ifkdamxwv7g",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.3tvj2v8hjpeiJbc8XDLUUQi0SlCpuZaH",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

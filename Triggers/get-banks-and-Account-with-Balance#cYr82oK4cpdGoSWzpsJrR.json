@@ -1,0 +1,146 @@
+{
+  "id": "bua6j1HMOT3ElrxQYEuDj",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "get banks and Account with Balance",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "_kJxp-3jSIm0fI_Vgiwe6",
+              "_id": "gFqqv2tBH7C-5QkghVrMe",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getBanks",
+              "old_name": "getBanks",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "banksData",
+                      "responseReturnValue": "content",
+                      "url": "/banks",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "countryCode",
+                          "value": "PK"
+                        }
+                      ],
+                      "baseURL": "64f968d3683922479c0616ba",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.j60t77pvaxoTDfOvzNtvpqxv48jCBMC",
+              "updatedAt": "9/7/2023",
+              "createdAt": "9/7/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "55znhNq-lzQUP7s8vAeaf",
+              "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getAllAccountsWithBalance",
+              "old_name": "getAllAccountsWithBalance",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "A"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "currentFilter",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "includeBalance",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.4ii3k8be7uyn_UkRMm8DX-DH7M0Eves9",
+              "updatedAt": "9/20/2023",
+              "createdAt": "9/20/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["_kJxp-3jSIm0fI_Vgiwe6", "55znhNq-lzQUP7s8vAeaf"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.q941alw4p3dzO462WL6LPzK1lxIA1Pi",
+  "_id": "cYr82oK4cpdGoSWzpsJrR",
+  "updatedAt": "9/26/2023",
+  "createdAt": "9/26/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

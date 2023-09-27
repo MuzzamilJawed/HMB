@@ -161,7 +161,21 @@
                                   "content": "Button",
                                   "type": "20006"
                                 },
-                                "events": [],
+                                "events": [
+                                  {
+                                    "triggerId": "8I2j_BYt4gsagLMiCjIUe",
+                                    "triggerName": "Swap bene list to Add bene",
+                                    "serviceType": "1",
+                                    "attributes": {
+                                      "nextWidgetId": "awwq8Epi8U8AklyyyQewr",
+                                      "gridRadioValue": "",
+                                      "selectedObjectBindingKey": "selectedObject",
+                                      "editableForm": false
+                                    },
+                                    "type": "2",
+                                    "name": "On click"
+                                  }
+                                ],
                                 "path": "0-0-0-1-0-0-0"
                               }
                             ],
@@ -1484,32 +1498,27 @@
                                           },
                                           "columnDefinition": [
                                             {
-                                              "type": "text",
+                                              "type": "image",
                                               "typeTemp": {
-                                                "name": "Text",
-                                                "type": "text"
+                                                "name": "Image",
+                                                "type": "image"
                                               },
-                                              "field": "companyCode",
-                                              "headerName": "Company Code",
+                                              "field": "url",
+                                              "headerName": "Company",
+                                              "imageRenderingTypeTemp": {
+                                                "label": "Base URL with Cell Value",
+                                                "type": "3"
+                                              },
                                               "conditional": {
                                                 "bindingKey": ""
                                               },
-                                              "values": [""],
+                                              "values": [],
                                               "cssConditional": {
                                                 "bindingKey": "",
                                                 "cssClassNames": []
                                               },
-                                              "cssValues": [""]
-                                            },
-                                            {
-                                              "typeTemp": {
-                                                "name": "Text",
-                                                "type": "text"
-                                              },
-                                              "headerName": "Bill Category Code",
-                                              "field": "billCategoryCode",
-                                              "type": "text",
-                                              "triggerId": null
+                                              "cssValues": [],
+                                              "imageRenderingType": "3"
                                             },
                                             {
                                               "typeTemp": {
@@ -2533,8 +2542,8 @@
     "gitBranchName": "master",
     "_id": "Jxg4kVvwQaeol7IZgdZSe",
     "createdBy": "masood",
-    "updatedAt": "9/4/2023",
-    "createdAt": "9/4/2023",
+    "updatedAt": "9/27/2023",
+    "createdAt": "9/27/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2840,7 +2849,15 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "8I2j_BYt4gsagLMiCjIUe",
+        "triggerName": "Swap bene list to Add bene",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
     "path": "0-0-0-1-0-0-0",
     "screenId": "Jxg4kVvwQaeol7IZgdZSe",
     "subType": "component",
@@ -3959,21 +3976,19 @@
       },
       "columnDefinition": [
         {
-          "type": "text",
-          "typeTemp": { "name": "Text", "type": "text" },
-          "field": "companyCode",
-          "headerName": "Company Code",
+          "type": "image",
+          "typeTemp": { "name": "Image", "type": "image" },
+          "field": "url",
+          "headerName": "Company",
+          "imageRenderingTypeTemp": {
+            "label": "Base URL with Cell Value",
+            "type": "3"
+          },
           "conditional": { "bindingKey": "" },
-          "values": [""],
+          "values": [],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
-          "cssValues": [""]
-        },
-        {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Bill Category Code",
-          "field": "billCategoryCode",
-          "type": "text",
-          "triggerId": null
+          "cssValues": [],
+          "imageRenderingType": "3"
         },
         {
           "typeTemp": { "name": "Text", "type": "text" },

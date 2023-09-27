@@ -1,0 +1,55 @@
+{
+  "id": "vbD_M349qFGOYqPGVH3lv",
+  "_id": "3W-mm-WZ8kUeFVBemWKPO",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getTermsAndConditions Registration",
+  "old_name": "getTermsAndConditions Registration",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "registrationStepOneResponse",
+          "url": "/getTermsAndConditions",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "entityId",
+              "value": "TERMS_CONDITIONS"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "NAVIGATE FROM LOGIN TO REGISTER TERSM ADN CONDITION",
+            "triggerId": "eWEpZUXjH_k6heX-tTlQz"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.3316imij1y5ZBEBVn_v7elJyeHQGXUOC",
+  "updatedAt": "9/22/2023",
+  "createdAt": "9/22/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -16,7 +16,7 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "response",
           "responseReturnValue": "content",
-          "url": "getLocations",
+          "url": "/getLocations",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": true,
@@ -30,17 +30,26 @@
             "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
             "locale": "en-ltr"
           },
-          "requestBody": [],
-          "baseURL": "64e4667e98b0d14b84ab39c4",
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "inquiry", "value": "null" },
+            { "type": 4, "name": "Static", "key": "temp", "value": "null" }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Navigate Login to Locate Us Screen",
+            "triggerId": "HqWr9rKAkwWNOuaWzb09t"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.wd09ogz6incHgK8IsuCM8lDk1-331poQ",
-  "updatedAt": "8/22/2023",
-  "createdAt": "8/22/2023",
+  "csrf": "0.7tplb7pcd1lnRk-piOWLEXlhD_Q2L_Mi",
+  "updatedAt": "9/22/2023",
+  "createdAt": "9/22/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

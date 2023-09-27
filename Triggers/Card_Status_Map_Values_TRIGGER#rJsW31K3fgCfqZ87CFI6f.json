@@ -1,0 +1,66 @@
+{
+  "id": "vW2ImcN-g36aGhqJVkOtq",
+  "_id": "rJsW31K3fgCfqZ87CFI6f",
+  "name": "Card_Status_Map_Values_TRIGGER",
+  "old_name": "Card_Status_Map_Values_TRIGGER",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "cardStatus",
+          "sourceBindingKey": "abc",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "status",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  {
+                    "==": [
+                      { "var": "currentScreen.form.titleList.cardStatus" },
+                      "001"
+                    ]
+                  },
+                  "Temporary Block",
+                  "Active"
+                ]
+              }
+            },
+            {
+              "key": "key",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  {
+                    "==": [
+                      { "var": "currentScreen.form.titleList.cardStatus" },
+                      "001"
+                    ]
+                  },
+                  "002",
+                  "001"
+                ]
+              }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.p0t6zda11yQ_xAK2i0dt-NuKlahIDC-",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

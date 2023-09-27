@@ -3,7 +3,7 @@
   "_id": "IVRH-Vnn38fARB-Bs72SH",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
-  "name": "GET CONTACT DETAILS",
+  "name": "getBankContactDetails Trigger",
   "old_name": "GET CONTACT DETAILS",
   "status": "ACTIVE",
   "services": [
@@ -16,7 +16,7 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "response",
           "responseReturnValue": "content.0.contactDetails",
-          "url": "getBankContactDetails",
+          "url": "/getBankContactDetails",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": true,
@@ -25,22 +25,28 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "Accept": "application/json",
-            "channel_key": "001",
-            "CSRF_TOKEN": "4c6e939d-db00-4697-82d8-b69bb05aef5a",
-            "locale": "en-ltr"
+            "channel_key": "005"
           },
-          "requestBody": [],
-          "baseURL": "64e4667e98b0d14b84ab39c4",
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "inquiry", "value": "null" },
+            { "type": 4, "name": "Static", "key": "temp", "value": "null" }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Navigate Login to Contact US Screen",
+            "triggerId": "k1LQzOTCH6uFy0qbBZnXa"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.b1d7tnaktkr_6LUXSlpYYadxjRIdpouZ",
-  "updatedAt": "8/23/2023",
-  "createdAt": "8/23/2023",
+  "csrf": "0.7tplb7pcd1lnRk-piOWLEXlhD_Q2L_Mi",
+  "updatedAt": "9/22/2023",
+  "createdAt": "9/22/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -16,7 +16,7 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "response",
           "responseReturnValue": "content.0.groupFAQ",
-          "url": "getAllFAQs",
+          "url": "/getAllFAQs",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": true,
@@ -25,19 +25,28 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "channel_key": "001"
+            "channel_key": "005"
           },
-          "requestBody": [],
-          "baseURL": "64e4667e98b0d14b84ab39c4",
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "inquiry", "value": "null" },
+            { "type": 4, "name": "Static", "key": "temp", "value": "null" }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Navigate Login to FAQ SCREEN",
+            "triggerId": "C9bM4NABveTKev98k1nj-"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.p9a945i18nMTORMPxl2m9Xxsyl63Fzb",
-  "updatedAt": "8/22/2023",
-  "createdAt": "8/22/2023",
+  "csrf": "0.7tplb7pcd1lnRk-piOWLEXlhD_Q2L_Mi",
+  "updatedAt": "9/22/2023",
+  "createdAt": "9/22/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

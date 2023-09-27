@@ -1,0 +1,49 @@
+{
+  "id": "dTzBLHUfQvy2dgKQ71OLm",
+  "name": "IBFT Validation",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "destinationBindingKey": "validation",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
+            },
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.emailPin" }
+            },
+            {
+              "key": "splitOtp",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.q941alw4p3dzO462WL6LPzK1lxIA1Pi",
+  "_id": "JDw8cSx0j5728W0Ge4DxC",
+  "updatedAt": "9/26/2023",
+  "createdAt": "9/26/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "payOrderResponse",
+          "successMessageBindingKey": "successMessage",
+          "errorMessageBindingKey": "errorMessage",
           "url": "/payOrder",
           "checksum": true,
           "encryption": true,
@@ -90,13 +92,20 @@
           "baseURL": "65003e4e61f0645ad866d812",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "triggerName": "Swap Payorder Confrim to Receipt",
+            "triggerId": "yjmemt7UmMRFvnY0VUAE6"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
-  "updatedAt": "9/13/2023",
-  "createdAt": "9/13/2023",
+  "csrf": "0.fmenq6voszf6jS20WIPsP_7xaYVd_Ylq",
+  "updatedAt": "9/25/2023",
+  "createdAt": "9/25/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

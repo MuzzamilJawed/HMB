@@ -1,8 +1,10 @@
 {
   "id": "P1tLtv3-INf2HRhmlidyW",
+  "_id": "E47n3enYoIw0fYKu-XBSC",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Card Request API TRIGGER",
+  "old_name": "Card Request API TRIGGER",
   "status": "ACTIVE",
   "services": [
     {
@@ -13,13 +15,11 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "responseOfCardResquest",
-          "successMessageBindingKey": "successMessage",
-          "errorMessageBindingKey": "errorMessage",
           "url": "/requestNewCard",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": false,
-          "loginTrigger": false,
+          "loginTrigger": "loginTrigger",
           "formData": false,
           "logoutTrigger": false,
           "headers": {
@@ -85,14 +85,51 @@
           "baseURL": "64f9670d683922479c06159b",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 400,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
+            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "Card_Request_Success_MODAL_TRIGGER",
+            "triggerId": "iQtm9hYqk3HZsn54u0GLT",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.kv5j8fxt6nfEzKr8iVYlfD7Inq5Ldxqi",
-  "_id": "E47n3enYoIw0fYKu-XBSC",
-  "updatedAt": "9/20/2023",
-  "createdAt": "9/20/2023",
+  "csrf": "0.lvm7dg4y8mfpU-mmE_aTGXbfu7xReZaN",
+  "updatedAt": "9/26/2023",
+  "createdAt": "9/26/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

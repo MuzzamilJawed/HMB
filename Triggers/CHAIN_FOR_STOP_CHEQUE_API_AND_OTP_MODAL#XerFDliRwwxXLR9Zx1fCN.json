@@ -1,0 +1,211 @@
+{
+  "_id": "XerFDliRwwxXLR9Zx1fCN",
+  "id": "3CZpQGszD6zM-SucQUs20",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHAIN_FOR_STOP_CHEQUE_API_AND_OTP_MODAL",
+  "old_name": "CHAIN_FOR_STOP_CHEQUE_API_AND_OTP_MODAL",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "hcAKb0mwG2Ftf55_UjyGp",
+              "_id": "VzS0dJ_J6irZI0FRvwaet",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "STOP_CHEQUE_PAYMENT_API_TRIGGER",
+              "old_name": "STOP_CHEQUE_PAYMENT_API_TRIGGER",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "stopChequeResponse",
+                      "responseReturnValue": "content.message",
+                      "successMessageBindingKey": "successMessage",
+                      "errorMessageBindingKey": "errorMessage",
+                      "url": "/stopCheque",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "flowType",
+                          "value": "CHEQUE_STOP_PAYMENT"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "fromInstrument.accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "chqNum1",
+                          "value": "chqNum1"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "chqNum2",
+                          "value": "chqNum2"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "chqNum3",
+                          "value": "chqNum3"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "chqNum4",
+                          "value": "chqNum4"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "chqNum5",
+                          "value": "chqNum5"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        }
+                      ],
+                      "baseURL": "65003e4e61f0645ad866d812",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "FeedBack Show Modal Trigger",
+                        "triggerId": "8wT9g9iXX-ZMU1ZOB0Mnu",
+                        "logic": { "==": [{ "var": "code" }, 1] }
+                      },
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "triggerName": "STOP_CHEQUE_ERROR_SHOW_MODAL_200_STATUS_CODE",
+                        "triggerId": "AqVVcb6ZTqLy0MUTQBtDr"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "ERROR_SHOW_MODAL_TRIGGER",
+                        "triggerId": "WvQ-NX918KUjrZ-Oh5vaj"
+                      },
+                      {
+                        "httpStatus": 500,
+                        "triggerName": "ERROR_SHOW_MODAL_TRIGGER",
+                        "triggerId": "WvQ-NX918KUjrZ-Oh5vaj"
+                      },
+                      {
+                        "httpStatus": 401,
+                        "triggerName": "ERROR_SHOW_MODAL_TRIGGER",
+                        "triggerId": "WvQ-NX918KUjrZ-Oh5vaj"
+                      },
+                      {
+                        "httpStatus": 501,
+                        "triggerName": "ERROR_SHOW_MODAL_TRIGGER",
+                        "triggerId": "WvQ-NX918KUjrZ-Oh5vaj"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+              "updatedAt": "9/21/2023",
+              "createdAt": "9/21/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "9Lxt8TJphjFx72R9G6OMx",
+              "_id": "cs-SduKLD3Jnk0nRsMgLL",
+              "gitBranchName": "master",
+              "name": "CLOSE_OTP_STOP_CHEQUE_MODAL",
+              "old_name": "CLOSE_OTP_STOP_CHEQUE_MODAL",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "content": "",
+                      "type": "",
+                      "modalId": "cZ5OrFavcvJwaNX9A78d5"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+              "updatedAt": "9/21/2023",
+              "createdAt": "9/21/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "AqVVcb6ZTqLy0MUTQBtDr",
+              "gitBranchName": "master",
+              "name": "STOP_CHEQUE_ERROR_SHOW_MODAL_200_STATUS_CODE",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "widgetId": "HIHoK7Tjr3Rk0CXasso66",
+                      "content": "",
+                      "type": "",
+                      "modalId": "Fuh5dvdauufutVnv0JcMC"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+              "_id": "NrFKyURcF12PV_RLOAb9Z",
+              "updatedAt": "9/21/2023",
+              "createdAt": "9/21/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": [
+            "hcAKb0mwG2Ftf55_UjyGp",
+            "9Lxt8TJphjFx72R9G6OMx",
+            "AqVVcb6ZTqLy0MUTQBtDr"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+  "updatedAt": "9/21/2023",
+  "createdAt": "9/21/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

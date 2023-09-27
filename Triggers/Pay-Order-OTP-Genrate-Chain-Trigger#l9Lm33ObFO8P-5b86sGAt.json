@@ -1,0 +1,115 @@
+{
+  "id": "taxBSXYp4xj7BlhB9yheW",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Pay Order OTP Genrate Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "fA6pa4u-acwsArEwInUlj",
+              "_id": "7OKOxqzSKYg_uGNbm88aW",
+              "name": "payOrder tranCode",
+              "old_name": "payOrder tranCode",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "dataType": "value",
+                      "destinationBindingKey": "tranCode",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "0086", "0086"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.6u22x2vwhlsYq1HOPPbq20GPDa0mj8Xu",
+              "updatedAt": "9/18/2023",
+              "createdAt": "9/18/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "W1Zrgxusxlzo0b_mfI92d",
+              "_id": "xaxK-Pad3okCqkJCzyUJL",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "generateOTP",
+              "old_name": "generateOTP",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "generateOTPResponse",
+                      "url": "/generateOTP",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "tranCode",
+                          "value": "tranCode"
+                        }
+                      ],
+                      "baseURL": "65015c4b61f0645ad866ef4a",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "Swap Dashbboard to PayOrder",
+                        "triggerId": "g3eUwcym-FGwrl--A9y2q"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.pxm4iskn3phpPFm_PyVTUg_yfoOlzwYF",
+              "updatedAt": "9/15/2023",
+              "createdAt": "9/15/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["fA6pa4u-acwsArEwInUlj", "W1Zrgxusxlzo0b_mfI92d"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.60qyn9fioj8fYsVLTxy90wvIwp-xaKvv",
+  "_id": "l9Lm33ObFO8P-5b86sGAt",
+  "updatedAt": "9/21/2023",
+  "createdAt": "9/21/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

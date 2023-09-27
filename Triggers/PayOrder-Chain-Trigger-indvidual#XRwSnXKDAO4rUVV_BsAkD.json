@@ -1,0 +1,205 @@
+{
+  "id": "-ywj7V7N5mXQnJHKXTycs",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "PayOrder Chain Trigger indvidual",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "TCicpprTZFn8DYos69xXs",
+              "_id": "rRjW6WQgtFhIounPrQ3Ys",
+              "name": "otpInfo Mapping",
+              "old_name": "otpInfo Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "abcd",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.8kcuqju35rhUuG2K-VotHztN9F0jlsbq",
+              "updatedAt": "9/20/2023",
+              "createdAt": "9/20/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "9FhjxpAy25J2CaJW8Grh8",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "PayOrder Individual",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "payorderResponse",
+                      "url": "/payOrder",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "accountSelect.accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "address",
+                          "value": "address"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "amount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneDOB",
+                          "value": "beneDOB"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "cnic",
+                          "value": "cnic"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneRelation",
+                          "value": "beneRelation"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "contactNumber",
+                          "value": "contactNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "favouring",
+                          "value": "favouring"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "providedpin",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "payorderType",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "purposeCode",
+                          "value": "payorderbene.paymentCode"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "for",
+                          "value": "payorderbene.paymentCode"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "beneNTN",
+                          "value": "null"
+                        }
+                      ],
+                      "baseURL": "65003e4e61f0645ad866d812",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.60qyn9fioj8fYsVLTxy90wvIwp-xaKvv",
+              "_id": "FnL5Y9e6rzxfGIOh2dKUT",
+              "updatedAt": "9/21/2023",
+              "createdAt": "9/21/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["TCicpprTZFn8DYos69xXs", "9FhjxpAy25J2CaJW8Grh8"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.60qyn9fioj8fYsVLTxy90wvIwp-xaKvv",
+  "_id": "XRwSnXKDAO4rUVV_BsAkD",
+  "updatedAt": "9/21/2023",
+  "createdAt": "9/21/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

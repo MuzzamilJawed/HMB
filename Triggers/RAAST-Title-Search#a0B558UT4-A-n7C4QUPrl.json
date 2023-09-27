@@ -1,8 +1,10 @@
 {
   "id": "xFDbBGjpvL1RAczoseUlo",
+  "_id": "a0B558UT4-A-n7C4QUPrl",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "RAAST Title Search",
+  "old_name": "RAAST Title Search",
   "status": "ACTIVE",
   "services": [
     {
@@ -12,7 +14,8 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "RAASTTitleResponse",
+          "responseStateKey": "responseOfRaastTitleSearch",
+          "responseReturnValue": "content",
           "url": "/raast/titlesearch",
           "checksum": true,
           "encryption": true,
@@ -29,42 +32,46 @@
               "type": 1,
               "name": "Form",
               "key": "fromAccount",
-              "value": "getData.accountId"
+              "value": "fromAccount.accountId"
             },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
               "type": 1,
               "name": "Form",
               "key": "toAccount",
               "value": "toAccount"
             },
-            { "type": 1, "name": "Form", "key": "purpose", "value": "purpose" },
-            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
-            {
-              "type": 1,
-              "name": "Form",
-              "key": "aliasType",
-              "value": "aliasType"
-            },
-            { "type": 1, "name": "Form", "key": "rda", "value": "getData.rda" },
-            {
-              "type": 1,
-              "name": "Form",
-              "key": "fromAccountNumber",
-              "value": "getData.accountNumber"
-            },
-            { "type": 4, "name": "Static", "key": "bicCode", "value": "null" }
+            { "type": 1, "name": "Form", "key": "purpose", "value": "purpose" }
           ],
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "RAAST to RAAST CONFIRM",
+            "triggerId": "VM8B8tFl13Fwhciov6fkT"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.6u22x2vwhlsYq1HOPPbq20GPDa0mj8Xu",
-  "_id": "a0B558UT4-A-n7C4QUPrl",
-  "updatedAt": "9/18/2023",
-  "createdAt": "9/18/2023",
+  "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

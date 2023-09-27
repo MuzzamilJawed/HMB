@@ -1,0 +1,176 @@
+{
+  "id": "5SIsp28c6LZqsVtITjNRT",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "RAAST CHAIN TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3WJVpQqglNb4yHnlELcM-",
+              "name": " Otpinfo with email and SMSpin",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.emailPin" },
+                          "key": "emailPin"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "splitOtp",
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "_id": "j4UDdGfNoOd5UzY-973cX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "vvrChI8_P72aQzTeNg4cW",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "RAAST TRANSFER",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "transferResponse",
+                      "url": "/raast/transfer",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "rda",
+                          "value": "fromAccount.rda"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "amount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "toAccount",
+                          "value": "toAccount"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "requestNumber",
+                          "value": "responseOfRaastTitleSearch.requestNumber"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "raast",
+                          "value": "false"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "beneficiary",
+                          "value": "false"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "isBeneficiary",
+                          "value": "false"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "isRaast",
+                          "value": "false"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
+              "_id": "gGrzLxu1JOu6P3T4nk9eW",
+              "updatedAt": "9/27/2023",
+              "createdAt": "9/27/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["3WJVpQqglNb4yHnlELcM-", "vvrChI8_P72aQzTeNg4cW"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
+  "_id": "pu0AtqpROA9zQpukkmbVY",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

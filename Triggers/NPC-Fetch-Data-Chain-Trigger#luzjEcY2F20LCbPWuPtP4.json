@@ -1,0 +1,200 @@
+{
+  "_id": "luzjEcY2F20LCbPWuPtP4",
+  "id": "aUFd_tCos4wg5qcGEDUsg",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "NPC Fetch Data Chain Trigger",
+  "old_name": "NPC Fetch Data Chain Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "80wwXiRcoQV_N-qgwl44Y",
+              "_id": "ZfBJXgjPBalyA1iW1iw_5",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "npcCurrency Trigger  ",
+              "old_name": "npcCurrency Trigger  ",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "currencyResponse",
+                      "url": "/npc/currency",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "formType",
+                          "value": "NPC"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "DsAvmQt7ZPB4yDSe3h0Vh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "npcTenure Trigger",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "npcTenureResponse",
+                      "url": "/npc/tenure",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {},
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "inquiry",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "temp",
+                          "value": "null"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "_id": "9D0XBPSJsXtcJBYNyESQR",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "55znhNq-lzQUP7s8vAeaf",
+              "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getAllAccountsWithBalance",
+              "old_name": "getAllAccountsWithBalance",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "A"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "currentFilter",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "includeBalance",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": [
+            "80wwXiRcoQV_N-qgwl44Y",
+            "DsAvmQt7ZPB4yDSe3h0Vh",
+            "55znhNq-lzQUP7s8vAeaf"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+  "updatedAt": "9/26/2023",
+  "createdAt": "9/26/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

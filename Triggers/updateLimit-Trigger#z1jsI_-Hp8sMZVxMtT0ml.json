@@ -1,0 +1,115 @@
+{
+  "id": "yxBOoSlDay4cDtttIaxDX",
+  "_id": "z1jsI_-Hp8sMZVxMtT0ml",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "updateLimit Trigger",
+  "old_name": "updateLimit Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "updateLimitResponse",
+          "url": "/updateLimit",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "selectedAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "customLimit",
+              "value": "customLimit"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "limitId",
+              "value": "selectedObject.limitId"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "UPDATE_LIMIT_SUCCESS_MODAL_TRIGGER",
+            "triggerId": "d7Wx1PE5HRpXO4nrMNTvU",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          },
+          {
+            "httpStatus": 502,
+            "triggerName": "UPDATE_LIMIT_ERROR_TRIGGER",
+            "triggerId": "k9XPLCJTKgL4CsmsMYCTi"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.10jdiy4l12g88c1cNgnI9h2IhdQb2jC",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

@@ -28,19 +28,7 @@
             "channel_key": "005"
           },
           "requestBody": [
-            {
-              "type": 4,
-              "name": "Static",
-              "key": "olPaymentPurposeCode",
-              "value": "null"
-            },
-            {
-              "type": 4,
-              "name": "Static",
-              "key": "olPaymentPurposeDetail",
-              "value": "null"
-            },
-            { "type": 4, "name": "Static", "key": "amount", "value": "0.0" },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
               "type": 1,
               "name": "Form",
@@ -60,10 +48,16 @@
               "value": "accountNumber"
             },
             {
-              "type": 4,
-              "name": "Static",
+              "type": 1,
+              "name": "Form",
               "key": "accountId",
-              "value": "1541718"
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
             }
           ],
           "baseURL": "64f9a08b683922479c062070",
@@ -72,16 +66,58 @@
         "responseHandler": [
           {
             "httpStatus": 200,
-            "triggerName": "Swapped add bene",
-            "triggerId": "4qCZzzCjxy7arV9qc9fjJ"
+            "triggerName": "Fund Transfer To CONFIRM",
+            "triggerId": "WzVrwHszCEti1PjzoXk0m",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
+          },
+          {
+            "httpStatus": 502,
+            "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+            "triggerId": "EgYg2jz9mqgZtQEu7WLV5"
           }
         ]
       }
     }
   ],
-  "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
-  "updatedAt": "9/8/2023",
-  "createdAt": "9/8/2023",
+  "csrf": "0.3tvj2v8hjpeiJbc8XDLUUQi0SlCpuZaH",
+  "updatedAt": "9/27/2023",
+  "createdAt": "9/27/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

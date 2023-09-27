@@ -1,9 +1,10 @@
 {
+  "_id": "kDiDUXjeR-FfBNqJSUt5v",
   "id": "gLktwCUbMfKapJECrJQZM",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "PayOrder Chain Trigger",
-  "old_name": "",
+  "old_name": "PayOrder Chain Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -64,9 +65,11 @@
             },
             {
               "id": "4vkm7glhrkqQgg_tVCN_l",
+              "_id": "_zJJh1OlzCCIII4jNYGNY",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "name": "payOrder",
+              "old_name": "payOrder",
               "status": "ACTIVE",
               "services": [
                 {
@@ -77,6 +80,8 @@
                       "loaderWidgetIds": [906070],
                       "messageWidgetIds": [906070],
                       "responseStateKey": "payOrderResponse",
+                      "successMessageBindingKey": "successMessage",
+                      "errorMessageBindingKey": "errorMessage",
                       "url": "/payOrder",
                       "checksum": true,
                       "encryption": true,
@@ -90,10 +95,16 @@
                       },
                       "requestBody": [
                         {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        },
+                        {
                           "type": 1,
                           "name": "Form",
                           "key": "accountId",
-                          "value": "accountId"
+                          "value": "accountSelect.accountId"
                         },
                         {
                           "type": 1,
@@ -128,12 +139,6 @@
                         {
                           "type": 1,
                           "name": "Form",
-                          "key": "cnic",
-                          "value": "cnic"
-                        },
-                        {
-                          "type": 1,
-                          "name": "Form",
                           "key": "contactNumber",
                           "value": "contactNumber"
                         },
@@ -144,22 +149,34 @@
                           "value": "favouring"
                         },
                         {
-                          "type": 1,
-                          "name": "Form",
+                          "type": 4,
+                          "name": "Static",
+                          "key": "providedpin",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
                           "key": "payorderType",
-                          "value": "payorderType"
+                          "value": "null"
                         },
                         {
                           "type": 1,
                           "name": "Form",
                           "key": "purposeCode",
-                          "value": "purposeCode"
+                          "value": "payorderbene.paymentCode"
                         },
                         {
                           "type": 1,
                           "name": "Form",
                           "key": "for",
-                          "value": "for"
+                          "value": "payorderbene.paymentCode"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "cnic",
+                          "value": "null"
                         }
                       ],
                       "baseURL": "65003e4e61f0645ad866d812",
@@ -169,12 +186,11 @@
                   }
                 }
               ],
-              "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
-              "_id": "_zJJh1OlzCCIII4jNYGNY",
-              "updatedAt": "9/13/2023",
-              "createdAt": "9/13/2023",
-              "createdBy": "masood",
-              "updatedBy": "masood"
+              "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+              "updatedAt": "9/21/2023",
+              "createdAt": "9/21/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
             }
           ],
           "triggerIds": ["TCicpprTZFn8DYos69xXs", "4vkm7glhrkqQgg_tVCN_l"]
@@ -182,10 +198,9 @@
       }
     }
   ],
-  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
-  "_id": "kDiDUXjeR-FfBNqJSUt5v",
-  "updatedAt": "9/13/2023",
-  "createdAt": "9/13/2023",
+  "csrf": "0.gd3cs2y4gxhx1yDGyWO_gMj2B0V8ubbS",
+  "updatedAt": "9/21/2023",
+  "createdAt": "9/21/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -15,12 +15,11 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "stopChequeResponse",
-          "responseReturnValue": "content.message",
           "url": "/stopCheque",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": false,
-          "loginTrigger": false,
+          "loginTrigger": "loginTrigger",
           "formData": false,
           "logoutTrigger": false,
           "headers": {
@@ -55,13 +54,51 @@
           "baseURL": "65003e4e61f0645ad866d812",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "CONFIRM_STOP_CHEQUE_SUCCESS_MODAL_TRIGGER",
+            "triggerId": "bfBG2b1JWIF2dAw_sKNeA",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
+            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.709o5k109bu0uhZ0xHlG51AudyczmAU5",
-  "updatedAt": "9/15/2023",
-  "createdAt": "9/15/2023",
+  "csrf": "0.5bom5aaexj891FoB-RmNWPn_jCCA520H",
+  "updatedAt": "9/26/2023",
+  "createdAt": "9/26/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

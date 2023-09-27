@@ -162,7 +162,21 @@
                                   "content": "Button",
                                   "type": "20006"
                                 },
-                                "events": [],
+                                "events": [
+                                  {
+                                    "triggerId": "j-Umn1-_-GPypF1f6Px2q",
+                                    "triggerName": "NAVIGATE_TO_RAAST_TITLE_PAYMENT",
+                                    "serviceType": "1",
+                                    "attributes": {
+                                      "nextWidgetId": "uD-30RqzmDlPwhx0H9LLX",
+                                      "gridRadioValue": "",
+                                      "selectedObjectBindingKey": "selectedObject",
+                                      "editableForm": false
+                                    },
+                                    "type": "2",
+                                    "name": "On click"
+                                  }
+                                ],
                                 "path": "0-0-0-1-0-0-0"
                               }
                             ],
@@ -272,7 +286,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "ivTGeefCfHo-kVpWlZCJ9",
+                    "id": "B_fCpe6eFEX9fCYSASJiU",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -288,7 +302,7 @@
                                 "gridProps": [
                                   {
                                     "type": "column",
-                                    "id": "GjCpc6nRjolq-CfCibSi-",
+                                    "id": "9FtSzIDpXM5nrJp-8AtGl",
                                     "gridProps": [
                                       {
                                         "type": "10001",
@@ -1626,12 +1640,11 @@
                                       "md": 6,
                                       "sm": 6,
                                       "xs": 6
-                                    },
-                                    "path": "0-0-1-0-0-0-0-0"
+                                    }
                                   },
                                   {
                                     "type": "column",
-                                    "id": "Sl9wnaSlVNXhu6niguNus",
+                                    "id": "C1chNfNlqQeQhOK9xMoWY",
                                     "gridProps": [
                                       {
                                         "type": "10001",
@@ -2546,12 +2559,54 @@
                                       "md": 6,
                                       "sm": 6,
                                       "xs": 6
-                                    },
-                                    "path": "0-0-1-0-0-0-0-1"
+                                    }
                                   }
                                 ],
                                 "path": "0-0-1-0-0-0-0",
-                                "events": [],
+                                "events": [
+                                  {
+                                    "triggerId": "oBGaaJoo7TE0eJwoEWXPx",
+                                    "triggerName": "FETCHING CARD TYPES",
+                                    "serviceType": "8",
+                                    "attributes": {
+                                      "loaderWidgetIds": [906070],
+                                      "messageWidgetIds": [906070],
+                                      "responseStateKey": "cardTypes",
+                                      "responseReturnValue": "content",
+                                      "successMessageBindingKey": "successMessage",
+                                      "errorMessageBindingKey": "errorMessage",
+                                      "url": "/cardTypes",
+                                      "checksum": true,
+                                      "encryption": true,
+                                      "isDeviceDetails": false,
+                                      "loginTrigger": "loginTrigger",
+                                      "formData": false,
+                                      "logoutTrigger": false,
+                                      "headers": {
+                                        "Content-Type": "application/json",
+                                        "channel_key": "005"
+                                      },
+                                      "requestBody": [
+                                        {
+                                          "type": 4,
+                                          "name": "Static",
+                                          "key": "inquiry",
+                                          "value": "null"
+                                        },
+                                        {
+                                          "type": 4,
+                                          "name": "Static",
+                                          "key": "temp",
+                                          "value": "null"
+                                        }
+                                      ],
+                                      "baseURL": "64f9670d683922479c06159b",
+                                      "storeType": 2
+                                    },
+                                    "type": "1",
+                                    "name": "On initialization"
+                                  }
+                                ],
                                 "attributes": {
                                   "gridProps": [],
                                   "label": "Header",
@@ -2736,13 +2791,12 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "ogtqNrc2SsOERZ9iupCck",
-                                                    "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
+                                                    "triggerId": "avv4kpWRGDj94CHc7tL2Q",
+                                                    "triggerName": "NAVGATE_TO_DASHBOARD_SCREEN",
                                                     "serviceType": "1",
                                                     "attributes": {
-                                                      "fromWidgetId": "kCWSlexO5DOIMrXKqnp8l",
                                                       "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                      "gridRadioValue": "Screen",
+                                                      "gridRadioValue": "",
                                                       "selectedObjectBindingKey": "selectedObject",
                                                       "editableForm": false
                                                     },
@@ -2750,7 +2804,7 @@
                                                     "name": "On click"
                                                   }
                                                 ],
-                                                "path": "0-0-1-0-0-0-6-1-0-0-0"
+                                                "path": "0-0-1-0-0-0-1-1-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -2830,11 +2884,11 @@
                                             "id": "Aam5X_4UxKF9uNciQQWOq",
                                             "gridProps": [
                                               {
-                                                "id": "vDXIAyWO-fqYClpvwyRtv",
+                                                "id": "qWdGj9dM_egKNd1ue0i6c",
                                                 "type": "20031",
-                                                "triggerName": "POP_UP_MODAL_FOR_CARD_REQUEST_TRIGGER",
+                                                "triggerName": "Show Card Request ERROR Modal",
                                                 "attributes": {
-                                                  "widgetId": "5JV8k73ipORnCTSxZw6Jp",
+                                                  "widgetId": "LoGUP3y4RdjMfY-VAcfYM",
                                                   "layoutProperties": {
                                                     "xl": 12,
                                                     "lg": 12,
@@ -2895,20 +2949,20 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "0RO5mpNOC4j9JyrSrF-Pi",
-                                                    "triggerName": "POP_UP_MODAL_FOR_CARD_REQUEST_TRIGGER",
-                                                    "serviceType": "9",
+                                                    "triggerId": "sSxCRQHvCmGWHgTodz7DE",
+                                                    "triggerName": "NAVIGATE_TO_OTP_CARD_REQUEST_SCREEN",
+                                                    "serviceType": "1",
                                                     "attributes": {
-                                                      "widgetId": "5JV8k73ipORnCTSxZw6Jp",
-                                                      "content": "",
-                                                      "type": "",
-                                                      "modalId": "vDXIAyWO-fqYClpvwyRtv"
+                                                      "nextWidgetId": "2C_CuBTgAkFm5NrP7-PHV",
+                                                      "gridRadioValue": "",
+                                                      "selectedObjectBindingKey": "selectedObject",
+                                                      "editableForm": false
                                                     },
                                                     "type": "2",
                                                     "name": "On click"
                                                   }
                                                 ],
-                                                "path": "0-0-1-0-0-0-1-2-0-0-0"
+                                                "path": "0-0-1-0-0-0-1-2-0-0-1"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -3166,8 +3220,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-1-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -3194,7 +3247,7 @@
                     "alignItems": "flex-start"
                   },
                   "direction": "row",
-                  "name": "Grid layout"
+                  "name": "Confirmation Card"
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
@@ -3256,8 +3309,8 @@
     "gitBranchName": "master",
     "_id": "aEmgnt0YjDr42ejV7jJEb",
     "createdBy": "muhammad.asad",
-    "updatedAt": "9/20/2023",
-    "createdAt": "9/20/2023",
+    "updatedAt": "9/25/2023",
+    "createdAt": "9/25/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3518,7 +3571,15 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "j-Umn1-_-GPypF1f6Px2q",
+        "triggerName": "NAVIGATE_TO_RAAST_TITLE_PAYMENT",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
     "path": "0-0-0-1-0-0-0",
     "screenId": "aEmgnt0YjDr42ejV7jJEb",
     "subType": "component",
@@ -3567,7 +3628,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "Confirmation Card"
     },
     "layout": null,
     "events": [],
@@ -3708,7 +3769,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "oBGaaJoo7TE0eJwoEWXPx",
+        "triggerName": "FETCHING CARD TYPES",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "aEmgnt0YjDr42ejV7jJEb",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -6056,14 +6124,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "ogtqNrc2SsOERZ9iupCck",
-        "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
+        "triggerId": "avv4kpWRGDj94CHc7tL2Q",
+        "triggerName": "NAVGATE_TO_DASHBOARD_SCREEN",
         "name": "On click",
         "type": "2",
         "serviceType": "1"
       }
     ],
-    "path": "0-0-1-0-0-0-6-1-0-0-0",
+    "path": "0-0-1-0-0-0-1-1-0-0-0",
     "screenId": "aEmgnt0YjDr42ejV7jJEb",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -6084,7 +6152,7 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "vDXIAyWO-fqYClpvwyRtv",
+          "componentId": "qWdGj9dM_egKNd1ue0i6c",
           "componentType": "20031",
           "order": 1
         },
@@ -6135,11 +6203,11 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "vDXIAyWO-fqYClpvwyRtv",
+    "id": "qWdGj9dM_egKNd1ue0i6c",
     "type": "20031",
-    "triggerName": "POP_UP_MODAL_FOR_CARD_REQUEST_TRIGGER",
+    "triggerName": "Show Card Request ERROR Modal",
     "attributes": {
-      "widgetId": "5JV8k73ipORnCTSxZw6Jp",
+      "widgetId": "LoGUP3y4RdjMfY-VAcfYM",
       "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
     },
     "component": { "type": "20031" },
@@ -6195,14 +6263,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "0RO5mpNOC4j9JyrSrF-Pi",
-        "triggerName": "POP_UP_MODAL_FOR_CARD_REQUEST_TRIGGER",
+        "triggerId": "sSxCRQHvCmGWHgTodz7DE",
+        "triggerName": "NAVIGATE_TO_OTP_CARD_REQUEST_SCREEN",
         "name": "On click",
         "type": "2",
-        "serviceType": "9"
+        "serviceType": "1"
       }
     ],
-    "path": "0-0-1-0-0-0-1-2-0-0-0",
+    "path": "0-0-1-0-0-0-1-2-0-0-1",
     "screenId": "aEmgnt0YjDr42ejV7jJEb",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
