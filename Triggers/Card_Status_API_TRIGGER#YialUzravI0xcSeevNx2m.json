@@ -1,0 +1,122 @@
+{
+  "id": "W_j9eunMBrhWW62jzgVA2",
+  "_id": "YialUzravI0xcSeevNx2m",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Card_Status_API_TRIGGER",
+  "old_name": "Card_Status_API_TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "cardStatusResponse",
+          "url": "/updateCardStatus",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "cardNature", "value": "DC" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "cardNumberToken",
+              "value": "titleList.cardNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "cardStatus",
+              "value": "null"
+            },
+            { "type": 4, "name": "Static", "key": "id", "value": "0" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "status",
+              "value": "statusCode.code"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "validation",
+              "value": "otpInfo"
+            }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Card_Status_Success_TRIGGER",
+            "triggerId": "cc3YrM1dOEUeZmktdC_sU",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 403,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          },
+          {
+            "httpStatus": 502,
+            "triggerName": "Card_Status_Error_TRIGGER",
+            "triggerId": "I6NBngrawYvwotO6K9xmd"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.lk3znw8dsw9oEqS3iqN_DKFN3KeixlRN",
+  "updatedAt": "10/2/2023",
+  "createdAt": "10/2/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

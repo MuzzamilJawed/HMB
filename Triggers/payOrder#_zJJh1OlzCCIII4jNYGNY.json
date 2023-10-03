@@ -15,8 +15,6 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "payOrderResponse",
-          "successMessageBindingKey": "successMessage",
-          "errorMessageBindingKey": "errorMessage",
           "url": "/payOrder",
           "checksum": true,
           "encryption": true,
@@ -98,14 +96,55 @@
             "logic": { "==": [{ "var": "code" }, 1] },
             "triggerName": "Swap Payorder Confrim to Receipt",
             "triggerId": "yjmemt7UmMRFvnY0VUAE6"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 502,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "Pay_Order_MODAL_TRIGGER",
+            "triggerId": "sc_84qvy_7dr3OfYTOyyh",
+            "logic": { "==": [{ "var": "code" }, 0] }
           }
         ]
       }
     }
   ],
-  "csrf": "0.fmenq6voszf6jS20WIPsP_7xaYVd_Ylq",
-  "updatedAt": "9/25/2023",
-  "createdAt": "9/25/2023",
-  "createdBy": "masood",
-  "updatedBy": "masood"
+  "csrf": "0.l4bpnkah4eh_Nld2bpVSQ_41MInmK_O",
+  "updatedAt": "9/28/2023",
+  "createdAt": "9/28/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
 }

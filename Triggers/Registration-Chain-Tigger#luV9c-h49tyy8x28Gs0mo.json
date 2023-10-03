@@ -1,0 +1,269 @@
+{
+  "id": "A6HYrJhxiVIKCjdxmSDvI",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Registration Chain Tigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "IJEw8wmh2t5qqmeVtqXVV",
+              "_id": "mloELpnE4Ce8uyy3-IyGx",
+              "name": "Mapping Device properties ",
+              "old_name": "Mapping Device properties ",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "destinationBindingKey": "device",
+                      "sourceBindingKey": "device",
+                      "sourceStoreType": 3,
+                      "destinationStoreType": 3,
+                      "filterList": [
+                        {
+                          "key": "imei",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [true, "111111111111111", "111111111111111"]
+                          }
+                        },
+                        {
+                          "key": "name",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [
+                              true,
+                              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                            ]
+                          }
+                        },
+                        {
+                          "key": "osType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "Win32", "Win32"] }
+                        },
+                        {
+                          "key": "os",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "Web", "Web"] }
+                        },
+                        {
+                          "key": "fcmToken",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "0101010101", "0101010101"] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [true, "192.168.0.112", "192.168.0.112"]
+                          },
+                          "key": "ip"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, true, true] },
+                          "key": "isNotificationEnabled"
+                        },
+                        {
+                          "key": "countryCode",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "PKR", "PKR"] }
+                        },
+                        {
+                          "key": "deviceKey",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [
+                              true,
+                              "A331926C-4B19-4418-89E6-9E26660384DE",
+                              "A331926C-4B19-4418-89E6-9E26660384DE"
+                            ]
+                          }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+              "updatedAt": "9/7/2023",
+              "createdAt": "9/7/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "oSvOXIy7QV6tftMKFBn19",
+              "name": "completeRegistration tranCode",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "dataType": "value",
+                      "destinationBindingKey": "tranCode",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "0105", "0105"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.pxm4iskn3phpPFm_PyVTUg_yfoOlzwYF",
+              "_id": "-n0LzYDO2dQnE9AG0SLI1",
+              "updatedAt": "9/15/2023",
+              "createdAt": "9/15/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "1Pa7yd-H8R4GtCb9Cge8H",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "validateRegistrationGenerateOTP Trigger",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "validateRegistrationResponse",
+                      "url": "/validateRegistrationGenerateOTP",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountNumber",
+                          "value": "accountNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "email",
+                          "value": "email"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "mobileNumber",
+                          "value": "mobileNumber"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "flowType",
+                          "value": "REGISTERATION"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "registerMode",
+                          "value": "ACC"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "registrationFlag",
+                          "value": "true"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "username",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "userIdenValue",
+                          "value": "userIdenValue"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "userIdenType",
+                          "value": "Type.userIdenType"
+                        },
+                        {
+                          "type": 3,
+                          "name": "Current session",
+                          "key": "device",
+                          "value": "device"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "tranCode",
+                          "value": "tranCode"
+                        }
+                      ],
+                      "baseURL": "650d2f0dc9bf2957746d02af",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "triggerName": "Registration Form to Registration OTP",
+                        "triggerId": "E10WUec6Tir6-sR7brb-w"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+              "_id": "VbCikwxm937VYjTXuT0XP",
+              "updatedAt": "10/3/2023",
+              "createdAt": "10/3/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": [
+            "IJEw8wmh2t5qqmeVtqXVV",
+            "oSvOXIy7QV6tftMKFBn19",
+            "1Pa7yd-H8R4GtCb9Cge8H"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+  "_id": "luV9c-h49tyy8x28Gs0mo",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

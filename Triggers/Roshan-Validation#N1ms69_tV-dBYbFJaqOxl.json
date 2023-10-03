@@ -1,0 +1,52 @@
+{
+  "id": "b4I-sIb7qNe0x51VjkpQ2",
+  "name": "Roshan Validation",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "validation",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.emailPin" }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" },
+              "key": "smsPin"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] },
+              "key": "splitOtp"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+  "_id": "N1ms69_tV-dBYbFJaqOxl",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,234 @@
+{
+  "id": "00fcExNInWDZVIfLPFssu",
+  "_id": "A0LRorRmfhq5jlBMdDu5M",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Roshan Khidmat Transfer",
+  "old_name": "Roshan Khidmat Transfer",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "roshanKhidmatTransferResponse",
+          "url": "/transfer",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "actualAmount",
+              "value": "amount"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "amountInWords",
+              "value": "PKR One"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "selectAccount.bankImd"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "beneficiary",
+              "value": "true"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "convertedAmount",
+              "value": "amount"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "exchangeRate",
+              "value": "amount"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "executionType",
+              "value": "PAY_NOW"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountIban",
+              "value": "selectAccount.iban"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "selectAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountTitle",
+              "value": "selectAccount.accountTitle"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromCurrency",
+              "value": "selectAccount.currency"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "instrumentType",
+              "value": "A"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "noOfOccurrences",
+              "value": 0
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "orgCode",
+              "value": "certiType.accountNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "otpVisible",
+              "value": "false"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "purposeOfPayment",
+              "value": "Others"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "selectAccount.rda"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestNumber",
+              "value": "roshanTitle.requestNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestDate",
+              "value": "roshanTitle.requestDate"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "returnBalance",
+              "value": "true"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "saveAsBene",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "state", "value": "false" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountNumber",
+              "value": "roshanTitle.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountTitle",
+              "value": "roshanTitle.accountTitle"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "transactionCurrency",
+              "value": "roshanTitle.currency"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toCurrency",
+              "value": "roshanTitle.currency"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferToOption",
+              "value": "beneficiary"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "transferType",
+              "value": "certiType.transferType"
+            },
+            { "type": 4, "name": "Static", "key": "raast", "value": "false" },
+            { "type": 4, "name": "Static", "key": "byCard", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isByCard",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "isRaast", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "localIsRaast",
+              "value": "false"
+            }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Swap Roshan Confirm to Receipt ",
+            "triggerId": "hReg_SISl-YEnjK3winCr",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

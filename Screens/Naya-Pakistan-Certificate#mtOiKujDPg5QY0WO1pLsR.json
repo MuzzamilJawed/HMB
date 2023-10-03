@@ -139,113 +139,7 @@
                   {
                     "type": "column",
                     "id": "IonC4WCZv0spH9_ejqqmv",
-                    "gridProps": [
-                      {
-                        "type": "10001",
-                        "name": "Grid layout",
-                        "id": "gDxnAlsGGXmf9si9jMq90",
-                        "gridProps": [
-                          {
-                            "type": "column",
-                            "id": "mGEDJgApfg6CUUyOqQ8HK",
-                            "gridProps": [
-                              {
-                                "id": "ECpaYuK1ptFUMFInK0qCy",
-                                "status": "ACTIVE",
-                                "attributes": {
-                                  "label": "Add Payee",
-                                  "variant": "outlined",
-                                  "name": "Button",
-                                  "label-locale-key": "",
-                                  "fullWidth": true,
-                                  "layoutProperties": {
-                                    "button": {
-                                      "//": "Use this class to style button component.",
-                                      "height": "47px",
-                                      "border": "1px solid #19612F !important",
-                                      "text-color": "#19612F",
-                                      "border-radius": "8px",
-                                      "color": "#19612F",
-                                      "box-shadow": "0px 4px 10px 0px #19612F1A"
-                                    },
-                                    "inputProps": {
-                                      "//": "Use this class to style button element."
-                                    },
-                                    "mainContainer": "button",
-                                    "xl": 12,
-                                    "lg": 12,
-                                    "md": 12,
-                                    "sm": 12,
-                                    "xs": 12
-                                  },
-                                  "asset": null,
-                                  "iconname": "TbUserPlus",
-                                  "buttonIconPosition": "start",
-                                  "iconName": "TbUserPlus"
-                                },
-                                "name": "Button",
-                                "icon": "FaBimobject",
-                                "group": "Form",
-                                "type": "20006",
-                                "Documentation": "<div>components 12344</div>",
-                                "updatedAt": "23-Aug-2021",
-                                "createdAt": "23-Aug-2021",
-                                "order": 1,
-                                "version": "1.0.0",
-                                "isLatest": true,
-                                "projectType": "web",
-                                "component": {
-                                  "content": "Button",
-                                  "type": "20006"
-                                },
-                                "events": [],
-                                "path": "0-0-0-1-0-0-0"
-                              }
-                            ],
-                            "layoutProperties": {
-                              "xl": 12,
-                              "lg": 12,
-                              "md": 12,
-                              "sm": 12,
-                              "xs": 12
-                            },
-                            "path": "0-0-0-1-0-0"
-                          }
-                        ],
-                        "allowedContainers": [
-                          "10001",
-                          "20030",
-                          "noLayout",
-                          "20010",
-                          "widget"
-                        ],
-                        "attributes": {
-                          "gridProps": [],
-                          "label": "Header",
-                          "layoutProperties": {
-                            "gridLayout": {
-                              "//": "Use this class to style grid layout component.",
-                              "padding": "5px",
-                              "spacing": 0
-                            },
-                            "mainContainer": "gridLayout"
-                          },
-                          "layoutProps": {
-                            "direction": "row",
-                            "justifyContent": "flex-start",
-                            "alignItems": "flex-start"
-                          },
-                          "direction": "row",
-                          "name": "Grid layout"
-                        },
-                        "events": [],
-                        "component": {
-                          "type": "10001",
-                          "content": "Grid layout"
-                        },
-                        "path": "0-0-0-1-0"
-                      }
-                    ],
+                    "gridProps": [],
                     "layoutProperties": {
                       "xl": 2,
                       "lg": 2,
@@ -685,8 +579,10 @@
                                                           "layoutProperties": {
                                                             "autocomplete": {
                                                               "//": "Use this class to style autocomplete component in dropdown.",
-                                                              "background": "#F0F0F0",
-                                                              "border-radius": "10px"
+                                                              "background": "#FBFBFB",
+                                                              "border-radius": "10px",
+                                                              "border": "1px solid rgba(0,0,0,0.10)",
+                                                              "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
                                                             },
                                                             "textField": {
                                                               "//": "Use this class to style textField component in dropdown.",
@@ -1798,7 +1694,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "kyEFlrxfmmBKnPO23l86W",
+                                                            "id": "aI6zcfT0djIlPKDGeGRpb",
                                                             "gridProps": [
                                                               {
                                                                 "id": "pGso05MUnfx7DHdMw_Apr",
@@ -1870,7 +1766,26 @@
                                                             "alignItems": "flex-start"
                                                           },
                                                           "direction": "row",
-                                                          "name": "Grid layout"
+                                                          "name": "Grid layout",
+                                                          "hideCondition": {
+                                                            "logic": {
+                                                              "and": [
+                                                                {
+                                                                  "var": "currentScreen.form.certiType",
+                                                                  "!=": "null"
+                                                                },
+                                                                {
+                                                                  "var": "currentScreen.form.tenureSelect",
+                                                                  "!=": "null"
+                                                                },
+                                                                {
+                                                                  "var": "currentScreen.form.currency",
+                                                                  "!=": "null",
+                                                                  "==": false
+                                                                }
+                                                              ]
+                                                            }
+                                                          }
                                                         },
                                                         "component": {
                                                           "type": "10001",
@@ -2144,8 +2059,10 @@
                                                           "layoutProperties": {
                                                             "autocomplete": {
                                                               "//": "Use this class to style autocomplete component in dropdown.",
-                                                              "background": "#F0F0F0",
-                                                              "border-radius": "10px"
+                                                              "background": "#FBFBFB",
+                                                              "border-radius": "10px",
+                                                              "border": "1px solid rgba(0,0,0,0.10)",
+                                                              "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
                                                             },
                                                             "textField": {
                                                               "//": "Use this class to style textField component in dropdown.",
@@ -2387,8 +2304,10 @@
                                                           "layoutProperties": {
                                                             "autocomplete": {
                                                               "//": "Use this class to style autocomplete component in dropdown.",
-                                                              "background": "#F0F0F0",
-                                                              "border-radius": "10px"
+                                                              "background": "#FBFBFB",
+                                                              "border-radius": "10px",
+                                                              "border": "1px solid rgba(0,0,0,0.10)",
+                                                              "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
                                                             },
                                                             "textField": {
                                                               "//": "Use this class to style textField component in dropdown.",
@@ -2648,8 +2567,10 @@
                                                           "layoutProperties": {
                                                             "autocomplete": {
                                                               "//": "Use this class to style autocomplete component in dropdown.",
-                                                              "background": "#F0F0F0",
-                                                              "border-radius": "10px"
+                                                              "background": "#FBFBFB",
+                                                              "border-radius": "10px",
+                                                              "border": "1px solid rgba(0,0,0,0.10)",
+                                                              "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
                                                             },
                                                             "textField": {
                                                               "//": "Use this class to style textField component in dropdown.",
@@ -3651,8 +3572,8 @@
     "gitBranchName": "master",
     "_id": "mtOiKujDPg5QY0WO1pLsR",
     "createdBy": "masood",
-    "updatedAt": "9/27/2023",
-    "createdAt": "9/27/2023",
+    "updatedAt": "10/2/2023",
+    "createdAt": "10/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3751,19 +3672,6 @@
             "sm": 10,
             "xs": 10
           }
-        },
-        {
-          "componentId": "gDxnAlsGGXmf9si9jMq90",
-          "componentType": "10001",
-          "id": "gDxnAlsGGXmf9si9jMq90",
-          "position": {
-            "i": "gDxnAlsGGXmf9si9jMq90",
-            "x": null,
-            "y": null,
-            "w": null,
-            "h": null
-          },
-          "layoutProperties": { "xl": 2, "lg": 2, "md": 2, "sm": 2, "xs": 2 }
         }
       ],
       "label": "Header",
@@ -3828,103 +3736,6 @@
     "screenId": "mtOiKujDPg5QY0WO1pLsR",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "gDxnAlsGGXmf9si9jMq90",
-    "name": "Grid layout",
-    "type": "10001",
-    "attributes": {
-      "gridProps": [
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "ECpaYuK1ptFUMFInK0qCy",
-          "componentType": "20006",
-          "order": 1
-        }
-      ],
-      "label": "Header",
-      "layoutProperties": {
-        "gridLayout": {
-          "//": "Use this class to style grid layout component.",
-          "padding": "5px",
-          "spacing": 0
-        },
-        "mainContainer": "gridLayout"
-      },
-      "layoutProps": {
-        "direction": "row",
-        "justifyContent": "flex-start",
-        "alignItems": "flex-start"
-      },
-      "direction": "row",
-      "name": "Grid layout"
-    },
-    "layout": null,
-    "events": [],
-    "subType": "component",
-    "screenId": "mtOiKujDPg5QY0WO1pLsR",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "ECpaYuK1ptFUMFInK0qCy",
-    "status": "ACTIVE",
-    "attributes": {
-      "label": "Add Payee",
-      "variant": "outlined",
-      "name": "Button",
-      "label-locale-key": "",
-      "fullWidth": true,
-      "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "47px",
-          "border": "1px solid #19612F !important",
-          "text-color": "#19612F",
-          "border-radius": "8px",
-          "color": "#19612F",
-          "box-shadow": "0px 4px 10px 0px #19612F1A"
-        },
-        "inputProps": { "//": "Use this class to style button element." },
-        "mainContainer": "button",
-        "xl": 12,
-        "lg": 12,
-        "md": 12,
-        "sm": 12,
-        "xs": 12
-      },
-      "asset": null,
-      "iconname": "TbUserPlus",
-      "buttonIconPosition": "start",
-      "iconName": "TbUserPlus"
-    },
-    "name": "Button",
-    "icon": "FaBimobject",
-    "group": "Form",
-    "type": "20006",
-    "Documentation": "<div>components 12344</div>",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 1,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "web",
-    "component": { "content": "Button", "type": "20006" },
-    "events": [],
-    "path": "0-0-0-1-0-0-0",
-    "screenId": "mtOiKujDPg5QY0WO1pLsR",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -4459,8 +4270,10 @@
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#F0F0F0",
-          "border-radius": "10px"
+          "background": "#FBFBFB",
+          "border-radius": "10px",
+          "border": "1px solid rgba(0,0,0,0.10)",
+          "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",
@@ -5492,7 +5305,16 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "Grid layout",
+      "hideCondition": {
+        "logic": {
+          "and": [
+            { "var": "currentScreen.form.certiType", "!=": "null" },
+            { "var": "currentScreen.form.tenureSelect", "!=": "null" },
+            { "var": "currentScreen.form.currency", "!=": "null", "==": false }
+          ]
+        }
+      }
     },
     "layout": null,
     "events": [],
@@ -5533,11 +5355,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-1-0-0-0-1-0-0-0-2-0-2-0-0",
     "screenId": "mtOiKujDPg5QY0WO1pLsR",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -5875,8 +5697,10 @@
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#F0F0F0",
-          "border-radius": "10px"
+          "background": "#FBFBFB",
+          "border-radius": "10px",
+          "border": "1px solid rgba(0,0,0,0.10)",
+          "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",
@@ -6073,8 +5897,10 @@
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#F0F0F0",
-          "border-radius": "10px"
+          "background": "#FBFBFB",
+          "border-radius": "10px",
+          "border": "1px solid rgba(0,0,0,0.10)",
+          "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",
@@ -6271,8 +6097,10 @@
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#F0F0F0",
-          "border-radius": "10px"
+          "background": "#FBFBFB",
+          "border-radius": "10px",
+          "border": "1px solid rgba(0,0,0,0.10)",
+          "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",

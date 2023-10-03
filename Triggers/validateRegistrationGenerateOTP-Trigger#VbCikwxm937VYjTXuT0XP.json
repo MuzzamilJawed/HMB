@@ -1,0 +1,107 @@
+{
+  "id": "1Pa7yd-H8R4GtCb9Cge8H",
+  "_id": "VbCikwxm937VYjTXuT0XP",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "validateRegistrationGenerateOTP Trigger",
+  "old_name": "validateRegistrationGenerateOTP Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "validateRegistrationResponse",
+          "responseReturnValue": "content",
+          "url": "/validateRegistrationGenerateOTP",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            { "type": 1, "name": "Form", "key": "email", "value": "email" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "mobileNumber",
+              "value": "mobileNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "flowType",
+              "value": "REGISTERATION"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "registerMode",
+              "value": "ACC"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "registrationFlag",
+              "value": "true"
+            },
+            { "type": 4, "name": "Static", "key": "username", "value": "null" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenValue",
+              "value": "userIdenValue"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenType",
+              "value": "Type.code"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "tranCode",
+              "value": "tranCode"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "triggerName": "Registration Form to Registration OTP",
+            "triggerId": "E10WUec6Tir6-sR7brb-w"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+  "updatedAt": "10/3/2023",
+  "createdAt": "10/3/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

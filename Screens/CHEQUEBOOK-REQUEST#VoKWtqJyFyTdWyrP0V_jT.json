@@ -289,7 +289,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "QVWw89YGB6HX-pxNNZqvq",
+                    "id": "8OghiAV44Sjuym5IoDvoQ",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -707,7 +707,6 @@
                                                           "name": "Drop down",
                                                           "stateName": "numberOfLeaves",
                                                           "allValues": true,
-                                                          "label": "Select No. Of Leaves",
                                                           "dataSource": "",
                                                           "dataKey": "",
                                                           "dataValue": "",
@@ -756,7 +755,8 @@
                                                           ],
                                                           "variant": "standard",
                                                           "selectedDataType": 1,
-                                                          "disableUnderline": true
+                                                          "disableUnderline": true,
+                                                          "placeholder": "Select No. Of Leaves"
                                                         },
                                                         "type": "20003",
                                                         "events": [],
@@ -768,7 +768,7 @@
                                                           "content": "Drop down",
                                                           "type": "20003"
                                                         },
-                                                        "path": "0-0-2-0-0-0-0-0-1-0-4-0-0"
+                                                        "path": "0-0-2-0-0-0-0-0-1-0-3-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -2227,16 +2227,10 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "ogtqNrc2SsOERZ9iupCck",
-                                                            "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
-                                                            "serviceType": "1",
-                                                            "attributes": {
-                                                              "fromWidgetId": "kCWSlexO5DOIMrXKqnp8l",
-                                                              "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                              "gridRadioValue": "Screen",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "editableForm": false
-                                                            },
+                                                            "triggerId": "C9VAY5AImRfafff65",
+                                                            "triggerName": "Clear validations",
+                                                            "serviceType": "14",
+                                                            "attributes": {},
                                                             "type": "2",
                                                             "name": "On click"
                                                           }
@@ -2752,8 +2746,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-2-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -2783,7 +2776,8 @@
                   "name": "Confirmation Card",
                   "cssClassNames": [
                     { "cssClassName": "Cheque_Book_Request_CSS " }
-                  ]
+                  ],
+                  "hideComponent": false
                 },
                 "events": [
                   {
@@ -2899,8 +2893,8 @@
     "gitBranchName": "master",
     "_id": "VoKWtqJyFyTdWyrP0V_jT",
     "createdBy": "muhammad.asad",
-    "updatedAt": "9/26/2023",
-    "createdAt": "9/26/2023",
+    "updatedAt": "10/3/2023",
+    "createdAt": "10/3/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3240,7 +3234,8 @@
       },
       "direction": "row",
       "name": "Confirmation Card",
-      "cssClassNames": [{ "cssClassName": "Cheque_Book_Request_CSS " }]
+      "cssClassNames": [{ "cssClassName": "Cheque_Book_Request_CSS " }],
+      "hideComponent": false
     },
     "layout": null,
     "events": [
@@ -3916,7 +3911,6 @@
       "name": "Drop down",
       "stateName": "numberOfLeaves",
       "allValues": true,
-      "label": "Select No. Of Leaves",
       "dataSource": "",
       "dataKey": "",
       "dataValue": "",
@@ -3953,7 +3947,8 @@
       ],
       "variant": "standard",
       "selectedDataType": 1,
-      "disableUnderline": true
+      "disableUnderline": true,
+      "placeholder": "Select No. Of Leaves"
     },
     "type": "20003",
     "events": [],
@@ -3962,7 +3957,7 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Drop down", "type": "20003" },
-    "path": "0-0-2-0-0-0-0-0-1-0-4-0-0",
+    "path": "0-0-2-0-0-0-0-0-1-0-3-0-0",
     "screenId": "VoKWtqJyFyTdWyrP0V_jT",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -5170,11 +5165,11 @@
     },
     "events": [
       {
-        "triggerId": "ogtqNrc2SsOERZ9iupCck",
-        "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
+        "triggerId": "C9VAY5AImRfafff65",
+        "triggerName": "Clear validations",
         "name": "On click",
         "type": "2",
-        "serviceType": "1"
+        "serviceType": "14"
       }
     ],
     "path": "0-0-2-0-0-0-2-1-0-0-0-0-0",

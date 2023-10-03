@@ -1,0 +1,138 @@
+{
+  "id": "9oAPEBh2HZkQvjIWZjoSm",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Card_Status_CHAIN_TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "vW2ImcN-g36aGhqJVkOtq",
+              "_id": "rJsW31K3fgCfqZ87CFI6f",
+              "name": "Card_Status_Map_Values_TRIGGER",
+              "old_name": "Card_Status_Map_Values_TRIGGER",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "cardStatus",
+                      "sourceBindingKey": "abc",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "value",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [
+                              {
+                                "==": [
+                                  {
+                                    "var": "currentScreen.form.titleList.cardStatus"
+                                  },
+                                  "001"
+                                ]
+                              },
+                              "Temporary Block",
+                              "Active"
+                            ]
+                          }
+                        },
+                        {
+                          "key": "key",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [
+                              {
+                                "==": [
+                                  {
+                                    "var": "currentScreen.form.titleList.cardStatus"
+                                  },
+                                  "001"
+                                ]
+                              },
+                              "002",
+                              "001"
+                            ]
+                          }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.l4bpnkah4eh_Nld2bpVSQ_41MInmK_O",
+              "updatedAt": "9/28/2023",
+              "createdAt": "9/28/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "d97eqcVmktgBy9nEiJ86H",
+              "_id": "bohiM8qsNWxtmndGfLpsZ",
+              "name": "Map_Value_For_Card_Status",
+              "old_name": "Map_Value_For_Card_Status",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "cardStatus1",
+                      "sourceBindingKey": "cardStatus",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          true,
+                          [{ "var": "currentScreen.cardStatus" }],
+                          [{ "var": "currentScreen.cardStatus" }]
+                        ]
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.l4bpnkah4eh_Nld2bpVSQ_41MInmK_O",
+              "updatedAt": "9/28/2023",
+              "createdAt": "9/28/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["vW2ImcN-g36aGhqJVkOtq", "d97eqcVmktgBy9nEiJ86H"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.l4bpnkah4eh_Nld2bpVSQ_41MInmK_O",
+  "_id": "IqlWWY_VHbgV-GrVpACYD",
+  "updatedAt": "9/28/2023",
+  "createdAt": "9/28/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

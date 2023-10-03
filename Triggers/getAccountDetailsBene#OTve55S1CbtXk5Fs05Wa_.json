@@ -1,0 +1,63 @@
+{
+  "id": "677mUxTWkg6tVi7Lw1YIa",
+  "_id": "OTve55S1CbtXk5Fs05Wa_",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getAccountDetailsBene",
+  "old_name": "getAccountDetailsBene",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "responseTitle",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "amount", "value": 0 },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankName",
+              "value": "bankName.bankName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "bankName.bankIMD"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            { "type": 4, "name": "Static", "key": "accountId", "value": "null" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.ic70raxqv5sk2cVd7Ts5xqz0CE-TNKSC",
+  "updatedAt": "9/28/2023",
+  "createdAt": "9/28/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

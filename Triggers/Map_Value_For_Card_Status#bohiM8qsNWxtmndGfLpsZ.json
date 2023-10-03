@@ -1,0 +1,40 @@
+{
+  "id": "d97eqcVmktgBy9nEiJ86H",
+  "_id": "bohiM8qsNWxtmndGfLpsZ",
+  "name": "Map_Value_For_Card_Status",
+  "old_name": "Map_Value_For_Card_Status",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "cardStatus1",
+          "sourceBindingKey": "cardStatus",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              true,
+              [{ "var": "currentScreen.cardStatus" }],
+              [{ "var": "currentScreen.cardStatus" }]
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value"
+        }
+      }
+    }
+  ],
+  "csrf": "0.l4bpnkah4eh_Nld2bpVSQ_41MInmK_O",
+  "updatedAt": "9/28/2023",
+  "createdAt": "9/28/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}
