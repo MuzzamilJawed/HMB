@@ -1,0 +1,238 @@
+{
+  "id": "VoZtn3AJ97Ai6_z2ccUI0",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "NPC CHAIN TRIGGER DTN",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3WJVpQqglNb4yHnlELcM-",
+              "name": " Otpinfo with email and SMSpin",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.emailPin" },
+                          "key": "emailPin"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "splitOtp",
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "_id": "j4UDdGfNoOd5UzY-973cX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "r2HvAJlXPo7AlkzllSsLj",
+              "_id": "glC8Rx0YYSpZCXCxBy-zw",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "NPC REDEMPTION SUBMIT",
+              "old_name": "NPC REDEMPTION SUBMIT",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "npcRedemptionResponse",
+                      "url": "/npc/submit",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "selectAccount.accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountNumber",
+                          "value": "selectAccount.accountNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "amount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "certString",
+                          "value": "certiType.name"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "certType",
+                          "value": "certiType.code"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "currencyId",
+                          "value": "currency.typeCode"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "currencyString",
+                          "value": "currency.currency"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tdNumber",
+                          "value": "tdNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tenureString",
+                          "value": "tenureSelect.tenure"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tenor",
+                          "value": "tenureSelect.id"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tenorDescription",
+                          "value": "tenureSelect.tenure"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+                      },
+                      {
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM",
+                        "httpStatus": 500
+                      },
+                      {
+                        "httpStatus": 401,
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+                      },
+                      {
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM",
+                        "httpStatus": 404
+                      },
+                      {
+                        "httpStatus": 501,
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "httpStatus": 200,
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "NPC_SUCCESS_MODAL_TRIGGER",
+                        "triggerId": "r5HMfjFyaVSDWusA8llx-"
+                      },
+                      {
+                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
+                        "triggerId": "tHRAD_Gx92UB1lWTPm4oM",
+                        "httpStatus": 402
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.1uuaqdvtx7nwAa9ZosVgYs8WuGSYOInI",
+              "updatedAt": "10/4/2023",
+              "createdAt": "10/4/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["3WJVpQqglNb4yHnlELcM-", "r2HvAJlXPo7AlkzllSsLj"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.1uuaqdvtx7nwAa9ZosVgYs8WuGSYOInI",
+  "_id": "9p2UbgNFXxjE6FqjXMm6F",
+  "updatedAt": "10/4/2023",
+  "createdAt": "10/4/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

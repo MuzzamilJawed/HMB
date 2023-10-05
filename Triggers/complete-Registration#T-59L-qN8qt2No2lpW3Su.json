@@ -1,0 +1,91 @@
+{
+  "id": "P9rTwGBDzdMuTJivrKklT",
+  "_id": "T-59L-qN8qt2No2lpW3Su",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "complete Registration",
+  "old_name": "complete Registration",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "completeRegistration",
+          "url": "/completeRegistration",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "accountId",
+              "value": "validateRegistrationResponse.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "choosePassword",
+              "value": "choosePassword"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "confirmPassword",
+              "value": "confirmPassword"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "mobileNumber",
+              "value": "mobileNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenType",
+              "value": "Type.code"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenValue",
+              "value": "userIdenValue"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "userName",
+              "value": "selectedUsername.code"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.gzrp75s2g367Q8HfCMh8EmGly4wg0toD",
+  "updatedAt": "10/5/2023",
+  "createdAt": "10/5/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

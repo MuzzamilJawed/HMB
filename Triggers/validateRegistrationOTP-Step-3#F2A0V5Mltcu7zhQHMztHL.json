@@ -1,0 +1,69 @@
+{
+  "id": "jlwqFku4qZeR_Y9DVImZV",
+  "_id": "F2A0V5Mltcu7zhQHMztHL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "validateRegistrationOTP Step 3",
+  "old_name": "validateRegistrationOTP Step 3",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "responseRegister",
+          "responseReturnValue": "content",
+          "url": "/validateRegistrationOTP",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "accountId",
+              "value": "validateRegistrationResponse.accountNumber"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "validation",
+              "value": "validation"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "fllow OTP to Registration ",
+            "triggerId": "qXvaee2RR_0fUbn8OjOHT"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.gzrp75s2g367Q8HfCMh8EmGly4wg0toD",
+  "updatedAt": "10/5/2023",
+  "createdAt": "10/5/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

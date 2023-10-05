@@ -336,57 +336,57 @@
                                     "id": "mWwsEKpxCqqiZ0hSmi62V",
                                     "gridProps": [
                                       {
-                                        "id": "7uBfUPv-6zCMirmCdAGlE",
+                                        "id": "IbyLFVFNNcSzZh-3xjDkg",
                                         "status": "ACTIVE",
-                                        "name": "Text Box",
+                                        "name": "Drop down",
+                                        "icon": "FaCaretSquareDown",
+                                        "group": "Form",
+                                        "updatedAt": "23-Aug-2021",
+                                        "createdAt": "23-Aug-2021",
                                         "attributes": {
-                                          "label": "",
-                                          "name": "Text box",
-                                          "label-locale-key": "",
-                                          "maxLength": 20,
-                                          "type": "text",
-                                          "variant": "standard",
-                                          "value": "",
-                                          "readOnly": false,
-                                          "font-family": "Verdana",
+                                          "name": "Drop down",
+                                          "stateName": "selectedUsername",
+                                          "allValues": true,
+                                          "label": "From Account Number",
+                                          "dataSource": "responseRegister",
+                                          "dataKey": "name",
+                                          "dataValue": "name",
                                           "mandatory": true,
-                                          "tooltipState": "",
+                                          "validate": {
+                                            "required": false,
+                                            "errorMsg": "This Field is Required"
+                                          },
                                           "layoutProperties": {
+                                            "autocomplete": {
+                                              "//": "Use this class to style autocomplete component in dropdown."
+                                            },
                                             "textField": {
-                                              "//": "Use this class to style text field component."
+                                              "//": "Use this class to style textField component in dropdown."
                                             },
                                             "inputProps": {
-                                              "//": "Use this class to style  text field element."
+                                              "//": "Use this class to style dropdown element."
                                             },
-                                            "mainContainer": "textField",
+                                            "mainContainer": "autocomplete",
                                             "xl": 8,
                                             "lg": 8,
                                             "md": 8,
                                             "sm": 8,
                                             "xs": 8
                                           },
-                                          "validate": {
-                                            "required": false,
-                                            "errorMsg": "This field is required"
-                                          },
-                                          "placeholder": "Enter Username",
-                                          "stateName": "username"
+                                          "dropdownOptions": [],
+                                          "variant": "standard",
+                                          "selectedDataType": 0
                                         },
-                                        "icon": "FaWindowMinimize",
-                                        "group": "Form",
-                                        "type": "20004",
-                                        "Documentation": "<div>components 12344</div>",
-                                        "updatedAt": "23-Aug-2021",
-                                        "createdAt": "23-Aug-2021",
-                                        "order": 20,
+                                        "type": "20003",
+                                        "events": [],
+                                        "order": 10,
                                         "version": "1.0.0",
                                         "isLatest": true,
                                         "projectType": "web",
                                         "component": {
-                                          "content": "Text Box",
-                                          "type": "20004"
+                                          "content": "Drop down",
+                                          "type": "20003"
                                         },
-                                        "events": [],
                                         "path": "0-0-0-0-0-0-2-0-0"
                                       }
                                     ],
@@ -482,7 +482,7 @@
                                         "attributes": {
                                           "label": "Enter Password min 10 digits",
                                           "variant": "standard",
-                                          "stateName": "password",
+                                          "stateName": "choosePassword",
                                           "label-locale-key": "",
                                           "maxLength": "100",
                                           "value": "password",
@@ -620,7 +620,7 @@
                                         "attributes": {
                                           "label": "Re Enter Password",
                                           "variant": "standard",
-                                          "stateName": "confirmpassword",
+                                          "stateName": "confirmPassword",
                                           "label-locale-key": "",
                                           "maxLength": "100",
                                           "value": "password",
@@ -878,7 +878,7 @@
                                                 "id": "OjkCh2Fc-7gebxuIoee0Q",
                                                 "status": "ACTIVE",
                                                 "attributes": {
-                                                  "label": "Login",
+                                                  "label": "Complete",
                                                   "variant": "contained",
                                                   "name": "Button",
                                                   "label-locale-key": "",
@@ -922,18 +922,83 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-                                                    "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-                                                    "serviceType": "1",
+                                                    "triggerId": "P9rTwGBDzdMuTJivrKklT",
+                                                    "triggerName": "complete Registration",
+                                                    "serviceType": "8",
                                                     "attributes": {
-                                                      "fromWidgetId": "kn-g6dLXYigHhX9bj8Z88",
-                                                      "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                      "gridRadioValue": "Screen",
-                                                      "selectedObjectBindingKey": "selectedObject",
-                                                      "editableForm": false
+                                                      "loaderWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "messageWidgetIds": [
+                                                        906070
+                                                      ],
+                                                      "responseStateKey": "completeRegistration",
+                                                      "url": "/completeRegistration",
+                                                      "checksum": true,
+                                                      "encryption": true,
+                                                      "isDeviceDetails": false,
+                                                      "loginTrigger": false,
+                                                      "formData": false,
+                                                      "logoutTrigger": false,
+                                                      "headers": {
+                                                        "Content-Type": "application/json",
+                                                        "channel_key": "005"
+                                                      },
+                                                      "requestBody": [
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "accountNumber",
+                                                          "value": "accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "accountId",
+                                                          "value": "validateRegistrationResponse.accountNumber"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "choosePassword",
+                                                          "value": "choosePassword"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "confirmPassword",
+                                                          "value": "confirmPassword"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "mobileNumber",
+                                                          "value": "mobileNumber"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "userIdenType",
+                                                          "value": "Type.code"
+                                                        },
+                                                        {
+                                                          "type": 1,
+                                                          "name": "Form",
+                                                          "key": "userIdenValue",
+                                                          "value": "userIdenValue"
+                                                        },
+                                                        {
+                                                          "type": 2,
+                                                          "name": "Current screen",
+                                                          "key": "userName",
+                                                          "value": "selected.name"
+                                                        }
+                                                      ],
+                                                      "baseURL": "650d2f0dc9bf2957746d02af",
+                                                      "storeType": 2
                                                     },
-                                                    "type": "2",
-                                                    "name": "On click"
+                                                    "type": "4",
+                                                    "name": "On Submit"
                                                   }
                                                 ],
                                                 "path": "0-0-0-0-0-0-5-1-0-0-0"
@@ -7037,8 +7102,8 @@
     "gitBranchName": "master",
     "_id": "_rXEIMV7IhViiOcQtPc0z",
     "createdBy": "masood",
-    "updatedAt": "8/17/2023",
-    "createdAt": "8/17/2023",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7563,8 +7628,8 @@
       "gridProps": [
         {
           "layoutProperties": { "xl": 8, "lg": 8, "md": 8, "sm": 8, "xs": 8 },
-          "componentId": "7uBfUPv-6zCMirmCdAGlE",
-          "componentType": "20004",
+          "componentId": "IbyLFVFNNcSzZh-3xjDkg",
+          "componentType": "20003",
           "order": 1
         }
       ],
@@ -7598,50 +7663,52 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "7uBfUPv-6zCMirmCdAGlE",
+    "id": "IbyLFVFNNcSzZh-3xjDkg",
     "status": "ACTIVE",
-    "name": "Text Box",
+    "name": "Drop down",
+    "icon": "FaCaretSquareDown",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
     "attributes": {
-      "label": "",
-      "name": "Text box",
-      "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
-      "variant": "standard",
-      "value": "",
-      "readOnly": false,
-      "font-family": "Verdana",
+      "name": "Drop down",
+      "stateName": "selectedUsername",
+      "allValues": true,
+      "label": "From Account Number",
+      "dataSource": "responseRegister",
+      "dataKey": "name",
+      "dataValue": "name",
       "mandatory": true,
-      "tooltipState": "",
+      "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
-        "textField": { "//": "Use this class to style text field component." },
-        "inputProps": { "//": "Use this class to style  text field element." },
-        "mainContainer": "textField",
+        "autocomplete": {
+          "//": "Use this class to style autocomplete component in dropdown."
+        },
+        "textField": {
+          "//": "Use this class to style textField component in dropdown."
+        },
+        "inputProps": { "//": "Use this class to style dropdown element." },
+        "mainContainer": "autocomplete",
         "xl": 8,
         "lg": 8,
         "md": 8,
         "sm": 8,
         "xs": 8
       },
-      "validate": { "required": false, "errorMsg": "This field is required" },
-      "placeholder": "Enter Username",
-      "stateName": "username"
+      "dropdownOptions": [],
+      "variant": "standard",
+      "selectedDataType": 0
     },
-    "icon": "FaWindowMinimize",
-    "group": "Form",
-    "type": "20004",
-    "Documentation": "<div>components 12344</div>",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
+    "type": "20003",
+    "events": [],
+    "order": 10,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
-    "events": [],
+    "subType": "component",
+    "component": { "content": "Drop down", "type": "20003" },
     "path": "0-0-0-0-0-0-2-0-0",
     "screenId": "_rXEIMV7IhViiOcQtPc0z",
-    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -7697,7 +7764,7 @@
     "attributes": {
       "label": "Enter Password min 10 digits",
       "variant": "standard",
-      "stateName": "password",
+      "stateName": "choosePassword",
       "label-locale-key": "",
       "maxLength": "100",
       "value": "password",
@@ -7792,7 +7859,7 @@
     "attributes": {
       "label": "Re Enter Password",
       "variant": "standard",
-      "stateName": "confirmpassword",
+      "stateName": "confirmPassword",
       "label-locale-key": "",
       "maxLength": "100",
       "value": "password",
@@ -8036,7 +8103,7 @@
     "id": "OjkCh2Fc-7gebxuIoee0Q",
     "status": "ACTIVE",
     "attributes": {
-      "label": "Login",
+      "label": "Complete",
       "variant": "contained",
       "name": "Button",
       "label-locale-key": "",
@@ -8071,11 +8138,11 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-        "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "1"
+        "triggerId": "P9rTwGBDzdMuTJivrKklT",
+        "triggerName": "complete Registration",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "8"
       }
     ],
     "path": "0-0-0-0-0-0-5-1-0-0-0",

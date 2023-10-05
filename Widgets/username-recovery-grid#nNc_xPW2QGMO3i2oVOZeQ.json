@@ -1,0 +1,2188 @@
+[
+  {
+    "id": "nNc_xPW2QGMO3i2oVOZeQ",
+    "name": "username recovery grid",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "YZyl4PFzDorjSB8wpphck",
+          "componentType": "10001",
+          "id": "YZyl4PFzDorjSB8wpphck",
+          "position": {
+            "i": "YZyl4PFzDorjSB8wpphck",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+        }
+      ]
+    },
+    "layout": [
+      {
+        "type": "10001",
+        "id": "YZyl4PFzDorjSB8wpphck",
+        "gridProps": [
+          {
+            "type": "column",
+            "id": "kseeUZNwMvdfEDL3pmPGw",
+            "gridProps": [
+              {
+                "type": "10001",
+                "name": "Grid layout",
+                "id": "vezchQfJKC7LNIEo0vQSk",
+                "gridProps": [
+                  {
+                    "type": "column",
+                    "id": "RvmNrMrqD7e7_YngNT_Qy",
+                    "gridProps": [
+                      {
+                        "type": "10001",
+                        "id": "fwNsCGSy3NieSMtuBNlpZ",
+                        "gridProps": [
+                          {
+                            "type": "column",
+                            "id": "mSnI3UjDR49nen8P161wA",
+                            "gridProps": [
+                              {
+                                "type": "10001",
+                                "id": "1OFFea6IwHQwhjfhx-FVL",
+                                "gridProps": [
+                                  {
+                                    "type": "column",
+                                    "id": "_Xf76rSj6nZ-_IkoV4eLf",
+                                    "gridProps": [
+                                      {
+                                        "id": "Mcp69kinUHZNmbmwqFt8-",
+                                        "type": "20003",
+                                        "name": "Drop down",
+                                        "component": {
+                                          "content": "Drop down",
+                                          "type": "20003"
+                                        },
+                                        "attributes": {
+                                          "name": "Drop down",
+                                          "stateName": "recoveryOpt",
+                                          "allValues": true,
+                                          "label": "SELECT OPTION",
+                                          "dataSource": "",
+                                          "dataKey": "",
+                                          "dataValue": "",
+                                          "mandatory": true,
+                                          "validate": {
+                                            "required": false,
+                                            "errorMsg": "This Field is Required"
+                                          },
+                                          "layoutProperties": {
+                                            "autocomplete": {
+                                              "//": "Use this class to style autocomplete component in dropdown."
+                                            },
+                                            "textField": {
+                                              "//": "Use this class to style textField component in dropdown."
+                                            },
+                                            "inputProps": {
+                                              "//": "Use this class to style dropdown element."
+                                            },
+                                            "mainContainer": "autocomplete",
+                                            "xl": 8,
+                                            "lg": 8,
+                                            "md": 8,
+                                            "sm": 8,
+                                            "xs": 8
+                                          },
+                                          "dropdownOptions": [
+                                            {
+                                              "code": "Passport",
+                                              "name": "Passport"
+                                            },
+                                            { "code": "CNIC", "name": "CNIC" }
+                                          ],
+                                          "variant": "standard",
+                                          "selectedDataType": 1
+                                        },
+                                        "events": [
+                                          {
+                                            "triggerId": "ESzXU0S84lRiYE_uh8seC",
+                                            "triggerName": "CONDITIONAL USERNAME RECOVEYR  TRIGGER",
+                                            "serviceType": "13",
+                                            "attributes": {
+                                              "triggers": [
+                                                {
+                                                  "logic": {
+                                                    "==": [
+                                                      {
+                                                        "var": "currentScreen.form.recoveryOpt"
+                                                      },
+                                                      null
+                                                    ]
+                                                  },
+                                                  "triggerName": "DEFAULT USERNAME RECOVEYR SWAP",
+                                                  "triggerId": "msaB9GFoYhW0ah-a7biHV",
+                                                  "services": [
+                                                    {
+                                                      "type": "1",
+                                                      "command": {
+                                                        "type": "2",
+                                                        "attributes": {
+                                                          "fromWidgetId": "fwNsCGSy3NieSMtuBNlpZ",
+                                                          "nextWidgetId": "ZoOox86Sv2I34VYQggdml",
+                                                          "gridRadioValue": "Grid",
+                                                          "selectedObjectBindingKey": "selectedObject",
+                                                          "editableForm": false
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "logic": {
+                                                    "==": [
+                                                      {
+                                                        "var": "currentScreen.form.recoveryOpt.code"
+                                                      },
+                                                      "Passport"
+                                                    ]
+                                                  },
+                                                  "triggerName": "DEFAULT RECOVEYR TO PASSPAORT RECOVERY GRID TRIGGER",
+                                                  "triggerId": "j5dV7VnaFloe4MjoNWPn-",
+                                                  "services": [
+                                                    {
+                                                      "type": "1",
+                                                      "command": {
+                                                        "type": "2",
+                                                        "attributes": {
+                                                          "fromWidgetId": "fwNsCGSy3NieSMtuBNlpZ",
+                                                          "nextWidgetId": "PQvUdaUmXnyvIhUEAoka1",
+                                                          "gridRadioValue": "Grid",
+                                                          "selectedObjectBindingKey": "selectedObject",
+                                                          "editableForm": false
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "logic": {
+                                                    "==": [
+                                                      {
+                                                        "var": "currentScreen.form.recoveryOpt.code"
+                                                      },
+                                                      "CNIC"
+                                                    ]
+                                                  },
+                                                  "triggerName": "DEFAULT USERNAME WIDGET TO CNIC WIDGET",
+                                                  "triggerId": "Q8FNW5rXgTGo_CI4JuTTq",
+                                                  "services": [
+                                                    {
+                                                      "type": "1",
+                                                      "command": {
+                                                        "type": "2",
+                                                        "attributes": {
+                                                          "fromWidgetId": "fwNsCGSy3NieSMtuBNlpZ",
+                                                          "nextWidgetId": "ig2TFTHS7xVf7SE9jlNy0",
+                                                          "gridRadioValue": "Grid",
+                                                          "selectedObjectBindingKey": "selectedObject",
+                                                          "editableForm": false
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            "type": "3",
+                                            "name": "On change"
+                                          }
+                                        ],
+                                        "path": "0-0-0-0-0-0-0-0-0",
+                                        "version": "1.0.0"
+                                      }
+                                    ],
+                                    "layoutProperties": {
+                                      "xl": 8,
+                                      "lg": 8,
+                                      "md": 8,
+                                      "sm": 8,
+                                      "xs": 8
+                                    },
+                                    "path": "0-0-0-0-0-0-0-0"
+                                  },
+                                  {
+                                    "type": "column",
+                                    "id": "hykVwi5cBU0_4Dgk5Jf8w",
+                                    "gridProps": [],
+                                    "layoutProperties": {
+                                      "xl": 4,
+                                      "lg": 4,
+                                      "md": 4,
+                                      "sm": 4,
+                                      "xs": 4
+                                    },
+                                    "path": "0-0-0-0-0-0-0-1"
+                                  }
+                                ],
+                                "path": "0-0-0-0-0-0-0",
+                                "events": [],
+                                "attributes": {
+                                  "gridProps": [],
+                                  "label": "Header",
+                                  "layoutProperties": {
+                                    "gridLayout": {
+                                      "//": "Use this class to style grid layout component.",
+                                      "padding": "5px 0px ",
+                                      "spacing": 0
+                                    },
+                                    "mainContainer": "gridLayout"
+                                  },
+                                  "layoutProps": {
+                                    "direction": "row",
+                                    "justifyContent": "flex-start",
+                                    "alignItems": "flex-start"
+                                  },
+                                  "direction": "row",
+                                  "name": "Grid layout"
+                                },
+                                "component": {
+                                  "type": "10001",
+                                  "content": "Grid layout"
+                                },
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
+                                "name": "Grid layout",
+                                "dimensions": {
+                                  "rows": 1,
+                                  "columns": 2,
+                                  "colSize0xs": 8,
+                                  "colSize0sm": 8,
+                                  "colSize0md": 8,
+                                  "colSize0lg": 8,
+                                  "colSize0xl": 8,
+                                  "colSize1xs": 4,
+                                  "colSize1sm": 4,
+                                  "colSize1md": 4,
+                                  "colSize1lg": 4,
+                                  "colSize1xl": 4
+                                },
+                                "readOnly": true
+                              }
+                            ],
+                            "layoutProperties": {
+                              "xl": 12,
+                              "lg": 12,
+                              "md": 12,
+                              "sm": 12,
+                              "xs": 12
+                            },
+                            "path": "0-0-0-0-0-0"
+                          }
+                        ],
+                        "path": "0-0-0-0-0",
+                        "events": [],
+                        "attributes": {
+                          "gridProps": [],
+                          "label": "Header",
+                          "layoutProperties": {
+                            "gridLayout": {
+                              "//": "Use this class to style grid layout component.",
+                              "padding": "5px ",
+                              "spacing": 0
+                            },
+                            "mainContainer": "gridLayout"
+                          },
+                          "layoutProps": {
+                            "direction": "row",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start"
+                          },
+                          "direction": "row",
+                          "name": "Username",
+                          "isSwappable": false
+                        },
+                        "component": {
+                          "type": "10001",
+                          "content": "Grid layout"
+                        },
+                        "allowedContainers": [
+                          "10001",
+                          "20030",
+                          "noLayout",
+                          "20010",
+                          "widget"
+                        ],
+                        "name": "Username"
+                      },
+                      {
+                        "type": "10001",
+                        "id": "l0D6SiTqtNAQZHEqV8R87",
+                        "gridProps": [],
+                        "path": "0-0-0-0-1",
+                        "events": [],
+                        "attributes": {
+                          "gridProps": [],
+                          "label": "Header",
+                          "layoutProperties": {
+                            "gridLayout": {
+                              "//": "Use this class to style grid layout component.",
+                              "padding": "5px",
+                              "spacing": 0
+                            },
+                            "mainContainer": "gridLayout"
+                          },
+                          "layoutProps": {
+                            "direction": "row",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start"
+                          },
+                          "direction": "row",
+                          "name": "empty username Grid",
+                          "isSwappable": true
+                        },
+                        "component": {
+                          "type": "10001",
+                          "content": "Grid layout"
+                        },
+                        "allowedContainers": [
+                          "10001",
+                          "20030",
+                          "noLayout",
+                          "20010",
+                          "widget"
+                        ],
+                        "name": "empty username Grid"
+                      },
+                      {
+                        "type": "10001",
+                        "id": "25Je7lJpHAqWpGpRwkXaM",
+                        "gridProps": [
+                          {
+                            "type": "column",
+                            "id": "-d1la2rgs6lWvB9yCSHVe",
+                            "gridProps": [
+                              {
+                                "id": "zjikhQUl9M0q_l4CcjVw-",
+                                "type": "20004",
+                                "name": "Text Box",
+                                "component": {
+                                  "content": "Text Box",
+                                  "type": "20004"
+                                },
+                                "attributes": {
+                                  "label": "",
+                                  "name": "Text box",
+                                  "label-locale-key": "",
+                                  "maxLength": "24",
+                                  "type": "text",
+                                  "variant": "standard",
+                                  "value": "",
+                                  "readOnly": false,
+                                  "tooltip": "",
+                                  "font-family": "Verdana",
+                                  "mandatory": true,
+                                  "tooltipState": "",
+                                  "layoutProperties": {
+                                    "textField": {
+                                      "//": "Use this class to style text field component."
+                                    },
+                                    "inputProps": {
+                                      "//": "Use this class to style  text field element."
+                                    },
+                                    "mainContainer": "textField",
+                                    "xl": 8,
+                                    "lg": 8,
+                                    "md": 8,
+                                    "sm": 8,
+                                    "xs": 8
+                                  },
+                                  "validate": {
+                                    "required": false,
+                                    "errorMsg": "This field is required"
+                                  },
+                                  "placeholder": "Enter Account Number/IBAN",
+                                  "stateName": "accountNumber"
+                                },
+                                "events": [],
+                                "path": "0-0-0-0-2-0-0",
+                                "version": "1.0.0"
+                              }
+                            ],
+                            "layoutProperties": {
+                              "xl": 8,
+                              "lg": 8,
+                              "md": 8,
+                              "sm": 8,
+                              "xs": 8
+                            },
+                            "path": "0-0-0-0-2-0"
+                          },
+                          {
+                            "type": "column",
+                            "id": "9uRumYzr2O1IJIjiDC9y0",
+                            "gridProps": [],
+                            "layoutProperties": {
+                              "xl": 4,
+                              "lg": 4,
+                              "md": 4,
+                              "sm": 4,
+                              "xs": 4
+                            },
+                            "path": "0-0-0-0-2-1"
+                          }
+                        ],
+                        "path": "0-0-0-0-2",
+                        "events": [],
+                        "attributes": {
+                          "gridProps": [],
+                          "label": "Header",
+                          "layoutProperties": {
+                            "gridLayout": {
+                              "//": "Use this class to style grid layout component.",
+                              "padding": "5px",
+                              "margin-top": "10px",
+                              "spacing": 0
+                            },
+                            "mainContainer": "gridLayout"
+                          },
+                          "layoutProps": {
+                            "direction": "row",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start"
+                          },
+                          "direction": "row",
+                          "name": "Grid layout"
+                        },
+                        "component": {
+                          "type": "10001",
+                          "content": "Grid layout"
+                        },
+                        "allowedContainers": [
+                          "10001",
+                          "20030",
+                          "noLayout",
+                          "20010",
+                          "widget"
+                        ],
+                        "name": "Grid layout"
+                      },
+                      {
+                        "type": "10001",
+                        "name": "Grid layout",
+                        "id": "H5lwQuknzudZ5qtiGuqBV",
+                        "gridProps": [
+                          {
+                            "type": "column",
+                            "id": "ZQiNTZQa6T5eah9CaUeMh",
+                            "gridProps": [
+                              {
+                                "type": "10001",
+                                "name": "Grid layout",
+                                "id": "UUVws0MrhG34E009uKPWP",
+                                "gridProps": [
+                                  {
+                                    "type": "column",
+                                    "id": "pX0hmT2ZjQsIcCdtChRfc",
+                                    "gridProps": [
+                                      {
+                                        "id": "js9_s05t8G2f47gv-uw16",
+                                        "status": "ACTIVE",
+                                        "name": "Text Box",
+                                        "attributes": {
+                                          "label": "",
+                                          "name": "Text box",
+                                          "label-locale-key": "",
+                                          "maxLength": 20,
+                                          "type": "text",
+                                          "variant": "standard",
+                                          "value": "",
+                                          "readOnly": false,
+                                          "font-family": "Verdana",
+                                          "mandatory": true,
+                                          "tooltipState": "",
+                                          "layoutProperties": {
+                                            "textField": {
+                                              "//": "Use this class to style text field component."
+                                            },
+                                            "inputProps": {
+                                              "//": "Use this class to style  text field element."
+                                            },
+                                            "mainContainer": "textField",
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          },
+                                          "validate": {
+                                            "required": false,
+                                            "errorMsg": "This field is required"
+                                          },
+                                          "placeholder": "Enter Email Address",
+                                          "stateName": "email"
+                                        },
+                                        "icon": "FaWindowMinimize",
+                                        "group": "Form",
+                                        "type": "20004",
+                                        "Documentation": "<div>components 12344</div>",
+                                        "updatedAt": "23-Aug-2021",
+                                        "createdAt": "23-Aug-2021",
+                                        "order": 20,
+                                        "version": "1.0.0",
+                                        "isLatest": true,
+                                        "projectType": "web",
+                                        "component": {
+                                          "content": "Text Box",
+                                          "type": "20004"
+                                        },
+                                        "events": [],
+                                        "path": "0-0-0-0-3-0-0-0-0"
+                                      }
+                                    ],
+                                    "layoutProperties": {
+                                      "xl": 12,
+                                      "lg": 12,
+                                      "md": 12,
+                                      "sm": 12,
+                                      "xs": 12
+                                    }
+                                  }
+                                ],
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
+                                "attributes": {
+                                  "gridProps": [],
+                                  "label": "Header",
+                                  "layoutProperties": {
+                                    "gridLayout": {
+                                      "//": "Use this class to style grid layout component.",
+                                      "padding": "5px 0px",
+                                      "spacing": 0
+                                    },
+                                    "mainContainer": "gridLayout"
+                                  },
+                                  "layoutProps": {
+                                    "direction": "row",
+                                    "justifyContent": "flex-start",
+                                    "alignItems": "flex-start"
+                                  },
+                                  "direction": "row",
+                                  "name": "Grid layout"
+                                },
+                                "events": [],
+                                "component": {
+                                  "type": "10001",
+                                  "content": "Grid layout"
+                                },
+                                "path": "0-0-0-0-3-0-0",
+                                "dimensions": {
+                                  "rows": 1,
+                                  "columns": 1,
+                                  "colSize0xs": 12,
+                                  "colSize0sm": 12,
+                                  "colSize0md": 12,
+                                  "colSize0lg": 12,
+                                  "colSize0xl": 12
+                                },
+                                "readOnly": true
+                              }
+                            ],
+                            "layoutProperties": {
+                              "xl": 8,
+                              "lg": 8,
+                              "md": 8,
+                              "sm": 8,
+                              "xs": 8
+                            }
+                          },
+                          {
+                            "type": "column",
+                            "id": "8_YcxThe_Sg3L_ol3S4mP",
+                            "gridProps": [],
+                            "layoutProperties": {
+                              "xl": 4,
+                              "lg": 4,
+                              "md": 4,
+                              "sm": 4,
+                              "xs": 4
+                            }
+                          }
+                        ],
+                        "allowedContainers": [
+                          "10001",
+                          "20030",
+                          "noLayout",
+                          "20010",
+                          "widget"
+                        ],
+                        "attributes": {
+                          "gridProps": [],
+                          "label": "Header",
+                          "layoutProperties": {
+                            "gridLayout": {
+                              "//": "Use this class to style grid layout component.",
+                              "padding": "5px",
+                              "spacing": 0
+                            },
+                            "mainContainer": "gridLayout"
+                          },
+                          "layoutProps": {
+                            "direction": "row",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start"
+                          },
+                          "direction": "row",
+                          "name": "Grid layout"
+                        },
+                        "events": [],
+                        "component": {
+                          "type": "10001",
+                          "content": "Grid layout"
+                        }
+                      },
+                      {
+                        "type": "10001",
+                        "id": "oqMARSwZFjAIkyrfIr23u",
+                        "gridProps": [
+                          {
+                            "type": "column",
+                            "id": "Vy_aSaVunebmEKNJam_LX",
+                            "gridProps": [
+                              {
+                                "type": "10001",
+                                "id": "SSZ5Ju8uocpq4xGYBaAaD",
+                                "gridProps": [
+                                  {
+                                    "type": "column",
+                                    "id": "GTHEBnerA3acCZMsuszNq",
+                                    "gridProps": [
+                                      {
+                                        "id": "sU3X2LcoXbGbWfCJJEGIL",
+                                        "status": "ACTIVE",
+                                        "attributes": {
+                                          "label": "Back",
+                                          "variant": "outlined",
+                                          "name": "Button",
+                                          "label-locale-key": "",
+                                          "fullWidth": true,
+                                          "layoutProperties": {
+                                            "button": {
+                                              "//": "Use this class to style button component.",
+                                              "height": "45px",
+                                              "width": "80%",
+                                              "color": "#1F7529 !important",
+                                              "borderColor": "#1F7529 !important"
+                                            },
+                                            "inputProps": {
+                                              "//": "Use this class to style button element."
+                                            },
+                                            "mainContainer": "button",
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          },
+                                          "cssClassNames": [
+                                            { "cssClassName": "cardButton4" }
+                                          ]
+                                        },
+                                        "name": "Button",
+                                        "icon": "FaBimobject",
+                                        "group": "Form",
+                                        "type": "20006",
+                                        "Documentation": "<div>components 12344</div>",
+                                        "updatedAt": "23-Aug-2021",
+                                        "createdAt": "23-Aug-2021",
+                                        "order": 1,
+                                        "version": "1.0.0",
+                                        "isLatest": true,
+                                        "projectType": "web",
+                                        "component": {
+                                          "content": "Button",
+                                          "type": "20006"
+                                        },
+                                        "events": [
+                                          {
+                                            "triggerId": "eBQ9X3WISolbkg3it-Rpd",
+                                            "triggerName": "NAVIGATE FROM USERNAME RECOVERY TO LOGIN PAGE",
+                                            "serviceType": "1",
+                                            "attributes": {
+                                              "fromWidgetId": "lWf0FFaAHQI0oP_2xJJsC",
+                                              "nextWidgetId": "kn-g6dLXYigHhX9bj8Z88",
+                                              "gridRadioValue": "Screen",
+                                              "selectedObjectBindingKey": "selectedObject",
+                                              "editableForm": false
+                                            },
+                                            "type": "2",
+                                            "name": "On click"
+                                          }
+                                        ],
+                                        "path": "0-0-0-0-3-0-0-0-0"
+                                      }
+                                    ],
+                                    "layoutProperties": {
+                                      "xl": 12,
+                                      "lg": 12,
+                                      "md": 12,
+                                      "sm": 12,
+                                      "xs": 12
+                                    },
+                                    "path": "0-0-0-0-3-0-0-0"
+                                  }
+                                ],
+                                "path": "0-0-0-0-3-0-0",
+                                "events": [],
+                                "attributes": {
+                                  "gridProps": [],
+                                  "label": "Header",
+                                  "layoutProperties": {
+                                    "gridLayout": {
+                                      "//": "Use this class to style grid layout component.",
+                                      "padding": "5px",
+                                      "spacing": 0,
+                                      "textAlign": "right"
+                                    },
+                                    "mainContainer": "gridLayout"
+                                  },
+                                  "layoutProps": {
+                                    "direction": "row",
+                                    "justifyContent": "flex-start",
+                                    "alignItems": "flex-start"
+                                  },
+                                  "direction": "row",
+                                  "name": "Grid layout"
+                                },
+                                "component": {
+                                  "type": "10001",
+                                  "content": "Grid layout"
+                                },
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
+                                "name": "Grid layout"
+                              }
+                            ],
+                            "layoutProperties": {
+                              "xl": 4,
+                              "lg": 4,
+                              "md": 4,
+                              "sm": 4,
+                              "xs": 4
+                            },
+                            "path": "0-0-0-0-3-0"
+                          },
+                          {
+                            "type": "column",
+                            "id": "O2PZGw2cmKsEdp2qgbnZP",
+                            "gridProps": [
+                              {
+                                "type": "10001",
+                                "id": "8VxzJUX4cKZEvIub5uNYX",
+                                "gridProps": [
+                                  {
+                                    "type": "column",
+                                    "id": "PTRYSAtNXzYB2H1NNJH0E",
+                                    "gridProps": [
+                                      {
+                                        "id": "uEM2RCX6aqB64ieqWitr9",
+                                        "status": "ACTIVE",
+                                        "attributes": {
+                                          "label": "SUBMIT",
+                                          "variant": "contained",
+                                          "name": "Button",
+                                          "label-locale-key": "",
+                                          "fullWidth": true,
+                                          "layoutProperties": {
+                                            "button": {
+                                              "//": "Use this class to style button component.",
+                                              "width": "80%",
+                                              "height": "45px"
+                                            },
+                                            "inputProps": {
+                                              "//": "Use this class to style button element."
+                                            },
+                                            "mainContainer": "button",
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          },
+                                          "cssClassNames": [
+                                            { "cssClassName": "CardButton" }
+                                          ]
+                                        },
+                                        "name": "Button",
+                                        "icon": "FaBimobject",
+                                        "group": "Form",
+                                        "type": "20006",
+                                        "Documentation": "<div>components 12344</div>",
+                                        "updatedAt": "23-Aug-2021",
+                                        "createdAt": "23-Aug-2021",
+                                        "order": 1,
+                                        "version": "1.0.0",
+                                        "isLatest": true,
+                                        "projectType": "web",
+                                        "component": {
+                                          "content": "Button",
+                                          "type": "20006"
+                                        },
+                                        "events": [
+                                          {
+                                            "triggerId": "xdTLJ3HLKAXRdtbo8DOWm",
+                                            "triggerName": "Usernamre Revovery chain Trigger ",
+                                            "serviceType": "2",
+                                            "attributes": {
+                                              "delay": "",
+                                              "triggers": [
+                                                {
+                                                  "id": "IJEw8wmh2t5qqmeVtqXVV",
+                                                  "_id": "mloELpnE4Ce8uyy3-IyGx",
+                                                  "name": "Mapping Device properties ",
+                                                  "old_name": "Mapping Device properties ",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "services": [
+                                                    {
+                                                      "type": "11",
+                                                      "command": {
+                                                        "type": "6",
+                                                        "attributes": {
+                                                          "requestBody": [],
+                                                          "destinationBindingKey": "device",
+                                                          "sourceBindingKey": "device",
+                                                          "sourceStoreType": 3,
+                                                          "destinationStoreType": 3,
+                                                          "filterList": [
+                                                            {
+                                                              "key": "imei",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "111111111111111",
+                                                                  "111111111111111"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "key": "name",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                                                                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "key": "osType",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "Win32",
+                                                                  "Win32"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "key": "os",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "Web",
+                                                                  "Web"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "key": "fcmToken",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "0101010101",
+                                                                  "0101010101"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "192.168.0.112",
+                                                                  "192.168.0.112"
+                                                                ]
+                                                              },
+                                                              "key": "ip"
+                                                            },
+                                                            {
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  true,
+                                                                  true
+                                                                ]
+                                                              },
+                                                              "key": "isNotificationEnabled"
+                                                            },
+                                                            {
+                                                              "key": "countryCode",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "PKR",
+                                                                  "PKR"
+                                                                ]
+                                                              }
+                                                            },
+                                                            {
+                                                              "key": "deviceKey",
+                                                              "changeValueConditonally": true,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "A331926C-4B19-4418-89E6-9E26660384DE",
+                                                                  "A331926C-4B19-4418-89E6-9E26660384DE"
+                                                                ]
+                                                              }
+                                                            }
+                                                          ],
+                                                          "targettedType": "object"
+                                                        }
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+                                                  "updatedAt": "9/7/2023",
+                                                  "createdAt": "9/7/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                },
+                                                {
+                                                  "id": "ljQEWkLPx7MnTm_OZl21_",
+                                                  "_id": "kpGm49-WfVsbH4UbyIbon",
+                                                  "name": "forgotUsername TranCode",
+                                                  "old_name": "Forget Password TranCode",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "services": [
+                                                    {
+                                                      "type": "11",
+                                                      "command": {
+                                                        "type": "6",
+                                                        "attributes": {
+                                                          "requestBody": [],
+                                                          "storeType": "",
+                                                          "selectedObjectBindingKey": "selectedObject",
+                                                          "dataType": "value",
+                                                          "destinationBindingKey": "tranCode",
+                                                          "sourceBindingKey": "form",
+                                                          "sourceStoreType": 2,
+                                                          "destinationStoreType": 2,
+                                                          "logic": {
+                                                            "if": [
+                                                              true,
+                                                              "0004",
+                                                              "0004"
+                                                            ]
+                                                          },
+                                                          "changeValueConditonally": true,
+                                                          "targettedType": "value"
+                                                        }
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.jyikfxzqbqj8c5DYfXXED9IXHJfDUFKA",
+                                                  "updatedAt": "9/15/2023",
+                                                  "createdAt": "9/15/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                },
+                                                {
+                                                  "id": "GnIL1NDSJ6E3praV6wlxi",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "name": "Usernamre Revovery Trigger",
+                                                  "status": "ACTIVE",
+                                                  "services": [
+                                                    {
+                                                      "type": "8",
+                                                      "command": {
+                                                        "type": "1",
+                                                        "attributes": {
+                                                          "loaderWidgetIds": [
+                                                            906070
+                                                          ],
+                                                          "messageWidgetIds": [
+                                                            906070
+                                                          ],
+                                                          "responseStateKey": "usernameRecoveryResponse",
+                                                          "url": "/validateRegistrationGenerateOTP",
+                                                          "checksum": true,
+                                                          "encryption": true,
+                                                          "isDeviceDetails": false,
+                                                          "loginTrigger": false,
+                                                          "formData": false,
+                                                          "logoutTrigger": false,
+                                                          "headers": {
+                                                            "Content-Type": "application/json",
+                                                            "channel_key": "005"
+                                                          },
+                                                          "requestBody": [
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "accountNumber",
+                                                              "value": "accountNumber"
+                                                            },
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "email",
+                                                              "value": "email"
+                                                            },
+                                                            {
+                                                              "type": 4,
+                                                              "name": "Static",
+                                                              "key": "flowType",
+                                                              "value": "FORGOT_USERNAME"
+                                                            },
+                                                            {
+                                                              "type": 4,
+                                                              "name": "Static",
+                                                              "key": "registerMode",
+                                                              "value": "ACC"
+                                                            },
+                                                            {
+                                                              "type": 4,
+                                                              "name": "Static",
+                                                              "key": "registrationFlag",
+                                                              "value": "false"
+                                                            },
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "userIdenValue",
+                                                              "value": "userIdenValue"
+                                                            },
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "userIdenType",
+                                                              "value": "userIdenType"
+                                                            },
+                                                            {
+                                                              "type": 3,
+                                                              "name": "Current session",
+                                                              "key": "device",
+                                                              "value": "device"
+                                                            },
+                                                            {
+                                                              "type": 2,
+                                                              "name": "Current screen",
+                                                              "key": "tranCode",
+                                                              "value": "tranCode"
+                                                            }
+                                                          ],
+                                                          "baseURL": "650d2f0dc9bf2957746d02af",
+                                                          "storeType": 2
+                                                        },
+                                                        "responseHandler": []
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.1z0n6038pcg-kM91jlF2nPwuBc21la5E",
+                                                  "_id": "t5WUva5jA3_q8FWfbtBkf",
+                                                  "updatedAt": "10/5/2023",
+                                                  "createdAt": "10/5/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                }
+                                              ],
+                                              "triggerIds": [
+                                                "IJEw8wmh2t5qqmeVtqXVV",
+                                                "ljQEWkLPx7MnTm_OZl21_",
+                                                "GnIL1NDSJ6E3praV6wlxi"
+                                              ]
+                                            },
+                                            "type": "4",
+                                            "name": "On Submit"
+                                          }
+                                        ],
+                                        "path": "0-0-0-0-3-1-0-0-0"
+                                      }
+                                    ],
+                                    "layoutProperties": {
+                                      "xl": 12,
+                                      "lg": 12,
+                                      "md": 12,
+                                      "sm": 12,
+                                      "xs": 12
+                                    },
+                                    "path": "0-0-0-0-3-1-0-0"
+                                  }
+                                ],
+                                "path": "0-0-0-0-3-1-0",
+                                "events": [],
+                                "attributes": {
+                                  "gridProps": [],
+                                  "label": "Header",
+                                  "layoutProperties": {
+                                    "gridLayout": {
+                                      "//": "Use this class to style grid layout component.",
+                                      "padding": "5px",
+                                      "spacing": 0
+                                    },
+                                    "mainContainer": "gridLayout"
+                                  },
+                                  "layoutProps": {
+                                    "direction": "row",
+                                    "justifyContent": "flex-start",
+                                    "alignItems": "flex-start"
+                                  },
+                                  "direction": "row",
+                                  "name": "Grid layout"
+                                },
+                                "component": {
+                                  "type": "10001",
+                                  "content": "Grid layout"
+                                },
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
+                                "name": "Grid layout"
+                              }
+                            ],
+                            "layoutProperties": {
+                              "xl": 4,
+                              "lg": 4,
+                              "md": 4,
+                              "sm": 4,
+                              "xs": 4
+                            },
+                            "path": "0-0-0-0-3-1"
+                          },
+                          {
+                            "type": "column",
+                            "id": "2LgNXW9A19zCqSrMRAyyT",
+                            "gridProps": [],
+                            "layoutProperties": {
+                              "xl": 4,
+                              "lg": 4,
+                              "md": 4,
+                              "sm": 4,
+                              "xs": 4
+                            },
+                            "path": "0-0-0-0-3-2"
+                          }
+                        ],
+                        "path": "0-0-0-0-3",
+                        "events": [],
+                        "attributes": {
+                          "gridProps": [],
+                          "label": "Header",
+                          "layoutProperties": {
+                            "gridLayout": {
+                              "//": "Use this class to style grid layout component.",
+                              "padding": "10px 5px 5px 5px",
+                              "spacing": 0
+                            },
+                            "mainContainer": "gridLayout"
+                          },
+                          "layoutProps": {
+                            "direction": "row",
+                            "justifyContent": "flex-start",
+                            "alignItems": "flex-start"
+                          },
+                          "direction": "row",
+                          "name": "Grid layout"
+                        },
+                        "component": {
+                          "type": "10001",
+                          "content": "Grid layout"
+                        },
+                        "allowedContainers": [
+                          "10001",
+                          "20030",
+                          "noLayout",
+                          "20010",
+                          "widget"
+                        ],
+                        "name": "Grid layout"
+                      }
+                    ],
+                    "layoutProperties": {
+                      "xl": 12,
+                      "lg": 12,
+                      "md": 12,
+                      "sm": 12,
+                      "xs": 12
+                    }
+                  }
+                ],
+                "allowedContainers": [
+                  "10001",
+                  "20030",
+                  "noLayout",
+                  "20010",
+                  "widget"
+                ],
+                "attributes": {
+                  "gridProps": [],
+                  "label": "Header",
+                  "layoutProperties": {
+                    "gridLayout": {
+                      "//": "Use this class to style grid layout component.",
+                      "spacing": 0
+                    },
+                    "mainContainer": "gridLayout"
+                  },
+                  "layoutProps": {
+                    "direction": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start"
+                  },
+                  "direction": "row",
+                  "name": "Grid layout"
+                },
+                "events": [],
+                "component": { "type": "10001", "content": "Grid layout" },
+                "path": "0-0-0",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
+              }
+            ],
+            "layoutProperties": {
+              "xl": 12,
+              "lg": 12,
+              "md": 12,
+              "sm": 12,
+              "xs": 12
+            }
+          }
+        ],
+        "path": "0",
+        "events": [],
+        "attributes": {
+          "gridProps": [],
+          "label": "Header",
+          "layoutProperties": {
+            "gridLayout": {
+              "//": "Use this class to style grid layout component.",
+              "padding": "10px 5px 5px 45px",
+              "spacing": 0
+            },
+            "mainContainer": "gridLayout"
+          },
+          "layoutProps": {
+            "direction": "row",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start"
+          },
+          "direction": "row",
+          "name": "username recovery grid",
+          "isSwappable": true,
+          "hideCondition": {},
+          "cssClassNames": []
+        },
+        "component": { "type": "10001", "content": "Grid layout" },
+        "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
+        "name": "username recovery grid",
+        "dimensions": {
+          "rows": 1,
+          "columns": 1,
+          "colSize0xs": 12,
+          "colSize0sm": 12,
+          "colSize0md": 12,
+          "colSize0lg": 12,
+          "colSize0xl": 12
+        },
+        "readOnly": true
+      }
+    ],
+    "events": [],
+    "subType": "widget",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "_id": "nNc_xPW2QGMO3i2oVOZeQ",
+    "createdBy": "masood",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "YZyl4PFzDorjSB8wpphck",
+    "name": "username recovery grid",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "vezchQfJKC7LNIEo0vQSk",
+          "componentType": "10001",
+          "id": "vezchQfJKC7LNIEo0vQSk",
+          "position": {
+            "i": "vezchQfJKC7LNIEo0vQSk",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "10px 5px 5px 45px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "username recovery grid",
+      "isSwappable": true,
+      "hideCondition": {},
+      "cssClassNames": []
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "vezchQfJKC7LNIEo0vQSk",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "fwNsCGSy3NieSMtuBNlpZ",
+          "componentType": "10001",
+          "id": "fwNsCGSy3NieSMtuBNlpZ",
+          "position": {
+            "i": "fwNsCGSy3NieSMtuBNlpZ",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "l0D6SiTqtNAQZHEqV8R87",
+          "componentType": "10001",
+          "id": "l0D6SiTqtNAQZHEqV8R87",
+          "position": {
+            "i": "l0D6SiTqtNAQZHEqV8R87",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "25Je7lJpHAqWpGpRwkXaM",
+          "componentType": "10001",
+          "id": "25Je7lJpHAqWpGpRwkXaM",
+          "position": {
+            "i": "25Je7lJpHAqWpGpRwkXaM",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "H5lwQuknzudZ5qtiGuqBV",
+          "componentType": "10001",
+          "id": "H5lwQuknzudZ5qtiGuqBV",
+          "position": {
+            "i": "H5lwQuknzudZ5qtiGuqBV",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "oqMARSwZFjAIkyrfIr23u",
+          "componentType": "10001",
+          "id": "oqMARSwZFjAIkyrfIr23u",
+          "position": {
+            "i": "oqMARSwZFjAIkyrfIr23u",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "fwNsCGSy3NieSMtuBNlpZ",
+    "name": "Username",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "1OFFea6IwHQwhjfhx-FVL",
+          "componentType": "10001",
+          "id": "1OFFea6IwHQwhjfhx-FVL",
+          "position": {
+            "i": "1OFFea6IwHQwhjfhx-FVL",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px ",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Username",
+      "isSwappable": false
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "1OFFea6IwHQwhjfhx-FVL",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": { "xl": 8, "lg": 8, "md": 8, "sm": 8, "xs": 8 },
+          "componentId": "Mcp69kinUHZNmbmwqFt8-",
+          "componentType": "20003",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px 0px ",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Mcp69kinUHZNmbmwqFt8-",
+    "type": "20003",
+    "name": "Drop down",
+    "component": { "content": "Drop down", "type": "20003" },
+    "attributes": {
+      "name": "Drop down",
+      "stateName": "recoveryOpt",
+      "allValues": true,
+      "label": "SELECT OPTION",
+      "dataSource": "",
+      "dataKey": "",
+      "dataValue": "",
+      "mandatory": true,
+      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "layoutProperties": {
+        "autocomplete": {
+          "//": "Use this class to style autocomplete component in dropdown."
+        },
+        "textField": {
+          "//": "Use this class to style textField component in dropdown."
+        },
+        "inputProps": { "//": "Use this class to style dropdown element." },
+        "mainContainer": "autocomplete",
+        "xl": 8,
+        "lg": 8,
+        "md": 8,
+        "sm": 8,
+        "xs": 8
+      },
+      "dropdownOptions": [
+        { "code": "Passport", "name": "Passport" },
+        { "code": "CNIC", "name": "CNIC" }
+      ],
+      "variant": "standard",
+      "selectedDataType": 1
+    },
+    "events": [
+      {
+        "triggerId": "ESzXU0S84lRiYE_uh8seC",
+        "triggerName": "CONDITIONAL USERNAME RECOVEYR  TRIGGER",
+        "name": "On change",
+        "type": "3",
+        "serviceType": "13"
+      }
+    ],
+    "path": "0-0-0-0-0-0-0-0-0",
+    "version": "1.0.0",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "l0D6SiTqtNAQZHEqV8R87",
+    "name": "empty username Grid",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "empty username Grid",
+      "isSwappable": true
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "25Je7lJpHAqWpGpRwkXaM",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": { "xl": 8, "lg": 8, "md": 8, "sm": 8, "xs": 8 },
+          "componentId": "zjikhQUl9M0q_l4CcjVw-",
+          "componentType": "20004",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "margin-top": "10px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zjikhQUl9M0q_l4CcjVw-",
+    "type": "20004",
+    "name": "Text Box",
+    "component": { "content": "Text Box", "type": "20004" },
+    "attributes": {
+      "label": "",
+      "name": "Text box",
+      "label-locale-key": "",
+      "maxLength": "24",
+      "type": "text",
+      "variant": "standard",
+      "value": "",
+      "readOnly": false,
+      "tooltip": "",
+      "font-family": "Verdana",
+      "mandatory": true,
+      "tooltipState": "",
+      "layoutProperties": {
+        "textField": { "//": "Use this class to style text field component." },
+        "inputProps": { "//": "Use this class to style  text field element." },
+        "mainContainer": "textField",
+        "xl": 8,
+        "lg": 8,
+        "md": 8,
+        "sm": 8,
+        "xs": 8
+      },
+      "validate": { "required": false, "errorMsg": "This field is required" },
+      "placeholder": "Enter Account Number/IBAN",
+      "stateName": "accountNumber"
+    },
+    "events": [],
+    "path": "0-0-0-0-2-0-0",
+    "version": "1.0.0",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "H5lwQuknzudZ5qtiGuqBV",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "UUVws0MrhG34E009uKPWP",
+          "componentType": "10001",
+          "id": "UUVws0MrhG34E009uKPWP",
+          "position": {
+            "i": "UUVws0MrhG34E009uKPWP",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 8, "lg": 8, "md": 8, "sm": 8, "xs": 8 }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "UUVws0MrhG34E009uKPWP",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "js9_s05t8G2f47gv-uw16",
+          "componentType": "20004",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px 0px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "js9_s05t8G2f47gv-uw16",
+    "status": "ACTIVE",
+    "name": "Text Box",
+    "attributes": {
+      "label": "",
+      "name": "Text box",
+      "label-locale-key": "",
+      "maxLength": 20,
+      "type": "text",
+      "variant": "standard",
+      "value": "",
+      "readOnly": false,
+      "font-family": "Verdana",
+      "mandatory": true,
+      "tooltipState": "",
+      "layoutProperties": {
+        "textField": { "//": "Use this class to style text field component." },
+        "inputProps": { "//": "Use this class to style  text field element." },
+        "mainContainer": "textField",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "validate": { "required": false, "errorMsg": "This field is required" },
+      "placeholder": "Enter Email Address",
+      "stateName": "email"
+    },
+    "icon": "FaWindowMinimize",
+    "group": "Form",
+    "type": "20004",
+    "Documentation": "<div>components 12344</div>",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 20,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "subType": "component",
+    "component": { "content": "Text Box", "type": "20004" },
+    "events": [],
+    "path": "0-0-0-0-3-0-0-0-0",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "oqMARSwZFjAIkyrfIr23u",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "SSZ5Ju8uocpq4xGYBaAaD",
+          "componentType": "10001",
+          "id": "SSZ5Ju8uocpq4xGYBaAaD",
+          "position": {
+            "i": "SSZ5Ju8uocpq4xGYBaAaD",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 4, "lg": 4, "md": 4, "sm": 4, "xs": 4 }
+        },
+        {
+          "componentId": "8VxzJUX4cKZEvIub5uNYX",
+          "componentType": "10001",
+          "id": "8VxzJUX4cKZEvIub5uNYX",
+          "position": {
+            "i": "8VxzJUX4cKZEvIub5uNYX",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 4, "lg": 4, "md": 4, "sm": 4, "xs": 4 }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "10px 5px 5px 5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "SSZ5Ju8uocpq4xGYBaAaD",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "sU3X2LcoXbGbWfCJJEGIL",
+          "componentType": "20006",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0,
+          "textAlign": "right"
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "sU3X2LcoXbGbWfCJJEGIL",
+    "status": "ACTIVE",
+    "attributes": {
+      "label": "Back",
+      "variant": "outlined",
+      "name": "Button",
+      "label-locale-key": "",
+      "fullWidth": true,
+      "layoutProperties": {
+        "button": {
+          "//": "Use this class to style button component.",
+          "height": "45px",
+          "width": "80%",
+          "color": "#1F7529 !important",
+          "borderColor": "#1F7529 !important"
+        },
+        "inputProps": { "//": "Use this class to style button element." },
+        "mainContainer": "button",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "cssClassNames": [{ "cssClassName": "cardButton4" }]
+    },
+    "name": "Button",
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "20006",
+    "Documentation": "<div>components 12344</div>",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Button", "type": "20006" },
+    "events": [
+      {
+        "triggerId": "eBQ9X3WISolbkg3it-Rpd",
+        "triggerName": "NAVIGATE FROM USERNAME RECOVERY TO LOGIN PAGE",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
+    "path": "0-0-0-0-3-0-0-0-0",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "8VxzJUX4cKZEvIub5uNYX",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "uEM2RCX6aqB64ieqWitr9",
+          "componentType": "20006",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "uEM2RCX6aqB64ieqWitr9",
+    "status": "ACTIVE",
+    "attributes": {
+      "label": "SUBMIT",
+      "variant": "contained",
+      "name": "Button",
+      "label-locale-key": "",
+      "fullWidth": true,
+      "layoutProperties": {
+        "button": {
+          "//": "Use this class to style button component.",
+          "width": "80%",
+          "height": "45px"
+        },
+        "inputProps": { "//": "Use this class to style button element." },
+        "mainContainer": "button",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "cssClassNames": [{ "cssClassName": "CardButton" }]
+    },
+    "name": "Button",
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "20006",
+    "Documentation": "<div>components 12344</div>",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Button", "type": "20006" },
+    "events": [
+      {
+        "triggerId": "xdTLJ3HLKAXRdtbo8DOWm",
+        "triggerName": "Usernamre Revovery chain Trigger ",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "2"
+      }
+    ],
+    "path": "0-0-0-0-3-1-0-0-0",
+    "screenId": "nNc_xPW2QGMO3i2oVOZeQ",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

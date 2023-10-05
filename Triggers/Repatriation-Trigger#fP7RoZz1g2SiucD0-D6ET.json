@@ -1,8 +1,10 @@
 {
   "id": "WbCuAUQYr3pTMBwQxtwN1",
+  "_id": "fP7RoZz1g2SiucD0-D6ET",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Repatriation Trigger",
+  "old_name": "Repatriation Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -29,39 +31,170 @@
               "type": 1,
               "name": "Form",
               "key": "accountId",
-              "value": "selectedAccount.accountId"
+              "value": "accountSelect.accountId"
             },
             {
               "type": 1,
               "name": "Form",
               "key": "accountNumber",
-              "value": "selectedAccoun.accountNumbert"
+              "value": "accountSelect.accountNumbert"
             },
             { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
               "type": 1,
               "name": "Form",
               "key": "bankName",
-              "value": "selectedAccount.bankName"
+              "value": "bankName"
             },
             {
               "type": 1,
               "name": "Form",
               "key": "beneficiaryName",
               "value": "beneficiaryName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "country",
+              "value": "country.countryCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "currencyForRepatriation",
+              "value": "currencyForRepatriation.typeCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "currencyRepatriated",
+              "value": "currencyForRepatriation.typeCode"
+            },
+            { "type": 1, "name": "Form", "key": "iBan", "value": "ibanNumber" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "remittancePurpose",
+              "value": "purpose"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "repatriationMode",
+              "value": "radioRepatriation"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "sourceCurrency",
+              "value": "accountSelect.accountActualBalance.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "sourceCurrencyString",
+              "value": "accountSelect.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "swiftCode",
+              "value": "swiftCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "tocurrency",
+              "value": "currencyForRepatriation.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "countryName",
+              "value": "country.countryName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "convertedAmount",
+              "value": "accountSelect.convertedAmount"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "conversionRate",
+              "value": "0.0"
             }
           ],
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 400,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 403,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 501,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 502,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "REPATRIATION_ERROR_TRIGGER",
+            "triggerId": "B-Rl2MNDi4sF_p45yPaSF",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "Repatriation_Success_TRIGGER",
+            "triggerId": "4aPrPYpv23WaTeUyFyK9X",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.bnc3ory4ij4eHPJErzqHQB3zJIadTT6",
-  "_id": "fP7RoZz1g2SiucD0-D6ET",
-  "updatedAt": "9/25/2023",
-  "createdAt": "9/25/2023",
-  "createdBy": "masood",
-  "updatedBy": "masood"
+  "csrf": "0.m7effb7n0opu7N6kspjilh59tin05ybq",
+  "updatedAt": "10/4/2023",
+  "createdAt": "10/4/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
 }

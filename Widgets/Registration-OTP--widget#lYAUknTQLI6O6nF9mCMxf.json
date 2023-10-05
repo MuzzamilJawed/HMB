@@ -70,8 +70,70 @@
                             "xs": 8
                           },
                           "validate": {
-                            "required": false,
-                            "errorMsg": "This field is required"
+                            "required": true,
+                            "errorMsg": "This field is required",
+                            "bindButton": [
+                              {
+                                "id": "i2VlNON3YUm2XvCcl7bgS",
+                                "status": "ACTIVE",
+                                "attributes": {
+                                  "label": "Next",
+                                  "variant": "contained",
+                                  "name": "Button",
+                                  "label-locale-key": "",
+                                  "fullWidth": true,
+                                  "layoutProperties": {
+                                    "button": {
+                                      "//": "Use this class to style button component.",
+                                      "width": "100%",
+                                      "height": "45px"
+                                    },
+                                    "inputProps": {
+                                      "//": "Use this class to style button element."
+                                    },
+                                    "mainContainer": "button",
+                                    "xl": 12,
+                                    "lg": 12,
+                                    "md": 12,
+                                    "sm": 12,
+                                    "xs": 12
+                                  },
+                                  "cssClassNames": [
+                                    { "cssClassName": "CardButton" }
+                                  ]
+                                },
+                                "name": "Button",
+                                "icon": "FaBimobject",
+                                "group": "Form",
+                                "type": "20006",
+                                "Documentation": "<div>components 12344</div>",
+                                "updatedAt": "23-Aug-2021",
+                                "createdAt": "23-Aug-2021",
+                                "order": 1,
+                                "version": "1.0.0",
+                                "isLatest": true,
+                                "projectType": "web",
+                                "component": {
+                                  "content": "Button",
+                                  "type": "20006"
+                                },
+                                "events": [
+                                  {
+                                    "triggerId": "lzgVJ-qrtX8Jx3eRYJwds",
+                                    "triggerName": "validateRegistrationOTP Chain Trigger",
+                                    "name": "On Submit",
+                                    "type": "4",
+                                    "serviceType": "2"
+                                  }
+                                ],
+                                "path": "0-0-3-1-0-0-0",
+                                "screenId": "lYAUknTQLI6O6nF9mCMxf",
+                                "subType": "component",
+                                "projectId": "640ee2a26ead56231ce8350b",
+                                "gitBranchName": "master",
+                                "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                              }
+                            ]
                           },
                           "placeholder": "Email OTP",
                           "stateName": "emailOTP"
@@ -88,7 +150,7 @@
                         "projectType": "web",
                         "component": { "content": "Text Box", "type": "20004" },
                         "events": [],
-                        "path": "0-0-0-0-0-0-2-0-0-0-0"
+                        "path": "0-0-0-0-0"
                       }
                     ],
                     "layoutProperties": {
@@ -666,21 +728,291 @@
                                 },
                                 "events": [
                                   {
-                                    "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-                                    "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-                                    "serviceType": "1",
+                                    "triggerId": "lzgVJ-qrtX8Jx3eRYJwds",
+                                    "triggerName": "validateRegistrationOTP Chain Trigger",
+                                    "serviceType": "2",
                                     "attributes": {
-                                      "fromWidgetId": "kn-g6dLXYigHhX9bj8Z88",
-                                      "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                      "gridRadioValue": "Screen",
-                                      "selectedObjectBindingKey": "selectedObject",
-                                      "editableForm": false
+                                      "delay": "",
+                                      "triggers": [
+                                        {
+                                          "id": "IJEw8wmh2t5qqmeVtqXVV",
+                                          "_id": "mloELpnE4Ce8uyy3-IyGx",
+                                          "name": "Mapping Device properties ",
+                                          "old_name": "Mapping Device properties ",
+                                          "projectId": "640ee2a26ead56231ce8350b",
+                                          "gitBranchName": "master",
+                                          "services": [
+                                            {
+                                              "type": "11",
+                                              "command": {
+                                                "type": "6",
+                                                "attributes": {
+                                                  "requestBody": [],
+                                                  "destinationBindingKey": "device",
+                                                  "sourceBindingKey": "device",
+                                                  "sourceStoreType": 3,
+                                                  "destinationStoreType": 3,
+                                                  "filterList": [
+                                                    {
+                                                      "key": "imei",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "111111111111111",
+                                                          "111111111111111"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "key": "name",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                                                          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "key": "osType",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "Win32",
+                                                          "Win32"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "key": "os",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "Web",
+                                                          "Web"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "key": "fcmToken",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "0101010101",
+                                                          "0101010101"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "192.168.0.112",
+                                                          "192.168.0.112"
+                                                        ]
+                                                      },
+                                                      "key": "ip"
+                                                    },
+                                                    {
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [true, true, true]
+                                                      },
+                                                      "key": "isNotificationEnabled"
+                                                    },
+                                                    {
+                                                      "key": "countryCode",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "PKR",
+                                                          "PKR"
+                                                        ]
+                                                      }
+                                                    },
+                                                    {
+                                                      "key": "deviceKey",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "A331926C-4B19-4418-89E6-9E26660384DE",
+                                                          "A331926C-4B19-4418-89E6-9E26660384DE"
+                                                        ]
+                                                      }
+                                                    }
+                                                  ],
+                                                  "targettedType": "object"
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+                                          "updatedAt": "9/7/2023",
+                                          "createdAt": "9/7/2023",
+                                          "createdBy": "masood",
+                                          "updatedBy": "masood"
+                                        },
+                                        {
+                                          "id": "b4I-sIb7qNe0x51VjkpQ2",
+                                          "name": "Roshan Validation",
+                                          "projectId": "640ee2a26ead56231ce8350b",
+                                          "gitBranchName": "master",
+                                          "services": [
+                                            {
+                                              "type": "11",
+                                              "command": {
+                                                "type": "6",
+                                                "attributes": {
+                                                  "storeType": "",
+                                                  "selectedObjectBindingKey": "selectedObject",
+                                                  "dataType": "",
+                                                  "destinationBindingKey": "validation",
+                                                  "sourceBindingKey": "form",
+                                                  "sourceStoreType": 2,
+                                                  "destinationStoreType": 2,
+                                                  "filterList": [
+                                                    {
+                                                      "key": "emailPin",
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "var": "currentScreen.form.emailPin"
+                                                      }
+                                                    },
+                                                    {
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "var": "currentScreen.form.smsPin"
+                                                      },
+                                                      "key": "smsPin"
+                                                    },
+                                                    {
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          false,
+                                                          false
+                                                        ]
+                                                      },
+                                                      "key": "splitOtp"
+                                                    },
+                                                    {
+                                                      "changeValueConditonally": true,
+                                                      "logic": {
+                                                        "if": [
+                                                          true,
+                                                          "OTP",
+                                                          "OTP"
+                                                        ]
+                                                      },
+                                                      "key": "validationType"
+                                                    }
+                                                  ],
+                                                  "targettedType": "object"
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+                                          "_id": "N1ms69_tV-dBYbFJaqOxl",
+                                          "updatedAt": "10/3/2023",
+                                          "createdAt": "10/3/2023",
+                                          "createdBy": "masood",
+                                          "updatedBy": "masood"
+                                        },
+                                        {
+                                          "id": "jlwqFku4qZeR_Y9DVImZV",
+                                          "projectId": "640ee2a26ead56231ce8350b",
+                                          "gitBranchName": "master",
+                                          "name": "validateRegistrationOTP Step 3",
+                                          "status": "ACTIVE",
+                                          "services": [
+                                            {
+                                              "type": "8",
+                                              "command": {
+                                                "type": "1",
+                                                "attributes": {
+                                                  "loaderWidgetIds": [906070],
+                                                  "messageWidgetIds": [906070],
+                                                  "responseStateKey": "responseRegister",
+                                                  "responseReturnValue": "content",
+                                                  "url": "/validateRegistrationOTP",
+                                                  "checksum": true,
+                                                  "encryption": true,
+                                                  "isDeviceDetails": false,
+                                                  "loginTrigger": false,
+                                                  "formData": false,
+                                                  "logoutTrigger": false,
+                                                  "headers": {
+                                                    "Content-Type": "application/json",
+                                                    "channel_key": "005"
+                                                  },
+                                                  "requestBody": [
+                                                    {
+                                                      "type": 2,
+                                                      "name": "Current screen",
+                                                      "key": "accountId",
+                                                      "value": "validateRegistrationResponse.accountNumber"
+                                                    },
+                                                    {
+                                                      "type": 3,
+                                                      "name": "Current session",
+                                                      "key": "device",
+                                                      "value": "device"
+                                                    },
+                                                    {
+                                                      "type": 2,
+                                                      "name": "Current screen",
+                                                      "key": "validation",
+                                                      "value": "validation"
+                                                    }
+                                                  ],
+                                                  "baseURL": "650d2f0dc9bf2957746d02af",
+                                                  "storeType": 2
+                                                },
+                                                "responseHandler": [
+                                                  {
+                                                    "logic": {
+                                                      "==": [
+                                                        { "var": "code" },
+                                                        1
+                                                      ]
+                                                    },
+                                                    "httpStatus": 200,
+                                                    "triggerName": "fllow OTP to Registration ",
+                                                    "triggerId": "qXvaee2RR_0fUbn8OjOHT"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ],
+                                          "csrf": "0.p1k5ieroeyneFexbKr1uXbSlVftwodkI",
+                                          "_id": "F2A0V5Mltcu7zhQHMztHL",
+                                          "updatedAt": "10/4/2023",
+                                          "createdAt": "10/4/2023",
+                                          "createdBy": "masood",
+                                          "updatedBy": "masood"
+                                        }
+                                      ],
+                                      "triggerIds": [
+                                        "IJEw8wmh2t5qqmeVtqXVV",
+                                        "b4I-sIb7qNe0x51VjkpQ2",
+                                        "jlwqFku4qZeR_Y9DVImZV"
+                                      ]
                                     },
-                                    "type": "2",
-                                    "name": "On click"
+                                    "type": "4",
+                                    "name": "On Submit"
                                   }
                                 ],
-                                "path": "0-0-0-0-0-0-2-0-3-1-0-0-0"
+                                "path": "0-0-3-1-0-0-0"
                               }
                             ],
                             "layoutProperties": {
@@ -809,7 +1141,7 @@
             "alignItems": "flex-start"
           },
           "direction": "row",
-          "name": "Registration OTP ",
+          "name": "Registration OTP  widget",
           "isSwappable": true
         },
         "events": [],
@@ -835,8 +1167,8 @@
     "gitBranchName": "master",
     "_id": "lYAUknTQLI6O6nF9mCMxf",
     "createdBy": "masood",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
+    "updatedAt": "10/5/2023",
+    "createdAt": "10/5/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -936,7 +1268,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Registration OTP ",
+      "name": "Registration OTP  widget",
       "isSwappable": true
     },
     "layout": null,
@@ -1015,7 +1347,67 @@
         "sm": 8,
         "xs": 8
       },
-      "validate": { "required": false, "errorMsg": "This field is required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This field is required",
+        "bindButton": [
+          {
+            "id": "i2VlNON3YUm2XvCcl7bgS",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": {
+                  "//": "Use this class to style button component.",
+                  "width": "100%",
+                  "height": "45px"
+                },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "cssClassNames": [{ "cssClassName": "CardButton" }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "lzgVJ-qrtX8Jx3eRYJwds",
+                "triggerName": "validateRegistrationOTP Chain Trigger",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-3-1-0-0-0",
+            "screenId": "lYAUknTQLI6O6nF9mCMxf",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "placeholder": "Email OTP",
       "stateName": "emailOTP"
     },
@@ -1031,7 +1423,7 @@
     "projectType": "web",
     "component": { "content": "Text Box", "type": "20004" },
     "events": [],
-    "path": "0-0-0-0-0-0-2-0-0-0-0",
+    "path": "0-0-0-0-0",
     "screenId": "lYAUknTQLI6O6nF9mCMxf",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1539,14 +1931,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "ES7dWaJ2z4HSUGratkV6s",
-        "triggerName": "NAVIGATE_LOGIN_TO_DASHBOARD",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "1"
+        "triggerId": "lzgVJ-qrtX8Jx3eRYJwds",
+        "triggerName": "validateRegistrationOTP Chain Trigger",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "2"
       }
     ],
-    "path": "0-0-0-0-0-0-2-0-3-1-0-0-0",
+    "path": "0-0-3-1-0-0-0",
     "screenId": "lYAUknTQLI6O6nF9mCMxf",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

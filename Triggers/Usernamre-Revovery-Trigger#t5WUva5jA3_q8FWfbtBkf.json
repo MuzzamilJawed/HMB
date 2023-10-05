@@ -1,0 +1,92 @@
+{
+  "id": "GnIL1NDSJ6E3praV6wlxi",
+  "_id": "t5WUva5jA3_q8FWfbtBkf",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Usernamre Revovery Trigger",
+  "old_name": "Usernamre Revovery Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "usernameRecoveryResponse",
+          "url": "/validateRegistrationGenerateOTP",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            { "type": 1, "name": "Form", "key": "email", "value": "email" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "flowType",
+              "value": "FORGOT_USERNAME"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "registerMode",
+              "value": "ACC"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "registrationFlag",
+              "value": "false"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenValue",
+              "value": "userIdenValue"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "userIdenType",
+              "value": "recoveryOpt.code"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "tranCode",
+              "value": "tranCode"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.1z0n6038pcg-kM91jlF2nPwuBc21la5E",
+  "updatedAt": "10/5/2023",
+  "createdAt": "10/5/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
