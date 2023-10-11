@@ -28,40 +28,34 @@
           },
           "requestBody": [
             {
-              "type": 2,
-              "name": "Current screen",
+              "type": 4,
+              "name": "Static",
               "key": "investmentTypeCode",
-              "value": "selectedObject.investmentTypeCode"
+              "value": "0"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "emailAddress",
+              "value": "userProfile.content.email"
             },
             {
               "type": 1,
               "name": "Form",
-              "key": "emailAddress",
-              "value": "emailAddress"
-            },
-            {
-              "type": 2,
-              "name": "Current screen",
               "key": "borkerName",
-              "value": "selectedObject.borkerName"
-            },
-            {
-              "type": 2,
-              "name": "Current screen",
-              "key": "investmentTypeValue",
-              "value": "selectedObject.investmentTypeValue"
+              "value": "selectbroker.participantName"
             },
             {
               "type": 1,
               "name": "Form",
               "key": "accountId",
-              "value": "getData.accountId"
+              "value": "selectedAccount.accountId"
             },
             {
-              "type": 2,
-              "name": "Current screen",
+              "type": 1,
+              "name": "Form",
               "key": "brokerId",
-              "value": "selectedObject.brokerId"
+              "value": "selectbroker.brokerId"
             },
             {
               "type": 4,
@@ -70,28 +64,41 @@
               "value": "true"
             },
             {
-              "type": 1,
-              "name": "Form",
-              "key": "mobileNumber",
-              "value": "mobileNumber"
-            },
-            {
               "type": 2,
               "name": "Current screen",
               "key": "otpInfo",
               "value": "otpInfo"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "mobileNumber",
+              "value": "userProfile.content.mobileNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "investmentTypeValue",
+              "value": "Stocks"
             }
           ],
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "triggerName": "investment Successfull modal Trigger",
+            "triggerId": "dgyl6BqToFDxRVag31Vej"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.76bjnipl9o9F9In34y2YVsxFkNMRGDY",
-  "updatedAt": "9/18/2023",
-  "createdAt": "9/18/2023",
+  "csrf": "0.xbft2091woV0PcruXkqRYFQO8h8RM1l",
+  "updatedAt": "10/6/2023",
+  "createdAt": "10/6/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -2169,7 +2169,7 @@
                                                                                     "sm": 12,
                                                                                     "xs": 12
                                                                                   },
-                                                                                  "label": "Bene Bank Name",
+                                                                                  "label": "Bene Nick Name",
                                                                                   "cssClassNames": [
                                                                                     {
                                                                                       "cssClassName": "Label_Type_Css"
@@ -2278,14 +2278,14 @@
                                                                                     "sm": 12,
                                                                                     "xs": 12
                                                                                   },
-                                                                                  "label": "RaastBeneResponse.content.bankName",
+                                                                                  "label": "alias",
                                                                                   "cssClassNames": [
                                                                                     {
                                                                                       "cssClassName": "Label_Type_Detail_Css"
                                                                                     }
                                                                                   ],
                                                                                   "searchInState": true,
-                                                                                  "storeType": 2
+                                                                                  "storeType": 1
                                                                                 },
                                                                                 "icon": "FaFont",
                                                                                 "group": "Form",
@@ -3892,7 +3892,7 @@
                                                   "layoutProperties": {
                                                     "button": {
                                                       "//": "Use this class to style button component.",
-                                                      "height": "47px",
+                                                      "height": "2.7rem",
                                                       "border": "1px solid #19612F !important",
                                                       "text-color": "#19612F",
                                                       "border-radius": "8px",
@@ -4036,7 +4036,7 @@
                                                   "layoutProperties": {
                                                     "button": {
                                                       "//": "Use this class to style button component.",
-                                                      "height": "47px",
+                                                      "height": "2.7rem",
                                                       "border-radius": "8px",
                                                       "border": "1px solid #FFFFFF",
                                                       "background": "#19612F",
@@ -4074,8 +4074,8 @@
                                                 },
                                                 "events": [
                                                   {
-                                                    "triggerId": "4K4WMNQcYL6D1YYcpVyue",
-                                                    "triggerName": "Repatriation Chain TRIGGER",
+                                                    "triggerId": "Y-YtiSSFtj2x2x6p4JjqF",
+                                                    "triggerName": "RaastAddBene_CHAIN_TRIGGER",
                                                     "serviceType": "2",
                                                     "attributes": {
                                                       "delay": "",
@@ -4149,12 +4149,154 @@
                                                           "updatedBy": "masood"
                                                         },
                                                         {
-                                                          "id": "WbCuAUQYr3pTMBwQxtwN1",
-                                                          "_id": "fP7RoZz1g2SiucD0-D6ET",
+                                                          "id": "MahtYnEfPnphN5_TxH2px",
+                                                          "_id": "qaGZV9Ll2SkSoWd2W4Jyw",
+                                                          "name": "conversionOfBeneForRaast",
+                                                          "old_name": "conversionOfBeneForRaast",
                                                           "projectId": "640ee2a26ead56231ce8350b",
                                                           "gitBranchName": "master",
-                                                          "name": "Repatriation Trigger",
-                                                          "old_name": "Repatriation Trigger",
+                                                          "services": [
+                                                            {
+                                                              "type": "11",
+                                                              "command": {
+                                                                "type": "6",
+                                                                "attributes": {
+                                                                  "requestBody": [],
+                                                                  "destinationBindingKey": "beneficiary",
+                                                                  "sourceBindingKey": "form",
+                                                                  "sourceStoreType": 2,
+                                                                  "destinationStoreType": 2,
+                                                                  "filterList": [
+                                                                    {
+                                                                      "key": "instrumentType",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "A",
+                                                                          "A"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "mobile",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.mobile"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "isFavorite",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          false,
+                                                                          false
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "bankIMD",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.bankName.bankIMD"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "accountTitle",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.fromInstrument.accountTitle"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "accountNumber",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.fromInstrument.accountNumber"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "alias",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.alias"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "compoundKey",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.form.raastAccount"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "beneficiaryType",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "R",
+                                                                          "R"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "bankName",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.RaastBeneResponse.content.bankName"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "iban",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "var": "currentScreen.RaastBeneResponse.content.iban"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "transferType",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          "true",
+                                                                          "R",
+                                                                          "R"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "bankIMD",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          "true",
+                                                                          "000000",
+                                                                          "000000"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "targettedType": "object"
+                                                                }
+                                                              }
+                                                            }
+                                                          ],
+                                                          "csrf": "0.mp60v09jzjeskIpyzGob3c61nREyJblK",
+                                                          "updatedAt": "10/6/2023",
+                                                          "createdAt": "10/6/2023",
+                                                          "createdBy": "muhammad.asad",
+                                                          "updatedBy": "muhammad.asad"
+                                                        },
+                                                        {
+                                                          "id": "Kb_EYcYw048FwmH2OXlBM",
+                                                          "_id": "SBFnqVV2BkEMX39N_c-IM",
+                                                          "projectId": "640ee2a26ead56231ce8350b",
+                                                          "gitBranchName": "master",
+                                                          "name": "RaastAddBene",
+                                                          "old_name": "RaastAddBene",
                                                           "status": "ACTIVE",
                                                           "services": [
                                                             {
@@ -4168,8 +4310,8 @@
                                                                   "messageWidgetIds": [
                                                                     906070
                                                                   ],
-                                                                  "responseStateKey": "repatriationResponse",
-                                                                  "url": "/npc/repatriation",
+                                                                  "responseStateKey": "BeneResponse",
+                                                                  "url": "/beneficiaryManagement",
                                                                   "checksum": true,
                                                                   "encryption": true,
                                                                   "isDeviceDetails": false,
@@ -4182,144 +4324,49 @@
                                                                   },
                                                                   "requestBody": [
                                                                     {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "accountId",
-                                                                      "value": "accountSelect.accountId"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "accountNumber",
-                                                                      "value": "accountSelect.accountNumbert"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "amount",
-                                                                      "value": "amount"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "bankName",
-                                                                      "value": "bankName"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "beneficiaryName",
-                                                                      "value": "beneficiaryName"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "country",
-                                                                      "value": "country.countryCode"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "currencyForRepatriation",
-                                                                      "value": "currencyForRepatriation.typeCode"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "currencyRepatriated",
-                                                                      "value": "currencyForRepatriation.typeCode"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "iBan",
-                                                                      "value": "ibanNumber"
+                                                                      "type": 4,
+                                                                      "name": "Static",
+                                                                      "key": "action",
+                                                                      "value": "A"
                                                                     },
                                                                     {
                                                                       "type": 2,
                                                                       "name": "Current screen",
-                                                                      "key": "otpInfo",
+                                                                      "key": "validation",
                                                                       "value": "otpInfo"
                                                                     },
                                                                     {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "remittancePurpose",
-                                                                      "value": "purpose"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "repatriationMode",
-                                                                      "value": "radioRepatriation"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "sourceCurrency",
-                                                                      "value": "accountSelect.accountActualBalance.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "sourceCurrencyString",
-                                                                      "value": "accountSelect.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "swiftCode",
-                                                                      "value": "swiftCode"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "tocurrency",
-                                                                      "value": "currencyForRepatriation.currency"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "countryName",
-                                                                      "value": "country.countryName"
-                                                                    },
-                                                                    {
-                                                                      "type": 1,
-                                                                      "name": "Form",
-                                                                      "key": "convertedAmount",
-                                                                      "value": "accountSelect.convertedAmount"
-                                                                    },
-                                                                    {
-                                                                      "type": 4,
-                                                                      "name": "Static",
-                                                                      "key": "conversionRate",
-                                                                      "value": "0.0"
+                                                                      "type": 2,
+                                                                      "name": "Current screen",
+                                                                      "key": "beneficiary",
+                                                                      "value": "beneficiary"
                                                                     }
                                                                   ],
-                                                                  "baseURL": "64f9a08b683922479c062070",
+                                                                  "baseURL": "64f968d3683922479c0616ba",
                                                                   "storeType": 2
                                                                 },
                                                                 "responseHandler": []
                                                               }
                                                             }
                                                           ],
-                                                          "csrf": "0.m7effb7n0opu7N6kspjilh59tin05ybq",
-                                                          "updatedAt": "10/4/2023",
-                                                          "createdAt": "10/4/2023",
+                                                          "csrf": "0.mp60v09jzjeskIpyzGob3c61nREyJblK",
+                                                          "updatedAt": "10/9/2023",
+                                                          "createdAt": "10/9/2023",
                                                           "createdBy": "muhammad.asad",
                                                           "updatedBy": "muhammad.asad"
                                                         }
                                                       ],
                                                       "triggerIds": [
                                                         "3WJVpQqglNb4yHnlELcM-",
-                                                        "WbCuAUQYr3pTMBwQxtwN1"
+                                                        "MahtYnEfPnphN5_TxH2px",
+                                                        "Kb_EYcYw048FwmH2OXlBM"
                                                       ]
                                                     },
                                                     "type": "2",
                                                     "name": "On click"
                                                   }
                                                 ],
-                                                "path": "0-0-1-0-1-0-2-2-0-0-2"
+                                                "path": "0-0-1-0-1-0-2-2-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -4632,8 +4679,8 @@
     "gitBranchName": "master",
     "_id": "RJRbu1yIL9bgRxJbl2jEA",
     "createdBy": "muhammad.asad",
-    "updatedAt": "10/5/2023",
-    "createdAt": "10/5/2023",
+    "updatedAt": "10/9/2023",
+    "createdAt": "10/9/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7030,7 +7077,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Bene Bank Name",
+      "label": "Bene Nick Name",
       "cssClassNames": [{ "cssClassName": "Label_Type_Css" }]
     },
     "icon": "FaFont",
@@ -7114,10 +7161,10 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "RaastBeneResponse.content.bankName",
+      "label": "alias",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
-      "storeType": 2
+      "storeType": 1
     },
     "icon": "FaFont",
     "group": "Form",
@@ -8327,7 +8374,7 @@
       "layoutProperties": {
         "button": {
           "//": "Use this class to style button component.",
-          "height": "47px",
+          "height": "2.7rem",
           "border": "1px solid #19612F !important",
           "text-color": "#19612F",
           "border-radius": "8px",
@@ -8433,7 +8480,7 @@
       "layoutProperties": {
         "button": {
           "//": "Use this class to style button component.",
-          "height": "47px",
+          "height": "2.7rem",
           "border-radius": "8px",
           "border": "1px solid #FFFFFF",
           "background": "#19612F",
@@ -8466,14 +8513,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "4K4WMNQcYL6D1YYcpVyue",
-        "triggerName": "Repatriation Chain TRIGGER",
+        "triggerId": "Y-YtiSSFtj2x2x6p4JjqF",
+        "triggerName": "RaastAddBene_CHAIN_TRIGGER",
         "name": "On click",
         "type": "2",
         "serviceType": "2"
       }
     ],
-    "path": "0-0-1-0-1-0-2-2-0-0-2",
+    "path": "0-0-1-0-1-0-2-2-0-0-0",
     "screenId": "RJRbu1yIL9bgRxJbl2jEA",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

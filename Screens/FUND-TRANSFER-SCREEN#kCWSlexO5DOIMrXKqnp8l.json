@@ -255,7 +255,22 @@
                                   "content": "Button",
                                   "type": "20006"
                                 },
-                                "events": [],
+                                "events": [
+                                  {
+                                    "triggerId": "xZCej4Sq8c_BquMUa4QJm",
+                                    "triggerName": "Dashboard to ADD BENE",
+                                    "serviceType": "1",
+                                    "attributes": {
+                                      "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
+                                      "nextWidgetId": "awwq8Epi8U8AklyyyQewr",
+                                      "gridRadioValue": "Screen",
+                                      "selectedObjectBindingKey": "selectedObject",
+                                      "editableForm": false
+                                    },
+                                    "type": "2",
+                                    "name": "On click"
+                                  }
+                                ],
                                 "path": "0-0-0-1-0-0-0"
                               }
                             ],
@@ -2322,22 +2337,26 @@
                                                     "id": "AqPN9riYy_Bzy9fWBfWzl",
                                                     "gridProps": [
                                                       {
-                                                        "id": "J90unrUnH2tIjVfJd6dve",
+                                                        "id": "yYXLYuoaQ9g8JQfAeiEuK",
                                                         "status": "ACTIVE",
-                                                        "name": "Text Box",
+                                                        "name": "Amount",
                                                         "attributes": {
-                                                          "label": "",
-                                                          "name": "Text box",
+                                                          "multicurrency": false,
+                                                          "stateName": "amount",
+                                                          "name": "Amount",
                                                           "label-locale-key": "",
-                                                          "maxLength": 20,
-                                                          "type": "text",
+                                                          "maxLength": "5",
                                                           "variant": "standard",
-                                                          "value": "",
+                                                          "value": "100",
                                                           "readOnly": false,
-                                                          "tooltip": "",
                                                           "font-family": "Verdana",
                                                           "mandatory": true,
-                                                          "tooltipState": "",
+                                                          "tooltipState": "amountinwords",
+                                                          "fromCurrency": "PKR",
+                                                          "fromCurrencyState": "",
+                                                          "toCurrency": "USD",
+                                                          "toCurrencyState": "",
+                                                          "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
                                                           "layoutProperties": {
                                                             "textField": {
                                                               "//": "Use this class to style text field component."
@@ -2359,7 +2378,6 @@
                                                             "errorMsg": "This field is required"
                                                           },
                                                           "placeholder": "Enter Amount",
-                                                          "stateName": "amount",
                                                           "disableUnderline": true,
                                                           "cssClassNames": [
                                                             {
@@ -2367,9 +2385,9 @@
                                                             }
                                                           ]
                                                         },
-                                                        "icon": "FaWindowMinimize",
+                                                        "icon": "FaDollarSign",
                                                         "group": "Form",
-                                                        "type": "20004",
+                                                        "type": "20040",
                                                         "Documentation": "<div>components 12344</div>",
                                                         "updatedAt": "23-Aug-2021",
                                                         "createdAt": "23-Aug-2021",
@@ -2378,8 +2396,8 @@
                                                         "isLatest": true,
                                                         "projectType": "web",
                                                         "component": {
-                                                          "content": "Text Box",
-                                                          "type": "20004"
+                                                          "content": "Amount",
+                                                          "type": "20040"
                                                         },
                                                         "events": [],
                                                         "path": "0-0-1-0-0-0-0-1-0-0-5-0-0"
@@ -3545,9 +3563,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "kCWSlexO5DOIMrXKqnp8l",
-    "createdBy": "muhammad.asad",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
+    "createdBy": "masood",
+    "updatedAt": "10/10/2023",
+    "createdAt": "10/10/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3893,7 +3911,15 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "xZCej4Sq8c_BquMUa4QJm",
+        "triggerName": "Dashboard to ADD BENE",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
     "path": "0-0-0-1-0-0-0",
     "screenId": "kCWSlexO5DOIMrXKqnp8l",
     "subType": "component",
@@ -5841,8 +5867,8 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "J90unrUnH2tIjVfJd6dve",
-          "componentType": "20004",
+          "componentId": "yYXLYuoaQ9g8JQfAeiEuK",
+          "componentType": "20040",
           "order": 1
         }
       ],
@@ -5873,22 +5899,26 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "J90unrUnH2tIjVfJd6dve",
+    "id": "yYXLYuoaQ9g8JQfAeiEuK",
     "status": "ACTIVE",
-    "name": "Text Box",
+    "name": "Amount",
     "attributes": {
-      "label": "",
-      "name": "Text box",
+      "multicurrency": false,
+      "stateName": "amount",
+      "name": "Amount",
       "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
+      "maxLength": "5",
       "variant": "standard",
-      "value": "",
+      "value": "100",
       "readOnly": false,
-      "tooltip": "",
       "font-family": "Verdana",
       "mandatory": true,
-      "tooltipState": "",
+      "tooltipState": "amountinwords",
+      "fromCurrency": "PKR",
+      "fromCurrencyState": "",
+      "toCurrency": "USD",
+      "toCurrencyState": "",
+      "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
       "layoutProperties": {
         "textField": { "//": "Use this class to style text field component." },
         "inputProps": {
@@ -5905,13 +5935,12 @@
       },
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Amount",
-      "stateName": "amount",
       "disableUnderline": true,
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
     },
-    "icon": "FaWindowMinimize",
+    "icon": "FaDollarSign",
     "group": "Form",
-    "type": "20004",
+    "type": "20040",
     "Documentation": "<div>components 12344</div>",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
@@ -5919,7 +5948,7 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
+    "component": { "content": "Amount", "type": "20040" },
     "events": [],
     "path": "0-0-1-0-0-0-0-1-0-0-5-0-0",
     "screenId": "kCWSlexO5DOIMrXKqnp8l",

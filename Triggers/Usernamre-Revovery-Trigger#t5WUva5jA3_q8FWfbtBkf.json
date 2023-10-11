@@ -14,7 +14,7 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "usernameRecoveryResponse",
+          "responseStateKey": "response",
           "url": "/validateRegistrationGenerateOTP",
           "checksum": true,
           "encryption": true,
@@ -80,13 +80,51 @@
           "baseURL": "650d2f0dc9bf2957746d02af",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "GENRAL SUCCESS MODAL Trigger",
+            "triggerId": "Sl6i4bkJkeZW_OC4toUGK"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 404,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.1z0n6038pcg-kM91jlF2nPwuBc21la5E",
-  "updatedAt": "10/5/2023",
-  "createdAt": "10/5/2023",
+  "csrf": "0.sm7r9q5nr1bRUIiz7fcz6--ux8GMj71t",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

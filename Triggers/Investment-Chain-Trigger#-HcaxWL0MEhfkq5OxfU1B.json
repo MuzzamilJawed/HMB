@@ -1,9 +1,10 @@
 {
+  "_id": "-HcaxWL0MEhfkq5OxfU1B",
   "id": "mJNG4BJ_DlW69duuCjGKc",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Investment Chain Trigger",
-  "old_name": "",
+  "old_name": "Investment Chain Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -158,17 +159,56 @@
               "createdAt": "9/18/2023",
               "createdBy": "masood",
               "updatedBy": "masood"
+            },
+            {
+              "id": "gWtr8jOsmOgj-d3C3huvS",
+              "_id": "zQYc0ZapEK2GNrxcdFQga",
+              "name": "investment temp response",
+              "old_name": "investment temp response",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "response",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "var": "currentScreen.investmentResponse.message"
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.xbft2091woV0PcruXkqRYFQO8h8RM1l",
+              "updatedAt": "10/6/2023",
+              "createdAt": "10/6/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
             }
           ],
-          "triggerIds": ["TCicpprTZFn8DYos69xXs", "ZOJ6kqEH88cWQIM2jPD0Q"]
+          "triggerIds": [
+            "TCicpprTZFn8DYos69xXs",
+            "ZOJ6kqEH88cWQIM2jPD0Q",
+            "gWtr8jOsmOgj-d3C3huvS"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.76bjnipl9o9F9In34y2YVsxFkNMRGDY",
-  "_id": "-HcaxWL0MEhfkq5OxfU1B",
-  "updatedAt": "9/18/2023",
-  "createdAt": "9/18/2023",
+  "csrf": "0.xbft2091woV0PcruXkqRYFQO8h8RM1l",
+  "updatedAt": "10/6/2023",
+  "createdAt": "10/6/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

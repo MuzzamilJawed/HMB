@@ -1,8 +1,10 @@
 {
   "id": "E1Evd7IrFRpSH4pNdZzP5",
+  "_id": "iMYyJ6PPRWsndjNWTFXSx",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "getAccountDetailsWithBENE",
+  "old_name": "getAccountDetailsWithBENE",
   "status": "ACTIVE",
   "services": [
     {
@@ -28,16 +30,16 @@
           "requestBody": [
             { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
-              "type": 1,
-              "name": "Form",
+              "type": 2,
+              "name": "Current screen",
               "key": "bankIMD",
-              "value": "toAccount.bankImd"
+              "value": "selectedObject.bankIMD"
             },
             {
-              "type": 1,
-              "name": "Form",
+              "type": 2,
+              "name": "Current screen",
               "key": "accountNumber",
-              "value": "toAccount.accountNumber"
+              "value": "selectedObject.accountNumber"
             },
             {
               "type": 1,
@@ -55,14 +57,35 @@
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 400,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "Genral_ERROR_MODAL",
+            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "navigate Confirm Via bene Screen",
+            "triggerId": "hfGVDiKM_j_lzWZkeecTK"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.3tvj2v8hjpeiJbc8XDLUUQi0SlCpuZaH",
-  "_id": "iMYyJ6PPRWsndjNWTFXSx",
-  "updatedAt": "9/27/2023",
-  "createdAt": "9/27/2023",
+  "csrf": "0.sm7r9q5nr1bRUIiz7fcz6--ux8GMj71t",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

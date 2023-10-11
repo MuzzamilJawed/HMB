@@ -15,6 +15,9 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "responseTitle",
+          "responseReturnValue": "content",
+          "successMessageBindingKey": "success",
+          "errorMessageBindingKey": "error",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -45,19 +48,25 @@
               "name": "Form",
               "key": "accountNumber",
               "value": "accountNumber"
-            },
-            { "type": 4, "name": "Static", "key": "accountId", "value": "null" }
+            }
           ],
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Swapped add bene",
+            "triggerId": "4qCZzzCjxy7arV9qc9fjJ"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.ic70raxqv5sk2cVd7Ts5xqz0CE-TNKSC",
-  "updatedAt": "9/28/2023",
-  "createdAt": "9/28/2023",
+  "csrf": "0.rcuyucf6v19SIDKSANQtVuwWnb_b4vmE",
+  "updatedAt": "10/10/2023",
+  "createdAt": "10/10/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

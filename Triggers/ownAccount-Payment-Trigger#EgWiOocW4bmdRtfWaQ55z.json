@@ -1,0 +1,236 @@
+{
+  "id": "e-3NwEuYF018-RPIGhftB",
+  "_id": "EgWiOocW4bmdRtfWaQ55z",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "ownAccount Payment Trigger",
+  "old_name": "ownAccount Payment Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "ownAccountTransferResponse",
+          "successMessageBindingKey": "succeesownaccount",
+          "errorMessageBindingKey": "errorownaccount",
+          "url": "/transfer",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "actualAmount",
+              "value": "amount"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "amountInWords",
+              "value": "Amount_In_Words_amount"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "toAccount.bankImd"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "bankName",
+              "value": "HABIBMETRO"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "beneficiary",
+              "value": "true"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "exchangeRate",
+              "value": "1"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "executionType",
+              "value": "PAY_NOW"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountIban",
+              "value": "fromAccount.iban"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountTitle",
+              "value": "fromAccount.accountTitle"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromCurrency",
+              "value": "fromAccount.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "instrumentType",
+              "value": "A"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "noOfOccurrences",
+              "value": "0"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "otpVisible",
+              "value": "false"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "purposeOfPayment",
+              "value": "purpose"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestDate",
+              "value": "getaccountdetailsown.requestDate"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestNumber",
+              "value": "getaccountdetailsown.requestNumber"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "returnBalance",
+              "value": "true"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "saveAsBene",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "state", "value": "false" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountNumber",
+              "value": "getaccountdetailsown.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccountTitle",
+              "value": "getaccountdetailsown.accountTitle"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "toCurrency",
+              "value": "fromAccount.currency"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "transactionCurrency",
+              "value": "fromAccount.currency"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferToOption",
+              "value": "other"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "localIsRaast",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "isRaast", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isByCard",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "byCard", "value": "false" },
+            { "type": 4, "name": "Static", "key": "raast", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "transferType",
+              "value": "O"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "iban",
+              "value": "toAccount.iban"
+            }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "triggerName": "own Account Receipt",
+            "triggerId": "tnRZHsEWgWJVc1TA3C3lQ"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.rcuyucf6v19SIDKSANQtVuwWnb_b4vmE",
+  "updatedAt": "10/10/2023",
+  "createdAt": "10/10/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

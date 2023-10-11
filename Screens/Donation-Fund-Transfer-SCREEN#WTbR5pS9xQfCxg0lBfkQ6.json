@@ -3323,22 +3323,26 @@
                                                             "id": "YdHHsKtnplz4dnZfvOHwA",
                                                             "gridProps": [
                                                               {
-                                                                "id": "NbGVQFwCKLjwxsnvOnW49",
+                                                                "id": "TXFEFvAF0nLZk3yAI2zJT",
                                                                 "status": "ACTIVE",
-                                                                "name": "Text Box",
+                                                                "name": "Amount",
                                                                 "attributes": {
-                                                                  "label": "",
-                                                                  "name": "Text box",
+                                                                  "multicurrency": false,
+                                                                  "stateName": "amount",
+                                                                  "name": "Amount",
                                                                   "label-locale-key": "",
-                                                                  "maxLength": 20,
-                                                                  "type": "text",
+                                                                  "maxLength": "5",
                                                                   "variant": "standard",
-                                                                  "value": "",
                                                                   "readOnly": false,
                                                                   "tooltip": "",
                                                                   "font-family": "Verdana",
                                                                   "mandatory": true,
-                                                                  "tooltipState": "",
+                                                                  "tooltipState": "amountinwords",
+                                                                  "fromCurrency": "PKR",
+                                                                  "fromCurrencyState": "",
+                                                                  "toCurrency": "USD",
+                                                                  "toCurrencyState": "",
+                                                                  "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
                                                                   "layoutProperties": {
                                                                     "textField": {
                                                                       "//": "Use this class to style text field component."
@@ -3360,17 +3364,16 @@
                                                                     "errorMsg": "This field is required"
                                                                   },
                                                                   "placeholder": "Enter Amount",
-                                                                  "stateName": "amount",
-                                                                  "disableUnderline": true,
                                                                   "cssClassNames": [
                                                                     {
-                                                                      "cssClassName": "emptyTextField3"
+                                                                      "cssClassName": "emptyTextField3 "
                                                                     }
-                                                                  ]
+                                                                  ],
+                                                                  "disableUnderline": true
                                                                 },
-                                                                "icon": "FaWindowMinimize",
+                                                                "icon": "FaDollarSign",
                                                                 "group": "Form",
-                                                                "type": "20004",
+                                                                "type": "20040",
                                                                 "Documentation": "<div>components 12344</div>",
                                                                 "updatedAt": "23-Aug-2021",
                                                                 "createdAt": "23-Aug-2021",
@@ -3379,8 +3382,8 @@
                                                                 "isLatest": true,
                                                                 "projectType": "web",
                                                                 "component": {
-                                                                  "content": "Text Box",
-                                                                  "type": "20004"
+                                                                  "content": "Amount",
+                                                                  "type": "20040"
                                                                 },
                                                                 "events": [],
                                                                 "path": "0-0-2-0-0-0-1-0-0-0-1-1-0-0-0"
@@ -4555,9 +4558,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "WTbR5pS9xQfCxg0lBfkQ6",
-    "createdBy": "muhammad.asad",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
+    "createdBy": "masood",
+    "updatedAt": "10/10/2023",
+    "createdAt": "10/10/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7849,8 +7852,8 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "NbGVQFwCKLjwxsnvOnW49",
-          "componentType": "20004",
+          "componentId": "TXFEFvAF0nLZk3yAI2zJT",
+          "componentType": "20040",
           "order": 1
         }
       ],
@@ -7881,22 +7884,26 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "NbGVQFwCKLjwxsnvOnW49",
+    "id": "TXFEFvAF0nLZk3yAI2zJT",
     "status": "ACTIVE",
-    "name": "Text Box",
+    "name": "Amount",
     "attributes": {
-      "label": "",
-      "name": "Text box",
+      "multicurrency": false,
+      "stateName": "amount",
+      "name": "Amount",
       "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
+      "maxLength": "5",
       "variant": "standard",
-      "value": "",
       "readOnly": false,
       "tooltip": "",
       "font-family": "Verdana",
       "mandatory": true,
-      "tooltipState": "",
+      "tooltipState": "amountinwords",
+      "fromCurrency": "PKR",
+      "fromCurrencyState": "",
+      "toCurrency": "USD",
+      "toCurrencyState": "",
+      "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
       "layoutProperties": {
         "textField": { "//": "Use this class to style text field component." },
         "inputProps": {
@@ -7913,13 +7920,12 @@
       },
       "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Amount",
-      "stateName": "amount",
-      "disableUnderline": true,
-      "cssClassNames": [{ "cssClassName": "emptyTextField3" }]
+      "cssClassNames": [{ "cssClassName": "emptyTextField3 " }],
+      "disableUnderline": true
     },
-    "icon": "FaWindowMinimize",
+    "icon": "FaDollarSign",
     "group": "Form",
-    "type": "20004",
+    "type": "20040",
     "Documentation": "<div>components 12344</div>",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
@@ -7927,11 +7933,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
+    "subType": "component",
+    "component": { "content": "Amount", "type": "20040" },
     "events": [],
     "path": "0-0-2-0-0-0-1-0-0-0-1-1-0-0-0",
     "screenId": "WTbR5pS9xQfCxg0lBfkQ6",
-    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

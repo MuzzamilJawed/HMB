@@ -1,0 +1,147 @@
+{
+  "id": "idBacAykoHi-jnzI4yvAf",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Card demographic Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3FYVyZXQkUZ7tY2QRiUb4",
+              "name": "Current Date",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "11",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "fromDate",
+                      "sourceBindingKey": "",
+                      "destinationStoreType": 2,
+                      "dateDifference": "0"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
+              "_id": "uvyQnVuHlQ82uWfUJMFqd",
+              "updatedAt": "10/10/2023",
+              "createdAt": "10/10/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "SlE3JqIkgw0brVj7D7U06",
+              "name": "Last week Date",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "11",
+                    "attributes": {
+                      "destinationBindingKey": "toDate",
+                      "destinationStoreType": 2,
+                      "dateDifference": "7"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
+              "_id": "6ldPNs6HYnAL4L-xE51DZ",
+              "updatedAt": "10/10/2023",
+              "createdAt": "10/10/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "kfLJjlPFzFtdWOArWJ-Xp",
+              "_id": "dIXBARXcw7C7zk2SUmMy_",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "cardUsage Trigger",
+              "old_name": "cardUsage Trigger",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "cardUsageResponse",
+                      "url": "/cardusage",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "cardNumber",
+                          "value": "selectedCard.cardNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "fromDate",
+                          "value": "fromDate"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "toDate",
+                          "value": "toDate"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
+              "updatedAt": "10/10/2023",
+              "createdAt": "10/10/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": [
+            "3FYVyZXQkUZ7tY2QRiUb4",
+            "SlE3JqIkgw0brVj7D7U06",
+            "kfLJjlPFzFtdWOArWJ-Xp"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
+  "_id": "pJHbyP2XXoGYdhAdY0quW",
+  "updatedAt": "10/10/2023",
+  "createdAt": "10/10/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

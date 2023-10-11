@@ -1,0 +1,50 @@
+{
+  "id": "SHvikLt74o3294TZHro9I",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CardHistoryATM",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "atmhistoryResponse",
+          "responseReturnValue": "content",
+          "url": "/cardusage/history",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "cardNumber",
+              "value": "selectedCard.cardNumber"
+            },
+            { "type": 4, "name": "Static", "key": "type", "value": "ATM" }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.c8xb3pdfdq5mG5z0Orq-SfFRH4lVGEwf",
+  "_id": "oGyjwb2wnrl_heirKrlCR",
+  "updatedAt": "10/10/2023",
+  "createdAt": "10/10/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

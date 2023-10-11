@@ -1,0 +1,52 @@
+{
+  "id": "_PIfODA1N7Ym-OxXB4cQO",
+  "name": "Transfer bene validation",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "validation",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] },
+              "key": "splitOtp"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "smsPin"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "OTP", "OTP"] },
+              "key": "validationType"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.sm7r9q5nr1bRUIiz7fcz6--ux8GMj71t",
+  "_id": "WYHCktNtplXSHGs1aZpUn",
+  "updatedAt": "10/9/2023",
+  "createdAt": "10/9/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
