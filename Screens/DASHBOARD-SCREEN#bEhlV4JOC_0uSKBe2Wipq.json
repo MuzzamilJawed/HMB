@@ -8824,7 +8824,16 @@
                                                                           "label": "debitAmount.amount",
                                                                           "searchInState": true,
                                                                           "storeType": 2,
-                                                                          "hideCondition": {},
+                                                                          "hideCondition": {
+                                                                            "logic": {
+                                                                              ">": [
+                                                                                {
+                                                                                  "var": "currentScreen.accountMiniStatement.0.debitAmount.amount"
+                                                                                },
+                                                                                0
+                                                                              ]
+                                                                            }
+                                                                          },
                                                                           "cssClassNames": [
                                                                             {
                                                                               "cssClassName": "valueLabel "
@@ -11567,7 +11576,7 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "bEhlV4JOC_0uSKBe2Wipq",
-    "createdBy": "muhammad.asad",
+    "createdBy": "masood",
     "updatedAt": "10/11/2023",
     "createdAt": "10/11/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -19393,7 +19402,16 @@
       "label": "debitAmount.amount",
       "searchInState": true,
       "storeType": 2,
-      "hideCondition": {},
+      "hideCondition": {
+        "logic": {
+          ">": [
+            {
+              "var": "currentScreen.accountMiniStatement.0.debitAmount.amount"
+            },
+            0
+          ]
+        }
+      },
       "cssClassNames": [{ "cssClassName": "valueLabel " }]
     },
     "icon": "FaFont",

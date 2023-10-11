@@ -1694,7 +1694,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "aI6zcfT0djIlPKDGeGRpb",
+                                                            "id": "4gEiKkYiLU5sjWGUXgVuk",
                                                             "gridProps": [
                                                               {
                                                                 "id": "pGso05MUnfx7DHdMw_Apr",
@@ -1769,19 +1769,30 @@
                                                           "name": "Grid layout",
                                                           "hideCondition": {
                                                             "logic": {
-                                                              "and": [
+                                                              "or": [
                                                                 {
-                                                                  "var": "currentScreen.form.certiType",
-                                                                  "!=": "null"
+                                                                  "==": [
+                                                                    {
+                                                                      "var": "currentScreen.form.certiType"
+                                                                    },
+                                                                    null
+                                                                  ]
                                                                 },
                                                                 {
-                                                                  "var": "currentScreen.form.tenureSelect",
-                                                                  "!=": "null"
+                                                                  "==": [
+                                                                    {
+                                                                      "var": "currentScreen.form.tenureSelect"
+                                                                    },
+                                                                    null
+                                                                  ]
                                                                 },
                                                                 {
-                                                                  "var": "currentScreen.form.currency",
-                                                                  "!=": "null",
-                                                                  "==": false
+                                                                  "==": [
+                                                                    {
+                                                                      "var": "currentScreen.form.currency"
+                                                                    },
+                                                                    null
+                                                                  ]
                                                                 }
                                                               ]
                                                             }
@@ -3572,8 +3583,8 @@
     "gitBranchName": "master",
     "_id": "mtOiKujDPg5QY0WO1pLsR",
     "createdBy": "masood",
-    "updatedAt": "10/2/2023",
-    "createdAt": "10/2/2023",
+    "updatedAt": "10/11/2023",
+    "createdAt": "10/11/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5308,10 +5319,10 @@
       "name": "Grid layout",
       "hideCondition": {
         "logic": {
-          "and": [
-            { "var": "currentScreen.form.certiType", "!=": "null" },
-            { "var": "currentScreen.form.tenureSelect", "!=": "null" },
-            { "var": "currentScreen.form.currency", "!=": "null", "==": false }
+          "or": [
+            { "==": [{ "var": "currentScreen.form.certiType" }, null] },
+            { "==": [{ "var": "currentScreen.form.tenureSelect" }, null] },
+            { "==": [{ "var": "currentScreen.form.currency" }, null] }
           ]
         }
       }

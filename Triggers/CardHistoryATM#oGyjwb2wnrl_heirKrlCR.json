@@ -1,8 +1,10 @@
 {
   "id": "SHvikLt74o3294TZHro9I",
+  "_id": "oGyjwb2wnrl_heirKrlCR",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "CardHistoryATM",
+  "old_name": "CardHistoryATM",
   "status": "ACTIVE",
   "services": [
     {
@@ -37,14 +39,20 @@
           "baseURL": "64f9670d683922479c06159b",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": " Otpinfo with email and SMSpin",
+            "triggerId": "3WJVpQqglNb4yHnlELcM-"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.c8xb3pdfdq5mG5z0Orq-SfFRH4lVGEwf",
-  "_id": "oGyjwb2wnrl_heirKrlCR",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
+  "csrf": "0.nc7j8y22hv6ANu9GbUjbAXNGHZcQWcy",
+  "updatedAt": "10/11/2023",
+  "createdAt": "10/11/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

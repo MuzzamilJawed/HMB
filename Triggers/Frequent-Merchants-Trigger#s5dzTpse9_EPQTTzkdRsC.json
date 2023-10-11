@@ -1,10 +1,10 @@
 {
-  "id": "kfLJjlPFzFtdWOArWJ-Xp",
-  "_id": "dIXBARXcw7C7zk2SUmMy_",
+  "id": "fnPxl4lTUtkgeRwrLujEC",
+  "_id": "s5dzTpse9_EPQTTzkdRsC",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
-  "name": "cardUsage Trigger",
-  "old_name": "cardUsage Trigger",
+  "name": "Frequent Merchants Trigger",
+  "old_name": "Frequent Merchants Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -14,12 +14,13 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "cardUsageResponse",
-          "url": "/cardusage",
+          "responseStateKey": "frequentmerchantsResponse",
+          "responseReturnValue": "content",
+          "url": "/frequentmerchants",
           "checksum": true,
           "encryption": true,
           "isDeviceDetails": false,
-          "loginTrigger": "loginTrigger",
+          "loginTrigger": false,
           "formData": false,
           "logoutTrigger": false,
           "headers": {
@@ -32,25 +33,25 @@
               "name": "Form",
               "key": "cardNumber",
               "value": "selectedCard.cardNumber"
-            },
-            {
-              "type": 1,
-              "name": "Form",
-              "key": "fromDate",
-              "value": "fromDate"
-            },
-            { "type": 1, "name": "Form", "key": "toDate", "value": "toDate" }
+            }
           ],
           "baseURL": "64f9670d683922479c06159b",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Navigate to Merchants",
+            "triggerId": "W5gyd-gdzOgbb9buDDYg8"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
+  "csrf": "0.nc7j8y22hv6ANu9GbUjbAXNGHZcQWcy",
+  "updatedAt": "10/11/2023",
+  "createdAt": "10/11/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

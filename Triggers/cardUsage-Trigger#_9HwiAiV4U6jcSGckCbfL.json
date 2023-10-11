@@ -1,0 +1,89 @@
+{
+  "id": "naphH1mNTq8ZSDxJqlgyN",
+  "_id": "_9HwiAiV4U6jcSGckCbfL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "cardUsage Trigger",
+  "old_name": "cardUsage Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "cardUsageResponse",
+          "url": "/cardusage",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "cardNumber",
+              "value": "selectedCard.cardNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromDate",
+              "value": "fromDate"
+            },
+            { "type": 1, "name": "Form", "key": "toDate", "value": "toDate" }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Navigate TO Card Usage ",
+            "triggerId": "AmP7V6mGWbECuvJkouB3Z"
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "Card Usage  Error Modal",
+            "triggerId": "DM1EBeZNsIH44c3ZYDSlM",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          },
+          {
+            "httpStatus": 500,
+            "triggerName": "Card Usage  Error Modal",
+            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+          },
+          {
+            "httpStatus": 402,
+            "triggerName": "Card Usage  Error Modal",
+            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+          },
+          {
+            "httpStatus": 400,
+            "triggerName": "Card Usage  Error Modal",
+            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+          },
+          {
+            "httpStatus": 401,
+            "triggerName": "Card Usage  Error Modal",
+            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.nc7j8y22hv6ANu9GbUjbAXNGHZcQWcy",
+  "updatedAt": "10/11/2023",
+  "createdAt": "10/11/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
