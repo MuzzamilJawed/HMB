@@ -1,0 +1,203 @@
+{
+  "id": "Wn5oeIZiBzeA_bXI7NBiF",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Delete international Transaction Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3WJVpQqglNb4yHnlELcM-",
+              "name": " Otpinfo with email and SMSpin",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.emailPin" },
+                          "key": "emailPin"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "splitOtp",
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "_id": "j4UDdGfNoOd5UzY-973cX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "6cTk04m4wXnlNzi7UK6E2",
+              "name": "isoCurrencies Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "isoCurrencies",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          true,
+                          [
+                            {
+                              "var": "currentScreen.selectedObject.isocurrency"
+                            }
+                          ],
+                          [
+                            {
+                              "var": "currentScreen.selectedObject.isocurrency"
+                            }
+                          ]
+                        ]
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.8orw4bqvw4uVY-Bl86g7AGhLjKhYNiCy",
+              "_id": "kIAu5K4GINmOKfLOYPktw",
+              "updatedAt": "10/16/2023",
+              "createdAt": "10/16/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "7t1jxZ_Fo2ippduaezfOU",
+              "_id": "GW-OWTOPH_1D5CPAjRhtl",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "delete International Transactions",
+              "old_name": "delete International Transactions",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "removeInternationalTransactionResponse",
+                      "url": "/internationalTransaction",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "action",
+                          "value": "2"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "otpInfo",
+                          "value": "otpInfo"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "cardnumber",
+                          "value": "selectedObject.cardnumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "countryCode",
+                          "value": "selectedObject.countryCode"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "isoCurrencies",
+                          "value": "isoCurrencies"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.8orw4bqvw4uVY-Bl86g7AGhLjKhYNiCy",
+              "updatedAt": "10/16/2023",
+              "createdAt": "10/16/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": [
+            "3WJVpQqglNb4yHnlELcM-",
+            "6cTk04m4wXnlNzi7UK6E2",
+            "7t1jxZ_Fo2ippduaezfOU"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.8orw4bqvw4uVY-Bl86g7AGhLjKhYNiCy",
+  "_id": "vQ2Mhp7lZgQ-2AGk6o4a-",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

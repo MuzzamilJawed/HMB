@@ -98,7 +98,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "tzuTbWCaD26oZKufQ2V6N",
+                                            "id": "atabO30t_pEm1aJoXuKEX",
                                             "gridProps": [
                                               {
                                                 "id": "9DTRWrVKrEQErY-JUysBn",
@@ -149,12 +149,213 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-0-0-0-0-0-0"
+                                            }
                                           }
                                         ],
                                         "path": "0-0-0-0-0-0-0-0-0",
-                                        "events": [],
+                                        "events": [
+                                          {
+                                            "triggerId": "idBacAykoHi-jnzI4yvAf",
+                                            "triggerName": "Card demographic Chain Trigger",
+                                            "serviceType": "2",
+                                            "attributes": {
+                                              "delay": "",
+                                              "triggers": [
+                                                {
+                                                  "id": "651IGANTEmSrkY0ZGSwfH",
+                                                  "name": "current date return",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "services": [
+                                                    {
+                                                      "type": "11",
+                                                      "command": {
+                                                        "type": "6",
+                                                        "attributes": {
+                                                          "dataType": "value",
+                                                          "destinationBindingKey": "toDate",
+                                                          "sourceBindingKey": "form",
+                                                          "sourceStoreType": 1,
+                                                          "destinationStoreType": 1,
+                                                          "logic": {
+                                                            "if": [
+                                                              true,
+                                                              "27-Sep-2023",
+                                                              "27-Sep-2023"
+                                                            ]
+                                                          },
+                                                          "changeValueConditonally": true,
+                                                          "targettedType": "value"
+                                                        }
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+                                                  "_id": "jWCJ2tMLoPf8F0XQ2V_D0",
+                                                  "updatedAt": "10/12/2023",
+                                                  "createdAt": "10/12/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                },
+                                                {
+                                                  "id": "CNpvu6EPtOZMXaHVVLh2A",
+                                                  "name": "from Date Form",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "services": [
+                                                    {
+                                                      "type": "11",
+                                                      "command": {
+                                                        "type": "6",
+                                                        "attributes": {
+                                                          "dataType": "value",
+                                                          "destinationBindingKey": "fromDate",
+                                                          "sourceBindingKey": "form",
+                                                          "sourceStoreType": 1,
+                                                          "destinationStoreType": 1,
+                                                          "logic": {
+                                                            "if": [
+                                                              true,
+                                                              "20-Sep-2023",
+                                                              "20-Sep-2023"
+                                                            ]
+                                                          },
+                                                          "changeValueConditonally": true,
+                                                          "targettedType": "value"
+                                                        }
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+                                                  "_id": "iH3yXWZoFc9Um16grQ8y_",
+                                                  "updatedAt": "10/12/2023",
+                                                  "createdAt": "10/12/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                },
+                                                {
+                                                  "id": "naphH1mNTq8ZSDxJqlgyN",
+                                                  "_id": "_9HwiAiV4U6jcSGckCbfL",
+                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                  "gitBranchName": "master",
+                                                  "name": "cardUsage Trigger",
+                                                  "old_name": "cardUsage Trigger",
+                                                  "status": "ACTIVE",
+                                                  "services": [
+                                                    {
+                                                      "type": "8",
+                                                      "command": {
+                                                        "type": "1",
+                                                        "attributes": {
+                                                          "loaderWidgetIds": [
+                                                            906070
+                                                          ],
+                                                          "messageWidgetIds": [
+                                                            906070
+                                                          ],
+                                                          "responseStateKey": "cardUsageResponse",
+                                                          "url": "/cardusage",
+                                                          "checksum": true,
+                                                          "encryption": true,
+                                                          "isDeviceDetails": false,
+                                                          "loginTrigger": false,
+                                                          "formData": false,
+                                                          "logoutTrigger": false,
+                                                          "headers": {
+                                                            "Content-Type": "application/json",
+                                                            "channel_key": "005"
+                                                          },
+                                                          "requestBody": [
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "cardNumber",
+                                                              "value": "selectedCard.cardNumber"
+                                                            },
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "fromDate",
+                                                              "value": "fromDate"
+                                                            },
+                                                            {
+                                                              "type": 1,
+                                                              "name": "Form",
+                                                              "key": "toDate",
+                                                              "value": "toDate"
+                                                            }
+                                                          ],
+                                                          "baseURL": "64f9670d683922479c06159b",
+                                                          "storeType": 2
+                                                        },
+                                                        "responseHandler": [
+                                                          {
+                                                            "logic": {
+                                                              "==": [
+                                                                {
+                                                                  "var": "code"
+                                                                },
+                                                                1
+                                                              ]
+                                                            },
+                                                            "httpStatus": 200,
+                                                            "triggerName": "Navigate TO Card Usage ",
+                                                            "triggerId": "AmP7V6mGWbECuvJkouB3Z"
+                                                          },
+                                                          {
+                                                            "httpStatus": 200,
+                                                            "triggerName": "Card Usage  Error Modal",
+                                                            "triggerId": "DM1EBeZNsIH44c3ZYDSlM",
+                                                            "logic": {
+                                                              "==": [
+                                                                {
+                                                                  "var": "code"
+                                                                },
+                                                                0
+                                                              ]
+                                                            }
+                                                          },
+                                                          {
+                                                            "httpStatus": 500,
+                                                            "triggerName": "Card Usage  Error Modal",
+                                                            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                                                          },
+                                                          {
+                                                            "httpStatus": 402,
+                                                            "triggerName": "Card Usage  Error Modal",
+                                                            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                                                          },
+                                                          {
+                                                            "httpStatus": 400,
+                                                            "triggerName": "Card Usage  Error Modal",
+                                                            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                                                          },
+                                                          {
+                                                            "httpStatus": 401,
+                                                            "triggerName": "Card Usage  Error Modal",
+                                                            "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                                                          }
+                                                        ]
+                                                      }
+                                                    }
+                                                  ],
+                                                  "csrf": "0.nc7j8y22hv6ANu9GbUjbAXNGHZcQWcy",
+                                                  "updatedAt": "10/11/2023",
+                                                  "createdAt": "10/11/2023",
+                                                  "createdBy": "masood",
+                                                  "updatedBy": "masood"
+                                                }
+                                              ],
+                                              "triggerIds": [
+                                                "651IGANTEmSrkY0ZGSwfH",
+                                                "CNpvu6EPtOZMXaHVVLh2A",
+                                                "naphH1mNTq8ZSDxJqlgyN"
+                                              ]
+                                            },
+                                            "type": "1",
+                                            "name": "On initialization"
+                                          }
+                                        ],
                                         "attributes": {
                                           "gridProps": [],
                                           "label": "Header",
@@ -185,7 +386,17 @@
                                           "20010",
                                           "widget"
                                         ],
-                                        "name": "Grid layout"
+                                        "name": "Grid layout",
+                                        "dimensions": {
+                                          "rows": 1,
+                                          "columns": 1,
+                                          "colSize0xs": 12,
+                                          "colSize0sm": 12,
+                                          "colSize0md": 12,
+                                          "colSize0lg": 12,
+                                          "colSize0xl": 12
+                                        },
+                                        "readOnly": true
                                       }
                                     ],
                                     "layoutProperties": {
@@ -265,59 +476,87 @@
                               },
                               {
                                 "type": "10001",
-                                "id": "SVZgJwlFQVzcZqfE7qKBb",
+                                "name": "Grid layout",
+                                "id": "qDvODAMFsqPiIwQ8g44Qj",
                                 "gridProps": [
                                   {
                                     "type": "column",
-                                    "id": "nj3uM8AK3DVDVjXbTO9Jt",
+                                    "id": "UZ5459P-zwWKmS5rvbmVv",
                                     "gridProps": [
                                       {
-                                        "type": "20009",
-                                        "name": "List layout with parse",
-                                        "id": "WWurMHBArkCfN5c-Y7AXF",
+                                        "id": "9ua6kgL9YZcbxJhWq7nZ3",
+                                        "name": "Card Usage TRIGGER",
+                                        "type": "20031",
+                                        "attributes": {
+                                          "widgetId": "9Ik7xJu6qpQQLihol0Ica",
+                                          "layoutProperties": {
+                                            "xl": 6,
+                                            "lg": 6,
+                                            "md": 6,
+                                            "sm": 6,
+                                            "xs": 6
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
+                                      {
+                                        "type": "10001",
+                                        "name": "Grid layout",
+                                        "id": "CBZpDGfaxUxwBuyGUBEJp",
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "1WUFWji23AleFPe_5g8JJ",
+                                            "id": "Lr51oyQyAGlnyLajKTaGb",
                                             "gridProps": [
                                               {
-                                                "id": "ZITfu-qG819nsLrGHf8qx",
+                                                "id": "b1qzo8IUOJ8H_8qYLae8U",
                                                 "status": "ACTIVE",
-                                                "name": "Label",
+                                                "name": "Date picker",
+                                                "icon": "FaCalendarDay",
+                                                "group": "Form",
+                                                "updatedAt": "23-Aug-2021",
+                                                "createdAt": "23-Aug-2021",
+                                                "order": 3,
+                                                "type": "20027",
                                                 "attributes": {
-                                                  "variant": "body1",
-                                                  "name": "Label",
-                                                  "mandatory": false,
+                                                  "name": "Calendar",
+                                                  "stateName": "fromDate",
+                                                  "format": "dd-MMMM-yyyy",
+                                                  "variant": "outlined",
+                                                  "validate": {
+                                                    "required": false,
+                                                    "errorMsg": "",
+                                                    "isCalendar": true
+                                                  },
                                                   "layoutProperties": {
-                                                    "label": {
-                                                      "//": "Use this class to style label component."
+                                                    "dateCalendar": {
+                                                      "//": "Use this class to style calender component."
                                                     },
-                                                    "mainContainer": "label",
+                                                    "mainContainer": "dateCalendar",
                                                     "xl": 12,
                                                     "lg": 12,
                                                     "md": 12,
                                                     "sm": 12,
                                                     "xs": 12
                                                   },
-                                                  "label": "description",
-                                                  "searchInState": true,
-                                                  "storeType": 2
+                                                  "placeholder": "From Date",
+                                                  "disableUnderline": true,
+                                                  "cssClassNames": [
+                                                    {
+                                                      "cssClassName": "emptyTextField3 "
+                                                    }
+                                                  ]
                                                 },
-                                                "icon": "FaFont",
-                                                "group": "Form",
-                                                "type": "20002",
-                                                "updatedAt": "23-Aug-2021",
-                                                "createdAt": "23-Aug-2021",
-                                                "order": 15,
                                                 "version": "1.0.0",
                                                 "isLatest": true,
                                                 "projectType": "web",
                                                 "component": {
-                                                  "content": "Label",
-                                                  "type": "20002"
+                                                  "content": "Date picker",
+                                                  "type": "20027"
                                                 },
-                                                "events": [],
-                                                "path": "0-0-0-0-0-0-1-0-0-0-0"
+                                                "event": [],
+                                                "path": "0-0-0-0-0-0-1-0-0-0-0",
+                                                "events": []
                                               }
                                             ],
                                             "layoutProperties": {
@@ -326,51 +565,41 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-0-0-1-0-0-0"
+                                            }
                                           }
                                         ],
                                         "allowedContainers": [
                                           "10001",
-                                          "20009",
-                                          "widget",
+                                          "20030",
                                           "noLayout",
-                                          "20010"
+                                          "20010",
+                                          "widget"
                                         ],
                                         "attributes": {
                                           "gridProps": [],
                                           "label": "Header",
-                                          "listItemSize": {
-                                            "xs": "12",
-                                            "sm": "12",
-                                            "md": "12",
-                                            "lg": "12",
-                                            "xl": "12"
-                                          },
                                           "layoutProperties": {
-                                            "itemStyle": {
-                                              "padding": "10px",
-                                              "border-bottom": "1px solid #E2EFE7"
-                                            },
-                                            "listLayout": {
+                                            "gridLayout": {
+                                              "//": "Use this class to style grid layout component.",
                                               "padding": "5px",
-                                              "height": "400px",
-                                              "overflow": "scroll",
-                                              "overflow-x": "hidden",
-                                              "border-radius": "10px",
-                                              "background": "rgba(130,135,130,0.04)"
+                                              "spacing": 0
                                             },
-                                            "mainContainer": "listLayout"
+                                            "mainContainer": "gridLayout"
                                           },
-                                          "storeType": 2,
-                                          "dataSource": "atmhistoryResponse"
+                                          "layoutProps": {
+                                            "direction": "row",
+                                            "justifyContent": "flex-start",
+                                            "alignItems": "flex-start"
+                                          },
+                                          "direction": "row",
+                                          "name": "Grid layout"
                                         },
                                         "events": [],
                                         "component": {
-                                          "type": "20009",
-                                          "content": "List layout with parse"
+                                          "type": "10001",
+                                          "content": "Grid layout"
                                         },
-                                        "path": "0-0-0-0-0-0-1-0-0",
+                                        "path": "0-0-0-0-0-0-1-0-1",
                                         "dimensions": {
                                           "rows": 1,
                                           "columns": 1,
@@ -380,21 +609,167 @@
                                           "colSize0lg": 12,
                                           "colSize0xl": 12
                                         },
-                                        "readOnly": false
+                                        "readOnly": true
                                       }
                                     ],
                                     "layoutProperties": {
-                                      "xl": 12,
-                                      "lg": 12,
-                                      "md": 12,
-                                      "sm": 12,
-                                      "xs": 12
-                                    },
-                                    "path": "0-0-0-0-0-0-1-0"
+                                      "xl": 6,
+                                      "lg": 6,
+                                      "md": 6,
+                                      "sm": 6,
+                                      "xs": 6
+                                    }
+                                  },
+                                  {
+                                    "type": "column",
+                                    "id": "pG3b2M44wLIMe0AHUZ5dl",
+                                    "gridProps": [
+                                      {
+                                        "id": "j4c9HlBQjTqrdL8YHLDrh",
+                                        "name": "Merchant MODAL",
+                                        "type": "20031",
+                                        "attributes": {
+                                          "widgetId": "u8k99FsSFNsEg7Pw_tU95",
+                                          "layoutProperties": {
+                                            "xl": 6,
+                                            "lg": 6,
+                                            "md": 6,
+                                            "sm": 6,
+                                            "xs": 6
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
+                                      {
+                                        "type": "10001",
+                                        "name": "Grid layout",
+                                        "id": "ZN-fTcntGWC2BdyAuQ0K6",
+                                        "gridProps": [
+                                          {
+                                            "type": "column",
+                                            "id": "4QqkvHOfyHrlRbrMoPDtE",
+                                            "gridProps": [
+                                              {
+                                                "id": "YMZVd1FLXKKo1QcyHEDP_",
+                                                "status": "ACTIVE",
+                                                "name": "Date picker",
+                                                "icon": "FaCalendarDay",
+                                                "group": "Form",
+                                                "updatedAt": "23-Aug-2021",
+                                                "createdAt": "23-Aug-2021",
+                                                "order": 3,
+                                                "type": "20027",
+                                                "attributes": {
+                                                  "name": "Calendar",
+                                                  "label": "",
+                                                  "stateName": "toDate",
+                                                  "format": "dd-MMMM-yyyy",
+                                                  "variant": "standard",
+                                                  "validate": {
+                                                    "required": false,
+                                                    "errorMsg": "",
+                                                    "isCalendar": true
+                                                  },
+                                                  "layoutProperties": {
+                                                    "dateCalendar": {
+                                                      "//": "Use this class to style calender component."
+                                                    },
+                                                    "mainContainer": "dateCalendar",
+                                                    "xl": 12,
+                                                    "lg": 12,
+                                                    "md": 12,
+                                                    "sm": 12,
+                                                    "xs": 12
+                                                  },
+                                                  "placeholder": "To Date",
+                                                  "disableUnderline": true,
+                                                  "cssClassNames": [
+                                                    {
+                                                      "cssClassName": "emptyTextField3 "
+                                                    }
+                                                  ]
+                                                },
+                                                "version": "1.0.0",
+                                                "isLatest": true,
+                                                "projectType": "web",
+                                                "component": {
+                                                  "content": "Date picker",
+                                                  "type": "20027"
+                                                },
+                                                "event": [],
+                                                "path": "0-0-0-0-0-0-1-1-0-0-0",
+                                                "events": []
+                                              }
+                                            ],
+                                            "layoutProperties": {
+                                              "xl": 12,
+                                              "lg": 12,
+                                              "md": 12,
+                                              "sm": 12,
+                                              "xs": 12
+                                            }
+                                          }
+                                        ],
+                                        "allowedContainers": [
+                                          "10001",
+                                          "20030",
+                                          "noLayout",
+                                          "20010",
+                                          "widget"
+                                        ],
+                                        "attributes": {
+                                          "gridProps": [],
+                                          "label": "Header",
+                                          "layoutProperties": {
+                                            "gridLayout": {
+                                              "//": "Use this class to style grid layout component.",
+                                              "padding": "5px",
+                                              "spacing": 0
+                                            },
+                                            "mainContainer": "gridLayout"
+                                          },
+                                          "layoutProps": {
+                                            "direction": "row",
+                                            "justifyContent": "flex-start",
+                                            "alignItems": "flex-start"
+                                          },
+                                          "direction": "row",
+                                          "name": "Grid layout"
+                                        },
+                                        "events": [],
+                                        "component": {
+                                          "type": "10001",
+                                          "content": "Grid layout"
+                                        },
+                                        "path": "0-0-0-0-0-0-1-1-1",
+                                        "dimensions": {
+                                          "rows": 1,
+                                          "columns": 1,
+                                          "colSize0xs": 12,
+                                          "colSize0sm": 12,
+                                          "colSize0md": 12,
+                                          "colSize0lg": 12,
+                                          "colSize0xl": 12
+                                        },
+                                        "readOnly": true
+                                      }
+                                    ],
+                                    "layoutProperties": {
+                                      "xl": 6,
+                                      "lg": 6,
+                                      "md": 6,
+                                      "sm": 6,
+                                      "xs": 6
+                                    }
                                   }
                                 ],
-                                "path": "0-0-0-0-0-0-1",
-                                "events": [],
+                                "allowedContainers": [
+                                  "10001",
+                                  "20030",
+                                  "noLayout",
+                                  "20010",
+                                  "widget"
+                                ],
                                 "attributes": {
                                   "gridProps": [],
                                   "label": "Header",
@@ -412,31 +787,13 @@
                                     "alignItems": "flex-start"
                                   },
                                   "direction": "row",
-                                  "name": "Grid layout",
-                                  "hideComponent": true
+                                  "name": "Grid layout"
                                 },
+                                "events": [],
                                 "component": {
                                   "type": "10001",
                                   "content": "Grid layout"
-                                },
-                                "allowedContainers": [
-                                  "10001",
-                                  "20030",
-                                  "noLayout",
-                                  "20010",
-                                  "widget"
-                                ],
-                                "name": "Grid layout",
-                                "dimensions": {
-                                  "rows": 1,
-                                  "columns": 1,
-                                  "colSize0xs": 12,
-                                  "colSize0sm": 12,
-                                  "colSize0md": 12,
-                                  "colSize0lg": 12,
-                                  "colSize0xl": 12
-                                },
-                                "readOnly": true
+                                }
                               },
                               {
                                 "type": "10001",
@@ -471,7 +828,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "4CeN3KJ3BsiRFTUMs_3Re",
+                                                            "id": "5EmKEVZntWjoy9vrFnHPx",
                                                             "gridProps": [
                                                               {
                                                                 "id": "ea1eb5cQskZDiNla_ZSL8",
@@ -522,12 +879,140 @@
                                                               "md": 12,
                                                               "sm": 12,
                                                               "xs": 12
-                                                            },
-                                                            "path": "0-0-0-0-0-0-2-0-0-0-0-0-0-0"
+                                                            }
                                                           }
                                                         ],
                                                         "path": "0-0-0-0-0-0-2-0-0-0-0-0-0",
-                                                        "events": [],
+                                                        "events": [
+                                                          {
+                                                            "triggerId": "2RE34r837RNowkTftYWJG",
+                                                            "triggerName": "CHAIN_Card_HISTORY_TYPE_ATM",
+                                                            "serviceType": "2",
+                                                            "attributes": {
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "aZNOwtws-7_C8fbfWm-jF",
+                                                                  "name": "Card_HISTORY_TYPE_ATM",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "storeType": "",
+                                                                          "selectedObjectBindingKey": "selectedObject",
+                                                                          "dataType": "value",
+                                                                          "destinationBindingKey": "type",
+                                                                          "sourceBindingKey": "kuch bhi",
+                                                                          "sourceStoreType": 2,
+                                                                          "destinationStoreType": 2,
+                                                                          "logic": {
+                                                                            "if": [
+                                                                              true,
+                                                                              "ATM",
+                                                                              "ATM"
+                                                                            ]
+                                                                          },
+                                                                          "changeValueConditonally": true,
+                                                                          "targettedType": "value"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "_id": "9VNZ6e-vuQkN6QQSh7U1I",
+                                                                  "updatedAt": "10/12/2023",
+                                                                  "createdAt": "10/12/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                },
+                                                                {
+                                                                  "id": "SHvikLt74o3294TZHro9I",
+                                                                  "_id": "oGyjwb2wnrl_heirKrlCR",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "CardHistoryATM",
+                                                                  "old_name": "CardHistoryATM",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "atmhistoryResponse",
+                                                                          "responseReturnValue": "content",
+                                                                          "url": "/cardusage/history",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "cardNumber",
+                                                                              "value": "selectedObject.cardNumber"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "type",
+                                                                              "value": "type"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": [
+                                                                          {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "code"
+                                                                                },
+                                                                                1
+                                                                              ]
+                                                                            },
+                                                                            "httpStatus": 200,
+                                                                            "triggerName": " Otpinfo with email and SMSpin",
+                                                                            "triggerId": "3WJVpQqglNb4yHnlELcM-"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "updatedAt": "10/12/2023",
+                                                                  "createdAt": "10/12/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "aZNOwtws-7_C8fbfWm-jF",
+                                                                "SHvikLt74o3294TZHro9I"
+                                                              ]
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click"
+                                                          }
+                                                        ],
                                                         "attributes": {
                                                           "gridProps": [],
                                                           "label": "Header",
@@ -563,7 +1048,17 @@
                                                           "20010",
                                                           "widget"
                                                         ],
-                                                        "name": "Grid layout"
+                                                        "name": "Grid layout",
+                                                        "dimensions": {
+                                                          "rows": 1,
+                                                          "columns": 1,
+                                                          "colSize0xs": 12,
+                                                          "colSize0sm": 12,
+                                                          "colSize0md": 12,
+                                                          "colSize0lg": 12,
+                                                          "colSize0xl": 12
+                                                        },
+                                                        "readOnly": true
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -619,12 +1114,30 @@
                                                     "id": "yLVBFG2LFv-MWj-hnF3jj",
                                                     "gridProps": [
                                                       {
+                                                        "id": "lC2E_xDUDSKkm-iAEhlFH",
+                                                        "name": "Card_Status_Error_TRIGGER",
+                                                        "type": "20031",
+                                                        "attributes": {
+                                                          "widgetId": "8JneUW65OHT_8RVqcTjZ4",
+                                                          "layoutProperties": {
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          }
+                                                        },
+                                                        "component": {
+                                                          "type": "20031"
+                                                        }
+                                                      },
+                                                      {
                                                         "type": "10001",
                                                         "id": "GW6_sb4BcssQI6SIeSq2v",
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "KdIZAPltE2yiP8WX5632P",
+                                                            "id": "Td8HiCneCDoBbOYbreM78",
                                                             "gridProps": [
                                                               {
                                                                 "id": "M4IEQ3uDw_pcYETgGzsV9",
@@ -675,12 +1188,138 @@
                                                               "md": 12,
                                                               "sm": 12,
                                                               "xs": 12
-                                                            },
-                                                            "path": "0-0-0-0-0-0-2-0-0-0-1-0-0-0"
+                                                            }
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-0-0-2-0-0-0-1-0-0",
-                                                        "events": [],
+                                                        "path": "0-0-0-0-0-0-2-0-0-0-1-0-1",
+                                                        "events": [
+                                                          {
+                                                            "triggerId": "ZIWU5IcsrKKajfqP8DQU-",
+                                                            "triggerName": "CHAIN_Card_HISTORY_TYPE_POS",
+                                                            "serviceType": "2",
+                                                            "attributes": {
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "3HtgDL8O15w6c_g40dF0-",
+                                                                  "name": "Card_HISTORY_TYPE_POS",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "dataType": "value",
+                                                                          "destinationBindingKey": "type",
+                                                                          "sourceBindingKey": "kuch bhi",
+                                                                          "sourceStoreType": 2,
+                                                                          "destinationStoreType": 2,
+                                                                          "logic": {
+                                                                            "if": [
+                                                                              true,
+                                                                              "POS",
+                                                                              "POS"
+                                                                            ]
+                                                                          },
+                                                                          "changeValueConditonally": true,
+                                                                          "targettedType": "value"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "_id": "z5Ari-V8Txc95WaISpQy8",
+                                                                  "updatedAt": "10/12/2023",
+                                                                  "createdAt": "10/12/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                },
+                                                                {
+                                                                  "id": "SHvikLt74o3294TZHro9I",
+                                                                  "_id": "oGyjwb2wnrl_heirKrlCR",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "CardHistoryATM",
+                                                                  "old_name": "CardHistoryATM",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "atmhistoryResponse",
+                                                                          "responseReturnValue": "content",
+                                                                          "url": "/cardusage/history",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "cardNumber",
+                                                                              "value": "selectedObject.cardNumber"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "type",
+                                                                              "value": "type"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": [
+                                                                          {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "code"
+                                                                                },
+                                                                                1
+                                                                              ]
+                                                                            },
+                                                                            "httpStatus": 200,
+                                                                            "triggerName": " Otpinfo with email and SMSpin",
+                                                                            "triggerId": "3WJVpQqglNb4yHnlELcM-"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "updatedAt": "10/12/2023",
+                                                                  "createdAt": "10/12/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "3HtgDL8O15w6c_g40dF0-",
+                                                                "SHvikLt74o3294TZHro9I"
+                                                              ]
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click"
+                                                          }
+                                                        ],
                                                         "attributes": {
                                                           "gridProps": [],
                                                           "label": "Header",
@@ -716,7 +1355,17 @@
                                                           "20010",
                                                           "widget"
                                                         ],
-                                                        "name": "Grid layout"
+                                                        "name": "Grid layout",
+                                                        "dimensions": {
+                                                          "rows": 1,
+                                                          "columns": 1,
+                                                          "colSize0xs": 12,
+                                                          "colSize0sm": 12,
+                                                          "colSize0md": 12,
+                                                          "colSize0lg": 12,
+                                                          "colSize0xl": 12
+                                                        },
+                                                        "readOnly": true
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -798,12 +1447,15 @@
                                                                     "sm": 12,
                                                                     "xs": 12
                                                                   },
-                                                                  "label": "ATM Average Ticket Size",
+                                                                  "label": "cardUsageResponse.content.atmAverageTicketSize",
                                                                   "cssClassNames": [
                                                                     {
                                                                       "cssClassName": "cardButonText "
                                                                     }
-                                                                  ]
+                                                                  ],
+                                                                  "prefix": "ATM Average Ticket Size: ",
+                                                                  "searchInState": true,
+                                                                  "storeType": 2
                                                                 },
                                                                 "icon": "FaFont",
                                                                 "group": "Form",
@@ -949,7 +1601,7 @@
                                                                 "name": "Label",
                                                                 "attributes": {
                                                                   "variant": "body1",
-                                                                  "name": "Label",
+                                                                  "name": "Label ",
                                                                   "mandatory": false,
                                                                   "layoutProperties": {
                                                                     "label": {
@@ -962,12 +1614,15 @@
                                                                     "sm": 12,
                                                                     "xs": 12
                                                                   },
-                                                                  "label": "E-Commerce Average Ticket Size",
+                                                                  "label": "cardUsageResponse.content.ecommerceAverageTicketSize",
                                                                   "cssClassNames": [
                                                                     {
                                                                       "cssClassName": "cardButonText "
                                                                     }
-                                                                  ]
+                                                                  ],
+                                                                  "prefix": "E-Commerce Average Ticket Size: ",
+                                                                  "searchInState": true,
+                                                                  "storeType": 2
                                                                 },
                                                                 "icon": "FaFont",
                                                                 "group": "Form",
@@ -1202,7 +1857,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "j3tyRivLB5_cOITANsqZm",
+                                                            "id": "x09U4G4kncoogHConsP-g",
                                                             "gridProps": [
                                                               {
                                                                 "id": "sked2FSkcrKsnOapHlhE4",
@@ -1253,8 +1908,7 @@
                                                               "md": 12,
                                                               "sm": 12,
                                                               "xs": 12
-                                                            },
-                                                            "path": "0-0-0-0-0-0-2-1-0-0-0-0-1-0"
+                                                            }
                                                           }
                                                         ],
                                                         "allowedContainers": [
@@ -1288,7 +1942,141 @@
                                                             }
                                                           ]
                                                         },
-                                                        "events": [],
+                                                        "events": [
+                                                          {
+                                                            "triggerId": "5fM9GYNW4t8tUnC2IscTR",
+                                                            "triggerName": "CHAIN_CARD_USAGE_TYPE_E_COM",
+                                                            "serviceType": "2",
+                                                            "attributes": {
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "F7jRmNPB9Gox3NXNcPZnX",
+                                                                  "name": "CARD_USAGE_TYPE_E_COM",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "storeType": "",
+                                                                          "selectedObjectBindingKey": "selectedObject",
+                                                                          "dataType": "value",
+                                                                          "destinationBindingKey": "type",
+                                                                          "sourceBindingKey": "kuch bhi",
+                                                                          "sourceStoreType": 2,
+                                                                          "destinationStoreType": 2,
+                                                                          "logic": {
+                                                                            "if": [
+                                                                              true,
+                                                                              "E-COM",
+                                                                              "E-COM"
+                                                                            ]
+                                                                          },
+                                                                          "changeValueConditonally": true,
+                                                                          "targettedType": "value"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "_id": "zyP9jfcP8fa3ljFVSHhD7",
+                                                                  "updatedAt": "10/13/2023",
+                                                                  "createdAt": "10/13/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                },
+                                                                {
+                                                                  "id": "SHvikLt74o3294TZHro9I",
+                                                                  "_id": "oGyjwb2wnrl_heirKrlCR",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "CardHistoryATM",
+                                                                  "old_name": "CardHistoryATM",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "atmhistoryResponse",
+                                                                          "responseReturnValue": "content",
+                                                                          "url": "/cardusage/history",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "cardNumber",
+                                                                              "value": "selectedObject.cardNumber"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "type",
+                                                                              "value": "type"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": [
+                                                                          {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "code"
+                                                                                },
+                                                                                1
+                                                                              ]
+                                                                            },
+                                                                            "httpStatus": 200,
+                                                                            "triggerName": "Card Usage TRIGGER",
+                                                                            "triggerId": "26c1MldYoYN9FabCjOvGv"
+                                                                          },
+                                                                          {
+                                                                            "httpStatus": 400,
+                                                                            "triggerName": "Card_Status_Error_TRIGGER",
+                                                                            "triggerId": "I6NBngrawYvwotO6K9xmd"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+                                                                  "updatedAt": "10/13/2023",
+                                                                  "createdAt": "10/13/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "F7jRmNPB9Gox3NXNcPZnX",
+                                                                "SHvikLt74o3294TZHro9I"
+                                                              ]
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click"
+                                                          }
+                                                        ],
                                                         "component": {
                                                           "type": "10001",
                                                           "content": "Grid layout"
@@ -1584,7 +2372,7 @@
                                                                 "name": "Label",
                                                                 "attributes": {
                                                                   "variant": "body1",
-                                                                  "name": "Label",
+                                                                  "name": "Label ",
                                                                   "mandatory": false,
                                                                   "layoutProperties": {
                                                                     "label": {
@@ -1597,12 +2385,15 @@
                                                                     "sm": 12,
                                                                     "xs": 12
                                                                   },
-                                                                  "label": "POS Average Ticket Size",
+                                                                  "label": "cardUsageResponse.content.posAverageTicketSize",
                                                                   "cssClassNames": [
                                                                     {
                                                                       "cssClassName": "cardButonText "
                                                                     }
-                                                                  ]
+                                                                  ],
+                                                                  "prefix": "POS Average Ticket Size: ",
+                                                                  "searchInState": true,
+                                                                  "storeType": 2
                                                                 },
                                                                 "icon": "FaFont",
                                                                 "group": "Form",
@@ -2016,7 +2807,8 @@
                                                   "fullWidth": true,
                                                   "layoutProperties": {
                                                     "button": {
-                                                      "//": "Use this class to style button component."
+                                                      "//": "Use this class to style button component.",
+                                                      "background": "#19612F"
                                                     },
                                                     "inputProps": {
                                                       "//": "Use this class to style button element."
@@ -2335,9 +3127,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "_n6sDy8S5uDbDKoKBeYII",
-    "createdBy": "masood",
-    "updatedAt": "10/11/2023",
-    "createdAt": "10/11/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "10/13/2023",
+    "createdAt": "10/13/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2472,11 +3264,11 @@
           }
         },
         {
-          "componentId": "SVZgJwlFQVzcZqfE7qKBb",
+          "componentId": "qDvODAMFsqPiIwQ8g44Qj",
           "componentType": "10001",
-          "id": "SVZgJwlFQVzcZqfE7qKBb",
+          "id": "qDvODAMFsqPiIwQ8g44Qj",
           "position": {
-            "i": "SVZgJwlFQVzcZqfE7qKBb",
+            "i": "qDvODAMFsqPiIwQ8g44Qj",
             "x": null,
             "y": null,
             "w": null,
@@ -2642,7 +3434,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "idBacAykoHi-jnzI4yvAf",
+        "triggerName": "Card demographic Chain Trigger",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "_n6sDy8S5uDbDKoKBeYII",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -2689,29 +3488,48 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "SVZgJwlFQVzcZqfE7qKBb",
+    "id": "qDvODAMFsqPiIwQ8g44Qj",
     "name": "Grid layout",
     "type": "10001",
     "attributes": {
       "gridProps": [
         {
-          "componentId": "WWurMHBArkCfN5c-Y7AXF",
-          "componentType": "20009",
-          "id": "WWurMHBArkCfN5c-Y7AXF",
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 },
+          "componentId": "9ua6kgL9YZcbxJhWq7nZ3",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "componentId": "CBZpDGfaxUxwBuyGUBEJp",
+          "componentType": "10001",
+          "id": "CBZpDGfaxUxwBuyGUBEJp",
           "position": {
-            "i": "WWurMHBArkCfN5c-Y7AXF",
+            "i": "CBZpDGfaxUxwBuyGUBEJp",
             "x": null,
             "y": null,
             "w": null,
             "h": null
           },
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          }
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+        },
+        {
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 },
+          "componentId": "j4c9HlBQjTqrdL8YHLDrh",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "componentId": "ZN-fTcntGWC2BdyAuQ0K6",
+          "componentType": "10001",
+          "id": "ZN-fTcntGWC2BdyAuQ0K6",
+          "position": {
+            "i": "ZN-fTcntGWC2BdyAuQ0K6",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
         }
       ],
       "label": "Header",
@@ -2729,8 +3547,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout",
-      "hideComponent": true
+      "name": "Grid layout"
     },
     "layout": null,
     "events": [],
@@ -2742,9 +3559,25 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "WWurMHBArkCfN5c-Y7AXF",
-    "name": "List layout with parse",
-    "type": "20009",
+    "id": "9ua6kgL9YZcbxJhWq7nZ3",
+    "name": "Card Usage TRIGGER",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "9Ik7xJu6qpQQLihol0Ica",
+      "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "_n6sDy8S5uDbDKoKBeYII",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "CBZpDGfaxUxwBuyGUBEJp",
+    "name": "Grid layout",
+    "type": "10001",
     "attributes": {
       "gridProps": [
         {
@@ -2755,36 +3588,27 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "ZITfu-qG819nsLrGHf8qx",
-          "componentType": "20002",
+          "componentId": "b1qzo8IUOJ8H_8qYLae8U",
+          "componentType": "20027",
           "order": 1
         }
       ],
       "label": "Header",
-      "listItemSize": {
-        "xs": "12",
-        "sm": "12",
-        "md": "12",
-        "lg": "12",
-        "xl": "12"
-      },
       "layoutProperties": {
-        "itemStyle": {
-          "padding": "10px",
-          "border-bottom": "1px solid #E2EFE7"
-        },
-        "listLayout": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
           "padding": "5px",
-          "height": "400px",
-          "overflow": "scroll",
-          "overflow-x": "hidden",
-          "border-radius": "10px",
-          "background": "rgba(130,135,130,0.04)"
+          "spacing": 0
         },
-        "mainContainer": "listLayout"
+        "mainContainer": "gridLayout"
       },
-      "storeType": 2,
-      "dataSource": "atmhistoryResponse"
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
     },
     "layout": null,
     "events": [],
@@ -2796,38 +3620,145 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "ZITfu-qG819nsLrGHf8qx",
+    "id": "b1qzo8IUOJ8H_8qYLae8U",
     "status": "ACTIVE",
-    "name": "Label",
+    "name": "Date picker",
+    "icon": "FaCalendarDay",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 3,
+    "type": "20027",
     "attributes": {
-      "variant": "body1",
-      "name": "Label",
-      "mandatory": false,
+      "name": "Calendar",
+      "stateName": "fromDate",
+      "format": "dd-MMMM-yyyy",
+      "variant": "outlined",
+      "validate": { "required": false, "errorMsg": "", "isCalendar": true },
       "layoutProperties": {
-        "label": { "//": "Use this class to style label component." },
-        "mainContainer": "label",
+        "dateCalendar": { "//": "Use this class to style calender component." },
+        "mainContainer": "dateCalendar",
         "xl": 12,
         "lg": 12,
         "md": 12,
         "sm": 12,
         "xs": 12
       },
-      "label": "description",
-      "searchInState": true,
-      "storeType": 2
+      "placeholder": "From Date",
+      "disableUnderline": true,
+      "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
     },
-    "icon": "FaFont",
-    "group": "Form",
-    "type": "20002",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 15,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Label", "type": "20002" },
-    "events": [],
+    "component": { "content": "Date picker", "type": "20027" },
+    "event": [],
     "path": "0-0-0-0-0-0-1-0-0-0-0",
+    "events": [],
+    "screenId": "_n6sDy8S5uDbDKoKBeYII",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "j4c9HlBQjTqrdL8YHLDrh",
+    "name": "Merchant MODAL",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "u8k99FsSFNsEg7Pw_tU95",
+      "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "_n6sDy8S5uDbDKoKBeYII",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ZN-fTcntGWC2BdyAuQ0K6",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "YMZVd1FLXKKo1QcyHEDP_",
+          "componentType": "20027",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "_n6sDy8S5uDbDKoKBeYII",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "YMZVd1FLXKKo1QcyHEDP_",
+    "status": "ACTIVE",
+    "name": "Date picker",
+    "icon": "FaCalendarDay",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 3,
+    "type": "20027",
+    "attributes": {
+      "name": "Calendar",
+      "label": "",
+      "stateName": "toDate",
+      "format": "dd-MMMM-yyyy",
+      "variant": "standard",
+      "validate": { "required": false, "errorMsg": "", "isCalendar": true },
+      "layoutProperties": {
+        "dateCalendar": { "//": "Use this class to style calender component." },
+        "mainContainer": "dateCalendar",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "placeholder": "To Date",
+      "disableUnderline": true,
+      "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
+    },
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Date picker", "type": "20027" },
+    "event": [],
+    "path": "0-0-0-0-0-0-1-1-0-0-0",
+    "events": [],
     "screenId": "_n6sDy8S5uDbDKoKBeYII",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3092,7 +4023,14 @@
       "cssClassNames": [{ "cssClassName": "DebitCardButtonShow " }]
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "2RE34r837RNowkTftYWJG",
+        "triggerName": "CHAIN_Card_HISTORY_TYPE_ATM",
+        "name": "On click",
+        "type": "2"
+      }
+    ],
     "subType": "component",
     "screenId": "_n6sDy8S5uDbDKoKBeYII",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3145,6 +4083,18 @@
     "attributes": {
       "gridProps": [
         {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "lC2E_xDUDSKkm-iAEhlFH",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
           "componentId": "GW6_sb4BcssQI6SIeSq2v",
           "componentType": "10001",
           "id": "GW6_sb4BcssQI6SIeSq2v",
@@ -3191,6 +4141,22 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
+    "id": "lC2E_xDUDSKkm-iAEhlFH",
+    "name": "Card_Status_Error_TRIGGER",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "8JneUW65OHT_8RVqcTjZ4",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "_n6sDy8S5uDbDKoKBeYII",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
     "id": "GW6_sb4BcssQI6SIeSq2v",
     "name": "Grid layout",
     "type": "10001",
@@ -3228,7 +4194,14 @@
       "cssClassNames": [{ "cssClassName": "DebitCardButtonShow " }]
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "ZIWU5IcsrKKajfqP8DQU-",
+        "triggerName": "CHAIN_Card_HISTORY_TYPE_POS",
+        "name": "On click",
+        "type": "2"
+      }
+    ],
     "subType": "component",
     "screenId": "_n6sDy8S5uDbDKoKBeYII",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3389,8 +4362,11 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "ATM Average Ticket Size",
-      "cssClassNames": [{ "cssClassName": "cardButonText " }]
+      "label": "cardUsageResponse.content.atmAverageTicketSize",
+      "cssClassNames": [{ "cssClassName": "cardButonText " }],
+      "prefix": "ATM Average Ticket Size: ",
+      "searchInState": true,
+      "storeType": 2
     },
     "icon": "FaFont",
     "group": "Form",
@@ -3514,7 +4490,7 @@
     "name": "Label",
     "attributes": {
       "variant": "body1",
-      "name": "Label",
+      "name": "Label ",
       "mandatory": false,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
@@ -3525,8 +4501,11 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "E-Commerce Average Ticket Size",
-      "cssClassNames": [{ "cssClassName": "cardButonText " }]
+      "label": "cardUsageResponse.content.ecommerceAverageTicketSize",
+      "cssClassNames": [{ "cssClassName": "cardButonText " }],
+      "prefix": "E-Commerce Average Ticket Size: ",
+      "searchInState": true,
+      "storeType": 2
     },
     "icon": "FaFont",
     "group": "Form",
@@ -3779,7 +4758,14 @@
       "cssClassNames": [{ "cssClassName": "DebitCardButtonShow " }]
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "5fM9GYNW4t8tUnC2IscTR",
+        "triggerName": "CHAIN_CARD_USAGE_TYPE_E_COM",
+        "name": "On click",
+        "type": "2"
+      }
+    ],
     "subType": "component",
     "screenId": "_n6sDy8S5uDbDKoKBeYII",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -4072,7 +5058,7 @@
     "name": "Label",
     "attributes": {
       "variant": "body1",
-      "name": "Label",
+      "name": "Label ",
       "mandatory": false,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
@@ -4083,8 +5069,11 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "POS Average Ticket Size",
-      "cssClassNames": [{ "cssClassName": "cardButonText " }]
+      "label": "cardUsageResponse.content.posAverageTicketSize",
+      "cssClassNames": [{ "cssClassName": "cardButonText " }],
+      "prefix": "POS Average Ticket Size: ",
+      "searchInState": true,
+      "storeType": 2
     },
     "icon": "FaFont",
     "group": "Form",
@@ -4348,7 +5337,10 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": { "//": "Use this class to style button component." },
+        "button": {
+          "//": "Use this class to style button component.",
+          "background": "#19612F"
+        },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,

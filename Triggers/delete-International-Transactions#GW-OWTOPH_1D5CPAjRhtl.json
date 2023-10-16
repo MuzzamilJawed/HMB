@@ -1,0 +1,68 @@
+{
+  "id": "7t1jxZ_Fo2ippduaezfOU",
+  "_id": "GW-OWTOPH_1D5CPAjRhtl",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "delete International Transactions",
+  "old_name": "delete International Transactions",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "removeInternationalTransactionResponse",
+          "url": "/internationalTransaction",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "action", "value": "2" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "countryCode",
+              "value": "selectedObject.countryCode"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "isoCurrencies",
+              "value": "isoCurrencies"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "cardnumber",
+              "value": "selectedCard.cardNumber"
+            }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.csh0sgvhv49ejDMGO8iV9jiQBYgDMzLq",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -178,7 +178,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "Am0KLtbV0esGxkIyS17hb",
+                                            "id": "Z2PYBnt0gV745jcgUrsOp",
                                             "gridProps": [
                                               {
                                                 "id": "o_rGSm-TF4594AsuS3mdI",
@@ -202,7 +202,7 @@
                                                   },
                                                   "contentType": "url",
                                                   "storeType": 2,
-                                                  "url": "https://hmb-web.peekaboo.guru/"
+                                                  "url": "https://www.google.com/"
                                                 },
                                                 "icon": "FaCode",
                                                 "group": "Form",
@@ -231,7 +231,33 @@
                                           }
                                         ],
                                         "path": "0-0-0-0-0-0-1-0-0",
-                                        "events": [],
+                                        "events": [
+                                          {
+                                            "triggerId": "JTwd8Qrx04lrCUiYgx4OI",
+                                            "triggerName": "webURLS",
+                                            "serviceType": "11",
+                                            "attributes": {
+                                              "storeType": "",
+                                              "selectedObjectBindingKey": "selectedObject",
+                                              "dataType": "value",
+                                              "destinationBindingKey": "url",
+                                              "sourceBindingKey": "form",
+                                              "sourceStoreType": 2,
+                                              "destinationStoreType": 2,
+                                              "logic": {
+                                                "if": [
+                                                  true,
+                                                  "https://hmb-web.peekaboo.guru",
+                                                  "https://hmb-web.peekaboo.guru"
+                                                ]
+                                              },
+                                              "changeValueConditonally": true,
+                                              "targettedType": "value"
+                                            },
+                                            "type": "1",
+                                            "name": "On initialization"
+                                          }
+                                        ],
                                         "attributes": {
                                           "gridProps": [],
                                           "label": "Header",
@@ -239,8 +265,7 @@
                                             "gridLayout": {
                                               "//": "Use this class to style grid layout component.",
                                               "padding": "5px ",
-                                              "spacing": 0,
-                                              "background": "#000000"
+                                              "spacing": 0
                                             },
                                             "mainContainer": "gridLayout"
                                           },
@@ -859,9 +884,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "jpMykN7ClBUJahEUbtgdq",
-    "createdBy": "masood",
-    "updatedAt": "10/5/2023",
-    "createdAt": "10/5/2023",
+    "createdBy": "talha",
+    "updatedAt": "10/13/2023",
+    "createdAt": "10/13/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1171,8 +1196,7 @@
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
           "padding": "5px ",
-          "spacing": 0,
-          "background": "#000000"
+          "spacing": 0
         },
         "mainContainer": "gridLayout"
       },
@@ -1185,7 +1209,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "JTwd8Qrx04lrCUiYgx4OI",
+        "triggerName": "webURLS",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "jpMykN7ClBUJahEUbtgdq",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1215,7 +1246,7 @@
       },
       "contentType": "url",
       "storeType": 2,
-      "url": "https://hmb-web.peekaboo.guru/"
+      "url": "https://www.google.com/"
     },
     "icon": "FaCode",
     "group": "Form",

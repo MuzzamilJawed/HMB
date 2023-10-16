@@ -3358,69 +3358,72 @@
                                                 "gridProps": [
                                                   {
                                                     "type": "column",
-                                                    "id": "oi7v1ICgvG8YH_fc5ANXS",
+                                                    "id": "9XFp4Aj_fV2N8DAJ13tbW",
                                                     "gridProps": [
                                                       {
-                                                        "id": "sKlAnHrQR56dNnEM4OeJC",
+                                                        "id": "ewKg-P1mH6uVwX44mizar",
                                                         "status": "ACTIVE",
-                                                        "name": "Text Box",
+                                                        "name": "Drop down",
+                                                        "icon": "FaCaretSquareDown",
+                                                        "group": "Form",
+                                                        "updatedAt": "23-Aug-2021",
+                                                        "createdAt": "23-Aug-2021",
                                                         "attributes": {
-                                                          "label": "",
-                                                          "name": "Text box",
-                                                          "label-locale-key": "",
-                                                          "maxLength": 20,
-                                                          "type": "text",
-                                                          "variant": "standard",
-                                                          "value": "",
-                                                          "readOnly": false,
-                                                          "tooltip": "",
-                                                          "font-family": "Verdana",
+                                                          "name": "Drop down",
+                                                          "stateName": "purpose",
+                                                          "allValues": true,
+                                                          "dataSource": "purposeResponse.reasonOfTransfer",
+                                                          "dataKey": "name",
+                                                          "dataValue": "name",
                                                           "mandatory": true,
-                                                          "tooltipState": "",
+                                                          "validate": {
+                                                            "required": false,
+                                                            "errorMsg": "This Field is Required"
+                                                          },
                                                           "layoutProperties": {
+                                                            "autocomplete": {
+                                                              "//": "Use this class to style autocomplete component in dropdown.",
+                                                              "border-radius": "10px"
+                                                            },
                                                             "textField": {
-                                                              "//": "Use this class to style text field component."
+                                                              "//": "Use this class to style textField component in dropdown.",
+                                                              "padding-left": "15px",
+                                                              "padding-top": "10px",
+                                                              "padding-bottom": "10px",
+                                                              "width": "97%"
                                                             },
                                                             "inputProps": {
-                                                              "//": "Use this class to style  text field element.",
-                                                              "paddingLeft": "15px",
-                                                              "paddingTop": "15px"
+                                                              "//": "Use this class to style dropdown element.",
+                                                              "padding": "0px !important"
                                                             },
-                                                            "mainContainer": "textField",
+                                                            "mainContainer": "autocomplete",
                                                             "xl": 12,
                                                             "lg": 12,
                                                             "md": 12,
                                                             "sm": 12,
                                                             "xs": 12
                                                           },
-                                                          "validate": {
-                                                            "required": false,
-                                                            "errorMsg": "This field is required"
-                                                          },
-                                                          "placeholder": "Select Purpose",
-                                                          "stateName": "purpose",
+                                                          "dropdownOptions": [],
+                                                          "variant": "standard",
+                                                          "selectedDataType": 0,
+                                                          "disableUnderline": true,
+                                                          "storeType": 2,
                                                           "cssClassNames": [
                                                             {
-                                                              "cssClassName": "emptyTextField3"
+                                                              "cssClassName": "Drop-Down-Css "
                                                             }
-                                                          ],
-                                                          "disableUnderline": true
+                                                          ]
                                                         },
-                                                        "icon": "FaWindowMinimize",
-                                                        "group": "Form",
-                                                        "type": "20004",
-                                                        "Documentation": "<div>components 12344</div>",
-                                                        "updatedAt": "23-Aug-2021",
-                                                        "createdAt": "23-Aug-2021",
-                                                        "order": 20,
+                                                        "type": "20003",
+                                                        "events": [],
+                                                        "order": 10,
                                                         "version": "1.0.0",
                                                         "isLatest": true,
                                                         "projectType": "web",
                                                         "component": {
-                                                          "content": "Text Box",
-                                                          "type": "20004"
+                                                          "content": "Drop down",
+                                                          "type": "20003"
                                                         },
-                                                        "events": [],
                                                         "path": "0-0-1-0-0-0-2-1-0-0-1-0-0"
                                                       }
                                                     ],
@@ -3430,12 +3433,274 @@
                                                       "md": 12,
                                                       "sm": 12,
                                                       "xs": 12
-                                                    },
-                                                    "path": "0-0-1-0-0-0-2-1-0-0-1-0"
+                                                    }
                                                   }
                                                 ],
                                                 "path": "0-0-1-0-0-0-2-1-0-0-1",
-                                                "events": [],
+                                                "events": [
+                                                  {
+                                                    "triggerId": "q-u__ooHU-A2GFV9ajoP6",
+                                                    "triggerName": "getpurposes chain Trigger",
+                                                    "serviceType": "2",
+                                                    "attributes": {
+                                                      "delay": "",
+                                                      "triggers": [
+                                                        {
+                                                          "id": "MWh-r_Xljf1eAPyp5AsYm",
+                                                          "name": "Purposes LookUps",
+                                                          "projectId": "640ee2a26ead56231ce8350b",
+                                                          "gitBranchName": "master",
+                                                          "services": [
+                                                            {
+                                                              "type": "11",
+                                                              "command": {
+                                                                "type": "6",
+                                                                "attributes": {
+                                                                  "storeType": "",
+                                                                  "selectedObjectBindingKey": "selectedObject",
+                                                                  "dataType": "value",
+                                                                  "destinationBindingKey": "lookUps",
+                                                                  "sourceBindingKey": "form",
+                                                                  "sourceStoreType": 2,
+                                                                  "destinationStoreType": 2,
+                                                                  "logic": {
+                                                                    "if": [
+                                                                      true,
+                                                                      [
+                                                                        "CHARGES_PAY_INSTRUCT",
+                                                                        "TRANSFER_REASONS"
+                                                                      ],
+                                                                      [
+                                                                        "CHARGES_PAY_INSTRUCT",
+                                                                        "TRANSFER_REASONS"
+                                                                      ]
+                                                                    ]
+                                                                  },
+                                                                  "changeValueConditonally": true,
+                                                                  "targettedType": "value"
+                                                                }
+                                                              }
+                                                            }
+                                                          ],
+                                                          "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+                                                          "_id": "3JHbi9X8KxBsn8IVaVT2i",
+                                                          "updatedAt": "10/12/2023",
+                                                          "createdAt": "10/12/2023",
+                                                          "createdBy": "masood",
+                                                          "updatedBy": "masood"
+                                                        },
+                                                        {
+                                                          "id": "IJEw8wmh2t5qqmeVtqXVV",
+                                                          "_id": "mloELpnE4Ce8uyy3-IyGx",
+                                                          "name": "Mapping Device properties ",
+                                                          "old_name": "Mapping Device properties ",
+                                                          "projectId": "640ee2a26ead56231ce8350b",
+                                                          "gitBranchName": "master",
+                                                          "services": [
+                                                            {
+                                                              "type": "11",
+                                                              "command": {
+                                                                "type": "6",
+                                                                "attributes": {
+                                                                  "requestBody": [],
+                                                                  "destinationBindingKey": "device",
+                                                                  "sourceBindingKey": "device",
+                                                                  "sourceStoreType": 3,
+                                                                  "destinationStoreType": 3,
+                                                                  "filterList": [
+                                                                    {
+                                                                      "key": "imei",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "111111111111111",
+                                                                          "111111111111111"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "name",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+                                                                          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "osType",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "Win32",
+                                                                          "Win32"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "os",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "Web",
+                                                                          "Web"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "fcmToken",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "0101010101",
+                                                                          "0101010101"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "192.168.0.112",
+                                                                          "192.168.0.112"
+                                                                        ]
+                                                                      },
+                                                                      "key": "ip"
+                                                                    },
+                                                                    {
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          true,
+                                                                          true
+                                                                        ]
+                                                                      },
+                                                                      "key": "isNotificationEnabled"
+                                                                    },
+                                                                    {
+                                                                      "key": "countryCode",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "PKR",
+                                                                          "PKR"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "key": "deviceKey",
+                                                                      "changeValueConditonally": true,
+                                                                      "logic": {
+                                                                        "if": [
+                                                                          true,
+                                                                          "A331926C-4B19-4418-89E6-9E26660384DE",
+                                                                          "A331926C-4B19-4418-89E6-9E26660384DE"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "targettedType": "object"
+                                                                }
+                                                              }
+                                                            }
+                                                          ],
+                                                          "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
+                                                          "updatedAt": "9/7/2023",
+                                                          "createdAt": "9/7/2023",
+                                                          "createdBy": "masood",
+                                                          "updatedBy": "masood"
+                                                        },
+                                                        {
+                                                          "id": "5nkYCRyez3l98e5wtzu3E",
+                                                          "projectId": "640ee2a26ead56231ce8350b",
+                                                          "gitBranchName": "master",
+                                                          "name": "getpurposes",
+                                                          "status": "ACTIVE",
+                                                          "services": [
+                                                            {
+                                                              "type": "8",
+                                                              "command": {
+                                                                "type": "1",
+                                                                "attributes": {
+                                                                  "loaderWidgetIds": [
+                                                                    906070
+                                                                  ],
+                                                                  "messageWidgetIds": [
+                                                                    906070
+                                                                  ],
+                                                                  "responseStateKey": "purposeResponse",
+                                                                  "responseReturnValue": "content.lookups.chargesPayInstruct",
+                                                                  "url": "/getConfiguration",
+                                                                  "checksum": true,
+                                                                  "encryption": true,
+                                                                  "isDeviceDetails": false,
+                                                                  "loginTrigger": false,
+                                                                  "formData": false,
+                                                                  "logoutTrigger": false,
+                                                                  "headers": {
+                                                                    "Content-Type": "application/json",
+                                                                    "channel_key": "005"
+                                                                  },
+                                                                  "requestBody": [
+                                                                    {
+                                                                      "type": 3,
+                                                                      "name": "Current session",
+                                                                      "key": "device",
+                                                                      "value": "device"
+                                                                    },
+                                                                    {
+                                                                      "type": 2,
+                                                                      "name": "Current screen",
+                                                                      "key": "lookUps",
+                                                                      "value": "lookUps"
+                                                                    },
+                                                                    {
+                                                                      "type": 4,
+                                                                      "name": "Static",
+                                                                      "key": "isSecurityConfiguration",
+                                                                      "value": "false"
+                                                                    },
+                                                                    {
+                                                                      "type": 4,
+                                                                      "name": "Static",
+                                                                      "key": "isSystemConfiguration",
+                                                                      "value": "false"
+                                                                    }
+                                                                  ],
+                                                                  "baseURL": "650d2f0dc9bf2957746d02af",
+                                                                  "storeType": 2
+                                                                },
+                                                                "responseHandler": []
+                                                              }
+                                                            }
+                                                          ],
+                                                          "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+                                                          "_id": "064hazs3qevUIRo_gPXhC",
+                                                          "updatedAt": "10/12/2023",
+                                                          "createdAt": "10/12/2023",
+                                                          "createdBy": "masood",
+                                                          "updatedBy": "masood"
+                                                        }
+                                                      ],
+                                                      "triggerIds": [
+                                                        "MWh-r_Xljf1eAPyp5AsYm",
+                                                        "IJEw8wmh2t5qqmeVtqXVV",
+                                                        "5nkYCRyez3l98e5wtzu3E"
+                                                      ]
+                                                    },
+                                                    "type": "1",
+                                                    "name": "On initialization"
+                                                  }
+                                                ],
                                                 "attributes": {
                                                   "gridProps": [],
                                                   "label": "Header",
@@ -3466,7 +3731,17 @@
                                                   "20010",
                                                   "widget"
                                                 ],
-                                                "name": "Grid layout"
+                                                "name": "Grid layout",
+                                                "dimensions": {
+                                                  "rows": 1,
+                                                  "columns": 1,
+                                                  "colSize0xs": 12,
+                                                  "colSize0sm": 12,
+                                                  "colSize0md": 12,
+                                                  "colSize0lg": 12,
+                                                  "colSize0xl": 12
+                                                },
+                                                "readOnly": false
                                               }
                                             ],
                                             "layoutProperties": {
@@ -4201,8 +4476,8 @@
     "gitBranchName": "master",
     "_id": "Seh6i1bXBQs8uY_galXRA",
     "createdBy": "masood",
-    "updatedAt": "10/10/2023",
-    "createdAt": "10/10/2023",
+    "updatedAt": "10/12/2023",
+    "createdAt": "10/12/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7197,11 +7472,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Amount", "type": "20040" },
     "events": [],
     "path": "0-0-1-0-0-0-2-0-0-0-1-0-0",
     "screenId": "Seh6i1bXBQs8uY_galXRA",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -7378,8 +7653,8 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "sKlAnHrQR56dNnEM4OeJC",
-          "componentType": "20004",
+          "componentId": "ewKg-P1mH6uVwX44mizar",
+          "componentType": "20003",
           "order": 1
         }
       ],
@@ -7401,7 +7676,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "q-u__ooHU-A2GFV9ajoP6",
+        "triggerName": "getpurposes chain Trigger",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "Seh6i1bXBQs8uY_galXRA",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -7410,54 +7692,59 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "sKlAnHrQR56dNnEM4OeJC",
+    "id": "ewKg-P1mH6uVwX44mizar",
     "status": "ACTIVE",
-    "name": "Text Box",
+    "name": "Drop down",
+    "icon": "FaCaretSquareDown",
+    "group": "Form",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
     "attributes": {
-      "label": "",
-      "name": "Text box",
-      "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
-      "variant": "standard",
-      "value": "",
-      "readOnly": false,
-      "tooltip": "",
-      "font-family": "Verdana",
+      "name": "Drop down",
+      "stateName": "purpose",
+      "allValues": true,
+      "dataSource": "purposeResponse.reasonOfTransfer",
+      "dataKey": "name",
+      "dataValue": "name",
       "mandatory": true,
-      "tooltipState": "",
+      "validate": { "required": false, "errorMsg": "This Field is Required" },
       "layoutProperties": {
-        "textField": { "//": "Use this class to style text field component." },
-        "inputProps": {
-          "//": "Use this class to style  text field element.",
-          "paddingLeft": "15px",
-          "paddingTop": "15px"
+        "autocomplete": {
+          "//": "Use this class to style autocomplete component in dropdown.",
+          "border-radius": "10px"
         },
-        "mainContainer": "textField",
+        "textField": {
+          "//": "Use this class to style textField component in dropdown.",
+          "padding-left": "15px",
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "width": "97%"
+        },
+        "inputProps": {
+          "//": "Use this class to style dropdown element.",
+          "padding": "0px !important"
+        },
+        "mainContainer": "autocomplete",
         "xl": 12,
         "lg": 12,
         "md": 12,
         "sm": 12,
         "xs": 12
       },
-      "validate": { "required": false, "errorMsg": "This field is required" },
-      "placeholder": "Select Purpose",
-      "stateName": "purpose",
-      "cssClassNames": [{ "cssClassName": "emptyTextField3" }],
-      "disableUnderline": true
+      "dropdownOptions": [],
+      "variant": "standard",
+      "selectedDataType": 0,
+      "disableUnderline": true,
+      "storeType": 2,
+      "cssClassNames": [{ "cssClassName": "Drop-Down-Css " }]
     },
-    "icon": "FaWindowMinimize",
-    "group": "Form",
-    "type": "20004",
-    "Documentation": "<div>components 12344</div>",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
+    "type": "20003",
+    "events": [],
+    "order": 10,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
-    "events": [],
+    "component": { "content": "Drop down", "type": "20003" },
     "path": "0-0-1-0-0-0-2-1-0-0-1-0-0",
     "screenId": "Seh6i1bXBQs8uY_galXRA",
     "subType": "component",

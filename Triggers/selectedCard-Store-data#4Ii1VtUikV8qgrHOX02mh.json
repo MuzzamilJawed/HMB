@@ -1,0 +1,52 @@
+{
+  "id": "Oi70SMIvGvVBcgYs2uWFj",
+  "name": "selectedCard Store data",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "selectedCard",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "cardExpiryDate",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.selectedObject.cardExpiryDate" }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.selectedObject.cardNumber" },
+              "key": "cardNumber"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.selectedObject.cardStatus" },
+              "key": "cardStatus"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.selectedObject.cardTitle" },
+              "key": "cardTitle"
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8orw4bqvw4uVY-Bl86g7AGhLjKhYNiCy",
+  "_id": "4Ii1VtUikV8qgrHOX02mh",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

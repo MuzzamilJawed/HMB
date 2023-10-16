@@ -1,0 +1,128 @@
+{
+  "_id": "ELCZAEJfoCpUEfPQJxXNX",
+  "id": "5fM9GYNW4t8tUnC2IscTR",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHAIN_CARD_USAGE_TYPE_E_COM",
+  "old_name": "CHAIN_CARD_USAGE_TYPE_E_COM",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "F7jRmNPB9Gox3NXNcPZnX",
+              "name": "CARD_USAGE_TYPE_E_COM",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "type",
+                      "sourceBindingKey": "kuch bhi",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "E-COM", "E-COM"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+              "_id": "zyP9jfcP8fa3ljFVSHhD7",
+              "updatedAt": "10/13/2023",
+              "createdAt": "10/13/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "SHvikLt74o3294TZHro9I",
+              "_id": "oGyjwb2wnrl_heirKrlCR",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "CardHistoryATM",
+              "old_name": "CardHistoryATM",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "atmhistoryResponse",
+                      "responseReturnValue": "content",
+                      "url": "/cardusage/history",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "cardNumber",
+                          "value": "selectedObject.cardNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "type",
+                          "value": "type"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Card Usage TRIGGER",
+                        "triggerId": "26c1MldYoYN9FabCjOvGv"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+              "updatedAt": "10/13/2023",
+              "createdAt": "10/13/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["F7jRmNPB9Gox3NXNcPZnX", "SHvikLt74o3294TZHro9I"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+  "updatedAt": "10/13/2023",
+  "createdAt": "10/13/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

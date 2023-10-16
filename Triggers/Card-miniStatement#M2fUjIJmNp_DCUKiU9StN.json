@@ -1,0 +1,80 @@
+{
+  "id": "Y2LGLMVGTvXAHUhnRX8Xw",
+  "_id": "M2fUjIJmNp_DCUKiU9StN",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Card miniStatement",
+  "old_name": "Card miniStatement",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "cardministatementResponse",
+          "url": "/miniStatement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "cardNature",
+              "value": "selectedObject.cardType.cardType"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "cardNumber",
+              "value": "selectedObject.cardNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "cardaType",
+              "value": "selectedObject.cardaType.cardType"
+            },
+            { "type": 4, "name": "Static", "key": "duration", "value": "20" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "noOfTransactions",
+              "value": "0"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "statementmMonth",
+              "value": "0"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "statementMonth",
+              "value": "0"
+            }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.3x8r1xw8wz55kA7fMedC6NvrerUWiBAm",
+  "updatedAt": "10/13/2023",
+  "createdAt": "10/13/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MWh-r_Xljf1eAPyp5AsYm",
+  "name": "Purposes LookUps",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "lookUps",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              true,
+              ["CHARGES_PAY_INSTRUCT", "TRANSFER_REASONS"],
+              ["CHARGES_PAY_INSTRUCT", "TRANSFER_REASONS"]
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value"
+        }
+      }
+    }
+  ],
+  "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+  "_id": "3JHbi9X8KxBsn8IVaVT2i",
+  "updatedAt": "10/12/2023",
+  "createdAt": "10/12/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

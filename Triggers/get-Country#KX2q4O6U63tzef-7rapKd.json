@@ -1,0 +1,74 @@
+{
+  "id": "GiY7rnNg5kFwiEXNUr-n2",
+  "_id": "KX2q4O6U63tzef-7rapKd",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "get Country",
+  "old_name": "get Country",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "countryResponse",
+          "responseReturnValue": "content.lookups.country",
+          "url": "/getConfiguration",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "lookUps",
+              "value": "lookUps"
+            },
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isSecurityConfiguration",
+              "value": "false"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isSystemConfiguration",
+              "value": "false"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Add international Transaction Modal",
+            "triggerId": "NKBkVZMs4p-mvl88Vhz0h"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.csh0sgvhv49ejDMGO8iV9jiQBYgDMzLq",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "16FLIyQya-dpfe_FSbJyt",
+  "_id": "hY-Vxlz9Pj497UrYjIBeH",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "internationalTransaction Add Trigger",
+  "old_name": "internationalTransaction Add Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "addResponse",
+          "url": "/internationalTransaction",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "action", "value": "1" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "countryCode",
+              "value": "selectCountry.countryCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "isoCurrencies",
+              "value": "isoCurrencies"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "cardnumber",
+              "value": "selectedObject.cardNumber"
+            }
+          ],
+          "baseURL": "64f9670d683922479c06159b",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.csh0sgvhv49ejDMGO8iV9jiQBYgDMzLq",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

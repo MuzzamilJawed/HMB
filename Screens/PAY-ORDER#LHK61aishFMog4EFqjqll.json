@@ -1966,22 +1966,27 @@
                                                             "id": "UqPPonkzuU1O6FJJvk434",
                                                             "gridProps": [
                                                               {
-                                                                "id": "HEepYF0yUnSLGC5mQUNu6",
+                                                                "id": "CkriRFngxSZTEw4EwWSex",
                                                                 "status": "ACTIVE",
-                                                                "name": "Text Box",
+                                                                "name": "Amount",
                                                                 "attributes": {
-                                                                  "label": "",
-                                                                  "name": "Text box",
+                                                                  "multicurrency": false,
+                                                                  "stateName": "amount",
+                                                                  "name": "Amount",
                                                                   "label-locale-key": "",
-                                                                  "maxLength": 20,
-                                                                  "type": "text",
+                                                                  "maxLength": "5",
                                                                   "variant": "standard",
-                                                                  "value": "",
+                                                                  "value": "100",
                                                                   "readOnly": false,
                                                                   "tooltip": "",
                                                                   "font-family": "Verdana",
                                                                   "mandatory": true,
-                                                                  "tooltipState": "",
+                                                                  "tooltipState": "amountinwords",
+                                                                  "fromCurrency": "PKR",
+                                                                  "fromCurrencyState": "",
+                                                                  "toCurrency": "USD",
+                                                                  "toCurrencyState": "",
+                                                                  "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
                                                                   "layoutProperties": {
                                                                     "textField": {
                                                                       "//": "Use this class to style text field component."
@@ -1998,77 +2003,10 @@
                                                                     "xs": 12
                                                                   },
                                                                   "validate": {
-                                                                    "required": true,
-                                                                    "errorMsg": "This field is required",
-                                                                    "bindButton": [
-                                                                      {
-                                                                        "id": "xOPEIj7Ly62fcajetRhnk",
-                                                                        "status": "ACTIVE",
-                                                                        "attributes": {
-                                                                          "label": "Next",
-                                                                          "variant": "contained",
-                                                                          "name": "Button",
-                                                                          "label-locale-key": "",
-                                                                          "fullWidth": true,
-                                                                          "layoutProperties": {
-                                                                            "button": {
-                                                                              "//": "Use this class to style button component.",
-                                                                              "height": "47px",
-                                                                              "border-radius": "8px",
-                                                                              "border": "1px solid #FFFFFF",
-                                                                              "background": "#19612F",
-                                                                              "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)"
-                                                                            },
-                                                                            "inputProps": {
-                                                                              "//": "Use this class to style button element."
-                                                                            },
-                                                                            "mainContainer": "button",
-                                                                            "xl": 12,
-                                                                            "lg": 12,
-                                                                            "md": 12,
-                                                                            "sm": 12,
-                                                                            "xs": 12
-                                                                          },
-                                                                          "iconName": "IoIosArrowForward",
-                                                                          "buttonIconPosition": "end",
-                                                                          "asset": null,
-                                                                          "iconname": "IoIosArrowForward"
-                                                                        },
-                                                                        "name": "Button",
-                                                                        "icon": "FaBimobject",
-                                                                        "group": "Form",
-                                                                        "type": "20006",
-                                                                        "Documentation": "<div>components 12344</div>",
-                                                                        "updatedAt": "23-Aug-2021",
-                                                                        "createdAt": "23-Aug-2021",
-                                                                        "order": 1,
-                                                                        "version": "1.0.0",
-                                                                        "isLatest": true,
-                                                                        "projectType": "web",
-                                                                        "component": {
-                                                                          "content": "Button",
-                                                                          "type": "20006"
-                                                                        },
-                                                                        "events": [
-                                                                          {
-                                                                            "triggerId": "gLktwCUbMfKapJECrJQZM",
-                                                                            "triggerName": "PayOrder Chain Trigger",
-                                                                            "name": "On Submit",
-                                                                            "type": "4",
-                                                                            "serviceType": "2"
-                                                                          }
-                                                                        ],
-                                                                        "path": "0-0-1-0-0-0-3-2-0-0-1-0-0",
-                                                                        "screenId": "LHK61aishFMog4EFqjqll",
-                                                                        "subType": "component",
-                                                                        "projectId": "640ee2a26ead56231ce8350b",
-                                                                        "gitBranchName": "master",
-                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-                                                                      }
-                                                                    ]
+                                                                    "required": false,
+                                                                    "errorMsg": "This field is required"
                                                                   },
                                                                   "placeholder": "Enter Amount",
-                                                                  "stateName": "amount",
                                                                   "disableUnderline": true,
                                                                   "cssClassNames": [
                                                                     {
@@ -2076,9 +2014,9 @@
                                                                     }
                                                                   ]
                                                                 },
-                                                                "icon": "FaWindowMinimize",
+                                                                "icon": "FaDollarSign",
                                                                 "group": "Form",
-                                                                "type": "20004",
+                                                                "type": "20040",
                                                                 "Documentation": "<div>components 12344</div>",
                                                                 "updatedAt": "23-Aug-2021",
                                                                 "createdAt": "23-Aug-2021",
@@ -2087,8 +2025,8 @@
                                                                 "isLatest": true,
                                                                 "projectType": "web",
                                                                 "component": {
-                                                                  "content": "Text Box",
-                                                                  "type": "20004"
+                                                                  "content": "Amount",
+                                                                  "type": "20040"
                                                                 },
                                                                 "events": [],
                                                                 "path": "0-0-1-0-0-0-2-0-0-0-0-0-7-0-0"
@@ -4597,8 +4535,8 @@
                                                       "selectedObjectBindingKey": "selectedObject",
                                                       "editableForm": false
                                                     },
-                                                    "type": "2",
-                                                    "name": "On click"
+                                                    "type": "4",
+                                                    "name": "On Submit"
                                                   }
                                                 ],
                                                 "path": "0-0-1-0-0-0-3-2-0-0-0"
@@ -4877,8 +4815,8 @@
     "gitBranchName": "master",
     "_id": "LHK61aishFMog4EFqjqll",
     "createdBy": "masood",
-    "updatedAt": "10/3/2023",
-    "createdAt": "10/3/2023",
+    "updatedAt": "10/13/2023",
+    "createdAt": "10/13/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5105,11 +5043,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-0-0-0",
     "screenId": "LHK61aishFMog4EFqjqll",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -7061,8 +6999,8 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "HEepYF0yUnSLGC5mQUNu6",
-          "componentType": "20004",
+          "componentId": "CkriRFngxSZTEw4EwWSex",
+          "componentType": "20040",
           "order": 1
         }
       ],
@@ -7093,22 +7031,27 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "HEepYF0yUnSLGC5mQUNu6",
+    "id": "CkriRFngxSZTEw4EwWSex",
     "status": "ACTIVE",
-    "name": "Text Box",
+    "name": "Amount",
     "attributes": {
-      "label": "",
-      "name": "Text box",
+      "multicurrency": false,
+      "stateName": "amount",
+      "name": "Amount",
       "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
+      "maxLength": "5",
       "variant": "standard",
-      "value": "",
+      "value": "100",
       "readOnly": false,
       "tooltip": "",
       "font-family": "Verdana",
       "mandatory": true,
-      "tooltipState": "",
+      "tooltipState": "amountinwords",
+      "fromCurrency": "PKR",
+      "fromCurrencyState": "",
+      "toCurrency": "USD",
+      "toCurrencyState": "",
+      "conversionUrl": "http://ambitdigital1.avanzasolutions.com:8196/api/payment/v1/getConvertedAmount",
       "layoutProperties": {
         "textField": { "//": "Use this class to style text field component." },
         "inputProps": {
@@ -7122,81 +7065,14 @@
         "sm": 12,
         "xs": 12
       },
-      "validate": {
-        "required": true,
-        "errorMsg": "This field is required",
-        "bindButton": [
-          {
-            "id": "xOPEIj7Ly62fcajetRhnk",
-            "status": "ACTIVE",
-            "attributes": {
-              "label": "Next",
-              "variant": "contained",
-              "name": "Button",
-              "label-locale-key": "",
-              "fullWidth": true,
-              "layoutProperties": {
-                "button": {
-                  "//": "Use this class to style button component.",
-                  "height": "47px",
-                  "border-radius": "8px",
-                  "border": "1px solid #FFFFFF",
-                  "background": "#19612F",
-                  "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)"
-                },
-                "inputProps": {
-                  "//": "Use this class to style button element."
-                },
-                "mainContainer": "button",
-                "xl": 12,
-                "lg": 12,
-                "md": 12,
-                "sm": 12,
-                "xs": 12
-              },
-              "iconName": "IoIosArrowForward",
-              "buttonIconPosition": "end",
-              "asset": null,
-              "iconname": "IoIosArrowForward"
-            },
-            "name": "Button",
-            "icon": "FaBimobject",
-            "group": "Form",
-            "type": "20006",
-            "Documentation": "<div>components 12344</div>",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 1,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "web",
-            "component": { "content": "Button", "type": "20006" },
-            "events": [
-              {
-                "triggerId": "gLktwCUbMfKapJECrJQZM",
-                "triggerName": "PayOrder Chain Trigger",
-                "name": "On Submit",
-                "type": "4",
-                "serviceType": "2"
-              }
-            ],
-            "path": "0-0-1-0-0-0-3-2-0-0-1-0-0",
-            "screenId": "LHK61aishFMog4EFqjqll",
-            "subType": "component",
-            "projectId": "640ee2a26ead56231ce8350b",
-            "gitBranchName": "master",
-            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-          }
-        ]
-      },
+      "validate": { "required": false, "errorMsg": "This field is required" },
       "placeholder": "Enter Amount",
-      "stateName": "amount",
       "disableUnderline": true,
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
     },
-    "icon": "FaWindowMinimize",
+    "icon": "FaDollarSign",
     "group": "Form",
-    "type": "20004",
+    "type": "20040",
     "Documentation": "<div>components 12344</div>",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
@@ -7204,7 +7080,7 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
+    "component": { "content": "Amount", "type": "20040" },
     "events": [],
     "path": "0-0-1-0-0-0-2-0-0-0-0-0-7-0-0",
     "screenId": "LHK61aishFMog4EFqjqll",
@@ -9413,8 +9289,8 @@
       {
         "triggerId": "tHB1SStHeywcV_swqS2vK",
         "triggerName": "Swap Pay Order to Confirm Pay Order",
-        "name": "On click",
-        "type": "2",
+        "name": "On Submit",
+        "type": "4",
         "serviceType": "1"
       }
     ],

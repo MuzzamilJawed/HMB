@@ -1,0 +1,121 @@
+{
+  "id": "ZIWU5IcsrKKajfqP8DQU-",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CHAIN_Card_HISTORY_TYPE_POS",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3HtgDL8O15w6c_g40dF0-",
+              "name": "Card_HISTORY_TYPE_POS",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "dataType": "value",
+                      "destinationBindingKey": "type",
+                      "sourceBindingKey": "kuch bhi",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "POS", "POS"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+              "_id": "z5Ari-V8Txc95WaISpQy8",
+              "updatedAt": "10/12/2023",
+              "createdAt": "10/12/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "SHvikLt74o3294TZHro9I",
+              "_id": "oGyjwb2wnrl_heirKrlCR",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "CardHistoryATM",
+              "old_name": "CardHistoryATM",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "atmhistoryResponse",
+                      "responseReturnValue": "content",
+                      "url": "/cardusage/history",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "cardNumber",
+                          "value": "selectedObject.cardNumber"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "type",
+                          "value": "type"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": " Otpinfo with email and SMSpin",
+                        "triggerId": "3WJVpQqglNb4yHnlELcM-"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+              "updatedAt": "10/12/2023",
+              "createdAt": "10/12/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["3HtgDL8O15w6c_g40dF0-", "SHvikLt74o3294TZHro9I"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
+  "_id": "5CSYuMTZgAJJ2yQ5BABTk",
+  "updatedAt": "10/12/2023",
+  "createdAt": "10/12/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

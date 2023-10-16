@@ -1,0 +1,68 @@
+{
+  "id": "5nkYCRyez3l98e5wtzu3E",
+  "_id": "064hazs3qevUIRo_gPXhC",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getpurposes",
+  "old_name": "getpurposes",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "purposeResponse",
+          "responseReturnValue": "content.lookups",
+          "url": "/getConfiguration",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 3,
+              "name": "Current session",
+              "key": "device",
+              "value": "device"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "lookUps",
+              "value": "lookUps"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isSecurityConfiguration",
+              "value": "false"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isSystemConfiguration",
+              "value": "false"
+            }
+          ],
+          "baseURL": "650d2f0dc9bf2957746d02af",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.x43w4iji609s9UkzkYJQ8OIlc8O-74j5",
+  "updatedAt": "10/12/2023",
+  "createdAt": "10/12/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

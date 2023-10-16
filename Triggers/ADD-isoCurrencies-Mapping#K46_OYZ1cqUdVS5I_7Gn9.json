@@ -1,0 +1,38 @@
+{
+  "id": "DSPs85rhvnYnot-_vIyOY",
+  "name": "ADD isoCurrencies Mapping",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "isoCurrencies",
+          "sourceBindingKey": "form",
+          "sourceStoreType": 1,
+          "destinationStoreType": 1,
+          "logic": {
+            "if": [
+              true,
+              [{ "var": "selectCountry.isocurrency" }],
+              [{ "var": "selectCountry.isocurrency" }]
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value"
+        }
+      }
+    }
+  ],
+  "csrf": "0.csh0sgvhv49ejDMGO8iV9jiQBYgDMzLq",
+  "_id": "K46_OYZ1cqUdVS5I_7Gn9",
+  "updatedAt": "10/16/2023",
+  "createdAt": "10/16/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

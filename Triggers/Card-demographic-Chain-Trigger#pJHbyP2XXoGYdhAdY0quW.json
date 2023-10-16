@@ -1,9 +1,10 @@
 {
+  "_id": "pJHbyP2XXoGYdhAdY0quW",
   "id": "idBacAykoHi-jnzI4yvAf",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Card demographic Chain Trigger",
-  "old_name": "",
+  "old_name": "Card demographic Chain Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -14,62 +15,68 @@
           "delay": "",
           "triggers": [
             {
-              "id": "3FYVyZXQkUZ7tY2QRiUb4",
-              "name": "Current Date",
+              "id": "651IGANTEmSrkY0ZGSwfH",
+              "name": "current date return",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "services": [
                 {
                   "type": "11",
                   "command": {
-                    "type": "11",
+                    "type": "6",
                     "attributes": {
-                      "storeType": "",
-                      "selectedObjectBindingKey": "selectedObject",
-                      "dataType": "",
-                      "destinationBindingKey": "fromDate",
-                      "sourceBindingKey": "",
-                      "destinationStoreType": 2,
-                      "dateDifference": "0"
-                    }
-                  }
-                }
-              ],
-              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
-              "_id": "uvyQnVuHlQ82uWfUJMFqd",
-              "updatedAt": "10/10/2023",
-              "createdAt": "10/10/2023",
-              "createdBy": "masood",
-              "updatedBy": "masood"
-            },
-            {
-              "id": "SlE3JqIkgw0brVj7D7U06",
-              "name": "Last week Date",
-              "projectId": "640ee2a26ead56231ce8350b",
-              "gitBranchName": "master",
-              "services": [
-                {
-                  "type": "11",
-                  "command": {
-                    "type": "11",
-                    "attributes": {
+                      "dataType": "value",
                       "destinationBindingKey": "toDate",
-                      "destinationStoreType": 2,
-                      "dateDifference": "7"
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 1,
+                      "destinationStoreType": 1,
+                      "logic": { "if": [true, "27-Sep-2023", "27-Sep-2023"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
                     }
                   }
                 }
               ],
-              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
-              "_id": "6ldPNs6HYnAL4L-xE51DZ",
-              "updatedAt": "10/10/2023",
-              "createdAt": "10/10/2023",
+              "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+              "_id": "jWCJ2tMLoPf8F0XQ2V_D0",
+              "updatedAt": "10/12/2023",
+              "createdAt": "10/12/2023",
               "createdBy": "masood",
               "updatedBy": "masood"
             },
             {
-              "id": "kfLJjlPFzFtdWOArWJ-Xp",
-              "_id": "dIXBARXcw7C7zk2SUmMy_",
+              "id": "CNpvu6EPtOZMXaHVVLh2A",
+              "name": "from Date Form",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "dataType": "value",
+                      "destinationBindingKey": "fromDate",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 1,
+                      "destinationStoreType": 1,
+                      "logic": { "if": [true, "20-Sep-2023", "20-Sep-2023"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+              "_id": "iH3yXWZoFc9Um16grQ8y_",
+              "updatedAt": "10/12/2023",
+              "createdAt": "10/12/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "naphH1mNTq8ZSDxJqlgyN",
+              "_id": "_9HwiAiV4U6jcSGckCbfL",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "name": "cardUsage Trigger",
@@ -88,7 +95,7 @@
                       "checksum": true,
                       "encryption": true,
                       "isDeviceDetails": false,
-                      "loginTrigger": "loginTrigger",
+                      "loginTrigger": false,
                       "formData": false,
                       "logoutTrigger": false,
                       "headers": {
@@ -103,14 +110,14 @@
                           "value": "selectedCard.cardNumber"
                         },
                         {
-                          "type": 2,
-                          "name": "Current screen",
+                          "type": 1,
+                          "name": "Form",
                           "key": "fromDate",
                           "value": "fromDate"
                         },
                         {
-                          "type": 2,
-                          "name": "Current screen",
+                          "type": 1,
+                          "name": "Form",
                           "key": "toDate",
                           "value": "toDate"
                         }
@@ -118,30 +125,62 @@
                       "baseURL": "64f9670d683922479c06159b",
                       "storeType": 2
                     },
-                    "responseHandler": []
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Navigate TO Card Usage ",
+                        "triggerId": "AmP7V6mGWbECuvJkouB3Z"
+                      },
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "Card Usage  Error Modal",
+                        "triggerId": "DM1EBeZNsIH44c3ZYDSlM",
+                        "logic": { "==": [{ "var": "code" }, 0] }
+                      },
+                      {
+                        "httpStatus": 500,
+                        "triggerName": "Card Usage  Error Modal",
+                        "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                      },
+                      {
+                        "httpStatus": 402,
+                        "triggerName": "Card Usage  Error Modal",
+                        "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "Card Usage  Error Modal",
+                        "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                      },
+                      {
+                        "httpStatus": 401,
+                        "triggerName": "Card Usage  Error Modal",
+                        "triggerId": "DM1EBeZNsIH44c3ZYDSlM"
+                      }
+                    ]
                   }
                 }
               ],
-              "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
-              "updatedAt": "10/10/2023",
-              "createdAt": "10/10/2023",
+              "csrf": "0.nc7j8y22hv6ANu9GbUjbAXNGHZcQWcy",
+              "updatedAt": "10/11/2023",
+              "createdAt": "10/11/2023",
               "createdBy": "masood",
               "updatedBy": "masood"
             }
           ],
           "triggerIds": [
-            "3FYVyZXQkUZ7tY2QRiUb4",
-            "SlE3JqIkgw0brVj7D7U06",
-            "kfLJjlPFzFtdWOArWJ-Xp"
+            "651IGANTEmSrkY0ZGSwfH",
+            "CNpvu6EPtOZMXaHVVLh2A",
+            "naphH1mNTq8ZSDxJqlgyN"
           ]
         }
       }
     }
   ],
-  "csrf": "0.upjnns4xnaTEiM-j_dAcucxB2RCxWTa",
-  "_id": "pJHbyP2XXoGYdhAdY0quW",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
+  "csrf": "0.yuj16aijceQ67Dh7FzoScIn-_GxDb4Q",
+  "updatedAt": "10/12/2023",
+  "createdAt": "10/12/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }
