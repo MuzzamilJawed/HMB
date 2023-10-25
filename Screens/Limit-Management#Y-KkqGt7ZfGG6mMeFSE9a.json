@@ -53,18 +53,74 @@
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "55znhNq-lzQUP7s8vAeaf",
+            "triggerName": "getAllAccountsWithBalance",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "accountdetails",
+              "responseReturnValue": "content.casaAccounts",
+              "url": "/getAllAccountsWithBalance",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": true,
+              "loginTrigger": false,
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                { "type": 4, "name": "Static", "key": "status", "value": "A" },
+                {
+                  "type": 4,
+                  "name": "Static",
+                  "key": "accountType",
+                  "value": "ALL"
+                },
+                {
+                  "type": 4,
+                  "name": "Static",
+                  "key": "currentFilter",
+                  "value": "ALL"
+                },
+                {
+                  "type": 4,
+                  "name": "Static",
+                  "key": "includeBalance",
+                  "value": "true"
+                }
+              ],
+              "baseURL": "64f9a08b683922479c062070",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "C9VAY5AImRfVpeNy7pz65",
+            "triggerName": "Clear Form Data",
+            "serviceType": "14",
+            "attributes": {},
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "-0mD_Z3uwsyyWA7DHdoy8",
+            "id": "XB1XdSCvWwyjDsrW0x5GL",
             "gridProps": [
               {
                 "type": "10001",
@@ -73,7 +129,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "EJcUzXMRBzrxVhMR4KPgX",
+                    "id": "MSVZHivCpdO_6rixoF7m2",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -331,10 +387,7 @@
                                                   "layoutProperties": {
                                                     "autocomplete": {
                                                       "//": "Use this class to style autocomplete component in dropdown.",
-                                                      "background": "#FBFBFB",
-                                                      "border-radius": "10px",
-                                                      "border": "1px solid rgba(0,0,0,0.10)",
-                                                      "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
+                                                      "border-radius": "10px"
                                                     },
                                                     "textField": {
                                                       "//": "Use this class to style textField component in dropdown.",
@@ -358,7 +411,11 @@
                                                   "variant": "standard",
                                                   "selectedDataType": 0,
                                                   "storeType": 2,
-                                                  "cssClassNames": [],
+                                                  "cssClassNames": [
+                                                    {
+                                                      "cssClassName": "Drop-Down-Css "
+                                                    }
+                                                  ],
                                                   "disableUnderline": true,
                                                   "placeholder": "select Account"
                                                 },
@@ -372,7 +429,7 @@
                                                   "content": "Drop down",
                                                   "type": "20003"
                                                 },
-                                                "path": "0-0-0-0-2-0-1-0-0-0-0"
+                                                "path": "0-0-0-0-1-0-1-0-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -557,7 +614,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "R7I9t9z8lDyyDa-APoyBx",
+                                            "id": "7a-e1APflUMz7UaTOZhEA",
                                             "gridProps": [
                                               {
                                                 "id": "uz7jeYtwuUeqNAnx6DNCh",
@@ -584,7 +641,7 @@
                                                   },
                                                   "cssClassNames": [
                                                     {
-                                                      "cssClassName": "CardButton"
+                                                      "cssClassName": "hmbButtonCSS "
                                                     }
                                                   ]
                                                 },
@@ -655,7 +712,7 @@
                                                     "name": "On click"
                                                   }
                                                 ],
-                                                "path": "0-0-0-0-2-0-2-1-0-0-0"
+                                                "path": "0-0-0-0-1-0-2-1-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -664,8 +721,7 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-2-0-2-1-0-0"
+                                            }
                                           }
                                         ],
                                         "allowedContainers": [
@@ -681,7 +737,7 @@
                                           "layoutProperties": {
                                             "gridLayout": {
                                               "//": "Use this class to style grid layout component.",
-                                              "padding": "5px 20px",
+                                              "padding": "5px 0px",
                                               "spacing": 0
                                             },
                                             "mainContainer": "gridLayout"
@@ -699,7 +755,7 @@
                                           "type": "10001",
                                           "content": "Grid layout"
                                         },
-                                        "path": "0-0-0-0-2-0-2-1-0",
+                                        "path": "0-0-0-0-1-0-2-1-0",
                                         "dimensions": {
                                           "rows": 1,
                                           "columns": 1,
@@ -773,26 +829,24 @@
                                           "responseStateKey": "limitsResponse",
                                           "layoutProperties": {
                                             "container": {
-                                              "//": "Use this class to style data table container.",
-                                              "color": "#19612F"
+                                              "//": "Use this class to style data table container."
                                             },
                                             "rowStyle": {
                                               "//": "Use this class to style data table rows.",
                                               "color": "black",
-                                              "background-color": "white",
-                                              "text-align": "left"
+                                              "text-align": "center"
                                             },
                                             "defaultColDefinition": {
                                               "//": "Use this class to define column definition of data table.",
                                               "sortable": true,
                                               "animateRows": false,
-                                              "resizable": true,
+                                              "resizable": false,
                                               "enableValue": false,
                                               "enableRowGroup": false,
                                               "enablePivot": false,
                                               "filter": true,
                                               "type": "leftAligned",
-                                              "minWidth": 10,
+                                              "minWidth": 30,
                                               "domLayout": "autoHeight"
                                             },
                                             "mainContainer": "container",
@@ -802,20 +856,19 @@
                                             "sm": 12,
                                             "xs": 12,
                                             "headerStyles": {
-                                              "background-color": "#19612F",
-                                              "color": "#FFFFFF",
-                                              "border-radius": "8px"
+                                              "height": "6vh",
+                                              "text-align": "center",
+                                              "font-weight": 500,
+                                              "font-style": "normal",
+                                              "text-transform": "uppercase",
+                                              "font-size": "1.3vw"
                                             },
                                             "tableStyles": {
-                                              "border-color": "transparent",
-                                              "--ag-background-color": "transparent"
+                                              "border-color": "#FBFBFB",
+                                              "--ag-background-color": "#FBFBFB"
                                             },
                                             "rowsStyles": {
-                                              "border-radius": "8px",
-                                              "border-bottom-color": "transparent"
-                                            },
-                                            "rowsOdd": {
-                                              "background": "#3030300C"
+                                              "background-color": ""
                                             }
                                           },
                                           "defaultColDef": {
@@ -837,14 +890,27 @@
                                           },
                                           "columnDefinition": [
                                             {
+                                              "type": "text",
                                               "typeTemp": {
                                                 "name": "Text",
                                                 "type": "text"
                                               },
-                                              "headerName": "Limit Id",
                                               "field": "limitId",
-                                              "type": "text",
-                                              "triggerId": null
+                                              "headerName": "Limit Id",
+                                              "conditional": {
+                                                "bindingKey": ""
+                                              },
+                                              "values": [""],
+                                              "cssClassNames": [
+                                                {
+                                                  "cssClassName": "table_Column_Data_CSS "
+                                                }
+                                              ],
+                                              "cssConditional": {
+                                                "bindingKey": "",
+                                                "cssClassNames": []
+                                              },
+                                              "cssValues": [""]
                                             },
                                             {
                                               "type": "text",
@@ -857,22 +923,40 @@
                                               "conditional": {
                                                 "bindingKey": ""
                                               },
+                                              "values": [],
+                                              "cssClassNames": [
+                                                {
+                                                  "cssClassName": "table_Column_Data_CSS "
+                                                }
+                                              ],
+                                              "cssConditional": {
+                                                "bindingKey": "",
+                                                "cssClassNames": []
+                                              },
+                                              "cssValues": []
+                                            },
+                                            {
+                                              "type": "text",
+                                              "typeTemp": {
+                                                "name": "Text",
+                                                "type": "text"
+                                              },
+                                              "field": "maxLimitFormatted",
+                                              "headerName": "Max Limit",
+                                              "conditional": {
+                                                "bindingKey": ""
+                                              },
                                               "values": [""],
+                                              "cssClassNames": [
+                                                {
+                                                  "cssClassName": "table_Column_Data_CSS "
+                                                }
+                                              ],
                                               "cssConditional": {
                                                 "bindingKey": "",
                                                 "cssClassNames": []
                                               },
                                               "cssValues": [""]
-                                            },
-                                            {
-                                              "typeTemp": {
-                                                "name": "Text",
-                                                "type": "text"
-                                              },
-                                              "headerName": "Max Limit",
-                                              "field": "maxLimitFormatted",
-                                              "type": "text",
-                                              "triggerId": null
                                             },
                                             {
                                               "type": "text",
@@ -885,22 +969,40 @@
                                               "conditional": {
                                                 "bindingKey": ""
                                               },
+                                              "values": [],
+                                              "cssClassNames": [
+                                                {
+                                                  "cssClassName": "table_Column_Data_CSS "
+                                                }
+                                              ],
+                                              "cssConditional": {
+                                                "bindingKey": "",
+                                                "cssClassNames": []
+                                              },
+                                              "cssValues": []
+                                            },
+                                            {
+                                              "type": "text",
+                                              "typeTemp": {
+                                                "name": "Text",
+                                                "type": "text"
+                                              },
+                                              "field": "remainingLimitFormatted",
+                                              "headerName": "Remaining Limit",
+                                              "conditional": {
+                                                "bindingKey": ""
+                                              },
                                               "values": [""],
+                                              "cssClassNames": [
+                                                {
+                                                  "cssClassName": "table_Column_Data_CSS "
+                                                }
+                                              ],
                                               "cssConditional": {
                                                 "bindingKey": "",
                                                 "cssClassNames": []
                                               },
                                               "cssValues": [""]
-                                            },
-                                            {
-                                              "typeTemp": {
-                                                "name": "Text",
-                                                "type": "text"
-                                              },
-                                              "headerName": "Remaining Limit",
-                                              "field": "remainingLimitFormatted",
-                                              "type": "text",
-                                              "triggerId": null
                                             },
                                             {
                                               "typeTemp": {
@@ -980,7 +1082,7 @@
                                           "type": "20014"
                                         },
                                         "events": [],
-                                        "path": "0-0-0-0-2-0-3-0-0"
+                                        "path": "0-0-0-0-1-0-3-0-0"
                                       }
                                     ],
                                     "layoutProperties": {
@@ -1026,7 +1128,7 @@
                                   "type": "10001",
                                   "content": "Grid layout"
                                 },
-                                "path": "0-0-0-0-2-0-3",
+                                "path": "0-0-0-0-1-0-3",
                                 "dimensions": {
                                   "rows": 1,
                                   "columns": 1,
@@ -1093,8 +1195,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-0-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -1110,7 +1211,7 @@
                   "layoutProperties": {
                     "gridLayout": {
                       "//": "Use this class to style grid layout component.",
-                      "padding": "40px 20px 5px 20px",
+                      "padding": "5px 20px",
                       "spacing": 0
                     },
                     "mainContainer": "gridLayout"
@@ -1133,8 +1234,7 @@
                   "colSize0sm": 12,
                   "colSize0md": 12,
                   "colSize0lg": 12,
-                  "colSize0xl": 12,
-                  "layoutProperties": null
+                  "colSize0xl": 12
                 },
                 "readOnly": true
               }
@@ -1145,8 +1245,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -1170,8 +1269,8 @@
     "gitBranchName": "master",
     "_id": "Y-KkqGt7ZfGG6mMeFSE9a",
     "createdBy": "masood",
-    "updatedAt": "10/11/2023",
-    "createdAt": "10/11/2023",
+    "updatedAt": "10/25/2023",
+    "createdAt": "10/25/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1220,7 +1319,20 @@
       "name": "Limit Management"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "55znhNq-lzQUP7s8vAeaf",
+        "triggerName": "getAllAccountsWithBalance",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "C9VAY5AImRfVpeNy7pz65",
+        "triggerName": "Clear Form Data",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1277,7 +1389,7 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "40px 20px 5px 20px",
+          "padding": "5px 20px",
           "spacing": 0
         },
         "mainContainer": "gridLayout"
@@ -1686,10 +1798,7 @@
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#FBFBFB",
-          "border-radius": "10px",
-          "border": "1px solid rgba(0,0,0,0.10)",
-          "box-shadow": "0px 8px 20px 0px rgba(184,189,195,0.10)"
+          "border-radius": "10px"
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",
@@ -1713,7 +1822,7 @@
       "variant": "standard",
       "selectedDataType": 0,
       "storeType": 2,
-      "cssClassNames": [],
+      "cssClassNames": [{ "cssClassName": "Drop-Down-Css " }],
       "disableUnderline": true,
       "placeholder": "select Account"
     },
@@ -1724,7 +1833,7 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Drop down", "type": "20003" },
-    "path": "0-0-0-0-2-0-1-0-0-0-0",
+    "path": "0-0-0-0-1-0-1-0-0-0-0",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1851,7 +1960,7 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "5px 20px",
+          "padding": "5px 0px",
           "spacing": 0
         },
         "mainContainer": "gridLayout"
@@ -1892,7 +2001,7 @@
         "sm": 12,
         "xs": 12
       },
-      "cssClassNames": [{ "cssClassName": "CardButton" }]
+      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -1915,7 +2024,7 @@
         "serviceType": "8"
       }
     ],
-    "path": "0-0-0-0-2-0-2-1-0-0-0",
+    "path": "0-0-0-0-1-0-2-1-0-0-0",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1977,27 +2086,23 @@
     "attributes": {
       "responseStateKey": "limitsResponse",
       "layoutProperties": {
-        "container": {
-          "//": "Use this class to style data table container.",
-          "color": "#19612F"
-        },
+        "container": { "//": "Use this class to style data table container." },
         "rowStyle": {
           "//": "Use this class to style data table rows.",
           "color": "black",
-          "background-color": "white",
-          "text-align": "left"
+          "text-align": "center"
         },
         "defaultColDefinition": {
           "//": "Use this class to define column definition of data table.",
           "sortable": true,
           "animateRows": false,
-          "resizable": true,
+          "resizable": false,
           "enableValue": false,
           "enableRowGroup": false,
           "enablePivot": false,
           "filter": true,
           "type": "leftAligned",
-          "minWidth": 10,
+          "minWidth": 30,
           "domLayout": "autoHeight"
         },
         "mainContainer": "container",
@@ -2007,19 +2112,18 @@
         "sm": 12,
         "xs": 12,
         "headerStyles": {
-          "background-color": "#19612F",
-          "color": "#FFFFFF",
-          "border-radius": "8px"
+          "height": "6vh",
+          "text-align": "center",
+          "font-weight": 500,
+          "font-style": "normal",
+          "text-transform": "uppercase",
+          "font-size": "1.3vw"
         },
         "tableStyles": {
-          "border-color": "transparent",
-          "--ag-background-color": "transparent"
+          "border-color": "#FBFBFB",
+          "--ag-background-color": "#FBFBFB"
         },
-        "rowsStyles": {
-          "border-radius": "8px",
-          "border-bottom-color": "transparent"
-        },
-        "rowsOdd": { "background": "#3030300C" }
+        "rowsStyles": { "background-color": "" }
       },
       "defaultColDef": {
         "sortable": true,
@@ -2040,11 +2144,15 @@
       },
       "columnDefinition": [
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Limit Id",
-          "field": "limitId",
           "type": "text",
-          "triggerId": null
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "limitId",
+          "headerName": "Limit Id",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
           "type": "text",
@@ -2052,16 +2160,21 @@
           "field": "limitName",
           "headerName": "Limit Name",
           "conditional": { "bindingKey": "" },
-          "values": [""],
+          "values": [],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
-          "cssValues": [""]
+          "cssValues": []
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Max Limit",
-          "field": "maxLimitFormatted",
           "type": "text",
-          "triggerId": null
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "maxLimitFormatted",
+          "headerName": "Max Limit",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
           "type": "text",
@@ -2069,16 +2182,21 @@
           "field": "customLimitFormatted",
           "headerName": "Custom Limit",
           "conditional": { "bindingKey": "" },
-          "values": [""],
+          "values": [],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
-          "cssValues": [""]
+          "cssValues": []
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Remaining Limit",
-          "field": "remainingLimitFormatted",
           "type": "text",
-          "triggerId": null
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "remainingLimitFormatted",
+          "headerName": "Remaining Limit",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
           "typeTemp": { "name": "Icon Button", "type": "iconButton" },
@@ -2148,7 +2266,7 @@
     "projectType": "web",
     "component": { "content": "Data table", "type": "20014" },
     "events": [],
-    "path": "0-0-0-0-2-0-3-0-0",
+    "path": "0-0-0-0-1-0-3-0-0",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

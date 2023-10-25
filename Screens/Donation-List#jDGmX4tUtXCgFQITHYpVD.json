@@ -579,20 +579,19 @@
                                                     "rowStyle": {
                                                       "//": "Use this class to style data table rows.",
                                                       "color": "black",
-                                                      "background-color": "white",
-                                                      "text-align": "left"
+                                                      "text-align": "center"
                                                     },
                                                     "defaultColDefinition": {
                                                       "//": "Use this class to define column definition of data table.",
                                                       "sortable": true,
                                                       "animateRows": false,
-                                                      "resizable": true,
+                                                      "resizable": false,
                                                       "enableValue": false,
                                                       "enableRowGroup": false,
                                                       "enablePivot": false,
                                                       "filter": true,
                                                       "type": "leftAligned",
-                                                      "minWidth": 10,
+                                                      "minWidth": 30,
                                                       "domLayout": "autoHeight"
                                                     },
                                                     "mainContainer": "container",
@@ -602,20 +601,19 @@
                                                     "sm": 12,
                                                     "xs": 12,
                                                     "headerStyles": {
-                                                      "background-color": "#00FF00",
-                                                      "color": "#FFFFFF",
-                                                      "border-radius": "8px"
+                                                      "height": "6vh",
+                                                      "text-align": "center",
+                                                      "font-weight": 500,
+                                                      "font-style": "normal",
+                                                      "text-transform": "uppercase",
+                                                      "font-size": "1.3vw"
                                                     },
                                                     "tableStyles": {
-                                                      "border-color": "transparent",
-                                                      "--ag-background-color": "transparent"
+                                                      "border-color": "#FBFBFB",
+                                                      "--ag-background-color": "#FBFBFB"
                                                     },
                                                     "rowsStyles": {
-                                                      "border-radius": "8px",
-                                                      "border-bottom-color": "transparent"
-                                                    },
-                                                    "rowsOdd": {
-                                                      "background": "#3030300C"
+                                                      "background-color": ""
                                                     }
                                                   },
                                                   "defaultColDef": {
@@ -647,7 +645,35 @@
                                                       "conditional": {
                                                         "bindingKey": ""
                                                       },
+                                                      "values": [],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
+                                                      "cssConditional": {
+                                                        "bindingKey": "",
+                                                        "cssClassNames": []
+                                                      },
+                                                      "cssValues": []
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "typeTemp": {
+                                                        "name": "Text",
+                                                        "type": "text"
+                                                      },
+                                                      "field": "accountNumber",
+                                                      "headerName": "Account Number",
+                                                      "conditional": {
+                                                        "bindingKey": ""
+                                                      },
                                                       "values": [""],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
                                                       "cssConditional": {
                                                         "bindingKey": "",
                                                         "cssClassNames": []
@@ -655,24 +681,27 @@
                                                       "cssValues": [""]
                                                     },
                                                     {
-                                                      "typeTemp": {
-                                                        "name": "Text",
-                                                        "type": "text"
-                                                      },
-                                                      "headerName": "Account Number",
-                                                      "field": "accountNumber",
                                                       "type": "text",
-                                                      "triggerId": null
-                                                    },
-                                                    {
                                                       "typeTemp": {
                                                         "name": "Text",
                                                         "type": "text"
                                                       },
-                                                      "headerName": "alias",
                                                       "field": "alias",
-                                                      "type": "text",
-                                                      "triggerId": null
+                                                      "headerName": "alias",
+                                                      "conditional": {
+                                                        "bindingKey": ""
+                                                      },
+                                                      "values": [""],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
+                                                      "cssConditional": {
+                                                        "bindingKey": "",
+                                                        "cssClassNames": []
+                                                      },
+                                                      "cssValues": [""]
                                                     },
                                                     {
                                                       "typeTemp": {
@@ -715,7 +744,7 @@
                                                           },
                                                           "cssClassNames": [
                                                             {
-                                                              "cssClassName": "CardButton"
+                                                              "cssClassName": "Dashboard_Table_Button_Css "
                                                             }
                                                           ],
                                                           "triggerId": "btIttih3LLa-iDhgFPRHl",
@@ -989,8 +1018,8 @@
     "gitBranchName": "master",
     "_id": "jDGmX4tUtXCgFQITHYpVD",
     "createdBy": "masood",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/25/2023",
+    "createdAt": "10/25/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1690,20 +1719,19 @@
         "rowStyle": {
           "//": "Use this class to style data table rows.",
           "color": "black",
-          "background-color": "white",
-          "text-align": "left"
+          "text-align": "center"
         },
         "defaultColDefinition": {
           "//": "Use this class to define column definition of data table.",
           "sortable": true,
           "animateRows": false,
-          "resizable": true,
+          "resizable": false,
           "enableValue": false,
           "enableRowGroup": false,
           "enablePivot": false,
           "filter": true,
           "type": "leftAligned",
-          "minWidth": 10,
+          "minWidth": 30,
           "domLayout": "autoHeight"
         },
         "mainContainer": "container",
@@ -1713,19 +1741,18 @@
         "sm": 12,
         "xs": 12,
         "headerStyles": {
-          "background-color": "#00FF00",
-          "color": "#FFFFFF",
-          "border-radius": "8px"
+          "height": "6vh",
+          "text-align": "center",
+          "font-weight": 500,
+          "font-style": "normal",
+          "text-transform": "uppercase",
+          "font-size": "1.3vw"
         },
         "tableStyles": {
-          "border-color": "transparent",
-          "--ag-background-color": "transparent"
+          "border-color": "#FBFBFB",
+          "--ag-background-color": "#FBFBFB"
         },
-        "rowsStyles": {
-          "border-radius": "8px",
-          "border-bottom-color": "transparent"
-        },
-        "rowsOdd": { "background": "#3030300C" }
+        "rowsStyles": { "background-color": "" }
       },
       "defaultColDef": {
         "sortable": true,
@@ -1751,23 +1778,32 @@
           "field": "accountTitle",
           "headerName": "Title",
           "conditional": { "bindingKey": "" },
+          "values": [],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": []
+        },
+        {
+          "type": "text",
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "accountNumber",
+          "headerName": "Account Number",
+          "conditional": { "bindingKey": "" },
           "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
           "cssValues": [""]
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Account Number",
-          "field": "accountNumber",
           "type": "text",
-          "triggerId": null
-        },
-        {
           "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "alias",
           "field": "alias",
-          "type": "text",
-          "triggerId": null
+          "headerName": "alias",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
           "typeTemp": { "name": "Icon Button", "type": "iconButton" },
@@ -1805,7 +1841,9 @@
                 "createdBy": "masood",
                 "updatedBy": "masood"
               },
-              "cssClassNames": [{ "cssClassName": "CardButton" }],
+              "cssClassNames": [
+                { "cssClassName": "Dashboard_Table_Button_Css " }
+              ],
               "triggerId": "btIttih3LLa-iDhgFPRHl",
               "conditional": {},
               "values": [],

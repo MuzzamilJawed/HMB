@@ -1869,7 +1869,7 @@
                                                                                             "sm": 12,
                                                                                             "xs": 12
                                                                                           },
-                                                                                          "label": "responseOfRaastTitleSearch.iban",
+                                                                                          "label": "responseOfRaastTitleSearch.content.iban",
                                                                                           "cssClassNames": [
                                                                                             {
                                                                                               "cssClassName": "Label_Type_Detail_Css"
@@ -2155,7 +2155,7 @@
                                                                                             "sm": 12,
                                                                                             "xs": 12
                                                                                           },
-                                                                                          "label": "responseOfRaastTitleSearch.title",
+                                                                                          "label": "responseOfRaastTitleSearch.content.title",
                                                                                           "cssClassNames": [
                                                                                             {
                                                                                               "cssClassName": "Label_Type_Detail_Css"
@@ -2431,7 +2431,7 @@
                                                                                             "sm": 12,
                                                                                             "xs": 12
                                                                                           },
-                                                                                          "label": "responseOfRaastTitleSearch.bankName",
+                                                                                          "label": "responseOfRaastTitleSearch.content.bankName",
                                                                                           "cssClassNames": [
                                                                                             {
                                                                                               "cssClassName": "Label_Type_Detail_Css"
@@ -3210,7 +3210,7 @@
                                                             "sm": 12,
                                                             "xs": 12
                                                           },
-                                                          "label": "purpose",
+                                                          "label": "purpose.name",
                                                           "cssClassNames": [
                                                             {
                                                               "cssClassName": "Label_Type_Detail_Css"
@@ -3446,7 +3446,8 @@
                                                           "iconName": "AiOutlineDownload",
                                                           "buttonIconPosition": "end",
                                                           "asset": null,
-                                                          "iconname": "AiOutlineDownload"
+                                                          "iconname": "AiOutlineDownload",
+                                                          "hideComponent": true
                                                         },
                                                         "events": [],
                                                         "path": "0-0-0-0-0-0-0-0-4-1-0-0-0",
@@ -3535,13 +3536,7 @@
                                                           "fullWidth": true,
                                                           "layoutProperties": {
                                                             "button": {
-                                                              "//": "Use this class to style button component.",
-                                                              "height": "47px",
-                                                              "border": "1px solid #19612F !important",
-                                                              "text-color": "#19612F",
-                                                              "border-radius": "8px",
-                                                              "color": "#19612F",
-                                                              "box-shadow": "0px 4px 10px 0px #19612F1A"
+                                                              "//": "Use this class to style button component."
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style button element."
@@ -3554,7 +3549,12 @@
                                                             "xs": 12
                                                           },
                                                           "icon": null,
-                                                          "asset": null
+                                                          "asset": null,
+                                                          "cssClassNames": [
+                                                            {
+                                                              "cssClassName": "hmbButtonCSS "
+                                                            }
+                                                          ]
                                                         },
                                                         "events": [
                                                           {
@@ -3926,9 +3926,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "HNs2A5qOZI7GPzxxBurDc",
-    "createdBy": "muhammad.asad",
-    "updatedAt": "9/28/2023",
-    "createdAt": "9/28/2023",
+    "createdBy": "masood",
+    "updatedAt": "10/24/2023",
+    "createdAt": "10/24/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6162,7 +6162,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "responseOfRaastTitleSearch.iban",
+      "label": "responseOfRaastTitleSearch.content.iban",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
       "storeType": 2
@@ -6391,7 +6391,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "responseOfRaastTitleSearch.title",
+      "label": "responseOfRaastTitleSearch.content.title",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
       "storeType": 2
@@ -6619,7 +6619,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "responseOfRaastTitleSearch.bankName",
+      "label": "responseOfRaastTitleSearch.content.bankName",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
       "storeType": 2
@@ -7078,7 +7078,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "purpose",
+      "label": "purpose.name",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
       "storeType": 1
@@ -7274,7 +7274,8 @@
       "iconName": "AiOutlineDownload",
       "buttonIconPosition": "end",
       "asset": null,
-      "iconname": "AiOutlineDownload"
+      "iconname": "AiOutlineDownload",
+      "hideComponent": true
     },
     "events": [],
     "path": "0-0-0-0-0-0-0-0-4-1-0-0-0",
@@ -7342,15 +7343,7 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "47px",
-          "border": "1px solid #19612F !important",
-          "text-color": "#19612F",
-          "border-radius": "8px",
-          "color": "#19612F",
-          "box-shadow": "0px 4px 10px 0px #19612F1A"
-        },
+        "button": { "//": "Use this class to style button component." },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -7360,7 +7353,8 @@
         "xs": 12
       },
       "icon": null,
-      "asset": null
+      "asset": null,
+      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
     },
     "events": [
       {

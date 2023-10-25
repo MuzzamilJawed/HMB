@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "bYZD8x5cAO1z3Bkon0swl",
+            "id": "Nof9EdDtBuRCRyIPMHMHN",
             "gridProps": [
               {
                 "type": "10001",
@@ -36,7 +36,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "4afWTge6On3bhUOa_MvKB",
+                    "id": "BAoxeEpqeVjwguo2sloVP",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -294,20 +294,19 @@
                                                             "rowStyle": {
                                                               "//": "Use this class to style data table rows.",
                                                               "color": "black",
-                                                              "background-color": "white",
-                                                              "text-align": "left"
+                                                              "text-align": "center"
                                                             },
                                                             "defaultColDefinition": {
                                                               "//": "Use this class to define column definition of data table.",
                                                               "sortable": true,
                                                               "animateRows": false,
-                                                              "resizable": true,
+                                                              "resizable": false,
                                                               "enableValue": false,
                                                               "enableRowGroup": false,
                                                               "enablePivot": false,
                                                               "filter": true,
                                                               "type": "leftAligned",
-                                                              "minWidth": 10,
+                                                              "minWidth": 30,
                                                               "domLayout": "autoHeight"
                                                             },
                                                             "mainContainer": "container",
@@ -317,20 +316,19 @@
                                                             "sm": 12,
                                                             "xs": 12,
                                                             "headerStyles": {
-                                                              "background-color": "#00FF00",
-                                                              "color": "#FFFFFF",
-                                                              "border-radius": "8px"
+                                                              "height": "6vh",
+                                                              "text-align": "center",
+                                                              "font-weight": 500,
+                                                              "font-style": "normal",
+                                                              "text-transform": "uppercase",
+                                                              "font-size": "1.3vw"
                                                             },
                                                             "tableStyles": {
-                                                              "border-color": "transparent",
-                                                              "--ag-background-color": "transparent"
+                                                              "border-color": "#FBFBFB",
+                                                              "--ag-background-color": "#FBFBFB"
                                                             },
                                                             "rowsStyles": {
-                                                              "border-radius": "8px",
-                                                              "border-bottom-color": "transparent"
-                                                            },
-                                                            "rowsOdd": {
-                                                              "background": "#3030300C"
+                                                              "background-color": ""
                                                             }
                                                           },
                                                           "defaultColDef": {
@@ -362,7 +360,35 @@
                                                               "conditional": {
                                                                 "bindingKey": ""
                                                               },
+                                                              "values": [],
+                                                              "cssClassNames": [
+                                                                {
+                                                                  "cssClassName": "table_Column_Data_CSS "
+                                                                }
+                                                              ],
+                                                              "cssConditional": {
+                                                                "bindingKey": "",
+                                                                "cssClassNames": []
+                                                              },
+                                                              "cssValues": []
+                                                            },
+                                                            {
+                                                              "type": "text",
+                                                              "typeTemp": {
+                                                                "name": "Text",
+                                                                "type": "text"
+                                                              },
+                                                              "field": "accountNumber",
+                                                              "headerName": "Account Number",
+                                                              "conditional": {
+                                                                "bindingKey": ""
+                                                              },
                                                               "values": [""],
+                                                              "cssClassNames": [
+                                                                {
+                                                                  "cssClassName": "table_Column_Data_CSS "
+                                                                }
+                                                              ],
                                                               "cssConditional": {
                                                                 "bindingKey": "",
                                                                 "cssClassNames": []
@@ -370,24 +396,27 @@
                                                               "cssValues": [""]
                                                             },
                                                             {
-                                                              "typeTemp": {
-                                                                "name": "Text",
-                                                                "type": "text"
-                                                              },
-                                                              "headerName": "Account Number",
-                                                              "field": "accountNumber",
                                                               "type": "text",
-                                                              "triggerId": null
-                                                            },
-                                                            {
                                                               "typeTemp": {
                                                                 "name": "Text",
                                                                 "type": "text"
                                                               },
-                                                              "headerName": "alias",
                                                               "field": "alias",
-                                                              "type": "text",
-                                                              "triggerId": null
+                                                              "headerName": "alias",
+                                                              "conditional": {
+                                                                "bindingKey": ""
+                                                              },
+                                                              "values": [""],
+                                                              "cssClassNames": [
+                                                                {
+                                                                  "cssClassName": "table_Column_Data_CSS "
+                                                                }
+                                                              ],
+                                                              "cssConditional": {
+                                                                "bindingKey": "",
+                                                                "cssClassNames": []
+                                                              },
+                                                              "cssValues": [""]
                                                             },
                                                             {
                                                               "typeTemp": {
@@ -429,7 +458,7 @@
                                                                   },
                                                                   "cssClassNames": [
                                                                     {
-                                                                      "cssClassName": "CardButton"
+                                                                      "cssClassName": "Dashboard_Table_Button_Css "
                                                                     }
                                                                   ],
                                                                   "triggerId": "_TAyU-MOprzNVNHnsAE6P",
@@ -667,8 +696,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-0-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -697,9 +725,154 @@
                   "direction": "row",
                   "name": "Grid layout"
                 },
-                "events": [],
+                "events": [
+                  {
+                    "triggerId": "le0TSBdlezlFantE7aoXt",
+                    "triggerName": "get Zakat bene",
+                    "serviceType": "2",
+                    "attributes": {
+                      "delay": "",
+                      "triggers": [
+                        {
+                          "id": "55znhNq-lzQUP7s8vAeaf",
+                          "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+                          "projectId": "640ee2a26ead56231ce8350b",
+                          "gitBranchName": "master",
+                          "name": "getAllAccountsWithBalance",
+                          "old_name": "getAllAccountsWithBalance",
+                          "status": "ACTIVE",
+                          "services": [
+                            {
+                              "type": "8",
+                              "command": {
+                                "type": "1",
+                                "attributes": {
+                                  "loaderWidgetIds": [906070],
+                                  "messageWidgetIds": [906070],
+                                  "responseStateKey": "accountdetails",
+                                  "responseReturnValue": "content.casaAccounts",
+                                  "url": "/getAllAccountsWithBalance",
+                                  "checksum": true,
+                                  "encryption": true,
+                                  "isDeviceDetails": true,
+                                  "loginTrigger": false,
+                                  "formData": false,
+                                  "logoutTrigger": false,
+                                  "headers": {
+                                    "Content-Type": "application/json",
+                                    "Accept": "application/json",
+                                    "channel_key": "005"
+                                  },
+                                  "requestBody": [
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "status",
+                                      "value": "A"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "accountType",
+                                      "value": "ALL"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "currentFilter",
+                                      "value": "ALL"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "includeBalance",
+                                      "value": "true"
+                                    }
+                                  ],
+                                  "baseURL": "64f9a08b683922479c062070",
+                                  "storeType": 2
+                                },
+                                "responseHandler": []
+                              }
+                            }
+                          ],
+                          "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+                          "updatedAt": "9/13/2023",
+                          "createdAt": "9/13/2023",
+                          "createdBy": "masood",
+                          "updatedBy": "masood"
+                        },
+                        {
+                          "id": "0-6aBXABzvCu07a7o_SX4",
+                          "projectId": "640ee2a26ead56231ce8350b",
+                          "gitBranchName": "master",
+                          "name": "fetchDonationOrganizationBeneficiaries Trigger",
+                          "status": "ACTIVE",
+                          "services": [
+                            {
+                              "type": "8",
+                              "command": {
+                                "type": "1",
+                                "attributes": {
+                                  "loaderWidgetIds": [906070],
+                                  "messageWidgetIds": [906070],
+                                  "responseStateKey": "zakatList",
+                                  "responseReturnValue": "content.donationOrganizations",
+                                  "url": "/fetchDonationOrganizationBeneficiaries",
+                                  "checksum": true,
+                                  "encryption": true,
+                                  "isDeviceDetails": false,
+                                  "loginTrigger": "loginTrigger",
+                                  "formData": false,
+                                  "logoutTrigger": false,
+                                  "headers": {
+                                    "Content-Type": "application/json",
+                                    "channel_key": "005"
+                                  },
+                                  "requestBody": [
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "transferType",
+                                      "value": "ZAKAAT"
+                                    }
+                                  ],
+                                  "baseURL": "64f968d3683922479c0616ba",
+                                  "storeType": 2
+                                },
+                                "responseHandler": []
+                              }
+                            }
+                          ],
+                          "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
+                          "_id": "Az8OT-TVSvWh_sWVbrqdj",
+                          "updatedAt": "9/14/2023",
+                          "createdAt": "9/14/2023",
+                          "createdBy": "masood",
+                          "updatedBy": "masood"
+                        }
+                      ],
+                      "triggerIds": [
+                        "55znhNq-lzQUP7s8vAeaf",
+                        "0-6aBXABzvCu07a7o_SX4"
+                      ]
+                    },
+                    "type": "1",
+                    "name": "On initialization"
+                  }
+                ],
                 "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-0"
+                "path": "0-0-0",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
               },
               {
                 "type": "10001",
@@ -767,11 +940,10 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "path": 0,
+        "path": "0",
         "events": [],
         "attributes": {
           "gridProps": [],
@@ -817,8 +989,8 @@
     "gitBranchName": "master",
     "_id": "dbztCHq929PZ6LEL6BUed",
     "createdBy": "masood",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/25/2023",
+    "createdAt": "10/25/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -957,7 +1129,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "le0TSBdlezlFantE7aoXt",
+        "triggerName": "get Zakat bene",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "dbztCHq929PZ6LEL6BUed",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1039,11 +1218,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-0-0-0",
     "screenId": "dbztCHq929PZ6LEL6BUed",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1247,11 +1426,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-1-0-0-0-0-0-0",
     "screenId": "dbztCHq929PZ6LEL6BUed",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -1365,20 +1544,19 @@
         "rowStyle": {
           "//": "Use this class to style data table rows.",
           "color": "black",
-          "background-color": "white",
-          "text-align": "left"
+          "text-align": "center"
         },
         "defaultColDefinition": {
           "//": "Use this class to define column definition of data table.",
           "sortable": true,
           "animateRows": false,
-          "resizable": true,
+          "resizable": false,
           "enableValue": false,
           "enableRowGroup": false,
           "enablePivot": false,
           "filter": true,
           "type": "leftAligned",
-          "minWidth": 10,
+          "minWidth": 30,
           "domLayout": "autoHeight"
         },
         "mainContainer": "container",
@@ -1388,19 +1566,18 @@
         "sm": 12,
         "xs": 12,
         "headerStyles": {
-          "background-color": "#00FF00",
-          "color": "#FFFFFF",
-          "border-radius": "8px"
+          "height": "6vh",
+          "text-align": "center",
+          "font-weight": 500,
+          "font-style": "normal",
+          "text-transform": "uppercase",
+          "font-size": "1.3vw"
         },
         "tableStyles": {
-          "border-color": "transparent",
-          "--ag-background-color": "transparent"
+          "border-color": "#FBFBFB",
+          "--ag-background-color": "#FBFBFB"
         },
-        "rowsStyles": {
-          "border-radius": "8px",
-          "border-bottom-color": "transparent"
-        },
-        "rowsOdd": { "background": "#3030300C" }
+        "rowsStyles": { "background-color": "" }
       },
       "defaultColDef": {
         "sortable": true,
@@ -1426,23 +1603,32 @@
           "field": "accountTitle",
           "headerName": "Title",
           "conditional": { "bindingKey": "" },
+          "values": [],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": []
+        },
+        {
+          "type": "text",
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "accountNumber",
+          "headerName": "Account Number",
+          "conditional": { "bindingKey": "" },
           "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
           "cssValues": [""]
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Account Number",
-          "field": "accountNumber",
           "type": "text",
-          "triggerId": null
-        },
-        {
           "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "alias",
           "field": "alias",
-          "type": "text",
-          "triggerId": null
+          "headerName": "alias",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
           "typeTemp": { "name": "Icon Button", "type": "iconButton" },
@@ -1479,7 +1665,9 @@
                 "createdBy": "masood",
                 "updatedBy": "masood"
               },
-              "cssClassNames": [{ "cssClassName": "CardButton" }],
+              "cssClassNames": [
+                { "cssClassName": "Dashboard_Table_Button_Css " }
+              ],
               "triggerId": "_TAyU-MOprzNVNHnsAE6P",
               "conditional": {},
               "values": [],

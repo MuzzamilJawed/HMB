@@ -27,7 +27,6 @@
             "channel_key": "005"
           },
           "requestBody": [
-            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
               "type": 1,
               "name": "Form",
@@ -128,7 +127,7 @@
               "type": 1,
               "name": "Form",
               "key": "purposeOfPayment",
-              "value": "purpose"
+              "value": "purpose.name"
             },
             {
               "type": 2,
@@ -211,7 +210,8 @@
               "name": "Current screen",
               "key": "validation",
               "value": "validation"
-            }
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" }
           ],
           "baseURL": "6502f5a7c9bf2957746c9973",
           "storeType": 2
@@ -225,52 +225,17 @@
           },
           {
             "httpStatus": 200,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf",
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
             "logic": { "==": [{ "var": "code" }, 0] }
-          },
-          {
-            "httpStatus": 400,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
-          },
-          {
-            "httpStatus": 502,
-            "triggerName": "INSTANT_ERROR_TRIGGER",
-            "triggerId": "ssLQ7YHj0qmpG-fHYVcsf"
           }
         ]
       }
     }
   ],
-  "csrf": "0.rcuyucf6v19SIDKSANQtVuwWnb_b4vmE",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
-  "createdBy": "masood",
-  "updatedBy": "masood"
+  "csrf": "0.h6ko4yekh5Kl55GZnfiLWEryWg4uSVX",
+  "updatedAt": "10/24/2023",
+  "createdAt": "10/24/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
 }

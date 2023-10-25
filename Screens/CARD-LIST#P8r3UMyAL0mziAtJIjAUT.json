@@ -451,7 +451,7 @@
                                                 "name": "Data table",
                                                 "type": "20014",
                                                 "attributes": {
-                                                  "responseStateKey": "cardlist.debitCardList",
+                                                  "responseStateKey": "cardlist",
                                                   "layoutProperties": {
                                                     "container": {
                                                       "//": "Use this class to style data table container."
@@ -527,7 +527,35 @@
                                                       "conditional": {
                                                         "bindingKey": ""
                                                       },
+                                                      "values": [],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
+                                                      "cssConditional": {
+                                                        "bindingKey": "",
+                                                        "cssClassNames": []
+                                                      },
+                                                      "cssValues": []
+                                                    },
+                                                    {
+                                                      "type": "text",
+                                                      "typeTemp": {
+                                                        "name": "Text",
+                                                        "type": "text"
+                                                      },
+                                                      "field": "cardType.cardLogo",
+                                                      "headerName": "Card Type",
+                                                      "conditional": {
+                                                        "bindingKey": ""
+                                                      },
                                                       "values": [""],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
                                                       "cssConditional": {
                                                         "bindingKey": "",
                                                         "cssClassNames": []
@@ -535,34 +563,50 @@
                                                       "cssValues": [""]
                                                     },
                                                     {
-                                                      "typeTemp": {
-                                                        "name": "Text",
-                                                        "type": "text"
-                                                      },
-                                                      "headerName": "Card Type",
-                                                      "field": "cardType.cardLogo",
                                                       "type": "text",
-                                                      "triggerId": null
-                                                    },
-                                                    {
                                                       "typeTemp": {
                                                         "name": "Text",
                                                         "type": "text"
                                                       },
-                                                      "headerName": "Status",
                                                       "field": "visibilityStatus",
-                                                      "type": "text",
-                                                      "triggerId": null
+                                                      "headerName": "Status",
+                                                      "conditional": {
+                                                        "bindingKey": ""
+                                                      },
+                                                      "values": [""],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
+                                                      "cssConditional": {
+                                                        "bindingKey": "",
+                                                        "cssClassNames": []
+                                                      },
+                                                      "cssValues": [""]
                                                     },
                                                     {
+                                                      "type": "text",
                                                       "typeTemp": {
                                                         "name": "Text",
                                                         "type": "text"
                                                       },
-                                                      "headerName": "Card Expiry Date",
                                                       "field": "cardExpiryDate",
-                                                      "type": "text",
-                                                      "triggerId": null
+                                                      "headerName": "Card Expiry Date",
+                                                      "conditional": {
+                                                        "bindingKey": ""
+                                                      },
+                                                      "values": [""],
+                                                      "cssClassNames": [
+                                                        {
+                                                          "cssClassName": "table_Column_Data_CSS "
+                                                        }
+                                                      ],
+                                                      "cssConditional": {
+                                                        "bindingKey": "",
+                                                        "cssClassNames": []
+                                                      },
+                                                      "cssValues": [""]
                                                     }
                                                   ],
                                                   "rowDefinition": [],
@@ -1300,8 +1344,8 @@
     "gitBranchName": "master",
     "_id": "P8r3UMyAL0mziAtJIjAUT",
     "createdBy": "masood",
-    "updatedAt": "10/12/2023",
-    "createdAt": "10/12/2023",
+    "updatedAt": "10/17/2023",
+    "createdAt": "10/17/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1896,7 +1940,7 @@
     "name": "Data table",
     "type": "20014",
     "attributes": {
-      "responseStateKey": "cardlist.debitCardList",
+      "responseStateKey": "cardlist",
       "layoutProperties": {
         "container": { "//": "Use this class to style data table container." },
         "rowStyle": {
@@ -1963,30 +2007,43 @@
           "field": "cardTitle",
           "headerName": "Card Title",
           "conditional": { "bindingKey": "" },
+          "values": [],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": []
+        },
+        {
+          "type": "text",
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "cardType.cardLogo",
+          "headerName": "Card Type",
+          "conditional": { "bindingKey": "" },
           "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
           "cssConditional": { "bindingKey": "", "cssClassNames": [] },
           "cssValues": [""]
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Card Type",
-          "field": "cardType.cardLogo",
           "type": "text",
-          "triggerId": null
-        },
-        {
           "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Status",
           "field": "visibilityStatus",
-          "type": "text",
-          "triggerId": null
+          "headerName": "Status",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         },
         {
-          "typeTemp": { "name": "Text", "type": "text" },
-          "headerName": "Card Expiry Date",
-          "field": "cardExpiryDate",
           "type": "text",
-          "triggerId": null
+          "typeTemp": { "name": "Text", "type": "text" },
+          "field": "cardExpiryDate",
+          "headerName": "Card Expiry Date",
+          "conditional": { "bindingKey": "" },
+          "values": [""],
+          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
+          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
+          "cssValues": [""]
         }
       ],
       "rowDefinition": [],
