@@ -16,6 +16,8 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "roshanTitle",
           "responseReturnValue": "content",
+          "successMessageBindingKey": "roshanTitleSuccess",
+          "errorMessageBindingKey": "roshanTitleError",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -87,14 +89,20 @@
             "logic": { "==": [{ "var": "code" }, 1] },
             "triggerName": "Roshan Khidmat Navigate",
             "triggerId": "O-kZccjD2mXLyVbFNiLNS"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.vb3np7k8bcgomCBywcZUy43GW1-11Rt",
-  "updatedAt": "10/2/2023",
-  "createdAt": "10/2/2023",
+  "csrf": "0.01ftzxycnzno51cTyEmYsHey3KuPVCbLz",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }
