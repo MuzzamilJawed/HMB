@@ -32,13 +32,39 @@
             "gridProps": [
               {
                 "type": "10001",
-                "name": "Grid layout",
+                "name": "complete registration2",
                 "id": "V58WmiF1zZvC-cvTeUqiH",
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "BSed-rkPncRXkgtl_axTm",
+                    "id": "Y0vZ13Rjql9a3imW3uLOx",
                     "gridProps": [
+                      {
+                        "id": "zZkdryTHrRivUIgOZj7-v",
+                        "type": "20002",
+                        "name": "Label",
+                        "component": { "content": "Label", "type": "20002" },
+                        "attributes": {
+                          "variant": "body1",
+                          "name": "Label",
+                          "mandatory": false,
+                          "layoutProperties": {
+                            "label": {
+                              "//": "Use this class to style label component."
+                            },
+                            "mainContainer": "label",
+                            "xl": 12,
+                            "lg": 12,
+                            "md": 12,
+                            "sm": 12,
+                            "xs": 12
+                          },
+                          "label": "Register Step Final"
+                        },
+                        "events": [],
+                        "path": "0-0-1-0-0",
+                        "version": "1.0.0"
+                      },
                       {
                         "type": "10001",
                         "id": "4Ot7btp2hD3pV8zFGVVWc",
@@ -429,7 +455,7 @@
                                         "id": "90mAamI26BWnQ26dxSNxH",
                                         "status": "ACTIVE",
                                         "attributes": {
-                                          "label": "Register",
+                                          "label": "Back",
                                           "variant": "outlined",
                                           "name": "Button",
                                           "label-locale-key": "",
@@ -471,8 +497,23 @@
                                           "content": "Button",
                                           "type": "20006"
                                         },
-                                        "events": [],
-                                        "path": "0-0-0-0-0-0-2-0-0-0-3-0-0-0-0"
+                                        "events": [
+                                          {
+                                            "triggerId": "2dKzvTKCM-IpQ8H--JmFZ",
+                                            "triggerName": "Navigate From Complete Registration To OTP SCREEN",
+                                            "serviceType": "1",
+                                            "attributes": {
+                                              "fromWidgetId": "5qUX5WLAkPKEQ-eh8Xxrx",
+                                              "nextWidgetId": "lYAUknTQLI6O6nF9mCMxf",
+                                              "gridRadioValue": "Grid",
+                                              "selectedObjectBindingKey": "selectedObject",
+                                              "editableForm": false
+                                            },
+                                            "type": "2",
+                                            "name": "On click"
+                                          }
+                                        ],
+                                        "path": "0-0-0-0-3-0-0-0-0"
                                       }
                                     ],
                                     "layoutProperties": {
@@ -542,6 +583,22 @@
                                     "type": "column",
                                     "id": "H4Y7KRlKicZscYN6YtXVb",
                                     "gridProps": [
+                                      {
+                                        "id": "6NH3ZWKWQBocKjLy589i9",
+                                        "type": "20031",
+                                        "triggerName": "SUCCESS_MODAL",
+                                        "attributes": {
+                                          "widgetId": "G06u4SDI3a2iJLZcf2SO2",
+                                          "layoutProperties": {
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
                                       {
                                         "id": "OjkCh2Fc-7gebxuIoee0Q",
                                         "status": "ACTIVE",
@@ -663,7 +720,7 @@
                                             "name": "On Submit"
                                           }
                                         ],
-                                        "path": "0-0-0-0-0-0-2-0-0-0-3-1-0-0-0"
+                                        "path": "0-0-0-0-4-1-0-0-1"
                                       }
                                     ],
                                     "layoutProperties": {
@@ -774,8 +831,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-0-0-0-0-2-0-0-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -801,11 +857,12 @@
                     "alignItems": "flex-start"
                   },
                   "direction": "row",
-                  "name": "Grid layout"
+                  "name": "complete registration2",
+                  "isSwappable": true
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-0-0-0-0-2-0-0",
+                "path": "0-0-0",
                 "dimensions": {
                   "rows": 1,
                   "columns": 1,
@@ -813,9 +870,10 @@
                   "colSize0sm": 12,
                   "colSize0md": 12,
                   "colSize0lg": 12,
-                  "colSize0xl": 12
+                  "colSize0xl": 12,
+                  "name": null
                 },
-                "readOnly": false
+                "readOnly": true
               }
             ],
             "layoutProperties": {
@@ -862,8 +920,8 @@
     "gitBranchName": "master",
     "_id": "AWs1XPB3s08u88_lORo2b",
     "createdBy": "masood",
-    "updatedAt": "10/6/2023",
-    "createdAt": "10/6/2023",
+    "updatedAt": "10/26/2023",
+    "createdAt": "10/26/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -921,10 +979,22 @@
   },
   {
     "id": "V58WmiF1zZvC-cvTeUqiH",
-    "name": "Grid layout",
+    "name": "complete registration2",
     "type": "10001",
     "attributes": {
       "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "zZkdryTHrRivUIgOZj7-v",
+          "componentType": "20002",
+          "order": 1
+        },
         {
           "componentId": "4Ot7btp2hD3pV8zFGVVWc",
           "componentType": "10001",
@@ -1016,7 +1086,8 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "complete registration2",
+      "isSwappable": true
     },
     "layout": null,
     "events": [],
@@ -1024,6 +1095,35 @@
     "screenId": "AWs1XPB3s08u88_lORo2b",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "zZkdryTHrRivUIgOZj7-v",
+    "type": "20002",
+    "name": "Label",
+    "component": { "content": "Label", "type": "20002" },
+    "attributes": {
+      "variant": "body1",
+      "name": "Label",
+      "mandatory": false,
+      "layoutProperties": {
+        "label": { "//": "Use this class to style label component." },
+        "mainContainer": "label",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "label": "Register Step Final"
+    },
+    "events": [],
+    "path": "0-0-1-0-0",
+    "version": "1.0.0",
+    "screenId": "AWs1XPB3s08u88_lORo2b",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -1419,7 +1519,7 @@
     "id": "90mAamI26BWnQ26dxSNxH",
     "status": "ACTIVE",
     "attributes": {
-      "label": "Register",
+      "label": "Back",
       "variant": "outlined",
       "name": "Button",
       "label-locale-key": "",
@@ -1454,8 +1554,16 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
-    "path": "0-0-0-0-0-0-2-0-0-0-3-0-0-0-0",
+    "events": [
+      {
+        "triggerId": "2dKzvTKCM-IpQ8H--JmFZ",
+        "triggerName": "Navigate From Complete Registration To OTP SCREEN",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
+    "path": "0-0-0-0-3-0-0-0-0",
     "screenId": "AWs1XPB3s08u88_lORo2b",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -1468,6 +1576,18 @@
     "type": "10001",
     "attributes": {
       "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "6NH3ZWKWQBocKjLy589i9",
+          "componentType": "20031",
+          "order": 1
+        },
         {
           "layoutProperties": {
             "xl": 12,
@@ -1502,6 +1622,22 @@
     "events": [],
     "subType": "component",
     "screenId": "AWs1XPB3s08u88_lORo2b",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "6NH3ZWKWQBocKjLy589i9",
+    "type": "20031",
+    "triggerName": "SUCCESS_MODAL",
+    "attributes": {
+      "widgetId": "G06u4SDI3a2iJLZcf2SO2",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "AWs1XPB3s08u88_lORo2b",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -1553,7 +1689,7 @@
         "serviceType": "8"
       }
     ],
-    "path": "0-0-0-0-0-0-2-0-0-0-3-1-0-0-0",
+    "path": "0-0-0-0-4-1-0-0-1",
     "screenId": "AWs1XPB3s08u88_lORo2b",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

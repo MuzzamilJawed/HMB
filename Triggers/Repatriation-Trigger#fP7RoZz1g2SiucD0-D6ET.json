@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "repatriationResponse",
+          "successMessageBindingKey": "repatriationResponseSuccess",
+          "errorMessageBindingKey": "repatriationResponseError",
           "url": "/npc/repatriation",
           "checksum": true,
           "encryption": true,
@@ -137,64 +139,24 @@
         },
         "responseHandler": [
           {
-            "httpStatus": 400,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 403,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
-            "httpStatus": 502,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF"
-          },
-          {
             "httpStatus": 200,
-            "triggerName": "REPATRIATION_ERROR_TRIGGER",
-            "triggerId": "B-Rl2MNDi4sF_p45yPaSF",
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
             "logic": { "==": [{ "var": "code" }, 0] }
           },
           {
             "httpStatus": 200,
-            "triggerName": "Repatriation_Success_TRIGGER",
-            "triggerId": "4aPrPYpv23WaTeUyFyK9X",
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
             "logic": { "==": [{ "var": "code" }, 1] }
           }
         ]
       }
     }
   ],
-  "csrf": "0.m7effb7n0opu7N6kspjilh59tin05ybq",
-  "updatedAt": "10/4/2023",
-  "createdAt": "10/4/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

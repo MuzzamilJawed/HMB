@@ -1,0 +1,67 @@
+{
+  "id": "aTUdcA2YIUb8Xyjkxc_GU",
+  "name": "Standing Instruction Mapping",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "standingInstructions",
+          "sourceBindingKey": "kuch bhi",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "executionType",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "PAY_LATER", "PAY_LATER"] }
+            },
+            {
+              "key": "frequency",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.frequency.code" }
+            },
+            {
+              "key": "name",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.siTitle" }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.occurrence" },
+              "key": "noOfOccurrences"
+            },
+            {
+              "key": "startDate",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.startDate" }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.beneForSi.transferType" },
+              "key": "transferType"
+            },
+            {
+              "key": "transactionType",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "FT", "FT"] }
+            }
+          ],
+          "targettedType": "object"
+        }
+      }
+    }
+  ],
+  "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
+  "_id": "bOlxEF3v7JmNoWi1nYllo",
+  "updatedAt": "10/31/2023",
+  "createdAt": "10/31/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

@@ -35,8 +35,8 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "#F1F5F1",
-              "height": "100vh"
+              "background": "rgb(241,245,241)",
+              "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
           },
@@ -60,11 +60,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "MlacFTY32LXjleCT2oZy6",
+            "id": "7TQgEvXWhPE_ArebOvGIs",
             "gridProps": [
               {
                 "type": "10001",
@@ -580,7 +580,7 @@
                                                                           "iconname": "IoIosArrowForward",
                                                                           "disableCondition": {
                                                                             "logic": {
-                                                                              "!=": [
+                                                                              "==": [
                                                                                 {
                                                                                   "var": "currentScreen.form.toAccount.accountNumber"
                                                                                 },
@@ -620,7 +620,7 @@
                                                                             "serviceType": "8"
                                                                           }
                                                                         ],
-                                                                        "path": "0-0-1-0-0-0-2-2-0-0-1",
+                                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
                                                                         "screenId": "C8g00ZoxLb4dtSCRZAGUY",
                                                                         "subType": "component",
                                                                         "projectId": "640ee2a26ead56231ce8350b",
@@ -1813,8 +1813,86 @@
                                                                   "dataValue": "name",
                                                                   "mandatory": true,
                                                                   "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This Field is Required"
+                                                                    "required": true,
+                                                                    "errorMsg": "This Field is Required",
+                                                                    "bindButton": [
+                                                                      {
+                                                                        "id": "a_lMhXys019GiESod1cVA",
+                                                                        "status": "ACTIVE",
+                                                                        "attributes": {
+                                                                          "label": "Next",
+                                                                          "variant": "contained",
+                                                                          "name": "Button",
+                                                                          "label-locale-key": "",
+                                                                          "fullWidth": true,
+                                                                          "layoutProperties": {
+                                                                            "button": {
+                                                                              "//": "Use this class to style button component."
+                                                                            },
+                                                                            "inputProps": {
+                                                                              "//": "Use this class to style button element."
+                                                                            },
+                                                                            "mainContainer": "button",
+                                                                            "xl": 12,
+                                                                            "lg": 12,
+                                                                            "md": 12,
+                                                                            "sm": 12,
+                                                                            "xs": 12
+                                                                          },
+                                                                          "iconName": "IoIosArrowForward",
+                                                                          "buttonIconPosition": "end",
+                                                                          "asset": null,
+                                                                          "iconname": "IoIosArrowForward",
+                                                                          "disableCondition": {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "currentScreen.form.toAccount.accountNumber"
+                                                                                },
+                                                                                {
+                                                                                  "var": "currentScreen.form.fromAccount.accountNumber"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          },
+                                                                          "cssClassNames": [
+                                                                            {
+                                                                              "cssClassName": "hmbButtonCSS "
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "name": "Button",
+                                                                        "icon": "FaBimobject",
+                                                                        "group": "Form",
+                                                                        "type": "20006",
+                                                                        "Documentation": "<div>components 12344</div>",
+                                                                        "updatedAt": "23-Aug-2021",
+                                                                        "createdAt": "23-Aug-2021",
+                                                                        "order": 1,
+                                                                        "version": "1.0.0",
+                                                                        "isLatest": true,
+                                                                        "projectType": "web",
+                                                                        "component": {
+                                                                          "content": "Button",
+                                                                          "type": "20006"
+                                                                        },
+                                                                        "events": [
+                                                                          {
+                                                                            "triggerId": "SF9UsYJRxD0R2fgKGARVr",
+                                                                            "triggerName": "getAccountDetails OWN",
+                                                                            "name": "On Submit",
+                                                                            "type": "4",
+                                                                            "serviceType": "8"
+                                                                          }
+                                                                        ],
+                                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
+                                                                        "screenId": "C8g00ZoxLb4dtSCRZAGUY",
+                                                                        "subType": "component",
+                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                        "gitBranchName": "master",
+                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   "layoutProperties": {
                                                                     "autocomplete": {
@@ -2397,7 +2475,7 @@
                                                                           "iconname": "IoIosArrowForward",
                                                                           "disableCondition": {
                                                                             "logic": {
-                                                                              "!=": [
+                                                                              "==": [
                                                                                 {
                                                                                   "var": "currentScreen.form.toAccount.accountNumber"
                                                                                 },
@@ -2437,7 +2515,7 @@
                                                                             "serviceType": "8"
                                                                           }
                                                                         ],
-                                                                        "path": "0-0-1-0-0-0-2-2-0-0-1",
+                                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
                                                                         "screenId": "C8g00ZoxLb4dtSCRZAGUY",
                                                                         "subType": "component",
                                                                         "projectId": "640ee2a26ead56231ce8350b",
@@ -3660,7 +3738,7 @@
                                                                           "iconname": "IoIosArrowForward",
                                                                           "disableCondition": {
                                                                             "logic": {
-                                                                              "!=": [
+                                                                              "==": [
                                                                                 {
                                                                                   "var": "currentScreen.form.toAccount.accountNumber"
                                                                                 },
@@ -3700,7 +3778,7 @@
                                                                             "serviceType": "8"
                                                                           }
                                                                         ],
-                                                                        "path": "0-0-1-0-0-0-2-2-0-0-1",
+                                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
                                                                         "screenId": "C8g00ZoxLb4dtSCRZAGUY",
                                                                         "subType": "component",
                                                                         "projectId": "640ee2a26ead56231ce8350b",
@@ -3891,7 +3969,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "oigCRI9g15O1Ad3f1z1Eb",
+                                            "id": "KPbqnsm-noe3ixGIJ1YPT",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -3952,12 +4030,11 @@
                                               "md": 8,
                                               "sm": 8,
                                               "xs": 8
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-1-0"
+                                            }
                                           },
                                           {
                                             "type": "column",
-                                            "id": "JMdjCRr8qS2v3jYPDy51K",
+                                            "id": "F-ig_wlCWlMSJjQGM2t-l",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -4000,7 +4077,8 @@
                                                             {
                                                               "cssClassName": "hmbBackButton "
                                                             }
-                                                          ]
+                                                          ],
+                                                          "hideComponent": true
                                                         },
                                                         "name": "Button",
                                                         "icon": "FaBimobject",
@@ -4096,12 +4174,11 @@
                                               "md": 2,
                                               "sm": 2,
                                               "xs": 2
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-1-1"
+                                            }
                                           },
                                           {
                                             "type": "column",
-                                            "id": "J5eN6XJ85322MYaZC_03u",
+                                            "id": "HrSXeNQqqgB2GQGn5Xx66",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -4113,11 +4190,11 @@
                                                     "id": "J89AF1FIhsNYZqwoJ83-o",
                                                     "gridProps": [
                                                       {
-                                                        "id": "Y6aMluZdU5Qcp-UicJbMa",
+                                                        "id": "yW986MWI8V7q9_pcEzbnL",
                                                         "type": "20031",
-                                                        "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+                                                        "triggerName": "ERROR_MODAL",
                                                         "attributes": {
-                                                          "widgetId": "r2Q1NDtpheGCC3ZufYkhg",
+                                                          "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
                                                           "layoutProperties": {
                                                             "xl": 12,
                                                             "lg": 12,
@@ -4128,8 +4205,7 @@
                                                         },
                                                         "component": {
                                                           "type": "20031"
-                                                        },
-                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-0"
+                                                        }
                                                       },
                                                       {
                                                         "id": "a_lMhXys019GiESod1cVA",
@@ -4325,8 +4401,7 @@
                                               "md": 2,
                                               "sm": 2,
                                               "xs": 2
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-1-2"
+                                            }
                                           }
                                         ],
                                         "allowedContainers": [
@@ -4342,7 +4417,7 @@
                                           "layoutProperties": {
                                             "gridLayout": {
                                               "//": "Use this class to style grid layout component.",
-                                              "padding": "2vw 28px",
+                                              "padding": "1vw 28px",
                                               "spacing": 0
                                             },
                                             "mainContainer": "gridLayout"
@@ -4378,8 +4453,7 @@
                                           "colSize2sm": 2,
                                           "colSize2md": 2,
                                           "colSize2lg": 2,
-                                          "colSize2xl": 2,
-                                          "layoutProperties": null
+                                          "colSize2xl": 2
                                         },
                                         "readOnly": true
                                       }
@@ -4535,8 +4609,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -4560,8 +4633,8 @@
     "gitBranchName": "master",
     "_id": "C8g00ZoxLb4dtSCRZAGUY",
     "createdBy": "masood",
-    "updatedAt": "10/24/2023",
-    "createdAt": "10/24/2023",
+    "updatedAt": "11/1/2023",
+    "createdAt": "11/1/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4596,8 +4669,8 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "#F1F5F1",
-          "height": "100vh"
+          "background": "rgb(241,245,241)",
+          "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
       },
@@ -5316,7 +5389,7 @@
               "iconname": "IoIosArrowForward",
               "disableCondition": {
                 "logic": {
-                  "!=": [
+                  "==": [
                     { "var": "currentScreen.form.toAccount.accountNumber" },
                     { "var": "currentScreen.form.fromAccount.accountNumber" }
                   ]
@@ -5345,7 +5418,7 @@
                 "serviceType": "8"
               }
             ],
-            "path": "0-0-1-0-0-0-2-2-0-0-1",
+            "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
             "screenId": "C8g00ZoxLb4dtSCRZAGUY",
             "subType": "component",
             "projectId": "640ee2a26ead56231ce8350b",
@@ -6385,7 +6458,75 @@
       "dataKey": "name",
       "dataValue": "name",
       "mandatory": true,
-      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This Field is Required",
+        "bindButton": [
+          {
+            "id": "a_lMhXys019GiESod1cVA",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "iconName": "IoIosArrowForward",
+              "buttonIconPosition": "end",
+              "asset": null,
+              "iconname": "IoIosArrowForward",
+              "disableCondition": {
+                "logic": {
+                  "==": [
+                    { "var": "currentScreen.form.toAccount.accountNumber" },
+                    { "var": "currentScreen.form.fromAccount.accountNumber" }
+                  ]
+                }
+              },
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "SF9UsYJRxD0R2fgKGARVr",
+                "triggerName": "getAccountDetails OWN",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "8"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
+            "screenId": "C8g00ZoxLb4dtSCRZAGUY",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown."
@@ -6730,7 +6871,7 @@
               "iconname": "IoIosArrowForward",
               "disableCondition": {
                 "logic": {
-                  "!=": [
+                  "==": [
                     { "var": "currentScreen.form.toAccount.accountNumber" },
                     { "var": "currentScreen.form.fromAccount.accountNumber" }
                   ]
@@ -6759,7 +6900,7 @@
                 "serviceType": "8"
               }
             ],
-            "path": "0-0-1-0-0-0-2-2-0-0-1",
+            "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
             "screenId": "C8g00ZoxLb4dtSCRZAGUY",
             "subType": "component",
             "projectId": "640ee2a26ead56231ce8350b",
@@ -7838,7 +7979,7 @@
               "iconname": "IoIosArrowForward",
               "disableCondition": {
                 "logic": {
-                  "!=": [
+                  "==": [
                     { "var": "currentScreen.form.toAccount.accountNumber" },
                     { "var": "currentScreen.form.fromAccount.accountNumber" }
                   ]
@@ -7867,7 +8008,7 @@
                 "serviceType": "8"
               }
             ],
-            "path": "0-0-1-0-0-0-2-2-0-0-1",
+            "path": "0-0-0-0-1-0-0-0-1-2-0-0-1",
             "screenId": "C8g00ZoxLb4dtSCRZAGUY",
             "subType": "component",
             "projectId": "640ee2a26ead56231ce8350b",
@@ -7949,7 +8090,7 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "2vw 28px",
+          "padding": "1vw 28px",
           "spacing": 0
         },
         "mainContainer": "gridLayout"
@@ -8072,7 +8213,8 @@
       "buttonIconPosition": "start",
       "iconName": "IoIosArrowBack",
       "iconname": "IoIosArrowBack",
-      "cssClassNames": [{ "cssClassName": "hmbBackButton " }]
+      "cssClassNames": [{ "cssClassName": "hmbBackButton " }],
+      "hideComponent": true
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -8116,7 +8258,7 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "Y6aMluZdU5Qcp-UicJbMa",
+          "componentId": "yW986MWI8V7q9_pcEzbnL",
           "componentType": "20031",
           "order": 1
         },
@@ -8161,15 +8303,14 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "Y6aMluZdU5Qcp-UicJbMa",
+    "id": "yW986MWI8V7q9_pcEzbnL",
     "type": "20031",
-    "triggerName": "FUNDS_TRANSFER_ERROR_TRIGGER",
+    "triggerName": "ERROR_MODAL",
     "attributes": {
-      "widgetId": "r2Q1NDtpheGCC3ZufYkhg",
+      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
       "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
     },
     "component": { "type": "20031" },
-    "path": "0-0-0-0-1-0-0-0-1-2-0-0-0",
     "screenId": "C8g00ZoxLb4dtSCRZAGUY",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

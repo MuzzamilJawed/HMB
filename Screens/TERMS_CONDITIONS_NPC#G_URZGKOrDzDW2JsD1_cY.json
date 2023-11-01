@@ -61,11 +61,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "GzSli0nICWIkIBwaSjqQz",
+            "id": "O74jdjcMN3B8fJEkQklmi",
             "gridProps": [
               {
                 "type": "10001",
@@ -479,7 +479,8 @@
                                                     {
                                                       "cssClassName": "Responsive-Button-Text "
                                                     }
-                                                  ]
+                                                  ],
+                                                  "hideComponent": true
                                                 },
                                                 "name": "Button",
                                                 "icon": "FaBimobject",
@@ -588,14 +589,7 @@
                                                   "fullWidth": true,
                                                   "layoutProperties": {
                                                     "button": {
-                                                      "//": "Use this class to style button component.",
-                                                      "height": "2.7rem",
-                                                      "border-radius": "8px",
-                                                      "border": "1px solid #FFFFFF",
-                                                      "background": "#19612F",
-                                                      "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)",
-                                                      "width": "100%",
-                                                      "padding": "1vw"
+                                                      "//": "Use this class to style button component."
                                                     },
                                                     "inputProps": {
                                                       "//": "Use this class to style button element."
@@ -609,7 +603,7 @@
                                                   },
                                                   "cssClassNames": [
                                                     {
-                                                      "cssClassName": "Responsive-Button-Text "
+                                                      "cssClassName": "hmbButtonCSS "
                                                     }
                                                   ],
                                                   "buttonIconPosition": "end",
@@ -867,8 +861,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -891,9 +884,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "G_URZGKOrDzDW2JsD1_cY",
-    "createdBy": "muhammad.asad",
-    "updatedAt": "9/27/2023",
-    "createdAt": "9/27/2023",
+    "createdBy": "masood",
+    "updatedAt": "10/30/2023",
+    "createdAt": "10/30/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1451,7 +1444,8 @@
         "sm": 12,
         "xs": 12
       },
-      "cssClassNames": [{ "cssClassName": "Responsive-Button-Text " }]
+      "cssClassNames": [{ "cssClassName": "Responsive-Button-Text " }],
+      "hideComponent": true
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -1536,16 +1530,7 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "2.7rem",
-          "border-radius": "8px",
-          "border": "1px solid #FFFFFF",
-          "background": "#19612F",
-          "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)",
-          "width": "100%",
-          "padding": "1vw"
-        },
+        "button": { "//": "Use this class to style button component." },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -1554,7 +1539,7 @@
         "sm": 12,
         "xs": 12
       },
-      "cssClassNames": [{ "cssClassName": "Responsive-Button-Text " }],
+      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }],
       "buttonIconPosition": "end",
       "asset": null,
       "iconname": "IoIosArrowForward",

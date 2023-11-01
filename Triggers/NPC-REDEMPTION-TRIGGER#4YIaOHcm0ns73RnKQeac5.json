@@ -14,7 +14,9 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "npcRedemptionResponse",
+          "responseStateKey": "npcResponse",
+          "successMessageBindingKey": "npcResponseSuccess",
+          "errorMessageBindingKey": "npcResponseError",
           "url": "/npc/submit",
           "checksum": true,
           "encryption": true,
@@ -100,54 +102,24 @@
         },
         "responseHandler": [
           {
-            "httpStatus": 400,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
-          },
-          {
             "httpStatus": 200,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM",
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
             "logic": { "==": [{ "var": "code" }, 0] }
           },
           {
             "httpStatus": 200,
-            "triggerName": "NPC_SUCCESS_MODAL_TRIGGER",
-            "triggerId": "r5HMfjFyaVSDWusA8llx-",
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
             "logic": { "==": [{ "var": "code" }, 1] }
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-            "triggerId": "tHRAD_Gx92UB1lWTPm4oM"
           }
         ]
       }
     }
   ],
-  "csrf": "0.p0t6zda11yQ_xAK2i0dt-NuKlahIDC-",
-  "updatedAt": "9/27/2023",
-  "createdAt": "9/27/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

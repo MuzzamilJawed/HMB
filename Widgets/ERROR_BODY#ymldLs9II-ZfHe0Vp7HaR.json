@@ -171,13 +171,13 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "DHOvYiUFA0X4e77wG5mR2",
+                    "id": "lSq2Jzt4QD7s7BmI0EJ6t",
                     "gridProps": [
                       {
                         "id": "kOSz1JCsAvgQryAMuZ-2F",
                         "status": "ACTIVE",
                         "attributes": {
-                          "label": "Okay !",
+                          "label": "Okay",
                           "variant": "contained",
                           "name": "Button",
                           "label-locale-key": "",
@@ -187,8 +187,8 @@
                               "//": "Use this class to style button component.",
                               "color": "#FFFFFF",
                               "width": "100%",
-                              "background": "#da4453",
-                              "borderColor": "#da4453",
+                              "background": "#da4453 !important",
+                              "borderColor": "#da4453 !important",
                               "height": "3rem",
                               " font-family": " Circular Std",
                               "font-size": "18px",
@@ -224,8 +224,21 @@
                         "isLatest": true,
                         "projectType": "web",
                         "component": { "content": "Button", "type": "20006" },
-                        "events": [],
-                        "path": "0-0-1-0-0"
+                        "events": [
+                          {
+                            "triggerId": "oRjgnx2EsxTujzcUwuv4o",
+                            "triggerName": "Hide Error Modal",
+                            "serviceType": "9",
+                            "attributes": {
+                              "content": "",
+                              "type": "",
+                              "modalId": "E9heLnv43MGwg0R_ADlj4"
+                            },
+                            "type": "2",
+                            "name": "On click"
+                          }
+                        ],
+                        "path": "0-0-2-0-0"
                       }
                     ],
                     "layoutProperties": {
@@ -234,8 +247,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-1-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -253,7 +265,7 @@
                       "//": "Use this class to style grid layout component.",
                       "padding": "0px",
                       "spacing": 0,
-                      "margin": "10px 0px"
+                      "margin": "0px 0px"
                     },
                     "mainContainer": "gridLayout"
                   },
@@ -267,7 +279,7 @@
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-1",
+                "path": "0-0-2",
                 "dimensions": {
                   "rows": 1,
                   "columns": 1,
@@ -275,7 +287,8 @@
                   "colSize0sm": 12,
                   "colSize0md": 12,
                   "colSize0lg": 12,
-                  "colSize0xl": 12
+                  "colSize0xl": 12,
+                  "layoutProperties": null
                 },
                 "readOnly": true
               }
@@ -309,7 +322,7 @@
             "alignItems": "flex-start"
           },
           "direction": "row",
-          "name": "Grid layout"
+          "name": "ERROR_BODY"
         },
         "component": { "type": "10001", "content": "Grid layout" },
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
@@ -324,8 +337,8 @@
     "gitBranchName": "master",
     "_id": "ymldLs9II-ZfHe0Vp7HaR",
     "createdBy": "muhammad.asad",
-    "updatedAt": "10/23/2023",
-    "createdAt": "10/23/2023",
+    "updatedAt": "11/1/2023",
+    "createdAt": "11/1/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -407,7 +420,7 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "ERROR_BODY"
     },
     "layout": null,
     "events": [],
@@ -495,11 +508,11 @@
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "subType": "component",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-0",
     "screenId": "ymldLs9II-ZfHe0Vp7HaR",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
@@ -561,7 +574,7 @@
           "//": "Use this class to style grid layout component.",
           "padding": "0px",
           "spacing": 0,
-          "margin": "10px 0px"
+          "margin": "0px 0px"
         },
         "mainContainer": "gridLayout"
       },
@@ -586,7 +599,7 @@
     "id": "kOSz1JCsAvgQryAMuZ-2F",
     "status": "ACTIVE",
     "attributes": {
-      "label": "Okay !",
+      "label": "Okay",
       "variant": "contained",
       "name": "Button",
       "label-locale-key": "",
@@ -596,8 +609,8 @@
           "//": "Use this class to style button component.",
           "color": "#FFFFFF",
           "width": "100%",
-          "background": "#da4453",
-          "borderColor": "#da4453",
+          "background": "#da4453 !important",
+          "borderColor": "#da4453 !important",
           "height": "3rem",
           " font-family": " Circular Std",
           "font-size": "18px",
@@ -633,8 +646,16 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
-    "path": "0-0-1-0-0",
+    "events": [
+      {
+        "triggerId": "oRjgnx2EsxTujzcUwuv4o",
+        "triggerName": "Hide Error Modal",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "9"
+      }
+    ],
+    "path": "0-0-2-0-0",
     "screenId": "ymldLs9II-ZfHe0Vp7HaR",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

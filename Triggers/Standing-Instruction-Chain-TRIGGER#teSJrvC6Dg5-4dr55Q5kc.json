@@ -1,0 +1,478 @@
+{
+  "id": "KPi36fz1ebkBW5ANt_l2Y",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Standing Instruction Chain TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "aTUdcA2YIUb8Xyjkxc_GU",
+              "name": "Standing Instruction Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "standingInstructions",
+                      "sourceBindingKey": "kuch bhi",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "executionType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "PAY_LATER", "PAY_LATER"] }
+                        },
+                        {
+                          "key": "frequency",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.frequency.code"
+                          }
+                        },
+                        {
+                          "key": "name",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.siTitle" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.occurrence" },
+                          "key": "noOfOccurrences"
+                        },
+                        {
+                          "key": "startDate",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.startDate" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.beneForSi.transferType"
+                          },
+                          "key": "transferType"
+                        },
+                        {
+                          "key": "transactionType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "FT", "FT"] }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
+              "_id": "bOlxEF3v7JmNoWi1nYllo",
+              "updatedAt": "10/31/2023",
+              "createdAt": "10/31/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "tlf8viAAvlSK6Ee1uEtLp",
+              "_id": "Oa0nJiHp8bRUrWdVfToTj",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Standing Instruction TRIGGER",
+              "old_name": "Standing Instruction TRIGGER",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "SI_Response",
+                      "url": "/transfer",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": true,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountId",
+                          "value": "selectedAccount.accountId"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "actualAmount",
+                          "value": "amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "amountInWords",
+                          "value": "Amount_In_Words_amount"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "bankIMD",
+                          "value": "beneForSi.bankIMD"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "bankName",
+                          "value": "beneForSi.bankName"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "beneficiary",
+                          "value": "true"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneficiaryEmail",
+                          "value": "beneForSi.email"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "beneficiaryMobile",
+                          "value": "beneForSi.mobile"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "beneficiaryName",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "cardTitle",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "chargesPayInstr",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "comments",
+                          "value": "comments"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "convertedAmount",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "endDate",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "endingOption",
+                          "value": "endingOption"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "exchangeRate",
+                          "value": "1"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "executionType",
+                          "value": "PAY_LATER"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "frequency",
+                          "value": "frequency.code"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountIban",
+                          "value": "selectedAccount.iban"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountNumber",
+                          "value": "selectedAccount.accountNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromAccountTitle",
+                          "value": "selectedAccount.accountTitle"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "fromBranchCode",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "fromCardNumber",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "fromCurrency",
+                          "value": "amountCurrency.code"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "iban",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "instrumentType",
+                          "value": "beneForSi.instrumentType"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "namePrm",
+                          "value": "q"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "noOfOccurrences",
+                          "value": "occurrence"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "orgCode",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "otpVisible",
+                          "value": "false"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "purposeOfPayment",
+                          "value": "purpose.name"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "rda",
+                          "value": "accountDetailsForSi.content.rda"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "requestDate",
+                          "value": "accountDetailsForSi.content.requestDate"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "requestNumber",
+                          "value": "accountDetailsForSi.content.requestNumber"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "returnBalance",
+                          "value": "true"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "saveAsBene",
+                          "value": "false"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "startDate",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "state",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "swiftCode",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "toAccountNumber",
+                          "value": "beneForSi.accountNumber"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "toAccountTitle",
+                          "value": "beneForSi.accountTitle"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "toCardNumber",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "toCountryCode",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "toCurrency",
+                          "value": "amountCurrency.code"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "transactionCurrency",
+                          "value": "amountCurrency.code"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "transactionFee",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "transferToOption",
+                          "value": "beneficiary"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "transferType",
+                          "value": "beneForSi.transferType"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "validation",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "raast",
+                          "value": "selectedAccount.raast"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "byCard",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "isByCard",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "isRaast",
+                          "value": "selectedAccount.raast"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "localIsRaast",
+                          "value": "selectedAccount.raast"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "raastMessageId",
+                          "value": "null"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "standingInstructions",
+                          "value": "standingInstructions"
+                        }
+                      ],
+                      "baseURL": "6502f5a7c9bf2957746c9973",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
+              "updatedAt": "10/31/2023",
+              "createdAt": "10/31/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["aTUdcA2YIUb8Xyjkxc_GU", "tlf8viAAvlSK6Ee1uEtLp"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
+  "_id": "teSJrvC6Dg5-4dr55Q5kc",
+  "updatedAt": "10/31/2023",
+  "createdAt": "10/31/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

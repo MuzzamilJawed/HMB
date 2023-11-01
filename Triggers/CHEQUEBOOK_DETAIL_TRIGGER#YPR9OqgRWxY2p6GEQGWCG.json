@@ -1,8 +1,10 @@
 {
   "id": "d1vxJnTP1MSSm-d7l3M9E",
+  "_id": "YPR9OqgRWxY2p6GEQGWCG",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "CHEQUEBOOK_DETAIL_TRIGGER",
+  "old_name": "CHEQUEBOOK_DETAIL_TRIGGER",
   "status": "ACTIVE",
   "services": [
     {
@@ -13,7 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "chequeDetail",
-          "responseReturnValue": "content.chequeDetail",
+          "successMessageBindingKey": "chequeDetailSuccess",
+          "errorMessageBindingKey": "chequeDetailError",
           "url": "/chequeInfo",
           "checksum": true,
           "encryption": true,
@@ -54,14 +57,20 @@
           "baseURL": "65003e4e61f0645ad866d812",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.f5g7ktad4nn36ksge70vLC-Y-NNPs9IM",
-  "_id": "YPR9OqgRWxY2p6GEQGWCG",
-  "updatedAt": "9/12/2023",
-  "createdAt": "9/12/2023",
+  "csrf": "0.cuyos4ti3uh6hFz0rOURYXTAFuFYjWBm",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

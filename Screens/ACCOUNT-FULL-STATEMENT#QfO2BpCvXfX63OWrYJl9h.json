@@ -35,8 +35,8 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "#F1F5F1",
-              "height": "100vh"
+              "background": "rgb(241,245,241)",
+              "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
           },
@@ -60,11 +60,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "nQB2xTywnM2beiGYKEZXS",
+            "id": "HYzj_I-cdju8vEfpKfRJn",
             "gridProps": [
               {
                 "type": "10001",
@@ -245,7 +245,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "JpQrLRjX1cdtoJKVYXyKD",
+                                            "id": "ahhKfZE5F8_xq1fZRmQ_2",
                                             "gridProps": [
                                               {
                                                 "id": "XqhxgV_V1-ehlUp4GOhXu",
@@ -296,12 +296,64 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-0-0-1-0-1-0"
+                                            }
                                           }
                                         ],
-                                        "path": "0-0-0-0-0-0-1-0-1",
-                                        "events": [],
+                                        "path": "0-0-0-0-0-0-1-0-0",
+                                        "events": [
+                                          {
+                                            "triggerId": "55znhNq-lzQUP7s8vAeaf",
+                                            "triggerName": "getAllAccountsWithBalance",
+                                            "serviceType": "8",
+                                            "attributes": {
+                                              "loaderWidgetIds": [906070],
+                                              "messageWidgetIds": [906070],
+                                              "responseStateKey": "accountdetails",
+                                              "responseReturnValue": "content.casaAccounts",
+                                              "url": "/getAllAccountsWithBalance",
+                                              "checksum": true,
+                                              "encryption": true,
+                                              "isDeviceDetails": true,
+                                              "loginTrigger": false,
+                                              "formData": false,
+                                              "logoutTrigger": false,
+                                              "headers": {
+                                                "Content-Type": "application/json",
+                                                "channel_key": "005"
+                                              },
+                                              "requestBody": [
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "status",
+                                                  "value": "A"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "accountType",
+                                                  "value": "ALL"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "currentFilter",
+                                                  "value": "ALL"
+                                                },
+                                                {
+                                                  "type": 4,
+                                                  "name": "Static",
+                                                  "key": "includeBalance",
+                                                  "value": "true"
+                                                }
+                                              ],
+                                              "baseURL": "64f9a08b683922479c062070",
+                                              "storeType": 2
+                                            },
+                                            "type": "1",
+                                            "name": "On initialization"
+                                          }
+                                        ],
                                         "attributes": {
                                           "gridProps": [],
                                           "label": "Header",
@@ -332,7 +384,17 @@
                                           "20010",
                                           "widget"
                                         ],
-                                        "name": "Grid layout"
+                                        "name": "Grid layout",
+                                        "dimensions": {
+                                          "rows": 1,
+                                          "columns": 1,
+                                          "colSize0xs": 12,
+                                          "colSize0sm": 12,
+                                          "colSize0md": 12,
+                                          "colSize0lg": 12,
+                                          "colSize0xl": 12
+                                        },
+                                        "readOnly": true
                                       },
                                       {
                                         "type": "10001",
@@ -435,8 +497,7 @@
                                                           },
                                                           "layoutProperties": {
                                                             "autocomplete": {
-                                                              "//": "Use this class to style autocomplete component in dropdown.",
-                                                              "border-radius": "10px"
+                                                              "//": "Use this class to style autocomplete component in dropdown."
                                                             },
                                                             "textField": {
                                                               "//": "Use this class to style textField component in dropdown.",
@@ -446,14 +507,7 @@
                                                               "width": "97%"
                                                             },
                                                             "inputProps": {
-                                                              "//": "Use this class to style dropdown element.",
-                                                              "padding": "0px !important",
-                                                              "fontFamily": "Circular Std !important",
-                                                              "fontSize": "12px",
-                                                              "color": "#989898",
-                                                              "fontStyle": "normal",
-                                                              "fontWeight": "450",
-                                                              "lineHeight": "16px"
+                                                              "//": "Use this class to style dropdown element."
                                                             },
                                                             "mainContainer": "autocomplete",
                                                             "xl": 12,
@@ -1455,6 +1509,60 @@
                                                     "id": "IEhqcigbIA5MkRTamRoKp",
                                                     "gridProps": [
                                                       {
+                                                        "id": "6NH3ZWKWQBocKjLy589i9",
+                                                        "type": "20031",
+                                                        "triggerName": "SUCCESS_MODAL",
+                                                        "attributes": {
+                                                          "widgetId": "G06u4SDI3a2iJLZcf2SO2",
+                                                          "layoutProperties": {
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          }
+                                                        },
+                                                        "component": {
+                                                          "type": "20031"
+                                                        }
+                                                      },
+                                                      {
+                                                        "id": "yW986MWI8V7q9_pcEzbnL",
+                                                        "type": "20031",
+                                                        "triggerName": "ERROR_MODAL",
+                                                        "attributes": {
+                                                          "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                                                          "layoutProperties": {
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          }
+                                                        },
+                                                        "component": {
+                                                          "type": "20031"
+                                                        }
+                                                      },
+                                                      {
+                                                        "id": "yW986MWI8V7q9_pcEzbnL",
+                                                        "type": "20031",
+                                                        "triggerName": "ERROR_MODAL",
+                                                        "attributes": {
+                                                          "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                                                          "layoutProperties": {
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          }
+                                                        },
+                                                        "component": {
+                                                          "type": "20031"
+                                                        }
+                                                      },
+                                                      {
                                                         "id": "UtxT-HdA1uzH0hxxCrmW6",
                                                         "status": "ACTIVE",
                                                         "attributes": {
@@ -1583,17 +1691,9 @@
                                                             },
                                                             "type": "4",
                                                             "name": "On Submit"
-                                                          },
-                                                          {
-                                                            "triggerId": "C9VAY5AImRfVpeNy7pz65",
-                                                            "triggerName": "Clear Form Data",
-                                                            "serviceType": "14",
-                                                            "attributes": {},
-                                                            "type": "2",
-                                                            "name": "On click"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-0-0-1-0-3-2-0-0-0"
+                                                        "path": "0-0-0-0-0-0-1-0-3-2-0-0-3"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -1854,8 +1954,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -1879,8 +1978,8 @@
     "gitBranchName": "master",
     "_id": "QfO2BpCvXfX63OWrYJl9h",
     "createdBy": "masood",
-    "updatedAt": "10/25/2023",
-    "createdAt": "10/25/2023",
+    "updatedAt": "11/1/2023",
+    "createdAt": "11/1/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1915,8 +2014,8 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "#F1F5F1",
-          "height": "100vh"
+          "background": "rgb(241,245,241)",
+          "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
       },
@@ -2343,7 +2442,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "55znhNq-lzQUP7s8vAeaf",
+        "triggerName": "getAllAccountsWithBalance",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "QfO2BpCvXfX63OWrYJl9h",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -2558,8 +2664,7 @@
       },
       "layoutProperties": {
         "autocomplete": {
-          "//": "Use this class to style autocomplete component in dropdown.",
-          "border-radius": "10px"
+          "//": "Use this class to style autocomplete component in dropdown."
         },
         "textField": {
           "//": "Use this class to style textField component in dropdown.",
@@ -2568,16 +2673,7 @@
           "paddingBottom": "10px",
           "width": "97%"
         },
-        "inputProps": {
-          "//": "Use this class to style dropdown element.",
-          "padding": "0px !important",
-          "fontFamily": "Circular Std !important",
-          "fontSize": "12px",
-          "color": "#989898",
-          "fontStyle": "normal",
-          "fontWeight": "450",
-          "lineHeight": "16px"
-        },
+        "inputProps": { "//": "Use this class to style dropdown element." },
         "mainContainer": "autocomplete",
         "xl": 12,
         "lg": 12,
@@ -3429,6 +3525,30 @@
             "sm": 12,
             "xs": 12
           },
+          "componentId": "6NH3ZWKWQBocKjLy589i9",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "yW986MWI8V7q9_pcEzbnL",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
           "componentId": "UtxT-HdA1uzH0hxxCrmW6",
           "componentType": "20006",
           "order": 1
@@ -3455,6 +3575,38 @@
     "events": [],
     "subType": "component",
     "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "6NH3ZWKWQBocKjLy589i9",
+    "type": "20031",
+    "triggerName": "SUCCESS_MODAL",
+    "attributes": {
+      "widgetId": "G06u4SDI3a2iJLZcf2SO2",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "yW986MWI8V7q9_pcEzbnL",
+    "type": "20031",
+    "triggerName": "ERROR_MODAL",
+    "attributes": {
+      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "QfO2BpCvXfX63OWrYJl9h",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -3500,16 +3652,9 @@
         "name": "On Submit",
         "type": "4",
         "serviceType": "8"
-      },
-      {
-        "triggerId": "C9VAY5AImRfVpeNy7pz65",
-        "triggerName": "Clear Form Data",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "14"
       }
     ],
-    "path": "0-0-0-0-0-0-1-0-3-2-0-0-0",
+    "path": "0-0-0-0-0-0-1-0-3-2-0-0-3",
     "screenId": "QfO2BpCvXfX63OWrYJl9h",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

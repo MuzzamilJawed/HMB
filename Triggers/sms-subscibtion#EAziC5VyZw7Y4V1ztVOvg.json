@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "smsresponse",
+          "successMessageBindingKey": "smsresponseSuccess",
+          "errorMessageBindingKey": "smsresponseError",
           "url": "/sms/subscription",
           "checksum": true,
           "encryption": true,
@@ -45,63 +47,24 @@
         },
         "responseHandler": [
           {
-            "httpStatus": 400,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 403,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 502,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
-            "httpStatus": 503,
-            "triggerName": "SMS_ERROR_TRIGGER",
-            "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
-          },
-          {
             "httpStatus": 200,
             "logic": { "==": [{ "var": "code" }, 0] },
             "triggerName": "SMS_ERROR_TRIGGER",
             "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
           }
         ]
       }
     }
   ],
-  "csrf": "0.m2vbpmj1oyny_gHH4bxqkFQHYqMmLfNR",
-  "updatedAt": "10/6/2023",
-  "createdAt": "10/6/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

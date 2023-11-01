@@ -1,0 +1,82 @@
+{
+  "id": "NpnK7hOg21eSBzVUJ6EGc",
+  "_id": "-XWP95UePLmNScQMG04RC",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getAccountDetails For Standing Instruction",
+  "old_name": "getAccountDetails For Standing Instruction",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "accountDetailsForSi",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accNo",
+              "value": "selectedAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "selectedAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "beneForSi.accountNumber"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "beneForSi.bankIMD"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankName",
+              "value": "beneForSi.bankName"
+            },
+            { "type": 4, "name": "Static", "key": "purposeCode" },
+            { "type": 4, "name": "Static", "key": "purposeDetail" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "selectedAccount.rda"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
+  "updatedAt": "10/30/2023",
+  "createdAt": "10/30/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

@@ -16,6 +16,8 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "getaccountdetailsown",
           "responseReturnValue": "content",
+          "successMessageBindingKey": "getDataSuccess",
+          "errorMessageBindingKey": "getDataError",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -69,14 +71,20 @@
             "triggerName": "Swap own Account To Confirm Own Account Payment",
             "triggerId": "RiEME_TnHh_zSWqD5fUtC",
             "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.rcuyucf6v19SIDKSANQtVuwWnb_b4vmE",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

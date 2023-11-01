@@ -1,0 +1,44 @@
+{
+  "_id": "X4m2fv809LKfEn98RvN1Y",
+  "id": "G1a2ib7KPxs7vcZj_HQ8O",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Conditional Logout Trigger",
+  "old_name": "Conditional Logout Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "triggerName": "Refresh page",
+              "triggerId": "C9VAY5AImRfafaf65",
+              "services": [
+                {
+                  "_id": "61dd1cc511bed557b4cb0c89",
+                  "type": "14",
+                  "command": {
+                    "responseHandler": [],
+                    "returns": [],
+                    "_id": "61dd1cc511bed557b4cb0c99",
+                    "attributes": {},
+                    "type": "3"
+                  }
+                }
+              ],
+              "logic": { "!=": [{ "var": "currentSession.userProfile" }, null] }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.1ubyxcxo0l1upjQvWI3DI3QYno2ecwh4",
+  "updatedAt": "10/31/2023",
+  "createdAt": "10/31/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

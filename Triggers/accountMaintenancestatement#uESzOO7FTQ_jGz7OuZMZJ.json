@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "accountMaintenanceResponse",
+          "successMessageBindingKey": "accountMaintenanceResponseSuccess",
+          "errorMessageBindingKey": "accountMaintenanceResponseError",
           "url": "/accountMaintenance/statement",
           "checksum": true,
           "encryption": true,
@@ -57,13 +59,26 @@
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.lfdvb7glqqbquiz8I6YByFx3b7AHA_PY",
-  "updatedAt": "10/19/2023",
-  "createdAt": "10/19/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -14,7 +14,9 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "response",
+          "responseStateKey": "instantTransferresponseViaBene",
+          "successMessageBindingKey": "instantTransferresponseViaBeneSuccess",
+          "errorMessageBindingKey": "instantTransferresponseViaBeneError",
           "url": "/transfer",
           "checksum": true,
           "encryption": true,
@@ -220,33 +222,8 @@
           {
             "logic": { "==": [{ "var": "code" }, 0] },
             "httpStatus": 200,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 400,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           },
           {
             "logic": { "==": [{ "var": "code" }, 1] },
@@ -258,9 +235,9 @@
       }
     }
   ],
-  "csrf": "0.u8yn7lya15aYdmWIe7J2h3XZGfyWytSv",
-  "updatedAt": "10/24/2023",
-  "createdAt": "10/24/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

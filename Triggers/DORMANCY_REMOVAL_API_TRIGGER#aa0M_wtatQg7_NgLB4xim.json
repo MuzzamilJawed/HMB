@@ -15,9 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "responseOfApi",
-          "responseReturnValue": "message",
-          "successMessageBindingKey": "successMessage",
-          "errorMessageBindingKey": "errorMessage",
+          "successMessageBindingKey": "responseOfApiSuccess",
+          "errorMessageBindingKey": "responseOfApiError",
           "url": "/dormancy/reverse",
           "checksum": true,
           "encryption": true,
@@ -43,17 +42,24 @@
         },
         "responseHandler": [
           {
+            "logic": { "==": [{ "var": "code" }, 0] },
             "httpStatus": 200,
-            "triggerName": "FeedBack Show Modal Trigger",
-            "triggerId": "8wT9g9iXX-ZMU1ZOB0Mnu"
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
           }
         ]
       }
     }
   ],
-  "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
-  "updatedAt": "9/21/2023",
-  "createdAt": "9/21/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

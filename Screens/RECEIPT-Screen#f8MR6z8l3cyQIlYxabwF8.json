@@ -35,7 +35,8 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "#F5F5F5"
+              "background": "rgb(241,245,241)",
+              "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
           },
@@ -59,11 +60,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "2SFBd_dhW-youY0ADoFFu",
+            "id": "aKhjYoD7s3_dO1XEAVclp",
             "gridProps": [
               {
                 "type": "10001",
@@ -3648,13 +3649,7 @@
                                                           "fullWidth": true,
                                                           "layoutProperties": {
                                                             "button": {
-                                                              "//": "Use this class to style button component.",
-                                                              "height": "47px",
-                                                              "border": "1px solid #19612F !important",
-                                                              "text-color": "#19612F",
-                                                              "border-radius": "8px",
-                                                              "color": "#19612F",
-                                                              "box-shadow": "0px 4px 10px 0px #19612F1A"
+                                                              "//": "Use this class to style button component."
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style button element."
@@ -3667,7 +3662,12 @@
                                                             "xs": 12
                                                           },
                                                           "icon": null,
-                                                          "asset": null
+                                                          "asset": null,
+                                                          "cssClassNames": [
+                                                            {
+                                                              "cssClassName": "hmbButtonCSS "
+                                                            }
+                                                          ]
                                                         },
                                                         "events": [
                                                           {
@@ -3958,56 +3958,6 @@
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
                 "path": "0-0-0"
-              },
-              {
-                "type": "10001",
-                "name": "Grid layout",
-                "id": "ysGnfh-Yr8LFYEp_TCU-q",
-                "gridProps": [
-                  {
-                    "type": "column",
-                    "id": "cbvtgn99YNetng7xKrUt0",
-                    "gridProps": [],
-                    "layoutProperties": {
-                      "xl": 12,
-                      "lg": 12,
-                      "md": 12,
-                      "sm": 12,
-                      "xs": 12
-                    },
-                    "path": "0-0-1-0"
-                  }
-                ],
-                "allowedContainers": [
-                  "10001",
-                  "20030",
-                  "noLayout",
-                  "20010",
-                  "widget"
-                ],
-                "attributes": {
-                  "gridProps": [],
-                  "label": "Header",
-                  "layoutProperties": {
-                    "gridLayout": {
-                      "//": "Use this class to style grid layout component.",
-                      "padding": "5px",
-                      "spacing": 0,
-                      "margin-top": "20px"
-                    },
-                    "mainContainer": "gridLayout"
-                  },
-                  "layoutProps": {
-                    "direction": "row",
-                    "justifyContent": "flex-start",
-                    "alignItems": "flex-start"
-                  },
-                  "direction": "row",
-                  "name": "Grid layout"
-                },
-                "events": [],
-                "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-1"
               }
             ],
             "layoutProperties": {
@@ -4016,8 +3966,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -4041,8 +3990,8 @@
     "gitBranchName": "master",
     "_id": "f8MR6z8l3cyQIlYxabwF8",
     "createdBy": "masood",
-    "updatedAt": "10/23/2023",
-    "createdAt": "10/23/2023",
+    "updatedAt": "10/31/2023",
+    "createdAt": "10/31/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4069,25 +4018,6 @@
             "sm": 12,
             "xs": 12
           }
-        },
-        {
-          "componentId": "ysGnfh-Yr8LFYEp_TCU-q",
-          "componentType": "10001",
-          "id": "ysGnfh-Yr8LFYEp_TCU-q",
-          "position": {
-            "i": "ysGnfh-Yr8LFYEp_TCU-q",
-            "x": null,
-            "y": null,
-            "w": null,
-            "h": null
-          },
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          }
         }
       ],
       "label": "Header",
@@ -4096,7 +4026,8 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "#F5F5F5"
+          "background": "rgb(241,245,241)",
+          "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
       },
@@ -7560,15 +7491,7 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "47px",
-          "border": "1px solid #19612F !important",
-          "text-color": "#19612F",
-          "border-radius": "8px",
-          "color": "#19612F",
-          "box-shadow": "0px 4px 10px 0px #19612F1A"
-        },
+        "button": { "//": "Use this class to style button component." },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -7578,7 +7501,8 @@
         "xs": 12
       },
       "icon": null,
-      "asset": null
+      "asset": null,
+      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
     },
     "events": [
       {
@@ -7601,39 +7525,6 @@
     "screenId": "f8MR6z8l3cyQIlYxabwF8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "ysGnfh-Yr8LFYEp_TCU-q",
-    "name": "Grid layout",
-    "type": "10001",
-    "attributes": {
-      "gridProps": [],
-      "label": "Header",
-      "layoutProperties": {
-        "gridLayout": {
-          "//": "Use this class to style grid layout component.",
-          "padding": "5px",
-          "spacing": 0,
-          "margin-top": "20px"
-        },
-        "mainContainer": "gridLayout"
-      },
-      "layoutProps": {
-        "direction": "row",
-        "justifyContent": "flex-start",
-        "alignItems": "flex-start"
-      },
-      "direction": "row",
-      "name": "Grid layout"
-    },
-    "layout": null,
-    "events": [],
-    "subType": "component",
-    "screenId": "f8MR6z8l3cyQIlYxabwF8",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }

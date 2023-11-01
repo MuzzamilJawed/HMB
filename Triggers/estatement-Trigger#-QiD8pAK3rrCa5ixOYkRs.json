@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "estatmentResponse",
+          "successMessageBindingKey": "estatmentResponseSuccess",
+          "errorMessageBindingKey": "estatmentResponseError",
           "url": "/estatement",
           "checksum": true,
           "encryption": true,
@@ -61,13 +63,26 @@
           "baseURL": "65003e4e61f0645ad866d812",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.vho698gs6fL9E6TAiWIT9lP5WAOnOqs",
-  "updatedAt": "9/14/2023",
-  "createdAt": "9/14/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -1,0 +1,85 @@
+{
+  "id": "0bqZOuCmOo1QvYDsg-zOs",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": " Conditional Rate API",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": {
+                "and": [
+                  { "var": "currentScreen.form.currency" },
+                  { "var": "currentScreen.form.tenureSelect" },
+                  { "var": "currentScreen.form.certiType" }
+                ]
+              },
+              "triggerName": "Rate",
+              "triggerId": "F_WVq7GSeZmho9dxihq35",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "expectedRate",
+                      "responseReturnValue": "content",
+                      "url": "/npc/rate",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "currencyId",
+                          "value": "currency.id"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "certType",
+                          "value": "certiType.code"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "tenureId",
+                          "value": "tenureSelect.id"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.jpp1kz7bqkjRelHTaQlwvy4VGiDA-RHQ",
+  "_id": "3KnMg7vWhz38UvwoVsWBZ",
+  "updatedAt": "10/30/2023",
+  "createdAt": "10/30/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

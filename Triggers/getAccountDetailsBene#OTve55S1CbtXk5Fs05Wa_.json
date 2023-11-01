@@ -16,8 +16,8 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "responseTitle",
           "responseReturnValue": "content",
-          "successMessageBindingKey": "success",
-          "errorMessageBindingKey": "error",
+          "successMessageBindingKey": "responseTitleSuccess",
+          "errorMessageBindingKey": "responseTitleError",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -59,14 +59,20 @@
             "httpStatus": 200,
             "triggerName": "Swapped add bene",
             "triggerId": "4qCZzzCjxy7arV9qc9fjJ"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.rcuyucf6v19SIDKSANQtVuwWnb_b4vmE",
-  "updatedAt": "10/10/2023",
-  "createdAt": "10/10/2023",
+  "csrf": "0.aldnvzcy4tLccwHrRlIcUQJyhLrSKXr",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

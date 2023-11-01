@@ -1,0 +1,49 @@
+{
+  "id": "7pYhbcWHvTfUETtDCmrOM",
+  "_id": "xtA7fKL3plM-4bv--FCqo",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Si_List_Trigger",
+  "old_name": "Si_List_Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "siList",
+          "url": "/getCustomerSI",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [{ "type": 4, "name": "Static", "key": "siType" }],
+          "baseURL": "65362869e96e9d3c64243131",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.32c5fomrenbo8wlxDcchTEPwS0SYEWNO",
+  "updatedAt": "10/27/2023",
+  "createdAt": "10/27/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

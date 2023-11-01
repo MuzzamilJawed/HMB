@@ -15,9 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "chequeSummary",
-          "responseReturnValue": "content.chequeSummary",
-          "successMessageBindingKey": "successMessage",
-          "errorMessageBindingKey": "errorMessage",
+          "successMessageBindingKey": "chequeSummarySuccess",
+          "errorMessageBindingKey": "chequeSummaryError",
           "url": "/chequeInfo",
           "checksum": true,
           "encryption": true,
@@ -52,13 +51,20 @@
           "baseURL": "65003e4e61f0645ad866d812",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
-  "updatedAt": "9/21/2023",
-  "createdAt": "9/21/2023",
+  "csrf": "0.cuyos4ti3uh6hFz0rOURYXTAFuFYjWBm",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

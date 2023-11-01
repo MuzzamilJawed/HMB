@@ -16,6 +16,8 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "getData",
           "responseReturnValue": "content",
+          "successMessageBindingKey": "getDataSuccess",
+          "errorMessageBindingKey": "getDataError",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -59,33 +61,24 @@
         },
         "responseHandler": [
           {
-            "httpStatus": 400,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "Genral_ERROR_MODAL",
-            "triggerId": "4PTMQ4yMYIiwqwe1VdE8F"
-          },
-          {
             "logic": { "==": [{ "var": "code" }, 1] },
             "httpStatus": 200,
             "triggerName": "navigate Confirm Via bene Screen",
             "triggerId": "hfGVDiKM_j_lzWZkeecTK"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.sm7r9q5nr1bRUIiz7fcz6--ux8GMj71t",
-  "updatedAt": "10/9/2023",
-  "createdAt": "10/9/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "getAccountTitle",
+          "successMessageBindingKey": "getAccountTitleSuccess",
+          "errorMessageBindingKey": "getAccountTitleError",
           "url": "/getAccountDetails",
           "checksum": true,
           "encryption": true,
@@ -79,15 +81,22 @@
           {
             "httpStatus": 200,
             "triggerName": "zakat to confirm Zakat",
-            "triggerId": "3zPt_h5iQEOwZ8sDVV5WI"
+            "triggerId": "3zPt_h5iQEOwZ8sDVV5WI",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.hez64io2xhcUFCAIZreWFiRw8acdoCu6",
-  "updatedAt": "9/14/2023",
-  "createdAt": "9/14/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

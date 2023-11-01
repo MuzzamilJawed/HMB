@@ -16,6 +16,8 @@
           "messageWidgetIds": [906070],
           "responseStateKey": "limitsResponse",
           "responseReturnValue": "content.accountLimitResponseDTOList",
+          "successMessageBindingKey": "limitsResponseSuccess",
+          "errorMessageBindingKey": "limitsResponseError",
           "url": "/limits",
           "checksum": true,
           "encryption": true,
@@ -50,13 +52,20 @@
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.ceebswse1Z6vs0Ub0XkLNJUsBH5Pbo",
-  "updatedAt": "9/26/2023",
-  "createdAt": "9/26/2023",
+  "csrf": "0.tafynxowwxfyVWnDBW35RFzMQFu-3meV",
+  "updatedAt": "11/1/2023",
+  "createdAt": "11/1/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }
