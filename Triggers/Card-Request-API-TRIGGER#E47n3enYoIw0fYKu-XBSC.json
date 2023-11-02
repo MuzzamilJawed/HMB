@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "responseOfCardResquest",
+          "successMessageBindingKey": "responseOfCardResquestSuccess",
+          "errorMessageBindingKey": "responseOfCardResquestError",
           "url": "/requestNewCard",
           "checksum": true,
           "encryption": true,
@@ -87,35 +89,10 @@
         },
         "responseHandler": [
           {
-            "httpStatus": 400,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
-          },
-          {
             "httpStatus": 200,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as",
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
             "logic": { "==": [{ "var": "code" }, 0] }
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "CARD_REQUEST_ERROR_MODAL_TRIGGER",
-            "triggerId": "4nc5j0tTNnFbvlUV3r4as"
           },
           {
             "httpStatus": 200,
@@ -127,9 +104,9 @@
       }
     }
   ],
-  "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
-  "updatedAt": "9/28/2023",
-  "createdAt": "9/28/2023",
+  "csrf": "0.waamf9nnxwbM9j1Un7t2p7IVYO7KgLd",
+  "updatedAt": "11/2/2023",
+  "createdAt": "11/2/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

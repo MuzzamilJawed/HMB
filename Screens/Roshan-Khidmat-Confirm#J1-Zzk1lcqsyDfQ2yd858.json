@@ -53,7 +53,58 @@
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "c9jKJvLgC2NG7hYdqj-eb",
+            "triggerName": "zakaatOrDonation tranCode",
+            "serviceType": "11",
+            "attributes": {
+              "dataType": "value",
+              "destinationBindingKey": "tranCode",
+              "sourceBindingKey": "form",
+              "sourceStoreType": 2,
+              "destinationStoreType": 2,
+              "logic": { "if": [true, "0024", "0024"] },
+              "changeValueConditonally": true,
+              "targettedType": "value"
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+            "triggerName": "generateOTP",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "generateOTPResponse",
+              "url": "/generateOTP",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": false,
+              "loginTrigger": "loginTrigger",
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                {
+                  "type": 2,
+                  "name": "Current screen",
+                  "key": "tranCode",
+                  "value": "tranCode"
+                }
+              ],
+              "baseURL": "65015c4b61f0645ad866ef4a",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -64,7 +115,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "-KeZdo8mc9wgb9gJAyy66",
+            "id": "4-rDNy1uckAcs_jfpks_2",
             "gridProps": [
               {
                 "type": "10001",
@@ -3256,8 +3307,73 @@
                                                                             "xs": 12
                                                                           },
                                                                           "validate": {
-                                                                            "required": false,
-                                                                            "errorMsg": "Password is required"
+                                                                            "required": true,
+                                                                            "errorMsg": "Password is required",
+                                                                            "bindButton": [
+                                                                              {
+                                                                                "id": "aOt_NNbYES_ZM5XHOH0Rb",
+                                                                                "status": "ACTIVE",
+                                                                                "attributes": {
+                                                                                  "label": "Confirm",
+                                                                                  "variant": "contained",
+                                                                                  "name": "Button",
+                                                                                  "label-locale-key": "",
+                                                                                  "fullWidth": true,
+                                                                                  "layoutProperties": {
+                                                                                    "button": {
+                                                                                      "//": "Use this class to style button component."
+                                                                                    },
+                                                                                    "inputProps": {
+                                                                                      "//": "Use this class to style button element."
+                                                                                    },
+                                                                                    "mainContainer": "button",
+                                                                                    "xl": 12,
+                                                                                    "lg": 12,
+                                                                                    "md": 12,
+                                                                                    "sm": 12,
+                                                                                    "xs": 12
+                                                                                  },
+                                                                                  "buttonIconPosition": "end",
+                                                                                  "asset": null,
+                                                                                  "icon": null,
+                                                                                  "cssClassNames": [
+                                                                                    {
+                                                                                      "cssClassName": "hmbButtonCSS "
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                "name": "Button",
+                                                                                "icon": "FaBimobject",
+                                                                                "group": "Form",
+                                                                                "type": "20006",
+                                                                                "Documentation": "<div>components 12344</div>",
+                                                                                "updatedAt": "23-Aug-2021",
+                                                                                "createdAt": "23-Aug-2021",
+                                                                                "order": 1,
+                                                                                "version": "1.0.0",
+                                                                                "isLatest": true,
+                                                                                "projectType": "web",
+                                                                                "component": {
+                                                                                  "content": "Button",
+                                                                                  "type": "20006"
+                                                                                },
+                                                                                "events": [
+                                                                                  {
+                                                                                    "triggerId": "RrjW7QFHSEwnQO87n8fGU",
+                                                                                    "triggerName": "Roshan Khidmat Chain Trigger Confirm Screen",
+                                                                                    "name": "On Submit",
+                                                                                    "type": "4",
+                                                                                    "serviceType": "2"
+                                                                                  }
+                                                                                ],
+                                                                                "path": "0-0-0-0-1-0-0-0-5-2-0-0-0",
+                                                                                "screenId": "J1-Zzk1lcqsyDfQ2yd858",
+                                                                                "subType": "component",
+                                                                                "projectId": "640ee2a26ead56231ce8350b",
+                                                                                "gitBranchName": "master",
+                                                                                "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                              }
+                                                                            ]
                                                                           },
                                                                           "cssClassNames": [
                                                                             {
@@ -3369,8 +3485,73 @@
                                                                             "xs": 12
                                                                           },
                                                                           "validate": {
-                                                                            "required": false,
-                                                                            "errorMsg": "Password is required"
+                                                                            "required": true,
+                                                                            "errorMsg": "Password is required",
+                                                                            "bindButton": [
+                                                                              {
+                                                                                "id": "aOt_NNbYES_ZM5XHOH0Rb",
+                                                                                "status": "ACTIVE",
+                                                                                "attributes": {
+                                                                                  "label": "Confirm",
+                                                                                  "variant": "contained",
+                                                                                  "name": "Button",
+                                                                                  "label-locale-key": "",
+                                                                                  "fullWidth": true,
+                                                                                  "layoutProperties": {
+                                                                                    "button": {
+                                                                                      "//": "Use this class to style button component."
+                                                                                    },
+                                                                                    "inputProps": {
+                                                                                      "//": "Use this class to style button element."
+                                                                                    },
+                                                                                    "mainContainer": "button",
+                                                                                    "xl": 12,
+                                                                                    "lg": 12,
+                                                                                    "md": 12,
+                                                                                    "sm": 12,
+                                                                                    "xs": 12
+                                                                                  },
+                                                                                  "buttonIconPosition": "end",
+                                                                                  "asset": null,
+                                                                                  "icon": null,
+                                                                                  "cssClassNames": [
+                                                                                    {
+                                                                                      "cssClassName": "hmbButtonCSS "
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                "name": "Button",
+                                                                                "icon": "FaBimobject",
+                                                                                "group": "Form",
+                                                                                "type": "20006",
+                                                                                "Documentation": "<div>components 12344</div>",
+                                                                                "updatedAt": "23-Aug-2021",
+                                                                                "createdAt": "23-Aug-2021",
+                                                                                "order": 1,
+                                                                                "version": "1.0.0",
+                                                                                "isLatest": true,
+                                                                                "projectType": "web",
+                                                                                "component": {
+                                                                                  "content": "Button",
+                                                                                  "type": "20006"
+                                                                                },
+                                                                                "events": [
+                                                                                  {
+                                                                                    "triggerId": "RrjW7QFHSEwnQO87n8fGU",
+                                                                                    "triggerName": "Roshan Khidmat Chain Trigger Confirm Screen",
+                                                                                    "name": "On Submit",
+                                                                                    "type": "4",
+                                                                                    "serviceType": "2"
+                                                                                  }
+                                                                                ],
+                                                                                "path": "0-0-0-0-1-0-0-0-5-2-0-0-0",
+                                                                                "screenId": "J1-Zzk1lcqsyDfQ2yd858",
+                                                                                "subType": "component",
+                                                                                "projectId": "640ee2a26ead56231ce8350b",
+                                                                                "gitBranchName": "master",
+                                                                                "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                              }
+                                                                            ]
                                                                           },
                                                                           "disableUnderline": true,
                                                                           "placeholder": "Enter Email OTP",
@@ -3616,6 +3797,22 @@
                                         "readOnly": true
                                       },
                                       {
+                                        "id": "yW986MWI8V7q9_pcEzbnL",
+                                        "name": "ERROR_MODAL",
+                                        "type": "20031",
+                                        "attributes": {
+                                          "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                                          "layoutProperties": {
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
+                                      {
                                         "id": "60DvMlcABWudpahszY5Tm",
                                         "type": "10001",
                                         "name": "Grid layout",
@@ -3640,7 +3837,7 @@
                                           "name": "Grid layout"
                                         },
                                         "events": [],
-                                        "path": "0-0-0-0-1-0-0-0-4",
+                                        "path": "0-0-0-0-1-0-0-0-5",
                                         "allowedContainers": [
                                           "10001",
                                           "20030",
@@ -3653,12 +3850,12 @@
                                           "columns": 3,
                                           "colSize0xs": 8,
                                           "colSize0sm": 8,
-                                          "colSize0md": 8,
+                                          "colSize0md": 6,
                                           "colSize0lg": 8,
                                           "colSize0xl": 8,
                                           "colSize1xs": 2,
                                           "colSize1sm": 2,
-                                          "colSize1md": 2,
+                                          "colSize1md": 3,
                                           "colSize1lg": 2,
                                           "colSize1xl": 2,
                                           "colSize2xs": 2,
@@ -3670,7 +3867,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "qBew7U3vrppYVLIazEegx",
+                                            "id": "0izoIvkkEiCNPxxGrRWNM",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -3752,12 +3949,11 @@
                                               "md": 6,
                                               "sm": 8,
                                               "xs": 8
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-4-0"
+                                            }
                                           },
                                           {
                                             "type": "column",
-                                            "id": "4IgHRkpIGD6NWcH5u0hM4",
+                                            "id": "Ucfoklvd1zzaHHPp8HbYA",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -3885,12 +4081,11 @@
                                               "md": 3,
                                               "sm": 2,
                                               "xs": 2
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-4-1"
+                                            }
                                           },
                                           {
                                             "type": "column",
-                                            "id": "G2xTTqJjFP6Y01xfDUJb3",
+                                            "id": "DQ-w_cYRxSvqs1r9_sFY7",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -3900,44 +4095,6 @@
                                                     "type": "column",
                                                     "id": "gGd_sh4W1wKIoz7r-c2g3",
                                                     "gridProps": [
-                                                      {
-                                                        "id": "P44zZ23cbGeZYdctY15TF",
-                                                        "type": "20031",
-                                                        "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-                                                        "attributes": {
-                                                          "widgetId": "pEL9YxihQSzGOvxJQZVrZ",
-                                                          "layoutProperties": {
-                                                            "xl": 12,
-                                                            "lg": 12,
-                                                            "md": 12,
-                                                            "sm": 12,
-                                                            "xs": 12
-                                                          }
-                                                        },
-                                                        "component": {
-                                                          "type": "20031"
-                                                        },
-                                                        "path": "0-0-0-0-1-0-0-0-4-2-0-0-0"
-                                                      },
-                                                      {
-                                                        "id": "5eJUYhBsWEGxvULCr_t6T",
-                                                        "type": "20031",
-                                                        "triggerName": "NPC_SUCCESS_MODAL_TRIGGER",
-                                                        "attributes": {
-                                                          "widgetId": "Rzlh6a70TsAQoPNOLkuSD",
-                                                          "layoutProperties": {
-                                                            "xl": 12,
-                                                            "lg": 12,
-                                                            "md": 12,
-                                                            "sm": 12,
-                                                            "xs": 12
-                                                          }
-                                                        },
-                                                        "component": {
-                                                          "type": "20031"
-                                                        },
-                                                        "path": "0-0-0-0-1-0-0-0-4-2-0-0-1"
-                                                      },
                                                       {
                                                         "id": "aOt_NNbYES_ZM5XHOH0Rb",
                                                         "status": "ACTIVE",
@@ -4097,7 +4254,7 @@
                                                             "name": "On Submit"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-4-2-0-0-2"
+                                                        "path": "0-0-0-0-1-0-0-0-5-2-0-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -4151,8 +4308,7 @@
                                               "md": 3,
                                               "sm": 2,
                                               "xs": 2
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-4-2"
+                                            }
                                           }
                                         ],
                                         "readOnly": true
@@ -4333,8 +4489,8 @@
     "gitBranchName": "master",
     "_id": "J1-Zzk1lcqsyDfQ2yd858",
     "createdBy": "masood",
-    "updatedAt": "10/30/2023",
-    "createdAt": "10/30/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4383,7 +4539,20 @@
       "name": "Roshan Khidmat Confirm"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "c9jKJvLgC2NG7hYdqj-eb",
+        "triggerName": "zakaatOrDonation tranCode",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "J1-Zzk1lcqsyDfQ2yd858",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -4678,6 +4847,18 @@
             "sm": 12,
             "xs": 12
           }
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "yW986MWI8V7q9_pcEzbnL",
+          "componentType": "20031",
+          "order": 1
         },
         {
           "componentId": "60DvMlcABWudpahszY5Tm",
@@ -7555,7 +7736,66 @@
         "sm": 12,
         "xs": 12
       },
-      "validate": { "required": false, "errorMsg": "Password is required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "Password is required",
+        "bindButton": [
+          {
+            "id": "aOt_NNbYES_ZM5XHOH0Rb",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Confirm",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "buttonIconPosition": "end",
+              "asset": null,
+              "icon": null,
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "RrjW7QFHSEwnQO87n8fGU",
+                "triggerName": "Roshan Khidmat Chain Trigger Confirm Screen",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-5-2-0-0-0",
+            "screenId": "J1-Zzk1lcqsyDfQ2yd858",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }],
       "placeholder": "Enter Mobile OTP",
       "disableUnderline": true
@@ -7653,7 +7893,66 @@
         "sm": 12,
         "xs": 12
       },
-      "validate": { "required": false, "errorMsg": "Password is required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "Password is required",
+        "bindButton": [
+          {
+            "id": "aOt_NNbYES_ZM5XHOH0Rb",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Confirm",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "buttonIconPosition": "end",
+              "asset": null,
+              "icon": null,
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "RrjW7QFHSEwnQO87n8fGU",
+                "triggerName": "Roshan Khidmat Chain Trigger Confirm Screen",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-5-2-0-0-0",
+            "screenId": "J1-Zzk1lcqsyDfQ2yd858",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "disableUnderline": true,
       "placeholder": "Enter Email OTP",
       "cssClassNames": [{ "cssClassName": "emptyTextField3 " }]
@@ -7671,6 +7970,22 @@
     "screenId": "J1-Zzk1lcqsyDfQ2yd858",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "yW986MWI8V7q9_pcEzbnL",
+    "name": "ERROR_MODAL",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "J1-Zzk1lcqsyDfQ2yd858",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -7892,30 +8207,6 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "P44zZ23cbGeZYdctY15TF",
-          "componentType": "20031",
-          "order": 1
-        },
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "5eJUYhBsWEGxvULCr_t6T",
-          "componentType": "20031",
-          "order": 1
-        },
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
           "componentId": "aOt_NNbYES_ZM5XHOH0Rb",
           "componentType": "20006",
           "order": 1
@@ -7942,40 +8233,6 @@
     "events": [],
     "subType": "component",
     "screenId": "J1-Zzk1lcqsyDfQ2yd858",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "P44zZ23cbGeZYdctY15TF",
-    "type": "20031",
-    "triggerName": "NPC_ERROR_MODAL_TRIGGER",
-    "attributes": {
-      "widgetId": "pEL9YxihQSzGOvxJQZVrZ",
-      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
-    },
-    "component": { "type": "20031" },
-    "path": "0-0-0-0-1-0-0-0-4-2-0-0-0",
-    "screenId": "J1-Zzk1lcqsyDfQ2yd858",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "5eJUYhBsWEGxvULCr_t6T",
-    "type": "20031",
-    "triggerName": "NPC_SUCCESS_MODAL_TRIGGER",
-    "attributes": {
-      "widgetId": "Rzlh6a70TsAQoPNOLkuSD",
-      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
-    },
-    "component": { "type": "20031" },
-    "path": "0-0-0-0-1-0-0-0-4-2-0-0-1",
-    "screenId": "J1-Zzk1lcqsyDfQ2yd858",
-    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -8026,7 +8283,7 @@
         "serviceType": "2"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-4-2-0-0-2",
+    "path": "0-0-0-0-1-0-0-0-5-2-0-0-0",
     "screenId": "J1-Zzk1lcqsyDfQ2yd858",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

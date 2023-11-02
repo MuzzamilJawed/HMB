@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "MGm0mdnHOcDqs1DxtwQ6y",
+            "id": "F5ze-yWxOIR8I5UO02fE8",
             "gridProps": [
               {
                 "type": "10001",
@@ -40,14 +40,14 @@
                     "gridProps": [
                       {
                         "type": "10001",
-                        "id": "bQDOtTwWppa-IRJI2RrLx",
+                        "id": "to8OE1mu515GPlDS1EQ6I",
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "9t9lxPYpp2xTbqK0aQRu0",
+                            "id": "D9Wz1Xu5fUMhAitQ9TZYP",
                             "gridProps": [
                               {
-                                "id": "vgMXnE2zVZC9mOA-9sgPP",
+                                "id": "oIzzQYRyKXPSx1TsfLy7z",
                                 "status": "ACTIVE",
                                 "name": "Label",
                                 "attributes": {
@@ -97,14 +97,62 @@
                           }
                         ],
                         "path": "0-0-0-0-0",
-                        "events": [],
+                        "events": [
+                          {
+                            "triggerId": "5HDYOzxtsDeLZI2KMx_Gz",
+                            "triggerName": "cardlist Trigger",
+                            "serviceType": "8",
+                            "attributes": {
+                              "loaderWidgetIds": [906070],
+                              "messageWidgetIds": [906070],
+                              "responseStateKey": "cardlist",
+                              "responseReturnValue": "content",
+                              "url": "/cardList",
+                              "checksum": true,
+                              "encryption": true,
+                              "isDeviceDetails": true,
+                              "loginTrigger": false,
+                              "formData": false,
+                              "logoutTrigger": false,
+                              "headers": {
+                                "Content-Type": "application/json",
+                                "Accept": "application/json",
+                                "channel_key": "005"
+                              },
+                              "requestBody": [
+                                {
+                                  "type": 4,
+                                  "name": "Static",
+                                  "key": "cardNature",
+                                  "value": "ALL"
+                                },
+                                {
+                                  "type": 4,
+                                  "name": "Static",
+                                  "key": "syncing",
+                                  "value": "true"
+                                },
+                                {
+                                  "type": 4,
+                                  "name": "Static",
+                                  "key": "update",
+                                  "value": "true"
+                                }
+                              ],
+                              "baseURL": "64f9670d683922479c06159b",
+                              "storeType": 2
+                            },
+                            "type": "1",
+                            "name": "On initialization"
+                          }
+                        ],
                         "attributes": {
                           "gridProps": [],
                           "label": "Header",
                           "layoutProperties": {
                             "gridLayout": {
                               "//": "Use this class to style grid layout component.",
-                              "padding": "10px 25px",
+                              "padding": "20px 5px 10px 30px",
                               "spacing": 0
                             },
                             "mainContainer": "gridLayout"
@@ -156,166 +204,6 @@
                                     "type": "column",
                                     "id": "tebQR1BdMjEujCfXkTgfK",
                                     "gridProps": [
-                                      {
-                                        "type": "10001",
-                                        "name": "Grid layout",
-                                        "id": "to8OE1mu515GPlDS1EQ6I",
-                                        "gridProps": [
-                                          {
-                                            "type": "column",
-                                            "id": "bV6lyAJtIUcU7FaCrqcmU",
-                                            "gridProps": [
-                                              {
-                                                "id": "oIzzQYRyKXPSx1TsfLy7z",
-                                                "status": "ACTIVE",
-                                                "name": "Label",
-                                                "attributes": {
-                                                  "variant": "body1",
-                                                  "name": "Label",
-                                                  "mandatory": false,
-                                                  "layoutProperties": {
-                                                    "label": {
-                                                      "//": "Use this class to style label component.",
-                                                      "color": "#05070F",
-                                                      "font-family": "Circular Std !important",
-                                                      "font-size": "1.317vw",
-                                                      "font-style": "normal",
-                                                      "font-weight": "500",
-                                                      "line-height": "normal"
-                                                    },
-                                                    "mainContainer": "label",
-                                                    "xl": 12,
-                                                    "lg": 12,
-                                                    "md": 12,
-                                                    "sm": 12,
-                                                    "xs": 12
-                                                  },
-                                                  "label": "Card Status Details",
-                                                  "cssClassNames": [
-                                                    {
-                                                      "cssClassName": "screen_Heading "
-                                                    }
-                                                  ]
-                                                },
-                                                "icon": "FaFont",
-                                                "group": "Form",
-                                                "type": "20002",
-                                                "updatedAt": "23-Aug-2021",
-                                                "createdAt": "23-Aug-2021",
-                                                "order": 15,
-                                                "version": "1.0.0",
-                                                "isLatest": true,
-                                                "projectType": "web",
-                                                "component": {
-                                                  "content": "Label",
-                                                  "type": "20002"
-                                                },
-                                                "events": [],
-                                                "path": "0-0-0-0-1-0-0-0-0-0-0"
-                                              }
-                                            ],
-                                            "layoutProperties": {
-                                              "xl": 12,
-                                              "lg": 12,
-                                              "md": 12,
-                                              "sm": 12,
-                                              "xs": 12
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-0-0"
-                                          }
-                                        ],
-                                        "allowedContainers": [
-                                          "10001",
-                                          "20030",
-                                          "noLayout",
-                                          "20010",
-                                          "widget"
-                                        ],
-                                        "attributes": {
-                                          "gridProps": [],
-                                          "label": "Header",
-                                          "layoutProperties": {
-                                            "gridLayout": {
-                                              "//": "Use this class to style grid layout component.",
-                                              "padding": "20px 5px 10px 30px",
-                                              "spacing": 0,
-                                              "border-bottom": "1px solid #E2EFE7"
-                                            },
-                                            "mainContainer": "gridLayout"
-                                          },
-                                          "layoutProps": {
-                                            "direction": "row",
-                                            "justifyContent": "flex-start",
-                                            "alignItems": "flex-start"
-                                          },
-                                          "direction": "row",
-                                          "name": "Grid layout"
-                                        },
-                                        "events": [
-                                          {
-                                            "triggerId": "5HDYOzxtsDeLZI2KMx_Gz",
-                                            "triggerName": "cardlist Trigger",
-                                            "serviceType": "8",
-                                            "attributes": {
-                                              "loaderWidgetIds": [906070],
-                                              "messageWidgetIds": [906070],
-                                              "responseStateKey": "cardlist",
-                                              "responseReturnValue": "content",
-                                              "url": "/cardList",
-                                              "checksum": true,
-                                              "encryption": true,
-                                              "isDeviceDetails": true,
-                                              "loginTrigger": false,
-                                              "formData": false,
-                                              "logoutTrigger": false,
-                                              "headers": {
-                                                "Content-Type": "application/json",
-                                                "Accept": "application/json",
-                                                "channel_key": "005"
-                                              },
-                                              "requestBody": [
-                                                {
-                                                  "type": 4,
-                                                  "name": "Static",
-                                                  "key": "cardNature",
-                                                  "value": "ALL"
-                                                },
-                                                {
-                                                  "type": 4,
-                                                  "name": "Static",
-                                                  "key": "syncing",
-                                                  "value": "true"
-                                                },
-                                                {
-                                                  "type": 4,
-                                                  "name": "Static",
-                                                  "key": "update",
-                                                  "value": "true"
-                                                }
-                                              ],
-                                              "baseURL": "64f9670d683922479c06159b",
-                                              "storeType": 2
-                                            },
-                                            "type": "1",
-                                            "name": "On initialization"
-                                          }
-                                        ],
-                                        "component": {
-                                          "type": "10001",
-                                          "content": "Grid layout"
-                                        },
-                                        "path": "0-0-0-0-1-0-0-0-0",
-                                        "dimensions": {
-                                          "rows": 1,
-                                          "columns": 1,
-                                          "colSize0xs": 12,
-                                          "colSize0sm": 12,
-                                          "colSize0md": 12,
-                                          "colSize0lg": 12,
-                                          "colSize0xl": 12
-                                        },
-                                        "readOnly": true
-                                      },
                                       {
                                         "type": "10001",
                                         "id": "fFzB4eebjByrBDRNPwApL",
@@ -381,7 +269,7 @@
                                                                   "type": "20002"
                                                                 },
                                                                 "events": [],
-                                                                "path": "0-0-0-0-1-0-0-0-1-0-0-0-0-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-0-0-0-0-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -391,10 +279,10 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-0-0-0-0-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-0-0-0-0-0"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-1-0-0-0-0",
+                                                        "path": "0-0-0-0-1-0-0-0-0-0-0-0-0",
                                                         "events": [],
                                                         "attributes": {
                                                           "gridProps": [],
@@ -453,13 +341,78 @@
                                                                   "dataValue": "cardTitle",
                                                                   "mandatory": true,
                                                                   "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This Field is Required"
+                                                                    "required": true,
+                                                                    "errorMsg": "This Field is Required",
+                                                                    "bindButton": [
+                                                                      {
+                                                                        "id": "rlvwRty9SAiP0j2g1aPBc",
+                                                                        "status": "ACTIVE",
+                                                                        "attributes": {
+                                                                          "label": "Next",
+                                                                          "variant": "contained",
+                                                                          "name": "Button",
+                                                                          "label-locale-key": "",
+                                                                          "fullWidth": true,
+                                                                          "layoutProperties": {
+                                                                            "button": {
+                                                                              "//": "Use this class to style button component."
+                                                                            },
+                                                                            "inputProps": {
+                                                                              "//": "Use this class to style button element."
+                                                                            },
+                                                                            "mainContainer": "button",
+                                                                            "xl": 12,
+                                                                            "lg": 12,
+                                                                            "md": 12,
+                                                                            "sm": 12,
+                                                                            "xs": 12
+                                                                          },
+                                                                          "iconName": "IoIosArrowForward",
+                                                                          "buttonIconPosition": "end",
+                                                                          "asset": null,
+                                                                          "iconname": "IoIosArrowForward",
+                                                                          "cssClassNames": [
+                                                                            {
+                                                                              "cssClassName": "hmbButtonCSS "
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "name": "Button",
+                                                                        "icon": "FaBimobject",
+                                                                        "group": "Form",
+                                                                        "type": "20006",
+                                                                        "Documentation": "<div>components 12344</div>",
+                                                                        "updatedAt": "23-Aug-2021",
+                                                                        "createdAt": "23-Aug-2021",
+                                                                        "order": 1,
+                                                                        "version": "1.0.0",
+                                                                        "isLatest": true,
+                                                                        "projectType": "web",
+                                                                        "component": {
+                                                                          "content": "Button",
+                                                                          "type": "20006"
+                                                                        },
+                                                                        "events": [
+                                                                          {
+                                                                            "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                                                                            "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                                                                            "name": "On Submit",
+                                                                            "type": "4",
+                                                                            "serviceType": "2"
+                                                                          }
+                                                                        ],
+                                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+                                                                        "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+                                                                        "subType": "component",
+                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                        "gitBranchName": "master",
+                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   "layoutProperties": {
                                                                     "autocomplete": {
                                                                       "//": "Use this class to style autocomplete component in dropdown.",
-                                                                      "background": "#F0F0F0",
                                                                       "border-radius": "10px"
                                                                     },
                                                                     "textField": {
@@ -637,7 +590,7 @@
                                                                   "content": "Drop down",
                                                                   "type": "20003"
                                                                 },
-                                                                "path": "0-0-0-0-1-0-0-0-1-0-0-0-1-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-0-0-0-1-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -647,10 +600,10 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-0-0-0-1-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-0-0-0-1-0"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-1-0-0-0-1",
+                                                        "path": "0-0-0-0-1-0-0-0-0-0-0-0-1",
                                                         "events": [],
                                                         "attributes": {
                                                           "gridProps": [],
@@ -733,7 +686,7 @@
                                                                   "type": "20002"
                                                                 },
                                                                 "events": [],
-                                                                "path": "0-0-0-0-1-0-0-0-1-0-0-0-2-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-0-0-0-2-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -743,7 +696,7 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-0-0-0-2-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-0-0-0-2-0"
                                                           }
                                                         ],
                                                         "allowedContainers": [
@@ -777,7 +730,7 @@
                                                           "type": "10001",
                                                           "content": "Grid layout"
                                                         },
-                                                        "path": "0-0-0-0-1-0-0-0-1-0-0-0-2"
+                                                        "path": "0-0-0-0-1-0-0-0-0-0-0-0-2"
                                                       },
                                                       {
                                                         "type": "10001",
@@ -805,8 +758,74 @@
                                                                   "dataValue": "",
                                                                   "mandatory": true,
                                                                   "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This Field is Required"
+                                                                    "required": true,
+                                                                    "errorMsg": "This Field is Required",
+                                                                    "bindButton": [
+                                                                      {
+                                                                        "id": "rlvwRty9SAiP0j2g1aPBc",
+                                                                        "status": "ACTIVE",
+                                                                        "attributes": {
+                                                                          "label": "Next",
+                                                                          "variant": "contained",
+                                                                          "name": "Button",
+                                                                          "label-locale-key": "",
+                                                                          "fullWidth": true,
+                                                                          "layoutProperties": {
+                                                                            "button": {
+                                                                              "//": "Use this class to style button component."
+                                                                            },
+                                                                            "inputProps": {
+                                                                              "//": "Use this class to style button element."
+                                                                            },
+                                                                            "mainContainer": "button",
+                                                                            "xl": 12,
+                                                                            "lg": 12,
+                                                                            "md": 12,
+                                                                            "sm": 12,
+                                                                            "xs": 12
+                                                                          },
+                                                                          "iconName": "IoIosArrowForward",
+                                                                          "buttonIconPosition": "end",
+                                                                          "asset": null,
+                                                                          "iconname": "IoIosArrowForward",
+                                                                          "cssClassNames": [
+                                                                            {
+                                                                              "cssClassName": "hmbButtonCSS "
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "name": "Button",
+                                                                        "icon": "FaBimobject",
+                                                                        "group": "Form",
+                                                                        "type": "20006",
+                                                                        "Documentation": "<div>components 12344</div>",
+                                                                        "updatedAt": "23-Aug-2021",
+                                                                        "createdAt": "23-Aug-2021",
+                                                                        "order": 1,
+                                                                        "version": "1.0.0",
+                                                                        "isLatest": true,
+                                                                        "projectType": "web",
+                                                                        "component": {
+                                                                          "content": "Button",
+                                                                          "type": "20006"
+                                                                        },
+                                                                        "events": [
+                                                                          {
+                                                                            "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                                                                            "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                                                                            "name": "On Submit",
+                                                                            "type": "4",
+                                                                            "serviceType": "2"
+                                                                          }
+                                                                        ],
+                                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+                                                                        "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+                                                                        "subType": "component",
+                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                        "gitBranchName": "master",
+                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   "layoutProperties": {
                                                                     "autocomplete": {
@@ -867,7 +886,7 @@
                                                                   "content": "Drop down",
                                                                   "type": "20003"
                                                                 },
-                                                                "path": "0-0-0-0-1-0-0-0-1-0-0-0-3-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-0-0-0-3-0-0"
                                                               },
                                                               {
                                                                 "id": "gzQ6RPSSKr3QZxPE9p5n1",
@@ -886,8 +905,74 @@
                                                                   "dataValue": "",
                                                                   "mandatory": true,
                                                                   "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This Field is Required"
+                                                                    "required": true,
+                                                                    "errorMsg": "This Field is Required",
+                                                                    "bindButton": [
+                                                                      {
+                                                                        "id": "rlvwRty9SAiP0j2g1aPBc",
+                                                                        "status": "ACTIVE",
+                                                                        "attributes": {
+                                                                          "label": "Next",
+                                                                          "variant": "contained",
+                                                                          "name": "Button",
+                                                                          "label-locale-key": "",
+                                                                          "fullWidth": true,
+                                                                          "layoutProperties": {
+                                                                            "button": {
+                                                                              "//": "Use this class to style button component."
+                                                                            },
+                                                                            "inputProps": {
+                                                                              "//": "Use this class to style button element."
+                                                                            },
+                                                                            "mainContainer": "button",
+                                                                            "xl": 12,
+                                                                            "lg": 12,
+                                                                            "md": 12,
+                                                                            "sm": 12,
+                                                                            "xs": 12
+                                                                          },
+                                                                          "iconName": "IoIosArrowForward",
+                                                                          "buttonIconPosition": "end",
+                                                                          "asset": null,
+                                                                          "iconname": "IoIosArrowForward",
+                                                                          "cssClassNames": [
+                                                                            {
+                                                                              "cssClassName": "hmbButtonCSS "
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "name": "Button",
+                                                                        "icon": "FaBimobject",
+                                                                        "group": "Form",
+                                                                        "type": "20006",
+                                                                        "Documentation": "<div>components 12344</div>",
+                                                                        "updatedAt": "23-Aug-2021",
+                                                                        "createdAt": "23-Aug-2021",
+                                                                        "order": 1,
+                                                                        "version": "1.0.0",
+                                                                        "isLatest": true,
+                                                                        "projectType": "web",
+                                                                        "component": {
+                                                                          "content": "Button",
+                                                                          "type": "20006"
+                                                                        },
+                                                                        "events": [
+                                                                          {
+                                                                            "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                                                                            "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                                                                            "name": "On Submit",
+                                                                            "type": "4",
+                                                                            "serviceType": "2"
+                                                                          }
+                                                                        ],
+                                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+                                                                        "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+                                                                        "subType": "component",
+                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                        "gitBranchName": "master",
+                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   "layoutProperties": {
                                                                     "autocomplete": {
@@ -948,7 +1033,7 @@
                                                                   "content": "Drop down",
                                                                   "type": "20003"
                                                                 },
-                                                                "path": "0-0-0-0-1-0-0-0-1-0-0-0-3-0-1"
+                                                                "path": "0-0-0-0-1-0-0-0-0-0-0-0-3-0-1"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -958,7 +1043,7 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-0-0-0-3-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-0-0-0-3-0"
                                                           }
                                                         ],
                                                         "allowedContainers": [
@@ -1014,7 +1099,7 @@
                                                           "type": "10001",
                                                           "content": "Grid layout"
                                                         },
-                                                        "path": "0-0-0-0-1-0-0-0-1-0-0-0-3",
+                                                        "path": "0-0-0-0-1-0-0-0-0-0-0-0-3",
                                                         "dimensions": {
                                                           "rows": 1,
                                                           "columns": 1,
@@ -1034,7 +1119,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-1-0-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-0-0-0-0"
                                                   }
                                                 ],
                                                 "allowedContainers": [
@@ -1068,7 +1153,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-1-0-0"
+                                                "path": "0-0-0-0-1-0-0-0-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -1078,7 +1163,7 @@
                                               "sm": 6,
                                               "xs": 6
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-1-0"
+                                            "path": "0-0-0-0-1-0-0-0-0-0"
                                           },
                                           {
                                             "type": "column",
@@ -1141,7 +1226,7 @@
                                                                   "type": "20002"
                                                                 },
                                                                 "events": [],
-                                                                "path": "0-0-0-0-1-0-0-0-1-1-0-0-0-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -1151,10 +1236,10 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-1-0-0-0-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-1-1-0-0-0",
+                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-0",
                                                         "events": [],
                                                         "attributes": {
                                                           "gridProps": [],
@@ -1230,8 +1315,74 @@
                                                                     "xs": 12
                                                                   },
                                                                   "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This field is required"
+                                                                    "required": true,
+                                                                    "errorMsg": "This field is required",
+                                                                    "bindButton": [
+                                                                      {
+                                                                        "id": "rlvwRty9SAiP0j2g1aPBc",
+                                                                        "status": "ACTIVE",
+                                                                        "attributes": {
+                                                                          "label": "Next",
+                                                                          "variant": "contained",
+                                                                          "name": "Button",
+                                                                          "label-locale-key": "",
+                                                                          "fullWidth": true,
+                                                                          "layoutProperties": {
+                                                                            "button": {
+                                                                              "//": "Use this class to style button component."
+                                                                            },
+                                                                            "inputProps": {
+                                                                              "//": "Use this class to style button element."
+                                                                            },
+                                                                            "mainContainer": "button",
+                                                                            "xl": 12,
+                                                                            "lg": 12,
+                                                                            "md": 12,
+                                                                            "sm": 12,
+                                                                            "xs": 12
+                                                                          },
+                                                                          "iconName": "IoIosArrowForward",
+                                                                          "buttonIconPosition": "end",
+                                                                          "asset": null,
+                                                                          "iconname": "IoIosArrowForward",
+                                                                          "cssClassNames": [
+                                                                            {
+                                                                              "cssClassName": "hmbButtonCSS "
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "name": "Button",
+                                                                        "icon": "FaBimobject",
+                                                                        "group": "Form",
+                                                                        "type": "20006",
+                                                                        "Documentation": "<div>components 12344</div>",
+                                                                        "updatedAt": "23-Aug-2021",
+                                                                        "createdAt": "23-Aug-2021",
+                                                                        "order": 1,
+                                                                        "version": "1.0.0",
+                                                                        "isLatest": true,
+                                                                        "projectType": "web",
+                                                                        "component": {
+                                                                          "content": "Button",
+                                                                          "type": "20006"
+                                                                        },
+                                                                        "events": [
+                                                                          {
+                                                                            "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                                                                            "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                                                                            "name": "On Submit",
+                                                                            "type": "4",
+                                                                            "serviceType": "2"
+                                                                          }
+                                                                        ],
+                                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+                                                                        "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+                                                                        "subType": "component",
+                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                        "gitBranchName": "master",
+                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                                      }
+                                                                    ]
                                                                   },
                                                                   "placeholder": "Select Card Number",
                                                                   "disableUnderline": true,
@@ -1257,7 +1408,7 @@
                                                                   "type": "20004"
                                                                 },
                                                                 "events": [],
-                                                                "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0-0"
+                                                                "path": "0-0-0-0-1-0-0-0-0-1-0-0-1-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -1267,10 +1418,10 @@
                                                               "sm": 12,
                                                               "xs": 12
                                                             },
-                                                            "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0"
+                                                            "path": "0-0-0-0-1-0-0-0-0-1-0-0-1-0"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-1-1-0-0-1",
+                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-1",
                                                         "events": [],
                                                         "attributes": {
                                                           "gridProps": [],
@@ -1322,7 +1473,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-1-1-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-0-1-0-0"
                                                   }
                                                 ],
                                                 "allowedContainers": [
@@ -1356,7 +1507,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-1-1-0"
+                                                "path": "0-0-0-0-1-0-0-0-0-1-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -1366,10 +1517,10 @@
                                               "sm": 6,
                                               "xs": 6
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-1-1"
+                                            "path": "0-0-0-0-1-0-0-0-0-1"
                                           }
                                         ],
-                                        "path": "0-0-0-0-1-0-0-0-1",
+                                        "path": "0-0-0-0-1-0-0-0-0",
                                         "events": [],
                                         "attributes": {
                                           "gridProps": [],
@@ -1435,7 +1586,7 @@
                                               "sm": 4,
                                               "xs": 4
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-2-0"
+                                            "path": "0-0-0-0-1-0-0-0-1-0"
                                           },
                                           {
                                             "type": "column",
@@ -1470,7 +1621,7 @@
                                                   "hideComponent": true
                                                 },
                                                 "events": [],
-                                                "path": "0-0-0-0-1-0-0-0-2-1-0",
+                                                "path": "0-0-0-0-1-0-0-0-1-1-0",
                                                 "version": "1.0.0",
                                                 "allowedContainers": [
                                                   "10001",
@@ -1524,7 +1675,9 @@
                                                           "otpTriggerId": "raaYkasbVgQ388avgrzcC",
                                                           "validationTriggerId": "",
                                                           "validate": {
-                                                            "isOTP": true
+                                                            "isOTP": true,
+                                                            "required": true,
+                                                            "bindButton": "rlvwRty9SAiP0j2g1aPBc"
                                                           },
                                                           "otpType": {
                                                             "key": "boxOtp",
@@ -1548,7 +1701,7 @@
                                                           "type": "20052"
                                                         },
                                                         "events": [],
-                                                        "path": "0-0-0-0-1-0-0-0-2-1-0-0-0"
+                                                        "path": "0-0-0-0-1-0-0-0-1-1-0-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -1558,7 +1711,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-2-1-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-1-1-0-0"
                                                   }
                                                 ]
                                               }
@@ -1570,7 +1723,7 @@
                                               "sm": 4,
                                               "xs": 4
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-2-1"
+                                            "path": "0-0-0-0-1-0-0-0-1-1"
                                           },
                                           {
                                             "type": "column",
@@ -1591,10 +1744,10 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-2-2-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-1-2-0-0"
                                                   }
                                                 ],
-                                                "path": "0-0-0-0-1-0-0-0-2-2-0",
+                                                "path": "0-0-0-0-1-0-0-0-1-2-0",
                                                 "events": [],
                                                 "attributes": {
                                                   "gridProps": [],
@@ -1636,7 +1789,7 @@
                                               "sm": 4,
                                               "xs": 4
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-2-2"
+                                            "path": "0-0-0-0-1-0-0-0-1-2"
                                           }
                                         ],
                                         "allowedContainers": [
@@ -1670,7 +1823,7 @@
                                           "type": "10001",
                                           "content": "Grid layout"
                                         },
-                                        "path": "0-0-0-0-1-0-0-0-2",
+                                        "path": "0-0-0-0-1-0-0-0-1",
                                         "dimensions": {
                                           "rows": 1,
                                           "columns": 3,
@@ -1718,7 +1871,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-3-0-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-2-0-0-0"
                                                   }
                                                 ],
                                                 "allowedContainers": [
@@ -1752,7 +1905,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-3-0-0"
+                                                "path": "0-0-0-0-1-0-0-0-2-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -1762,7 +1915,7 @@
                                               "sm": 8,
                                               "xs": 8
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-3-0"
+                                            "path": "0-0-0-0-1-0-0-0-2-0"
                                           },
                                           {
                                             "type": "column",
@@ -1776,77 +1929,7 @@
                                                   {
                                                     "type": "column",
                                                     "id": "JBvDvbMq1BaEl-r05RTik",
-                                                    "gridProps": [
-                                                      {
-                                                        "id": "e9suii3XTWqxgAteN1XRl",
-                                                        "status": "ACTIVE",
-                                                        "attributes": {
-                                                          "label": "Back",
-                                                          "variant": "outlined",
-                                                          "name": "Button",
-                                                          "label-locale-key": "",
-                                                          "fullWidth": true,
-                                                          "layoutProperties": {
-                                                            "button": {
-                                                              "//": "Use this class to style button component.",
-                                                              "height": "2.7rem",
-                                                              "border": "1px solid #19612F !important",
-                                                              "text-color": "#19612F",
-                                                              "border-radius": "8px",
-                                                              "color": "#19612F",
-                                                              "box-shadow": "0px 4px 10px 0px #19612F1A",
-                                                              "width": "100%"
-                                                            },
-                                                            "inputProps": {
-                                                              "//": "Use this class to style button element."
-                                                            },
-                                                            "mainContainer": "button",
-                                                            "xl": 12,
-                                                            "lg": 12,
-                                                            "md": 12,
-                                                            "sm": 12,
-                                                            "xs": 12
-                                                          },
-                                                          "icon": null,
-                                                          "asset": null,
-                                                          "buttonIconPosition": "start",
-                                                          "iconName": "IoIosArrowBack",
-                                                          "iconname": "IoIosArrowBack"
-                                                        },
-                                                        "name": "Button",
-                                                        "icon": "FaBimobject",
-                                                        "group": "Form",
-                                                        "type": "20006",
-                                                        "Documentation": "<div>components 12344</div>",
-                                                        "updatedAt": "23-Aug-2021",
-                                                        "createdAt": "23-Aug-2021",
-                                                        "order": 1,
-                                                        "version": "1.0.0",
-                                                        "isLatest": true,
-                                                        "projectType": "web",
-                                                        "component": {
-                                                          "content": "Button",
-                                                          "type": "20006"
-                                                        },
-                                                        "events": [
-                                                          {
-                                                            "triggerId": "ogtqNrc2SsOERZ9iupCck",
-                                                            "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
-                                                            "serviceType": "1",
-                                                            "attributes": {
-                                                              "fromWidgetId": "kCWSlexO5DOIMrXKqnp8l",
-                                                              "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
-                                                              "gridRadioValue": "Screen",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "editableForm": false
-                                                            },
-                                                            "type": "2",
-                                                            "name": "On click"
-                                                          }
-                                                        ],
-                                                        "path": "0-0-0-0-1-0-0-0-3-1-0-0-0"
-                                                      }
-                                                    ],
+                                                    "gridProps": [],
                                                     "layoutProperties": {
                                                       "xl": 12,
                                                       "lg": 12,
@@ -1854,7 +1937,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-3-1-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-2-1-0-0"
                                                   }
                                                 ],
                                                 "allowedContainers": [
@@ -1888,7 +1971,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-3-1-0",
+                                                "path": "0-0-0-0-1-0-0-0-2-1-0",
                                                 "dimensions": {
                                                   "rows": 1,
                                                   "columns": 1,
@@ -1908,7 +1991,7 @@
                                               "sm": 2,
                                               "xs": 2
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-3-1"
+                                            "path": "0-0-0-0-1-0-0-0-2-1"
                                           },
                                           {
                                             "type": "column",
@@ -1934,13 +2017,7 @@
                                                           "fullWidth": true,
                                                           "layoutProperties": {
                                                             "button": {
-                                                              "//": "Use this class to style button component.",
-                                                              "height": "2.7rem",
-                                                              "border-radius": "8px",
-                                                              "border": "1px solid #FFFFFF",
-                                                              "background": "#19612F",
-                                                              "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)",
-                                                              "width": "100%"
+                                                              "//": "Use this class to style button component."
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style button element."
@@ -1955,7 +2032,12 @@
                                                           "iconName": "IoIosArrowForward",
                                                           "buttonIconPosition": "end",
                                                           "asset": null,
-                                                          "iconname": "IoIosArrowForward"
+                                                          "iconname": "IoIosArrowForward",
+                                                          "cssClassNames": [
+                                                            {
+                                                              "cssClassName": "hmbButtonCSS "
+                                                            }
+                                                          ]
                                                         },
                                                         "name": "Button",
                                                         "icon": "FaBimobject",
@@ -1974,57 +2056,102 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-                                                            "triggerName": "generateOTP",
-                                                            "serviceType": "8",
+                                                            "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                                                            "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                                                            "serviceType": "2",
                                                             "attributes": {
-                                                              "loaderWidgetIds": [
-                                                                906070
-                                                              ],
-                                                              "messageWidgetIds": [
-                                                                906070
-                                                              ],
-                                                              "responseStateKey": "generateOTPResponse",
-                                                              "url": "/generateOTP",
-                                                              "checksum": true,
-                                                              "encryption": true,
-                                                              "isDeviceDetails": false,
-                                                              "loginTrigger": "loginTrigger",
-                                                              "formData": false,
-                                                              "logoutTrigger": false,
-                                                              "headers": {
-                                                                "Content-Type": "application/json",
-                                                                "channel_key": "005"
-                                                              },
-                                                              "requestBody": [
+                                                              "delay": "",
+                                                              "triggers": [
                                                                 {
-                                                                  "type": 2,
-                                                                  "name": "Current screen",
-                                                                  "key": "tranCode",
-                                                                  "value": "tranCode"
+                                                                  "id": "W1Zrgxusxlzo0b_mfI92d",
+                                                                  "_id": "xaxK-Pad3okCqkJCzyUJL",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "generateOTP",
+                                                                  "old_name": "generateOTP",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "generateOTPResponse",
+                                                                          "url": "/generateOTP",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": "loginTrigger",
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "tranCode",
+                                                                              "value": "tranCode"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "65015c4b61f0645ad866ef4a",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": []
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
+                                                                  "updatedAt": "9/28/2023",
+                                                                  "createdAt": "9/28/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                },
+                                                                {
+                                                                  "id": "haWOO1avLi3to0z-a7l3D",
+                                                                  "name": "NAVIGATE_TO_CARD_CHANGE_OTP_SCREEN",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "1",
+                                                                      "command": {
+                                                                        "type": "3",
+                                                                        "attributes": {
+                                                                          "nextWidgetId": "QIsqLcDu-tlh0oPQN6Bdy",
+                                                                          "gridRadioValue": "",
+                                                                          "selectedObjectBindingKey": "selectedObject",
+                                                                          "editableForm": false
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
+                                                                  "_id": "bMjqSbZ0NTQbaEHMVI81q",
+                                                                  "updatedAt": "9/28/2023",
+                                                                  "createdAt": "9/28/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
                                                                 }
                                                               ],
-                                                              "baseURL": "65015c4b61f0645ad866ef4a",
-                                                              "storeType": 2
+                                                              "triggerIds": [
+                                                                "W1Zrgxusxlzo0b_mfI92d",
+                                                                "haWOO1avLi3to0z-a7l3D"
+                                                              ]
                                                             },
-                                                            "type": "2",
-                                                            "name": "On click"
-                                                          },
-                                                          {
-                                                            "triggerId": "haWOO1avLi3to0z-a7l3D",
-                                                            "triggerName": "NAVIGATE_TO_CARD_CHANGE_OTP_SCREEN",
-                                                            "serviceType": "1",
-                                                            "attributes": {
-                                                              "nextWidgetId": "QIsqLcDu-tlh0oPQN6Bdy",
-                                                              "gridRadioValue": "",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "editableForm": false
-                                                            },
-                                                            "type": "2",
-                                                            "name": "On click"
+                                                            "type": "4",
+                                                            "name": "On Submit"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-3-2-0-0-0"
+                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -2034,7 +2161,7 @@
                                                       "sm": 12,
                                                       "xs": 12
                                                     },
-                                                    "path": "0-0-0-0-1-0-0-0-3-2-0-0"
+                                                    "path": "0-0-0-0-1-0-0-0-2-2-0-0"
                                                   }
                                                 ],
                                                 "allowedContainers": [
@@ -2068,7 +2195,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-3-2-0"
+                                                "path": "0-0-0-0-1-0-0-0-2-2-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -2078,7 +2205,7 @@
                                               "sm": 2,
                                               "xs": 2
                                             },
-                                            "path": "0-0-0-0-1-0-0-0-3-2"
+                                            "path": "0-0-0-0-1-0-0-0-2-2"
                                           }
                                         ],
                                         "allowedContainers": [
@@ -2112,7 +2239,7 @@
                                           "type": "10001",
                                           "content": "Grid layout"
                                         },
-                                        "path": "0-0-0-0-1-0-0-0-3",
+                                        "path": "0-0-0-0-1-0-0-0-2",
                                         "dimensions": {
                                           "rows": 1,
                                           "columns": 3,
@@ -2201,7 +2328,8 @@
                               "md": 12,
                               "sm": 12,
                               "xs": 12
-                            }
+                            },
+                            "path": "0-0-0-0-1-0"
                           }
                         ],
                         "path": "0-0-0-0-1",
@@ -2328,8 +2456,8 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "#F1F5F1",
-              "height": "100vh"
+              "background": "rgb(241,245,241)",
+              "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
           },
@@ -2363,9 +2491,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "9pPCeg9Vm8XlgexNnY7m8",
-    "createdBy": "masood",
-    "updatedAt": "10/13/2023",
-    "createdAt": "10/13/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2400,8 +2528,8 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "#F1F5F1",
-          "height": "100vh"
+          "background": "rgb(241,245,241)",
+          "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
       },
@@ -2429,11 +2557,11 @@
     "attributes": {
       "gridProps": [
         {
-          "componentId": "bQDOtTwWppa-IRJI2RrLx",
+          "componentId": "to8OE1mu515GPlDS1EQ6I",
           "componentType": "10001",
-          "id": "bQDOtTwWppa-IRJI2RrLx",
+          "id": "to8OE1mu515GPlDS1EQ6I",
           "position": {
-            "i": "bQDOtTwWppa-IRJI2RrLx",
+            "i": "to8OE1mu515GPlDS1EQ6I",
             "x": null,
             "y": null,
             "w": null,
@@ -2494,7 +2622,7 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "bQDOtTwWppa-IRJI2RrLx",
+    "id": "to8OE1mu515GPlDS1EQ6I",
     "name": "Grid layout",
     "type": "10001",
     "attributes": {
@@ -2507,7 +2635,7 @@
             "sm": 12,
             "xs": 12
           },
-          "componentId": "vgMXnE2zVZC9mOA-9sgPP",
+          "componentId": "oIzzQYRyKXPSx1TsfLy7z",
           "componentType": "20002",
           "order": 1
         }
@@ -2516,7 +2644,7 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "10px 25px",
+          "padding": "20px 5px 10px 30px",
           "spacing": 0
         },
         "mainContainer": "gridLayout"
@@ -2530,7 +2658,14 @@
       "name": "Grid layout"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "5HDYOzxtsDeLZI2KMx_Gz",
+        "triggerName": "cardlist Trigger",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -2539,7 +2674,7 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "vgMXnE2zVZC9mOA-9sgPP",
+    "id": "oIzzQYRyKXPSx1TsfLy7z",
     "status": "ACTIVE",
     "name": "Label",
     "attributes": {
@@ -2642,25 +2777,6 @@
     "attributes": {
       "gridProps": [
         {
-          "componentId": "to8OE1mu515GPlDS1EQ6I",
-          "componentType": "10001",
-          "id": "to8OE1mu515GPlDS1EQ6I",
-          "position": {
-            "i": "to8OE1mu515GPlDS1EQ6I",
-            "x": null,
-            "y": null,
-            "w": null,
-            "h": null
-          },
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          }
-        },
-        {
           "componentId": "fFzB4eebjByrBDRNPwApL",
           "componentType": "10001",
           "id": "fFzB4eebjByrBDRNPwApL",
@@ -2741,105 +2857,6 @@
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "to8OE1mu515GPlDS1EQ6I",
-    "name": "Grid layout",
-    "type": "10001",
-    "attributes": {
-      "gridProps": [
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "oIzzQYRyKXPSx1TsfLy7z",
-          "componentType": "20002",
-          "order": 1
-        }
-      ],
-      "label": "Header",
-      "layoutProperties": {
-        "gridLayout": {
-          "//": "Use this class to style grid layout component.",
-          "padding": "20px 5px 10px 30px",
-          "spacing": 0,
-          "border-bottom": "1px solid #E2EFE7"
-        },
-        "mainContainer": "gridLayout"
-      },
-      "layoutProps": {
-        "direction": "row",
-        "justifyContent": "flex-start",
-        "alignItems": "flex-start"
-      },
-      "direction": "row",
-      "name": "Grid layout"
-    },
-    "layout": null,
-    "events": [
-      {
-        "triggerId": "5HDYOzxtsDeLZI2KMx_Gz",
-        "triggerName": "cardlist Trigger",
-        "name": "On initialization",
-        "type": "1"
-      }
-    ],
-    "subType": "component",
-    "screenId": "9pPCeg9Vm8XlgexNnY7m8",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "oIzzQYRyKXPSx1TsfLy7z",
-    "status": "ACTIVE",
-    "name": "Label",
-    "attributes": {
-      "variant": "body1",
-      "name": "Label",
-      "mandatory": false,
-      "layoutProperties": {
-        "label": {
-          "//": "Use this class to style label component.",
-          "color": "#05070F",
-          "font-family": "Circular Std !important",
-          "font-size": "1.317vw",
-          "font-style": "normal",
-          "font-weight": "500",
-          "line-height": "normal"
-        },
-        "mainContainer": "label",
-        "xl": 12,
-        "lg": 12,
-        "md": 12,
-        "sm": 12,
-        "xs": 12
-      },
-      "label": "Card Status Details",
-      "cssClassNames": [{ "cssClassName": "screen_Heading " }]
-    },
-    "icon": "FaFont",
-    "group": "Form",
-    "type": "20002",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 15,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "web",
-    "component": { "content": "Label", "type": "20002" },
-    "events": [],
-    "path": "0-0-0-0-1-0-0-0-0-0-0",
-    "screenId": "9pPCeg9Vm8XlgexNnY7m8",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -3088,7 +3105,7 @@
     "projectType": "web",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-1-0-0-0-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-0-0-0-0-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3156,11 +3173,70 @@
       "dataKey": "cardTitle",
       "dataValue": "cardTitle",
       "mandatory": true,
-      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This Field is Required",
+        "bindButton": [
+          {
+            "id": "rlvwRty9SAiP0j2g1aPBc",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "iconName": "IoIosArrowForward",
+              "buttonIconPosition": "end",
+              "asset": null,
+              "iconname": "IoIosArrowForward",
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+            "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
-          "background": "#F0F0F0",
           "border-radius": "10px"
         },
         "textField": {
@@ -3204,7 +3280,7 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Drop down", "type": "20003" },
-    "path": "0-0-0-0-1-0-0-0-1-0-0-0-1-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-0-0-0-1-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3287,7 +3363,7 @@
     "projectType": "web",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-1-0-0-0-2-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-0-0-0-2-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3385,7 +3461,67 @@
       "dataKey": "",
       "dataValue": "",
       "mandatory": true,
-      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This Field is Required",
+        "bindButton": [
+          {
+            "id": "rlvwRty9SAiP0j2g1aPBc",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "iconName": "IoIosArrowForward",
+              "buttonIconPosition": "end",
+              "asset": null,
+              "iconname": "IoIosArrowForward",
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+            "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown."
@@ -3428,7 +3564,7 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Drop down", "type": "20003" },
-    "path": "0-0-0-0-1-0-0-0-1-0-0-0-3-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-0-0-0-3-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3451,7 +3587,67 @@
       "dataKey": "",
       "dataValue": "",
       "mandatory": true,
-      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This Field is Required",
+        "bindButton": [
+          {
+            "id": "rlvwRty9SAiP0j2g1aPBc",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "iconName": "IoIosArrowForward",
+              "buttonIconPosition": "end",
+              "asset": null,
+              "iconname": "IoIosArrowForward",
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+            "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown."
@@ -3494,7 +3690,7 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Drop down", "type": "20003" },
-    "path": "0-0-0-0-1-0-0-0-1-0-0-0-3-0-1",
+    "path": "0-0-0-0-1-0-0-0-0-0-0-0-3-0-1",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3648,7 +3844,7 @@
     "projectType": "web",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-1-1-0-0-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3731,7 +3927,67 @@
         "sm": 12,
         "xs": 12
       },
-      "validate": { "required": false, "errorMsg": "This field is required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This field is required",
+        "bindButton": [
+          {
+            "id": "rlvwRty9SAiP0j2g1aPBc",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "Next",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": { "//": "Use this class to style button component." },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              },
+              "iconName": "IoIosArrowForward",
+              "buttonIconPosition": "end",
+              "asset": null,
+              "iconname": "IoIosArrowForward",
+              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+                "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "2"
+              }
+            ],
+            "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+            "screenId": "9pPCeg9Vm8XlgexNnY7m8",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "placeholder": "Select Card Number",
       "disableUnderline": true,
       "stateName": "cardNumber",
@@ -3749,7 +4005,7 @@
     "projectType": "web",
     "component": { "content": "Text Box", "type": "20004" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0-0",
+    "path": "0-0-0-0-1-0-0-0-0-1-0-0-1-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3881,7 +4137,11 @@
       "emailOtpLabel": "Email Otp",
       "otpTriggerId": "raaYkasbVgQ388avgrzcC",
       "validationTriggerId": "",
-      "validate": { "isOTP": true },
+      "validate": {
+        "isOTP": true,
+        "required": true,
+        "bindButton": "rlvwRty9SAiP0j2g1aPBc"
+      },
       "otpType": { "key": "boxOtp", "value": "Box OTP" },
       "valueLength": "6",
       "stateNameOTP": "OTP",
@@ -3892,7 +4152,7 @@
     "projectType": "web",
     "component": { "content": "OTP", "type": "20052" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-2-1-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-1-1-0-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -4040,20 +4300,7 @@
     "name": "Grid layout",
     "type": "10001",
     "attributes": {
-      "gridProps": [
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "e9suii3XTWqxgAteN1XRl",
-          "componentType": "20006",
-          "order": 1
-        }
-      ],
+      "gridProps": [],
       "label": "Header",
       "layoutProperties": {
         "gridLayout": {
@@ -4077,68 +4324,6 @@
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "e9suii3XTWqxgAteN1XRl",
-    "status": "ACTIVE",
-    "attributes": {
-      "label": "Back",
-      "variant": "outlined",
-      "name": "Button",
-      "label-locale-key": "",
-      "fullWidth": true,
-      "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "2.7rem",
-          "border": "1px solid #19612F !important",
-          "text-color": "#19612F",
-          "border-radius": "8px",
-          "color": "#19612F",
-          "box-shadow": "0px 4px 10px 0px #19612F1A",
-          "width": "100%"
-        },
-        "inputProps": { "//": "Use this class to style button element." },
-        "mainContainer": "button",
-        "xl": 12,
-        "lg": 12,
-        "md": 12,
-        "sm": 12,
-        "xs": 12
-      },
-      "icon": null,
-      "asset": null,
-      "buttonIconPosition": "start",
-      "iconName": "IoIosArrowBack",
-      "iconname": "IoIosArrowBack"
-    },
-    "name": "Button",
-    "icon": "FaBimobject",
-    "group": "Form",
-    "type": "20006",
-    "Documentation": "<div>components 12344</div>",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 1,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "web",
-    "component": { "content": "Button", "type": "20006" },
-    "events": [
-      {
-        "triggerId": "ogtqNrc2SsOERZ9iupCck",
-        "triggerName": "NAVIGATE_PAYEE_TO_DASHBOARD",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "1"
-      }
-    ],
-    "path": "0-0-0-0-1-0-0-0-3-1-0-0-0",
-    "screenId": "9pPCeg9Vm8XlgexNnY7m8",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
@@ -4197,15 +4382,7 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "height": "2.7rem",
-          "border-radius": "8px",
-          "border": "1px solid #FFFFFF",
-          "background": "#19612F",
-          "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2)",
-          "width": "100%"
-        },
+        "button": { "//": "Use this class to style button component." },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -4217,7 +4394,8 @@
       "iconName": "IoIosArrowForward",
       "buttonIconPosition": "end",
       "asset": null,
-      "iconname": "IoIosArrowForward"
+      "iconname": "IoIosArrowForward",
+      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -4233,21 +4411,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-        "triggerName": "generateOTP",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "8"
-      },
-      {
-        "triggerId": "haWOO1avLi3to0z-a7l3D",
-        "triggerName": "NAVIGATE_TO_CARD_CHANGE_OTP_SCREEN",
-        "name": "On click",
-        "type": "2",
-        "serviceType": "1"
+        "triggerId": "F6xum1g-1S8XxPqKqIVIL",
+        "triggerName": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+        "name": "On Submit",
+        "type": "4",
+        "serviceType": "2"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-3-2-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

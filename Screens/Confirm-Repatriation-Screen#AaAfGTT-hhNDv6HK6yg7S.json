@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "QEFab35Ynbhs3iq_9A8AV",
+            "id": "AsuWNDfN7BveH-9QRY9g7",
             "gridProps": [
               {
                 "type": "10001",
@@ -5660,12 +5660,63 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "path": 0,
-        "events": [],
+        "path": "0",
+        "events": [
+          {
+            "triggerId": "82eEZ8LpyzM_ar8l4H6wT",
+            "triggerName": "NPCRepatriationForm tranCode",
+            "serviceType": "11",
+            "attributes": {
+              "requestBody": [],
+              "dataType": "value",
+              "destinationBindingKey": "tranCode",
+              "sourceBindingKey": "form",
+              "sourceStoreType": 2,
+              "destinationStoreType": 2,
+              "logic": { "if": [true, "0084", "0084"] },
+              "changeValueConditonally": true,
+              "targettedType": "value"
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+            "triggerName": "generateOTP",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "generateOTPResponse",
+              "url": "/generateOTP",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": false,
+              "loginTrigger": "loginTrigger",
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                {
+                  "type": 2,
+                  "name": "Current screen",
+                  "key": "tranCode",
+                  "value": "tranCode"
+                }
+              ],
+              "baseURL": "65015c4b61f0645ad866ef4a",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "attributes": {
           "gridProps": [],
           "label": "Header",
@@ -5688,7 +5739,17 @@
         },
         "component": { "type": "10001", "content": "Grid layout" },
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
-        "name": "Confirm Repatriation Screen"
+        "name": "Confirm Repatriation Screen",
+        "dimensions": {
+          "rows": 1,
+          "columns": 1,
+          "colSize0xs": 12,
+          "colSize0sm": 12,
+          "colSize0md": 12,
+          "colSize0lg": 12,
+          "colSize0xl": 12
+        },
+        "readOnly": true
       }
     ],
     "events": [],
@@ -5699,8 +5760,8 @@
     "gitBranchName": "master",
     "_id": "AaAfGTT-hhNDv6HK6yg7S",
     "createdBy": "masood",
-    "updatedAt": "11/1/2023",
-    "createdAt": "11/1/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5767,7 +5828,20 @@
       "name": "Confirm Repatriation Screen"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "82eEZ8LpyzM_ar8l4H6wT",
+        "triggerName": "NPCRepatriationForm tranCode",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "AaAfGTT-hhNDv6HK6yg7S",
     "projectId": "640ee2a26ead56231ce8350b",

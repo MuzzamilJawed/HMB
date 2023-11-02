@@ -1,0 +1,103 @@
+{
+  "id": "F6xum1g-1S8XxPqKqIVIL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CARD_STATUS_CHANGE_OTP_CHAIN_TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "W1Zrgxusxlzo0b_mfI92d",
+              "_id": "xaxK-Pad3okCqkJCzyUJL",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "generateOTP",
+              "old_name": "generateOTP",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "generateOTPResponse",
+                      "url": "/generateOTP",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "tranCode",
+                          "value": "tranCode"
+                        }
+                      ],
+                      "baseURL": "65015c4b61f0645ad866ef4a",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
+              "updatedAt": "9/28/2023",
+              "createdAt": "9/28/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "haWOO1avLi3to0z-a7l3D",
+              "name": "NAVIGATE_TO_CARD_CHANGE_OTP_SCREEN",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "nextWidgetId": "QIsqLcDu-tlh0oPQN6Bdy",
+                      "gridRadioValue": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
+              "_id": "bMjqSbZ0NTQbaEHMVI81q",
+              "updatedAt": "9/28/2023",
+              "createdAt": "9/28/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["W1Zrgxusxlzo0b_mfI92d", "haWOO1avLi3to0z-a7l3D"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.waamf9nnxwbM9j1Un7t2p7IVYO7KgLd",
+  "_id": "tJoZW2QYOR9bRbpM6Sb-G",
+  "updatedAt": "11/2/2023",
+  "createdAt": "11/2/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

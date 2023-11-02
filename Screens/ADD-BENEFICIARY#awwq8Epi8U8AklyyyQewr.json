@@ -35,8 +35,8 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "#F1F5F1",
-              "height": "100vh"
+              "background": "rgb(241,245,241)",
+              "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
           },
@@ -65,7 +65,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "W5vwjMACOe45C6q9m4rnl",
+            "id": "w7tzqRCy-tJ1fkveDaImN",
             "gridProps": [
               {
                 "type": "10001",
@@ -1534,6 +1534,66 @@
                                                             },
                                                             "type": "4",
                                                             "name": "On Submit"
+                                                          },
+                                                          {
+                                                            "triggerId": "ex3HaqElhOcwBxnxZ3OX3",
+                                                            "triggerName": "beneficiaryManagement tranCode",
+                                                            "serviceType": "11",
+                                                            "attributes": {
+                                                              "dataType": "value",
+                                                              "destinationBindingKey": "tranCode",
+                                                              "sourceBindingKey": "form",
+                                                              "sourceStoreType": 2,
+                                                              "destinationStoreType": 2,
+                                                              "logic": {
+                                                                "if": [
+                                                                  true,
+                                                                  "0081",
+                                                                  "0081"
+                                                                ]
+                                                              },
+                                                              "changeValueConditonally": true,
+                                                              "targettedType": "value"
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click"
+                                                          },
+                                                          {
+                                                            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+                                                            "triggerName": "generateOTP",
+                                                            "serviceType": "8",
+                                                            "attributes": {
+                                                              "loaderWidgetIds": [
+                                                                906070
+                                                              ],
+                                                              "messageWidgetIds": [
+                                                                906070
+                                                              ],
+                                                              "responseStateKey": "generateOTPResponse",
+                                                              "url": "/generateOTP",
+                                                              "checksum": true,
+                                                              "encryption": true,
+                                                              "isDeviceDetails": false,
+                                                              "loginTrigger": "loginTrigger",
+                                                              "formData": false,
+                                                              "logoutTrigger": false,
+                                                              "headers": {
+                                                                "Content-Type": "application/json",
+                                                                "channel_key": "005"
+                                                              },
+                                                              "requestBody": [
+                                                                {
+                                                                  "type": 2,
+                                                                  "name": "Current screen",
+                                                                  "key": "tranCode",
+                                                                  "value": "tranCode"
+                                                                }
+                                                              ],
+                                                              "baseURL": "65015c4b61f0645ad866ef4a",
+                                                              "storeType": 2
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click"
                                                           }
                                                         ],
                                                         "path": "0-0-0-0-1-0-0-0-1-2-0-0-1"
@@ -1823,8 +1883,8 @@
     "gitBranchName": "master",
     "_id": "awwq8Epi8U8AklyyyQewr",
     "createdBy": "masood",
-    "updatedAt": "10/31/2023",
-    "createdAt": "10/31/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1859,8 +1919,8 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "#F1F5F1",
-          "height": "100vh"
+          "background": "rgb(241,245,241)",
+          "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
       },
@@ -3275,6 +3335,20 @@
         "triggerName": "getAccountDetailsBene",
         "name": "On Submit",
         "type": "4",
+        "serviceType": "8"
+      },
+      {
+        "triggerId": "ex3HaqElhOcwBxnxZ3OX3",
+        "triggerName": "beneficiaryManagement tranCode",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "11"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On click",
+        "type": "2",
         "serviceType": "8"
       }
     ],

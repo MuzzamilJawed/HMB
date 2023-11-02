@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "stopChequeResponse",
+          "successMessageBindingKey": "stopChequeResponseSuccess",
+          "errorMessageBindingKey": "stopChequeResponseError",
           "url": "/chequeBookRequest",
           "checksum": true,
           "encryption": true,
@@ -59,57 +61,22 @@
           {
             "httpStatus": 200,
             "logic": { "==": [{ "var": "code" }, 1] },
-            "triggerName": "CONFIRM_STOP_CHEQUE_SUCCESS_MODAL_TRIGGER",
-            "triggerId": "bfBG2b1JWIF2dAw_sKNeA"
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
           },
           {
             "httpStatus": 200,
             "logic": { "==": [{ "var": "code" }, 0] },
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 400,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
-          },
-          {
-            "httpStatus": 502,
-            "triggerName": "CONFIRM_STOP_CHEQUE_ERROR_MODAL_TRIGGER",
-            "triggerId": "YWT3UCfEVVUnh3keTl-rp"
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.lvm7dg4y8mfpU-mmE_aTGXbfu7xReZaN",
-  "updatedAt": "9/26/2023",
-  "createdAt": "9/26/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.kngbaqrw9ssOjKl-1R97N41PJOQHgFfV",
+  "updatedAt": "11/2/2023",
+  "createdAt": "11/2/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

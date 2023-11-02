@@ -55,18 +55,69 @@
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "oSvOXIy7QV6tftMKFBn19",
+            "triggerName": "completeRegistration tranCode",
+            "serviceType": "11",
+            "attributes": {
+              "dataType": "value",
+              "destinationBindingKey": "tranCode",
+              "sourceBindingKey": "form",
+              "sourceStoreType": 2,
+              "destinationStoreType": 2,
+              "logic": { "if": [true, "0105", "0105"] },
+              "changeValueConditonally": true,
+              "targettedType": "value"
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+            "triggerName": "generateOTP",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "generateOTPResponse",
+              "url": "/generateOTP",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": false,
+              "loginTrigger": "loginTrigger",
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                {
+                  "type": 2,
+                  "name": "Current screen",
+                  "key": "tranCode",
+                  "value": "tranCode"
+                }
+              ],
+              "baseURL": "65015c4b61f0645ad866ef4a",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "F2fPQnYCaDTVAu3r2Ml3v",
+            "id": "APlH3ygXzrHl-TolzXquu",
             "gridProps": [
               {
                 "type": "10001",
@@ -1097,52 +1148,7 @@
                                                           {
                                                             "type": "column",
                                                             "id": "BIJFY0AGABDuulhQQOttv",
-                                                            "gridProps": [
-                                                              {
-                                                                "id": "lCIKKfcx52iTR69KcNKmd",
-                                                                "status": "ACTIVE",
-                                                                "name": "Link",
-                                                                "icon": "FaLink",
-                                                                "group": "Form",
-                                                                "attributes": {
-                                                                  "label": "RESEND OTP?",
-                                                                  "name": "RESEDN OTP",
-                                                                  "layoutProperties": {
-                                                                    "link": {
-                                                                      "//": "Use this class to style link component.",
-                                                                      "color": "#BBBFC2 !important",
-                                                                      "border": "#19612F !important",
-                                                                      "font-family": "Circular Std !important",
-                                                                      "text-decoration": "none !important",
-                                                                      "font-size": "15px",
-                                                                      "cursor": "pointer",
-                                                                      "font-style": "normal",
-                                                                      "font-weight": "450",
-                                                                      "line-height": "normal"
-                                                                    },
-                                                                    "mainContainer": "link",
-                                                                    "xl": 8,
-                                                                    "lg": 8,
-                                                                    "md": 8,
-                                                                    "sm": 8,
-                                                                    "xs": 8
-                                                                  }
-                                                                },
-                                                                "updatedAt": "23-Aug-2021",
-                                                                "createdAt": "23-Aug-2021",
-                                                                "type": "20011",
-                                                                "order": 4,
-                                                                "version": "1.0.0",
-                                                                "isLatest": true,
-                                                                "projectType": "web",
-                                                                "component": {
-                                                                  "content": "Link",
-                                                                  "type": "20011"
-                                                                },
-                                                                "events": [],
-                                                                "path": "0-0-0-0-0-0-0-0-0-0-3-0-0"
-                                                              }
-                                                            ],
+                                                            "gridProps": [],
                                                             "layoutProperties": {
                                                               "xl": 8,
                                                               "lg": 8,
@@ -1155,7 +1161,93 @@
                                                           {
                                                             "type": "column",
                                                             "id": "9HqgLgq1rsb1Z2qONtF3P",
-                                                            "gridProps": [],
+                                                            "gridProps": [
+                                                              {
+                                                                "id": "W-lIup7C8rxH1R74Z_NLM",
+                                                                "status": "ACTIVE",
+                                                                "attributes": {
+                                                                  "label": "Resend OTP",
+                                                                  "variant": "contained",
+                                                                  "name": "Button",
+                                                                  "label-locale-key": "",
+                                                                  "fullWidth": true,
+                                                                  "layoutProperties": {
+                                                                    "button": {
+                                                                      "//": "Use this class to style button component.",
+                                                                      "font-size": "6px",
+                                                                      "border-radius": "25px",
+                                                                      "color": "#fff !important",
+                                                                      "background": "#1D6131 !important",
+                                                                      "font-weight": 700
+                                                                    },
+                                                                    "inputProps": {
+                                                                      "//": "Use this class to style button element."
+                                                                    },
+                                                                    "mainContainer": "button",
+                                                                    "xl": 4,
+                                                                    "lg": 4,
+                                                                    "md": 4,
+                                                                    "sm": 4,
+                                                                    "xs": 4
+                                                                  }
+                                                                },
+                                                                "name": "Button",
+                                                                "icon": "FaBimobject",
+                                                                "group": "Form",
+                                                                "type": "20006",
+                                                                "Documentation": "<div>components 12344</div>",
+                                                                "updatedAt": "23-Aug-2021",
+                                                                "createdAt": "23-Aug-2021",
+                                                                "order": 1,
+                                                                "version": "1.0.0",
+                                                                "isLatest": true,
+                                                                "projectType": "web",
+                                                                "component": {
+                                                                  "content": "Button",
+                                                                  "type": "20006"
+                                                                },
+                                                                "events": [
+                                                                  {
+                                                                    "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+                                                                    "triggerName": "generateOTP",
+                                                                    "serviceType": "8",
+                                                                    "attributes": {
+                                                                      "loaderWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "messageWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "responseStateKey": "generateOTPResponse",
+                                                                      "url": "/generateOTP",
+                                                                      "checksum": true,
+                                                                      "encryption": true,
+                                                                      "isDeviceDetails": false,
+                                                                      "loginTrigger": "loginTrigger",
+                                                                      "formData": false,
+                                                                      "logoutTrigger": false,
+                                                                      "headers": {
+                                                                        "Content-Type": "application/json",
+                                                                        "channel_key": "005"
+                                                                      },
+                                                                      "requestBody": [
+                                                                        {
+                                                                          "type": 2,
+                                                                          "name": "Current screen",
+                                                                          "key": "tranCode",
+                                                                          "value": "tranCode"
+                                                                        }
+                                                                      ],
+                                                                      "baseURL": "65015c4b61f0645ad866ef4a",
+                                                                      "storeType": 2
+                                                                    },
+                                                                    "type": "2",
+                                                                    "name": "On click"
+                                                                  }
+                                                                ],
+                                                                "path": "0-0-0-0-0-0-0-0-1-0-0-0-3-1-0"
+                                                              }
+                                                            ],
                                                             "layoutProperties": {
                                                               "xl": 4,
                                                               "lg": 4,
@@ -5508,8 +5600,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -5533,8 +5624,8 @@
     "gitBranchName": "master",
     "_id": "HYpHClysT3Q1_HuDu_O0B",
     "createdBy": "masood",
-    "updatedAt": "10/31/2023",
-    "createdAt": "10/31/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5585,7 +5676,20 @@
       "cssClassNames": [{ "cssClassName": "preloginScreenModalBody " }]
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "oSvOXIy7QV6tftMKFBn19",
+        "triggerName": "completeRegistration tranCode",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "HYpHClysT3Q1_HuDu_O0B",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -6758,9 +6862,9 @@
     "attributes": {
       "gridProps": [
         {
-          "layoutProperties": { "xl": 8, "lg": 8, "md": 8, "sm": 8, "xs": 8 },
-          "componentId": "lCIKKfcx52iTR69KcNKmd",
-          "componentType": "20011",
+          "layoutProperties": { "xl": 4, "lg": 4, "md": 4, "sm": 4, "xs": 4 },
+          "componentId": "W-lIup7C8rxH1R74Z_NLM",
+          "componentType": "20006",
           "order": 1
         }
       ],
@@ -6792,47 +6896,56 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "lCIKKfcx52iTR69KcNKmd",
+    "id": "W-lIup7C8rxH1R74Z_NLM",
     "status": "ACTIVE",
-    "name": "Link",
-    "icon": "FaLink",
-    "group": "Form",
     "attributes": {
-      "label": "RESEND OTP?",
-      "name": "RESEDN OTP",
+      "label": "Resend OTP",
+      "variant": "contained",
+      "name": "Button",
+      "label-locale-key": "",
+      "fullWidth": true,
       "layoutProperties": {
-        "link": {
-          "//": "Use this class to style link component.",
-          "color": "#BBBFC2 !important",
-          "border": "#19612F !important",
-          "font-family": "Circular Std !important",
-          "text-decoration": "none !important",
-          "font-size": "15px",
-          "cursor": "pointer",
-          "font-style": "normal",
-          "font-weight": "450",
-          "line-height": "normal"
+        "button": {
+          "//": "Use this class to style button component.",
+          "font-size": "6px",
+          "border-radius": "25px",
+          "color": "#fff !important",
+          "background": "#1D6131 !important",
+          "font-weight": 700
         },
-        "mainContainer": "link",
-        "xl": 8,
-        "lg": 8,
-        "md": 8,
-        "sm": 8,
-        "xs": 8
+        "inputProps": { "//": "Use this class to style button element." },
+        "mainContainer": "button",
+        "xl": 4,
+        "lg": 4,
+        "md": 4,
+        "sm": 4,
+        "xs": 4
       }
     },
+    "name": "Button",
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "20006",
+    "Documentation": "<div>components 12344</div>",
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
-    "type": "20011",
-    "order": 4,
+    "order": 1,
     "version": "1.0.0",
     "isLatest": true,
     "projectType": "web",
-    "component": { "content": "Link", "type": "20011" },
-    "events": [],
-    "path": "0-0-0-0-0-0-0-0-0-0-3-0-0",
-    "screenId": "HYpHClysT3Q1_HuDu_O0B",
     "subType": "component",
+    "component": { "content": "Button", "type": "20006" },
+    "events": [
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "8"
+      }
+    ],
+    "path": "0-0-0-0-0-0-0-0-1-0-0-0-3-1-0",
+    "screenId": "HYpHClysT3Q1_HuDu_O0B",
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"

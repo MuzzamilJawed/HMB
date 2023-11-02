@@ -15,6 +15,8 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "roshanKhidmatTransferResponse",
+          "successMessageBindingKey": "roshanKhidmatTransferResponseSuccess",
+          "errorMessageBindingKey": "roshanKhidmatTransferResponseError",
           "url": "/transfer",
           "checksum": true,
           "encryption": true,
@@ -40,10 +42,10 @@
               "value": "amount"
             },
             {
-              "type": 4,
-              "name": "Static",
+              "type": 1,
+              "name": "Form",
               "key": "amountInWords",
-              "value": "PKR One"
+              "value": "Amount_In_Words_amount"
             },
             {
               "type": 1,
@@ -221,14 +223,20 @@
             "triggerName": "Swap Roshan Confirm to Receipt ",
             "triggerId": "hReg_SISl-YEnjK3winCr",
             "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
           }
         ]
       }
     }
   ],
-  "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
-  "updatedAt": "10/3/2023",
-  "createdAt": "10/3/2023",
+  "csrf": "0.kngbaqrw9ssOjKl-1R97N41PJOQHgFfV",
+  "updatedAt": "11/2/2023",
+  "createdAt": "11/2/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

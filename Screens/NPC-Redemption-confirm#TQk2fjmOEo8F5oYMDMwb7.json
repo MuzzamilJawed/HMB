@@ -53,18 +53,70 @@
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "S23WOAOSlfyD54Lw2_Ebw",
+            "triggerName": "npcRedemption tranCode",
+            "serviceType": "11",
+            "attributes": {
+              "requestBody": [],
+              "dataType": "value",
+              "destinationBindingKey": "tranCode",
+              "sourceBindingKey": "form",
+              "sourceStoreType": 2,
+              "destinationStoreType": 2,
+              "logic": { "if": [true, "0095", "0095"] },
+              "changeValueConditonally": true,
+              "targettedType": "value"
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+            "triggerName": "generateOTP",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "generateOTPResponse",
+              "url": "/generateOTP",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": false,
+              "loginTrigger": "loginTrigger",
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                {
+                  "type": 2,
+                  "name": "Current screen",
+                  "key": "tranCode",
+                  "value": "tranCode"
+                }
+              ],
+              "baseURL": "65015c4b61f0645ad866ef4a",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "ME33xaj0_YrOA6OkMwr-r",
+            "id": "T51IFEWsQ3LVX2j_gqWk6",
             "gridProps": [
               {
                 "type": "10001",
@@ -4596,8 +4648,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -4621,8 +4672,8 @@
     "gitBranchName": "master",
     "_id": "TQk2fjmOEo8F5oYMDMwb7",
     "createdBy": "masood",
-    "updatedAt": "11/1/2023",
-    "createdAt": "11/1/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4671,7 +4722,20 @@
       "name": "NPC Redemption confirm"
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "S23WOAOSlfyD54Lw2_Ebw",
+        "triggerName": "npcRedemption tranCode",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "TQk2fjmOEo8F5oYMDMwb7",
     "projectId": "640ee2a26ead56231ce8350b",
