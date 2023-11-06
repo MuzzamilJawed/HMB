@@ -15,6 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "cardStatusResponse",
+          "successMessageBindingKey": "cardlistSuccess",
           "url": "/updateCardStatus",
           "checksum": true,
           "encryption": true,
@@ -60,63 +61,23 @@
         "responseHandler": [
           {
             "httpStatus": 200,
-            "triggerName": "Card_Status_Success_TRIGGER",
-            "triggerId": "cc3YrM1dOEUeZmktdC_sU",
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
             "logic": { "==": [{ "var": "code" }, 1] }
           },
           {
             "httpStatus": 200,
             "logic": { "==": [{ "var": "code" }, 0] },
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 400,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 401,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 402,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 403,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 404,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 500,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 501,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
-          },
-          {
-            "httpStatus": 502,
-            "triggerName": "Card_Status_Error_TRIGGER",
-            "triggerId": "I6NBngrawYvwotO6K9xmd"
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.lk3znw8dsw9oEqS3iqN_DKFN3KeixlRN",
-  "updatedAt": "10/2/2023",
-  "createdAt": "10/2/2023",
+  "csrf": "0.y6kmuzx099elmrUyJa_tMJnO44OcfhdM",
+  "updatedAt": "11/3/2023",
+  "createdAt": "11/3/2023",
   "createdBy": "muhammad.asad",
   "updatedBy": "muhammad.asad"
 }

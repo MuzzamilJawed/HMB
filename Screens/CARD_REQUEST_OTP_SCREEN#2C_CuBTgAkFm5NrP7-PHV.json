@@ -3613,6 +3613,261 @@
                                                           }
                                                         ],
                                                         "path": "0-0-0-0-1-0-0-0-2-2-0-0-0"
+                                                      },
+                                                      {
+                                                        "id": "yW986MWI8V7q9_pcEzbnL",
+                                                        "type": "20031",
+                                                        "triggerName": "ERROR_MODAL",
+                                                        "attributes": {
+                                                          "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                                                          "layoutProperties": {
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          }
+                                                        },
+                                                        "component": {
+                                                          "type": "20031"
+                                                        }
+                                                      },
+                                                      {
+                                                        "id": "bn5RN8DfqMb7v53zdnJKT",
+                                                        "status": "ACTIVE",
+                                                        "attributes": {
+                                                          "label": "CONFIRM",
+                                                          "variant": "contained",
+                                                          "name": "Button",
+                                                          "label-locale-key": "",
+                                                          "fullWidth": true,
+                                                          "layoutProperties": {
+                                                            "button": {
+                                                              "//": "Use this class to style button component."
+                                                            },
+                                                            "inputProps": {
+                                                              "//": "Use this class to style button element."
+                                                            },
+                                                            "mainContainer": "button",
+                                                            "xl": 12,
+                                                            "lg": 12,
+                                                            "md": 12,
+                                                            "sm": 12,
+                                                            "xs": 12
+                                                          },
+                                                          "buttonIconPosition": "end",
+                                                          "asset": null,
+                                                          "cssClassNames": [
+                                                            {
+                                                              "cssClassName": "hmbButtonCSS "
+                                                            }
+                                                          ]
+                                                        },
+                                                        "name": "Button",
+                                                        "icon": "FaBimobject",
+                                                        "group": "Form",
+                                                        "type": "20006",
+                                                        "Documentation": "<div>components 12344</div>",
+                                                        "updatedAt": "23-Aug-2021",
+                                                        "createdAt": "23-Aug-2021",
+                                                        "order": 1,
+                                                        "version": "1.0.0",
+                                                        "isLatest": true,
+                                                        "projectType": "web",
+                                                        "component": {
+                                                          "content": "Button",
+                                                          "type": "20006"
+                                                        },
+                                                        "events": [
+                                                          {
+                                                            "triggerId": "_CulBQ-AptP9UEEexI57H",
+                                                            "triggerName": "CARD_REQUEST_CHAIN_TRIGGER_WITH_API",
+                                                            "serviceType": "2",
+                                                            "attributes": {
+                                                              "delay": "",
+                                                              "triggers": [
+                                                                {
+                                                                  "id": "TCicpprTZFn8DYos69xXs",
+                                                                  "name": "otpInfo Mapping",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "destinationBindingKey": "otpInfo",
+                                                                          "sourceBindingKey": "form",
+                                                                          "sourceStoreType": 2,
+                                                                          "destinationStoreType": 2,
+                                                                          "filterList": [
+                                                                            {
+                                                                              "key": "smsPin",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentScreen.form.smsPin"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "emailPin",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  null,
+                                                                                  null
+                                                                                ]
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "splitOtp",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  false,
+                                                                                  false
+                                                                                ]
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  "OTP",
+                                                                                  "OTP"
+                                                                                ]
+                                                                              },
+                                                                              "key": "validationType"
+                                                                            }
+                                                                          ],
+                                                                          "targettedType": "object"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+                                                                  "_id": "rRjW6WQgtFhIounPrQ3Ys",
+                                                                  "updatedAt": "9/13/2023",
+                                                                  "createdAt": "9/13/2023",
+                                                                  "createdBy": "masood",
+                                                                  "updatedBy": "masood"
+                                                                },
+                                                                {
+                                                                  "id": "P1tLtv3-INf2HRhmlidyW",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "Card Request API TRIGGER",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "responseOfCardResquest",
+                                                                          "successMessageBindingKey": "successMessage",
+                                                                          "errorMessageBindingKey": "errorMessage",
+                                                                          "url": "/requestNewCard",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "accountId",
+                                                                              "value": "fromInstrument.accountId"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "cardName",
+                                                                              "value": "cardType.cardName"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "cardOption",
+                                                                              "value": "productType.cardNature"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "cardTitle",
+                                                                              "value": "cardTitle"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "cardType",
+                                                                              "value": "cardType.cardId"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "mobilePhone",
+                                                                              "value": "mobileNumber"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "otpInfo",
+                                                                              "value": "otpInfo"
+                                                                            },
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "providedpin",
+                                                                              "value": "null"
+                                                                            },
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "requestDate",
+                                                                              "value": "null"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": []
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.kv5j8fxt6nfEzKr8iVYlfD7Inq5Ldxqi",
+                                                                  "_id": "E47n3enYoIw0fYKu-XBSC",
+                                                                  "updatedAt": "9/20/2023",
+                                                                  "createdAt": "9/20/2023",
+                                                                  "createdBy": "muhammad.asad",
+                                                                  "updatedBy": "muhammad.asad"
+                                                                }
+                                                              ],
+                                                              "triggerIds": [
+                                                                "TCicpprTZFn8DYos69xXs",
+                                                                "P1tLtv3-INf2HRhmlidyW"
+                                                              ]
+                                                            },
+                                                            "type": "4",
+                                                            "name": "On Submit"
+                                                          }
+                                                        ],
+                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-2"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -3911,8 +4166,8 @@
     "gitBranchName": "master",
     "_id": "2C_CuBTgAkFm5NrP7-PHV",
     "createdBy": "muhammad.asad",
-    "updatedAt": "11/2/2023",
-    "createdAt": "11/2/2023",
+    "updatedAt": "11/3/2023",
+    "createdAt": "11/3/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7059,6 +7314,18 @@
           "componentId": "bn5RN8DfqMb7v53zdnJKT",
           "componentType": "20006",
           "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "yW986MWI8V7q9_pcEzbnL",
+          "componentType": "20031",
+          "order": 1
         }
       ],
       "label": "Header",
@@ -7132,10 +7399,26 @@
         "serviceType": "2"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-2-2-0-0-2",
     "screenId": "2C_CuBTgAkFm5NrP7-PHV",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "yW986MWI8V7q9_pcEzbnL",
+    "type": "20031",
+    "triggerName": "ERROR_MODAL",
+    "attributes": {
+      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "2C_CuBTgAkFm5NrP7-PHV",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
     "gitBranchName": "master",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }

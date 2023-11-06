@@ -1,0 +1,212 @@
+{
+  "_id": "YTXz7d2jk-UtM6j_8kGAA",
+  "id": "Rr0KEThcLD05xANFYf1Ia",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "CARD_STATUS_FINAL_TRIGGER",
+  "old_name": "CARD_STATUS_FINAL_TRIGGER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "3WJVpQqglNb4yHnlELcM-",
+              "name": " Otpinfo with email and SMSpin",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.emailPin" },
+                          "key": "emailPin"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "splitOtp",
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+              "_id": "j4UDdGfNoOd5UzY-973cX",
+              "updatedAt": "9/26/2023",
+              "createdAt": "9/26/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "W_j9eunMBrhWW62jzgVA2",
+              "_id": "YialUzravI0xcSeevNx2m",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Card_Status_API_TRIGGER",
+              "old_name": "Card_Status_API_TRIGGER",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "cardStatusResponse",
+                      "url": "/updateCardStatus",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "cardNature",
+                          "value": "DC"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "cardNumberToken",
+                          "value": "titleList.cardNumber"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "cardStatus",
+                          "value": "null"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "id",
+                          "value": "0"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "status",
+                          "value": "statusCode.code"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "validation",
+                          "value": "otpInfo"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "triggerName": "Card_Status_Success_TRIGGER",
+                        "triggerId": "cc3YrM1dOEUeZmktdC_sU",
+                        "logic": { "==": [{ "var": "code" }, 1] }
+                      },
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 401,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 402,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 403,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 404,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 500,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 501,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      },
+                      {
+                        "httpStatus": 502,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.lk3znw8dsw9oEqS3iqN_DKFN3KeixlRN",
+              "updatedAt": "10/2/2023",
+              "createdAt": "10/2/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            }
+          ],
+          "triggerIds": ["3WJVpQqglNb4yHnlELcM-", "W_j9eunMBrhWW62jzgVA2"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.waamf9nnxwbM9j1Un7t2p7IVYO7KgLd",
+  "updatedAt": "11/2/2023",
+  "createdAt": "11/2/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

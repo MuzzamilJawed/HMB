@@ -119,7 +119,10 @@
                                           "buttonIconPosition": "start",
                                           "asset": null,
                                           "iconname": "BsArrowLeftShort",
-                                          "iconName": "BsArrowLeftShort"
+                                          "iconName": "BsArrowLeftShort",
+                                          "cssClassNames": [
+                                            { "cssClassName": "hmbBackButton " }
+                                          ]
                                         },
                                         "name": "Button",
                                         "icon": "FaBimobject",
@@ -136,7 +139,22 @@
                                           "content": "Button",
                                           "type": "20006"
                                         },
-                                        "events": [],
+                                        "events": [
+                                          {
+                                            "triggerId": "DBf70-2LWtcqTXd5ougPy",
+                                            "triggerName": "Navigate To Login from FAQ",
+                                            "serviceType": "1",
+                                            "attributes": {
+                                              "fromWidgetId": "3m-NNdJYQaA02bC_qtFPl",
+                                              "nextWidgetId": "kn-g6dLXYigHhX9bj8Z88",
+                                              "gridRadioValue": "Screen",
+                                              "selectedObjectBindingKey": "selectedObject",
+                                              "editableForm": false
+                                            },
+                                            "type": "2",
+                                            "name": "On click"
+                                          }
+                                        ],
                                         "path": "0-0-0-0-0-0-0-0-0"
                                       }
                                     ],
@@ -515,8 +533,8 @@
     "gitBranchName": "master",
     "_id": "3m-NNdJYQaA02bC_qtFPl",
     "createdBy": "masood",
-    "updatedAt": "9/22/2023",
-    "createdAt": "9/22/2023",
+    "updatedAt": "11/2/2023",
+    "createdAt": "11/2/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -759,7 +777,8 @@
       "buttonIconPosition": "start",
       "asset": null,
       "iconname": "BsArrowLeftShort",
-      "iconName": "BsArrowLeftShort"
+      "iconName": "BsArrowLeftShort",
+      "cssClassNames": [{ "cssClassName": "hmbBackButton " }]
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -773,7 +792,15 @@
     "isLatest": true,
     "projectType": "web",
     "component": { "content": "Button", "type": "20006" },
-    "events": [],
+    "events": [
+      {
+        "triggerId": "DBf70-2LWtcqTXd5ougPy",
+        "triggerName": "Navigate To Login from FAQ",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "1"
+      }
+    ],
     "path": "0-0-0-0-0-0-0-0-0",
     "screenId": "3m-NNdJYQaA02bC_qtFPl",
     "subType": "component",

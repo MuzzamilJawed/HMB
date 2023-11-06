@@ -2096,6 +2096,121 @@
                                                                   }
                                                                 ],
                                                                 "path": "0-0-0-0-1-0-0-0-0-1-0-0-2-0-0"
+                                                              },
+                                                              {
+                                                                "id": "CHddrO_pbipB4Nn9A_DBr",
+                                                                "status": "ACTIVE",
+                                                                "attributes": {
+                                                                  "label": "Search",
+                                                                  "variant": "contained",
+                                                                  "name": "Button",
+                                                                  "label-locale-key": "",
+                                                                  "fullWidth": true,
+                                                                  "layoutProperties": {
+                                                                    "button": {
+                                                                      "//": "Use this class to style button component.",
+                                                                      "height": "47px",
+                                                                      "border-radius": "8px",
+                                                                      "border": "1px solid #19612F !important",
+                                                                      "background": "#19612F !important",
+                                                                      "box-shadow": "0px 5.03933px 16.7978px rgba(25, 97,47,0.2) !important",
+                                                                      "width": "100%",
+                                                                      "color": "#FFFFFF !important"
+                                                                    },
+                                                                    "inputProps": {
+                                                                      "//": "Use this class to style button element."
+                                                                    },
+                                                                    "mainContainer": "button",
+                                                                    "xl": 12,
+                                                                    "lg": 12,
+                                                                    "md": 12,
+                                                                    "sm": 12,
+                                                                    "xs": 12
+                                                                  }
+                                                                },
+                                                                "name": "Button",
+                                                                "icon": "FaBimobject",
+                                                                "group": "Form",
+                                                                "type": "20006",
+                                                                "Documentation": "<div>components 12344</div>",
+                                                                "updatedAt": "23-Aug-2021",
+                                                                "createdAt": "23-Aug-2021",
+                                                                "order": 1,
+                                                                "version": "1.0.0",
+                                                                "isLatest": true,
+                                                                "projectType": "web",
+                                                                "component": {
+                                                                  "content": "Button",
+                                                                  "type": "20006"
+                                                                },
+                                                                "events": [
+                                                                  {
+                                                                    "triggerId": "YYUTMkLElEArFKd9xwyvH",
+                                                                    "triggerName": "CHEQUEBOOK_SUMMARY_REQUEST",
+                                                                    "serviceType": "8",
+                                                                    "attributes": {
+                                                                      "loaderWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "messageWidgetIds": [
+                                                                        906070
+                                                                      ],
+                                                                      "responseStateKey": "chequeSummary",
+                                                                      "responseReturnValue": "content.chequeSummary",
+                                                                      "successMessageBindingKey": "successMessage",
+                                                                      "errorMessageBindingKey": "errorMessage",
+                                                                      "url": "/chequeInfo",
+                                                                      "checksum": true,
+                                                                      "encryption": true,
+                                                                      "isDeviceDetails": false,
+                                                                      "loginTrigger": false,
+                                                                      "formData": false,
+                                                                      "logoutTrigger": false,
+                                                                      "headers": {
+                                                                        "Content-Type": "application/json",
+                                                                        "channel_key": "005"
+                                                                      },
+                                                                      "requestBody": [
+                                                                        {
+                                                                          "type": 4,
+                                                                          "name": "Static",
+                                                                          "key": "accountId",
+                                                                          "value": "1541718"
+                                                                        },
+                                                                        {
+                                                                          "type": 4,
+                                                                          "name": "Static",
+                                                                          "key": "fromDate",
+                                                                          "value": "12-09-2022"
+                                                                        },
+                                                                        {
+                                                                          "type": 4,
+                                                                          "name": "Static",
+                                                                          "key": "flowType",
+                                                                          "value": "CHEQUE_SUMMARY"
+                                                                        }
+                                                                      ],
+                                                                      "baseURL": "65003e4e61f0645ad866d812",
+                                                                      "storeType": 2
+                                                                    },
+                                                                    "type": "4",
+                                                                    "name": "On Submit"
+                                                                  },
+                                                                  {
+                                                                    "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+                                                                    "triggerName": "ERROR_MODAL",
+                                                                    "serviceType": "9",
+                                                                    "attributes": {
+                                                                      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                                                                      "content": "",
+                                                                      "type": "",
+                                                                      "modalId": "yW986MWI8V7q9_pcEzbnL"
+                                                                    },
+                                                                    "type": "2",
+                                                                    "name": "On click"
+                                                                  }
+                                                                ],
+                                                                "path": "0-0-0-0-1-0-0-0-0-1-0-0-2-0-0"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -2956,9 +3071,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "YIkZ39Ax6_fNHshQ9CBQO",
-    "createdBy": "masood",
-    "updatedAt": "11/2/2023",
-    "createdAt": "11/2/2023",
+    "createdBy": "muhammad.asad",
+    "updatedAt": "11/3/2023",
+    "createdAt": "11/3/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5097,6 +5212,13 @@
         "name": "On Submit",
         "type": "4",
         "serviceType": "8"
+      },
+      {
+        "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+        "triggerName": "ERROR_MODAL",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "9"
       }
     ],
     "path": "0-0-0-0-1-0-0-0-0-1-0-0-2-0-0",

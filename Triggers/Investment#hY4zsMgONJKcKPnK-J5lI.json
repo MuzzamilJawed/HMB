@@ -15,6 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "investmentResponse",
+          "successMessageBindingKey": "investmentMessage",
           "url": "/cdc/submit",
           "checksum": true,
           "encryption": true,
@@ -89,16 +90,22 @@
           {
             "httpStatus": 200,
             "logic": { "==": [{ "var": "code" }, 0] },
-            "triggerName": "investment Successfull modal Trigger",
-            "triggerId": "dgyl6BqToFDxRVag31Vej"
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
           }
         ]
       }
     }
   ],
-  "csrf": "0.xbft2091woV0PcruXkqRYFQO8h8RM1l",
-  "updatedAt": "10/6/2023",
-  "createdAt": "10/6/2023",
+  "csrf": "0.f9fag7f07i7Q0pnWooTZiWNYEjjO6GIu",
+  "updatedAt": "11/3/2023",
+  "createdAt": "11/3/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }
