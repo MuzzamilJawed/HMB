@@ -15,6 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "addResponse",
+          "successMessageBindingKey": "addResponseMessage",
           "url": "/internationalTransaction",
           "checksum": true,
           "encryption": true,
@@ -56,13 +57,26 @@
           "baseURL": "64f9670d683922479c06159b",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "triggerName": "Load IR chain Trigger",
+            "triggerId": "e943TKC7cN0u2pKuw4zG7"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.csh0sgvhv49ejDMGO8iV9jiQBYgDMzLq",
-  "updatedAt": "10/16/2023",
-  "createdAt": "10/16/2023",
+  "csrf": "0.zdkhkety1nbGJ7B5KbESmDJknX7mEIf0",
+  "updatedAt": "11/10/2023",
+  "createdAt": "11/10/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

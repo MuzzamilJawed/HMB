@@ -53,7 +53,58 @@
         "updatedAt": "23-Sep-2021",
         "Documentation": "<div>\n<table style=\"border-collapse: collapse; width: 99.8899%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 48.4024%;\">1</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">2</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">43</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">6</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n<tr>\n<td style=\"width: 48.4024%;\">7</td>\n<td style=\"width: 48.4024%;\">&nbsp;</td>\n</tr>\n</tbody>\n</table>\nWrite your Docu7mentationtestsdfasd</div>",
         "createdAt": "24-Aug-2021",
-        "events": [],
+        "events": [
+          {
+            "triggerId": "H-eTIX2REBAEv7t6u8xB5",
+            "triggerName": "fundTransferLocal tranCode  ",
+            "serviceType": "11",
+            "attributes": {
+              "dataType": "value",
+              "destinationBindingKey": "tranCode",
+              "sourceBindingKey": "form",
+              "sourceStoreType": 2,
+              "destinationStoreType": 2,
+              "logic": { "if": [true, "0021", "0021"] },
+              "changeValueConditonally": true,
+              "targettedType": "value"
+            },
+            "type": "1",
+            "name": "On initialization"
+          },
+          {
+            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+            "triggerName": "generateOTP",
+            "serviceType": "8",
+            "attributes": {
+              "loaderWidgetIds": [906070],
+              "messageWidgetIds": [906070],
+              "responseStateKey": "generateOTPResponse",
+              "url": "/generateOTP",
+              "checksum": true,
+              "encryption": true,
+              "isDeviceDetails": false,
+              "loginTrigger": "loginTrigger",
+              "formData": false,
+              "logoutTrigger": false,
+              "headers": {
+                "Content-Type": "application/json",
+                "channel_key": "005"
+              },
+              "requestBody": [
+                {
+                  "type": 2,
+                  "name": "Current screen",
+                  "key": "tranCode",
+                  "value": "tranCode"
+                }
+              ],
+              "baseURL": "65015c4b61f0645ad866ef4a",
+              "storeType": 2
+            },
+            "type": "1",
+            "name": "On initialization"
+          }
+        ],
         "order": 1,
         "version": "1.0.0",
         "isLatest": true,
@@ -64,7 +115,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "qnPsjD-YJvvALSVBTZwEd",
+            "id": "LjypGpxhYlboompVO5Jv5",
             "gridProps": [
               {
                 "type": "10001",
@@ -3550,6 +3601,205 @@
                                                                   "widget"
                                                                 ],
                                                                 "name": "Grid layout"
+                                                              },
+                                                              {
+                                                                "type": "10001",
+                                                                "name": "Grid layout",
+                                                                "id": "MnEHpq7UBwhZo-3QxLWBf",
+                                                                "gridProps": [
+                                                                  {
+                                                                    "type": "column",
+                                                                    "id": "fcxEcqK---NX22B6qJgbg",
+                                                                    "gridProps": [
+                                                                      {
+                                                                        "type": "10001",
+                                                                        "name": "Grid layout",
+                                                                        "id": "ExBiluwr8F3PQdeLRB9UF",
+                                                                        "gridProps": [
+                                                                          {
+                                                                            "type": "column",
+                                                                            "id": "vFeXKeEzh0MY09WG3nsuf",
+                                                                            "gridProps": [
+                                                                              {
+                                                                                "id": "P40uQkU6NWLHRRI6ifuKE",
+                                                                                "status": "ACTIVE",
+                                                                                "attributes": {
+                                                                                  "label": "Resend",
+                                                                                  "variant": "contained",
+                                                                                  "name": "Button",
+                                                                                  "label-locale-key": "",
+                                                                                  "fullWidth": true,
+                                                                                  "layoutProperties": {
+                                                                                    "button": {
+                                                                                      "//": "Use this class to style button component."
+                                                                                    },
+                                                                                    "inputProps": {
+                                                                                      "//": "Use this class to style button element."
+                                                                                    },
+                                                                                    "mainContainer": "button",
+                                                                                    "xl": 12,
+                                                                                    "lg": 12,
+                                                                                    "md": 12,
+                                                                                    "sm": 12,
+                                                                                    "xs": 12
+                                                                                  },
+                                                                                  "cssClassNames": [
+                                                                                    {
+                                                                                      "cssClassName": "genrateOTP "
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                "name": "Button",
+                                                                                "icon": "FaBimobject",
+                                                                                "group": "Form",
+                                                                                "type": "20006",
+                                                                                "Documentation": "<div>components 12344</div>",
+                                                                                "updatedAt": "23-Aug-2021",
+                                                                                "createdAt": "23-Aug-2021",
+                                                                                "order": 1,
+                                                                                "version": "1.0.0",
+                                                                                "isLatest": true,
+                                                                                "projectType": "web",
+                                                                                "component": {
+                                                                                  "content": "Button",
+                                                                                  "type": "20006"
+                                                                                },
+                                                                                "events": [
+                                                                                  {
+                                                                                    "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+                                                                                    "triggerName": "generateOTP",
+                                                                                    "serviceType": "8",
+                                                                                    "attributes": {
+                                                                                      "loaderWidgetIds": [
+                                                                                        906070
+                                                                                      ],
+                                                                                      "messageWidgetIds": [
+                                                                                        906070
+                                                                                      ],
+                                                                                      "responseStateKey": "generateOTPResponse",
+                                                                                      "url": "/generateOTP",
+                                                                                      "checksum": true,
+                                                                                      "encryption": true,
+                                                                                      "isDeviceDetails": false,
+                                                                                      "loginTrigger": "loginTrigger",
+                                                                                      "formData": false,
+                                                                                      "logoutTrigger": false,
+                                                                                      "headers": {
+                                                                                        "Content-Type": "application/json",
+                                                                                        "channel_key": "005"
+                                                                                      },
+                                                                                      "requestBody": [
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "tranCode",
+                                                                                          "value": "tranCode"
+                                                                                        }
+                                                                                      ],
+                                                                                      "baseURL": "65015c4b61f0645ad866ef4a",
+                                                                                      "storeType": 2
+                                                                                    },
+                                                                                    "type": "2",
+                                                                                    "name": "On click"
+                                                                                  }
+                                                                                ],
+                                                                                "path": "0-0-0-0-1-0-0-0-3-0-1-1-0-0-2-0-0-0-0"
+                                                                              }
+                                                                            ],
+                                                                            "layoutProperties": {
+                                                                              "xl": 12,
+                                                                              "lg": 12,
+                                                                              "md": 12,
+                                                                              "sm": 12,
+                                                                              "xs": 12
+                                                                            }
+                                                                          }
+                                                                        ],
+                                                                        "allowedContainers": [
+                                                                          "10001",
+                                                                          "20030",
+                                                                          "noLayout",
+                                                                          "20010",
+                                                                          "widget"
+                                                                        ],
+                                                                        "attributes": {
+                                                                          "gridProps": [],
+                                                                          "label": "Header",
+                                                                          "layoutProperties": {
+                                                                            "gridLayout": {
+                                                                              "//": "Use this class to style grid layout component.",
+                                                                              "padding": "5px",
+                                                                              "spacing": 0
+                                                                            },
+                                                                            "mainContainer": "gridLayout"
+                                                                          },
+                                                                          "layoutProps": {
+                                                                            "direction": "row",
+                                                                            "justifyContent": "flex-start",
+                                                                            "alignItems": "flex-start"
+                                                                          },
+                                                                          "direction": "row",
+                                                                          "name": "Grid layout"
+                                                                        },
+                                                                        "events": [],
+                                                                        "component": {
+                                                                          "type": "10001",
+                                                                          "content": "Grid layout"
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "layoutProperties": {
+                                                                      "xl": 6,
+                                                                      "lg": 6,
+                                                                      "md": 6,
+                                                                      "sm": 6,
+                                                                      "xs": 6
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "type": "column",
+                                                                    "id": "yGnR_G91sP8gWs4cE0YVR",
+                                                                    "gridProps": [],
+                                                                    "layoutProperties": {
+                                                                      "xl": 6,
+                                                                      "lg": 6,
+                                                                      "md": 6,
+                                                                      "sm": 6,
+                                                                      "xs": 6
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "allowedContainers": [
+                                                                  "10001",
+                                                                  "20030",
+                                                                  "noLayout",
+                                                                  "20010",
+                                                                  "widget"
+                                                                ],
+                                                                "attributes": {
+                                                                  "gridProps": [],
+                                                                  "label": "Header",
+                                                                  "layoutProperties": {
+                                                                    "gridLayout": {
+                                                                      "//": "Use this class to style grid layout component.",
+                                                                      "padding": "5px",
+                                                                      "spacing": 0
+                                                                    },
+                                                                    "mainContainer": "gridLayout"
+                                                                  },
+                                                                  "layoutProps": {
+                                                                    "direction": "row",
+                                                                    "justifyContent": "flex-start",
+                                                                    "alignItems": "flex-start"
+                                                                  },
+                                                                  "direction": "row",
+                                                                  "name": "Grid layout"
+                                                                },
+                                                                "events": [],
+                                                                "component": {
+                                                                  "type": "10001",
+                                                                  "content": "Grid layout"
+                                                                }
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -4663,8 +4913,8 @@
     "gitBranchName": "master",
     "_id": "SkzIkpCvq1E-lW1HYl_G5",
     "createdBy": "masood",
-    "updatedAt": "11/1/2023",
-    "createdAt": "11/1/2023",
+    "updatedAt": "11/8/2023",
+    "createdAt": "11/8/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4713,7 +4963,20 @@
       "name": "Confirmation Screen "
     },
     "layout": null,
-    "events": [],
+    "events": [
+      {
+        "triggerId": "H-eTIX2REBAEv7t6u8xB5",
+        "triggerName": "fundTransferLocal tranCode  ",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On initialization",
+        "type": "1"
+      }
+    ],
     "subType": "component",
     "screenId": "SkzIkpCvq1E-lW1HYl_G5",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -7769,6 +8032,25 @@
             "sm": 12,
             "xs": 12
           }
+        },
+        {
+          "componentId": "MnEHpq7UBwhZo-3QxLWBf",
+          "componentType": "10001",
+          "id": "MnEHpq7UBwhZo-3QxLWBf",
+          "position": {
+            "i": "MnEHpq7UBwhZo-3QxLWBf",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
         }
       ],
       "label": "Header",
@@ -8107,6 +8389,146 @@
     "component": { "content": "Password", "type": "20008" },
     "events": [],
     "path": "0-0-0-0-1-0-0-0-3-0-1-1-0-0-1-0-0",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "MnEHpq7UBwhZo-3QxLWBf",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "ExBiluwr8F3PQdeLRB9UF",
+          "componentType": "10001",
+          "id": "ExBiluwr8F3PQdeLRB9UF",
+          "position": {
+            "i": "ExBiluwr8F3PQdeLRB9UF",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ExBiluwr8F3PQdeLRB9UF",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "P40uQkU6NWLHRRI6ifuKE",
+          "componentType": "20006",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "padding": "5px",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout"
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "P40uQkU6NWLHRRI6ifuKE",
+    "status": "ACTIVE",
+    "attributes": {
+      "label": "Resend",
+      "variant": "contained",
+      "name": "Button",
+      "label-locale-key": "",
+      "fullWidth": true,
+      "layoutProperties": {
+        "button": { "//": "Use this class to style button component." },
+        "inputProps": { "//": "Use this class to style button element." },
+        "mainContainer": "button",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "cssClassNames": [{ "cssClassName": "genrateOTP " }]
+    },
+    "name": "Button",
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "20006",
+    "Documentation": "<div>components 12344</div>",
+    "updatedAt": "23-Aug-2021",
+    "createdAt": "23-Aug-2021",
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Button", "type": "20006" },
+    "events": [
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "8"
+      }
+    ],
+    "path": "0-0-0-0-1-0-0-0-3-0-1-1-0-0-2-0-0-0-0",
     "screenId": "SkzIkpCvq1E-lW1HYl_G5",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

@@ -15,8 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "responseOfFeedBack",
-          "successMessageBindingKey": "successMessage",
-          "errorMessageBindingKey": "errorMessage",
+          "successMessageBindingKey": "feedBackMessage",
           "url": "/feedback ",
           "checksum": true,
           "encryption": true,
@@ -43,16 +42,23 @@
         "responseHandler": [
           {
             "httpStatus": 200,
-            "triggerName": "FeedBack Show Modal Trigger",
-            "triggerId": "8wT9g9iXX-ZMU1ZOB0Mnu"
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
           }
         ]
       }
     }
   ],
-  "csrf": "0.5a8tep1rf3c5SsGTA2Z7tbn6bVnGoO9G",
-  "updatedAt": "9/20/2023",
-  "createdAt": "9/20/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.0yyn1r834byFA4h3LPHyKO_GpaAvQnZa",
+  "updatedAt": "11/7/2023",
+  "createdAt": "11/7/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

@@ -15,6 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "limitResponse",
+          "successMessageBindingKey": "limitResponseMessage",
           "url": "/cardOnlineTransaction",
           "checksum": true,
           "encryption": true,
@@ -65,17 +66,23 @@
         "responseHandler": [
           {
             "httpStatus": 200,
-            "triggerName": "GENERAL SUCCESS MODAL Trigger",
-            "triggerId": "Sl6i4bkJkeZW_OC4toUGK",
+            "triggerName": "SUCCESS_MODAL",
+            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
             "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.i4o6guwedbcJtpPxvp1y28TkvrE3U-5a",
-  "updatedAt": "10/18/2023",
-  "createdAt": "10/18/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.l326rod2y0c7LSLPbbhzf5BjAXV16iR9",
+  "updatedAt": "11/6/2023",
+  "createdAt": "11/6/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

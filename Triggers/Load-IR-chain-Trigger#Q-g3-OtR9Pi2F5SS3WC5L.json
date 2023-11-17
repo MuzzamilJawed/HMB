@@ -1,0 +1,138 @@
+{
+  "_id": "Q-g3-OtR9Pi2F5SS3WC5L",
+  "id": "e943TKC7cN0u2pKuw4zG7",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Load IR chain Trigger",
+  "old_name": "Load IR chain Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "6N4XkoRhIDHU3PdmYS1jJ",
+              "gitBranchName": "master",
+              "name": "Hide 400 Error Modal",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "content": "",
+                      "type": "",
+                      "modalId": "0WCO5n3utBEwNsFa9M_0E"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.z9ynppv9kvlu2gNe8DmRHqqsJ7VaWnW5",
+              "_id": "X3AcS5QfrFF3fuZuCuxSH",
+              "updatedAt": "10/16/2023",
+              "createdAt": "10/16/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "Bz0klrt8H8n9_Vv8TKm8E",
+              "_id": "ugEA5Gi5PSZtbAqQF8Aha",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "internationalTransaction",
+              "old_name": "internationalTransaction",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "internationalList",
+                      "responseReturnValue": "content",
+                      "url": "/internationalTransaction",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "action",
+                          "value": "0"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "cardnumber",
+                          "value": "selectedObject.cardNumber"
+                        }
+                      ],
+                      "baseURL": "64f9670d683922479c06159b",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.3x8r1xw8wz55kA7fMedC6NvrerUWiBAm",
+              "updatedAt": "10/13/2023",
+              "createdAt": "10/13/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "createdBy": "system",
+              "updatedBy": "system",
+              "_id": "63247a318c5ded569ce08e69",
+              "id": "C9VAY5AImRfVpeNy7pz65",
+              "name": "Clear Form Data",
+              "projectType": "web",
+              "services": [
+                {
+                  "_id": "61dd1cc511bed557b4cb0c89",
+                  "type": "14",
+                  "command": {
+                    "responseHandler": [],
+                    "returns": [],
+                    "_id": "61dd1cc511bed557b4cb0c99",
+                    "attributes": {},
+                    "type": "1"
+                  }
+                }
+              ],
+              "createdAt": "11-Jan-2022",
+              "updatedAt": "11-Jan-2022",
+              "__v": 0,
+              "canRead": true
+            }
+          ],
+          "triggerIds": [
+            "6N4XkoRhIDHU3PdmYS1jJ",
+            "Bz0klrt8H8n9_Vv8TKm8E",
+            "C9VAY5AImRfVpeNy7pz65"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.zdkhkety1nbGJ7B5KbESmDJknX7mEIf0",
+  "updatedAt": "11/10/2023",
+  "createdAt": "11/10/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "R9YuLbJZQntMWbT0p0Pay",
+  "_id": "bODNqiIm3kVrl4E6R2sTG",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "AccountDetailsWithBalance",
+  "old_name": "AccountDetailsWithBalance",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "accountDetailWithBalance",
+          "responseReturnValue": "content",
+          "url": "/getAllAccountsWithBalance",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            { "type": 4, "name": "Static", "key": "status", "value": "A" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "accountType",
+              "value": "ALL"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "currentFilter",
+              "value": "ALL"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "includeBalance",
+              "value": "true"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.n71xcya3j44A643YU0i48mfx7JvgFic",
+  "updatedAt": "11/14/2023",
+  "createdAt": "11/14/2023",
+  "createdBy": "muhammad.asad",
+  "updatedBy": "muhammad.asad"
+}

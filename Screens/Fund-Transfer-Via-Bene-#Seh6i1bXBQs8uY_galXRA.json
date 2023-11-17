@@ -3001,7 +3001,7 @@
                                                                         "gridProps": [
                                                                           {
                                                                             "type": "column",
-                                                                            "id": "FMMVX4vFxkitkvg7BM_Fr",
+                                                                            "id": "_LDxDCbh48fxxjejcifoy",
                                                                             "gridProps": [
                                                                               {
                                                                                 "type": "10001",
@@ -3105,12 +3105,11 @@
                                                                               "md": 6,
                                                                               "sm": 6,
                                                                               "xs": 6
-                                                                            },
-                                                                            "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0-0-0-2-0"
+                                                                            }
                                                                           },
                                                                           {
                                                                             "type": "column",
-                                                                            "id": "4Sl_xFFNeCSMLsWK3TXmH",
+                                                                            "id": "3v83rl225NTaJ14m09GZ8",
                                                                             "gridProps": [
                                                                               {
                                                                                 "type": "10001",
@@ -3227,8 +3226,7 @@
                                                                               "md": 6,
                                                                               "sm": 6,
                                                                               "xs": 6
-                                                                            },
-                                                                            "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0-0-0-2-1"
+                                                                            }
                                                                           }
                                                                         ],
                                                                         "allowedContainers": [
@@ -3255,14 +3253,51 @@
                                                                             "alignItems": "flex-start"
                                                                           },
                                                                           "direction": "row",
-                                                                          "name": "Grid layout"
+                                                                          "name": "Grid layout",
+                                                                          "hideCondition": {
+                                                                            "logic": {
+                                                                              "or": [
+                                                                                {
+                                                                                  "==": [
+                                                                                    {
+                                                                                      "var": "currentScreen.selectedObject.bankName"
+                                                                                    },
+                                                                                    ""
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "==": [
+                                                                                    {
+                                                                                      "var": "currentScreen.selectedObject.bankName"
+                                                                                    },
+                                                                                    null
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          }
                                                                         },
                                                                         "events": [],
                                                                         "component": {
                                                                           "type": "10001",
                                                                           "content": "Grid layout"
                                                                         },
-                                                                        "path": "0-0-0-0-1-0-0-0-1-1-0-0-1-0-0-0-2"
+                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-1-0-0-0-2",
+                                                                        "dimensions": {
+                                                                          "rows": 1,
+                                                                          "columns": 2,
+                                                                          "colSize0xs": 6,
+                                                                          "colSize0sm": 6,
+                                                                          "colSize0md": 6,
+                                                                          "colSize0lg": 6,
+                                                                          "colSize0xl": 6,
+                                                                          "colSize1xs": 6,
+                                                                          "colSize1sm": 6,
+                                                                          "colSize1md": 6,
+                                                                          "colSize1lg": 6,
+                                                                          "colSize1xl": 6
+                                                                        },
+                                                                        "readOnly": true
                                                                       }
                                                                     ],
                                                                     "layoutProperties": {
@@ -4559,8 +4594,8 @@
     "gitBranchName": "master",
     "_id": "Seh6i1bXBQs8uY_galXRA",
     "createdBy": "masood",
-    "updatedAt": "11/1/2023",
-    "createdAt": "11/1/2023",
+    "updatedAt": "11/14/2023",
+    "createdAt": "11/14/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7366,7 +7401,15 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "Grid layout",
+      "hideCondition": {
+        "logic": {
+          "or": [
+            { "==": [{ "var": "currentScreen.selectedObject.bankName" }, ""] },
+            { "==": [{ "var": "currentScreen.selectedObject.bankName" }, null] }
+          ]
+        }
+      }
     },
     "layout": null,
     "events": [],

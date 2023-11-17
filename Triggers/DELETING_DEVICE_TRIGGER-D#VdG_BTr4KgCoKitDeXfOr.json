@@ -1,8 +1,10 @@
 {
   "id": "MIFlqgLNnNSe2FMlFM52U",
+  "_id": "VdG_BTr4KgCoKitDeXfOr",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "DELETING_DEVICE_TRIGGER D",
+  "old_name": "DELETING_DEVICE_TRIGGER D",
   "status": "ACTIVE",
   "services": [
     {
@@ -42,14 +44,20 @@
           "baseURL": "65015c4b61f0645ad866ef4a",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Hide 400 Error Modal",
+            "triggerId": "6N4XkoRhIDHU3PdmYS1jJ"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
-  "_id": "VdG_BTr4KgCoKitDeXfOr",
-  "updatedAt": "9/14/2023",
-  "createdAt": "9/14/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.abe9x3ugkgwBjFId5QGJriJoyaamZeJf",
+  "updatedAt": "11/7/2023",
+  "createdAt": "11/7/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

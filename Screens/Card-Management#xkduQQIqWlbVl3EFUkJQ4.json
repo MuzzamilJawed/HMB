@@ -73,7 +73,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "OHstIXmptPlU0ZEoQ0XqW",
+                    "id": "tGXOV5sv2wO9ZzAriUQkK",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -581,20 +581,19 @@
                                             "rowStyle": {
                                               "//": "Use this class to style data table rows.",
                                               "color": "black",
-                                              "background-color": "white",
-                                              "text-align": "left"
+                                              "text-align": "center"
                                             },
                                             "defaultColDefinition": {
                                               "//": "Use this class to define column definition of data table.",
                                               "sortable": true,
                                               "animateRows": false,
-                                              "resizable": true,
+                                              "resizable": false,
                                               "enableValue": false,
                                               "enableRowGroup": false,
                                               "enablePivot": false,
                                               "filter": true,
                                               "type": "leftAligned",
-                                              "minWidth": 10,
+                                              "minWidth": 30,
                                               "domLayout": "autoHeight"
                                             },
                                             "mainContainer": "container",
@@ -604,23 +603,19 @@
                                             "sm": 12,
                                             "xs": 12,
                                             "headerStyles": {
-                                              "color": "#1A1D3E",
-                                              "border-radius": "8px",
-                                              "font-size": "undefinedpx",
-                                              "text-transform": "capitalize",
+                                              "height": "6vh",
+                                              "text-align": "center",
                                               "font-weight": 700,
-                                              "font-style": "normal"
+                                              "font-style": "normal",
+                                              "text-transform": "capitalize",
+                                              "font-size": "1.3vw"
                                             },
                                             "tableStyles": {
-                                              "border-color": "transparent",
-                                              "--ag-background-color": "transparent"
+                                              "border-color": "#FBFBFB",
+                                              "--ag-background-color": "#FBFBFB"
                                             },
                                             "rowsStyles": {
-                                              "border-radius": "8px",
-                                              "border-bottom-color": "transparent"
-                                            },
-                                            "rowsOdd": {
-                                              "background": "#3030300C"
+                                              "background-color": ""
                                             }
                                           },
                                           "defaultColDef": {
@@ -666,29 +661,6 @@
                                               },
                                               "cssValues": [""],
                                               "imageRenderingType": "1"
-                                            },
-                                            {
-                                              "type": "text",
-                                              "typeTemp": {
-                                                "name": "Text",
-                                                "type": "text"
-                                              },
-                                              "field": "cardTitle",
-                                              "headerName": "Card Title",
-                                              "conditional": {
-                                                "bindingKey": ""
-                                              },
-                                              "values": [""],
-                                              "cssClassNames": [
-                                                {
-                                                  "cssClassName": "table_Column_Data_CSS "
-                                                }
-                                              ],
-                                              "cssConditional": {
-                                                "bindingKey": "",
-                                                "cssClassNames": []
-                                              },
-                                              "cssValues": [""]
                                             },
                                             {
                                               "type": "text",
@@ -745,7 +717,7 @@
                                               "rowId": "id",
                                               "iconButtons": [
                                                 {
-                                                  "label": "International Transaction",
+                                                  "label": "Int.",
                                                   "trigger": {
                                                     "id": "tfVrq7-N3L-qymeB1pK95",
                                                     "name": "Swap to International Transactions",
@@ -774,7 +746,7 @@
                                                   },
                                                   "cssClassNames": [
                                                     {
-                                                      "cssClassName": "CardButtonTable "
+                                                      "cssClassName": "Dashboard_Table_Button_Css "
                                                     }
                                                   ],
                                                   "triggerId": "tfVrq7-N3L-qymeB1pK95",
@@ -798,7 +770,7 @@
                                               "rowId": "id",
                                               "iconButtons": [
                                                 {
-                                                  "label": "E-Commerce",
+                                                  "label": "E-Comm",
                                                   "trigger": {
                                                     "id": "SaiRZtcoieJnGBJSzn8pP",
                                                     "name": "Swap To E-Commerce List",
@@ -851,7 +823,7 @@
                                               "rowId": "id",
                                               "iconButtons": [
                                                 {
-                                                  "label": "Debit Card Usage",
+                                                  "label": "Usage",
                                                   "trigger": {
                                                     "id": "AmP7V6mGWbECuvJkouB3Z",
                                                     "_id": "pYyNkeiUZ4R_myE-HD4Pm",
@@ -1093,7 +1065,7 @@
                   "layoutProperties": {
                     "gridLayout": {
                       "//": "Use this class to style grid layout component.",
-                      "padding": "5px 20px",
+                      "padding": "5px 30px",
                       "spacing": 0
                     },
                     "mainContainer": "gridLayout"
@@ -1151,9 +1123,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "xkduQQIqWlbVl3EFUkJQ4",
-    "createdBy": "muhammad.asad",
-    "updatedAt": "11/3/2023",
-    "createdAt": "11/3/2023",
+    "createdBy": "masood",
+    "updatedAt": "11/10/2023",
+    "createdAt": "11/10/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1259,7 +1231,7 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "5px 20px",
+          "padding": "5px 30px",
           "spacing": 0
         },
         "mainContainer": "gridLayout"
@@ -1801,20 +1773,19 @@
         "rowStyle": {
           "//": "Use this class to style data table rows.",
           "color": "black",
-          "background-color": "white",
-          "text-align": "left"
+          "text-align": "center"
         },
         "defaultColDefinition": {
           "//": "Use this class to define column definition of data table.",
           "sortable": true,
           "animateRows": false,
-          "resizable": true,
+          "resizable": false,
           "enableValue": false,
           "enableRowGroup": false,
           "enablePivot": false,
           "filter": true,
           "type": "leftAligned",
-          "minWidth": 10,
+          "minWidth": 30,
           "domLayout": "autoHeight"
         },
         "mainContainer": "container",
@@ -1824,22 +1795,18 @@
         "sm": 12,
         "xs": 12,
         "headerStyles": {
-          "color": "#1A1D3E",
-          "border-radius": "8px",
-          "font-size": "undefinedpx",
-          "text-transform": "capitalize",
+          "height": "6vh",
+          "text-align": "center",
           "font-weight": 700,
-          "font-style": "normal"
+          "font-style": "normal",
+          "text-transform": "capitalize",
+          "font-size": "1.3vw"
         },
         "tableStyles": {
-          "border-color": "transparent",
-          "--ag-background-color": "transparent"
+          "border-color": "#FBFBFB",
+          "--ag-background-color": "#FBFBFB"
         },
-        "rowsStyles": {
-          "border-radius": "8px",
-          "border-bottom-color": "transparent"
-        },
-        "rowsOdd": { "background": "#3030300C" }
+        "rowsStyles": { "background-color": "" }
       },
       "defaultColDef": {
         "sortable": true,
@@ -1878,17 +1845,6 @@
         {
           "type": "text",
           "typeTemp": { "name": "Text", "type": "text" },
-          "field": "cardTitle",
-          "headerName": "Card Title",
-          "conditional": { "bindingKey": "" },
-          "values": [""],
-          "cssClassNames": [{ "cssClassName": "table_Column_Data_CSS " }],
-          "cssConditional": { "bindingKey": "", "cssClassNames": [] },
-          "cssValues": [""]
-        },
-        {
-          "type": "text",
-          "typeTemp": { "name": "Text", "type": "text" },
           "field": "cardNumber",
           "headerName": "Card Number",
           "conditional": { "bindingKey": "" },
@@ -1914,7 +1870,7 @@
           "rowId": "id",
           "iconButtons": [
             {
-              "label": "International Transaction",
+              "label": "Int.",
               "trigger": {
                 "id": "tfVrq7-N3L-qymeB1pK95",
                 "name": "Swap to International Transactions",
@@ -1941,7 +1897,9 @@
                 "createdBy": "masood",
                 "updatedBy": "masood"
               },
-              "cssClassNames": [{ "cssClassName": "CardButtonTable " }],
+              "cssClassNames": [
+                { "cssClassName": "Dashboard_Table_Button_Css " }
+              ],
               "triggerId": "tfVrq7-N3L-qymeB1pK95",
               "conditional": {},
               "values": [],
@@ -1960,7 +1918,7 @@
           "rowId": "id",
           "iconButtons": [
             {
-              "label": "E-Commerce",
+              "label": "E-Comm",
               "trigger": {
                 "id": "SaiRZtcoieJnGBJSzn8pP",
                 "name": "Swap To E-Commerce List",
@@ -2008,7 +1966,7 @@
           "rowId": "id",
           "iconButtons": [
             {
-              "label": "Debit Card Usage",
+              "label": "Usage",
               "trigger": {
                 "id": "AmP7V6mGWbECuvJkouB3Z",
                 "_id": "pYyNkeiUZ4R_myE-HD4Pm",

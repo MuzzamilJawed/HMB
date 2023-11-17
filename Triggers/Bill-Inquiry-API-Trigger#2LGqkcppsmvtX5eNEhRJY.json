@@ -1,0 +1,93 @@
+{
+  "id": "6sZJud8tEmarNqPOWOrwA",
+  "_id": "2LGqkcppsmvtX5eNEhRJY",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Bill Inquiry API Trigger",
+  "old_name": "Bill Inquiry API Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "billlresponse",
+          "successMessageBindingKey": "billlresponseMessage",
+          "url": "/billInquiry",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "005"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNo",
+              "value": "paidFrom.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "categoryCode",
+              "value": "category.categoryCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "categoryName",
+              "value": "category.categoryName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "companyCode",
+              "value": "company.companyCode"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "companyName",
+              "value": "company.companyName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "consumerNumber",
+              "value": "consumerNumber"
+            }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Navigate to Confirm Top Up",
+            "triggerId": "-p7w53U3hLKm_OkuB9fst"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.zdkhkety1nbGJ7B5KbESmDJknX7mEIf0",
+  "updatedAt": "11/10/2023",
+  "createdAt": "11/10/2023",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
