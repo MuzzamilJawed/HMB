@@ -1,9 +1,10 @@
 {
+  "_id": "3KnMg7vWhz38UvwoVsWBZ",
   "id": "0bqZOuCmOo1QvYDsg-zOs",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": " Conditional Rate API",
-  "old_name": "",
+  "old_name": " Conditional Rate API",
   "status": "ACTIVE",
   "services": [
     {
@@ -15,9 +16,24 @@
             {
               "logic": {
                 "and": [
-                  { "var": "currentScreen.form.currency" },
-                  { "var": "currentScreen.form.tenureSelect" },
-                  { "var": "currentScreen.form.certiType" }
+                  {
+                    "or": [
+                      { "var": "currentScreen.form.currency" },
+                      { "var": "currentScreen.form.tenureSelect" }
+                    ]
+                  },
+                  {
+                    "or": [
+                      { "var": "currentScreen.form.currency" },
+                      { "var": "currentScreen.form.certiType" }
+                    ]
+                  },
+                  {
+                    "or": [
+                      { "var": "currentScreen.form.tenureSelect" },
+                      { "var": "currentScreen.form.certiType" }
+                    ]
+                  }
                 ]
               },
               "triggerName": "Rate",
@@ -76,10 +92,9 @@
       }
     }
   ],
-  "csrf": "0.jpp1kz7bqkjRelHTaQlwvy4VGiDA-RHQ",
-  "_id": "3KnMg7vWhz38UvwoVsWBZ",
-  "updatedAt": "10/30/2023",
-  "createdAt": "10/30/2023",
+  "csrf": "0.t6qhdxpaqmljtzTPVzyp8rJO5reIH_jt",
+  "updatedAt": "11/27/2023",
+  "createdAt": "11/27/2023",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

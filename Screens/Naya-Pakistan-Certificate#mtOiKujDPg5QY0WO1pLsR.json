@@ -352,7 +352,7 @@
                                                                 "attributes": {
                                                                   "variant": "body1",
                                                                   "name": "Label",
-                                                                  "mandatory": false,
+                                                                  "mandatory": true,
                                                                   "layoutProperties": {
                                                                     "label": {
                                                                       "//": "Use this class to style label component."
@@ -1645,7 +1645,7 @@
                                                                 "gridProps": [
                                                                   {
                                                                     "type": "column",
-                                                                    "id": "1WuM54ZiAW0BoJsHdcMOk",
+                                                                    "id": "a_WhQyckwg3HUaHPmJqFn",
                                                                     "gridProps": [
                                                                       {
                                                                         "id": "pGso05MUnfx7DHdMw_Apr",
@@ -1720,29 +1720,35 @@
                                                                   "name": "Grid layout",
                                                                   "hideCondition": {
                                                                     "logic": {
-                                                                      "or": [
+                                                                      "and": [
                                                                         {
-                                                                          "==": [
-                                                                            {
-                                                                              "var": "currentScreen.form.certiType"
-                                                                            },
-                                                                            null
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "==": [
-                                                                            {
-                                                                              "var": "currentScreen.form.tenureSelect"
-                                                                            },
-                                                                            null
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "==": [
+                                                                          "or": [
                                                                             {
                                                                               "var": "currentScreen.form.currency"
                                                                             },
-                                                                            null
+                                                                            {
+                                                                              "var": "currentScreen.form.tenureSelect"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "or": [
+                                                                            {
+                                                                              "var": "currentScreen.form.currency"
+                                                                            },
+                                                                            {
+                                                                              "var": "currentScreen.form.certiType"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "or": [
+                                                                            {
+                                                                              "var": "currentScreen.form.tenureSelect"
+                                                                            },
+                                                                            {
+                                                                              "var": "currentScreen.form.certiType"
+                                                                            }
                                                                           ]
                                                                         }
                                                                       ]
@@ -1911,7 +1917,7 @@
                                                                 "attributes": {
                                                                   "variant": "body1",
                                                                   "name": "Label",
-                                                                  "mandatory": false,
+                                                                  "mandatory": true,
                                                                   "layoutProperties": {
                                                                     "label": {
                                                                       "//": "Use this class to style label component."
@@ -2119,7 +2125,109 @@
                                                                   "storeType": 2
                                                                 },
                                                                 "type": "20003",
-                                                                "events": [],
+                                                                "events": [
+                                                                  {
+                                                                    "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+                                                                    "triggerName": " Conditional Rate API",
+                                                                    "serviceType": "13",
+                                                                    "attributes": {
+                                                                      "triggers": [
+                                                                        {
+                                                                          "logic": {
+                                                                            "and": [
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          "triggerName": "Rate",
+                                                                          "triggerId": "F_WVq7GSeZmho9dxihq35",
+                                                                          "services": [
+                                                                            {
+                                                                              "type": "8",
+                                                                              "command": {
+                                                                                "type": "1",
+                                                                                "attributes": {
+                                                                                  "loaderWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "messageWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "responseStateKey": "expectedRate",
+                                                                                  "responseReturnValue": "content",
+                                                                                  "url": "/npc/rate",
+                                                                                  "checksum": true,
+                                                                                  "encryption": true,
+                                                                                  "isDeviceDetails": false,
+                                                                                  "loginTrigger": false,
+                                                                                  "formData": false,
+                                                                                  "logoutTrigger": false,
+                                                                                  "headers": {
+                                                                                    "Content-Type": "application/json",
+                                                                                    "channel_key": "005"
+                                                                                  },
+                                                                                  "requestBody": [
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "currencyId",
+                                                                                      "value": "currency.id"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "certType",
+                                                                                      "value": "certiType.code"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "tenureId",
+                                                                                      "value": "tenureSelect.id"
+                                                                                    }
+                                                                                  ],
+                                                                                  "baseURL": "64f9a08b683922479c062070",
+                                                                                  "storeType": 2
+                                                                                },
+                                                                                "responseHandler": []
+                                                                              }
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    "type": "3",
+                                                                    "name": "On change"
+                                                                  }
+                                                                ],
                                                                 "order": 10,
                                                                 "version": "1.0.0",
                                                                 "isLatest": true,
@@ -2401,50 +2509,102 @@
                                                                 "type": "20003",
                                                                 "events": [
                                                                   {
-                                                                    "triggerId": "F_WVq7GSeZmho9dxihq35",
-                                                                    "triggerName": "Rate",
-                                                                    "serviceType": "8",
+                                                                    "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+                                                                    "triggerName": " Conditional Rate API",
+                                                                    "serviceType": "13",
                                                                     "attributes": {
-                                                                      "loaderWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "messageWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "responseStateKey": "expectedRate",
-                                                                      "url": "/npc/rate",
-                                                                      "checksum": true,
-                                                                      "encryption": true,
-                                                                      "isDeviceDetails": false,
-                                                                      "loginTrigger": false,
-                                                                      "formData": false,
-                                                                      "logoutTrigger": false,
-                                                                      "headers": {
-                                                                        "Content-Type": "application/json",
-                                                                        "channel_key": "005"
-                                                                      },
-                                                                      "requestBody": [
+                                                                      "triggers": [
                                                                         {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "currencyId",
-                                                                          "value": "currency.typeCode"
-                                                                        },
-                                                                        {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "certType",
-                                                                          "value": "certiType.code"
-                                                                        },
-                                                                        {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "tenureId",
-                                                                          "value": "tenureSelect.id"
+                                                                          "logic": {
+                                                                            "and": [
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          "triggerName": "Rate",
+                                                                          "triggerId": "F_WVq7GSeZmho9dxihq35",
+                                                                          "services": [
+                                                                            {
+                                                                              "type": "8",
+                                                                              "command": {
+                                                                                "type": "1",
+                                                                                "attributes": {
+                                                                                  "loaderWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "messageWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "responseStateKey": "expectedRate",
+                                                                                  "responseReturnValue": "content",
+                                                                                  "url": "/npc/rate",
+                                                                                  "checksum": true,
+                                                                                  "encryption": true,
+                                                                                  "isDeviceDetails": false,
+                                                                                  "loginTrigger": false,
+                                                                                  "formData": false,
+                                                                                  "logoutTrigger": false,
+                                                                                  "headers": {
+                                                                                    "Content-Type": "application/json",
+                                                                                    "channel_key": "005"
+                                                                                  },
+                                                                                  "requestBody": [
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "currencyId",
+                                                                                      "value": "currency.id"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "certType",
+                                                                                      "value": "certiType.code"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "tenureId",
+                                                                                      "value": "tenureSelect.id"
+                                                                                    }
+                                                                                  ],
+                                                                                  "baseURL": "64f9a08b683922479c062070",
+                                                                                  "storeType": 2
+                                                                                },
+                                                                                "responseHandler": []
+                                                                              }
+                                                                            }
+                                                                          ]
                                                                         }
-                                                                      ],
-                                                                      "baseURL": "64f9a08b683922479c062070",
-                                                                      "storeType": 2
+                                                                      ]
                                                                     },
                                                                     "type": "3",
                                                                     "name": "On change"
@@ -2740,50 +2900,102 @@
                                                                 "type": "20003",
                                                                 "events": [
                                                                   {
-                                                                    "triggerId": "F_WVq7GSeZmho9dxihq35",
-                                                                    "triggerName": "Rate",
-                                                                    "serviceType": "8",
+                                                                    "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+                                                                    "triggerName": " Conditional Rate API",
+                                                                    "serviceType": "13",
                                                                     "attributes": {
-                                                                      "loaderWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "messageWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "responseStateKey": "expectedRate",
-                                                                      "url": "/npc/rate",
-                                                                      "checksum": true,
-                                                                      "encryption": true,
-                                                                      "isDeviceDetails": false,
-                                                                      "loginTrigger": false,
-                                                                      "formData": false,
-                                                                      "logoutTrigger": false,
-                                                                      "headers": {
-                                                                        "Content-Type": "application/json",
-                                                                        "channel_key": "005"
-                                                                      },
-                                                                      "requestBody": [
+                                                                      "triggers": [
                                                                         {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "currencyId",
-                                                                          "value": "currency.typeCode"
-                                                                        },
-                                                                        {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "certType",
-                                                                          "value": "certiType.code"
-                                                                        },
-                                                                        {
-                                                                          "type": 1,
-                                                                          "name": "Form",
-                                                                          "key": "tenureId",
-                                                                          "value": "tenureSelect.id"
+                                                                          "logic": {
+                                                                            "and": [
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.currency"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              },
+                                                                              {
+                                                                                "or": [
+                                                                                  {
+                                                                                    "var": "currentScreen.form.tenureSelect"
+                                                                                  },
+                                                                                  {
+                                                                                    "var": "currentScreen.form.certiType"
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          "triggerName": "Rate",
+                                                                          "triggerId": "F_WVq7GSeZmho9dxihq35",
+                                                                          "services": [
+                                                                            {
+                                                                              "type": "8",
+                                                                              "command": {
+                                                                                "type": "1",
+                                                                                "attributes": {
+                                                                                  "loaderWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "messageWidgetIds": [
+                                                                                    906070
+                                                                                  ],
+                                                                                  "responseStateKey": "expectedRate",
+                                                                                  "responseReturnValue": "content",
+                                                                                  "url": "/npc/rate",
+                                                                                  "checksum": true,
+                                                                                  "encryption": true,
+                                                                                  "isDeviceDetails": false,
+                                                                                  "loginTrigger": false,
+                                                                                  "formData": false,
+                                                                                  "logoutTrigger": false,
+                                                                                  "headers": {
+                                                                                    "Content-Type": "application/json",
+                                                                                    "channel_key": "005"
+                                                                                  },
+                                                                                  "requestBody": [
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "currencyId",
+                                                                                      "value": "currency.id"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "certType",
+                                                                                      "value": "certiType.code"
+                                                                                    },
+                                                                                    {
+                                                                                      "type": 1,
+                                                                                      "name": "Form",
+                                                                                      "key": "tenureId",
+                                                                                      "value": "tenureSelect.id"
+                                                                                    }
+                                                                                  ],
+                                                                                  "baseURL": "64f9a08b683922479c062070",
+                                                                                  "storeType": 2
+                                                                                },
+                                                                                "responseHandler": []
+                                                                              }
+                                                                            }
+                                                                          ]
                                                                         }
-                                                                      ],
-                                                                      "baseURL": "64f9a08b683922479c062070",
-                                                                      "storeType": 2
+                                                                      ]
                                                                     },
                                                                     "type": "3",
                                                                     "name": "On change"
@@ -2858,7 +3070,7 @@
                                                                 "attributes": {
                                                                   "variant": "body1",
                                                                   "name": "Label",
-                                                                  "mandatory": false,
+                                                                  "mandatory": true,
                                                                   "layoutProperties": {
                                                                     "label": {
                                                                       "//": "Use this class to style label component."
@@ -3078,70 +3290,6 @@
                                                                 },
                                                                 "events": [],
                                                                 "path": "0-0-0-0-1-0-0-0-0-1-0-0-7-0-0"
-                                                              },
-                                                              {
-                                                                "id": "J90unrUnH2tIjVfJd6dve",
-                                                                "status": "ACTIVE",
-                                                                "name": "Text Box",
-                                                                "attributes": {
-                                                                  "label": "",
-                                                                  "name": "Text box",
-                                                                  "label-locale-key": "",
-                                                                  "maxLength": 20,
-                                                                  "type": "text",
-                                                                  "variant": "standard",
-                                                                  "value": "",
-                                                                  "readOnly": false,
-                                                                  "tooltip": "",
-                                                                  "font-family": "Verdana",
-                                                                  "mandatory": true,
-                                                                  "tooltipState": "",
-                                                                  "layoutProperties": {
-                                                                    "textField": {
-                                                                      "//": "Use this class to style text field component."
-                                                                    },
-                                                                    "inputProps": {
-                                                                      "//": "Use this class to style  text field element.",
-                                                                      "paddingLeft": "15px",
-                                                                      "paddingTop": "15px"
-                                                                    },
-                                                                    "mainContainer": "textField",
-                                                                    "xl": 12,
-                                                                    "lg": 12,
-                                                                    "md": 12,
-                                                                    "sm": 12,
-                                                                    "xs": 12
-                                                                  },
-                                                                  "validate": {
-                                                                    "required": false,
-                                                                    "errorMsg": "This field is required"
-                                                                  },
-                                                                  "placeholder": "Enter Amount",
-                                                                  "stateName": "amount",
-                                                                  "disableUnderline": true,
-                                                                  "cssClassNames": [
-                                                                    {
-                                                                      "cssClassName": "emptyTextField3"
-                                                                    }
-                                                                  ],
-                                                                  "hideComponent": true
-                                                                },
-                                                                "icon": "FaWindowMinimize",
-                                                                "group": "Form",
-                                                                "type": "20004",
-                                                                "Documentation": "<div>components 12344</div>",
-                                                                "updatedAt": "23-Aug-2021",
-                                                                "createdAt": "23-Aug-2021",
-                                                                "order": 20,
-                                                                "version": "1.0.0",
-                                                                "isLatest": true,
-                                                                "projectType": "web",
-                                                                "component": {
-                                                                  "content": "Text Box",
-                                                                  "type": "20004"
-                                                                },
-                                                                "events": [],
-                                                                "path": "0-0-0-0-1-0-0-0-0-1-0-0-7-0-1"
                                                               }
                                                             ],
                                                             "layoutProperties": {
@@ -3803,8 +3951,8 @@
     "gitBranchName": "master",
     "_id": "mtOiKujDPg5QY0WO1pLsR",
     "createdBy": "masood",
-    "updatedAt": "11/6/2023",
-    "createdAt": "11/6/2023",
+    "updatedAt": "11/27/2023",
+    "createdAt": "11/27/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4359,7 +4507,7 @@
     "attributes": {
       "variant": "body1",
       "name": "Label",
-      "mandatory": false,
+      "mandatory": true,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
         "mainContainer": "label",
@@ -5553,10 +5701,25 @@
       "name": "Grid layout",
       "hideCondition": {
         "logic": {
-          "or": [
-            { "==": [{ "var": "currentScreen.form.certiType" }, null] },
-            { "==": [{ "var": "currentScreen.form.tenureSelect" }, null] },
-            { "==": [{ "var": "currentScreen.form.currency" }, null] }
+          "and": [
+            {
+              "or": [
+                { "var": "currentScreen.form.currency" },
+                { "var": "currentScreen.form.tenureSelect" }
+              ]
+            },
+            {
+              "or": [
+                { "var": "currentScreen.form.currency" },
+                { "var": "currentScreen.form.certiType" }
+              ]
+            },
+            {
+              "or": [
+                { "var": "currentScreen.form.tenureSelect" },
+                { "var": "currentScreen.form.certiType" }
+              ]
+            }
           ]
         }
       }
@@ -5846,7 +6009,7 @@
     "attributes": {
       "variant": "body1",
       "name": "Label",
-      "mandatory": false,
+      "mandatory": true,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
         "mainContainer": "label",
@@ -6033,7 +6196,15 @@
       "storeType": 2
     },
     "type": "20003",
-    "events": [],
+    "events": [
+      {
+        "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+        "triggerName": " Conditional Rate API",
+        "name": "On change",
+        "type": "3",
+        "serviceType": "13"
+      }
+    ],
     "order": 10,
     "version": "1.0.0",
     "isLatest": true,
@@ -6287,11 +6458,11 @@
     "type": "20003",
     "events": [
       {
-        "triggerId": "F_WVq7GSeZmho9dxihq35",
-        "triggerName": "Rate",
+        "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+        "triggerName": " Conditional Rate API",
         "name": "On change",
         "type": "3",
-        "serviceType": "8"
+        "serviceType": "13"
       }
     ],
     "order": 10,
@@ -6551,11 +6722,11 @@
     "type": "20003",
     "events": [
       {
-        "triggerId": "F_WVq7GSeZmho9dxihq35",
-        "triggerName": "Rate",
+        "triggerId": "0bqZOuCmOo1QvYDsg-zOs",
+        "triggerName": " Conditional Rate API",
         "name": "On change",
         "type": "3",
-        "serviceType": "8"
+        "serviceType": "13"
       }
     ],
     "order": 10,
@@ -6622,7 +6793,7 @@
     "attributes": {
       "variant": "body1",
       "name": "Label",
-      "mandatory": false,
+      "mandatory": true,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
         "mainContainer": "label",
@@ -6669,18 +6840,6 @@
           },
           "componentId": "KmcIA796O5NtD-911KZg3",
           "componentType": "20040",
-          "order": 1
-        },
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "J90unrUnH2tIjVfJd6dve",
-          "componentType": "20004",
           "order": 1
         }
       ],
@@ -6824,63 +6983,6 @@
     "component": { "content": "Amount", "type": "20040" },
     "events": [],
     "path": "0-0-0-0-1-0-0-0-0-1-0-0-7-0-0",
-    "screenId": "mtOiKujDPg5QY0WO1pLsR",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "J90unrUnH2tIjVfJd6dve",
-    "status": "ACTIVE",
-    "name": "Text Box",
-    "attributes": {
-      "label": "",
-      "name": "Text box",
-      "label-locale-key": "",
-      "maxLength": 20,
-      "type": "text",
-      "variant": "standard",
-      "value": "",
-      "readOnly": false,
-      "tooltip": "",
-      "font-family": "Verdana",
-      "mandatory": true,
-      "tooltipState": "",
-      "layoutProperties": {
-        "textField": { "//": "Use this class to style text field component." },
-        "inputProps": {
-          "//": "Use this class to style  text field element.",
-          "paddingLeft": "15px",
-          "paddingTop": "15px"
-        },
-        "mainContainer": "textField",
-        "xl": 12,
-        "lg": 12,
-        "md": 12,
-        "sm": 12,
-        "xs": 12
-      },
-      "validate": { "required": false, "errorMsg": "This field is required" },
-      "placeholder": "Enter Amount",
-      "stateName": "amount",
-      "disableUnderline": true,
-      "cssClassNames": [{ "cssClassName": "emptyTextField3" }],
-      "hideComponent": true
-    },
-    "icon": "FaWindowMinimize",
-    "group": "Form",
-    "type": "20004",
-    "Documentation": "<div>components 12344</div>",
-    "updatedAt": "23-Aug-2021",
-    "createdAt": "23-Aug-2021",
-    "order": 20,
-    "version": "1.0.0",
-    "isLatest": true,
-    "projectType": "web",
-    "component": { "content": "Text Box", "type": "20004" },
-    "events": [],
-    "path": "0-0-0-0-1-0-0-0-0-1-0-0-7-0-1",
     "screenId": "mtOiKujDPg5QY0WO1pLsR",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

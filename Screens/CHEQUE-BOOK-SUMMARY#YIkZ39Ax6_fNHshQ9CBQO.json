@@ -452,7 +452,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "vWO8Br0jHVvdR_60KOuIF",
+                                            "id": "a6fJKgv-ioBqk6GtSTqs5",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -478,7 +478,7 @@
                                                                 "attributes": {
                                                                   "variant": "body1",
                                                                   "name": "Label",
-                                                                  "mandatory": false,
+                                                                  "mandatory": true,
                                                                   "layoutProperties": {
                                                                     "label": {
                                                                       "//": "Use this class to style label component."
@@ -1755,13 +1755,12 @@
                                               "lg": 6,
                                               "md": 6,
                                               "sm": 6,
-                                              "xs": 6
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-0-0"
+                                              "xs": 12
+                                            }
                                           },
                                           {
                                             "type": "column",
-                                            "id": "mDe49KgWsSzNMH7kgUAXH",
+                                            "id": "Vk1HIiTGyUKmNxytdgix_",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -1787,7 +1786,7 @@
                                                                 "attributes": {
                                                                   "variant": "body1",
                                                                   "name": "Label",
-                                                                  "mandatory": false,
+                                                                  "mandatory": true,
                                                                   "layoutProperties": {
                                                                     "label": {
                                                                       "//": "Use this class to style label component."
@@ -1804,7 +1803,8 @@
                                                                     {
                                                                       "cssClassName": "Heading_Label_Css"
                                                                     }
-                                                                  ]
+                                                                  ],
+                                                                  "searchInState": false
                                                                 },
                                                                 "icon": "FaFont",
                                                                 "group": "Form",
@@ -2028,13 +2028,15 @@
                                                                     ]
                                                                   },
                                                                   "layoutProperties": {
-                                                                    "dateCalendar": {
-                                                                      "//": "Use this class to style calender component.",
-                                                                      "paddingLeft": "15px",
-                                                                      "paddingTop": "10px",
-                                                                      "height": "42px  !important"
+                                                                    "textField": {
+                                                                      "//": "Use this class to style text field component."
                                                                     },
-                                                                    "mainContainer": "dateCalendar",
+                                                                    "inputProps": {
+                                                                      "//": "Use this class to style  text field element.",
+                                                                      "paddingLeft": "15px",
+                                                                      "paddingTop": "15px"
+                                                                    },
+                                                                    "mainContainer": "textField",
                                                                     "xl": 12,
                                                                     "lg": 12,
                                                                     "md": 12,
@@ -2369,7 +2371,7 @@
                                                         "gridProps": [
                                                           {
                                                             "type": "column",
-                                                            "id": "nbYWch4Zcq3iNfNPpZzsr",
+                                                            "id": "0xN65FYOL3zZV4_QN9y-b",
                                                             "gridProps": [
                                                               {
                                                                 "type": "20009",
@@ -2434,7 +2436,8 @@
                                                                           "mandatory": false,
                                                                           "layoutProperties": {
                                                                             "label": {
-                                                                              "//": "Use this class to style label component."
+                                                                              "//": "Use this class to style label component.",
+                                                                              "padding": "0px 0px 0px 10px"
                                                                             },
                                                                             "mainContainer": "label",
                                                                             "xl": 12,
@@ -2467,7 +2470,7 @@
                                                                           "type": "20002"
                                                                         },
                                                                         "events": [],
-                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-4-0-0-0-1"
+                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-5-0-0-0-1"
                                                                       },
                                                                       {
                                                                         "id": "Epx4ho-PXj4EbiTQJFGFx",
@@ -2479,7 +2482,8 @@
                                                                           "mandatory": false,
                                                                           "layoutProperties": {
                                                                             "label": {
-                                                                              "//": "Use this class to style label component."
+                                                                              "//": "Use this class to style label component.",
+                                                                              "padding": "0px 0px 0px 10px"
                                                                             },
                                                                             "mainContainer": "label",
                                                                             "xl": 12,
@@ -2512,7 +2516,7 @@
                                                                           "type": "20002"
                                                                         },
                                                                         "events": [],
-                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-4-0-0-0-2"
+                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-5-0-0-0-2"
                                                                       }
                                                                     ],
                                                                     "layoutProperties": {
@@ -2613,7 +2617,17 @@
                                                             {
                                                               "cssClassName": "card_child_container "
                                                             }
-                                                          ]
+                                                          ],
+                                                          "hideCondition": {
+                                                            "logic": {
+                                                              "==": [
+                                                                {
+                                                                  "var": "currentScreen.chequeSummary"
+                                                                },
+                                                                null
+                                                              ]
+                                                            }
+                                                          }
                                                         },
                                                         "events": [],
                                                         "component": {
@@ -2880,9 +2894,8 @@
                                               "lg": 6,
                                               "md": 6,
                                               "sm": 6,
-                                              "xs": 6
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-0-1"
+                                              "xs": 12
+                                            }
                                           }
                                         ],
                                         "path": "0-0-0-0-1-0-0-0-0",
@@ -3131,8 +3144,8 @@
     "gitBranchName": "master",
     "_id": "YIkZ39Ax6_fNHshQ9CBQO",
     "createdBy": "masood",
-    "updatedAt": "11/7/2023",
-    "createdAt": "11/7/2023",
+    "updatedAt": "11/28/2023",
+    "createdAt": "11/28/2023",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3634,7 +3647,7 @@
             "w": null,
             "h": null
           },
-          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 12 }
         },
         {
           "componentId": "MIY9EHd3COgALN6uk3Qm5",
@@ -3647,7 +3660,7 @@
             "w": null,
             "h": null
           },
-          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 6 }
+          "layoutProperties": { "xl": 6, "lg": 6, "md": 6, "sm": 6, "xs": 12 }
         }
       ],
       "label": "Header",
@@ -3819,7 +3832,7 @@
     "attributes": {
       "variant": "body1",
       "name": "Label",
-      "mandatory": false,
+      "mandatory": true,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
         "mainContainer": "label",
@@ -5060,7 +5073,7 @@
     "attributes": {
       "variant": "body1",
       "name": "Label",
-      "mandatory": false,
+      "mandatory": true,
       "layoutProperties": {
         "label": { "//": "Use this class to style label component." },
         "mainContainer": "label",
@@ -5071,7 +5084,8 @@
         "xs": 12
       },
       "label": "Select Date From ",
-      "cssClassNames": [{ "cssClassName": "Heading_Label_Css" }]
+      "cssClassNames": [{ "cssClassName": "Heading_Label_Css" }],
+      "searchInState": false
     },
     "icon": "FaFont",
     "group": "Form",
@@ -5283,13 +5297,13 @@
         ]
       },
       "layoutProperties": {
-        "dateCalendar": {
-          "//": "Use this class to style calender component.",
+        "textField": { "//": "Use this class to style text field component." },
+        "inputProps": {
+          "//": "Use this class to style  text field element.",
           "paddingLeft": "15px",
-          "paddingTop": "10px",
-          "height": "42px  !important"
+          "paddingTop": "15px"
         },
-        "mainContainer": "dateCalendar",
+        "mainContainer": "textField",
         "xl": 12,
         "lg": 12,
         "md": 12,
@@ -5509,7 +5523,10 @@
       },
       "direction": "row",
       "name": "Grid layout",
-      "cssClassNames": [{ "cssClassName": "card_child_container " }]
+      "cssClassNames": [{ "cssClassName": "card_child_container " }],
+      "hideCondition": {
+        "logic": { "==": [{ "var": "currentScreen.chequeSummary" }, null] }
+      }
     },
     "layout": null,
     "events": [],
@@ -5641,7 +5658,10 @@
       "name": "Label",
       "mandatory": false,
       "layoutProperties": {
-        "label": { "//": "Use this class to style label component." },
+        "label": {
+          "//": "Use this class to style label component.",
+          "padding": "0px 0px 0px 10px"
+        },
         "mainContainer": "label",
         "xl": 12,
         "lg": 12,
@@ -5666,7 +5686,7 @@
     "projectType": "web",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-0-1-0-0-4-0-0-0-1",
+    "path": "0-0-0-0-1-0-0-0-0-1-0-0-5-0-0-0-1",
     "screenId": "YIkZ39Ax6_fNHshQ9CBQO",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -5682,7 +5702,10 @@
       "name": "Label",
       "mandatory": false,
       "layoutProperties": {
-        "label": { "//": "Use this class to style label component." },
+        "label": {
+          "//": "Use this class to style label component.",
+          "padding": "0px 0px 0px 10px"
+        },
         "mainContainer": "label",
         "xl": 12,
         "lg": 12,
@@ -5707,7 +5730,7 @@
     "projectType": "web",
     "component": { "content": "Label", "type": "20002" },
     "events": [],
-    "path": "0-0-0-0-1-0-0-0-0-1-0-0-4-0-0-0-2",
+    "path": "0-0-0-0-1-0-0-0-0-1-0-0-5-0-0-0-2",
     "screenId": "YIkZ39Ax6_fNHshQ9CBQO",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
