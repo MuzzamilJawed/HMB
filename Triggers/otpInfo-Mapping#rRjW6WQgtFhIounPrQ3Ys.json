@@ -18,11 +18,6 @@
           "destinationStoreType": 2,
           "filterList": [
             {
-              "key": "smsPin",
-              "changeValueConditonally": true,
-              "logic": { "var": "currentScreen.form.smsPin" }
-            },
-            {
               "key": "emailPin",
               "changeValueConditonally": true,
               "logic": { "if": [true, null, null] }
@@ -30,12 +25,17 @@
             {
               "key": "splitOtp",
               "changeValueConditonally": true,
-              "logic": { "if": [true, false, false] }
+              "logic": { "if": [true, true, true] }
             },
             {
+              "key": "validationType",
               "changeValueConditonally": true,
-              "logic": { "if": [true, "OTP", "OTP"] },
-              "key": "validationType"
+              "logic": { "if": [true, "", ""] }
+            },
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
             }
           ],
           "targettedType": "object"
@@ -43,9 +43,9 @@
       }
     }
   ],
-  "csrf": "0.8kcuqju35rhUuG2K-VotHztN9F0jlsbq",
-  "updatedAt": "9/20/2023",
-  "createdAt": "9/20/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.z2hxppglavU3ZC194OPXovo5jCFQxlU",
+  "updatedAt": "1/12/2024",
+  "createdAt": "1/12/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

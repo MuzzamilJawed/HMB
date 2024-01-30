@@ -1,6 +1,8 @@
 {
   "id": "3WJVpQqglNb4yHnlELcM-",
+  "_id": "j4UDdGfNoOd5UzY-973cX",
   "name": " Otpinfo with email and SMSpin",
+  "old_name": " Otpinfo with email and SMSpin",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "services": [
@@ -9,6 +11,7 @@
       "command": {
         "type": "6",
         "attributes": {
+          "requestBody": [],
           "storeType": "",
           "selectedObjectBindingKey": "selectedObject",
           "dataType": "",
@@ -17,11 +20,6 @@
           "sourceStoreType": 2,
           "destinationStoreType": 2,
           "filterList": [
-            {
-              "key": "smsPin",
-              "changeValueConditonally": true,
-              "logic": { "var": "currentScreen.form.smsPin" }
-            },
             {
               "changeValueConditonally": true,
               "logic": { "var": "currentScreen.form.emailPin" },
@@ -36,6 +34,11 @@
               "changeValueConditonally": true,
               "logic": { "if": [true, "OTP", "OTP"] },
               "key": "validationType"
+            },
+            {
+              "key": "smsPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
             }
           ],
           "targettedType": "object"
@@ -43,10 +46,9 @@
       }
     }
   ],
-  "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
-  "_id": "j4UDdGfNoOd5UzY-973cX",
-  "updatedAt": "9/26/2023",
-  "createdAt": "9/26/2023",
+  "csrf": "0.u6cbuki30ns07TR1sFk_q9E0beRv_RCs",
+  "updatedAt": "1/2/2024",
+  "createdAt": "1/2/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

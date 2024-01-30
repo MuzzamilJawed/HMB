@@ -1,0 +1,330 @@
+{
+  "_id": "nrfJAGksn-NSTvWvCsahj",
+  "id": "Cl17BkfYQRRWgxfoqjSrq",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Delete_Chain_trigger",
+  "old_name": "Delete_Chain_trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "triggers": [
+            {
+              "id": "lOONpwXzERn9ZktBE5vQg",
+              "_id": "wRAZGXFjnNGU8xFVB79FJ",
+              "name": "convert bene object into bene Object",
+              "old_name": "convert bene object into bene Object",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "destinationBindingKey": "beneficiary",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "bankCode",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.bankName.bankCode"
+                          }
+                        },
+                        {
+                          "key": "instrumentType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "A", "A"] }
+                        },
+                        {
+                          "key": "mobile",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.mobile" }
+                        },
+                        {
+                          "key": "bankBIC",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.bankName.bankCode"
+                          }
+                        },
+                        {
+                          "key": "alias",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.alias" }
+                        },
+                        {
+                          "key": "beneficiaryFlag",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "A", "A"] }
+                        },
+                        {
+                          "key": "email",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.email" }
+                        },
+                        {
+                          "key": "isFavorite",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "key": "beneficiaryType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "L", "L"] }
+                        },
+                        {
+                          "key": "bankName",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.bankName.bankName"
+                          }
+                        },
+                        {
+                          "key": "bankIMD",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.form.bankName.bankIMD"
+                          }
+                        },
+                        {
+                          "key": "accountNumber",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.responseTitle.accountNumber"
+                          }
+                        },
+                        {
+                          "key": "accountTitle",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.responseTitle.accountTitle"
+                          }
+                        },
+                        {
+                          "key": "mobile",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.mobile.923334444544"
+                          }
+                        },
+                        {
+                          "key": "alias",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.alias.bAyaz"
+                          }
+                        },
+                        {
+                          "key": "accountTitle",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.accountTitle.20610-714-522054"
+                          }
+                        },
+                        {
+                          "key": "accountNumber",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.accountNumber.6010120610714522054"
+                          }
+                        },
+                        {
+                          "key": "email",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.email.asdadd@asdasd.com"
+                          }
+                        },
+                        {
+                          "key": "bankIMD",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.bankIMD.627408"
+                          }
+                        },
+                        {
+                          "key": "bankName",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.bankName.HABIBMETRO"
+                          }
+                        },
+                        {
+                          "key": "branchCode",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.branchCode.MPBL"
+                          }
+                        },
+                        {
+                          "key": "bankBIC",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "var": "currentScreen.selectedObject.bankBIC.bankBIC.MPBL"
+                          }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.8jdn6uarr7hFaz_XKrrbQmOoWWG_vd5m",
+              "updatedAt": "1/29/2024",
+              "createdAt": "1/29/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
+            },
+            {
+              "id": "myQKiAf7esTmLdi6rVuNQ",
+              "name": "beneficiaryManagementValidation",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "validation",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+              "_id": "fqg5-G76nZO-ZMYuM7TAo",
+              "updatedAt": "9/8/2023",
+              "createdAt": "9/8/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "_jTB3KTSjvG1B8vNoqRKy",
+              "_id": "lHIP7CHhICtryF6NlNBFx",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "DeletebeneficiaryManagement",
+              "old_name": "DeletebeneficiaryManagement",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "benes",
+                      "successMessageBindingKey": "addBeneMessage",
+                      "url": "/beneficiaryManagement",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "validation",
+                          "value": "validation"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "beneficiary",
+                          "value": "beneficiary"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "action",
+                          "value": "D"
+                        }
+                      ],
+                      "baseURL": "64f968d3683922479c0616ba",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Navigate to Bene List",
+                        "triggerId": "nhH4osFnKhVohIOmaH3xa"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "httpStatus": 200,
+                        "triggerName": "ERROR_MODAL",
+                        "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.muqcztl6ip8mQDhBOi_YPZUyO7abw81H",
+              "updatedAt": "1/29/2024",
+              "createdAt": "1/29/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
+            }
+          ],
+          "triggerIds": [
+            "lOONpwXzERn9ZktBE5vQg",
+            "myQKiAf7esTmLdi6rVuNQ",
+            "_jTB3KTSjvG1B8vNoqRKy"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.va6itfhn0xqjKagQ7mZavKgYqPPkZud-",
+  "updatedAt": "1/29/2024",
+  "createdAt": "1/29/2024",
+  "createdBy": "hasnain",
+  "updatedBy": "hasnain"
+}

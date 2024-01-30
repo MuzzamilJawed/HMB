@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "S_SfTgstMBY6zgOB5SRu9",
+            "id": "C1O0N-pjDK7686GNm8Nwk",
             "gridProps": [
               {
                 "type": "10001",
@@ -4154,6 +4154,7 @@
                                                         906070
                                                       ],
                                                       "responseStateKey": "limitResponse",
+                                                      "successMessageBindingKey": "cardlistSuccess",
                                                       "url": "/cardOnlineTransaction",
                                                       "checksum": true,
                                                       "encryption": true,
@@ -4207,7 +4208,8 @@
                                                       "storeType": 2
                                                     },
                                                     "type": "4",
-                                                    "name": "On Submit"
+                                                    "name": "On Submit",
+                                                    "commandType": "1"
                                                   }
                                                 ],
                                                 "path": "0-0-1-0-0-0-7-2-0-0-0"
@@ -4434,11 +4436,10 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "path": 0,
+        "path": "0",
         "events": [
           {
             "triggerId": "OvnU5ZEMFXoA52vRHGJtg",
@@ -4668,6 +4669,15 @@
             },
             "type": "1",
             "name": "On initialization"
+          },
+          {
+            "triggerId": "C9VAY5AImRfVpeNy7pz65",
+            "triggerName": "Clear Form Data",
+            "serviceType": "14",
+            "attributes": {},
+            "type": "1",
+            "name": "On initialization",
+            "commandType": "1"
           }
         ],
         "attributes": {
@@ -4714,8 +4724,8 @@
     "gitBranchName": "master",
     "_id": "I-8W00KHruAlly9gyc7HU",
     "createdBy": "masood",
-    "updatedAt": "11/28/2023",
-    "createdAt": "11/28/2023",
+    "updatedAt": "1/11/2024",
+    "createdAt": "1/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4787,6 +4797,12 @@
       {
         "triggerId": "OvnU5ZEMFXoA52vRHGJtg",
         "triggerName": "E-Commerce_LIMIT_CHAIN_TRIGGER",
+        "name": "On initialization",
+        "type": "1"
+      },
+      {
+        "triggerId": "C9VAY5AImRfVpeNy7pz65",
+        "triggerName": "Clear Form Data",
         "name": "On initialization",
         "type": "1"
       }
