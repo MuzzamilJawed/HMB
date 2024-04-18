@@ -123,13 +123,29 @@
             "id": "lRGdAED2MzE_lE8VmMQki",
             "gridProps": [
               {
+                "id": "yW986MWI8V7q9_pcEzbnL",
+                "type": "20031",
+                "triggerName": "ERROR_MODAL",
+                "attributes": {
+                  "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+                  "layoutProperties": {
+                    "xl": 12,
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xs": 12
+                  }
+                },
+                "component": { "type": "20031" }
+              },
+              {
                 "type": "10001",
                 "name": "Grid layout",
                 "id": "p42EIyU7jhZ9obf1ybumc",
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "MSVZHivCpdO_6rixoF7m2",
+                    "id": "hau6s-TODNotvRHvCmUtY",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -137,7 +153,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "UzaZcWw52rUqZ0ZQJYxd3",
+                            "id": "bDdObyuv5Nl0UhOfl4F2c",
                             "gridProps": [
                               {
                                 "id": "Fr8zwgnw3vKs74UceIbad",
@@ -198,7 +214,7 @@
                             "gridLayout": {
                               "//": "Use this class to style grid layout component.",
                               "spacing": 0,
-                              "padding": "0px 0px 15px 5px"
+                              "padding": "0px 0px 15px 15px"
                             },
                             "mainContainer": "gridLayout"
                           },
@@ -229,7 +245,8 @@
                           "colSize0sm": 12,
                           "colSize0md": 12,
                           "colSize0lg": 12,
-                          "colSize0xl": 12
+                          "colSize0xl": 12,
+                          "layoutProperties": null
                         },
                         "readOnly": true
                       },
@@ -239,7 +256,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "0_FLe-y8vg76EPwrbNp83",
+                            "id": "Kpax1t3uzzD5d-XqQUwma",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -721,7 +738,10 @@
                                                   "fullWidth": true,
                                                   "layoutProperties": {
                                                     "button": {
-                                                      "//": "Use this class to style button component."
+                                                      "//": "Use this class to style button component.",
+                                                      "text-transform": "Capitalize",
+                                                      "font-weight": "bold",
+                                                      "border-radius": "8px"
                                                     },
                                                     "inputProps": {
                                                       "//": "Use this class to style button element."
@@ -1176,7 +1196,7 @@
                                           "type": "20014"
                                         },
                                         "events": [],
-                                        "path": "0-0-0-0-1-0-3-0-0"
+                                        "path": "0-0-1-0-1-0-3-0-0"
                                       }
                                     ],
                                     "layoutProperties": {
@@ -1241,11 +1261,10 @@
                               "md": 12,
                               "sm": 12,
                               "xs": 12
-                            },
-                            "path": "0-0-0-0-2-0"
+                            }
                           }
                         ],
-                        "path": "0-0-0-0-2",
+                        "path": "0-0-0-0-1",
                         "events": [],
                         "attributes": {
                           "gridProps": [],
@@ -1253,8 +1272,10 @@
                           "layoutProperties": {
                             "gridLayout": {
                               "//": "Use this class to style grid layout component.",
-                              "padding": "5px",
-                              "spacing": 0
+                              "padding": "10px",
+                              "spacing": 0,
+                              "background": "#FAFAFA",
+                              "box-shadow": "0px 8px 30px 0px rgba(156,160,166,0.30)"
                             },
                             "mainContainer": "gridLayout"
                           },
@@ -1266,7 +1287,7 @@
                           "direction": "row",
                           "name": "Grid layout",
                           "cssClassNames": [
-                            { "cssClassName": "Grid_Container_Card" }
+                            { "cssClassName": "Grid_container_card2 " }
                           ]
                         },
                         "component": {
@@ -1280,7 +1301,17 @@
                           "20010",
                           "widget"
                         ],
-                        "name": "Grid layout"
+                        "name": "Grid layout",
+                        "dimensions": {
+                          "rows": 1,
+                          "columns": 1,
+                          "colSize0xs": 12,
+                          "colSize0sm": 12,
+                          "colSize0md": 12,
+                          "colSize0lg": 12,
+                          "colSize0xl": 12
+                        },
+                        "readOnly": true
                       }
                     ],
                     "layoutProperties": {
@@ -1316,7 +1347,8 @@
                     "alignItems": "flex-start"
                   },
                   "direction": "row",
-                  "name": "Grid layout"
+                  "name": "Grid layout",
+                  "cssClassNames": []
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
@@ -1362,9 +1394,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "Y-KkqGt7ZfGG6mMeFSE9a",
-    "createdBy": "masood",
-    "updatedAt": "11/27/2023",
-    "createdAt": "11/27/2023",
+    "createdBy": "hasnain",
+    "updatedAt": "3/14/2024",
+    "createdAt": "3/14/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -1373,6 +1405,18 @@
     "type": "10001",
     "attributes": {
       "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "yW986MWI8V7q9_pcEzbnL",
+          "componentType": "20031",
+          "order": 1
+        },
         {
           "componentId": "p42EIyU7jhZ9obf1ybumc",
           "componentType": "10001",
@@ -1429,6 +1473,22 @@
     ],
     "subType": "component",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "yW986MWI8V7q9_pcEzbnL",
+    "type": "20031",
+    "triggerName": "ERROR_MODAL",
+    "attributes": {
+      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -1494,7 +1554,8 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "Grid layout",
+      "cssClassNames": []
     },
     "layout": null,
     "events": [],
@@ -1529,7 +1590,7 @@
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
           "spacing": 0,
-          "padding": "0px 0px 15px 5px"
+          "padding": "0px 0px 15px 15px"
         },
         "mainContainer": "gridLayout"
       },
@@ -1675,8 +1736,10 @@
       "layoutProperties": {
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
-          "padding": "5px",
-          "spacing": 0
+          "padding": "10px",
+          "spacing": 0,
+          "background": "#FAFAFA",
+          "box-shadow": "0px 8px 30px 0px rgba(156,160,166,0.30)"
         },
         "mainContainer": "gridLayout"
       },
@@ -1687,7 +1750,7 @@
       },
       "direction": "row",
       "name": "Grid layout",
-      "cssClassNames": [{ "cssClassName": "Grid_Container_Card" }]
+      "cssClassNames": [{ "cssClassName": "Grid_container_card2 " }]
     },
     "layout": null,
     "events": [],
@@ -2145,22 +2208,6 @@
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
-    "id": "yW986MWI8V7q9_pcEzbnL",
-    "type": "20031",
-    "triggerName": "ERROR_MODAL",
-    "attributes": {
-      "widgetId": "Vb6LXjwz7kd74Radwk5Mq",
-      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
-    },
-    "component": { "type": "20031" },
-    "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
     "id": "uz7jeYtwuUeqNAnx6DNCh",
     "status": "ACTIVE",
     "attributes": {
@@ -2170,7 +2217,12 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": { "//": "Use this class to style button component." },
+        "button": {
+          "//": "Use this class to style button component.",
+          "text-transform": "Capitalize",
+          "font-weight": "bold",
+          "border-radius": "8px"
+        },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -2446,7 +2498,7 @@
     "projectType": "web",
     "component": { "content": "Data table", "type": "20014" },
     "events": [],
-    "path": "0-0-0-0-1-0-3-0-0",
+    "path": "0-0-1-0-1-0-3-0-0",
     "screenId": "Y-KkqGt7ZfGG6mMeFSE9a",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

@@ -18,11 +18,6 @@
           "destinationStoreType": 2,
           "filterList": [
             {
-              "key": "emailPin",
-              "changeValueConditonally": true,
-              "logic": { "if": [true, null, null] }
-            },
-            {
               "key": "splitOtp",
               "changeValueConditonally": true,
               "logic": { "if": [true, true, true] }
@@ -36,6 +31,11 @@
               "key": "smsPin",
               "changeValueConditonally": true,
               "logic": { "var": "currentScreen.form.smsPin" }
+            },
+            {
+              "key": "emailPin",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.smsPin" }
             }
           ],
           "targettedType": "object"
@@ -43,9 +43,9 @@
       }
     }
   ],
-  "csrf": "0.z2hxppglavU3ZC194OPXovo5jCFQxlU",
-  "updatedAt": "1/12/2024",
-  "createdAt": "1/12/2024",
+  "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+  "updatedAt": "4/16/2024",
+  "createdAt": "4/16/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

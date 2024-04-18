@@ -51,7 +51,7 @@
               "_id": "oGyjwb2wnrl_heirKrlCR",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
-              "name": "CardHistoryATM",
+              "name": "CardHistoryATM1",
               "old_name": "CardHistoryATM",
               "status": "ACTIVE",
               "services": [
@@ -96,28 +96,65 @@
                       {
                         "logic": { "==": [{ "var": "code" }, 1] },
                         "httpStatus": 200,
-                        "triggerName": " Otpinfo with email and SMSpin",
-                        "triggerId": "3WJVpQqglNb4yHnlELcM-"
+                        "triggerName": "Card Usage TRIGGER",
+                        "triggerId": "26c1MldYoYN9FabCjOvGv"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
                       }
                     ]
                   }
                 }
               ],
-              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
-              "updatedAt": "10/12/2023",
-              "createdAt": "10/12/2023",
-              "createdBy": "muhammad.asad",
-              "updatedBy": "muhammad.asad"
+              "csrf": "0.cztiylvacxjvqnZqijpnTUhW2RUdgD0V",
+              "updatedAt": "2/6/2024",
+              "createdAt": "2/6/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
+            },
+            {
+              "id": "efgsz2A4FLzDDcNyHoHs-",
+              "_id": "sFaPaw8hsUsLlNxgtQV0o",
+              "gitBranchName": "master",
+              "name": "Card_History_Show_modal",
+              "old_name": "Card_History_Show_modal",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "widgetId": "QC0s_F7MNIPjWxYgcbAVA",
+                      "content": "",
+                      "type": "",
+                      "modalId": "03u6aR2xVeXgnA7HyWaLK",
+                      "toastContentType": "custom"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.fjjnurqezreobSXNOr_VwT2U5xUUS0wC",
+              "updatedAt": "2/6/2024",
+              "createdAt": "2/6/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
             }
           ],
-          "triggerIds": ["aZNOwtws-7_C8fbfWm-jF", "SHvikLt74o3294TZHro9I"]
+          "triggerIds": [
+            "aZNOwtws-7_C8fbfWm-jF",
+            "SHvikLt74o3294TZHro9I",
+            "efgsz2A4FLzDDcNyHoHs-"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
-  "updatedAt": "10/13/2023",
-  "createdAt": "10/13/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.ny8mwbp8niprbFTmaF7QQhf-J7bUsXF",
+  "updatedAt": "2/6/2024",
+  "createdAt": "2/6/2024",
+  "createdBy": "hasnain",
+  "updatedBy": "hasnain"
 }

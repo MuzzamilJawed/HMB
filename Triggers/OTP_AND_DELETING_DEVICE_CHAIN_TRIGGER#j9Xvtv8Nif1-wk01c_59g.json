@@ -1,9 +1,10 @@
 {
+  "_id": "j9Xvtv8Nif1-wk01c_59g",
   "id": "NmhpLyT9kZXcOmjqleze_",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "OTP_AND_DELETING_DEVICE_CHAIN_TRIGGER",
-  "old_name": "",
+  "old_name": "OTP_AND_DELETING_DEVICE_CHAIN_TRIGGER",
   "status": "ACTIVE",
   "services": [
     {
@@ -12,62 +13,9 @@
         "type": "1",
         "attributes": {
           "delay": "",
+          "storeType": "",
+          "searchInState": false,
           "triggers": [
-            {
-              "id": "c0L242046RHhhDbvcOhe_",
-              "_id": "oInNOp-tZpuJUM8Nd_U9X",
-              "projectId": "640ee2a26ead56231ce8350b",
-              "gitBranchName": "master",
-              "name": "SEND_OTP_FOR_DELETION_DEVICE",
-              "old_name": "SEND_OTP_FOR_DELETION_DEVICE",
-              "status": "ACTIVE",
-              "services": [
-                {
-                  "type": "8",
-                  "command": {
-                    "type": "1",
-                    "attributes": {
-                      "loaderWidgetIds": [906070],
-                      "messageWidgetIds": [906070],
-                      "responseStateKey": "OtpResponse",
-                      "url": "/generateOTP",
-                      "checksum": true,
-                      "encryption": true,
-                      "isDeviceDetails": false,
-                      "loginTrigger": false,
-                      "formData": false,
-                      "logoutTrigger": false,
-                      "headers": {
-                        "Content-Type": "application/json",
-                        "channel_key": "005"
-                      },
-                      "requestBody": [
-                        {
-                          "type": 1,
-                          "name": "Form",
-                          "key": "tranCode",
-                          "value": "smsOtp"
-                        }
-                      ],
-                      "baseURL": "65015c4b61f0645ad866ef4a",
-                      "storeType": 2
-                    },
-                    "responseHandler": [
-                      {
-                        "httpStatus": 200,
-                        "triggerName": "DELETING_DEVICE_CHAIN_TRIGGER",
-                        "triggerId": "344eioClVfjXF8c9cetiD"
-                      }
-                    ]
-                  }
-                }
-              ],
-              "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
-              "updatedAt": "9/14/2023",
-              "createdAt": "9/14/2023",
-              "createdBy": "muhammad.asad",
-              "updatedBy": "muhammad.asad"
-            },
             {
               "id": "E8J1s071gENYQJD0nByov",
               "gitBranchName": "master",
@@ -93,17 +41,101 @@
               "createdAt": "9/14/2023",
               "createdBy": "muhammad.asad",
               "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "r_x9CnvQyuNSDhSpW50AX",
+              "_id": "fTzkurkvgoO8Rb2iA5d_Y",
+              "name": "deviceManagement tranCode",
+              "old_name": "deviceManagement tranCode",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "dataType": "value",
+                      "destinationBindingKey": "tranCode",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "1115", "1115"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.i5lvigamudaVD8ElLjUVN4e3VfqapJw",
+              "updatedAt": "9/20/2023",
+              "createdAt": "9/20/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
+            },
+            {
+              "id": "W1Zrgxusxlzo0b_mfI92d",
+              "_id": "xaxK-Pad3okCqkJCzyUJL",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "generateOTP",
+              "old_name": "generateOTP",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "generateOTPResponse",
+                      "url": "/generateOTP",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "005"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "tranCode",
+                          "value": "tranCode"
+                        }
+                      ],
+                      "baseURL": "65015c4b61f0645ad866ef4a",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.qoad2147mkTdHLYmlPRUjgpeDXwjAuJ",
+              "updatedAt": "9/28/2023",
+              "createdAt": "9/28/2023",
+              "createdBy": "muhammad.asad",
+              "updatedBy": "muhammad.asad"
             }
           ],
-          "triggerIds": ["c0L242046RHhhDbvcOhe_", "E8J1s071gENYQJD0nByov"]
+          "triggerIds": [
+            "E8J1s071gENYQJD0nByov",
+            "r_x9CnvQyuNSDhSpW50AX",
+            "W1Zrgxusxlzo0b_mfI92d"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.ymrwhrbuky9TwY3sNvoOTdOhYIqlD82q",
-  "_id": "j9Xvtv8Nif1-wk01c_59g",
-  "updatedAt": "9/14/2023",
-  "createdAt": "9/14/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.k64some770omhYB6Yv8IkIwVujk2tHcX",
+  "updatedAt": "3/22/2024",
+  "createdAt": "3/22/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

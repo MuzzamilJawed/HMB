@@ -67,6 +67,54 @@
             "id": "-QFB-fsxbiFabiGibP7cy",
             "gridProps": [
               {
+                "id": "sqDiSUcEsYXpho8TxLyiV",
+                "type": "20031",
+                "triggerName": "Show 400 Error Modal",
+                "attributes": {
+                  "widgetId": "9p2QddDL42uhlUz1qSWzY",
+                  "layoutProperties": {
+                    "xl": 12,
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xs": 12
+                  }
+                },
+                "component": { "type": "20031" }
+              },
+              {
+                "id": "lC2E_xDUDSKkm-iAEhlFH",
+                "type": "20031",
+                "triggerName": "Card_Status_Error_TRIGGER",
+                "attributes": {
+                  "widgetId": "8JneUW65OHT_8RVqcTjZ4",
+                  "layoutProperties": {
+                    "xl": 12,
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xs": 12
+                  }
+                },
+                "component": { "type": "20031" }
+              },
+              {
+                "id": "KZsftdgOQkyd2FKJLRE0e",
+                "type": "20031",
+                "triggerName": "Card Usage TRIGGER",
+                "attributes": {
+                  "widgetId": "9lpe2wjALbXyt0eh0ATVz",
+                  "layoutProperties": {
+                    "xl": 12,
+                    "lg": 12,
+                    "md": 12,
+                    "sm": 12,
+                    "xs": 12
+                  }
+                },
+                "component": { "type": "20031" }
+              },
+              {
                 "type": "10001",
                 "name": "AccountTable",
                 "id": "6Uqi8UKCmgWee_amkaDSo",
@@ -82,7 +130,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "DqUe2lOeaInOXVieVMvEo",
+                            "id": "G_wbv9j9dj39Cggl-x8Mi",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -595,8 +643,68 @@
                                                           "dataValue": "cardNumber",
                                                           "mandatory": true,
                                                           "validate": {
-                                                            "required": false,
-                                                            "errorMsg": "This Field is Required"
+                                                            "required": true,
+                                                            "errorMsg": "This Field is Required",
+                                                            "bindButton": [
+                                                              {
+                                                                "id": "qbE63ZR9qMkzUdy_WR4-t",
+                                                                "status": "ACTIVE",
+                                                                "attributes": {
+                                                                  "label": "APPLY",
+                                                                  "variant": "contained",
+                                                                  "name": "Button",
+                                                                  "label-locale-key": "",
+                                                                  "fullWidth": true,
+                                                                  "layoutProperties": {
+                                                                    "button": {
+                                                                      "//": "Use this class to style button component.",
+                                                                      "borderRadius": "10px",
+                                                                      "font-weight": "bold",
+                                                                      "text-transofrm": "Capitalize"
+                                                                    },
+                                                                    "inputProps": {
+                                                                      "//": "Use this class to style button element."
+                                                                    },
+                                                                    "mainContainer": "button",
+                                                                    "xl": 12,
+                                                                    "lg": 12,
+                                                                    "md": 12,
+                                                                    "sm": 12,
+                                                                    "xs": 12
+                                                                  }
+                                                                },
+                                                                "name": "Button",
+                                                                "icon": "FaBimobject",
+                                                                "group": "Form",
+                                                                "type": "20006",
+                                                                "Documentation": "<div>components 12344</div>",
+                                                                "updatedAt": "23-Aug-2021",
+                                                                "createdAt": "23-Aug-2021",
+                                                                "order": 1,
+                                                                "version": "1.0.0",
+                                                                "isLatest": true,
+                                                                "projectType": "web",
+                                                                "component": {
+                                                                  "content": "Button",
+                                                                  "type": "20006"
+                                                                },
+                                                                "events": [
+                                                                  {
+                                                                    "triggerId": "kfLJjlPFzFtdWOArWJ-Xp",
+                                                                    "triggerName": "cardUsage Trigger",
+                                                                    "name": "On Submit",
+                                                                    "type": "4",
+                                                                    "serviceType": "8"
+                                                                  }
+                                                                ],
+                                                                "path": "0-0-0-0-0-0-2-2-0-0-0",
+                                                                "screenId": "wwEsemhCtPtnO52yVSW0X",
+                                                                "subType": "component",
+                                                                "projectId": "640ee2a26ead56231ce8350b",
+                                                                "gitBranchName": "master",
+                                                                "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+                                                              }
+                                                            ]
                                                           },
                                                           "layoutProperties": {
                                                             "autocomplete": {
@@ -1550,7 +1658,10 @@
                                                   "fullWidth": true,
                                                   "layoutProperties": {
                                                     "button": {
-                                                      "//": "Use this class to style button component."
+                                                      "//": "Use this class to style button component.",
+                                                      "borderRadius": "10px",
+                                                      "font-weight": "bold",
+                                                      "text-transofrm": "Capitalize"
                                                     },
                                                     "inputProps": {
                                                       "//": "Use this class to style button element."
@@ -1725,7 +1836,10 @@
                                                   "fullWidth": true,
                                                   "layoutProperties": {
                                                     "button": {
-                                                      "//": "Use this class to style button component."
+                                                      "//": "Use this class to style button component.",
+                                                      "borderRadius": "10px",
+                                                      "font-weight": "bold",
+                                                      "text-transofrm": "Capitalize"
                                                     },
                                                     "inputProps": {
                                                       "//": "Use this class to style button element."
@@ -1804,7 +1918,7 @@
                                                     "name": "On Submit"
                                                   }
                                                 ],
-                                                "path": "0-0-0-0-0-0-2-2-0-0-0"
+                                                "path": "0-0-3-0-0-0-2-2-0-0-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -1921,8 +2035,7 @@
                               "md": 12,
                               "sm": 12,
                               "xs": 12
-                            },
-                            "path": "0-0-0-0-0-0"
+                            }
                           }
                         ],
                         "allowedContainers": [
@@ -1939,7 +2052,8 @@
                             "gridLayout": {
                               "//": "Use this class to style grid layout component.",
                               "padding": "5px",
-                              "spacing": 0
+                              "spacing": 0,
+                              "background": "#FFFFFF"
                             },
                             "mainContainer": "gridLayout"
                           },
@@ -1959,7 +2073,18 @@
                           "type": "10001",
                           "content": "Grid layout"
                         },
-                        "path": "0-0-0-0-0"
+                        "path": "0-0-0-0-0",
+                        "dimensions": {
+                          "rows": 1,
+                          "columns": 1,
+                          "colSize0xs": 12,
+                          "colSize0sm": 12,
+                          "colSize0md": 12,
+                          "colSize0lg": 12,
+                          "colSize0xl": 12,
+                          "layoutProperties": null
+                        },
+                        "readOnly": true
                       }
                     ],
                     "layoutProperties": {
@@ -2044,9 +2169,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "wwEsemhCtPtnO52yVSW0X",
-    "createdBy": "masood",
-    "updatedAt": "11/27/2023",
-    "createdAt": "11/27/2023",
+    "createdBy": "hasnain",
+    "updatedAt": "3/15/2024",
+    "createdAt": "3/15/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2055,6 +2180,42 @@
     "type": "10001",
     "attributes": {
       "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "sqDiSUcEsYXpho8TxLyiV",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "lC2E_xDUDSKkm-iAEhlFH",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "KZsftdgOQkyd2FKJLRE0e",
+          "componentType": "20031",
+          "order": 1
+        },
         {
           "componentId": "6Uqi8UKCmgWee_amkaDSo",
           "componentType": "10001",
@@ -2098,6 +2259,54 @@
     "events": [],
     "subType": "component",
     "screenId": "wwEsemhCtPtnO52yVSW0X",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "sqDiSUcEsYXpho8TxLyiV",
+    "type": "20031",
+    "triggerName": "Show 400 Error Modal",
+    "attributes": {
+      "widgetId": "9p2QddDL42uhlUz1qSWzY",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "wwEsemhCtPtnO52yVSW0X",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "lC2E_xDUDSKkm-iAEhlFH",
+    "type": "20031",
+    "triggerName": "Card_Status_Error_TRIGGER",
+    "attributes": {
+      "widgetId": "8JneUW65OHT_8RVqcTjZ4",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "wwEsemhCtPtnO52yVSW0X",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "KZsftdgOQkyd2FKJLRE0e",
+    "type": "20031",
+    "triggerName": "Card Usage TRIGGER",
+    "attributes": {
+      "widgetId": "9lpe2wjALbXyt0eh0ATVz",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "wwEsemhCtPtnO52yVSW0X",
+    "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
     "version": "1.0.0",
     "gitBranchName": "master",
@@ -2224,7 +2433,8 @@
         "gridLayout": {
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
-          "spacing": 0
+          "spacing": 0,
+          "background": "#FFFFFF"
         },
         "mainContainer": "gridLayout"
       },
@@ -2847,7 +3057,67 @@
       "dataKey": "cardNumber",
       "dataValue": "cardNumber",
       "mandatory": true,
-      "validate": { "required": false, "errorMsg": "This Field is Required" },
+      "validate": {
+        "required": true,
+        "errorMsg": "This Field is Required",
+        "bindButton": [
+          {
+            "id": "qbE63ZR9qMkzUdy_WR4-t",
+            "status": "ACTIVE",
+            "attributes": {
+              "label": "APPLY",
+              "variant": "contained",
+              "name": "Button",
+              "label-locale-key": "",
+              "fullWidth": true,
+              "layoutProperties": {
+                "button": {
+                  "//": "Use this class to style button component.",
+                  "borderRadius": "10px",
+                  "font-weight": "bold",
+                  "text-transofrm": "Capitalize"
+                },
+                "inputProps": {
+                  "//": "Use this class to style button element."
+                },
+                "mainContainer": "button",
+                "xl": 12,
+                "lg": 12,
+                "md": 12,
+                "sm": 12,
+                "xs": 12
+              }
+            },
+            "name": "Button",
+            "icon": "FaBimobject",
+            "group": "Form",
+            "type": "20006",
+            "Documentation": "<div>components 12344</div>",
+            "updatedAt": "23-Aug-2021",
+            "createdAt": "23-Aug-2021",
+            "order": 1,
+            "version": "1.0.0",
+            "isLatest": true,
+            "projectType": "web",
+            "component": { "content": "Button", "type": "20006" },
+            "events": [
+              {
+                "triggerId": "kfLJjlPFzFtdWOArWJ-Xp",
+                "triggerName": "cardUsage Trigger",
+                "name": "On Submit",
+                "type": "4",
+                "serviceType": "8"
+              }
+            ],
+            "path": "0-0-0-0-0-0-2-2-0-0-0",
+            "screenId": "wwEsemhCtPtnO52yVSW0X",
+            "subType": "component",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+          }
+        ]
+      },
       "layoutProperties": {
         "autocomplete": {
           "//": "Use this class to style autocomplete component in dropdown.",
@@ -3629,7 +3899,12 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": { "//": "Use this class to style button component." },
+        "button": {
+          "//": "Use this class to style button component.",
+          "borderRadius": "10px",
+          "font-weight": "bold",
+          "text-transofrm": "Capitalize"
+        },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -3746,7 +4021,12 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": { "//": "Use this class to style button component." },
+        "button": {
+          "//": "Use this class to style button component.",
+          "borderRadius": "10px",
+          "font-weight": "bold",
+          "text-transofrm": "Capitalize"
+        },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -3777,7 +4057,7 @@
         "serviceType": "8"
       }
     ],
-    "path": "0-0-0-0-0-0-2-2-0-0-0",
+    "path": "0-0-3-0-0-0-2-2-0-0-0",
     "screenId": "wwEsemhCtPtnO52yVSW0X",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

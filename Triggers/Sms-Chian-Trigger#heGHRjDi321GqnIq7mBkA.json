@@ -1,9 +1,10 @@
 {
+  "_id": "heGHRjDi321GqnIq7mBkA",
   "id": "Id138DidaobutriyP7R6u",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Sms Chian Trigger",
-  "old_name": "",
+  "old_name": "Sms Chian Trigger",
   "status": "ACTIVE",
   "services": [
     {
@@ -12,10 +13,14 @@
         "type": "1",
         "attributes": {
           "delay": "",
+          "storeType": "",
+          "searchInState": false,
           "triggers": [
             {
-              "id": "3WJVpQqglNb4yHnlELcM-",
-              "name": " Otpinfo with email and SMSpin",
+              "id": "dTzBLHUfQvy2dgKQ71OLm",
+              "_id": "JDw8cSx0j5728W0Ge4DxC",
+              "name": "IBFT Validation",
+              "old_name": "IBFT Validation",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "services": [
@@ -24,10 +29,8 @@
                   "command": {
                     "type": "6",
                     "attributes": {
-                      "storeType": "",
-                      "selectedObjectBindingKey": "selectedObject",
-                      "dataType": "",
-                      "destinationBindingKey": "otpInfo",
+                      "requestBody": [],
+                      "destinationBindingKey": "validation",
                       "sourceBindingKey": "form",
                       "sourceStoreType": 2,
                       "destinationStoreType": 2,
@@ -38,19 +41,19 @@
                           "logic": { "var": "currentScreen.form.smsPin" }
                         },
                         {
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.emailPin" },
-                          "key": "emailPin"
-                        },
-                        {
-                          "changeValueConditonally": true,
                           "key": "splitOtp",
+                          "changeValueConditonally": true,
                           "logic": { "if": [true, false, false] }
                         },
                         {
                           "changeValueConditonally": true,
                           "logic": { "if": [true, "OTP", "OTP"] },
                           "key": "validationType"
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
                         }
                       ],
                       "targettedType": "object"
@@ -58,18 +61,19 @@
                   }
                 }
               ],
-              "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
-              "_id": "j4UDdGfNoOd5UzY-973cX",
-              "updatedAt": "9/26/2023",
-              "createdAt": "9/26/2023",
+              "csrf": "0.au4xi5lppakRccQaKG8yXQZMzo2y72Uf",
+              "updatedAt": "3/21/2024",
+              "createdAt": "3/21/2024",
               "createdBy": "masood",
               "updatedBy": "masood"
             },
             {
               "id": "JGmqC46aAOA0Wyd-IlzKc",
+              "_id": "EAziC5VyZw7Y4V1ztVOvg",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "name": "sms subscibtion",
+              "old_name": "sms subscibtion",
               "status": "ACTIVE",
               "services": [
                 {
@@ -80,6 +84,7 @@
                       "loaderWidgetIds": [906070],
                       "messageWidgetIds": [906070],
                       "responseStateKey": "smsresponse",
+                      "successMessageBindingKey": "smsresponseSuccess",
                       "url": "/sms/subscription",
                       "checksum": true,
                       "encryption": true,
@@ -108,27 +113,38 @@
                       "baseURL": "6508273fc9bf2957746cb550",
                       "storeType": 2
                     },
-                    "responseHandler": []
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "triggerName": "SMS_ERROR_TRIGGER",
+                        "triggerId": "4p-KqxZ9h1soo6mCnxmKd"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "SUCCESS_MODAL",
+                        "triggerId": "oY2CzUHf-lnfH1VvAnFoZ"
+                      }
+                    ]
                   }
                 }
               ],
-              "csrf": "0.gzrp75s2g367Q8HfCMh8EmGly4wg0toD",
-              "_id": "EAziC5VyZw7Y4V1ztVOvg",
-              "updatedAt": "10/5/2023",
-              "createdAt": "10/5/2023",
+              "csrf": "0.f9fag7f07i7Q0pnWooTZiWNYEjjO6GIu",
+              "updatedAt": "11/3/2023",
+              "createdAt": "11/3/2023",
               "createdBy": "masood",
               "updatedBy": "masood"
             }
           ],
-          "triggerIds": ["3WJVpQqglNb4yHnlELcM-", "JGmqC46aAOA0Wyd-IlzKc"]
+          "triggerIds": ["dTzBLHUfQvy2dgKQ71OLm", "JGmqC46aAOA0Wyd-IlzKc"]
         }
       }
     }
   ],
-  "csrf": "0.gzrp75s2g367Q8HfCMh8EmGly4wg0toD",
-  "_id": "heGHRjDi321GqnIq7mBkA",
-  "updatedAt": "10/5/2023",
-  "createdAt": "10/5/2023",
+  "csrf": "0.pr7mlpd9mlST-_m5G82MYsaJwQPd9Ev",
+  "updatedAt": "4/8/2024",
+  "createdAt": "4/8/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

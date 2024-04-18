@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "F5ze-yWxOIR8I5UO02fE8",
+            "id": "UsU6vC8Qpyw7T-0E6u-YX",
             "gridProps": [
               {
                 "type": "10001",
@@ -36,7 +36,7 @@
                 "gridProps": [
                   {
                     "type": "column",
-                    "id": "UCREioLcnbJ4GdWKST5Yv",
+                    "id": "ClziWI1TCMd2aiZhxKMKJ",
                     "gridProps": [
                       {
                         "type": "10001",
@@ -1737,7 +1737,9 @@
                                                           "fullWidth": true,
                                                           "layoutProperties": {
                                                             "button": {
-                                                              "//": "Use this class to style button component."
+                                                              "//": "Use this class to style button component.",
+                                                              "font-weight": "bold",
+                                                              "borderRadius": "10px"
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style button element."
@@ -1869,9 +1871,24 @@
                                                             },
                                                             "type": "4",
                                                             "name": "On Submit"
+                                                          },
+                                                          {
+                                                            "triggerId": "goAiLgvUhevkhPnrHguok",
+                                                            "triggerName": "Show 400 Error Modal",
+                                                            "serviceType": "9",
+                                                            "attributes": {
+                                                              "widgetId": "9p2QddDL42uhlUz1qSWzY",
+                                                              "content": "",
+                                                              "type": "",
+                                                              "modalId": "sqDiSUcEsYXpho8TxLyiV",
+                                                              "toastContentType": "custom"
+                                                            },
+                                                            "type": "2",
+                                                            "name": "On click",
+                                                            "commandType": "1"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-2-2-0-0-0"
+                                                        "path": "0-0-0-0-1-0-0-0-1-2-0-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -2119,8 +2136,7 @@
                       "md": 12,
                       "sm": 12,
                       "xs": 12
-                    },
-                    "path": "0-0-0-0"
+                    }
                   }
                 ],
                 "allowedContainers": [
@@ -2151,7 +2167,17 @@
                 },
                 "events": [],
                 "component": { "type": "10001", "content": "Grid layout" },
-                "path": "0-0-0"
+                "path": "0-0-0",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
               }
             ],
             "layoutProperties": {
@@ -2160,11 +2186,10 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "path": 0,
+        "path": "0",
         "events": [],
         "attributes": {
           "gridProps": [],
@@ -2174,7 +2199,7 @@
               "//": "Use this class to style grid layout component.",
               "padding": "5px",
               "spacing": 0,
-              "background": "rgb(241,245,241)",
+              "background": "#F1F5F1",
               "height": " calc(100vh - 56px)"
             },
             "mainContainer": "gridLayout"
@@ -2209,9 +2234,9 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "_id": "9pPCeg9Vm8XlgexNnY7m8",
-    "createdBy": "masood",
-    "updatedAt": "11/28/2023",
-    "createdAt": "11/28/2023",
+    "createdBy": "hasnain",
+    "updatedAt": "3/15/2024",
+    "createdAt": "3/15/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2246,7 +2271,7 @@
           "//": "Use this class to style grid layout component.",
           "padding": "5px",
           "spacing": 0,
-          "background": "rgb(241,245,241)",
+          "background": "#F1F5F1",
           "height": " calc(100vh - 56px)"
         },
         "mainContainer": "gridLayout"
@@ -3902,7 +3927,11 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": { "//": "Use this class to style button component." },
+        "button": {
+          "//": "Use this class to style button component.",
+          "font-weight": "bold",
+          "borderRadius": "10px"
+        },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -3936,9 +3965,16 @@
         "name": "On Submit",
         "type": "4",
         "serviceType": "2"
+      },
+      {
+        "triggerId": "goAiLgvUhevkhPnrHguok",
+        "triggerName": "Show 400 Error Modal",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "9"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-2-2-0-0-0",
+    "path": "0-0-0-0-1-0-0-0-1-2-0-0-0",
     "screenId": "9pPCeg9Vm8XlgexNnY7m8",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

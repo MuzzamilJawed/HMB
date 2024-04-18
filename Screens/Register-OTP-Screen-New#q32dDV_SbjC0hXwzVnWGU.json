@@ -62,7 +62,7 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
@@ -423,7 +423,7 @@
                                                             "image": {
                                                               "//": "Use this class to style image component.",
                                                               "width": "5.9vw",
-                                                              "padding": "10px 5px 0px 2px"
+                                                              "padding": "13px 5px 0px 25px"
                                                             },
                                                             "mainContainer": "image",
                                                             "xl": 3,
@@ -719,7 +719,8 @@
                                                                       }
                                                                     ]
                                                                   },
-                                                                  "placeholder": "Email OTP"
+                                                                  "placeholder": "Email OTP",
+                                                                  "passwordValidationType": "custom"
                                                                 },
                                                                 "updatedAt": "23-Aug-2021",
                                                                 "createdAt": "23-Aug-2021",
@@ -901,7 +902,8 @@
                                                                       }
                                                                     ]
                                                                   },
-                                                                  "placeholder": "SMS OTP"
+                                                                  "placeholder": "SMS OTP",
+                                                                  "passwordValidationType": "custom"
                                                                 },
                                                                 "updatedAt": "23-Aug-2021",
                                                                 "createdAt": "23-Aug-2021",
@@ -990,7 +992,7 @@
                                                                 "gridProps": [
                                                                   {
                                                                     "type": "column",
-                                                                    "id": "gjeg2SZHhfqworUZU2d6Q",
+                                                                    "id": "b-kFPz4bPzYySBa59LBOz",
                                                                     "gridProps": [
                                                                       {
                                                                         "id": "QMLoBUO31JQKQ8z4HRrhJ",
@@ -1100,43 +1102,6 @@
                                                                       },
                                                                       "changeValueConditonally": true,
                                                                       "targettedType": "value"
-                                                                    },
-                                                                    "type": "1",
-                                                                    "name": "On initialization"
-                                                                  },
-                                                                  {
-                                                                    "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-                                                                    "triggerName": "generateOTP",
-                                                                    "serviceType": "8",
-                                                                    "attributes": {
-                                                                      "loaderWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "messageWidgetIds": [
-                                                                        906070
-                                                                      ],
-                                                                      "responseStateKey": "generateOTPResponse",
-                                                                      "url": "/generateOTP",
-                                                                      "checksum": true,
-                                                                      "encryption": true,
-                                                                      "isDeviceDetails": false,
-                                                                      "loginTrigger": "loginTrigger",
-                                                                      "formData": false,
-                                                                      "logoutTrigger": false,
-                                                                      "headers": {
-                                                                        "Content-Type": "application/json",
-                                                                        "channel_key": "005"
-                                                                      },
-                                                                      "requestBody": [
-                                                                        {
-                                                                          "type": 2,
-                                                                          "name": "Current screen",
-                                                                          "key": "tranCode",
-                                                                          "value": "tranCode"
-                                                                        }
-                                                                      ],
-                                                                      "baseURL": "65015c4b61f0645ad866ef4a",
-                                                                      "storeType": 2
                                                                     },
                                                                     "type": "1",
                                                                     "name": "On initialization"
@@ -5150,8 +5115,8 @@
     "gitBranchName": "master",
     "_id": "q32dDV_SbjC0hXwzVnWGU",
     "createdBy": "masood",
-    "updatedAt": "11/30/2023",
-    "createdAt": "11/30/2023",
+    "updatedAt": "4/2/2024",
+    "createdAt": "4/2/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5781,7 +5746,7 @@
         "image": {
           "//": "Use this class to style image component.",
           "width": "5.9vw",
-          "padding": "10px 5px 0px 2px"
+          "padding": "13px 5px 0px 25px"
         },
         "mainContainer": "image",
         "xl": 3,
@@ -6098,7 +6063,8 @@
           }
         ]
       },
-      "placeholder": "Email OTP"
+      "placeholder": "Email OTP",
+      "passwordValidationType": "custom"
     },
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
@@ -6248,7 +6214,8 @@
           }
         ]
       },
-      "placeholder": "SMS OTP"
+      "placeholder": "SMS OTP",
+      "passwordValidationType": "custom"
     },
     "updatedAt": "23-Aug-2021",
     "createdAt": "23-Aug-2021",
@@ -6353,12 +6320,6 @@
       {
         "triggerId": "oSvOXIy7QV6tftMKFBn19",
         "triggerName": "completeRegistration tranCode",
-        "name": "On initialization",
-        "type": "1"
-      },
-      {
-        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-        "triggerName": "generateOTP",
         "name": "On initialization",
         "type": "1"
       }

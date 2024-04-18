@@ -1,9 +1,10 @@
 {
+  "_id": "5CSYuMTZgAJJ2yQ5BABTk",
   "id": "ZIWU5IcsrKKajfqP8DQU-",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "CHAIN_Card_HISTORY_TYPE_POS",
-  "old_name": "",
+  "old_name": "CHAIN_Card_HISTORY_TYPE_POS",
   "status": "ACTIVE",
   "services": [
     {
@@ -48,7 +49,7 @@
               "_id": "oGyjwb2wnrl_heirKrlCR",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
-              "name": "CardHistoryATM",
+              "name": "CardHistoryATM1",
               "old_name": "CardHistoryATM",
               "status": "ACTIVE",
               "services": [
@@ -93,29 +94,65 @@
                       {
                         "logic": { "==": [{ "var": "code" }, 1] },
                         "httpStatus": 200,
-                        "triggerName": " Otpinfo with email and SMSpin",
-                        "triggerId": "3WJVpQqglNb4yHnlELcM-"
+                        "triggerName": "Card Usage TRIGGER",
+                        "triggerId": "26c1MldYoYN9FabCjOvGv"
+                      },
+                      {
+                        "httpStatus": 400,
+                        "triggerName": "Card_Status_Error_TRIGGER",
+                        "triggerId": "I6NBngrawYvwotO6K9xmd"
                       }
                     ]
                   }
                 }
               ],
-              "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
-              "updatedAt": "10/12/2023",
-              "createdAt": "10/12/2023",
-              "createdBy": "muhammad.asad",
-              "updatedBy": "muhammad.asad"
+              "csrf": "0.cztiylvacxjvqnZqijpnTUhW2RUdgD0V",
+              "updatedAt": "2/6/2024",
+              "createdAt": "2/6/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
+            },
+            {
+              "id": "efgsz2A4FLzDDcNyHoHs-",
+              "_id": "sFaPaw8hsUsLlNxgtQV0o",
+              "gitBranchName": "master",
+              "name": "Card_History_Show_modal",
+              "old_name": "Card_History_Show_modal",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "services": [
+                {
+                  "type": "9",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "widgetId": "9lpe2wjALbXyt0eh0ATVz",
+                      "content": "",
+                      "type": "",
+                      "modalId": "9g26HdELL1AhKc51oyU3J",
+                      "toastContentType": "custom"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.txfe391hrnzsDOdfLO6DNsvNPop9See",
+              "updatedAt": "2/7/2024",
+              "createdAt": "2/7/2024",
+              "createdBy": "hasnain",
+              "updatedBy": "hasnain"
             }
           ],
-          "triggerIds": ["3HtgDL8O15w6c_g40dF0-", "SHvikLt74o3294TZHro9I"]
+          "triggerIds": [
+            "3HtgDL8O15w6c_g40dF0-",
+            "SHvikLt74o3294TZHro9I",
+            "efgsz2A4FLzDDcNyHoHs-"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.bywuh6r8pfkyOKVsGQlD7P1d1zYIZkt3",
-  "_id": "5CSYuMTZgAJJ2yQ5BABTk",
-  "updatedAt": "10/12/2023",
-  "createdAt": "10/12/2023",
-  "createdBy": "muhammad.asad",
-  "updatedBy": "muhammad.asad"
+  "csrf": "0.txfe391hrnzsDOdfLO6DNsvNPop9See",
+  "updatedAt": "2/7/2024",
+  "createdAt": "2/7/2024",
+  "createdBy": "hasnain",
+  "updatedBy": "hasnain"
 }
