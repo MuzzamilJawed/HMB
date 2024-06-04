@@ -2456,79 +2456,9 @@
                                                                     "xs": 12
                                                                   },
                                                                   "validate": {
-                                                                    "required": true,
+                                                                    "required": false,
                                                                     "errorMsg": "This field is required",
-                                                                    "bindButton": [
-                                                                      {
-                                                                        "id": "4W_JB1ppU8bLj50ocfaCq",
-                                                                        "status": "ACTIVE",
-                                                                        "attributes": {
-                                                                          "label": "Submit",
-                                                                          "variant": "contained",
-                                                                          "name": "Button",
-                                                                          "label-locale-key": "",
-                                                                          "fullWidth": true,
-                                                                          "layoutProperties": {
-                                                                            "button": {
-                                                                              "//": "Use this class to style button component."
-                                                                            },
-                                                                            "inputProps": {
-                                                                              "//": "Use this class to style button element."
-                                                                            },
-                                                                            "mainContainer": "button",
-                                                                            "xl": 12,
-                                                                            "lg": 12,
-                                                                            "md": 12,
-                                                                            "sm": 12,
-                                                                            "xs": 12
-                                                                          },
-                                                                          "buttonIconPosition": "end",
-                                                                          "asset": null,
-                                                                          "cssClassNames": [
-                                                                            {
-                                                                              "cssClassName": "hmbButtonCSS "
-                                                                            }
-                                                                          ]
-                                                                        },
-                                                                        "name": "Button",
-                                                                        "icon": "FaBimobject",
-                                                                        "group": "Form",
-                                                                        "type": "20006",
-                                                                        "Documentation": "<div>components 12344</div>",
-                                                                        "updatedAt": "23-Aug-2021",
-                                                                        "createdAt": "23-Aug-2021",
-                                                                        "order": 1,
-                                                                        "version": "1.0.0",
-                                                                        "isLatest": true,
-                                                                        "projectType": "web",
-                                                                        "component": {
-                                                                          "content": "Button",
-                                                                          "type": "20006"
-                                                                        },
-                                                                        "events": [
-                                                                          {
-                                                                            "triggerId": "3WJVpQqglNb4yHnlELcM-",
-                                                                            "triggerName": " Otpinfo with email and SMSpin",
-                                                                            "name": "On Submit",
-                                                                            "type": "4",
-                                                                            "serviceType": "11"
-                                                                          },
-                                                                          {
-                                                                            "triggerId": "AuQlFt1PSQTxt9wT6ifUL",
-                                                                            "triggerName": "Card_LIMIT_UPDATE_API_TRIGGER",
-                                                                            "name": "On Submit",
-                                                                            "type": "4",
-                                                                            "serviceType": "8"
-                                                                          }
-                                                                        ],
-                                                                        "path": "0-0-1-0-0-0-7-2-0-0-0",
-                                                                        "screenId": "I-8W00KHruAlly9gyc7HU",
-                                                                        "subType": "component",
-                                                                        "projectId": "640ee2a26ead56231ce8350b",
-                                                                        "gitBranchName": "master",
-                                                                        "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-                                                                      }
-                                                                    ]
+                                                                    "bindButton": []
                                                                   },
                                                                   "placeholder": "Email Address",
                                                                   "stateName": "email",
@@ -4109,7 +4039,8 @@
                                                           "asset": null,
                                                           "cssClassNames": [
                                                             {
-                                                              "cssClassName": "hmbButtonCSS "
+                                                              "cssClassName": "hmbButtonCSS ",
+                                                              "key": "hmbButtonCSS "
                                                             }
                                                           ]
                                                         },
@@ -4130,124 +4061,200 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "3WJVpQqglNb4yHnlELcM-",
-                                                            "triggerName": " Otpinfo with email and SMSpin",
-                                                            "serviceType": "11",
+                                                            "triggerId": "AEaehhecNPbEsJSm_Zr1u",
+                                                            "triggerName": "E_Commerce_Update_Limit",
+                                                            "serviceType": "2",
                                                             "attributes": {
+                                                              "delay": "",
                                                               "storeType": "",
-                                                              "selectedObjectBindingKey": "selectedObject",
-                                                              "dataType": "",
-                                                              "destinationBindingKey": "otpInfo",
-                                                              "sourceBindingKey": "form",
-                                                              "sourceStoreType": 2,
-                                                              "destinationStoreType": 2,
-                                                              "filterList": [
+                                                              "searchInState": false,
+                                                              "triggers": [
                                                                 {
-                                                                  "key": "smsPin",
-                                                                  "changeValueConditonally": true,
-                                                                  "logic": {
-                                                                    "var": "currentScreen.form.smsPin"
-                                                                  }
+                                                                  "id": "3WJVpQqglNb4yHnlELcM-",
+                                                                  "_id": "j4UDdGfNoOd5UzY-973cX",
+                                                                  "name": " Otpinfo with email and SMSpin",
+                                                                  "old_name": " Otpinfo with email and SMSpin",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "11",
+                                                                      "command": {
+                                                                        "type": "6",
+                                                                        "attributes": {
+                                                                          "requestBody": [],
+                                                                          "storeType": "",
+                                                                          "selectedObjectBindingKey": "selectedObject",
+                                                                          "dataType": "",
+                                                                          "destinationBindingKey": "otpInfo",
+                                                                          "sourceBindingKey": "form",
+                                                                          "sourceStoreType": 2,
+                                                                          "destinationStoreType": 2,
+                                                                          "filterList": [
+                                                                            {
+                                                                              "changeValueConditonally": true,
+                                                                              "key": "splitOtp",
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  false,
+                                                                                  false
+                                                                                ]
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "if": [
+                                                                                  true,
+                                                                                  "OTP",
+                                                                                  "OTP"
+                                                                                ]
+                                                                              },
+                                                                              "key": "validationType"
+                                                                            },
+                                                                            {
+                                                                              "key": "smsPin",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentScreen.form.smsPin"
+                                                                              }
+                                                                            },
+                                                                            {
+                                                                              "key": "emailPin",
+                                                                              "changeValueConditonally": true,
+                                                                              "logic": {
+                                                                                "var": "currentScreen.form.smsPin"
+                                                                              }
+                                                                            }
+                                                                          ],
+                                                                          "targettedType": "object"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.mprcj3bgcuR198VPkzFl1vcAA0ZhdnJ",
+                                                                  "updatedAt": "4/3/2024",
+                                                                  "createdAt": "4/3/2024",
+                                                                  "createdBy": "masood",
+                                                                  "updatedBy": "masood"
                                                                 },
                                                                 {
-                                                                  "changeValueConditonally": true,
-                                                                  "logic": {
-                                                                    "var": "currentScreen.form.emailPin"
-                                                                  },
-                                                                  "key": "emailPin"
-                                                                },
-                                                                {
-                                                                  "changeValueConditonally": true,
-                                                                  "key": "splitOtp",
-                                                                  "logic": {
-                                                                    "if": [
-                                                                      true,
-                                                                      false,
-                                                                      false
-                                                                    ]
-                                                                  }
-                                                                },
-                                                                {
-                                                                  "changeValueConditonally": true,
-                                                                  "logic": {
-                                                                    "if": [
-                                                                      true,
-                                                                      "OTP",
-                                                                      "OTP"
-                                                                    ]
-                                                                  },
-                                                                  "key": "validationType"
+                                                                  "id": "AuQlFt1PSQTxt9wT6ifUL",
+                                                                  "_id": "44ZDVm4slxF6IMPBXU82k",
+                                                                  "projectId": "640ee2a26ead56231ce8350b",
+                                                                  "gitBranchName": "master",
+                                                                  "name": "Card_LIMIT_UPDATE_API_TRIGGER",
+                                                                  "old_name": "Card_LIMIT_UPDATE_API_TRIGGER",
+                                                                  "status": "ACTIVE",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "8",
+                                                                      "command": {
+                                                                        "type": "1",
+                                                                        "attributes": {
+                                                                          "loaderWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "messageWidgetIds": [
+                                                                            906070
+                                                                          ],
+                                                                          "responseStateKey": "limitResponse",
+                                                                          "successMessageBindingKey": "limitResponseMessage",
+                                                                          "url": "/cardOnlineTransaction",
+                                                                          "checksum": true,
+                                                                          "encryption": true,
+                                                                          "isDeviceDetails": false,
+                                                                          "loginTrigger": false,
+                                                                          "formData": false,
+                                                                          "logoutTrigger": false,
+                                                                          "headers": {
+                                                                            "Content-Type": "application/json",
+                                                                            "channel_key": "005"
+                                                                          },
+                                                                          "requestBody": [
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "action",
+                                                                              "value": "U"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "cardLimitHour",
+                                                                              "value": "cardLimitHour"
+                                                                            },
+                                                                            {
+                                                                              "type": 4,
+                                                                              "name": "Static",
+                                                                              "key": "cardLimitSwitch",
+                                                                              "value": "1"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "cardnumber",
+                                                                              "value": "selectedCard.cardNumber"
+                                                                            },
+                                                                            {
+                                                                              "type": 1,
+                                                                              "name": "Form",
+                                                                              "key": "onlineLimitAmount",
+                                                                              "value": "onlineLimitAmount"
+                                                                            },
+                                                                            {
+                                                                              "type": 2,
+                                                                              "name": "Current screen",
+                                                                              "key": "otpInfo",
+                                                                              "value": "otpInfo"
+                                                                            }
+                                                                          ],
+                                                                          "baseURL": "64f9670d683922479c06159b",
+                                                                          "storeType": 2
+                                                                        },
+                                                                        "responseHandler": [
+                                                                          {
+                                                                            "httpStatus": 200,
+                                                                            "triggerName": "SUCCESS_MODAL",
+                                                                            "triggerId": "oY2CzUHf-lnfH1VvAnFoZ",
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "code"
+                                                                                },
+                                                                                1
+                                                                              ]
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "logic": {
+                                                                              "==": [
+                                                                                {
+                                                                                  "var": "code"
+                                                                                },
+                                                                                0
+                                                                              ]
+                                                                            },
+                                                                            "httpStatus": 200,
+                                                                            "triggerName": "ERROR_MODAL",
+                                                                            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "csrf": "0.i4oigdwm9lh8eetIQYvQ9KWFWlRE6u4s",
+                                                                  "updatedAt": "1/11/2024",
+                                                                  "createdAt": "1/11/2024",
+                                                                  "createdBy": "masood",
+                                                                  "updatedBy": "masood"
                                                                 }
                                                               ],
-                                                              "targettedType": "object"
-                                                            },
-                                                            "type": "4",
-                                                            "name": "On Submit"
-                                                          },
-                                                          {
-                                                            "triggerId": "AuQlFt1PSQTxt9wT6ifUL",
-                                                            "triggerName": "Card_LIMIT_UPDATE_API_TRIGGER",
-                                                            "serviceType": "8",
-                                                            "attributes": {
-                                                              "loaderWidgetIds": [
-                                                                906070
-                                                              ],
-                                                              "messageWidgetIds": [
-                                                                906070
-                                                              ],
-                                                              "responseStateKey": "limitResponse",
-                                                              "successMessageBindingKey": "cardlistSuccess",
-                                                              "url": "/cardOnlineTransaction",
-                                                              "checksum": true,
-                                                              "encryption": true,
-                                                              "isDeviceDetails": false,
-                                                              "loginTrigger": false,
-                                                              "formData": false,
-                                                              "logoutTrigger": false,
-                                                              "headers": {
-                                                                "Content-Type": "application/json",
-                                                                "channel_key": "005"
-                                                              },
-                                                              "requestBody": [
-                                                                {
-                                                                  "type": 4,
-                                                                  "name": "Static",
-                                                                  "key": "action",
-                                                                  "value": "U"
-                                                                },
-                                                                {
-                                                                  "type": 1,
-                                                                  "name": "Form",
-                                                                  "key": "cardLimitHour",
-                                                                  "value": "cardLimitHour"
-                                                                },
-                                                                {
-                                                                  "type": 4,
-                                                                  "name": "Static",
-                                                                  "key": "cardLimitSwitch",
-                                                                  "value": "1"
-                                                                },
-                                                                {
-                                                                  "type": 2,
-                                                                  "name": "Current screen",
-                                                                  "key": "cardnumber",
-                                                                  "value": "selectedCard.cardNumber"
-                                                                },
-                                                                {
-                                                                  "type": 1,
-                                                                  "name": "Form",
-                                                                  "key": "onlineLimitAmount",
-                                                                  "value": "onlineLimitAmount"
-                                                                },
-                                                                {
-                                                                  "type": 2,
-                                                                  "name": "Current screen",
-                                                                  "key": "otpInfo",
-                                                                  "value": "otpInfo"
-                                                                }
-                                                              ],
-                                                              "baseURL": "64f9670d683922479c06159b",
-                                                              "storeType": 2
+                                                              "triggerIds": [
+                                                                "3WJVpQqglNb4yHnlELcM-",
+                                                                "AuQlFt1PSQTxt9wT6ifUL"
+                                                              ]
                                                             },
                                                             "type": "4",
                                                             "name": "On Submit",
@@ -4298,7 +4305,7 @@
                                                   "type": "10001",
                                                   "content": "Grid layout"
                                                 },
-                                                "path": "0-0-0-0-1-0-0-0-6-2-0"
+                                                "path": "0-0-2-0-1-0-0-0-6-2-0"
                                               }
                                             ],
                                             "layoutProperties": {
@@ -4342,7 +4349,7 @@
                                           "type": "10001",
                                           "content": "Grid layout"
                                         },
-                                        "path": "0-0-0-0-1-0-0-0-6",
+                                        "path": "0-0-2-0-1-0-0-0-6",
                                         "dimensions": {
                                           "rows": 1,
                                           "columns": 3,
@@ -4803,8 +4810,8 @@
     "gitBranchName": "master",
     "_id": "I-8W00KHruAlly9gyc7HU",
     "createdBy": "masood",
-    "updatedAt": "4/3/2024",
-    "createdAt": "4/3/2024",
+    "updatedAt": "4/18/2024",
+    "createdAt": "4/18/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7290,70 +7297,9 @@
         "xs": 12
       },
       "validate": {
-        "required": true,
+        "required": false,
         "errorMsg": "This field is required",
-        "bindButton": [
-          {
-            "id": "4W_JB1ppU8bLj50ocfaCq",
-            "status": "ACTIVE",
-            "attributes": {
-              "label": "Submit",
-              "variant": "contained",
-              "name": "Button",
-              "label-locale-key": "",
-              "fullWidth": true,
-              "layoutProperties": {
-                "button": { "//": "Use this class to style button component." },
-                "inputProps": {
-                  "//": "Use this class to style button element."
-                },
-                "mainContainer": "button",
-                "xl": 12,
-                "lg": 12,
-                "md": 12,
-                "sm": 12,
-                "xs": 12
-              },
-              "buttonIconPosition": "end",
-              "asset": null,
-              "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
-            },
-            "name": "Button",
-            "icon": "FaBimobject",
-            "group": "Form",
-            "type": "20006",
-            "Documentation": "<div>components 12344</div>",
-            "updatedAt": "23-Aug-2021",
-            "createdAt": "23-Aug-2021",
-            "order": 1,
-            "version": "1.0.0",
-            "isLatest": true,
-            "projectType": "web",
-            "component": { "content": "Button", "type": "20006" },
-            "events": [
-              {
-                "triggerId": "3WJVpQqglNb4yHnlELcM-",
-                "triggerName": " Otpinfo with email and SMSpin",
-                "name": "On Submit",
-                "type": "4",
-                "serviceType": "11"
-              },
-              {
-                "triggerId": "AuQlFt1PSQTxt9wT6ifUL",
-                "triggerName": "Card_LIMIT_UPDATE_API_TRIGGER",
-                "name": "On Submit",
-                "type": "4",
-                "serviceType": "8"
-              }
-            ],
-            "path": "0-0-1-0-0-0-7-2-0-0-0",
-            "screenId": "I-8W00KHruAlly9gyc7HU",
-            "subType": "component",
-            "projectId": "640ee2a26ead56231ce8350b",
-            "gitBranchName": "master",
-            "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-          }
-        ]
+        "bindButton": []
       },
       "placeholder": "Email Address",
       "stateName": "email",
@@ -8611,7 +8557,9 @@
       },
       "buttonIconPosition": "end",
       "asset": null,
-      "cssClassNames": [{ "cssClassName": "hmbButtonCSS " }]
+      "cssClassNames": [
+        { "cssClassName": "hmbButtonCSS ", "key": "hmbButtonCSS " }
+      ]
     },
     "name": "Button",
     "icon": "FaBimobject",
@@ -8627,18 +8575,11 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "3WJVpQqglNb4yHnlELcM-",
-        "triggerName": " Otpinfo with email and SMSpin",
+        "triggerId": "AEaehhecNPbEsJSm_Zr1u",
+        "triggerName": "E_Commerce_Update_Limit",
         "name": "On Submit",
         "type": "4",
-        "serviceType": "11"
-      },
-      {
-        "triggerId": "AuQlFt1PSQTxt9wT6ifUL",
-        "triggerName": "Card_LIMIT_UPDATE_API_TRIGGER",
-        "name": "On Submit",
-        "type": "4",
-        "serviceType": "8"
+        "serviceType": "2"
       }
     ],
     "path": "0-0-0-0-1-0-0-0-6-2-0-0-0",
