@@ -1,0 +1,74 @@
+{
+  "_id": "GfnJQZrOdnmeqGBxrpkeq",
+  "id": "qe23SOaLgNKp1ijkvVV8S",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Make Bene Favourite Delay Trigger",
+  "old_name": "Make Bene Favourite Delay Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "delay": "800",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "BohBkQXvww4c7eWqE6E2f",
+              "_id": "96H1KgC1mpfwnkDJtTj_I",
+              "name": "paymentMethod Trigger RAAST",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "paymentMethod",
+                      "sourceBindingKey": " data",
+                      "sourceStoreType": 3,
+                      "destinationStoreType": 1,
+                      "filterList": [
+                        {
+                          "key": "code",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "1", "1"] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "name",
+                          "logic": { "if": [true, "RAAST ID", "RAAST ID"] }
+                        }
+                      ],
+                      "targettedType": "object",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.dvlx91m9ckJnmrvM2yLKtAYLv9nyTrg",
+              "updatedAt": "8/16/2024",
+              "createdAt": "8/16/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["BohBkQXvww4c7eWqE6E2f"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.3auckfavea7yJqbkQs7ftxT_gBKS_gx8",
+  "updatedAt": "8/18/2024",
+  "createdAt": "8/18/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

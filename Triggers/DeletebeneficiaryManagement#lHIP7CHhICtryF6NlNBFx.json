@@ -25,7 +25,7 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "channel_key": "005"
+            "channel_key": "001"
           },
           "requestBody": [
             {
@@ -38,7 +38,7 @@
               "type": 2,
               "name": "Current screen",
               "key": "beneficiary",
-              "value": "beneficiary"
+              "value": "selectedObject"
             },
             { "type": 4, "name": "Static", "key": "action", "value": "D" }
           ],
@@ -49,8 +49,8 @@
           {
             "logic": { "==": [{ "var": "code" }, 1] },
             "httpStatus": 200,
-            "triggerName": "Navigate to Bene List",
-            "triggerId": "nhH4osFnKhVohIOmaH3xa"
+            "triggerName": "Fetch Bene",
+            "triggerId": "5bgMe4xtpQkC2-48vHWeY"
           },
           {
             "logic": { "==": [{ "var": "code" }, 0] },
@@ -62,9 +62,9 @@
       }
     }
   ],
-  "csrf": "0.muqcztl6ip8mQDhBOi_YPZUyO7abw81H",
-  "updatedAt": "1/29/2024",
-  "createdAt": "1/29/2024",
-  "createdBy": "hasnain",
-  "updatedBy": "hasnain"
+  "csrf": "0.gpmho2fxmjhnQGQVk7sa-D-4YpLxPUej",
+  "updatedAt": "7/29/2024",
+  "createdAt": "7/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

@@ -1,0 +1,38 @@
+{
+  "id": "AgX4N0o-6GYBuD_ehPHOc",
+  "name": "OTP timer convert into miliseconds",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "otpExpired",
+          "sourceBindingKey": "generateOTPResponse.content",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "value",
+              "changeValueConditonally": true,
+              "logic": { "*": [1000, { "var": "otpExpiry" }] }
+            }
+          ],
+          "targettedType": "object",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.ttbkwt8d2mqFNH4y_PDODfB9va5A9_T",
+  "_id": "VH24vwnwl9Kr9AnP3t_qr",
+  "updatedAt": "9/2/2024",
+  "createdAt": "9/2/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

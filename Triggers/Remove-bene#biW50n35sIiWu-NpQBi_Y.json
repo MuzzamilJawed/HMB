@@ -1,0 +1,70 @@
+{
+  "id": "1lO8N0P-94Hchc3PbhmLA",
+  "_id": "biW50n35sIiWu-NpQBi_Y",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Remove bene",
+  "old_name": "Remove bene",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "benes",
+          "successMessageBindingKey": "addBeneMessage",
+          "url": "/beneficiaryManagement",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": "loginTrigger",
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "validation",
+              "value": "validation"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "beneficiary",
+              "value": "beneficiary"
+            },
+            { "type": 4, "name": "Static", "key": "action", "value": "D" }
+          ],
+          "baseURL": "64f968d3683922479c0616ba",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Navigate to Bene List",
+            "triggerId": "nhH4osFnKhVohIOmaH3xa"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.3fi6ozzg76enlerHSjsndTek2OuYLRTE",
+  "updatedAt": "7/24/2024",
+  "createdAt": "7/24/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

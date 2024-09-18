@@ -17,10 +17,61 @@
           "searchInState": false,
           "triggers": [
             {
-              "id": "5pfIblEnBR_xAfAsiZIVB",
-              "_id": "BXwjPfVGkyK356LZx0P7a",
-              "name": "convert device object into trustedDevice Object",
-              "old_name": "convert device object into trustedDevice Object",
+              "id": "dTzBLHUfQvy2dgKQ71OLm",
+              "_id": "JDw8cSx0j5728W0Ge4DxC",
+              "name": "IBFT Validation",
+              "old_name": "IBFT Validation",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "destinationBindingKey": "validation",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.au4xi5lppakRccQaKG8yXQZMzo2y72Uf",
+              "updatedAt": "3/21/2024",
+              "createdAt": "3/21/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "88JBXXOTwfw4VmXe3-WNj",
+              "_id": "gbWwhgc3WjPGckDN7CIlG",
+              "name": "convert device object into trustedDevice for Delete",
+              "old_name": "convert device object into trustedDevice for Delete",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "services": [
@@ -93,68 +144,20 @@
                         {
                           "key": "deviceKey",
                           "changeValueConditonally": true,
-                          "logic": { "var": "currentSession.device.deviceKey" }
+                          "logic": {
+                            "var": "currentScreen.selectedObject.deviceKey"
+                          }
                         }
                       ],
-                      "targettedType": "object"
+                      "targettedType": "object",
+                      "gridFormRowIdBindingKey": "editFormRowId"
                     }
                   }
                 }
               ],
-              "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
-              "updatedAt": "9/7/2023",
-              "createdAt": "9/7/2023",
-              "createdBy": "masood",
-              "updatedBy": "masood"
-            },
-            {
-              "id": "dTzBLHUfQvy2dgKQ71OLm",
-              "_id": "JDw8cSx0j5728W0Ge4DxC",
-              "name": "IBFT Validation",
-              "old_name": "IBFT Validation",
-              "projectId": "640ee2a26ead56231ce8350b",
-              "gitBranchName": "master",
-              "services": [
-                {
-                  "type": "11",
-                  "command": {
-                    "type": "6",
-                    "attributes": {
-                      "requestBody": [],
-                      "destinationBindingKey": "validation",
-                      "sourceBindingKey": "form",
-                      "sourceStoreType": 2,
-                      "destinationStoreType": 2,
-                      "filterList": [
-                        {
-                          "key": "smsPin",
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.smsPin" }
-                        },
-                        {
-                          "key": "splitOtp",
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, false, false] }
-                        },
-                        {
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, "OTP", "OTP"] },
-                          "key": "validationType"
-                        },
-                        {
-                          "key": "emailPin",
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.smsPin" }
-                        }
-                      ],
-                      "targettedType": "object"
-                    }
-                  }
-                }
-              ],
-              "csrf": "0.au4xi5lppakRccQaKG8yXQZMzo2y72Uf",
-              "updatedAt": "3/21/2024",
-              "createdAt": "3/21/2024",
+              "csrf": "0.xh81opbi5pYxQPDwxDRRIA3PMj0fMC0",
+              "updatedAt": "8/19/2024",
+              "createdAt": "8/19/2024",
               "createdBy": "masood",
               "updatedBy": "masood"
             },
@@ -175,6 +178,7 @@
                       "loaderWidgetIds": [906070],
                       "messageWidgetIds": [906070],
                       "responseStateKey": "deletingDeviceReponse",
+                      "successMessageBindingKey": "deletingDeviceReponseMessage",
                       "url": "/deviceManagement",
                       "checksum": true,
                       "encryption": true,
@@ -184,7 +188,7 @@
                       "logoutTrigger": false,
                       "headers": {
                         "Content-Type": "application/json",
-                        "channel_key": "005"
+                        "channel_key": "001"
                       },
                       "requestBody": [
                         {
@@ -213,32 +217,32 @@
                       {
                         "logic": { "==": [{ "var": "code" }, 1] },
                         "httpStatus": 200,
-                        "triggerName": "Hide 400 Error Modal",
-                        "triggerId": "6N4XkoRhIDHU3PdmYS1jJ"
+                        "triggerName": "Device Delete Chain Successful Chain Trigger",
+                        "triggerId": "8KjydKkYeg5S2v8iGrAHY"
                       }
                     ]
                   }
                 }
               ],
-              "csrf": "0.abe9x3ugkgwBjFId5QGJriJoyaamZeJf",
-              "updatedAt": "11/7/2023",
-              "createdAt": "11/7/2023",
+              "csrf": "0.k64some770omhYB6Yv8IkIwVujk2tHcX",
+              "updatedAt": "3/22/2024",
+              "createdAt": "3/22/2024",
               "createdBy": "masood",
               "updatedBy": "masood"
             }
           ],
           "triggerIds": [
-            "5pfIblEnBR_xAfAsiZIVB",
             "dTzBLHUfQvy2dgKQ71OLm",
+            "88JBXXOTwfw4VmXe3-WNj",
             "MIFlqgLNnNSe2FMlFM52U"
           ]
         }
       }
     }
   ],
-  "csrf": "0.au4xi5lppakRccQaKG8yXQZMzo2y72Uf",
-  "updatedAt": "3/21/2024",
-  "createdAt": "3/21/2024",
+  "csrf": "0.xh81opbi5pYxQPDwxDRRIA3PMj0fMC0",
+  "updatedAt": "8/19/2024",
+  "createdAt": "8/19/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

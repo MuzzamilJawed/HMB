@@ -13,178 +13,9 @@
         "type": "1",
         "attributes": {
           "delay": "",
+          "storeType": "",
+          "searchInState": false,
           "triggers": [
-            {
-              "id": "lOONpwXzERn9ZktBE5vQg",
-              "_id": "wRAZGXFjnNGU8xFVB79FJ",
-              "name": "convert bene object into bene Object",
-              "old_name": "convert bene object into bene Object",
-              "projectId": "640ee2a26ead56231ce8350b",
-              "gitBranchName": "master",
-              "services": [
-                {
-                  "type": "11",
-                  "command": {
-                    "type": "6",
-                    "attributes": {
-                      "requestBody": [],
-                      "destinationBindingKey": "beneficiary",
-                      "sourceBindingKey": "form",
-                      "sourceStoreType": 2,
-                      "destinationStoreType": 2,
-                      "filterList": [
-                        {
-                          "key": "bankCode",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.form.bankName.bankCode"
-                          }
-                        },
-                        {
-                          "key": "instrumentType",
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, "A", "A"] }
-                        },
-                        {
-                          "key": "mobile",
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.mobile" }
-                        },
-                        {
-                          "key": "bankBIC",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.form.bankName.bankCode"
-                          }
-                        },
-                        {
-                          "key": "alias",
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.alias" }
-                        },
-                        {
-                          "key": "beneficiaryFlag",
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, "A", "A"] }
-                        },
-                        {
-                          "key": "email",
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.email" }
-                        },
-                        {
-                          "key": "isFavorite",
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, false, false] }
-                        },
-                        {
-                          "key": "beneficiaryType",
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, "L", "L"] }
-                        },
-                        {
-                          "key": "bankName",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.form.bankName.bankName"
-                          }
-                        },
-                        {
-                          "key": "bankIMD",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.form.bankName.bankIMD"
-                          }
-                        },
-                        {
-                          "key": "accountNumber",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.responseTitle.accountNumber"
-                          }
-                        },
-                        {
-                          "key": "accountTitle",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.responseTitle.accountTitle"
-                          }
-                        },
-                        {
-                          "key": "mobile",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.mobile.923334444544"
-                          }
-                        },
-                        {
-                          "key": "alias",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.alias.bAyaz"
-                          }
-                        },
-                        {
-                          "key": "accountTitle",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.accountTitle.20610-714-522054"
-                          }
-                        },
-                        {
-                          "key": "accountNumber",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.accountNumber.6010120610714522054"
-                          }
-                        },
-                        {
-                          "key": "email",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.email.asdadd@asdasd.com"
-                          }
-                        },
-                        {
-                          "key": "bankIMD",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.bankIMD.627408"
-                          }
-                        },
-                        {
-                          "key": "bankName",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.bankName.HABIBMETRO"
-                          }
-                        },
-                        {
-                          "key": "branchCode",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.branchCode.MPBL"
-                          }
-                        },
-                        {
-                          "key": "bankBIC",
-                          "changeValueConditonally": true,
-                          "logic": {
-                            "var": "currentScreen.selectedObject.bankBIC.bankBIC.MPBL"
-                          }
-                        }
-                      ],
-                      "targettedType": "object"
-                    }
-                  }
-                }
-              ],
-              "csrf": "0.8jdn6uarr7hFaz_XKrrbQmOoWWG_vd5m",
-              "updatedAt": "1/29/2024",
-              "createdAt": "1/29/2024",
-              "createdBy": "hasnain",
-              "updatedBy": "hasnain"
-            },
             {
               "id": "myQKiAf7esTmLdi6rVuNQ",
               "name": "beneficiaryManagementValidation",
@@ -264,7 +95,7 @@
                       "logoutTrigger": false,
                       "headers": {
                         "Content-Type": "application/json",
-                        "channel_key": "005"
+                        "channel_key": "001"
                       },
                       "requestBody": [
                         {
@@ -313,18 +144,14 @@
               "updatedBy": "hasnain"
             }
           ],
-          "triggerIds": [
-            "lOONpwXzERn9ZktBE5vQg",
-            "myQKiAf7esTmLdi6rVuNQ",
-            "_jTB3KTSjvG1B8vNoqRKy"
-          ]
+          "triggerIds": ["myQKiAf7esTmLdi6rVuNQ", "_jTB3KTSjvG1B8vNoqRKy"]
         }
       }
     }
   ],
-  "csrf": "0.va6itfhn0xqjKagQ7mZavKgYqPPkZud-",
-  "updatedAt": "1/29/2024",
-  "createdAt": "1/29/2024",
-  "createdBy": "hasnain",
-  "updatedBy": "hasnain"
+  "csrf": "0.gpmho2fxmjhnQGQVk7sa-D-4YpLxPUej",
+  "updatedAt": "7/29/2024",
+  "createdAt": "7/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
 }

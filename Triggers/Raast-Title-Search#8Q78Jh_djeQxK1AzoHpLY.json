@@ -1,8 +1,10 @@
 {
   "id": "uWV8KUmReSlAwW9fQi9Es",
+  "_id": "8Q78Jh_djeQxK1AzoHpLY",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "Raast Title Search",
+  "old_name": "Raast Title Search",
   "status": "ACTIVE",
   "services": [
     {
@@ -12,7 +14,8 @@
         "attributes": {
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
-          "responseStateKey": "raastTitleResponse",
+          "responseStateKey": "getData",
+          "responseReturnValue": "content",
           "url": "/raast/titlesearch",
           "checksum": true,
           "encryption": true,
@@ -22,22 +25,70 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "channel_key": "005"
+            "channel_key": "001"
           },
           "requestBody": [
-            { "type": 1, "name": "Form", "key": "amount", "value": "amount" }
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccount",
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccount",
+              "value": "selectedObject.accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "purpose",
+              "value": "purpose.name"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "raastIdType",
+              "value": "Mobile"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "bicCode",
+              "value": "selectedObject.bankBIC"
+            }
           ],
           "baseURL": "64f9a08b683922479c062070",
           "storeType": 2
         },
-        "responseHandler": []
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "navigate Confirm Via bene Screen",
+            "triggerId": "hfGVDiKM_j_lzWZkeecTK"
+          }
+        ]
       }
     }
   ],
-  "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
-  "_id": "8Q78Jh_djeQxK1AzoHpLY",
-  "updatedAt": "9/27/2023",
-  "createdAt": "9/27/2023",
+  "csrf": "0.wowvet5jqsknHn4Fa6BVarhImW-N5pB6",
+  "updatedAt": "7/26/2024",
+  "createdAt": "7/26/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

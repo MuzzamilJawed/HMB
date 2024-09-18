@@ -68,6 +68,51 @@
               "updatedBy": "masood"
             },
             {
+              "id": "T6dE6ksVdj5wh8YQUy8n5",
+              "_id": "SO4GDnjDS2zA7nD_hlO5V",
+              "name": "MapValue Action",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "action",
+                      "sourceBindingKey": "acc",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          {
+                            "==": [
+                              { "var": "form.bankName.bankName" },
+                              "HABIBMETRO"
+                            ]
+                          },
+                          "L",
+                          "D"
+                        ]
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.b9yzu4kr1hpKljKU1YWhPgOYscJv9NkH",
+              "updatedAt": "8/13/2024",
+              "createdAt": "8/13/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
               "id": "I41lcgQdm2Hm3JVzvJWjm",
               "_id": "6EYo6EqqjGrLOY9fkWUQP",
               "projectId": "640ee2a26ead56231ce8350b",
@@ -94,7 +139,7 @@
                       "logoutTrigger": false,
                       "headers": {
                         "Content-Type": "application/json",
-                        "channel_key": "005"
+                        "channel_key": "001"
                       },
                       "requestBody": [
                         {
@@ -335,14 +380,18 @@
               "updatedBy": "masood"
             }
           ],
-          "triggerIds": ["dTzBLHUfQvy2dgKQ71OLm", "I41lcgQdm2Hm3JVzvJWjm"]
+          "triggerIds": [
+            "dTzBLHUfQvy2dgKQ71OLm",
+            "T6dE6ksVdj5wh8YQUy8n5",
+            "I41lcgQdm2Hm3JVzvJWjm"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.pr7mlpd9mlST-_m5G82MYsaJwQPd9Ev",
-  "updatedAt": "4/8/2024",
-  "createdAt": "4/8/2024",
+  "csrf": "0.b9yzu4kr1hpKljKU1YWhPgOYscJv9NkH",
+  "updatedAt": "8/13/2024",
+  "createdAt": "8/13/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

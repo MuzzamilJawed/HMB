@@ -1,0 +1,41 @@
+{
+  "id": "UVpG7ubL-O6K92VYpQ0ys",
+  "_id": "xB2UQGcpWnbadY_KUNYx6",
+  "name": "Lastdebit",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "15",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "sourceBindingKey": "",
+          "filterList": [
+            {
+              "key": "labelCredit",
+              "storeType": 2,
+              "logic": { "if": [true, "Last Credit", "Last Credit"] }
+            },
+            {
+              "key": "labelDebit",
+              "changeValueConditonally": false,
+              "storeType": 2,
+              "logic": { "if": [true, "Last Debit", "Last Debit"] }
+            }
+          ],
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.221luo8sucoMfGjY4h5CybJn3mHJecip",
+  "updatedAt": "8/5/2024",
+  "createdAt": "8/5/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

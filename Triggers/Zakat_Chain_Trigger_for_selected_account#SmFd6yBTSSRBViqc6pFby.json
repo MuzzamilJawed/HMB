@@ -1,0 +1,144 @@
+{
+  "id": "sflANlebeJ-VQs7mlfRuk",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Zakat_Chain_Trigger_for_selected_account",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "5OO4X-za_15_bfZsDGfHO",
+              "name": "isbase_mapp",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "isBase",
+                      "sourceBindingKey": "abcc",
+                      "sourceStoreType": 1,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, "BASE", "BASE"] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.g2qmj7wc02oH25m1obL8234oo8FTX9-U",
+              "_id": "rs5a_AiOf9KFweS6g2IcI",
+              "updatedAt": "8/27/2024",
+              "createdAt": "8/27/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "55znhNq-lzQUP7s8vAeaf",
+              "_id": "yqXmxUDS9JxSWQ2ob5tOh",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "getAllAccountsWithBalance",
+              "old_name": "getAllAccountsWithBalance",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountdetails",
+                      "responseReturnValue": "content.casaAccounts",
+                      "url": "/getAllAccountsWithBalance",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "status",
+                          "value": "A"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "accountType",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "currentFilter",
+                          "value": "ALL"
+                        },
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "includeBalance",
+                          "value": "true"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "logic": true,
+                        "triggerName": "account-Debit-Credit",
+                        "triggerId": "-zXZ_orXASHo37V2u1DfR"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Clear Form Data",
+                        "triggerId": "C9VAY5AImRfVpeNy7pz65"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.efqwz1m6pduB6BhLx_SnzU_dobsrHV57",
+              "updatedAt": "8/16/2024",
+              "createdAt": "8/16/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["5OO4X-za_15_bfZsDGfHO", "55znhNq-lzQUP7s8vAeaf"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.g2qmj7wc02oH25m1obL8234oo8FTX9-U",
+  "_id": "SmFd6yBTSSRBViqc6pFby",
+  "updatedAt": "8/27/2024",
+  "createdAt": "8/27/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

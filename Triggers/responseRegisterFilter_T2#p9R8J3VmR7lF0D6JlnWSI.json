@@ -1,0 +1,48 @@
+{
+  "id": "cCfbdvW1JFbpIO32d7rkK",
+  "_id": "p9R8J3VmR7lF0D6JlnWSI",
+  "name": "responseRegisterFilter_T2",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "10",
+        "attributes": {
+          "stateName": "none",
+          "requestBody": [],
+          "selectedObjectBindingKey": "none",
+          "destinationBindingKey": "responseRegisterFilter",
+          "sourceBindingKey": "responseRegister.accounts",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "currentScreen.isBase" },
+              {
+                "or": [
+                  { "==": [{ "var": "currentScreen.isBase" }, "All"] },
+                  {
+                    "and": [
+                      { "==": [{ "var": "currentScreen.isBase" }, "BASE"] },
+                      { "==": [{ "var": "isBaseAccount" }, "No"] }
+                    ]
+                  },
+                  true
+                ]
+              }
+            ]
+          },
+          "targetValue": "none",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.2mr8h1d9xbucoFR6VdNCI5PYBeCOoeZI",
+  "updatedAt": "8/29/2024",
+  "createdAt": "8/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

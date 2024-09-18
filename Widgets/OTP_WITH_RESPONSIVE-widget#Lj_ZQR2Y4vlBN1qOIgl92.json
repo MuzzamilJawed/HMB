@@ -1,0 +1,1074 @@
+[
+  {
+    "id": "Lj_ZQR2Y4vlBN1qOIgl92",
+    "name": "OTP_WITH_RESPONSIVE widget",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "8ihCQJjG6ZwAVkdVjJ22u",
+          "componentType": "10001",
+          "id": "8ihCQJjG6ZwAVkdVjJ22u",
+          "position": {
+            "i": "8ihCQJjG6ZwAVkdVjJ22u",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+        }
+      ]
+    },
+    "layout": [
+      {
+        "type": "10001",
+        "id": "8ihCQJjG6ZwAVkdVjJ22u",
+        "gridProps": [
+          {
+            "type": "column",
+            "id": "cI1YU7ysJ5Z6nrirunAWk",
+            "gridProps": [
+              {
+                "type": "10001",
+                "name": "Grid layout",
+                "id": "-e3CO0l4Kd-KYmd018ruB",
+                "gridProps": [
+                  {
+                    "type": "column",
+                    "id": "RNOsL2cF1EOoIMPq5t5e8",
+                    "gridProps": [
+                      {
+                        "id": "wK9KlWRJwfjAJ3lzARVw2",
+                        "status": "ACTIVE",
+                        "name": "Label",
+                        "attributes": {
+                          "variant": "body1",
+                          "name": "Label",
+                          "mandatory": false,
+                          "layoutProperties": {
+                            "label": {
+                              "//": "Use this class to style label component."
+                            },
+                            "mainContainer": "label",
+                            "xl": 12,
+                            "lg": 12,
+                            "md": 12,
+                            "sm": 12,
+                            "xs": 12
+                          },
+                          "label": "Enter SMS OTP",
+                          "cssClassNames": [
+                            {
+                              "cssClassName": "weneedToverifyCSS ",
+                              "key": "weneedToverifyCSS "
+                            }
+                          ]
+                        },
+                        "icon": "FaFont",
+                        "group": "Form",
+                        "type": "20002",
+                        "updatedAt": "23-Aug-2021",
+                        "createdAt": "23-Aug-2021",
+                        "order": 15,
+                        "version": "1.0.0",
+                        "isLatest": true,
+                        "projectType": "web",
+                        "component": { "content": "Label", "type": "20002" },
+                        "events": [],
+                        "path": "0-0-0-0-1-0-0-0-1-0-0-0-0"
+                      }
+                    ],
+                    "layoutProperties": {
+                      "xl": 12,
+                      "lg": 12,
+                      "md": 12,
+                      "sm": 12,
+                      "xs": 12
+                    },
+                    "path": "0-0-0-0-1-0-0-0-1-0-0-0"
+                  }
+                ],
+                "allowedContainers": [
+                  "10001",
+                  "20030",
+                  "noLayout",
+                  "20010",
+                  "widget"
+                ],
+                "attributes": {
+                  "gridProps": [],
+                  "label": "Header",
+                  "layoutProperties": {
+                    "gridLayout": {
+                      "//": "Use this class to style grid layout component.",
+                      "spacing": 0
+                    },
+                    "mainContainer": "gridLayout"
+                  },
+                  "layoutProps": {
+                    "direction": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start"
+                  },
+                  "direction": "row",
+                  "name": "Grid layout",
+                  "hideComponent": false,
+                  "cssClassNames": [
+                    { "cssClassName": "otp_label ", "key": "otp_label " }
+                  ]
+                },
+                "events": [],
+                "component": { "type": "10001", "content": "Grid layout" },
+                "path": "0-0-0-0-1-0-0-0-1-0-0",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
+              },
+              {
+                "type": "10001",
+                "id": "6d0EtArAfTsXc08d95HaL",
+                "gridProps": [
+                  {
+                    "type": "column",
+                    "id": "NsJK_X_Ud1SEpXUQS3h8M",
+                    "gridProps": [
+                      {
+                        "id": "CLFLRl_E7ivm3eYe8kGbb",
+                        "status": "ACTIVE",
+                        "order": 19,
+                        "name": "OTP",
+                        "icon": "FaLock",
+                        "group": "Security",
+                        "updatedAt": "23-Aug-2021",
+                        "createdAt": "23-Aug-2021",
+                        "type": "20052",
+                        "attributes": {
+                          "smsOtpLabel": "Sms Otp",
+                          "name": "OTP",
+                          "generateOtpLabel": "Regenrate Otp",
+                          "stateNameSMS": "smsOtp",
+                          "stateNameEmail": "emailOtp",
+                          "transactionCode": "",
+                          "emailOtpLabel": "Email Otp",
+                          "otpTriggerId": "W1Zrgxusxlzo0b_mfI92d",
+                          "validationTriggerId": "",
+                          "validate": { "isOTP": true },
+                          "otpType": { "key": "boxOtp", "value": "Box OTP" },
+                          "valueLength": "5",
+                          "bindingKey": "smsPin",
+                          "cssClassNames": [
+                            {
+                              "cssClassName": "OTP_component_class ",
+                              "key": "OTP_component_class "
+                            }
+                          ],
+                          "cssOTPcontainerClassNames": [
+                            {
+                              "cssClassName": "OTP_CONTAINER_CLASS ",
+                              "key": "OTP_CONTAINER_CLASS "
+                            }
+                          ]
+                        },
+                        "version": "1.0.0",
+                        "isLatest": true,
+                        "projectType": "web",
+                        "component": { "content": "OTP", "type": "20052" },
+                        "events": [],
+                        "path": "0-0-0-0-1-0-0-0-1-0-1-0-0"
+                      }
+                    ],
+                    "layoutProperties": {
+                      "xl": 12,
+                      "lg": 12,
+                      "md": 12,
+                      "sm": 12,
+                      "xs": 12
+                    },
+                    "path": "0-0-0-0-1-0-0-0-1-0-1-0"
+                  }
+                ],
+                "path": "0-0-0-0-1-0-0-0-1-0-1",
+                "events": [],
+                "attributes": {
+                  "gridProps": [],
+                  "label": "Header",
+                  "layoutProperties": {
+                    "gridLayout": {
+                      "//": "Use this class to style grid layout component.",
+                      "spacing": 0
+                    },
+                    "mainContainer": "gridLayout"
+                  },
+                  "layoutProps": {
+                    "direction": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start"
+                  },
+                  "direction": "row",
+                  "name": "Grid layout",
+                  "hideComponent": false,
+                  "cssClassNames": [
+                    { "cssClassName": "otp_padding ", "key": "otp_padding " }
+                  ]
+                },
+                "component": { "type": "10001", "content": "Grid layout" },
+                "allowedContainers": [
+                  "10001",
+                  "20030",
+                  "noLayout",
+                  "20010",
+                  "widget"
+                ],
+                "name": "Grid layout",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
+              },
+              {
+                "type": "10001",
+                "name": "Progress",
+                "id": "q9I1e_NPRd1fT1fVXzhi-",
+                "gridProps": [
+                  {
+                    "type": "column",
+                    "id": "QR5RtRYBqjkNRP_SHBBzz",
+                    "gridProps": [
+                      {
+                        "id": "UtCUrvLrlivJMLVdJf312",
+                        "status": "ACTIVE",
+                        "name": "Progress",
+                        "attributes": {
+                          "variant": "body1",
+                          "name": "Progress Expire",
+                          "totalValue": "100",
+                          "mandatory": false,
+                          "height": "40px",
+                          "width": "40px",
+                          "progressType": "timer",
+                          "progressDependencyType": "Time bound",
+                          "storeTypeProgressColor": 4,
+                          "storeTypeColorWhenCompleted": 4,
+                          "storeTypeTrackingColor": 4,
+                          "storeTypeSecondaryProgressColor": 4,
+                          "storeType": 4,
+                          "bindingKey": "888",
+                          "progressColor": "#68713D",
+                          "colorWhenCompleted": "#7D4040",
+                          "trackingColor": "#E27474",
+                          "storeTypeTimeCount": 2,
+                          "timeCountKey": "otpExpired.value",
+                          "storeTypeCompletionState": 2,
+                          "completionStateKey": "expire",
+                          "selectedTriggerId": "aPlU0uvFc3THUqVG4jAWU"
+                        },
+                        "icon": "AiOutlineLoading3Quarters",
+                        "group": "Advanced",
+                        "type": "20060",
+                        "updatedAt": "18-Dec-2023",
+                        "createdAt": "18-Dec-2023",
+                        "order": 15,
+                        "version": "1.0.0",
+                        "isLatest": true,
+                        "projectType": "web",
+                        "component": { "content": "Progress", "type": "20060" },
+                        "events": [],
+                        "path": "0-0-0-0-1-0-0-0-1-0-2-0-0"
+                      }
+                    ],
+                    "layoutProperties": {
+                      "xl": 12,
+                      "lg": 12,
+                      "md": 12,
+                      "sm": 12,
+                      "xs": 12
+                    },
+                    "path": "0-0-0-0-1-0-0-0-1-0-2-0"
+                  }
+                ],
+                "allowedContainers": [
+                  "10001",
+                  "20030",
+                  "noLayout",
+                  "20010",
+                  "widget"
+                ],
+                "attributes": {
+                  "gridProps": [],
+                  "label": "Header",
+                  "layoutProperties": {
+                    "gridLayout": {
+                      "//": "Use this class to style grid layout component.",
+                      "spacing": 0
+                    },
+                    "mainContainer": "gridLayout",
+                    "skeleton": {
+                      "//": "Use this class to style skeleton loading component."
+                    },
+                    "imageStyles": {
+                      "//": "Use this class to style image component."
+                    }
+                  },
+                  "layoutProps": {
+                    "direction": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start"
+                  },
+                  "direction": "row",
+                  "name": "Progress",
+                  "hideCondition": {
+                    "logic": {
+                      "if": [{ "var": "currentScreen.expired" }, false, true]
+                    }
+                  },
+                  "cssClassNames": [
+                    { "cssClassName": "progress ", "key": "progress " }
+                  ]
+                },
+                "events": [],
+                "component": { "type": "10001", "content": "Grid layout" },
+                "path": "0-0-0-0-1-0-0-0-1-0-2",
+                "dimensions": {
+                  "rows": 1,
+                  "columns": 1,
+                  "colSize0xs": 12,
+                  "colSize0sm": 12,
+                  "colSize0md": 12,
+                  "colSize0lg": 12,
+                  "colSize0xl": 12
+                },
+                "readOnly": true
+              },
+              {
+                "type": "10001",
+                "id": "B825yqJ60lTOT-4ygdTAy",
+                "gridProps": [
+                  {
+                    "type": "column",
+                    "id": "eDSA-4Hyu4aLv3AqAEikU",
+                    "gridProps": [
+                      {
+                        "id": "iQf4y0hHUK_UlFBOGmiai",
+                        "status": "ACTIVE",
+                        "attributes": {
+                          "label": "Resend",
+                          "variant": "outlined",
+                          "name": "Button",
+                          "label-locale-key": "",
+                          "fullWidth": true,
+                          "layoutProperties": {
+                            "button": {
+                              "//": "Use this class to style button component."
+                            },
+                            "inputProps": {
+                              "//": "Use this class to style button element."
+                            },
+                            "mainContainer": "button",
+                            "xl": 12,
+                            "lg": 12,
+                            "md": 12,
+                            "sm": 12,
+                            "xs": 12
+                          },
+                          "cssClassNames": [
+                            {
+                              "cssClassName": "genrateOTP ",
+                              "key": "genrateOTP "
+                            }
+                          ],
+                          "disableCondition": {
+                            "logic": { "var": "currentScreen.expired" }
+                          },
+                          "cssDisableClassNames": [
+                            {
+                              "cssClassName": "resendDisabeld ",
+                              "key": "resendDisabeld "
+                            }
+                          ]
+                        },
+                        "name": "Button",
+                        "icon": "FaBimobject",
+                        "group": "Form",
+                        "type": "20006",
+                        "Documentation": "<div>components 12344</div>",
+                        "updatedAt": "23-Aug-2021",
+                        "createdAt": "23-Aug-2021",
+                        "order": 1,
+                        "version": "1.0.0",
+                        "isLatest": true,
+                        "projectType": "web",
+                        "component": { "content": "Button", "type": "20006" },
+                        "events": [
+                          {
+                            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+                            "triggerName": "generateOTP",
+                            "serviceType": "8",
+                            "attributes": {
+                              "loaderWidgetIds": [906070],
+                              "messageWidgetIds": [906070],
+                              "responseStateKey": "generateOTPResponse",
+                              "url": "/generateOTP",
+                              "checksum": true,
+                              "encryption": true,
+                              "isDeviceDetails": false,
+                              "loginTrigger": "loginTrigger",
+                              "formData": false,
+                              "logoutTrigger": false,
+                              "headers": {
+                                "Content-Type": "application/json",
+                                "channel_key": "001"
+                              },
+                              "requestBody": [
+                                {
+                                  "type": 2,
+                                  "name": "Current screen",
+                                  "key": "tranCode",
+                                  "value": "tranCode"
+                                }
+                              ],
+                              "baseURL": "65015c4b61f0645ad866ef4a",
+                              "storeType": 2
+                            },
+                            "type": "2",
+                            "name": "On click"
+                          }
+                        ],
+                        "path": "0-0-0-0-1-0-0-0-1-0-3-0-0"
+                      }
+                    ],
+                    "layoutProperties": {
+                      "xl": 12,
+                      "lg": 12,
+                      "md": 12,
+                      "sm": 12,
+                      "xs": 12
+                    },
+                    "path": "0-0-0-0-1-0-0-0-1-0-3-0"
+                  }
+                ],
+                "path": "0-0-0-0-1-0-0-0-1-0-3",
+                "events": [],
+                "attributes": {
+                  "gridProps": [],
+                  "label": "Header",
+                  "layoutProperties": {
+                    "gridLayout": {
+                      "//": "Use this class to style grid layout component.",
+                      "spacing": 0
+                    },
+                    "mainContainer": "gridLayout"
+                  },
+                  "layoutProps": {
+                    "direction": "row",
+                    "justifyContent": "flex-start",
+                    "alignItems": "flex-start"
+                  },
+                  "direction": "row",
+                  "name": "Grid layout",
+                  "cssClassNames": [
+                    {
+                      "cssClassName": "AMC_RESEND_OTP ",
+                      "key": "AMC_RESEND_OTP "
+                    }
+                  ]
+                },
+                "component": { "type": "10001", "content": "Grid layout" },
+                "allowedContainers": [
+                  "10001",
+                  "20030",
+                  "noLayout",
+                  "20010",
+                  "widget"
+                ],
+                "name": "Grid layout"
+              }
+            ],
+            "layoutProperties": {
+              "xl": 12,
+              "lg": 12,
+              "md": 12,
+              "sm": 12,
+              "xs": 12
+            }
+          }
+        ],
+        "path": "0-0-0-0-1-0-0-0-1",
+        "events": [],
+        "attributes": {
+          "gridProps": [],
+          "label": "Header",
+          "layoutProperties": {
+            "gridLayout": {
+              "//": "Use this class to style grid layout component.",
+              "spacing": 0
+            },
+            "mainContainer": "gridLayout"
+          },
+          "layoutProps": {
+            "direction": "row",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start"
+          },
+          "direction": "row",
+          "name": "OTP_WITH_RESPONSIVE",
+          "cssClassNames": [
+            {
+              "cssClassName": "FT_PADDING_TOP_20 ",
+              "key": "FT_PADDING_TOP_20 "
+            }
+          ]
+        },
+        "component": { "type": "10001", "content": "Grid layout" },
+        "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
+        "name": "OTP_WITH_RESPONSIVE",
+        "dimensions": {
+          "rows": 1,
+          "columns": 1,
+          "colSize0xs": 12,
+          "colSize0sm": 12,
+          "colSize0md": 12,
+          "colSize0lg": 12,
+          "colSize0xl": 12
+        }
+      }
+    ],
+    "events": [],
+    "subType": "widget",
+    "screenId": "Lj_ZQR2Y4vlBN1qOIgl92",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "_id": "Lj_ZQR2Y4vlBN1qOIgl92",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "8ihCQJjG6ZwAVkdVjJ22u",
+    "name": "OTP_WITH_RESPONSIVE",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "-e3CO0l4Kd-KYmd018ruB",
+          "componentType": "10001",
+          "id": "-e3CO0l4Kd-KYmd018ruB",
+          "position": {
+            "i": "-e3CO0l4Kd-KYmd018ruB",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "6d0EtArAfTsXc08d95HaL",
+          "componentType": "10001",
+          "id": "6d0EtArAfTsXc08d95HaL",
+          "position": {
+            "i": "6d0EtArAfTsXc08d95HaL",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "q9I1e_NPRd1fT1fVXzhi-",
+          "componentType": "10001",
+          "id": "q9I1e_NPRd1fT1fVXzhi-",
+          "position": {
+            "i": "q9I1e_NPRd1fT1fVXzhi-",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        },
+        {
+          "componentId": "B825yqJ60lTOT-4ygdTAy",
+          "componentType": "10001",
+          "id": "B825yqJ60lTOT-4ygdTAy",
+          "position": {
+            "i": "B825yqJ60lTOT-4ygdTAy",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          }
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "OTP_WITH_RESPONSIVE",
+      "cssClassNames": [
+        { "cssClassName": "FT_PADDING_TOP_20 ", "key": "FT_PADDING_TOP_20 " }
+      ]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "-e3CO0l4Kd-KYmd018ruB",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "wK9KlWRJwfjAJ3lzARVw2",
+          "componentType": "20002",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout",
+      "hideComponent": false,
+      "cssClassNames": [{ "cssClassName": "otp_label ", "key": "otp_label " }]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "wK9KlWRJwfjAJ3lzARVw2",
+    "status": "ACTIVE",
+    "name": "Label",
+    "attributes": {
+      "variant": "body1",
+      "name": "Label",
+      "mandatory": false,
+      "layoutProperties": {
+        "label": { "//": "Use this class to style label component." },
+        "mainContainer": "label",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "label": "Enter SMS OTP",
+      "cssClassNames": [
+        { "cssClassName": "weneedToverifyCSS ", "key": "weneedToverifyCSS " }
+      ]
+    },
+    "icon": "FaFont",
+    "group": "Form",
+    "type": "20002",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Label", "type": "20002" },
+    "events": [],
+    "path": "0-0-0-0-1-0-0-0-1-0-0-0-0",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "6d0EtArAfTsXc08d95HaL",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "CLFLRl_E7ivm3eYe8kGbb",
+          "componentType": "20052",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout",
+      "hideComponent": false,
+      "cssClassNames": [
+        { "cssClassName": "otp_padding ", "key": "otp_padding " }
+      ]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "CLFLRl_E7ivm3eYe8kGbb",
+    "status": "ACTIVE",
+    "order": 19,
+    "name": "OTP",
+    "icon": "FaLock",
+    "group": "Security",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "type": "20052",
+    "attributes": {
+      "smsOtpLabel": "Sms Otp",
+      "name": "OTP",
+      "generateOtpLabel": "Regenrate Otp",
+      "stateNameSMS": "smsOtp",
+      "stateNameEmail": "emailOtp",
+      "transactionCode": "",
+      "emailOtpLabel": "Email Otp",
+      "otpTriggerId": "W1Zrgxusxlzo0b_mfI92d",
+      "validationTriggerId": "",
+      "validate": { "isOTP": true },
+      "otpType": { "key": "boxOtp", "value": "Box OTP" },
+      "valueLength": "5",
+      "bindingKey": "smsPin",
+      "cssClassNames": [
+        {
+          "cssClassName": "OTP_component_class ",
+          "key": "OTP_component_class "
+        }
+      ],
+      "cssOTPcontainerClassNames": [
+        {
+          "cssClassName": "OTP_CONTAINER_CLASS ",
+          "key": "OTP_CONTAINER_CLASS "
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "OTP", "type": "20052" },
+    "events": [],
+    "path": "0-0-0-0-1-0-0-0-1-0-1-0-0",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "q9I1e_NPRd1fT1fVXzhi-",
+    "name": "Progress",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "UtCUrvLrlivJMLVdJf312",
+          "componentType": "20060",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout",
+        "skeleton": {
+          "//": "Use this class to style skeleton loading component."
+        },
+        "imageStyles": { "//": "Use this class to style image component." }
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Progress",
+      "hideCondition": {
+        "logic": { "if": [{ "var": "currentScreen.expired" }, false, true] }
+      },
+      "cssClassNames": [{ "cssClassName": "progress ", "key": "progress " }]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "UtCUrvLrlivJMLVdJf312",
+    "status": "ACTIVE",
+    "name": "Progress",
+    "attributes": {
+      "variant": "body1",
+      "name": "Progress Expire",
+      "totalValue": "100",
+      "mandatory": false,
+      "height": "40px",
+      "width": "40px",
+      "progressType": "timer",
+      "progressDependencyType": "Time bound",
+      "storeTypeProgressColor": 4,
+      "storeTypeColorWhenCompleted": 4,
+      "storeTypeTrackingColor": 4,
+      "storeTypeSecondaryProgressColor": 4,
+      "storeType": 4,
+      "bindingKey": "888",
+      "progressColor": "#68713D",
+      "colorWhenCompleted": "#7D4040",
+      "trackingColor": "#E27474",
+      "storeTypeTimeCount": 2,
+      "timeCountKey": "otpExpired.value",
+      "storeTypeCompletionState": 2,
+      "completionStateKey": "expire",
+      "selectedTriggerId": "aPlU0uvFc3THUqVG4jAWU"
+    },
+    "icon": "AiOutlineLoading3Quarters",
+    "group": "Advanced",
+    "type": "20060",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Progress", "type": "20060" },
+    "events": [],
+    "path": "0-0-0-0-1-0-0-0-1-0-2-0-0",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "B825yqJ60lTOT-4ygdTAy",
+    "name": "Grid layout",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "iQf4y0hHUK_UlFBOGmiai",
+          "componentType": "20006",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout"
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout",
+      "cssClassNames": [
+        { "cssClassName": "AMC_RESEND_OTP ", "key": "AMC_RESEND_OTP " }
+      ]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "iQf4y0hHUK_UlFBOGmiai",
+    "status": "ACTIVE",
+    "attributes": {
+      "label": "Resend",
+      "variant": "outlined",
+      "name": "Button",
+      "label-locale-key": "",
+      "fullWidth": true,
+      "layoutProperties": {
+        "button": { "//": "Use this class to style button component." },
+        "inputProps": { "//": "Use this class to style button element." },
+        "mainContainer": "button",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "cssClassNames": [
+        { "cssClassName": "genrateOTP ", "key": "genrateOTP " }
+      ],
+      "disableCondition": { "logic": { "var": "currentScreen.expired" } },
+      "cssDisableClassNames": [
+        { "cssClassName": "resendDisabeld ", "key": "resendDisabeld " }
+      ]
+    },
+    "name": "Button",
+    "icon": "FaBimobject",
+    "group": "Form",
+    "type": "20006",
+    "Documentation": "<div>components 12344</div>",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "order": 1,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Button", "type": "20006" },
+    "events": [
+      {
+        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+        "triggerName": "generateOTP",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "8"
+      }
+    ],
+    "path": "0-0-0-0-1-0-0-0-1-0-3-0-0",
+    "screenId": "bRZt_RjyRkY1q7Z4in_Fd",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

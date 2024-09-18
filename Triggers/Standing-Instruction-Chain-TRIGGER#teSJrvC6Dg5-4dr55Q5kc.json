@@ -88,6 +88,57 @@
               "updatedBy": "muhammad.asad"
             },
             {
+              "id": "dTzBLHUfQvy2dgKQ71OLm",
+              "_id": "JDw8cSx0j5728W0Ge4DxC",
+              "name": "IBFT Validation",
+              "old_name": "IBFT Validation",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "destinationBindingKey": "validation",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.au4xi5lppakRccQaKG8yXQZMzo2y72Uf",
+              "updatedAt": "3/21/2024",
+              "createdAt": "3/21/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
               "id": "tlf8viAAvlSK6Ee1uEtLp",
               "_id": "Oa0nJiHp8bRUrWdVfToTj",
               "projectId": "640ee2a26ead56231ce8350b",
@@ -107,13 +158,13 @@
                       "url": "/transfer",
                       "checksum": true,
                       "encryption": true,
-                      "isDeviceDetails": true,
+                      "isDeviceDetails": false,
                       "loginTrigger": false,
                       "formData": false,
                       "logoutTrigger": false,
                       "headers": {
                         "Content-Type": "application/json",
-                        "channel_key": "005"
+                        "channel_key": "001"
                       },
                       "requestBody": [
                         {
@@ -165,46 +216,10 @@
                           "value": "beneForSi.mobile"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "beneficiaryName",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "cardTitle",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "chargesPayInstr",
-                          "value": "null"
-                        },
-                        {
                           "type": 1,
                           "name": "Form",
                           "key": "comments",
                           "value": "comments"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "convertedAmount",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "endDate",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "endingOption",
-                          "value": "endingOption"
                         },
                         {
                           "type": 4,
@@ -243,32 +258,14 @@
                           "value": "selectedAccount.accountTitle"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "fromBranchCode",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "fromCardNumber",
-                          "value": "null"
-                        },
-                        {
                           "type": 1,
                           "name": "Form",
                           "key": "fromCurrency",
                           "value": "amountCurrency.code"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "iban",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
+                          "type": 1,
+                          "name": "Form",
                           "key": "instrumentType",
                           "value": "beneForSi.instrumentType"
                         },
@@ -283,12 +280,6 @@
                           "name": "Form",
                           "key": "noOfOccurrences",
                           "value": "occurrence"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "orgCode",
-                          "value": "null"
                         },
                         {
                           "type": 4,
@@ -333,24 +324,6 @@
                           "value": "false"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "startDate",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "state",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "swiftCode",
-                          "value": "null"
-                        },
-                        {
                           "type": 1,
                           "name": "Form",
                           "key": "toAccountNumber",
@@ -361,18 +334,6 @@
                           "name": "Form",
                           "key": "toAccountTitle",
                           "value": "beneForSi.accountTitle"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "toCardNumber",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "toCountryCode",
-                          "value": "null"
                         },
                         {
                           "type": 1,
@@ -389,12 +350,6 @@
                         {
                           "type": 4,
                           "name": "Static",
-                          "key": "transactionFee",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
                           "key": "transferToOption",
                           "value": "beneficiary"
                         },
@@ -405,28 +360,10 @@
                           "value": "beneForSi.transferType"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "validation",
-                          "value": "null"
-                        },
-                        {
                           "type": 1,
                           "name": "Form",
                           "key": "raast",
                           "value": "selectedAccount.raast"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "byCard",
-                          "value": "null"
-                        },
-                        {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "isByCard",
-                          "value": "null"
                         },
                         {
                           "type": 1,
@@ -441,40 +378,57 @@
                           "value": "selectedAccount.raast"
                         },
                         {
-                          "type": 4,
-                          "name": "Static",
-                          "key": "raastMessageId",
-                          "value": "null"
-                        },
-                        {
                           "type": 2,
                           "name": "Current screen",
                           "key": "standingInstructions",
                           "value": "standingInstructions"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "endDate",
+                          "value": "endDate"
                         }
                       ],
                       "baseURL": "6502f5a7c9bf2957746c9973",
                       "storeType": 2
                     },
-                    "responseHandler": []
+                    "responseHandler": [
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "triggerName": "ERROR_MODAL",
+                        "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+                      },
+                      {
+                        "httpStatus": 200,
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "triggerName": "NAVIGATE_TO_SI_RECEIPT",
+                        "triggerId": "RGIGrZ_nazoWgWYIPpn-Y"
+                      }
+                    ]
                   }
                 }
               ],
-              "csrf": "0.81cm6jmof8uesrJ_Y-p-yep2tKrR4cnu",
-              "updatedAt": "10/31/2023",
-              "createdAt": "10/31/2023",
-              "createdBy": "muhammad.asad",
-              "updatedBy": "muhammad.asad"
+              "csrf": "0.dnud3sfi0c2nWDJPv42_quXNVKe5neQ",
+              "updatedAt": "3/29/2024",
+              "createdAt": "3/29/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
             }
           ],
-          "triggerIds": ["aTUdcA2YIUb8Xyjkxc_GU", "tlf8viAAvlSK6Ee1uEtLp"]
+          "triggerIds": [
+            "aTUdcA2YIUb8Xyjkxc_GU",
+            "dTzBLHUfQvy2dgKQ71OLm",
+            "tlf8viAAvlSK6Ee1uEtLp"
+          ]
         }
       }
     }
   ],
-  "csrf": "0.dnud3sfi0c2nWDJPv42_quXNVKe5neQ",
-  "updatedAt": "3/29/2024",
-  "createdAt": "3/29/2024",
-  "createdBy": "masood",
-  "updatedBy": "masood"
+  "csrf": "0.3026hsxzb6kJJ4Cdw_SGhLuDwupcbPjf",
+  "updatedAt": "9/13/2024",
+  "createdAt": "9/13/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
 }

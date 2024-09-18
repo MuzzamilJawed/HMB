@@ -1,0 +1,66 @@
+{
+  "id": "MqeoW20N7LV1iIiPbNP5v",
+  "name": "Unchecked account triger",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "object",
+          "destinationBindingKey": "responseRegisterFilter",
+          "sourceBindingKey": "responseRegisterFilter",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "value": "isChecked",
+          "filterList": [
+            {
+              "key": "isChecked",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  {
+                    "==": [
+                      { "var": "accountid" },
+                      { "var": "currentScreen.selectedAcount.accountid" }
+                    ]
+                  },
+                  false,
+                  { "var": "isChecked" }
+                ]
+              }
+            },
+            { "key": "accountid" },
+            { "key": "accountno" },
+            { "key": "isBaseAccount" }
+          ],
+          "logic": {
+            "if": [
+              {
+                "==": [
+                  { "var": "accountid" },
+                  { "var": "currentScreen.selectedAcount.accountid" }
+                ]
+              },
+              false,
+              { "var": "isChecked" }
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "array",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.4ozme5e6axdnjQk5WfFKBbgOl2D8o3Wj",
+  "_id": "pqQAyw4IrTKGwHLvrNuYa",
+  "updatedAt": "8/30/2024",
+  "createdAt": "8/30/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

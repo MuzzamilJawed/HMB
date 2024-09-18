@@ -1,0 +1,96 @@
+{
+  "id": "LwwngrdL7maUykxLSmr0q",
+  "_id": "U85LacW3e-ADiy15xBEoV",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "RAAST TRANSFER BENE",
+  "old_name": "RAAST TRANSFER",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "transferResponse",
+          "successMessageBindingKey": "transferResponseSuccess",
+          "url": "/raast/transfer",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            },
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "requestNumber",
+              "value": "responseOfRaastTitleSearch.content.requestNumber"
+            },
+            { "type": 4, "name": "Static", "key": "raast", "value": "false" },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "beneficiary",
+              "value": "false"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "isBeneficiary",
+              "value": "false"
+            },
+            { "type": 4, "name": "Static", "key": "isRaast", "value": "false" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            }
+          ],
+          "baseURL": "6502f5a7c9bf2957746c9973",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "RAAST RECEIPT",
+            "triggerId": "SNwRQIjbkXyjBFsjQAaKM",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.f9fag7f07i7Q0pnWooTZiWNYEjjO6GIu",
+  "updatedAt": "7/29/2024",
+  "createdAt": "7/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

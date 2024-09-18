@@ -1,0 +1,135 @@
+{
+  "_id": "GxrYvRcs1RXfT94YKxlui",
+  "id": "AwLiMyaeRhXDwl-DVL50C",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Checked Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "iXCQLKkNFpJXVsvI1o9fN",
+              "_id": "_TJawtm1TAGi9QeQ1z2Cq",
+              "name": "Check_Box_Trigegr",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "object",
+                      "destinationBindingKey": "responseRegisterFilter",
+                      "sourceBindingKey": "responseRegisterFilter",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "accountid",
+                          "changeValueConditonally": false
+                        },
+                        {
+                          "key": "isBaseAccount",
+                          "changeValueConditonally": false
+                        },
+                        { "key": "accountno" },
+                        {
+                          "key": "isChecked",
+                          "changeValueConditonally": true,
+                          "logic": {
+                            "if": [
+                              {
+                                "==": [
+                                  { "var": "accountid" },
+                                  {
+                                    "var": "currentScreen.selectedAcount.accountid"
+                                  }
+                                ]
+                              },
+                              "checked",
+                              { "var": "isChecked" }
+                            ]
+                          }
+                        }
+                      ],
+                      "targettedType": "array",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.4ozme5e6axdnjQk5WfFKBbgOl2D8o3Wj",
+              "updatedAt": "8/30/2024",
+              "createdAt": "8/30/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "Gt5oJx56Eidc0gpJCz-Xe",
+              "name": "ALL_ROWS_Selected",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "10",
+                    "attributes": {
+                      "stateName": "none",
+                      "storeType": "",
+                      "selectedObjectBindingKey": "none",
+                      "dataType": "",
+                      "destinationBindingKey": "allrows",
+                      "sourceBindingKey": "responseRegisterFilter",
+                      "sourceStoreType": 2,
+                      "logic": {
+                        "if": [
+                          { "var": "responseRegisterFilter" },
+                          true,
+                          {
+                            "if": [
+                              { "==": [{ "var": "isChecked" }, "checked"] },
+                              true,
+                              false
+                            ]
+                          }
+                        ]
+                      },
+                      "targetValue": "none",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.m5lgx3nc9clbpOtYCY5n5sXPCReMI6po",
+              "_id": "gYLN-5Jj8CHBvHZ1giJbP",
+              "updatedAt": "8/30/2024",
+              "createdAt": "8/30/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["iXCQLKkNFpJXVsvI1o9fN", "Gt5oJx56Eidc0gpJCz-Xe"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.m5lgx3nc9clbpOtYCY5n5sXPCReMI6po",
+  "updatedAt": "8/30/2024",
+  "createdAt": "8/30/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

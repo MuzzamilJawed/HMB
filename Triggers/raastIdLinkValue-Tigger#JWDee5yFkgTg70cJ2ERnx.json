@@ -1,0 +1,53 @@
+{
+  "id": "k6C2nSrRqfqSw-9knnCzv",
+  "_id": "JWDee5yFkgTg70cJ2ERnx",
+  "name": "raastIdLinkValue Tigger",
+  "old_name": "raastIdLinkValue Tigger",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "raastIdLinkValue",
+          "sourceBindingKey": "userProfile.content",
+          "sourceStoreType": 3,
+          "destinationStoreType": 1,
+          "logic": {
+            "if": [
+              true,
+              {
+                "cat": [
+                  "Please Confirm If You Want To Register Your Raast ID ",
+                  { "var": "userProfile.content.mobileNumber" },
+                  " Against Your AccountNo "
+                ]
+              },
+              {
+                "cat": [
+                  "Please Confirm If You Want To Register Your Raast ID ",
+                  { "var": "userProfile.content.mobileNumber" },
+                  " Against Your AccountNo "
+                ]
+              }
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.pb7uozbw67qfnf7FXLaqDkNH7OwXOp22",
+  "updatedAt": "9/10/2024",
+  "createdAt": "9/10/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

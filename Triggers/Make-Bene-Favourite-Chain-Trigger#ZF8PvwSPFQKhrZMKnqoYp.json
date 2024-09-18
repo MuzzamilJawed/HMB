@@ -1,0 +1,312 @@
+{
+  "_id": "ZF8PvwSPFQKhrZMKnqoYp",
+  "id": "dhehuJDmMbY7ff7cPoRlH",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Make Bene Favourite Chain Trigger",
+  "old_name": "Make Bene Favourite Chain Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "myQKiAf7esTmLdi6rVuNQ",
+              "name": "beneficiaryManagementValidation",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "validation",
+                      "sourceBindingKey": "form",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
+                          "key": "emailPin",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, null, null] }
+                        },
+                        {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, false] }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "OTP", "OTP"] },
+                          "key": "validationType"
+                        }
+                      ],
+                      "targettedType": "object"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.v4t9tqxz8tbXbzSdAMLBz9LkyIg5-vEo",
+              "_id": "fqg5-G76nZO-ZMYuM7TAo",
+              "updatedAt": "9/8/2023",
+              "createdAt": "9/8/2023",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "R2XdVVWthfvlgZuZvEsP7",
+              "name": "Bene Action Value",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "action",
+                      "sourceBindingKey": "action",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          { "var": "selectedObject.isFavorite" },
+                          true,
+                          "D",
+                          "F"
+                        ]
+                      },
+                      "changeValueConditonally": true,
+                      "targettedType": "value",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.k4fa7ffhrjsV8uIujNPTEC7F9G_A8m5a",
+              "_id": "Nff1zR9rvlOVev0zZOSpb",
+              "updatedAt": "7/29/2024",
+              "createdAt": "7/29/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "jYPQMH8qaYTysJn2qZLfq",
+              "_id": "GgPRZV-t_UVuoOujNkwqY",
+              "name": "Maniputale isFavorite",
+              "old_name": "Maniputale isFavorite",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "selectedObject",
+                      "sourceBindingKey": "selectedObject",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "filterList": [
+                        {
+                          "changeValueConditonally": true,
+                          "key": "accountTitle",
+                          "logic": { "var": "accountTitle" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "accountNumber" },
+                          "key": "accountNumber"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "alias" },
+                          "key": "alias"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "bankBIC" },
+                          "key": "bankBIC"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "bankIMD" },
+                          "key": "bankIMD"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "bankName" },
+                          "key": "bankName"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "beneficiaryType" },
+                          "key": "beneficiaryType"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "key": "email",
+                          "logic": { "var": "email" }
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "instrumentType" },
+                          "key": "instrumentType"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "isIban" },
+                          "key": "isIban"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "listLayoutItemIndex" },
+                          "key": "listLayoutItemIndex"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "mobile" },
+                          "key": "mobile"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "transferType" },
+                          "key": "transferType"
+                        },
+                        {
+                          "changeValueConditonally": true,
+                          "logic": { "var": "url" },
+                          "key": "url"
+                        },
+                        {
+                          "key": "isFavorite",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, false, true] }
+                        }
+                      ],
+                      "targettedType": "object",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.3xkv6icn7wnJ1XzMjFdw8f6qoGjaR5bC",
+              "updatedAt": "7/30/2024",
+              "createdAt": "7/30/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "5L9JF8nLXdwlP981VwPUR",
+              "_id": "h33p4K1v5hEk6Vtj1xNsM",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Make Bene Favourite",
+              "old_name": "Make Bene Favourite",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "benes",
+                      "successMessageBindingKey": "addBeneMessage",
+                      "url": "/beneficiaryManagement",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "validation",
+                          "value": "validation"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "beneficiary",
+                          "value": "selectedObject"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "action",
+                          "value": "action"
+                        }
+                      ],
+                      "baseURL": "64f968d3683922479c0616ba",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Fetch Bene",
+                        "triggerId": "5bgMe4xtpQkC2-48vHWeY"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "httpStatus": 200,
+                        "triggerName": "ERROR_MODAL",
+                        "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.7dzst9mckucVRao1Go1FIquQZvoQPzDB",
+              "updatedAt": "7/29/2024",
+              "createdAt": "7/29/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": [
+            "myQKiAf7esTmLdi6rVuNQ",
+            "R2XdVVWthfvlgZuZvEsP7",
+            "jYPQMH8qaYTysJn2qZLfq",
+            "5L9JF8nLXdwlP981VwPUR"
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.mm7t8wm19ncBRxh2k2duCCa0Ug3Ou3l",
+  "updatedAt": "7/31/2024",
+  "createdAt": "7/31/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

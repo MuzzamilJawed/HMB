@@ -1,0 +1,90 @@
+{
+  "id": "88JBXXOTwfw4VmXe3-WNj",
+  "_id": "gbWwhgc3WjPGckDN7CIlG",
+  "name": "convert device object into trustedDevice for Delete",
+  "old_name": "convert device object into trustedDevice for Delete",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "trustedDevice",
+          "sourceBindingKey": "device",
+          "sourceStoreType": 3,
+          "destinationStoreType": 3,
+          "filterList": [
+            {
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.name" },
+              "key": "name"
+            },
+            {
+              "changeValueConditonally": true,
+              "key": "os",
+              "logic": { "var": "currentSession.device.os" }
+            },
+            {
+              "key": "osType",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentSession.device.osType" }
+            },
+            {
+              "key": "imei",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "111111111111111", "111111111111111"] }
+            },
+            {
+              "key": "notificationEnabled",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] }
+            },
+            {
+              "key": "ip",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "countryCode"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "dateTime"
+            },
+            {
+              "key": "fcmToken",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "0101010101", "0101010101"] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] },
+              "key": "isNotificationEnabled"
+            },
+            {
+              "key": "deviceKey",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.selectedObject.deviceKey" }
+            }
+          ],
+          "targettedType": "object",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.xh81opbi5pYxQPDwxDRRIA3PMj0fMC0",
+  "updatedAt": "8/19/2024",
+  "createdAt": "8/19/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

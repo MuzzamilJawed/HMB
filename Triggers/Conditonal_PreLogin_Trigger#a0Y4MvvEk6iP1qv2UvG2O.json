@@ -1,0 +1,49 @@
+{
+  "id": "pw2xXvt0DTDJQltK7bEgz",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Conditonal_PreLogin_Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": { "var": "currentScreen.selectedMenu.isWebView" },
+              "triggerName": "Open WebView",
+              "triggerId": "3fZrqGh0M2DgNaEd7JYlU",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "17",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "sourceBindingKey": "selectedMenu.url",
+                      "sourceStoreType": 2,
+                      "linkType": 1,
+                      "targetType": "_blank",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.8sgpkrtz4i4ukSlS30CL_oG5Da3IPZjM",
+  "_id": "a0Y4MvvEk6iP1qv2UvG2O",
+  "updatedAt": "8/8/2024",
+  "createdAt": "8/8/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

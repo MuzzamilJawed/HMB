@@ -1,0 +1,46 @@
+{
+  "id": "RWi-cySUdmOhtFhh7Y_mu",
+  "_id": "MSv-5FIyJH_9-RbTr-WCu",
+  "name": "Register_Accounts_list",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "10",
+        "attributes": {
+          "stateName": "none",
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "none",
+          "dataType": "",
+          "destinationBindingKey": "responseRegisterFilter",
+          "sourceBindingKey": "responseRegister.accounts",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "responseRegister.accounts" },
+              true,
+              {
+                "if": [
+                  { "==": [{ "var": "isBaseAccount" }, "No"] },
+                  true,
+                  false
+                ]
+              }
+            ]
+          },
+          "targetValue": "none",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.j13a9elok2q-B27gWepgrsqTP6vs9lVz",
+  "updatedAt": "8/29/2024",
+  "createdAt": "8/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

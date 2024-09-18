@@ -1,0 +1,54 @@
+{
+  "id": "q9wuNPrYUOrVZb8SuHXgE",
+  "_id": "MSTyuJPc7mRmD80CVO8tq",
+  "name": "responseRegisterFilter_trigger",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "object",
+          "destinationBindingKey": "responseRegisterFilter",
+          "sourceBindingKey": "responseRegister.accounts",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "accountid",
+              "changeValueConditonally": true,
+              "logic": { "var": "accountid" }
+            },
+            {
+              "key": "accountno",
+              "changeValueConditonally": true,
+              "logic": { "var": "accountno" }
+            },
+            {
+              "changeValueConditonally": true,
+              "key": "isBaseAccount",
+              "logic": { "var": "isBaseAccount" }
+            },
+            {
+              "changeValueConditonally": true,
+              "key": "isChecked",
+              "logic": { "if": [true, false, false] }
+            }
+          ],
+          "targettedType": "array",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.byl5gvscqowx5sZjKWarOEspVqW9D-__",
+  "updatedAt": "8/29/2024",
+  "createdAt": "8/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

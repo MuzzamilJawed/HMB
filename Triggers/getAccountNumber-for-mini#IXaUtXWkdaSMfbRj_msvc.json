@@ -1,0 +1,38 @@
+{
+  "id": "HPesNRoKe4agzetJt6E3U",
+  "_id": "IXaUtXWkdaSMfbRj_msvc",
+  "name": "getAccountNumber for mini",
+  "old_name": "getAccountNumber for mini",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "fromInstrument.accountId",
+          "sourceBindingKey": "accountdetails",
+          "sourceStoreType": 2,
+          "destinationStoreType": 1,
+          "filterList": [],
+          "logic": {
+            "if": [true, { "var": ".0.accountId" }, { "var": ".0.accountId" }]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.efqwz1m6pduB6BhLx_SnzU_dobsrHV57",
+  "updatedAt": "8/16/2024",
+  "createdAt": "8/16/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

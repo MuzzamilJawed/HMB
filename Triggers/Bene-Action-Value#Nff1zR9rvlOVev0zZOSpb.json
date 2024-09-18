@@ -1,0 +1,41 @@
+{
+  "id": "R2XdVVWthfvlgZuZvEsP7",
+  "_id": "Nff1zR9rvlOVev0zZOSpb",
+  "name": "Bene Action Value",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "action",
+          "sourceBindingKey": "action",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "currentScreen.selectedObject.isFavorite" },
+              true,
+              "F",
+              "F"
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.ap9690898ftWslzN6eX9Szn3IqqqkTvw",
+  "updatedAt": "7/29/2024",
+  "createdAt": "7/29/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

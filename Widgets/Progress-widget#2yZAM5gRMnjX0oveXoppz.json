@@ -1,0 +1,240 @@
+[
+  {
+    "id": "2yZAM5gRMnjX0oveXoppz",
+    "name": "Progress widget",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "componentId": "w7gHB-CC4d9XgVNiVSNIk",
+          "componentType": "10001",
+          "id": "w7gHB-CC4d9XgVNiVSNIk",
+          "position": {
+            "i": "w7gHB-CC4d9XgVNiVSNIk",
+            "x": null,
+            "y": null,
+            "w": null,
+            "h": null
+          },
+          "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+        }
+      ]
+    },
+    "layout": [
+      {
+        "type": "10001",
+        "name": "Progress",
+        "id": "w7gHB-CC4d9XgVNiVSNIk",
+        "gridProps": [
+          {
+            "type": "column",
+            "id": "od9BLbmxKdP8f4qHnCyXp",
+            "gridProps": [
+              {
+                "id": "Sr8m5sMIe7Ppc2-M4Fuoe",
+                "status": "ACTIVE",
+                "name": "Progress",
+                "attributes": {
+                  "variant": "body1",
+                  "name": "Progress Expire",
+                  "totalValue": "100",
+                  "mandatory": false,
+                  "height": "40px",
+                  "width": "40px",
+                  "progressType": "timer",
+                  "progressDependencyType": "Time bound",
+                  "storeTypeProgressColor": 4,
+                  "storeTypeColorWhenCompleted": 4,
+                  "storeTypeTrackingColor": 4,
+                  "storeTypeSecondaryProgressColor": 4,
+                  "storeType": 4,
+                  "bindingKey": "888",
+                  "progressColor": "#68713D",
+                  "colorWhenCompleted": "#7D4040",
+                  "trackingColor": "#E27474",
+                  "storeTypeTimeCount": 2,
+                  "timeCountKey": "otpExpired.value",
+                  "storeTypeCompletionState": 2,
+                  "completionStateKey": "expire",
+                  "selectedTriggerId": "aPlU0uvFc3THUqVG4jAWU"
+                },
+                "icon": "AiOutlineLoading3Quarters",
+                "group": "Advanced",
+                "type": "20060",
+                "updatedAt": "18-Dec-2023",
+                "createdAt": "18-Dec-2023",
+                "order": 15,
+                "version": "1.0.0",
+                "isLatest": true,
+                "projectType": "web",
+                "component": { "content": "Progress", "type": "20060" },
+                "events": [],
+                "path": "0-0-0-0-1-0-0-0-3-0-0-1-0-0-2-0-0"
+              }
+            ],
+            "layoutProperties": {
+              "xl": 12,
+              "lg": 12,
+              "md": 12,
+              "sm": 12,
+              "xs": 12
+            }
+          }
+        ],
+        "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
+        "attributes": {
+          "gridProps": [],
+          "label": "Header",
+          "layoutProperties": {
+            "gridLayout": {
+              "//": "Use this class to style grid layout component.",
+              "spacing": 0
+            },
+            "mainContainer": "gridLayout",
+            "skeleton": {
+              "//": "Use this class to style skeleton loading component."
+            },
+            "imageStyles": { "//": "Use this class to style image component." }
+          },
+          "layoutProps": {
+            "direction": "row",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start"
+          },
+          "direction": "row",
+          "name": "Grid layout",
+          "hideCondition": {
+            "logic": { "if": [{ "var": "currentScreen.expired" }, false, true] }
+          },
+          "cssClassNames": [{ "cssClassName": "progress ", "key": "progress " }]
+        },
+        "events": [],
+        "component": { "type": "10001", "content": "Grid layout" },
+        "path": "0-0-0-0-1-0-0-0-3-0-0-1-0-0-2",
+        "dimensions": {
+          "rows": 1,
+          "columns": 1,
+          "colSize0xs": 12,
+          "colSize0sm": 12,
+          "colSize0md": 12,
+          "colSize0lg": 12,
+          "colSize0xl": 12
+        },
+        "readOnly": true
+      }
+    ],
+    "events": [],
+    "subType": "widget",
+    "screenId": "2yZAM5gRMnjX0oveXoppz",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "_id": "2yZAM5gRMnjX0oveXoppz",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "w7gHB-CC4d9XgVNiVSNIk",
+    "name": "Progress",
+    "type": "10001",
+    "attributes": {
+      "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "Sr8m5sMIe7Ppc2-M4Fuoe",
+          "componentType": "20060",
+          "order": 1
+        }
+      ],
+      "label": "Header",
+      "layoutProperties": {
+        "gridLayout": {
+          "//": "Use this class to style grid layout component.",
+          "spacing": 0
+        },
+        "mainContainer": "gridLayout",
+        "skeleton": {
+          "//": "Use this class to style skeleton loading component."
+        },
+        "imageStyles": { "//": "Use this class to style image component." }
+      },
+      "layoutProps": {
+        "direction": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start"
+      },
+      "direction": "row",
+      "name": "Grid layout",
+      "hideCondition": {
+        "logic": { "if": [{ "var": "currentScreen.expired" }, false, true] }
+      },
+      "cssClassNames": [{ "cssClassName": "progress ", "key": "progress " }]
+    },
+    "layout": null,
+    "events": [],
+    "subType": "component",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "Sr8m5sMIe7Ppc2-M4Fuoe",
+    "status": "ACTIVE",
+    "name": "Progress",
+    "attributes": {
+      "variant": "body1",
+      "name": "Progress Expire",
+      "totalValue": "100",
+      "mandatory": false,
+      "height": "40px",
+      "width": "40px",
+      "progressType": "timer",
+      "progressDependencyType": "Time bound",
+      "storeTypeProgressColor": 4,
+      "storeTypeColorWhenCompleted": 4,
+      "storeTypeTrackingColor": 4,
+      "storeTypeSecondaryProgressColor": 4,
+      "storeType": 4,
+      "bindingKey": "888",
+      "progressColor": "#68713D",
+      "colorWhenCompleted": "#7D4040",
+      "trackingColor": "#E27474",
+      "storeTypeTimeCount": 2,
+      "timeCountKey": "otpExpired.value",
+      "storeTypeCompletionState": 2,
+      "completionStateKey": "expire",
+      "selectedTriggerId": "aPlU0uvFc3THUqVG4jAWU"
+    },
+    "icon": "AiOutlineLoading3Quarters",
+    "group": "Advanced",
+    "type": "20060",
+    "updatedAt": "9/5/2024",
+    "createdAt": "9/5/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Progress", "type": "20060" },
+    "events": [],
+    "path": "0-0-0-0-1-0-0-0-3-0-0-1-0-0-2-0-0",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  }
+]

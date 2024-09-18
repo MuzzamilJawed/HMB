@@ -1,0 +1,105 @@
+{
+  "id": "LwtIT1Qe1WvoVTGEuxb6_",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Chain Trigger IsFave",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "delay": "6000",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "5L9JF8nLXdwlP981VwPUR",
+              "_id": "h33p4K1v5hEk6Vtj1xNsM",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Make Bene Favourite",
+              "old_name": "Make Bene Favourite",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "benes",
+                      "successMessageBindingKey": "addBeneMessage",
+                      "url": "/beneficiaryManagement",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": "loginTrigger",
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "validation",
+                          "value": "validation"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "beneficiary",
+                          "value": "selectedObject"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "action",
+                          "value": "action"
+                        }
+                      ],
+                      "baseURL": "64f968d3683922479c0616ba",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Fetch Bene",
+                        "triggerId": "5bgMe4xtpQkC2-48vHWeY"
+                      },
+                      {
+                        "logic": { "==": [{ "var": "code" }, 0] },
+                        "httpStatus": 200,
+                        "triggerName": "ERROR_MODAL",
+                        "triggerId": "C3kzuslmU0jTd6s2CRjNj"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.7dzst9mckucVRao1Go1FIquQZvoQPzDB",
+              "updatedAt": "7/29/2024",
+              "createdAt": "7/29/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["5L9JF8nLXdwlP981VwPUR"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.lkycwzjg6kawGkirrfJn3E8d9BsSchCM",
+  "_id": "EjAX48HplYh4keJl_9v69",
+  "updatedAt": "7/30/2024",
+  "createdAt": "7/30/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -25,7 +25,7 @@
           "logoutTrigger": false,
           "headers": {
             "Content-Type": "application/json",
-            "channel_key": "005"
+            "channel_key": "001"
           },
           "requestBody": [
             {
@@ -52,7 +52,12 @@
               "key": "device",
               "value": "device"
             },
-            { "type": 4, "name": "Static", "key": "contryCode", "value": "PK" }
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "location",
+              "value": "24.8512077,67.0173175"
+            }
           ],
           "baseURL": "64f6fe5b683922479c05e511",
           "storeType": 3
@@ -71,18 +76,18 @@
             "triggerId": "ELIOJXwcjZ-eTgLM9KgXR"
           },
           {
+            "logic": { "==": [{ "var": "code" }, 1] },
             "httpStatus": 200,
-            "triggerName": "FeedBack Show Modal Trigger",
-            "triggerId": "8wT9g9iXX-ZMU1ZOB0Mnu",
-            "logic": { "==": [{ "var": "code" }, 0] }
+            "triggerName": "Session Time Expire",
+            "triggerId": "VN1GdKZOQCnTZAMJjEEkx"
           }
         ]
       }
     }
   ],
-  "csrf": "0.lozqyenjtnr3nu2gHShnmUBydlmUGoU",
-  "updatedAt": "4/29/2024",
-  "createdAt": "4/29/2024",
+  "csrf": "0.28hxikdok4aJRl9_5v1WPiQudJ-x9jV",
+  "updatedAt": "9/6/2024",
+  "createdAt": "9/6/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

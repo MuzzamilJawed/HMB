@@ -1,0 +1,62 @@
+{
+  "id": "SQJ7GDU9zROT9lmf8XgM0",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "SI_DELETE_Trigger",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "siDelete",
+          "url": "/updateSiStatus",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "jobId",
+              "value": "selectedObject.jobId"
+            },
+            { "type": 4, "name": "Static", "key": "jobState", "value": "D" }
+          ],
+          "baseURL": "65362869e96e9d3c64243131",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Hide 400 Error Modal",
+            "triggerId": "6N4XkoRhIDHU3PdmYS1jJ"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "SIDelete_message",
+            "triggerId": "VahZ33sKeJwXubhv9j79z"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.29y9rygn3xecyff2oM4x1uqvEHg3FzCK",
+  "_id": "CU0GFGgsH8Nl4fg3bAHhM",
+  "updatedAt": "8/28/2024",
+  "createdAt": "8/28/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

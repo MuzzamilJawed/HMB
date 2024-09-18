@@ -1,0 +1,133 @@
+{
+  "id": "UAGNVdJHsEEvo3fXbva19",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Condtional Fund Tranfer Navigation",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.form.more.code" }, "Own Account"]
+              },
+              "triggerName": "Navigate Transfer to OWN account",
+              "triggerId": "aTH77VSgXE0_K6KlZyNzj",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "nextWidgetId": "C8g00ZoxLb4dtSCRZAGUY",
+                      "gridRadioValue": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.form.more.code" }, "Raast"]
+              },
+              "triggerName": "Navigate to RAAST PAYment",
+              "triggerId": "wnVjBnwedMUmMcx4Ox7i8",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "nextWidgetId": "uD-30RqzmDlPwhx0H9LLX",
+                      "gridRadioValue": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "triggerName": "Navigate To Instant fund Transfer",
+              "triggerId": "HqWr9rKAkwWNOuaWzb09t",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "fromWidgetId": "kn-g6dLXYigHhX9bj8Z88",
+                      "nextWidgetId": "kCWSlexO5DOIMrXKqnp8l",
+                      "gridRadioValue": "Screen",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ],
+              "logic": {
+                "==": [{ "var": "currentScreen.form.more.code" }, "IBFT"]
+              }
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.form.more.code" }, "Donations"]
+              },
+              "triggerName": "Navigat To Donation",
+              "triggerId": "yYsNaJZwdk6KEX3d_Otuo",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "fromWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
+                      "nextWidgetId": "jDGmX4tUtXCgFQITHYpVD",
+                      "gridRadioValue": "Screen",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.form.more.code" }, "Zakat"]
+              },
+              "triggerName": "NAVIGATE_TO_ZAKAT_LIST",
+              "triggerId": "uGBsjUlyiYITg3HbsCDv_",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "nextWidgetId": "dbztCHq929PZ6LEL6BUed",
+                      "gridRadioValue": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.1pmqspdj8eelJPGg9nGE6gEb3ngiYx_9",
+  "_id": "AExu383iJB7ePSSDR8_Ut",
+  "updatedAt": "7/26/2024",
+  "createdAt": "7/26/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

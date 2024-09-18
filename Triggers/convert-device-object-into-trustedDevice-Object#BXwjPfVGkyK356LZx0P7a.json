@@ -22,11 +22,6 @@
           "filterList": [
             {
               "changeValueConditonally": true,
-              "logic": { "var": "currentSession.device.name" },
-              "key": "name"
-            },
-            {
-              "changeValueConditonally": true,
               "key": "os",
               "logic": { "var": "currentSession.device.os" }
             },
@@ -73,17 +68,23 @@
             {
               "key": "deviceKey",
               "changeValueConditonally": true,
-              "logic": { "var": "currentSession.device.deviceKey" }
+              "logic": { "var": "deviceKey" }
+            },
+            {
+              "key": "name",
+              "changeValueConditonally": true,
+              "logic": { "var": "currentScreen.form.name" }
             }
           ],
-          "targettedType": "object"
+          "targettedType": "object",
+          "gridFormRowIdBindingKey": "editFormRowId"
         }
       }
     }
   ],
-  "csrf": "0.5jp2emviw2sMbxOH0fx03Xw3uSVrfLtl",
-  "updatedAt": "9/7/2023",
-  "createdAt": "9/7/2023",
+  "csrf": "0.byl5gvscqowx5sZjKWarOEspVqW9D-__",
+  "updatedAt": "8/29/2024",
+  "createdAt": "8/29/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

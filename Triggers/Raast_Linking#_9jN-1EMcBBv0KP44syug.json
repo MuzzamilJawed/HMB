@@ -1,0 +1,65 @@
+{
+  "id": "QfKh_HFyefpt_0GspIwmH",
+  "_id": "_9jN-1EMcBBv0KP44syug",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Raast_Linking",
+  "old_name": "Raast_Linking",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "raastlinkResponse",
+          "url": "/raast/linking",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "fromInstrument.accountId"
+            },
+            { "type": 4, "name": "Static", "key": "status", "value": "R" },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "otpInfo",
+              "value": "otpInfo"
+            },
+            { "type": 1, "name": "Form", "key": "otp", "value": "smsPin" },
+            { "type": 4, "name": "Static", "key": "action", "value": "1" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "Hide 400 Error Modal",
+            "triggerId": "6N4XkoRhIDHU3PdmYS1jJ"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.a2b6v6h73xDzSI02toSlBcJLB6H4lsw",
+  "updatedAt": "8/21/2024",
+  "createdAt": "8/21/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

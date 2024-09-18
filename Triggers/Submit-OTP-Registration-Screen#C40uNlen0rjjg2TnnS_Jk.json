@@ -13,10 +13,14 @@
         "type": "1",
         "attributes": {
           "delay": "",
+          "storeType": "",
+          "searchInState": false,
           "triggers": [
             {
-              "id": "b4I-sIb7qNe0x51VjkpQ2",
-              "name": "Roshan Validation",
+              "id": "TCicpprTZFn8DYos69xXs",
+              "_id": "rRjW6WQgtFhIounPrQ3Ys",
+              "name": "otpInfo Mapping",
+              "old_name": "otpInfo Mapping",
               "projectId": "640ee2a26ead56231ce8350b",
               "gitBranchName": "master",
               "services": [
@@ -25,33 +29,31 @@
                   "command": {
                     "type": "6",
                     "attributes": {
-                      "storeType": "",
-                      "selectedObjectBindingKey": "selectedObject",
-                      "dataType": "",
-                      "destinationBindingKey": "validation",
-                      "sourceBindingKey": "form",
+                      "requestBody": [],
+                      "destinationBindingKey": "otpInfo",
+                      "sourceBindingKey": "abcd",
                       "sourceStoreType": 2,
                       "destinationStoreType": 2,
                       "filterList": [
                         {
+                          "key": "splitOtp",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, true, true] }
+                        },
+                        {
+                          "key": "validationType",
+                          "changeValueConditonally": true,
+                          "logic": { "if": [true, "", ""] }
+                        },
+                        {
+                          "key": "smsPin",
+                          "changeValueConditonally": true,
+                          "logic": { "var": "currentScreen.form.smsPin" }
+                        },
+                        {
                           "key": "emailPin",
                           "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.emailPin" }
-                        },
-                        {
-                          "changeValueConditonally": true,
-                          "logic": { "var": "currentScreen.form.smsPin" },
-                          "key": "smsPin"
-                        },
-                        {
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, false, false] },
-                          "key": "splitOtp"
-                        },
-                        {
-                          "changeValueConditonally": true,
-                          "logic": { "if": [true, "OTP", "OTP"] },
-                          "key": "validationType"
+                          "logic": { "var": "currentScreen.form.smsPin" }
                         }
                       ],
                       "targettedType": "object"
@@ -59,10 +61,9 @@
                   }
                 }
               ],
-              "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
-              "_id": "N1ms69_tV-dBYbFJaqOxl",
-              "updatedAt": "10/3/2023",
-              "createdAt": "10/3/2023",
+              "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+              "updatedAt": "4/16/2024",
+              "createdAt": "4/16/2024",
               "createdBy": "masood",
               "updatedBy": "masood"
             },
@@ -114,6 +115,7 @@
                       "messageWidgetIds": [906070],
                       "responseStateKey": "responseRegister",
                       "responseReturnValue": "content",
+                      "successMessageBindingKey": "registrationFlow",
                       "url": "/validateRegistrationOTP",
                       "checksum": true,
                       "encryption": true,
@@ -123,7 +125,7 @@
                       "logoutTrigger": false,
                       "headers": {
                         "Content-Type": "application/json",
-                        "channel_key": "005"
+                        "channel_key": "001"
                       },
                       "requestBody": [
                         {
@@ -142,7 +144,7 @@
                           "type": 2,
                           "name": "Current screen",
                           "key": "validation",
-                          "value": "validation"
+                          "value": "otpInfo"
                         }
                       ],
                       "baseURL": "650d2f0dc9bf2957746d02af",
@@ -154,20 +156,26 @@
                         "httpStatus": 200,
                         "triggerName": "fllow OTP to Registration ",
                         "triggerId": "qXvaee2RR_0fUbn8OjOHT"
+                      },
+                      {
+                        "logic": true,
+                        "httpStatus": 200,
+                        "triggerName": "responseRegisterFilter_trigger",
+                        "triggerId": "q9wuNPrYUOrVZb8SuHXgE"
                       }
                     ]
                   }
                 }
               ],
-              "csrf": "0.gzrp75s2g367Q8HfCMh8EmGly4wg0toD",
-              "updatedAt": "10/5/2023",
-              "createdAt": "10/5/2023",
+              "csrf": "0.sda5vs65hji2QAchq1uIsAAEAd_ISReR",
+              "updatedAt": "9/6/2024",
+              "createdAt": "9/6/2024",
               "createdBy": "masood",
               "updatedBy": "masood"
             }
           ],
           "triggerIds": [
-            "b4I-sIb7qNe0x51VjkpQ2",
+            "TCicpprTZFn8DYos69xXs",
             "oSvOXIy7QV6tftMKFBn19",
             "jlwqFku4qZeR_Y9DVImZV"
           ]
@@ -175,9 +183,9 @@
       }
     }
   ],
-  "csrf": "0.4hj25bofxteHAzlDf8ue_SWH2BHMMpoK",
-  "updatedAt": "10/27/2023",
-  "createdAt": "10/27/2023",
+  "csrf": "0.sda5vs65hji2QAchq1uIsAAEAd_ISReR",
+  "updatedAt": "9/6/2024",
+  "createdAt": "9/6/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

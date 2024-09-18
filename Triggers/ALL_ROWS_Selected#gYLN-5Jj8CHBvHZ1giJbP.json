@@ -1,0 +1,44 @@
+{
+  "id": "Gt5oJx56Eidc0gpJCz-Xe",
+  "name": "ALL_ROWS_Selected",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "10",
+        "attributes": {
+          "stateName": "none",
+          "storeType": "",
+          "selectedObjectBindingKey": "none",
+          "dataType": "",
+          "destinationBindingKey": "allrows",
+          "sourceBindingKey": "responseRegisterFilter",
+          "sourceStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "responseRegisterFilter" },
+              true,
+              {
+                "if": [
+                  { "==": [{ "var": "isChecked" }, "checked"] },
+                  true,
+                  false
+                ]
+              }
+            ]
+          },
+          "targetValue": "none",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.m5lgx3nc9clbpOtYCY5n5sXPCReMI6po",
+  "_id": "gYLN-5Jj8CHBvHZ1giJbP",
+  "updatedAt": "8/30/2024",
+  "createdAt": "8/30/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
