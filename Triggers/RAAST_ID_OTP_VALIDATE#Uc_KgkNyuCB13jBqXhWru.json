@@ -1,0 +1,90 @@
+{
+  "id": "kZ0wNC7OywM9uJsm8BNUs",
+  "_id": "Uc_KgkNyuCB13jBqXhWru",
+  "gitBranchName": "master",
+  "name": "RAAST_ID_OTP_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "id": "bHvxGTNZftJyRvlSPeWfC",
+            "gitBranchName": "master",
+            "name": "Rasst ID Confirm Modal Trigger",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "IDOtyCqks1FtYFQZ3_GTK",
+                    "content": "",
+                    "type": "",
+                    "modalId": "P4qLETq1eG1u7LkZml7LP",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.1ayrybm8lzv7qxZ9rF611z7Tyr7KR8Mx",
+            "_id": "OWtuJWLQR0ApT8L17hspp",
+            "updatedAt": "8/21/2024",
+            "createdAt": "8/21/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+  "updatedAt": "10/2/2024",
+  "createdAt": "10/2/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

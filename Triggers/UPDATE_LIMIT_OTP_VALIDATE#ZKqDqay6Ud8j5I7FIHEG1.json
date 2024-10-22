@@ -1,0 +1,216 @@
+{
+  "id": "Qx5X6pxvLjfLcNpNa9OqA",
+  "_id": "ZKqDqay6Ud8j5I7FIHEG1",
+  "gitBranchName": "master",
+  "name": "UPDATE_LIMIT_OTP_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "_id": "eVbK8K73Aoxj4LHh8IdbH",
+            "id": "8ecNl9yX-Fd1f9E6bUAxs",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "name": "Update Limit Chain Trigger",
+            "old_name": "Update Limit Chain Trigger",
+            "status": "ACTIVE",
+            "services": [
+              {
+                "type": "2",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "delay": "",
+                    "triggers": [
+                      {
+                        "id": "3WJVpQqglNb4yHnlELcM-",
+                        "name": " Otpinfo with email and SMSpin",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "storeType": "",
+                                "selectedObjectBindingKey": "selectedObject",
+                                "dataType": "",
+                                "destinationBindingKey": "otpInfo",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "smsPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.emailPin"
+                                    },
+                                    "key": "emailPin"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "key": "splitOtp",
+                                    "logic": { "if": [true, false, false] }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "OTP", "OTP"] },
+                                    "key": "validationType"
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+                        "_id": "j4UDdGfNoOd5UzY-973cX",
+                        "updatedAt": "9/26/2023",
+                        "createdAt": "9/26/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      {
+                        "id": "yxBOoSlDay4cDtttIaxDX",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "name": "updateLimit Trigger",
+                        "status": "ACTIVE",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "updateLimitResponse",
+                                "url": "/updateLimit",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": false,
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accountNumber",
+                                    "value": "selectedAccount.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "customLimit",
+                                    "value": "customLimit"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "limitId",
+                                    "value": "selectedObject.limitId"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "otpInfo",
+                                    "value": "otpInfo"
+                                  }
+                                ],
+                                "baseURL": "64f9a08b683922479c062070",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ],
+                        "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+                        "_id": "z1jsI_-Hp8sMZVxMtT0ml",
+                        "updatedAt": "9/26/2023",
+                        "createdAt": "9/26/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      }
+                    ],
+                    "triggerIds": [
+                      "3WJVpQqglNb4yHnlELcM-",
+                      "yxBOoSlDay4cDtttIaxDX"
+                    ]
+                  }
+                }
+              }
+            ],
+            "csrf": "0.h6ko4yekh5Kl55GZnfiLWEryWg4uSVX",
+            "updatedAt": "10/24/2023",
+            "createdAt": "10/24/2023",
+            "createdBy": "muhammad.asad",
+            "updatedBy": "muhammad.asad"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+  "updatedAt": "10/2/2024",
+  "createdAt": "10/2/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

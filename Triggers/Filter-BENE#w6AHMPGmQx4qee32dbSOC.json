@@ -1,0 +1,69 @@
+{
+  "id": "t6A04j_noh6s-18WcOmGf",
+  "_id": "w6AHMPGmQx4qee32dbSOC",
+  "name": "Filter BENE",
+  "old_name": "Filter BENE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "10",
+        "attributes": {
+          "stateName": "none",
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "none",
+          "dataType": "",
+          "destinationBindingKey": "filterbene",
+          "sourceBindingKey": "fetchBene",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "currentScreen.dc_filter_key_word" },
+              {
+                "or": [
+                  {
+                    "==": [{ "var": "currentScreen.dc_filter_key_word" }, "All"]
+                  },
+                  {
+                    "and": [
+                      {
+                        "==": [
+                          { "var": "currentScreen.dc_filter_key_word" },
+                          "RAAST"
+                        ]
+                      },
+                      { "==": [{ "var": "transferType" }, "R"] }
+                    ]
+                  },
+                  {
+                    "and": [
+                      {
+                        "==": [
+                          { "var": "currentScreen.dc_filter_key_word" },
+                          "Other Banks"
+                        ]
+                      },
+                      { "!=": [{ "var": "transferType" }, "R"] }
+                    ]
+                  }
+                ]
+              },
+              true
+            ]
+          },
+          "targetValue": "none",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.jspetszi3uhvlT4MDsJtlSkNoyzywdSo",
+  "updatedAt": "10/18/2024",
+  "createdAt": "10/18/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
+}

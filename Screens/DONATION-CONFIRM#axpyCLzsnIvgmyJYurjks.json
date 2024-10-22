@@ -27,7 +27,7 @@
         "gridProps": [
           {
             "type": "column",
-            "id": "yy1_7ewbbDX4khI8S-38Y",
+            "id": "KpI5_zA6I_2HY5dKc9gtY",
             "gridProps": [
               {
                 "type": "10001",
@@ -44,7 +44,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "eXG5lVv_MKFxoM9j7Krpv",
+                            "id": "yRvON0pRnYFSPolCmc_2V",
                             "gridProps": [
                               {
                                 "type": "10001",
@@ -163,12 +163,11 @@
                               "md": 10,
                               "sm": 10,
                               "xs": 10
-                            },
-                            "path": "0-0-0-0-0-0"
+                            }
                           },
                           {
                             "type": "column",
-                            "id": "BGh2tN4HcLMaGNSH9i_u2",
+                            "id": "fi8svsBfhElr1znje3T3L",
                             "gridProps": [],
                             "layoutProperties": {
                               "xl": 2,
@@ -176,8 +175,7 @@
                               "md": 2,
                               "sm": 2,
                               "xs": 2
-                            },
-                            "path": "0-0-0-0-0-1"
+                            }
                           }
                         ],
                         "path": "0-0-0-0-0",
@@ -198,7 +196,8 @@
                             "alignItems": "flex-start"
                           },
                           "direction": "row",
-                          "name": "Grid layout"
+                          "name": "Grid layout",
+                          "hideComponent": true
                         },
                         "component": {
                           "type": "10001",
@@ -2813,7 +2812,13 @@
                                                                     "sm": 12,
                                                                     "xs": 12
                                                                   },
-                                                                  "label": "Amount"
+                                                                  "label": "Amount",
+                                                                  "cssClassNames": [
+                                                                    {
+                                                                      "cssClassName": "Label_Type_Css ",
+                                                                      "key": "Label_Type_Css "
+                                                                    }
+                                                                  ]
                                                                 },
                                                                 "icon": "FaFont",
                                                                 "group": "Form",
@@ -3177,7 +3182,8 @@
                                                                   "label": "Purpose",
                                                                   "cssClassNames": [
                                                                     {
-                                                                      "cssClassName": "Label_Type_Css "
+                                                                      "cssClassName": "Label_Type_Css ",
+                                                                      "key": "Label_Type_Css "
                                                                     }
                                                                   ]
                                                                 },
@@ -3502,7 +3508,7 @@
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "ZZHEai2fGtc-c_UdG0VFH",
+                                            "id": "AcJ0YPp2PKr4N52Y8i9oA",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -3532,7 +3538,7 @@
                                                             "sm": 12,
                                                             "xs": 12
                                                           },
-                                                          "label": "Enter SMS OTP",
+                                                          "label": "Enter  OTP",
                                                           "cssClassNames": [
                                                             {
                                                               "cssClassName": "weneedToverifyCSS ",
@@ -4028,8 +4034,7 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-4-0"
+                                            }
                                           }
                                         ],
                                         "path": "0-0-0-0-1-0-0-0-4",
@@ -4056,7 +4061,17 @@
                                               "cssClassName": "FT_PADDING_TOP_20 ",
                                               "key": "FT_PADDING_TOP_20 "
                                             }
-                                          ]
+                                          ],
+                                          "hideCondition": {
+                                            "logic": {
+                                              "<=": [
+                                                {
+                                                  "var": "currentScreen.form.amount"
+                                                },
+                                                100000
+                                              ]
+                                            }
+                                          }
                                         },
                                         "component": {
                                           "type": "10001",
@@ -4081,12 +4096,28 @@
                                         }
                                       },
                                       {
+                                        "id": "g_UYBYjqHVTO4W5YxIQOe",
+                                        "name": "OTP_VALIDATE_ERROR_MODAL",
+                                        "type": "20031",
+                                        "attributes": {
+                                          "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                                          "layoutProperties": {
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
+                                      {
                                         "type": "10001",
                                         "id": "RbkxlPGUKCxKX7lSsyNNy",
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "o3hPNM0k96tJclYiXrXuI",
+                                            "id": "ebBPaOO9MAkCIe8yeBWe2",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -4228,25 +4259,6 @@
                                                     "id": "V0BlFavGWPWb2BVQzjA4h",
                                                     "gridProps": [
                                                       {
-                                                        "id": "MOGZjVhJBMWSxVExxc8Di",
-                                                        "type": "20031",
-                                                        "triggerName": "DonationConfirm_ERROR_TRIGGER",
-                                                        "attributes": {
-                                                          "widgetId": "njdi_2eidt8KZtZZy6g5_",
-                                                          "layoutProperties": {
-                                                            "xl": 12,
-                                                            "lg": 12,
-                                                            "md": 12,
-                                                            "sm": 12,
-                                                            "xs": 12
-                                                          }
-                                                        },
-                                                        "component": {
-                                                          "type": "20031"
-                                                        },
-                                                        "path": "0-0-0-0-1-0-0-0-5-0-1-0-0"
-                                                      },
-                                                      {
                                                         "id": "aCx1mPrrtY261JJUW2HOk",
                                                         "status": "ACTIVE",
                                                         "attributes": {
@@ -4257,10 +4269,7 @@
                                                           "fullWidth": true,
                                                           "layoutProperties": {
                                                             "button": {
-                                                              "//": "Use this class to style button component.",
-                                                              "font-weight": "bold",
-                                                              "border-radius": "8px",
-                                                              "text-transofrm": "Capitalize"
+                                                              "//": "Use this class to style button component."
                                                             },
                                                             "inputProps": {
                                                               "//": "Use this class to style button element."
@@ -4300,367 +4309,841 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "nz-NrV47gIy61kvMHNSVb",
-                                                            "triggerName": "Donation Chain Trigger Transfer",
-                                                            "serviceType": "2",
+                                                            "triggerId": "8Ry_pdPxW7md8PjEPu5EL",
+                                                            "triggerName": "DONATION_CONDITIONAL_TRIGGER",
+                                                            "serviceType": "13",
                                                             "attributes": {
-                                                              "delay": "",
-                                                              "storeType": "",
-                                                              "searchInState": false,
                                                               "triggers": [
                                                                 {
-                                                                  "id": "3WJVpQqglNb4yHnlELcM-",
-                                                                  "_id": "j4UDdGfNoOd5UzY-973cX",
-                                                                  "name": " Otpinfo with email and SMSpin",
-                                                                  "old_name": " Otpinfo with email and SMSpin",
-                                                                  "projectId": "640ee2a26ead56231ce8350b",
-                                                                  "gitBranchName": "master",
+                                                                  "logic": {
+                                                                    "<=": [
+                                                                      {
+                                                                        "var": "currentScreen.form.amount"
+                                                                      },
+                                                                      100000
+                                                                    ]
+                                                                  },
+                                                                  "triggerName": "Donation Chain Trigger Transfer",
+                                                                  "triggerId": "nz-NrV47gIy61kvMHNSVb",
                                                                   "services": [
                                                                     {
-                                                                      "type": "11",
-                                                                      "command": {
-                                                                        "type": "6",
-                                                                        "attributes": {
-                                                                          "requestBody": [],
-                                                                          "storeType": "",
-                                                                          "selectedObjectBindingKey": "selectedObject",
-                                                                          "dataType": "",
-                                                                          "destinationBindingKey": "otpInfo",
-                                                                          "sourceBindingKey": "form",
-                                                                          "sourceStoreType": 2,
-                                                                          "destinationStoreType": 2,
-                                                                          "filterList": [
-                                                                            {
-                                                                              "changeValueConditonally": true,
-                                                                              "key": "splitOtp",
-                                                                              "logic": {
-                                                                                "if": [
-                                                                                  true,
-                                                                                  false,
-                                                                                  false
-                                                                                ]
-                                                                              }
-                                                                            },
-                                                                            {
-                                                                              "changeValueConditonally": true,
-                                                                              "logic": {
-                                                                                "if": [
-                                                                                  true,
-                                                                                  "OTP",
-                                                                                  "OTP"
-                                                                                ]
-                                                                              },
-                                                                              "key": "validationType"
-                                                                            },
-                                                                            {
-                                                                              "key": "smsPin",
-                                                                              "changeValueConditonally": true,
-                                                                              "logic": {
-                                                                                "var": "currentScreen.form.smsPin"
-                                                                              }
-                                                                            },
-                                                                            {
-                                                                              "key": "emailPin",
-                                                                              "changeValueConditonally": true,
-                                                                              "logic": {
-                                                                                "var": "currentScreen.form.smsPin"
-                                                                              }
-                                                                            }
-                                                                          ],
-                                                                          "targettedType": "object"
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  ],
-                                                                  "csrf": "0.mprcj3bgcuR198VPkzFl1vcAA0ZhdnJ",
-                                                                  "updatedAt": "4/3/2024",
-                                                                  "createdAt": "4/3/2024",
-                                                                  "createdBy": "masood",
-                                                                  "updatedBy": "masood"
-                                                                },
-                                                                {
-                                                                  "id": "kXuHTNFUacblCtX8pnsdo",
-                                                                  "_id": "7bKIkNX_0Djwt0BNiGyaU",
-                                                                  "projectId": "640ee2a26ead56231ce8350b",
-                                                                  "gitBranchName": "master",
-                                                                  "name": "Donation Payment Trigger",
-                                                                  "old_name": "Donation Payment Trigger",
-                                                                  "status": "ACTIVE",
-                                                                  "services": [
-                                                                    {
-                                                                      "type": "8",
+                                                                      "type": "2",
                                                                       "command": {
                                                                         "type": "1",
                                                                         "attributes": {
-                                                                          "loaderWidgetIds": [
-                                                                            906070
-                                                                          ],
-                                                                          "messageWidgetIds": [
-                                                                            906070
-                                                                          ],
-                                                                          "responseStateKey": "donationResponse",
-                                                                          "successMessageBindingKey": "donationTransferMessage",
-                                                                          "url": "/transfer",
-                                                                          "checksum": true,
-                                                                          "encryption": true,
-                                                                          "isDeviceDetails": false,
-                                                                          "loginTrigger": "loginTrigger",
-                                                                          "formData": false,
-                                                                          "logoutTrigger": false,
-                                                                          "headers": {
-                                                                            "Content-Type": "application/json",
-                                                                            "channel_key": "001"
-                                                                          },
-                                                                          "requestBody": [
+                                                                          "delay": "",
+                                                                          "storeType": "",
+                                                                          "searchInState": false,
+                                                                          "triggers": [
                                                                             {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "accountId",
-                                                                              "value": "getData.accountId"
+                                                                              "id": "b4I-sIb7qNe0x51VjkpQ2",
+                                                                              "_id": "N1ms69_tV-dBYbFJaqOxl",
+                                                                              "name": "Roshan Validation",
+                                                                              "old_name": "Roshan Validation",
+                                                                              "projectId": "640ee2a26ead56231ce8350b",
+                                                                              "gitBranchName": "master",
+                                                                              "services": [
+                                                                                {
+                                                                                  "type": "11",
+                                                                                  "command": {
+                                                                                    "type": "6",
+                                                                                    "attributes": {
+                                                                                      "requestBody": [],
+                                                                                      "storeType": "",
+                                                                                      "selectedObjectBindingKey": "selectedObject",
+                                                                                      "dataType": "",
+                                                                                      "destinationBindingKey": "validation",
+                                                                                      "sourceBindingKey": "form",
+                                                                                      "sourceStoreType": 2,
+                                                                                      "destinationStoreType": 2,
+                                                                                      "filterList": [
+                                                                                        {
+                                                                                          "changeValueConditonally": true,
+                                                                                          "logic": {
+                                                                                            "var": "currentScreen.form.smsPin"
+                                                                                          },
+                                                                                          "key": "smsPin"
+                                                                                        },
+                                                                                        {
+                                                                                          "changeValueConditonally": true,
+                                                                                          "logic": {
+                                                                                            "if": [
+                                                                                              true,
+                                                                                              false,
+                                                                                              false
+                                                                                            ]
+                                                                                          },
+                                                                                          "key": "splitOtp"
+                                                                                        },
+                                                                                        {
+                                                                                          "changeValueConditonally": true,
+                                                                                          "logic": {
+                                                                                            "if": [
+                                                                                              true,
+                                                                                              "OTP",
+                                                                                              "OTP"
+                                                                                            ]
+                                                                                          },
+                                                                                          "key": "validationType"
+                                                                                        },
+                                                                                        {
+                                                                                          "key": "emailPin",
+                                                                                          "changeValueConditonally": true,
+                                                                                          "logic": {
+                                                                                            "var": "currentScreen.form.smsPin"
+                                                                                          }
+                                                                                        }
+                                                                                      ],
+                                                                                      "targettedType": "object"
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              ],
+                                                                              "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+                                                                              "updatedAt": "4/16/2024",
+                                                                              "createdAt": "4/16/2024",
+                                                                              "createdBy": "masood",
+                                                                              "updatedBy": "masood"
                                                                             },
                                                                             {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "actualAmount",
-                                                                              "value": "amount"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "amountInWords",
-                                                                              "value": "Amount_In_Words_amount"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "bankIMD",
-                                                                              "value": "getData.bankImd"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "beneficiary",
-                                                                              "value": "true"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "convertedAmount",
-                                                                              "value": "amount"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "exchangeRate",
-                                                                              "value": "amount"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "executionType",
-                                                                              "value": "PAY_NOW"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "fromAccountIban",
-                                                                              "value": "getData.iban"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "fromAccountNumber",
-                                                                              "value": "getData.accountNumber"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "fromAccountTitle",
-                                                                              "value": "getData.accountTitle"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "fromCurrency",
-                                                                              "value": "getData.currency"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "instrumentType",
-                                                                              "value": "A"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "noOfOccurrences",
-                                                                              "value": 0
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "orgCode",
-                                                                              "value": "selectedObject.accountNumber"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "otpVisible",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "purposeOfPayment",
-                                                                              "value": "purpose.name"
-                                                                            },
-                                                                            {
-                                                                              "type": 1,
-                                                                              "name": "Form",
-                                                                              "key": "rda",
-                                                                              "value": "getData.rda"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "requestNumber",
-                                                                              "value": "DonationTtile.content.requestNumber"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "requestDate",
-                                                                              "value": "DonationTtile.content.requestDate"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "returnBalance",
-                                                                              "value": "true"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "saveAsBene",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "state",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "toAccountNumber",
-                                                                              "value": "selectedObject.accountNumber"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "toAccountTitle",
-                                                                              "value": "selectedObject.accountTitle"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "transactionCurrency",
-                                                                              "value": "selectedObject.currency"
-                                                                            },
-                                                                            {
-                                                                              "type": 2,
-                                                                              "name": "Current screen",
-                                                                              "key": "toCurrency",
-                                                                              "value": "selectedObject.currency"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "transferToOption",
-                                                                              "value": "beneficiary"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "transferType",
-                                                                              "value": "DONATION"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "raast",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "byCard",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "isByCard",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "isRaast",
-                                                                              "value": "false"
-                                                                            },
-                                                                            {
-                                                                              "type": 4,
-                                                                              "name": "Static",
-                                                                              "key": "localIsRaast",
-                                                                              "value": "false"
+                                                                              "id": "kXuHTNFUacblCtX8pnsdo",
+                                                                              "_id": "7bKIkNX_0Djwt0BNiGyaU",
+                                                                              "projectId": "640ee2a26ead56231ce8350b",
+                                                                              "gitBranchName": "master",
+                                                                              "name": "Donation Payment Trigger",
+                                                                              "old_name": "Donation Payment Trigger",
+                                                                              "status": "ACTIVE",
+                                                                              "services": [
+                                                                                {
+                                                                                  "type": "8",
+                                                                                  "command": {
+                                                                                    "type": "1",
+                                                                                    "attributes": {
+                                                                                      "loaderWidgetIds": [
+                                                                                        906070
+                                                                                      ],
+                                                                                      "messageWidgetIds": [
+                                                                                        906070
+                                                                                      ],
+                                                                                      "responseStateKey": "donationResponse",
+                                                                                      "successMessageBindingKey": "donationTransferMessage",
+                                                                                      "url": "/transfer",
+                                                                                      "checksum": true,
+                                                                                      "encryption": true,
+                                                                                      "isDeviceDetails": false,
+                                                                                      "loginTrigger": "loginTrigger",
+                                                                                      "formData": false,
+                                                                                      "logoutTrigger": false,
+                                                                                      "headers": {
+                                                                                        "Content-Type": "application/json",
+                                                                                        "channel_key": "001"
+                                                                                      },
+                                                                                      "requestBody": [
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "accountId",
+                                                                                          "value": "getData.accountId"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "actualAmount",
+                                                                                          "value": "amount"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "amountInWords",
+                                                                                          "value": "Amount_In_Words_amount"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "bankIMD",
+                                                                                          "value": "getData.bankImd"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "beneficiary",
+                                                                                          "value": "true"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "convertedAmount",
+                                                                                          "value": "amount"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "exchangeRate",
+                                                                                          "value": "amount"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "executionType",
+                                                                                          "value": "PAY_NOW"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "fromAccountIban",
+                                                                                          "value": "getData.iban"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "fromAccountNumber",
+                                                                                          "value": "getData.accountNumber"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "fromAccountTitle",
+                                                                                          "value": "getData.accountTitle"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "fromCurrency",
+                                                                                          "value": "getData.currency"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "instrumentType",
+                                                                                          "value": "A"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "noOfOccurrences",
+                                                                                          "value": 0
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "orgCode",
+                                                                                          "value": "selectedObject.accountNumber"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "otpVisible",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "purposeOfPayment",
+                                                                                          "value": "purpose.name"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 1,
+                                                                                          "name": "Form",
+                                                                                          "key": "rda",
+                                                                                          "value": "getData.rda"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "requestNumber",
+                                                                                          "value": "DonationTtile.content.requestNumber"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "requestDate",
+                                                                                          "value": "DonationTtile.content.requestDate"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "returnBalance",
+                                                                                          "value": "true"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "saveAsBene",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "state",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "toAccountNumber",
+                                                                                          "value": "selectedObject.accountNumber"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "toAccountTitle",
+                                                                                          "value": "selectedObject.accountTitle"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "transactionCurrency",
+                                                                                          "value": "selectedObject.currency"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 2,
+                                                                                          "name": "Current screen",
+                                                                                          "key": "toCurrency",
+                                                                                          "value": "selectedObject.currency"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "transferToOption",
+                                                                                          "value": "beneficiary"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "transferType",
+                                                                                          "value": "DONATION"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "raast",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "byCard",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "isByCard",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "isRaast",
+                                                                                          "value": "false"
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 4,
+                                                                                          "name": "Static",
+                                                                                          "key": "localIsRaast",
+                                                                                          "value": "false"
+                                                                                        }
+                                                                                      ],
+                                                                                      "baseURL": "6502f5a7c9bf2957746c9973",
+                                                                                      "storeType": 2
+                                                                                    },
+                                                                                    "responseHandler": [
+                                                                                      {
+                                                                                        "httpStatus": 200,
+                                                                                        "triggerName": "ERROR_MODAL",
+                                                                                        "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+                                                                                        "logic": {
+                                                                                          "==": [
+                                                                                            {
+                                                                                              "var": "code"
+                                                                                            },
+                                                                                            0
+                                                                                          ]
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "httpStatus": 200,
+                                                                                        "logic": {
+                                                                                          "==": [
+                                                                                            {
+                                                                                              "var": "code"
+                                                                                            },
+                                                                                            1
+                                                                                          ]
+                                                                                        },
+                                                                                        "triggerName": "NAVIGATE_TO_DONATION_RECEIPT",
+                                                                                        "triggerId": "wrTNkuzTbhw4K5GiByBDz"
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                }
+                                                                              ],
+                                                                              "csrf": "0.9ahed9xidcFp-K_w4C8jEozhU67OMxu",
+                                                                              "updatedAt": "3/26/2024",
+                                                                              "createdAt": "3/26/2024",
+                                                                              "createdBy": "masood",
+                                                                              "updatedBy": "masood"
                                                                             }
                                                                           ],
-                                                                          "baseURL": "6502f5a7c9bf2957746c9973",
-                                                                          "storeType": 2
-                                                                        },
-                                                                        "responseHandler": [
-                                                                          {
-                                                                            "httpStatus": 200,
-                                                                            "triggerName": "ERROR_MODAL",
-                                                                            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
-                                                                            "logic": {
-                                                                              "==": [
-                                                                                {
-                                                                                  "var": "code"
-                                                                                },
-                                                                                0
-                                                                              ]
-                                                                            }
-                                                                          },
-                                                                          {
-                                                                            "httpStatus": 200,
-                                                                            "logic": {
-                                                                              "==": [
-                                                                                {
-                                                                                  "var": "code"
-                                                                                },
-                                                                                1
-                                                                              ]
-                                                                            },
-                                                                            "triggerName": "NAVIGATE_TO_DONATION_RECEIPT",
-                                                                            "triggerId": "wrTNkuzTbhw4K5GiByBDz"
-                                                                          }
-                                                                        ]
+                                                                          "triggerIds": [
+                                                                            "b4I-sIb7qNe0x51VjkpQ2",
+                                                                            "kXuHTNFUacblCtX8pnsdo"
+                                                                          ]
+                                                                        }
                                                                       }
                                                                     }
-                                                                  ],
-                                                                  "csrf": "0.9ahed9xidcFp-K_w4C8jEozhU67OMxu",
-                                                                  "updatedAt": "3/26/2024",
-                                                                  "createdAt": "3/26/2024",
-                                                                  "createdBy": "masood",
-                                                                  "updatedBy": "masood"
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "logic": {
+                                                                    ">": [
+                                                                      {
+                                                                        "var": "currentScreen.form.amount"
+                                                                      },
+                                                                      100000
+                                                                    ]
+                                                                  },
+                                                                  "triggerName": "DONATION_OTP_VALIDATION",
+                                                                  "triggerId": "n-UrTpturV70Pci6kWJ3m",
+                                                                  "services": [
+                                                                    {
+                                                                      "type": "16",
+                                                                      "command": {
+                                                                        "type": "2",
+                                                                        "attributes": {
+                                                                          "validationList": [
+                                                                            {
+                                                                              "bindingKey": "smsPin",
+                                                                              "storeType": 1,
+                                                                              "messageBindingKey": "OTP is Required",
+                                                                              "isRequired": true,
+                                                                              "requiredMessage": "OTP is Required",
+                                                                              "regEx": "^\\d{5}$",
+                                                                              "regExMessage": "OTP is Required",
+                                                                              "JSONLogic": [
+                                                                                {
+                                                                                  "logic": true,
+                                                                                  "logicMessage": "OTP REQUIRED"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ],
+                                                                          "failureTrigger": {
+                                                                            "id": "qfGMpdqhqEcmSwmBnqk5J",
+                                                                            "gitBranchName": "master",
+                                                                            "name": "OTP_VALIDATE_ERROR_MODAL",
+                                                                            "projectId": "640ee2a26ead56231ce8350b",
+                                                                            "services": [
+                                                                              {
+                                                                                "type": "9",
+                                                                                "command": {
+                                                                                  "type": "1",
+                                                                                  "attributes": {
+                                                                                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                                                                                    "content": "",
+                                                                                    "type": "",
+                                                                                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                                                                                    "toastContentType": "custom"
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+                                                                            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+                                                                            "updatedAt": "10/2/2024",
+                                                                            "createdAt": "10/2/2024",
+                                                                            "createdBy": "masood",
+                                                                            "updatedBy": "masood"
+                                                                          },
+                                                                          "addFailureTrigger": true,
+                                                                          "successTrigger": {
+                                                                            "_id": "1YdVeL2Yy1mnX7wv0Pqhe",
+                                                                            "id": "nz-NrV47gIy61kvMHNSVb",
+                                                                            "projectId": "640ee2a26ead56231ce8350b",
+                                                                            "gitBranchName": "master",
+                                                                            "name": "Donation Chain Trigger Transfer",
+                                                                            "old_name": "Donation Chain Trigger Transfer",
+                                                                            "status": "ACTIVE",
+                                                                            "services": [
+                                                                              {
+                                                                                "type": "2",
+                                                                                "command": {
+                                                                                  "type": "1",
+                                                                                  "attributes": {
+                                                                                    "delay": "",
+                                                                                    "storeType": "",
+                                                                                    "searchInState": false,
+                                                                                    "triggers": [
+                                                                                      {
+                                                                                        "id": "b4I-sIb7qNe0x51VjkpQ2",
+                                                                                        "_id": "N1ms69_tV-dBYbFJaqOxl",
+                                                                                        "name": "Roshan Validation",
+                                                                                        "old_name": "Roshan Validation",
+                                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                                        "gitBranchName": "master",
+                                                                                        "services": [
+                                                                                          {
+                                                                                            "type": "11",
+                                                                                            "command": {
+                                                                                              "type": "6",
+                                                                                              "attributes": {
+                                                                                                "requestBody": [],
+                                                                                                "storeType": "",
+                                                                                                "selectedObjectBindingKey": "selectedObject",
+                                                                                                "dataType": "",
+                                                                                                "destinationBindingKey": "validation",
+                                                                                                "sourceBindingKey": "form",
+                                                                                                "sourceStoreType": 2,
+                                                                                                "destinationStoreType": 2,
+                                                                                                "filterList": [
+                                                                                                  {
+                                                                                                    "changeValueConditonally": true,
+                                                                                                    "logic": {
+                                                                                                      "var": "currentScreen.form.smsPin"
+                                                                                                    },
+                                                                                                    "key": "smsPin"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "changeValueConditonally": true,
+                                                                                                    "logic": {
+                                                                                                      "if": [
+                                                                                                        true,
+                                                                                                        false,
+                                                                                                        false
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    "key": "splitOtp"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "changeValueConditonally": true,
+                                                                                                    "logic": {
+                                                                                                      "if": [
+                                                                                                        true,
+                                                                                                        "OTP",
+                                                                                                        "OTP"
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    "key": "validationType"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "key": "emailPin",
+                                                                                                    "changeValueConditonally": true,
+                                                                                                    "logic": {
+                                                                                                      "var": "currentScreen.form.smsPin"
+                                                                                                    }
+                                                                                                  }
+                                                                                                ],
+                                                                                                "targettedType": "object"
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        ],
+                                                                                        "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+                                                                                        "updatedAt": "4/16/2024",
+                                                                                        "createdAt": "4/16/2024",
+                                                                                        "createdBy": "masood",
+                                                                                        "updatedBy": "masood"
+                                                                                      },
+                                                                                      {
+                                                                                        "id": "kXuHTNFUacblCtX8pnsdo",
+                                                                                        "_id": "7bKIkNX_0Djwt0BNiGyaU",
+                                                                                        "projectId": "640ee2a26ead56231ce8350b",
+                                                                                        "gitBranchName": "master",
+                                                                                        "name": "Donation Payment Trigger",
+                                                                                        "old_name": "Donation Payment Trigger",
+                                                                                        "status": "ACTIVE",
+                                                                                        "services": [
+                                                                                          {
+                                                                                            "type": "8",
+                                                                                            "command": {
+                                                                                              "type": "1",
+                                                                                              "attributes": {
+                                                                                                "loaderWidgetIds": [
+                                                                                                  906070
+                                                                                                ],
+                                                                                                "messageWidgetIds": [
+                                                                                                  906070
+                                                                                                ],
+                                                                                                "responseStateKey": "donationResponse",
+                                                                                                "successMessageBindingKey": "donationTransferMessage",
+                                                                                                "url": "/transfer",
+                                                                                                "checksum": true,
+                                                                                                "encryption": true,
+                                                                                                "isDeviceDetails": false,
+                                                                                                "loginTrigger": "loginTrigger",
+                                                                                                "formData": false,
+                                                                                                "logoutTrigger": false,
+                                                                                                "headers": {
+                                                                                                  "Content-Type": "application/json",
+                                                                                                  "channel_key": "001"
+                                                                                                },
+                                                                                                "requestBody": [
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "accountId",
+                                                                                                    "value": "getData.accountId"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "actualAmount",
+                                                                                                    "value": "amount"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "amountInWords",
+                                                                                                    "value": "Amount_In_Words_amount"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "bankIMD",
+                                                                                                    "value": "getData.bankImd"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "beneficiary",
+                                                                                                    "value": "true"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "convertedAmount",
+                                                                                                    "value": "amount"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "exchangeRate",
+                                                                                                    "value": "amount"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "executionType",
+                                                                                                    "value": "PAY_NOW"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "fromAccountIban",
+                                                                                                    "value": "getData.iban"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "fromAccountNumber",
+                                                                                                    "value": "getData.accountNumber"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "fromAccountTitle",
+                                                                                                    "value": "getData.accountTitle"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "fromCurrency",
+                                                                                                    "value": "getData.currency"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "instrumentType",
+                                                                                                    "value": "A"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "noOfOccurrences",
+                                                                                                    "value": 0
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "orgCode",
+                                                                                                    "value": "selectedObject.accountNumber"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "otpVisible",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "purposeOfPayment",
+                                                                                                    "value": "purpose.name"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 1,
+                                                                                                    "name": "Form",
+                                                                                                    "key": "rda",
+                                                                                                    "value": "getData.rda"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "requestNumber",
+                                                                                                    "value": "DonationTtile.content.requestNumber"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "requestDate",
+                                                                                                    "value": "DonationTtile.content.requestDate"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "returnBalance",
+                                                                                                    "value": "true"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "saveAsBene",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "state",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "toAccountNumber",
+                                                                                                    "value": "selectedObject.accountNumber"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "toAccountTitle",
+                                                                                                    "value": "selectedObject.accountTitle"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "transactionCurrency",
+                                                                                                    "value": "selectedObject.currency"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 2,
+                                                                                                    "name": "Current screen",
+                                                                                                    "key": "toCurrency",
+                                                                                                    "value": "selectedObject.currency"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "transferToOption",
+                                                                                                    "value": "beneficiary"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "transferType",
+                                                                                                    "value": "DONATION"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "raast",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "byCard",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "isByCard",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "isRaast",
+                                                                                                    "value": "false"
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "type": 4,
+                                                                                                    "name": "Static",
+                                                                                                    "key": "localIsRaast",
+                                                                                                    "value": "false"
+                                                                                                  }
+                                                                                                ],
+                                                                                                "baseURL": "6502f5a7c9bf2957746c9973",
+                                                                                                "storeType": 2
+                                                                                              },
+                                                                                              "responseHandler": [
+                                                                                                {
+                                                                                                  "httpStatus": 200,
+                                                                                                  "triggerName": "ERROR_MODAL",
+                                                                                                  "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+                                                                                                  "logic": {
+                                                                                                    "==": [
+                                                                                                      {
+                                                                                                        "var": "code"
+                                                                                                      },
+                                                                                                      0
+                                                                                                    ]
+                                                                                                  }
+                                                                                                },
+                                                                                                {
+                                                                                                  "httpStatus": 200,
+                                                                                                  "logic": {
+                                                                                                    "==": [
+                                                                                                      {
+                                                                                                        "var": "code"
+                                                                                                      },
+                                                                                                      1
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "triggerName": "NAVIGATE_TO_DONATION_RECEIPT",
+                                                                                                  "triggerId": "wrTNkuzTbhw4K5GiByBDz"
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          }
+                                                                                        ],
+                                                                                        "csrf": "0.9ahed9xidcFp-K_w4C8jEozhU67OMxu",
+                                                                                        "updatedAt": "3/26/2024",
+                                                                                        "createdAt": "3/26/2024",
+                                                                                        "createdBy": "masood",
+                                                                                        "updatedBy": "masood"
+                                                                                      }
+                                                                                    ],
+                                                                                    "triggerIds": [
+                                                                                      "b4I-sIb7qNe0x51VjkpQ2",
+                                                                                      "kXuHTNFUacblCtX8pnsdo"
+                                                                                    ]
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "csrf": "0.08qgoh6oduugHqM-uLylpvtJSRl7Mlu4I",
+                                                                            "updatedAt": "8/21/2024",
+                                                                            "createdAt": "8/21/2024",
+                                                                            "createdBy": "masood",
+                                                                            "updatedBy": "masood"
+                                                                          },
+                                                                          "encryptionType": "encryption"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  ]
                                                                 }
-                                                              ],
-                                                              "triggerIds": [
-                                                                "3WJVpQqglNb4yHnlELcM-",
-                                                                "kXuHTNFUacblCtX8pnsdo"
                                                               ]
                                                             },
                                                             "type": "4",
@@ -4668,7 +5151,7 @@
                                                             "commandType": "1"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-5-0-1-0-1"
+                                                        "path": "0-0-0-0-1-0-0-0-6-0-1-0-0"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -4724,11 +5207,10 @@
                                               "md": 12,
                                               "sm": 12,
                                               "xs": 12
-                                            },
-                                            "path": "0-0-0-0-1-0-0-0-5-0"
+                                            }
                                           }
                                         ],
-                                        "path": "0-0-0-0-1-0-0-0-5",
+                                        "path": "0-0-0-0-1-0-0-0-6",
                                         "events": [],
                                         "attributes": {
                                           "gridProps": [],
@@ -4755,6 +5237,19 @@
                                             {
                                               "cssClassName": "OT_Form_Buttons_FLEX ",
                                               "key": "OT_Form_Buttons_FLEX "
+                                            }
+                                          ],
+                                          "conditionalClasses": [
+                                            {
+                                              "cssClassName": "FT_PADDING_TOP_20 ",
+                                              "logic": {
+                                                "<=": [
+                                                  {
+                                                    "var": "currentScreen.form.amount"
+                                                  },
+                                                  100000
+                                                ]
+                                              }
                                             }
                                           ]
                                         },
@@ -5032,11 +5527,10 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
-        "path": 0,
+        "path": "0",
         "events": [
           {
             "triggerId": "B5P0-hkZvwg9C8gJc_P65",
@@ -5057,34 +5551,67 @@
             "commandType": "6"
           },
           {
-            "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-            "triggerName": "generateOTP",
-            "serviceType": "8",
+            "triggerId": "zDpLq9iUJ9motGgM5xuni",
+            "triggerName": "Genrate Trigger OTP",
+            "serviceType": "13",
             "attributes": {
-              "loaderWidgetIds": [906070],
-              "messageWidgetIds": [906070],
-              "responseStateKey": "generateOTPResponse",
-              "url": "/generateOTP",
-              "checksum": true,
-              "encryption": true,
-              "isDeviceDetails": false,
-              "loginTrigger": "loginTrigger",
-              "formData": false,
-              "logoutTrigger": false,
-              "headers": {
-                "Content-Type": "application/json",
-                "channel_key": "001"
-              },
-              "requestBody": [
+              "triggers": [
                 {
-                  "type": 2,
-                  "name": "Current screen",
-                  "key": "tranCode",
-                  "value": "tranCode"
+                  "logic": {
+                    ">": [{ "var": "currentScreen.form.amount" }, 100000]
+                  },
+                  "triggerName": "generateOTP",
+                  "triggerId": "W1Zrgxusxlzo0b_mfI92d",
+                  "services": [
+                    {
+                      "type": "8",
+                      "command": {
+                        "type": "1",
+                        "attributes": {
+                          "loaderWidgetIds": [906070],
+                          "messageWidgetIds": [906070],
+                          "responseStateKey": "generateOTPResponse",
+                          "url": "/generateOTP",
+                          "checksum": true,
+                          "encryption": true,
+                          "isDeviceDetails": false,
+                          "loginTrigger": "loginTrigger",
+                          "formData": false,
+                          "logoutTrigger": false,
+                          "headers": {
+                            "Content-Type": "application/json",
+                            "channel_key": "001"
+                          },
+                          "requestBody": [
+                            {
+                              "type": 2,
+                              "name": "Current screen",
+                              "key": "tranCode",
+                              "value": "tranCode"
+                            }
+                          ],
+                          "baseURL": "65015c4b61f0645ad866ef4a",
+                          "storeType": 2
+                        },
+                        "responseHandler": [
+                          {
+                            "logic": true,
+                            "httpStatus": 200,
+                            "triggerName": "OTP timer convert into miliseconds",
+                            "triggerId": "AgX4N0o-6GYBuD_ehPHOc"
+                          },
+                          {
+                            "logic": true,
+                            "httpStatus": 200,
+                            "triggerName": "expire Map",
+                            "triggerId": "CJSIuofKimiH6rzJozBN_"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 }
-              ],
-              "baseURL": "65015c4b61f0645ad866ef4a",
-              "storeType": 2
+              ]
             },
             "type": "1",
             "name": "On initialization",
@@ -5135,8 +5662,8 @@
     "gitBranchName": "master",
     "_id": "axpyCLzsnIvgmyJYurjks",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5193,8 +5720,8 @@
         "type": "1"
       },
       {
-        "triggerId": "W1Zrgxusxlzo0b_mfI92d",
-        "triggerName": "generateOTP",
+        "triggerId": "zDpLq9iUJ9motGgM5xuni",
+        "triggerName": "Genrate Trigger OTP",
         "name": "On initialization",
         "type": "1"
       }
@@ -5205,8 +5732,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5284,8 +5811,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5328,7 +5855,8 @@
         "alignItems": "flex-start"
       },
       "direction": "row",
-      "name": "Grid layout"
+      "name": "Grid layout",
+      "hideComponent": true
     },
     "layout": null,
     "events": [],
@@ -5338,8 +5866,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5391,8 +5919,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5418,8 +5946,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5488,8 +6016,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5587,6 +6115,18 @@
           }
         },
         {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "g_UYBYjqHVTO4W5YxIQOe",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
           "componentId": "RbkxlPGUKCxKX7lSsyNNy",
           "componentType": "10001",
           "id": "RbkxlPGUKCxKX7lSsyNNy",
@@ -5650,8 +6190,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5718,8 +6258,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5792,8 +6332,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5842,8 +6382,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5869,8 +6409,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5938,8 +6478,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6036,8 +6576,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6098,8 +6638,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6148,8 +6688,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6175,8 +6715,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6237,8 +6777,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6266,8 +6806,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6340,8 +6880,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6390,8 +6930,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6417,8 +6957,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6479,8 +7019,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6508,8 +7048,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6581,8 +7121,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6631,8 +7171,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6658,8 +7198,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6720,8 +7260,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6749,8 +7289,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6835,8 +7375,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6885,8 +7425,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6912,8 +7452,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6982,8 +7522,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7076,8 +7616,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7138,8 +7678,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7188,8 +7728,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7215,8 +7755,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7277,8 +7817,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7306,8 +7846,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7380,8 +7920,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7430,8 +7970,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7457,8 +7997,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7519,8 +8059,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7548,8 +8088,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7621,8 +8161,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7671,8 +8211,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7698,8 +8238,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7760,8 +8300,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7789,8 +8329,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7865,8 +8405,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7929,8 +8469,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7980,8 +8520,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8001,13 +8541,16 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Amount"
+      "label": "Amount",
+      "cssClassNames": [
+        { "cssClassName": "Label_Type_Css ", "key": "Label_Type_Css " }
+      ]
     },
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8070,8 +8613,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8098,8 +8641,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8174,8 +8717,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8238,8 +8781,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8289,8 +8832,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8311,13 +8854,15 @@
         "xs": 12
       },
       "label": "Purpose",
-      "cssClassNames": [{ "cssClassName": "Label_Type_Css " }]
+      "cssClassNames": [
+        { "cssClassName": "Label_Type_Css ", "key": "Label_Type_Css " }
+      ]
     },
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8380,8 +8925,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8409,8 +8954,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8441,8 +8986,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8545,7 +9090,10 @@
       "name": "OTP_WITH_RESPONSIVE",
       "cssClassNames": [
         { "cssClassName": "FT_PADDING_TOP_20 ", "key": "FT_PADDING_TOP_20 " }
-      ]
+      ],
+      "hideCondition": {
+        "logic": { "<=": [{ "var": "currentScreen.form.amount" }, 100000] }
+      }
     },
     "layout": null,
     "events": [],
@@ -8555,8 +9103,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8604,8 +9152,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8625,7 +9173,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Enter SMS OTP",
+      "label": "Enter  OTP",
       "cssClassNames": [
         { "cssClassName": "weneedToverifyCSS ", "key": "weneedToverifyCSS " }
       ]
@@ -8633,8 +9181,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8696,8 +9244,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8707,8 +9255,8 @@
     "name": "OTP",
     "icon": "FaLock",
     "group": "Security",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "type": "20052",
     "attributes": {
       "smsOtpLabel": "Sms Otp",
@@ -8801,8 +9349,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8836,8 +9384,8 @@
     "icon": "AiOutlineLoading3Quarters",
     "group": "Advanced",
     "type": "20060",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8898,8 +9446,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8934,8 +9482,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -8956,6 +9504,25 @@
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "createdBy": "masood",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "g_UYBYjqHVTO4W5YxIQOe",
+    "name": "OTP_VALIDATE_ERROR_MODAL",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "axpyCLzsnIvgmyJYurjks",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -9027,6 +9594,12 @@
           "cssClassName": "OT_Form_Buttons_FLEX ",
           "key": "OT_Form_Buttons_FLEX "
         }
+      ],
+      "conditionalClasses": [
+        {
+          "cssClassName": "FT_PADDING_TOP_20 ",
+          "logic": { "<=": [{ "var": "currentScreen.form.amount" }, 100000] }
+        }
       ]
     },
     "layout": null,
@@ -9037,8 +9610,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -9086,8 +9659,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -9126,8 +9699,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -9156,18 +9729,6 @@
     "type": "10001",
     "attributes": {
       "gridProps": [
-        {
-          "layoutProperties": {
-            "xl": 12,
-            "lg": 12,
-            "md": 12,
-            "sm": 12,
-            "xs": 12
-          },
-          "componentId": "MOGZjVhJBMWSxVExxc8Di",
-          "componentType": "20031",
-          "order": 1
-        },
         {
           "layoutProperties": {
             "xl": 12,
@@ -9207,28 +9768,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
-    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
-  },
-  {
-    "id": "MOGZjVhJBMWSxVExxc8Di",
-    "type": "20031",
-    "triggerName": "DonationConfirm_ERROR_TRIGGER",
-    "attributes": {
-      "widgetId": "njdi_2eidt8KZtZZy6g5_",
-      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
-    },
-    "component": { "type": "20031" },
-    "path": "0-0-0-0-1-0-0-0-5-0-1-0-0",
-    "screenId": "axpyCLzsnIvgmyJYurjks",
-    "subType": "component",
-    "projectId": "640ee2a26ead56231ce8350b",
-    "version": "1.0.0",
-    "gitBranchName": "master",
-    "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -9241,12 +9782,7 @@
       "label-locale-key": "",
       "fullWidth": true,
       "layoutProperties": {
-        "button": {
-          "//": "Use this class to style button component.",
-          "font-weight": "bold",
-          "border-radius": "8px",
-          "text-transofrm": "Capitalize"
-        },
+        "button": { "//": "Use this class to style button component." },
         "inputProps": { "//": "Use this class to style button element." },
         "mainContainer": "button",
         "xl": 12,
@@ -9268,8 +9804,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -9277,14 +9813,14 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "nz-NrV47gIy61kvMHNSVb",
-        "triggerName": "Donation Chain Trigger Transfer",
+        "triggerId": "8Ry_pdPxW7md8PjEPu5EL",
+        "triggerName": "DONATION_CONDITIONAL_TRIGGER",
         "name": "On Submit",
         "type": "4",
-        "serviceType": "2"
+        "serviceType": "13"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-5-0-1-0-1",
+    "path": "0-0-0-0-1-0-0-0-6-0-1-0-0",
     "screenId": "axpyCLzsnIvgmyJYurjks",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -9322,8 +9858,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/5/2024",
-    "createdAt": "9/5/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   }
 ]

@@ -1,0 +1,61 @@
+{
+  "id": "WLCvyw8n2e5keohwPRp__",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "purpose Mapping Delay",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "delay": "2000",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "Lbu0JYsYjDA95pYCQnc8I",
+              "name": "purpose Mapping",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "9",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "",
+                      "destinationBindingKey": "purpose",
+                      "sourceBindingKey": "purposeResponse.reasonOfTransfer",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 1,
+                      "logic": { "==": [{ "var": "code" }, "0320"] },
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.qhuxpghnwyQ3GUwBLPDePKGgpekJSFq",
+              "_id": "dRVcQIYr5PCHDeWGNtSkf",
+              "updatedAt": "9/20/2024",
+              "createdAt": "9/20/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["Lbu0JYsYjDA95pYCQnc8I"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.0vhb5wijg0qeAJ_gRnJV2w_8MWfjjWtJS",
+  "_id": "eJ6sDnn3vm5xdKiBXaiiw",
+  "updatedAt": "9/24/2024",
+  "createdAt": "9/24/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

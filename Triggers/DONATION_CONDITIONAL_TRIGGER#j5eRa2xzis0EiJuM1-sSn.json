@@ -1,0 +1,791 @@
+{
+  "id": "8Ry_pdPxW7md8PjEPu5EL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "DONATION_CONDITIONAL_TRIGGER",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": {
+                "<=": [{ "var": "currentScreen.form.amount" }, 100000]
+              },
+              "triggerName": "Donation Chain Trigger Transfer",
+              "triggerId": "nz-NrV47gIy61kvMHNSVb",
+              "services": [
+                {
+                  "type": "2",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "delay": "",
+                      "storeType": "",
+                      "searchInState": false,
+                      "triggers": [
+                        {
+                          "id": "b4I-sIb7qNe0x51VjkpQ2",
+                          "_id": "N1ms69_tV-dBYbFJaqOxl",
+                          "name": "Roshan Validation",
+                          "old_name": "Roshan Validation",
+                          "projectId": "640ee2a26ead56231ce8350b",
+                          "gitBranchName": "master",
+                          "services": [
+                            {
+                              "type": "11",
+                              "command": {
+                                "type": "6",
+                                "attributes": {
+                                  "requestBody": [],
+                                  "storeType": "",
+                                  "selectedObjectBindingKey": "selectedObject",
+                                  "dataType": "",
+                                  "destinationBindingKey": "validation",
+                                  "sourceBindingKey": "form",
+                                  "sourceStoreType": 2,
+                                  "destinationStoreType": 2,
+                                  "filterList": [
+                                    {
+                                      "changeValueConditonally": true,
+                                      "logic": {
+                                        "var": "currentScreen.form.smsPin"
+                                      },
+                                      "key": "smsPin"
+                                    },
+                                    {
+                                      "changeValueConditonally": true,
+                                      "logic": { "if": [true, false, false] },
+                                      "key": "splitOtp"
+                                    },
+                                    {
+                                      "changeValueConditonally": true,
+                                      "logic": { "if": [true, "OTP", "OTP"] },
+                                      "key": "validationType"
+                                    },
+                                    {
+                                      "key": "emailPin",
+                                      "changeValueConditonally": true,
+                                      "logic": {
+                                        "var": "currentScreen.form.smsPin"
+                                      }
+                                    }
+                                  ],
+                                  "targettedType": "object"
+                                }
+                              }
+                            }
+                          ],
+                          "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+                          "updatedAt": "4/16/2024",
+                          "createdAt": "4/16/2024",
+                          "createdBy": "masood",
+                          "updatedBy": "masood"
+                        },
+                        {
+                          "id": "kXuHTNFUacblCtX8pnsdo",
+                          "_id": "7bKIkNX_0Djwt0BNiGyaU",
+                          "projectId": "640ee2a26ead56231ce8350b",
+                          "gitBranchName": "master",
+                          "name": "Donation Payment Trigger",
+                          "old_name": "Donation Payment Trigger",
+                          "status": "ACTIVE",
+                          "services": [
+                            {
+                              "type": "8",
+                              "command": {
+                                "type": "1",
+                                "attributes": {
+                                  "loaderWidgetIds": [906070],
+                                  "messageWidgetIds": [906070],
+                                  "responseStateKey": "donationResponse",
+                                  "successMessageBindingKey": "donationTransferMessage",
+                                  "url": "/transfer",
+                                  "checksum": true,
+                                  "encryption": true,
+                                  "isDeviceDetails": false,
+                                  "loginTrigger": "loginTrigger",
+                                  "formData": false,
+                                  "logoutTrigger": false,
+                                  "headers": {
+                                    "Content-Type": "application/json",
+                                    "channel_key": "001"
+                                  },
+                                  "requestBody": [
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "accountId",
+                                      "value": "getData.accountId"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "actualAmount",
+                                      "value": "amount"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "amountInWords",
+                                      "value": "Amount_In_Words_amount"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "bankIMD",
+                                      "value": "getData.bankImd"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "beneficiary",
+                                      "value": "true"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "convertedAmount",
+                                      "value": "amount"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "exchangeRate",
+                                      "value": "amount"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "executionType",
+                                      "value": "PAY_NOW"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "fromAccountIban",
+                                      "value": "getData.iban"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "fromAccountNumber",
+                                      "value": "getData.accountNumber"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "fromAccountTitle",
+                                      "value": "getData.accountTitle"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "fromCurrency",
+                                      "value": "getData.currency"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "instrumentType",
+                                      "value": "A"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "noOfOccurrences",
+                                      "value": 0
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "orgCode",
+                                      "value": "selectedObject.accountNumber"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "otpVisible",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "purposeOfPayment",
+                                      "value": "purpose.name"
+                                    },
+                                    {
+                                      "type": 1,
+                                      "name": "Form",
+                                      "key": "rda",
+                                      "value": "getData.rda"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "requestNumber",
+                                      "value": "DonationTtile.content.requestNumber"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "requestDate",
+                                      "value": "DonationTtile.content.requestDate"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "returnBalance",
+                                      "value": "true"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "saveAsBene",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "state",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "toAccountNumber",
+                                      "value": "selectedObject.accountNumber"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "toAccountTitle",
+                                      "value": "selectedObject.accountTitle"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "transactionCurrency",
+                                      "value": "selectedObject.currency"
+                                    },
+                                    {
+                                      "type": 2,
+                                      "name": "Current screen",
+                                      "key": "toCurrency",
+                                      "value": "selectedObject.currency"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "transferToOption",
+                                      "value": "beneficiary"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "transferType",
+                                      "value": "DONATION"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "raast",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "byCard",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "isByCard",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "isRaast",
+                                      "value": "false"
+                                    },
+                                    {
+                                      "type": 4,
+                                      "name": "Static",
+                                      "key": "localIsRaast",
+                                      "value": "false"
+                                    }
+                                  ],
+                                  "baseURL": "6502f5a7c9bf2957746c9973",
+                                  "storeType": 2
+                                },
+                                "responseHandler": [
+                                  {
+                                    "httpStatus": 200,
+                                    "triggerName": "ERROR_MODAL",
+                                    "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+                                    "logic": { "==": [{ "var": "code" }, 0] }
+                                  },
+                                  {
+                                    "httpStatus": 200,
+                                    "logic": { "==": [{ "var": "code" }, 1] },
+                                    "triggerName": "NAVIGATE_TO_DONATION_RECEIPT",
+                                    "triggerId": "wrTNkuzTbhw4K5GiByBDz"
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "csrf": "0.9ahed9xidcFp-K_w4C8jEozhU67OMxu",
+                          "updatedAt": "3/26/2024",
+                          "createdAt": "3/26/2024",
+                          "createdBy": "masood",
+                          "updatedBy": "masood"
+                        }
+                      ],
+                      "triggerIds": [
+                        "b4I-sIb7qNe0x51VjkpQ2",
+                        "kXuHTNFUacblCtX8pnsdo"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                ">": [{ "var": "currentScreen.form.amount" }, 100000]
+              },
+              "triggerName": "DONATION_OTP_VALIDATION",
+              "triggerId": "n-UrTpturV70Pci6kWJ3m",
+              "services": [
+                {
+                  "type": "16",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "validationList": [
+                        {
+                          "bindingKey": "smsPin",
+                          "storeType": 1,
+                          "messageBindingKey": "OTP is Required",
+                          "isRequired": true,
+                          "requiredMessage": "OTP is Required",
+                          "regEx": "^\\d{5}$",
+                          "regExMessage": "OTP is Required",
+                          "JSONLogic": [
+                            { "logic": true, "logicMessage": "OTP REQUIRED" }
+                          ]
+                        }
+                      ],
+                      "failureTrigger": {
+                        "id": "qfGMpdqhqEcmSwmBnqk5J",
+                        "gitBranchName": "master",
+                        "name": "OTP_VALIDATE_ERROR_MODAL",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "services": [
+                          {
+                            "type": "9",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                                "content": "",
+                                "type": "",
+                                "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                                "toastContentType": "custom"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+                        "_id": "sMStfUAzTSxX0YBNE9xRJ",
+                        "updatedAt": "10/2/2024",
+                        "createdAt": "10/2/2024",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      "addFailureTrigger": true,
+                      "successTrigger": {
+                        "_id": "1YdVeL2Yy1mnX7wv0Pqhe",
+                        "id": "nz-NrV47gIy61kvMHNSVb",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "name": "Donation Chain Trigger Transfer",
+                        "old_name": "Donation Chain Trigger Transfer",
+                        "status": "ACTIVE",
+                        "services": [
+                          {
+                            "type": "2",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "delay": "",
+                                "storeType": "",
+                                "searchInState": false,
+                                "triggers": [
+                                  {
+                                    "id": "b4I-sIb7qNe0x51VjkpQ2",
+                                    "_id": "N1ms69_tV-dBYbFJaqOxl",
+                                    "name": "Roshan Validation",
+                                    "old_name": "Roshan Validation",
+                                    "projectId": "640ee2a26ead56231ce8350b",
+                                    "gitBranchName": "master",
+                                    "services": [
+                                      {
+                                        "type": "11",
+                                        "command": {
+                                          "type": "6",
+                                          "attributes": {
+                                            "requestBody": [],
+                                            "storeType": "",
+                                            "selectedObjectBindingKey": "selectedObject",
+                                            "dataType": "",
+                                            "destinationBindingKey": "validation",
+                                            "sourceBindingKey": "form",
+                                            "sourceStoreType": 2,
+                                            "destinationStoreType": 2,
+                                            "filterList": [
+                                              {
+                                                "changeValueConditonally": true,
+                                                "logic": {
+                                                  "var": "currentScreen.form.smsPin"
+                                                },
+                                                "key": "smsPin"
+                                              },
+                                              {
+                                                "changeValueConditonally": true,
+                                                "logic": {
+                                                  "if": [true, false, false]
+                                                },
+                                                "key": "splitOtp"
+                                              },
+                                              {
+                                                "changeValueConditonally": true,
+                                                "logic": {
+                                                  "if": [true, "OTP", "OTP"]
+                                                },
+                                                "key": "validationType"
+                                              },
+                                              {
+                                                "key": "emailPin",
+                                                "changeValueConditonally": true,
+                                                "logic": {
+                                                  "var": "currentScreen.form.smsPin"
+                                                }
+                                              }
+                                            ],
+                                            "targettedType": "object"
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "csrf": "0.w1ly6sctv9nBM2ze3Iv5N5LEFrlP_HSB",
+                                    "updatedAt": "4/16/2024",
+                                    "createdAt": "4/16/2024",
+                                    "createdBy": "masood",
+                                    "updatedBy": "masood"
+                                  },
+                                  {
+                                    "id": "kXuHTNFUacblCtX8pnsdo",
+                                    "_id": "7bKIkNX_0Djwt0BNiGyaU",
+                                    "projectId": "640ee2a26ead56231ce8350b",
+                                    "gitBranchName": "master",
+                                    "name": "Donation Payment Trigger",
+                                    "old_name": "Donation Payment Trigger",
+                                    "status": "ACTIVE",
+                                    "services": [
+                                      {
+                                        "type": "8",
+                                        "command": {
+                                          "type": "1",
+                                          "attributes": {
+                                            "loaderWidgetIds": [906070],
+                                            "messageWidgetIds": [906070],
+                                            "responseStateKey": "donationResponse",
+                                            "successMessageBindingKey": "donationTransferMessage",
+                                            "url": "/transfer",
+                                            "checksum": true,
+                                            "encryption": true,
+                                            "isDeviceDetails": false,
+                                            "loginTrigger": "loginTrigger",
+                                            "formData": false,
+                                            "logoutTrigger": false,
+                                            "headers": {
+                                              "Content-Type": "application/json",
+                                              "channel_key": "001"
+                                            },
+                                            "requestBody": [
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "accountId",
+                                                "value": "getData.accountId"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "actualAmount",
+                                                "value": "amount"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "amountInWords",
+                                                "value": "Amount_In_Words_amount"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "bankIMD",
+                                                "value": "getData.bankImd"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "beneficiary",
+                                                "value": "true"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "convertedAmount",
+                                                "value": "amount"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "exchangeRate",
+                                                "value": "amount"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "executionType",
+                                                "value": "PAY_NOW"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "fromAccountIban",
+                                                "value": "getData.iban"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "fromAccountNumber",
+                                                "value": "getData.accountNumber"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "fromAccountTitle",
+                                                "value": "getData.accountTitle"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "fromCurrency",
+                                                "value": "getData.currency"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "instrumentType",
+                                                "value": "A"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "noOfOccurrences",
+                                                "value": 0
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "orgCode",
+                                                "value": "selectedObject.accountNumber"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "otpVisible",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "purposeOfPayment",
+                                                "value": "purpose.name"
+                                              },
+                                              {
+                                                "type": 1,
+                                                "name": "Form",
+                                                "key": "rda",
+                                                "value": "getData.rda"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "requestNumber",
+                                                "value": "DonationTtile.content.requestNumber"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "requestDate",
+                                                "value": "DonationTtile.content.requestDate"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "returnBalance",
+                                                "value": "true"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "saveAsBene",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "state",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "toAccountNumber",
+                                                "value": "selectedObject.accountNumber"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "toAccountTitle",
+                                                "value": "selectedObject.accountTitle"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "transactionCurrency",
+                                                "value": "selectedObject.currency"
+                                              },
+                                              {
+                                                "type": 2,
+                                                "name": "Current screen",
+                                                "key": "toCurrency",
+                                                "value": "selectedObject.currency"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "transferToOption",
+                                                "value": "beneficiary"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "transferType",
+                                                "value": "DONATION"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "raast",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "byCard",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "isByCard",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "isRaast",
+                                                "value": "false"
+                                              },
+                                              {
+                                                "type": 4,
+                                                "name": "Static",
+                                                "key": "localIsRaast",
+                                                "value": "false"
+                                              }
+                                            ],
+                                            "baseURL": "6502f5a7c9bf2957746c9973",
+                                            "storeType": 2
+                                          },
+                                          "responseHandler": [
+                                            {
+                                              "httpStatus": 200,
+                                              "triggerName": "ERROR_MODAL",
+                                              "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+                                              "logic": {
+                                                "==": [{ "var": "code" }, 0]
+                                              }
+                                            },
+                                            {
+                                              "httpStatus": 200,
+                                              "logic": {
+                                                "==": [{ "var": "code" }, 1]
+                                              },
+                                              "triggerName": "NAVIGATE_TO_DONATION_RECEIPT",
+                                              "triggerId": "wrTNkuzTbhw4K5GiByBDz"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ],
+                                    "csrf": "0.9ahed9xidcFp-K_w4C8jEozhU67OMxu",
+                                    "updatedAt": "3/26/2024",
+                                    "createdAt": "3/26/2024",
+                                    "createdBy": "masood",
+                                    "updatedBy": "masood"
+                                  }
+                                ],
+                                "triggerIds": [
+                                  "b4I-sIb7qNe0x51VjkpQ2",
+                                  "kXuHTNFUacblCtX8pnsdo"
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.08qgoh6oduugHqM-uLylpvtJSRl7Mlu4I",
+                        "updatedAt": "8/21/2024",
+                        "createdAt": "8/21/2024",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      "encryptionType": "encryption"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.9v75koj01kAx0yYCutP82uWsl_ZIgoV",
+  "_id": "j5eRa2xzis0EiJuM1-sSn",
+  "updatedAt": "10/3/2024",
+  "createdAt": "10/3/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

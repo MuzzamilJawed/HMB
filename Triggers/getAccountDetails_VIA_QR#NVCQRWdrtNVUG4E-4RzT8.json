@@ -1,0 +1,89 @@
+{
+  "id": "2FXoir4hd8lDLp5flVUQl",
+  "_id": "NVCQRWdrtNVUG4E-4RzT8",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "getAccountDetails_VIA_QR",
+  "old_name": "getAccountDetails",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "getData",
+          "responseReturnValue": "content",
+          "successMessageBindingKey": "instantTransferMessage",
+          "url": "/getAccountDetails",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankName",
+              "value": "bankName.bankName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "bankIMD",
+              "value": "bankName.bankIMD"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountNumber",
+              "value": "accountNumber"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accountId",
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "rda",
+              "value": "fromAccount.rda"
+            }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "httpStatus": 200,
+            "triggerName": "Fund Transfer To CONFIRM",
+            "triggerId": "WzVrwHszCEti1PjzoXk0m",
+            "logic": { "==": [{ "var": "code" }, 1] }
+          },
+          {
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj",
+            "logic": { "==": [{ "var": "code" }, 0] }
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.hihawrgshqpd9Ws5PUYcTj7ZwfFyETUd",
+  "updatedAt": "10/22/2024",
+  "createdAt": "10/22/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

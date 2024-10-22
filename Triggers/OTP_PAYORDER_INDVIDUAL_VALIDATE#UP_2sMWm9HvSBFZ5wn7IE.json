@@ -1,0 +1,120 @@
+{
+  "id": "9uHHMa7vAvMn6Qc6IugxX",
+  "_id": "UP_2sMWm9HvSBFZ5wn7IE",
+  "gitBranchName": "master",
+  "name": "OTP_PAYORDER_INDVIDUAL_VALIDATE",
+  "old_name": "OTP_PAYORDER_INDVIDUAL_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "amount",
+              "storeType": 1,
+              "messageBindingKey": "Amount is Required",
+              "isRequired": true,
+              "requiredMessage": "Amount is Required",
+              "regEx": "",
+              "regExMessage": "",
+              "JSONLogic": []
+            },
+            {
+              "bindingKey": "favouring",
+              "storeType": 1,
+              "messageBindingKey": "Name is Required",
+              "isRequired": true,
+              "requiredMessage": "Name is Required",
+              "regEx": "",
+              "regExMessage": "",
+              "JSONLogic": []
+            },
+            {
+              "bindingKey": "payorderbene",
+              "storeType": 1,
+              "messageBindingKey": "Purpose is Required",
+              "isRequired": true,
+              "requiredMessage": "Purpose is Required",
+              "regEx": "",
+              "regExMessage": "",
+              "JSONLogic": []
+            },
+            {
+              "bindingKey": "accountSelect",
+              "storeType": 1,
+              "messageBindingKey": "Account is Required",
+              "isRequired": true,
+              "requiredMessage": "Account is Required",
+              "regEx": "",
+              "regExMessage": "",
+              "JSONLogic": []
+            }
+          ],
+          "failureTrigger": {
+            "id": "DOsq389tooDwOTxn6AH4C",
+            "gitBranchName": "master",
+            "name": "PAYORDER_VALIDATE_MODAL_TRIGGER",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "5N3cVCJgwWJXOw4hWrHW9",
+                    "content": "",
+                    "type": "",
+                    "modalId": "NaXJvL0AbV4SZxndLGil-",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.tras7vlhgrgL1aVyhj94jmqNWLhtxDl",
+            "_id": "J5cdSRxTLYVKDgwBBrSvP",
+            "updatedAt": "10/3/2024",
+            "createdAt": "10/3/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "id": "tHB1SStHeywcV_swqS2vK",
+            "name": "Swap Pay Order to Confirm Pay Order",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "services": [
+              {
+                "type": "1",
+                "command": {
+                  "type": "3",
+                  "attributes": {
+                    "nextWidgetId": "5gRjNLkFxwtwcrBUE5nMW",
+                    "gridRadioValue": "",
+                    "selectedObjectBindingKey": "selectedObject",
+                    "editableForm": false
+                  }
+                }
+              }
+            ],
+            "csrf": "0.60qyn9fioj8fYsVLTxy90wvIwp-xaKvv",
+            "_id": "z21I9ykLsTrqjwCmu7lj4",
+            "updatedAt": "9/21/2023",
+            "createdAt": "9/21/2023",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.tras7vlhgrgL1aVyhj94jmqNWLhtxDl",
+  "updatedAt": "10/3/2024",
+  "createdAt": "10/3/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

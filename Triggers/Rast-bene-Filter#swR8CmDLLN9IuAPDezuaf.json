@@ -1,0 +1,41 @@
+{
+  "id": "_hORy_pl_quVvRspGmDeZ",
+  "name": "Rast bene Filter",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "10",
+        "attributes": {
+          "stateName": "none",
+          "storeType": "",
+          "selectedObjectBindingKey": "none",
+          "dataType": "",
+          "destinationBindingKey": "raastbeneList",
+          "sourceBindingKey": "fetchBene",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "var": "fetchBene" },
+              true,
+              {
+                "if": [{ "==": [{ "var": "transferType" }, "R"] }, true, false]
+              }
+            ]
+          },
+          "targetValue": "none",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.xt2wy8ereif8wKWAfPdz7oeMUdED4_xm",
+  "_id": "swR8CmDLLN9IuAPDezuaf",
+  "updatedAt": "9/20/2024",
+  "createdAt": "9/20/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

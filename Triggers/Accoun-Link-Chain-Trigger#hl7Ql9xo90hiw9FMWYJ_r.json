@@ -1,0 +1,118 @@
+{
+  "_id": "hl7Ql9xo90hiw9FMWYJ_r",
+  "id": "6ONWGc78ylCeRwdEdXjJL",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Accoun Link Chain Trigger",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "2h9_Xd1d16aJzscXNnKcZ",
+              "name": "Manipulate Linked Status",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "status",
+                      "sourceBindingKey": "selectedObject",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [{ "var": "linked" }, false, true] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.8dwlv3agzv3Ql2ZYbGmpLGiPgfnmfJOF",
+              "_id": "yUqEj16S00F6wwvbeZgK2",
+              "updatedAt": "10/7/2024",
+              "createdAt": "10/7/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "QTF_cFiFuf73HaybBwY3L",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Account Link and DeLink",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "Linked",
+                      "url": "/linked/account/toggle",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "accountId",
+                          "value": "selectedObject.accountID"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "status",
+                          "value": "status"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.8dwlv3agzv3Ql2ZYbGmpLGiPgfnmfJOF",
+              "_id": "M6QizMmkDsz1SQKvj7dYK",
+              "updatedAt": "10/7/2024",
+              "createdAt": "10/7/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["2h9_Xd1d16aJzscXNnKcZ", "QTF_cFiFuf73HaybBwY3L"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.icvf0nnivv5ZsDIhgkRHLbdeoxG7l8e",
+  "updatedAt": "10/9/2024",
+  "createdAt": "10/9/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

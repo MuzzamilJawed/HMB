@@ -1,0 +1,104 @@
+{
+  "id": "goNH5FSV6fHB7gYs_d8nK",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "BENE_FILTER_DELAY",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "delay": "500",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "t6A04j_noh6s-18WcOmGf",
+              "name": "Filter BENE",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "10",
+                    "attributes": {
+                      "stateName": "none",
+                      "storeType": "",
+                      "selectedObjectBindingKey": "none",
+                      "dataType": "",
+                      "destinationBindingKey": "filterbene",
+                      "sourceBindingKey": "fetchBene",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": {
+                        "if": [
+                          { "var": "currentScreen.dc_filter_key_word" },
+                          {
+                            "or": [
+                              {
+                                "==": [
+                                  { "var": "currentScreen.dc_filter_key_word" },
+                                  "All"
+                                ]
+                              },
+                              {
+                                "and": [
+                                  {
+                                    "==": [
+                                      {
+                                        "var": "currentScreen.dc_filter_key_word"
+                                      },
+                                      "R"
+                                    ]
+                                  },
+                                  { "==": [{ "var": "transferType" }, "R"] }
+                                ]
+                              },
+                              {
+                                "and": [
+                                  {
+                                    "==": [
+                                      {
+                                        "var": "currentScreen.dc_filter_key_word"
+                                      },
+                                      "notRAAST"
+                                    ]
+                                  },
+                                  { "!=": [{ "var": "transferType" }, "R"] }
+                                ]
+                              }
+                            ]
+                          },
+                          true
+                        ]
+                      },
+                      "targetValue": "none",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.jspetszi3uhvlT4MDsJtlSkNoyzywdSo",
+              "_id": "w6AHMPGmQx4qee32dbSOC",
+              "updatedAt": "10/18/2024",
+              "createdAt": "10/18/2024",
+              "createdBy": "masood123",
+              "updatedBy": "masood123"
+            }
+          ],
+          "triggerIds": ["t6A04j_noh6s-18WcOmGf"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.jspetszi3uhvlT4MDsJtlSkNoyzywdSo",
+  "_id": "TX1FBkzNGx2mhkt7eOUbH",
+  "updatedAt": "10/18/2024",
+  "createdAt": "10/18/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
+}

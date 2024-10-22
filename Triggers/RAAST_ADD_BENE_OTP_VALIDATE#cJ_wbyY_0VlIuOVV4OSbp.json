@@ -1,0 +1,328 @@
+{
+  "id": "QT_tR8VoX08cjwSvC7MV7",
+  "_id": "cJ_wbyY_0VlIuOVV4OSbp",
+  "gitBranchName": "master",
+  "name": "RAAST_ADD_BENE_OTP_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "_id": "yngD7L3DxE6dbyWK9mmBi",
+            "id": "Y-YtiSSFtj2x2x6p4JjqF",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "name": "RaastAddBene_CHAIN_TRIGGER",
+            "old_name": "",
+            "status": "ACTIVE",
+            "services": [
+              {
+                "type": "2",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "delay": "",
+                    "storeType": "",
+                    "searchInState": false,
+                    "triggers": [
+                      {
+                        "id": "3WJVpQqglNb4yHnlELcM-",
+                        "name": " Otpinfo with email and SMSpin",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "storeType": "",
+                                "selectedObjectBindingKey": "selectedObject",
+                                "dataType": "",
+                                "destinationBindingKey": "otpInfo",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "smsPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.emailPin"
+                                    },
+                                    "key": "emailPin"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "key": "splitOtp",
+                                    "logic": { "if": [true, false, false] }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "OTP", "OTP"] },
+                                    "key": "validationType"
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+                        "_id": "j4UDdGfNoOd5UzY-973cX",
+                        "updatedAt": "9/26/2023",
+                        "createdAt": "9/26/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      {
+                        "id": "MahtYnEfPnphN5_TxH2px",
+                        "_id": "qaGZV9Ll2SkSoWd2W4Jyw",
+                        "name": "conversionOfBeneForRaast",
+                        "old_name": "conversionOfBeneForRaast",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "requestBody": [],
+                                "destinationBindingKey": "beneficiary",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "instrumentType",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "A", "A"] }
+                                  },
+                                  {
+                                    "key": "mobile",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.mobile"
+                                    }
+                                  },
+                                  {
+                                    "key": "isFavorite",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, false, false] }
+                                  },
+                                  {
+                                    "key": "bankIMD",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.bankName.bankIMD"
+                                    }
+                                  },
+                                  {
+                                    "key": "accountTitle",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.fromInstrument.accountTitle"
+                                    }
+                                  },
+                                  {
+                                    "key": "accountNumber",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.fromInstrument.accountNumber"
+                                    }
+                                  },
+                                  {
+                                    "key": "alias",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.alias"
+                                    }
+                                  },
+                                  {
+                                    "key": "compoundKey",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.raastAccount"
+                                    }
+                                  },
+                                  {
+                                    "key": "beneficiaryType",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "R", "R"] }
+                                  },
+                                  {
+                                    "key": "bankName",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.RaastBeneResponse.content.bankName"
+                                    }
+                                  },
+                                  {
+                                    "key": "iban",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.RaastBeneResponse.content.iban"
+                                    }
+                                  },
+                                  {
+                                    "key": "transferType",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": ["true", "R", "R"] }
+                                  },
+                                  {
+                                    "key": "bankIMD",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "if": ["true", "000000", "000000"]
+                                    }
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.mp60v09jzjeskIpyzGob3c61nREyJblK",
+                        "updatedAt": "10/6/2023",
+                        "createdAt": "10/6/2023",
+                        "createdBy": "muhammad.asad",
+                        "updatedBy": "muhammad.asad"
+                      },
+                      {
+                        "id": "Kb_EYcYw048FwmH2OXlBM",
+                        "_id": "SBFnqVV2BkEMX39N_c-IM",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "name": "RaastAddBene",
+                        "old_name": "RaastAddBene",
+                        "status": "ACTIVE",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "BeneResponse",
+                                "url": "/beneficiaryManagement",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": false,
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "action",
+                                    "value": "A"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "validation",
+                                    "value": "otpInfo"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "beneficiary",
+                                    "value": "beneficiary"
+                                  }
+                                ],
+                                "baseURL": "64f968d3683922479c0616ba",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ],
+                        "csrf": "0.mp60v09jzjeskIpyzGob3c61nREyJblK",
+                        "updatedAt": "10/9/2023",
+                        "createdAt": "10/9/2023",
+                        "createdBy": "muhammad.asad",
+                        "updatedBy": "muhammad.asad"
+                      }
+                    ],
+                    "triggerIds": [
+                      "3WJVpQqglNb4yHnlELcM-",
+                      "MahtYnEfPnphN5_TxH2px",
+                      "Kb_EYcYw048FwmH2OXlBM"
+                    ]
+                  }
+                }
+              }
+            ],
+            "csrf": "0.1zxw56f4h1vuG0KGEk376gl2fTqrNVF-",
+            "updatedAt": "9/20/2024",
+            "createdAt": "9/20/2024",
+            "createdBy": "masood123",
+            "updatedBy": "masood123"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+  "updatedAt": "10/2/2024",
+  "createdAt": "10/2/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

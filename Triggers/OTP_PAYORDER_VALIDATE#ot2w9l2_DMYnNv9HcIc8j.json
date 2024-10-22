@@ -1,0 +1,274 @@
+{
+  "id": "3RZ49ubGkWyIxEV2I3j0z",
+  "_id": "ot2w9l2_DMYnNv9HcIc8j",
+  "gitBranchName": "master",
+  "name": "OTP_PAYORDER_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "_id": "kDiDUXjeR-FfBNqJSUt5v",
+            "id": "gLktwCUbMfKapJECrJQZM",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "name": "PayOrder Chain Trigger",
+            "old_name": "PayOrder Chain Trigger",
+            "status": "ACTIVE",
+            "services": [
+              {
+                "type": "2",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "delay": "",
+                    "triggers": [
+                      {
+                        "id": "TCicpprTZFn8DYos69xXs",
+                        "name": "otpInfo Mapping",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "destinationBindingKey": "otpInfo",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "smsPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    }
+                                  },
+                                  {
+                                    "key": "emailPin",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, null, null] }
+                                  },
+                                  {
+                                    "key": "splitOtp",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, false, false] }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "OTP", "OTP"] },
+                                    "key": "validationType"
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.fp2p1uqn69a1JzhUaZzuDyXROZ3knYce",
+                        "_id": "rRjW6WQgtFhIounPrQ3Ys",
+                        "updatedAt": "9/13/2023",
+                        "createdAt": "9/13/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      {
+                        "id": "4vkm7glhrkqQgg_tVCN_l",
+                        "_id": "_zJJh1OlzCCIII4jNYGNY",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "name": "payOrder",
+                        "old_name": "payOrder",
+                        "status": "ACTIVE",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "payOrderResponse",
+                                "successMessageBindingKey": "successMessage",
+                                "errorMessageBindingKey": "errorMessage",
+                                "url": "/payOrder",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": "loginTrigger",
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "otpInfo",
+                                    "value": "otpInfo"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accountId",
+                                    "value": "accountSelect.accountId"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "address",
+                                    "value": "address"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "amount",
+                                    "value": "amount"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "beneDOB",
+                                    "value": "beneDOB"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "beneNTN",
+                                    "value": "beneNTN"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "beneRelation",
+                                    "value": "beneRelation"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "contactNumber",
+                                    "value": "contactNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "favouring",
+                                    "value": "favouring"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "providedpin",
+                                    "value": "null"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "payorderType",
+                                    "value": "null"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "purposeCode",
+                                    "value": "payorderbene.paymentCode"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "for",
+                                    "value": "payorderbene.paymentCode"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "cnic",
+                                    "value": "null"
+                                  }
+                                ],
+                                "baseURL": "65003e4e61f0645ad866d812",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ],
+                        "csrf": "0.kvh0xhprvohejvOPPN-pCazEmiBRAr7",
+                        "updatedAt": "9/21/2023",
+                        "createdAt": "9/21/2023",
+                        "createdBy": "muhammad.asad",
+                        "updatedBy": "muhammad.asad"
+                      }
+                    ],
+                    "triggerIds": [
+                      "TCicpprTZFn8DYos69xXs",
+                      "4vkm7glhrkqQgg_tVCN_l"
+                    ]
+                  }
+                }
+              }
+            ],
+            "csrf": "0.gd3cs2y4gxhx1yDGyWO_gMj2B0V8ubbS",
+            "updatedAt": "9/21/2023",
+            "createdAt": "9/21/2023",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+  "updatedAt": "10/2/2024",
+  "createdAt": "10/2/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

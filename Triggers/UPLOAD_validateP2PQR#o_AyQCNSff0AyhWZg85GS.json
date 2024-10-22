@@ -1,0 +1,52 @@
+{
+  "id": "D33MaxmlZtodHAyItbWKx",
+  "_id": "o_AyQCNSff0AyhWZg85GS",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "UPLOAD_validateP2PQR",
+  "old_name": "UPLOAD_validateP2PQR",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "qrCode",
+          "url": "/validateP2PQR",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            { "type": 1, "name": "Form", "key": "qrCode", "value": "qrCode" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": [
+          {
+            "logic": { "==": [{ "var": "code" }, 1] },
+            "httpStatus": 200,
+            "triggerName": "NAVIGATE_TO_QR_DATA",
+            "triggerId": "OXDE9Hqnbjo_s9VR-pcTO"
+          }
+        ]
+      }
+    }
+  ],
+  "csrf": "0.2dh9jq1gvnasu38fmssIDR2z-NelwuzG",
+  "updatedAt": "10/22/2024",
+  "createdAt": "10/22/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

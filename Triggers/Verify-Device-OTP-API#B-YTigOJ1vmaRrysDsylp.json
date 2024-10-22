@@ -15,6 +15,7 @@
           "loaderWidgetIds": [906070],
           "messageWidgetIds": [906070],
           "responseStateKey": "otpresponse",
+          "successMessageBindingKey": "otpresponseMessage",
           "url": "/deviceManagement",
           "checksum": true,
           "encryption": true,
@@ -50,14 +51,20 @@
             "httpStatus": 200,
             "triggerName": "LOGIN OTP TO CARD LIST",
             "triggerId": "idij-wld5BDfb2Z3DHKdM"
+          },
+          {
+            "logic": { "==": [{ "var": "code" }, 0] },
+            "httpStatus": 200,
+            "triggerName": "ERROR_MODAL",
+            "triggerId": "C3kzuslmU0jTd6s2CRjNj"
           }
         ]
       }
     }
   ],
-  "csrf": "0.cwj54jylt6gMGYG0PSVJ8Afn62hW6Izt",
-  "updatedAt": "7/29/2024",
-  "createdAt": "7/29/2024",
-  "createdBy": "masood",
-  "updatedBy": "masood"
+  "csrf": "0.z5iq5a6m2bzJz9US_TzlYIOlFgd6rcz",
+  "updatedAt": "9/23/2024",
+  "createdAt": "9/23/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
 }

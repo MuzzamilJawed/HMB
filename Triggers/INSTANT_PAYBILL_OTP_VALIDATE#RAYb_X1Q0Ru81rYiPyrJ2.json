@@ -1,0 +1,601 @@
+{
+  "id": "lD28vRojGrDO8M2ee0OEG",
+  "_id": "RAYb_X1Q0Ru81rYiPyrJ2",
+  "gitBranchName": "master",
+  "name": "INSTANT_PAYBILL_OTP_VALIDATE",
+  "old_name": "INSTANT_PAYBILL_OTP_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "_id": "7BeyrVVcyXU6VfSHGz2Ky",
+            "id": "aeZRIfi2k_iTni_9cuz6X",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "name": "IS PREPAID",
+            "old_name": "IS PREPAID",
+            "status": "ACTIVE",
+            "services": [
+              {
+                "type": "13",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "triggers": [
+                      {
+                        "logic": {
+                          "==": [
+                            {
+                              "var": "currentScreen.form.category.categoryCode"
+                            },
+                            "9"
+                          ]
+                        },
+                        "triggerName": "Amount block",
+                        "triggerId": "fxGZ4MHFQYl6WhE_CDxc2",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "storeType": "",
+                                "selectedObjectBindingKey": "selectedObject",
+                                "dataType": "",
+                                "destinationBindingKey": "amount",
+                                "sourceBindingKey": "amount",
+                                "sourceStoreType": 1,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "amount",
+                                    "changeValueConditonally": true,
+                                    "logic": { "var": "amount" }
+                                  },
+                                  {
+                                    "key": "currency",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "PKR", "PKR"] }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "", ""] },
+                                    "key": "localeFormattedAmount"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, null, null] },
+                                    "key": "realm"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, true, true] },
+                                    "key": "loaded"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, false, false] },
+                                    "key": "managed"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "key": "valid",
+                                    "logic": { "if": [true, true, true] }
+                                  }
+                                ],
+                                "targettedType": "object",
+                                "gridFormRowIdBindingKey": "editFormRowId"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "logic": true,
+                        "triggerName": "IBFT Validation",
+                        "triggerId": "dTzBLHUfQvy2dgKQ71OLm",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "requestBody": [],
+                                "destinationBindingKey": "validation",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "smsPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    }
+                                  },
+                                  {
+                                    "key": "splitOtp",
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, false, false] }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "OTP", "OTP"] },
+                                    "key": "validationType"
+                                  },
+                                  {
+                                    "key": "emailPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    }
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "logic": {
+                          "==": [
+                            {
+                              "var": "currentScreen.form.category.categoryCode"
+                            },
+                            "9"
+                          ]
+                        },
+                        "triggerName": "PAYBILL API WITH PREPAID",
+                        "triggerId": "zH3NGV7wJJvsfKkCJ5t-l",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "payBill",
+                                "url": "/payBill",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": false,
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "Accept": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accNo",
+                                    "value": "paidFrom.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accountId",
+                                    "value": "paidFrom.accountId"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "billAmount",
+                                    "value": "billlresponse.billAmount"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "billAmountAfterDueDate",
+                                    "value": "billlresponse.billAmountAfterDueDate"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "consumerNumber",
+                                    "value": "billlresponse.consumerNumber"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "dueDate",
+                                    "value": "billlresponse.dueDate"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "executionType",
+                                    "value": "PAY_NOW"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountNumberOrIban",
+                                    "value": "paidFrom.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountTitle",
+                                    "value": "paidFrom.accountTitle"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "paymentOption",
+                                    "value": "PAY_NOW"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "categoryCode",
+                                    "value": "category.categoryCode"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "categoryName",
+                                    "value": "category.categoryName"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "companyCode",
+                                    "value": "company.companyCode"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "companyName",
+                                    "value": "company.companyName"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "fromCurrency",
+                                    "value": "PKR"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "isByCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "paymentType",
+                                    "value": "Bill"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "rda",
+                                    "value": "paidFrom.rda"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestDate",
+                                    "value": "billlresponse.tranDate"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestNo",
+                                    "value": "billlresponse.transactionId"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "returnBalance",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "transactionId",
+                                    "value": "billlresponse.transactionId"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "state",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "beneficiary",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "byCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "bankIMD",
+                                    "value": "paidFrom.bankImd"
+                                  }
+                                ],
+                                "baseURL": "6502f5a7c9bf2957746c9973",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "logic": {
+                          "!=": [
+                            {
+                              "var": "currentScreen.form.category.categoryCode"
+                            },
+                            "9"
+                          ]
+                        },
+                        "triggerName": "payBill API",
+                        "triggerId": "m2WRPEgteovo0aF99_rOi",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "payBill",
+                                "url": "/payBill",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": false,
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "Accept": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accNo",
+                                    "value": "paidFrom.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accountId",
+                                    "value": "paidFrom.accountId"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "billAmount",
+                                    "value": "billlresponse.billAmount"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "billAmountAfterDueDate",
+                                    "value": "billlresponse.billAmountAfterDueDate"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "consumerNumber",
+                                    "value": "billlresponse.consumerNumber"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "dueDate",
+                                    "value": "billlresponse.dueDate"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "executionType",
+                                    "value": "PAY_NOW"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountNumberOrIban",
+                                    "value": "paidFrom.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountTitle",
+                                    "value": "paidFrom.accountTitle"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "paymentOption",
+                                    "value": "PAY_NOW"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "categoryCode",
+                                    "value": "category.categoryCode"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "categoryName",
+                                    "value": "category.categoryName"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "companyCode",
+                                    "value": "company.companyCode"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "companyName",
+                                    "value": "company.companyName"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "fromCurrency",
+                                    "value": "PKR"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "isByCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "paymentType",
+                                    "value": "Bill"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "rda",
+                                    "value": "paidFrom.rda"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestDate",
+                                    "value": "billlresponse.tranDate"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestNo",
+                                    "value": "billlresponse.transactionId"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "returnBalance",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "transactionId",
+                                    "value": "billlresponse.transactionId"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "state",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "beneficiary",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "byCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "bankIMD",
+                                    "value": "paidFrom.bankImd"
+                                  }
+                                ],
+                                "baseURL": "6502f5a7c9bf2957746c9973",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "csrf": "0.icvf0nnivv5ZsDIhgkRHLbdeoxG7l8e",
+            "updatedAt": "10/9/2024",
+            "createdAt": "10/9/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.icvf0nnivv5ZsDIhgkRHLbdeoxG7l8e",
+  "updatedAt": "10/9/2024",
+  "createdAt": "10/9/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

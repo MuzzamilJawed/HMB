@@ -1,0 +1,127 @@
+{
+  "id": "tEEoPfOdQspohMQ8qD8DS",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Account Link Chain TRIGGER FOR Link",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "delay": "",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "fYh3vO3AlAA0-SfYbmL-G",
+              "_id": "3Iub-GHfmoLCjfOkU1boP",
+              "name": "Manipulate status false",
+              "old_name": "Manipulate status false",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "services": [
+                {
+                  "type": "11",
+                  "command": {
+                    "type": "6",
+                    "attributes": {
+                      "requestBody": [],
+                      "storeType": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "dataType": "value",
+                      "destinationBindingKey": "status",
+                      "sourceBindingKey": "selectedObject",
+                      "sourceStoreType": 2,
+                      "destinationStoreType": 2,
+                      "logic": { "if": [true, false, false] },
+                      "changeValueConditonally": true,
+                      "targettedType": "value",
+                      "gridFormRowIdBindingKey": "editFormRowId"
+                    }
+                  }
+                }
+              ],
+              "csrf": "0.2dpy6xjg5wkWiFKi10XrZTONvDhAms-_",
+              "updatedAt": "10/7/2024",
+              "createdAt": "10/7/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            },
+            {
+              "id": "QTF_cFiFuf73HaybBwY3L",
+              "_id": "M6QizMmkDsz1SQKvj7dYK",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "Account Link and DeLink",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "Linked",
+                      "url": "/linked/account/toggle",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "accountId",
+                          "value": "selectedObject.accountID"
+                        },
+                        {
+                          "type": 2,
+                          "name": "Current screen",
+                          "key": "status",
+                          "value": "status"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": [
+                      {
+                        "logic": { "==": [{ "var": "code" }, 1] },
+                        "httpStatus": 200,
+                        "triggerName": "Account Link List",
+                        "triggerId": "iEROnDGtIgsezU0QnsocJ"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "csrf": "0.2dpy6xjg5wkWiFKi10XrZTONvDhAms-_",
+              "updatedAt": "10/7/2024",
+              "createdAt": "10/7/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["fYh3vO3AlAA0-SfYbmL-G", "QTF_cFiFuf73HaybBwY3L"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.2dpy6xjg5wkWiFKi10XrZTONvDhAms-_",
+  "_id": "kH3GNmcc2xomy-U8HRLFz",
+  "updatedAt": "10/7/2024",
+  "createdAt": "10/7/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

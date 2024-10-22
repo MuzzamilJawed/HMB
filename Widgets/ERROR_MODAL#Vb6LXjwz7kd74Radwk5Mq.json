@@ -117,22 +117,22 @@
                                   "defaultImageAssetId": "CNIz67fi824LHr0ae-pOV",
                                   "imageAssetIdTemp": {
                                     "createdBy": "user",
-                                    "_id": "6502b215c9bf2957746c8ce3",
-                                    "name": "Flat_cross_icon.svg.png",
-                                    "type": "png",
+                                    "_id": "6708bfde66989276b05dd4b0",
+                                    "name": "icons8cross.svg",
+                                    "type": "svg",
                                     "projectId": "640ee2a26ead56231ce8350b",
-                                    "id": "2qQy6sNEtgCXhEjHd65K1",
+                                    "id": "j50oHoGscb4R1VucT2H8o",
                                     "gitBranchName": "master",
                                     "folderType": "web",
                                     "platform": "web",
-                                    "url": "web/Flat_cross_icon.svg.png",
-                                    "canvasUrl": "web/Flat_cross_icon.svg.png",
-                                    "createdAt": "2023-09-14T07:11:17.598Z",
-                                    "updatedAt": "2023-09-14T07:11:17.598Z",
+                                    "url": "640ee2a26ead56231ce8350b/web/icons8cross.svg",
+                                    "canvasUrl": "640ee2a26ead56231ce8350b/web/icons8cross.svg",
+                                    "createdAt": "2024-10-11T06:04:14.579Z",
+                                    "updatedAt": "2024-10-11T06:04:14.579Z",
                                     "__v": 0,
-                                    "uri": "web/Flat_cross_icon.svg.png"
+                                    "uri": "640ee2a26ead56231ce8350b/web/icons8cross.svg"
                                   },
-                                  "imageAssetId": "f8S_3kYWM6Ph2ms2CeDxN",
+                                  "imageAssetId": "j50oHoGscb4R1VucT2H8o",
                                   "stateName": null,
                                   "storeType": null,
                                   "useFullLink": null
@@ -366,6 +366,63 @@
                             "type": "column",
                             "id": "r1MNdri9jWRPRFbIrFYBa",
                             "gridProps": [
+                              {
+                                "id": "YJJpqMV27N3NsCwzmL0cP",
+                                "status": "ACTIVE",
+                                "name": "Label",
+                                "attributes": {
+                                  "variant": "body1",
+                                  "name": "Label",
+                                  "mandatory": false,
+                                  "layoutProperties": {
+                                    "label": {
+                                      "//": "Use this class to style label component."
+                                    },
+                                    "prefix": {
+                                      "//": "Use this class to style prefix."
+                                    },
+                                    "postfix": {
+                                      "//": "Use this class to style postfix."
+                                    },
+                                    "mainContainer": "label",
+                                    "xl": 12,
+                                    "lg": 12,
+                                    "md": 12,
+                                    "sm": 12,
+                                    "xs": 12
+                                  },
+                                  "label": "Please Check and Agree Terms and Conditions",
+                                  "hideCondition": {
+                                    "logic": {
+                                      "!=": [
+                                        { "var": "currentScreen.form.terms" },
+                                        "agreed"
+                                      ]
+                                    }
+                                  },
+                                  "cssClassNames": [
+                                    {
+                                      "cssClassName": "success-error-message ",
+                                      "key": "success-error-message "
+                                    }
+                                  ]
+                                },
+                                "icon": "FaFont",
+                                "group": "Form",
+                                "type": "20002",
+                                "updatedAt": "23-Aug-2021",
+                                "createdAt": "23-Aug-2021",
+                                "order": 15,
+                                "version": "1.0.0",
+                                "isLatest": true,
+                                "projectType": "web",
+                                "component": {
+                                  "content": "Label",
+                                  "type": "20002"
+                                },
+                                "events": [],
+                                "path": "0-0-1-0-0-0-0"
+                              },
                               {
                                 "id": "HMPXKfbjUi_UPyVstNiHt",
                                 "status": "ACTIVE",
@@ -1065,7 +1122,10 @@
                                   "searchInState": true,
                                   "storeType": 1,
                                   "cssClassNames": [
-                                    { "cssClassName": "success-error-message " }
+                                    {
+                                      "cssClassName": "success-error-message ",
+                                      "key": "success-error-message "
+                                    }
                                   ],
                                   "hideCondition": {
                                     "logic": {
@@ -1093,6 +1153,67 @@
                                 },
                                 "events": [],
                                 "path": "0-0-1-0-0-0-13"
+                              },
+                              {
+                                "id": "ztUcbkPb6Pr1L6jIP3DdR",
+                                "status": "ACTIVE",
+                                "name": "Label",
+                                "attributes": {
+                                  "variant": "body1",
+                                  "name": "Label",
+                                  "mandatory": false,
+                                  "layoutProperties": {
+                                    "label": {
+                                      "//": "Use this class to style label component."
+                                    },
+                                    "prefix": {
+                                      "//": "Use this class to style prefix."
+                                    },
+                                    "postfix": {
+                                      "//": "Use this class to style postfix."
+                                    },
+                                    "mainContainer": "label",
+                                    "xl": 12,
+                                    "lg": 12,
+                                    "md": 12,
+                                    "sm": 12,
+                                    "xs": 12
+                                  },
+                                  "label": "otpresponseMessage",
+                                  "searchInState": true,
+                                  "storeType": 1,
+                                  "hideCondition": {
+                                    "logic": {
+                                      "==": [
+                                        {
+                                          "var": "currentScreen.form.otpresponseMessage"
+                                        },
+                                        null
+                                      ]
+                                    }
+                                  },
+                                  "cssClassNames": [
+                                    {
+                                      "cssClassName": "success-error-message ",
+                                      "key": "success-error-message "
+                                    }
+                                  ]
+                                },
+                                "icon": "FaFont",
+                                "group": "Form",
+                                "type": "20002",
+                                "updatedAt": "23-Aug-2021",
+                                "createdAt": "23-Aug-2021",
+                                "order": 15,
+                                "version": "1.0.0",
+                                "isLatest": true,
+                                "projectType": "web",
+                                "component": {
+                                  "content": "Label",
+                                  "type": "20002"
+                                },
+                                "events": [],
+                                "path": "0-0-1-0-0-0-15"
                               },
                               {
                                 "id": "u0g5_e3-MUwLRihXTTOGj",
@@ -2027,16 +2148,56 @@
                                 },
                                 "events": [
                                   {
-                                    "triggerId": "oRjgnx2EsxTujzcUwuv4o",
-                                    "triggerName": "Hide Error Modal",
+                                    "triggerId": "odq7VJYoLMZfdI8TBZ9HU",
+                                    "triggerName": "CONDTITIONAL_TRIGGER_FOR_ERROR_MODAL",
+                                    "serviceType": "13",
+                                    "attributes": {
+                                      "triggers": [
+                                        {
+                                          "logic": {
+                                            "==": [
+                                              {
+                                                "var": "currentScreen.form.otpresponseMessage"
+                                              },
+                                              "New Trusted Device Added, Moving in Cooling Off"
+                                            ]
+                                          },
+                                          "triggerName": "Navigate Login OTP to Login Page",
+                                          "triggerId": "cHqwUneEBkgYkEqxIy8Bk",
+                                          "services": [
+                                            {
+                                              "type": "1",
+                                              "command": {
+                                                "type": "2",
+                                                "attributes": {
+                                                  "fromWidgetId": "HYpHClysT3Q1_HuDu_O0B",
+                                                  "nextWidgetId": "V5vD3FLZfZOY9b0wYhHGW",
+                                                  "gridRadioValue": "Screen",
+                                                  "selectedObjectBindingKey": "selectedObject",
+                                                  "editableForm": false
+                                                }
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    "type": "2",
+                                    "name": "On click",
+                                    "commandType": "1"
+                                  },
+                                  {
+                                    "triggerId": "6N4XkoRhIDHU3PdmYS1jJ",
+                                    "triggerName": "Hide 400 Error Modal",
                                     "serviceType": "9",
                                     "attributes": {
                                       "content": "",
                                       "type": "",
-                                      "modalId": "BMTTblw1J-9p-CcUzHp_x"
+                                      "modalId": "0WCO5n3utBEwNsFa9M_0E"
                                     },
                                     "type": "2",
-                                    "name": "On click"
+                                    "name": "On click",
+                                    "commandType": "2"
                                   }
                                 ],
                                 "path": "0-0-1-0-1-0-0"
@@ -2163,8 +2324,8 @@
     "gitBranchName": "master",
     "_id": "Vb6LXjwz7kd74Radwk5Mq",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2246,8 +2407,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2326,8 +2487,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2373,8 +2534,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2404,29 +2565,29 @@
       "defaultImageAssetId": "CNIz67fi824LHr0ae-pOV",
       "imageAssetIdTemp": {
         "createdBy": "user",
-        "_id": "6502b215c9bf2957746c8ce3",
-        "name": "Flat_cross_icon.svg.png",
-        "type": "png",
+        "_id": "6708bfde66989276b05dd4b0",
+        "name": "icons8cross.svg",
+        "type": "svg",
         "projectId": "640ee2a26ead56231ce8350b",
-        "id": "2qQy6sNEtgCXhEjHd65K1",
+        "id": "j50oHoGscb4R1VucT2H8o",
         "gitBranchName": "master",
         "folderType": "web",
         "platform": "web",
-        "url": "web/Flat_cross_icon.svg.png",
-        "canvasUrl": "web/Flat_cross_icon.svg.png",
-        "createdAt": "2023-09-14T07:11:17.598Z",
-        "updatedAt": "2023-09-14T07:11:17.598Z",
+        "url": "640ee2a26ead56231ce8350b/web/icons8cross.svg",
+        "canvasUrl": "640ee2a26ead56231ce8350b/web/icons8cross.svg",
+        "createdAt": "2024-10-11T06:04:14.579Z",
+        "updatedAt": "2024-10-11T06:04:14.579Z",
         "__v": 0,
-        "uri": "web/Flat_cross_icon.svg.png"
+        "uri": "640ee2a26ead56231ce8350b/web/icons8cross.svg"
       },
-      "imageAssetId": "f8S_3kYWM6Ph2ms2CeDxN",
+      "imageAssetId": "j50oHoGscb4R1VucT2H8o",
       "stateName": null,
       "storeType": null,
       "useFullLink": null
     },
     "group": "Form",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 0,
     "type": "20012",
     "version": "1.0.0",
@@ -2488,8 +2649,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2517,8 +2678,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -2612,8 +2773,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2622,6 +2783,18 @@
     "type": "10001",
     "attributes": {
       "gridProps": [
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "YJJpqMV27N3NsCwzmL0cP",
+          "componentType": "20002",
+          "order": 1
+        },
         {
           "layoutProperties": {
             "xl": 12,
@@ -2787,6 +2960,18 @@
             "xs": 12
           },
           "componentId": "ek_mc2P-IWB3m7r2jPN1A",
+          "componentType": "20002",
+          "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "ztUcbkPb6Pr1L6jIP3DdR",
           "componentType": "20002",
           "order": 1
         },
@@ -3010,8 +3195,57 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "YJJpqMV27N3NsCwzmL0cP",
+    "status": "ACTIVE",
+    "name": "Label",
+    "attributes": {
+      "variant": "body1",
+      "name": "Label",
+      "mandatory": false,
+      "layoutProperties": {
+        "label": { "//": "Use this class to style label component." },
+        "prefix": { "//": "Use this class to style prefix." },
+        "postfix": { "//": "Use this class to style postfix." },
+        "mainContainer": "label",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "label": "Please Check and Agree Terms and Conditions",
+      "hideCondition": {
+        "logic": { "!=": [{ "var": "currentScreen.form.terms" }, "agreed"] }
+      },
+      "cssClassNames": [
+        {
+          "cssClassName": "success-error-message ",
+          "key": "success-error-message "
+        }
+      ]
+    },
+    "icon": "FaFont",
+    "group": "Form",
+    "type": "20002",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Label", "type": "20002" },
+    "events": [],
+    "path": "0-0-1-0-0-0-0",
+    "screenId": "Vb6LXjwz7kd74Radwk5Mq",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3049,8 +3283,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3094,8 +3328,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3140,8 +3374,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3186,8 +3420,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3232,8 +3466,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3281,8 +3515,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3327,8 +3561,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3373,8 +3607,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3424,8 +3658,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3473,8 +3707,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3519,8 +3753,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3568,8 +3802,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3614,8 +3848,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3650,7 +3884,12 @@
       "label": "stopChequeResponseSuccess",
       "searchInState": true,
       "storeType": 1,
-      "cssClassNames": [{ "cssClassName": "success-error-message " }],
+      "cssClassNames": [
+        {
+          "cssClassName": "success-error-message ",
+          "key": "success-error-message "
+        }
+      ],
       "hideCondition": {
         "logic": {
           "==": [
@@ -3663,8 +3902,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3672,6 +3911,59 @@
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-1-0-0-0-13",
+    "screenId": "Vb6LXjwz7kd74Radwk5Mq",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood123",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "ztUcbkPb6Pr1L6jIP3DdR",
+    "status": "ACTIVE",
+    "name": "Label",
+    "attributes": {
+      "variant": "body1",
+      "name": "Label",
+      "mandatory": false,
+      "layoutProperties": {
+        "label": { "//": "Use this class to style label component." },
+        "prefix": { "//": "Use this class to style prefix." },
+        "postfix": { "//": "Use this class to style postfix." },
+        "mainContainer": "label",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "label": "otpresponseMessage",
+      "searchInState": true,
+      "storeType": 1,
+      "hideCondition": {
+        "logic": {
+          "==": [{ "var": "currentScreen.form.otpresponseMessage" }, null]
+        }
+      },
+      "cssClassNames": [
+        {
+          "cssClassName": "success-error-message ",
+          "key": "success-error-message "
+        }
+      ]
+    },
+    "icon": "FaFont",
+    "group": "Form",
+    "type": "20002",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Label", "type": "20002" },
+    "events": [],
+    "path": "0-0-1-0-0-0-15",
     "screenId": "Vb6LXjwz7kd74Radwk5Mq",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -3709,8 +4001,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3755,8 +4047,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3806,8 +4098,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3852,8 +4144,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3898,8 +4190,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3944,8 +4236,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3990,8 +4282,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4036,8 +4328,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4082,8 +4374,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4128,8 +4420,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4174,8 +4466,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4225,8 +4517,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4274,8 +4566,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4323,8 +4615,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4372,8 +4664,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4415,8 +4707,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4480,8 +4772,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood123",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4512,8 +4804,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/11/2024",
+    "createdAt": "10/11/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -4521,8 +4813,15 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "oRjgnx2EsxTujzcUwuv4o",
-        "triggerName": "Hide Error Modal",
+        "triggerId": "odq7VJYoLMZfdI8TBZ9HU",
+        "triggerName": "CONDTITIONAL_TRIGGER_FOR_ERROR_MODAL",
+        "name": "On click",
+        "type": "2",
+        "serviceType": "13"
+      },
+      {
+        "triggerId": "6N4XkoRhIDHU3PdmYS1jJ",
+        "triggerName": "Hide 400 Error Modal",
         "name": "On click",
         "type": "2",
         "serviceType": "9"

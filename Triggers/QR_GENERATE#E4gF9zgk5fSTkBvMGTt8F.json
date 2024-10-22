@@ -1,0 +1,62 @@
+{
+  "id": "_Bf5godYiOxdbdfJYBZwo",
+  "_id": "E4gF9zgk5fSTkBvMGTt8F",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "QR_GENERATE",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "8",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "loaderWidgetIds": [906070],
+          "messageWidgetIds": [906070],
+          "responseStateKey": "generateQR",
+          "url": "/generateP2PQR",
+          "checksum": true,
+          "encryption": true,
+          "isDeviceDetails": false,
+          "loginTrigger": false,
+          "formData": false,
+          "logoutTrigger": false,
+          "headers": {
+            "Content-Type": "application/json",
+            "channel_key": "001"
+          },
+          "requestBody": [
+            { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "expiryDate",
+              "value": "expiryDate"
+            },
+            {
+              "type": 4,
+              "name": "Static",
+              "key": "formatIndicator",
+              "value": "P2P"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "iban",
+              "value": "selectedAccount.iban"
+            },
+            { "type": 4, "name": "Static", "key": "size", "value": "407" }
+          ],
+          "baseURL": "64f9a08b683922479c062070",
+          "storeType": 2
+        },
+        "responseHandler": []
+      }
+    }
+  ],
+  "csrf": "0.9n1ru82jbe4K94r4uN4lSBv7k4d5B4w3",
+  "updatedAt": "10/22/2024",
+  "createdAt": "10/22/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
+}

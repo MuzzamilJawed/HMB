@@ -1,4 +1,5 @@
 {
+  "_id": "a0Y4MvvEk6iP1qv2UvG2O",
   "id": "pw2xXvt0DTDJQltK7bEgz",
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
@@ -34,16 +35,62 @@
                   }
                 }
               ]
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.selectedMenu.title" }, "FAQs"]
+              },
+              "triggerName": "Navigate Login to FAQ SCREEN",
+              "triggerId": "C9bM4NABveTKev98k1nj-",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "kn-g6dLXYigHhX9bj8Z88",
+                      "nextWidgetId": "3m-NNdJYQaA02bC_qtFPl",
+                      "gridRadioValue": "Screen",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [
+                  { "var": "currentScreen.selectedMenu.title" },
+                  "RAAST FAQ"
+                ]
+              },
+              "triggerName": "LOGIN_NAVIGATE_TO_RAAST",
+              "triggerId": "VWAQb_BnFah69-2fiSLGq",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "2",
+                    "attributes": {
+                      "fromWidgetId": "V5vD3FLZfZOY9b0wYhHGW",
+                      "nextWidgetId": "7j_iK192KTLp04IIoXuW_",
+                      "gridRadioValue": "Screen",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
             }
           ]
         }
       }
     }
   ],
-  "csrf": "0.8sgpkrtz4i4ukSlS30CL_oG5Da3IPZjM",
-  "_id": "a0Y4MvvEk6iP1qv2UvG2O",
-  "updatedAt": "8/8/2024",
-  "createdAt": "8/8/2024",
+  "csrf": "0.qdpg12mjek_mZQ2Mg23GqbDbwKjq7J9",
+  "updatedAt": "9/25/2024",
+  "createdAt": "9/25/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

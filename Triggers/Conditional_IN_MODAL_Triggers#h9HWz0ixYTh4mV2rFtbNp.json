@@ -1,0 +1,67 @@
+{
+  "_id": "h9HWz0ixYTh4mV2rFtbNp",
+  "id": "fjDEG8R5wwiXxnuHzM0LW",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "Conditional_IN_MODAL_Triggers",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "13",
+      "command": {
+        "type": "1",
+        "attributes": {
+          "triggers": [
+            {
+              "logic": {
+                "!=": [{ "var": "currentScreen.updateLimitResponse" }, null]
+              },
+              "triggerName": "Refresh page",
+              "triggerId": "C9VAY5AImRfafaf65",
+              "services": [
+                {
+                  "_id": "61dd1cc511bed557b4cb0c89",
+                  "type": "14",
+                  "command": {
+                    "responseHandler": [],
+                    "returns": [],
+                    "_id": "61dd1cc511bed557b4cb0c99",
+                    "attributes": {},
+                    "type": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "logic": {
+                "==": [{ "var": "currentScreen.updateLimitResponse" }, null]
+              },
+              "triggerName": "NAVIGATE_TO_DASHBOARD",
+              "triggerId": "ZTeihyi0Rxpirm7jtuirt",
+              "services": [
+                {
+                  "type": "1",
+                  "command": {
+                    "type": "3",
+                    "attributes": {
+                      "nextWidgetId": "bEhlV4JOC_0uSKBe2Wipq",
+                      "gridRadioValue": "",
+                      "selectedObjectBindingKey": "selectedObject",
+                      "editableForm": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "csrf": "0.rd1a6tckxiCfbYFNX9iCpb9LmZIVSaD",
+  "updatedAt": "9/25/2024",
+  "createdAt": "9/25/2024",
+  "createdBy": "masood123",
+  "updatedBy": "masood123"
+}

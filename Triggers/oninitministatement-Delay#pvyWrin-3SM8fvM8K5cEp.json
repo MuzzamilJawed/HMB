@@ -1,0 +1,86 @@
+{
+  "id": "8q4v0-S6eIE5K52AqL8Ky",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "name": "oninitministatement Delay",
+  "old_name": "",
+  "status": "ACTIVE",
+  "services": [
+    {
+      "type": "2",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "delay": "3000",
+          "storeType": "",
+          "searchInState": false,
+          "triggers": [
+            {
+              "id": "rHUDlStDLV0REjLF7Knzr",
+              "_id": "H_j3ylCfHLFRyCiKJvqeQ",
+              "projectId": "640ee2a26ead56231ce8350b",
+              "gitBranchName": "master",
+              "name": "oninitministatement",
+              "old_name": "oninitministatement",
+              "status": "ACTIVE",
+              "services": [
+                {
+                  "type": "8",
+                  "command": {
+                    "type": "1",
+                    "attributes": {
+                      "loaderWidgetIds": [906070],
+                      "messageWidgetIds": [906070],
+                      "responseStateKey": "accountMiniStatement",
+                      "responseReturnValue": "content.transactions",
+                      "url": "/miniStatement",
+                      "checksum": true,
+                      "encryption": true,
+                      "isDeviceDetails": false,
+                      "loginTrigger": false,
+                      "formData": false,
+                      "logoutTrigger": false,
+                      "headers": {
+                        "Content-Type": "application/json",
+                        "channel_key": "001"
+                      },
+                      "requestBody": [
+                        {
+                          "type": 4,
+                          "name": "Static",
+                          "key": "branchCode",
+                          "value": "null"
+                        },
+                        {
+                          "type": 1,
+                          "name": "Form",
+                          "key": "accountNumber",
+                          "value": "getData.accountId"
+                        }
+                      ],
+                      "baseURL": "64f9a08b683922479c062070",
+                      "storeType": 2
+                    },
+                    "responseHandler": []
+                  }
+                }
+              ],
+              "csrf": "0.e7szgsdmhhnXb717-o7iIIYLWuIVnOG5",
+              "updatedAt": "9/19/2024",
+              "createdAt": "9/19/2024",
+              "createdBy": "masood",
+              "updatedBy": "masood"
+            }
+          ],
+          "triggerIds": ["rHUDlStDLV0REjLF7Knzr"]
+        }
+      }
+    }
+  ],
+  "csrf": "0.e7szgsdmhhnXb717-o7iIIYLWuIVnOG5",
+  "_id": "pvyWrin-3SM8fvM8K5cEp",
+  "updatedAt": "9/19/2024",
+  "createdAt": "9/19/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

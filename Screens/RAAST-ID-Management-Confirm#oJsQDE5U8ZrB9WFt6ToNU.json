@@ -116,7 +116,7 @@
                         "gridProps": [
                           {
                             "type": "column",
-                            "id": "J2C59W8miyy-orqBiPK60",
+                            "id": "BYLxJyNue8YqY750qGxtM",
                             "gridProps": [
                               {
                                 "id": "BHDmPIyqGJs2XiDUllB5L",
@@ -168,8 +168,7 @@
                               "md": 12,
                               "sm": 12,
                               "xs": 12
-                            },
-                            "path": "0-0-0-0-0-0"
+                            }
                           }
                         ],
                         "path": "0-0-0-0-0",
@@ -196,7 +195,8 @@
                               "cssClassName": "account_heading_padding ",
                               "key": "account_heading_padding "
                             }
-                          ]
+                          ],
+                          "hideComponent": true
                         },
                         "component": {
                           "type": "10001",
@@ -1553,7 +1553,7 @@
                                                             "sm": 12,
                                                             "xs": 12
                                                           },
-                                                          "label": "Enter SMS OTP",
+                                                          "label": "Enter  OTP",
                                                           "cssClassNames": [
                                                             {
                                                               "cssClassName": "weneedToverifyCSS ",
@@ -2102,12 +2102,28 @@
                                         }
                                       },
                                       {
+                                        "id": "g_UYBYjqHVTO4W5YxIQOe",
+                                        "name": "OTP_VALIDATE_ERROR_MODAL",
+                                        "type": "20031",
+                                        "attributes": {
+                                          "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                                          "layoutProperties": {
+                                            "xl": 12,
+                                            "lg": 12,
+                                            "md": 12,
+                                            "sm": 12,
+                                            "xs": 12
+                                          }
+                                        },
+                                        "component": { "type": "20031" }
+                                      },
+                                      {
                                         "type": "10001",
                                         "id": "AUVvOB57hW9tkBOrbc9az",
                                         "gridProps": [
                                           {
                                             "type": "column",
-                                            "id": "2-k7h3Vtb_LWAlBWiVDXy",
+                                            "id": "_R2CBaX-uCCmV8_vaxdxQ",
                                             "gridProps": [
                                               {
                                                 "type": "10001",
@@ -2315,19 +2331,259 @@
                                                         },
                                                         "events": [
                                                           {
-                                                            "triggerId": "bHvxGTNZftJyRvlSPeWfC",
-                                                            "triggerName": "Rasst ID Confirm Modal Trigger",
-                                                            "serviceType": "9",
+                                                            "triggerId": "kZ0wNC7OywM9uJsm8BNUs",
+                                                            "triggerName": "RAAST_ID_OTP_VALIDATE",
+                                                            "serviceType": "16",
                                                             "attributes": {
-                                                              "widgetId": "IDOtyCqks1FtYFQZ3_GTK",
-                                                              "content": "",
-                                                              "type": "",
-                                                              "modalId": "P4qLETq1eG1u7LkZml7LP",
-                                                              "toastContentType": "custom"
+                                                              "validationList": [
+                                                                {
+                                                                  "bindingKey": "smsPin",
+                                                                  "storeType": 1,
+                                                                  "messageBindingKey": "OTP is Required",
+                                                                  "isRequired": true,
+                                                                  "requiredMessage": "OTP is Required",
+                                                                  "regEx": "^\\d{5}$",
+                                                                  "regExMessage": "OTP is Required",
+                                                                  "JSONLogic": [
+                                                                    {
+                                                                      "logic": true,
+                                                                      "logicMessage": "OTP REQUIRED"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ],
+                                                              "failureTrigger": {
+                                                                "id": "qfGMpdqhqEcmSwmBnqk5J",
+                                                                "gitBranchName": "master",
+                                                                "name": "OTP_VALIDATE_ERROR_MODAL",
+                                                                "projectId": "640ee2a26ead56231ce8350b",
+                                                                "services": [
+                                                                  {
+                                                                    "type": "9",
+                                                                    "command": {
+                                                                      "type": "1",
+                                                                      "attributes": {
+                                                                        "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                                                                        "content": "",
+                                                                        "type": "",
+                                                                        "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                                                                        "toastContentType": "custom"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+                                                                "_id": "sMStfUAzTSxX0YBNE9xRJ",
+                                                                "updatedAt": "10/2/2024",
+                                                                "createdAt": "10/2/2024",
+                                                                "createdBy": "masood",
+                                                                "updatedBy": "masood"
+                                                              },
+                                                              "addFailureTrigger": true,
+                                                              "successTrigger": {
+                                                                "_id": "pu0AtqpROA9zQpukkmbVY",
+                                                                "id": "5SIsp28c6LZqsVtITjNRT",
+                                                                "projectId": "640ee2a26ead56231ce8350b",
+                                                                "gitBranchName": "master",
+                                                                "name": "RAAST CHAIN TRIGGER",
+                                                                "old_name": "RAAST CHAIN TRIGGER",
+                                                                "status": "ACTIVE",
+                                                                "services": [
+                                                                  {
+                                                                    "type": "2",
+                                                                    "command": {
+                                                                      "type": "1",
+                                                                      "attributes": {
+                                                                        "delay": "",
+                                                                        "triggers": [
+                                                                          {
+                                                                            "id": "3WJVpQqglNb4yHnlELcM-",
+                                                                            "name": " Otpinfo with email and SMSpin",
+                                                                            "projectId": "640ee2a26ead56231ce8350b",
+                                                                            "gitBranchName": "master",
+                                                                            "services": [
+                                                                              {
+                                                                                "type": "11",
+                                                                                "command": {
+                                                                                  "type": "6",
+                                                                                  "attributes": {
+                                                                                    "storeType": "",
+                                                                                    "selectedObjectBindingKey": "selectedObject",
+                                                                                    "dataType": "",
+                                                                                    "destinationBindingKey": "otpInfo",
+                                                                                    "sourceBindingKey": "form",
+                                                                                    "sourceStoreType": 2,
+                                                                                    "destinationStoreType": 2,
+                                                                                    "filterList": [
+                                                                                      {
+                                                                                        "key": "smsPin",
+                                                                                        "changeValueConditonally": true,
+                                                                                        "logic": {
+                                                                                          "var": "currentScreen.form.smsPin"
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "changeValueConditonally": true,
+                                                                                        "logic": {
+                                                                                          "var": "currentScreen.form.emailPin"
+                                                                                        },
+                                                                                        "key": "emailPin"
+                                                                                      },
+                                                                                      {
+                                                                                        "changeValueConditonally": true,
+                                                                                        "key": "splitOtp",
+                                                                                        "logic": {
+                                                                                          "if": [
+                                                                                            true,
+                                                                                            false,
+                                                                                            false
+                                                                                          ]
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "changeValueConditonally": true,
+                                                                                        "logic": {
+                                                                                          "if": [
+                                                                                            true,
+                                                                                            "OTP",
+                                                                                            "OTP"
+                                                                                          ]
+                                                                                        },
+                                                                                        "key": "validationType"
+                                                                                      }
+                                                                                    ],
+                                                                                    "targettedType": "object"
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "csrf": "0.k4la6uamrnVP7ZuujJhXe-UtgVB7yZX",
+                                                                            "_id": "j4UDdGfNoOd5UzY-973cX",
+                                                                            "updatedAt": "9/26/2023",
+                                                                            "createdAt": "9/26/2023",
+                                                                            "createdBy": "masood",
+                                                                            "updatedBy": "masood"
+                                                                          },
+                                                                          {
+                                                                            "id": "vvrChI8_P72aQzTeNg4cW",
+                                                                            "projectId": "640ee2a26ead56231ce8350b",
+                                                                            "gitBranchName": "master",
+                                                                            "name": "RAAST TRANSFER",
+                                                                            "status": "ACTIVE",
+                                                                            "services": [
+                                                                              {
+                                                                                "type": "8",
+                                                                                "command": {
+                                                                                  "type": "1",
+                                                                                  "attributes": {
+                                                                                    "loaderWidgetIds": [
+                                                                                      906070
+                                                                                    ],
+                                                                                    "messageWidgetIds": [
+                                                                                      906070
+                                                                                    ],
+                                                                                    "responseStateKey": "transferResponse",
+                                                                                    "url": "/raast/transfer",
+                                                                                    "checksum": true,
+                                                                                    "encryption": true,
+                                                                                    "isDeviceDetails": false,
+                                                                                    "loginTrigger": false,
+                                                                                    "formData": false,
+                                                                                    "logoutTrigger": false,
+                                                                                    "headers": {
+                                                                                      "Content-Type": "application/json",
+                                                                                      "channel_key": "001"
+                                                                                    },
+                                                                                    "requestBody": [
+                                                                                      {
+                                                                                        "type": 1,
+                                                                                        "name": "Form",
+                                                                                        "key": "rda",
+                                                                                        "value": "fromAccount.rda"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 1,
+                                                                                        "name": "Form",
+                                                                                        "key": "amount",
+                                                                                        "value": "amount"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 1,
+                                                                                        "name": "Form",
+                                                                                        "key": "toAccount",
+                                                                                        "value": "toAccount"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 2,
+                                                                                        "name": "Current screen",
+                                                                                        "key": "requestNumber",
+                                                                                        "value": "responseOfRaastTitleSearch.requestNumber"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 4,
+                                                                                        "name": "Static",
+                                                                                        "key": "raast",
+                                                                                        "value": "false"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 4,
+                                                                                        "name": "Static",
+                                                                                        "key": "beneficiary",
+                                                                                        "value": "false"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 4,
+                                                                                        "name": "Static",
+                                                                                        "key": "isBeneficiary",
+                                                                                        "value": "false"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 4,
+                                                                                        "name": "Static",
+                                                                                        "key": "isRaast",
+                                                                                        "value": "false"
+                                                                                      },
+                                                                                      {
+                                                                                        "type": 2,
+                                                                                        "name": "Current screen",
+                                                                                        "key": "otpInfo",
+                                                                                        "value": "otpInfo"
+                                                                                      }
+                                                                                    ],
+                                                                                    "baseURL": "64f9a08b683922479c062070",
+                                                                                    "storeType": 2
+                                                                                  },
+                                                                                  "responseHandler": []
+                                                                                }
+                                                                              }
+                                                                            ],
+                                                                            "csrf": "0.ou6ihurso3-V39ITaq5D6lbw44omJDI",
+                                                                            "_id": "gGrzLxu1JOu6P3T4nk9eW",
+                                                                            "updatedAt": "9/27/2023",
+                                                                            "createdAt": "9/27/2023",
+                                                                            "createdBy": "masood",
+                                                                            "updatedBy": "masood"
+                                                                          }
+                                                                        ],
+                                                                        "triggerIds": [
+                                                                          "3WJVpQqglNb4yHnlELcM-",
+                                                                          "vvrChI8_P72aQzTeNg4cW"
+                                                                        ]
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "csrf": "0.h6ko4yekh5Kl55GZnfiLWEryWg4uSVX",
+                                                                "updatedAt": "10/24/2023",
+                                                                "createdAt": "10/24/2023",
+                                                                "createdBy": "muhammad.asad",
+                                                                "updatedBy": "muhammad.asad"
+                                                              },
+                                                              "encryptionType": "encryption"
                                                             },
                                                             "type": "4",
                                                             "name": "On Submit",
-                                                            "commandType": "1"
+                                                            "commandType": "2"
                                                           }
                                                         ],
                                                         "path": "0-0-0-0-1-0-0-0-3-0-1-0-1"
@@ -2389,7 +2645,7 @@
                                             }
                                           }
                                         ],
-                                        "path": "0-0-0-0-1-0-0-0-3",
+                                        "path": "0-0-0-0-1-0-0-0-4",
                                         "events": [],
                                         "attributes": {
                                           "gridProps": [],
@@ -2631,8 +2887,8 @@
     "gitBranchName": "master",
     "_id": "oJsQDE5U8ZrB9WFt6ToNU",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2695,8 +2951,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2774,8 +3030,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2817,7 +3073,8 @@
           "cssClassName": "account_heading_padding ",
           "key": "account_heading_padding "
         }
-      ]
+      ],
+      "hideComponent": true
     },
     "layout": null,
     "events": [],
@@ -2827,8 +3084,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2856,8 +3113,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -2925,8 +3182,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -2986,6 +3243,18 @@
           }
         },
         {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "g_UYBYjqHVTO4W5YxIQOe",
+          "componentType": "20031",
+          "order": 1
+        },
+        {
           "componentId": "AUVvOB57hW9tkBOrbc9az",
           "componentType": "10001",
           "id": "AUVvOB57hW9tkBOrbc9az",
@@ -3035,8 +3304,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3090,8 +3359,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3163,8 +3432,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3216,8 +3485,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3248,8 +3517,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3321,8 +3590,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3419,8 +3688,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3481,8 +3750,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3531,8 +3800,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3558,8 +3827,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3620,8 +3889,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3654,8 +3923,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3728,8 +3997,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3778,8 +4047,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3805,8 +4074,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3867,8 +4136,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -3901,8 +4170,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -3974,8 +4243,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4024,8 +4293,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4051,8 +4320,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4113,8 +4382,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4147,8 +4416,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4179,8 +4448,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4293,8 +4562,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4342,8 +4611,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4363,7 +4632,7 @@
         "sm": 12,
         "xs": 12
       },
-      "label": "Enter SMS OTP",
+      "label": "Enter  OTP",
       "cssClassNames": [
         { "cssClassName": "weneedToverifyCSS ", "key": "weneedToverifyCSS " }
       ]
@@ -4371,8 +4640,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4434,8 +4703,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4445,8 +4714,8 @@
     "name": "OTP",
     "icon": "FaLock",
     "group": "Security",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "type": "20052",
     "attributes": {
       "smsOtpLabel": "Sms Otp",
@@ -4539,8 +4808,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4574,8 +4843,8 @@
     "icon": "AiOutlineLoading3Quarters",
     "group": "Advanced",
     "type": "20060",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4636,8 +4905,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4672,8 +4941,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -4694,6 +4963,25 @@
     "projectId": "640ee2a26ead56231ce8350b",
     "gitBranchName": "master",
     "createdBy": "masood",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "g_UYBYjqHVTO4W5YxIQOe",
+    "name": "OTP_VALIDATE_ERROR_MODAL",
+    "type": "20031",
+    "attributes": {
+      "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+      "layoutProperties": { "xl": 12, "lg": 12, "md": 12, "sm": 12, "xs": 12 }
+    },
+    "component": { "type": "20031" },
+    "screenId": "oJsQDE5U8ZrB9WFt6ToNU",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "version": "1.0.0",
+    "gitBranchName": "master",
+    "createdBy": "masood",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4776,8 +5064,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4825,8 +5113,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4862,8 +5150,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -4943,8 +5231,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4963,8 +5251,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4999,8 +5287,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "9/13/2024",
-    "createdAt": "9/13/2024",
+    "updatedAt": "10/17/2024",
+    "createdAt": "10/17/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -5008,11 +5296,11 @@
     "component": { "content": "Button", "type": "20006" },
     "events": [
       {
-        "triggerId": "bHvxGTNZftJyRvlSPeWfC",
-        "triggerName": "Rasst ID Confirm Modal Trigger",
+        "triggerId": "kZ0wNC7OywM9uJsm8BNUs",
+        "triggerName": "RAAST_ID_OTP_VALIDATE",
         "name": "On Submit",
         "type": "4",
-        "serviceType": "9"
+        "serviceType": "16"
       }
     ],
     "path": "0-0-0-0-1-0-0-0-3-0-1-0-1",

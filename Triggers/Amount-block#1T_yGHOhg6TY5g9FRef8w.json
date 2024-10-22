@@ -1,0 +1,76 @@
+{
+  "id": "fxGZ4MHFQYl6WhE_CDxc2",
+  "_id": "1T_yGHOhg6TY5g9FRef8w",
+  "name": "Amount block",
+  "old_name": "Amount block",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "",
+          "destinationBindingKey": "amount",
+          "sourceBindingKey": "amount",
+          "sourceStoreType": 1,
+          "destinationStoreType": 2,
+          "filterList": [
+            {
+              "key": "currency",
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "PKR", "PKR"] }
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, "", ""] },
+              "key": "localeFormattedAmount"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, null, null] },
+              "key": "realm"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, true, true] },
+              "key": "loaded"
+            },
+            {
+              "changeValueConditonally": true,
+              "logic": { "if": [true, false, false] },
+              "key": "managed"
+            },
+            {
+              "changeValueConditonally": true,
+              "key": "valid",
+              "logic": { "if": [true, true, true] }
+            },
+            {
+              "key": "amount",
+              "changeValueConditonally": true,
+              "logic": {
+                "if": [
+                  true,
+                  { "var": "currentScreen.form.amount" },
+                  { "var": "currentScreen.form.amount" }
+                ]
+              }
+            }
+          ],
+          "targettedType": "object",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.icvf0nnivv5ZsDIhgkRHLbdeoxG7l8e",
+  "updatedAt": "10/9/2024",
+  "createdAt": "10/9/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
