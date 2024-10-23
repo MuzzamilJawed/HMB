@@ -1,0 +1,41 @@
+{
+  "id": "A_hsly4M6GyLvLtkv5Nyq",
+  "_id": "7Xe2yMlsFH2ZX40NiNgcD",
+  "name": "transferType Mapping",
+  "old_name": "transferType Mapping",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "gitBranchName": "master",
+  "services": [
+    {
+      "type": "11",
+      "command": {
+        "type": "6",
+        "attributes": {
+          "requestBody": [],
+          "storeType": "",
+          "selectedObjectBindingKey": "selectedObject",
+          "dataType": "value",
+          "destinationBindingKey": "transferType",
+          "sourceBindingKey": "qrCode.content",
+          "sourceStoreType": 2,
+          "destinationStoreType": 2,
+          "logic": {
+            "if": [
+              { "==": [{ "var": "qrCode.content.bankName" }, "HABIBMETRO"] },
+              "L",
+              "D"
+            ]
+          },
+          "changeValueConditonally": true,
+          "targettedType": "value",
+          "gridFormRowIdBindingKey": "editFormRowId"
+        }
+      }
+    }
+  ],
+  "csrf": "0.4hjw5idessdlsMoWSRTrMK5Rxcz6zwYD",
+  "updatedAt": "10/23/2024",
+  "createdAt": "10/23/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}

@@ -4,7 +4,7 @@
   "projectId": "640ee2a26ead56231ce8350b",
   "gitBranchName": "master",
   "name": "getAccountDetails_VIA_QR",
-  "old_name": "getAccountDetails",
+  "old_name": "getAccountDetails_VIA_QR",
   "status": "ACTIVE",
   "services": [
     {
@@ -31,22 +31,28 @@
           "requestBody": [
             { "type": 1, "name": "Form", "key": "amount", "value": "amount" },
             {
-              "type": 1,
-              "name": "Form",
+              "type": 2,
+              "name": "Current screen",
               "key": "bankName",
-              "value": "bankName.bankName"
+              "value": "qrCode.content.bankName"
             },
             {
-              "type": 1,
-              "name": "Form",
+              "type": 2,
+              "name": "Current screen",
               "key": "bankIMD",
-              "value": "bankName.bankIMD"
+              "value": "qrCode.content.bankIMD"
             },
             {
-              "type": 1,
-              "name": "Form",
+              "type": 2,
+              "name": "Current screen",
+              "key": "toAccount",
+              "value": "qrCode.content.iban"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
               "key": "accountNumber",
-              "value": "accountNumber"
+              "value": "qrCode.content.iban"
             },
             {
               "type": 1,
@@ -59,6 +65,30 @@
               "name": "Form",
               "key": "rda",
               "value": "fromAccount.rda"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "accNo",
+              "value": "fromAccount.accountNumber"
+            },
+            {
+              "type": 2,
+              "name": "Current screen",
+              "key": "swiftCode",
+              "value": "qrCode.content.bankName"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "fromAccount",
+              "value": "fromAccount.accountId"
+            },
+            {
+              "type": 1,
+              "name": "Form",
+              "key": "purposeDetail",
+              "value": "purpose.name"
             }
           ],
           "baseURL": "64f9a08b683922479c062070",
@@ -81,9 +111,9 @@
       }
     }
   ],
-  "csrf": "0.hihawrgshqpd9Ws5PUYcTj7ZwfFyETUd",
-  "updatedAt": "10/22/2024",
-  "createdAt": "10/22/2024",
+  "csrf": "0.mpj6b199dt8zoieEM4rDpmkqokYSN4sK",
+  "updatedAt": "10/23/2024",
+  "createdAt": "10/23/2024",
   "createdBy": "masood",
   "updatedBy": "masood"
 }

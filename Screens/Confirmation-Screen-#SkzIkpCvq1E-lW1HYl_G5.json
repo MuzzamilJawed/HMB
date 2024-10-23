@@ -113,11 +113,11 @@
         "projectType": "web",
         "allowedContainers": ["10001", "20030", "noLayout", "20010", "widget"],
         "component": { "content": "Grid layout", "type": "10001" },
-        "path": 0,
+        "path": "0",
         "gridProps": [
           {
             "type": "column",
-            "id": "ovvebDnEUIDxd48WWCJgs",
+            "id": "9zdZAsQINjZp5nMmwCc7E",
             "gridProps": [
               {
                 "type": "10001",
@@ -2412,7 +2412,17 @@
                                                                                             }
                                                                                           ],
                                                                                           "searchInState": true,
-                                                                                          "storeType": 1
+                                                                                          "storeType": 1,
+                                                                                          "hideCondition": {
+                                                                                            "logic": {
+                                                                                              "!=": [
+                                                                                                {
+                                                                                                  "var": "currentScreen.qrCode"
+                                                                                                },
+                                                                                                null
+                                                                                              ]
+                                                                                            }
+                                                                                          }
                                                                                         },
                                                                                         "icon": "FaFont",
                                                                                         "group": "Form",
@@ -2429,6 +2439,67 @@
                                                                                         },
                                                                                         "events": [],
                                                                                         "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-1-0-2-1-0-0-0"
+                                                                                      },
+                                                                                      {
+                                                                                        "id": "eYI-Oq-ZFqyL2TU6Awgi5",
+                                                                                        "status": "ACTIVE",
+                                                                                        "name": "Label",
+                                                                                        "attributes": {
+                                                                                          "variant": "body1",
+                                                                                          "name": "Label",
+                                                                                          "mandatory": false,
+                                                                                          "layoutProperties": {
+                                                                                            "label": {
+                                                                                              "//": "Use this class to style label component."
+                                                                                            },
+                                                                                            "prefix": {
+                                                                                              "//": "Use this class to style prefix."
+                                                                                            },
+                                                                                            "postfix": {
+                                                                                              "//": "Use this class to style postfix."
+                                                                                            },
+                                                                                            "mainContainer": "label",
+                                                                                            "xl": 12,
+                                                                                            "lg": 12,
+                                                                                            "md": 12,
+                                                                                            "sm": 12,
+                                                                                            "xs": 12
+                                                                                          },
+                                                                                          "label": "qrCode.content.bankName",
+                                                                                          "hideCondition": {
+                                                                                            "logic": {
+                                                                                              "==": [
+                                                                                                {
+                                                                                                  "var": "currentScreen.qrCode"
+                                                                                                },
+                                                                                                null
+                                                                                              ]
+                                                                                            }
+                                                                                          },
+                                                                                          "searchInState": true,
+                                                                                          "storeType": 2,
+                                                                                          "cssClassNames": [
+                                                                                            {
+                                                                                              "cssClassName": "Label_Type_Detail_Css ",
+                                                                                              "key": "Label_Type_Detail_Css "
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        "icon": "FaFont",
+                                                                                        "group": "Form",
+                                                                                        "type": "20002",
+                                                                                        "updatedAt": "23-Aug-2021",
+                                                                                        "createdAt": "23-Aug-2021",
+                                                                                        "order": 15,
+                                                                                        "version": "1.0.0",
+                                                                                        "isLatest": true,
+                                                                                        "projectType": "web",
+                                                                                        "component": {
+                                                                                          "content": "Label",
+                                                                                          "type": "20002"
+                                                                                        },
+                                                                                        "events": [],
+                                                                                        "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-1-0-2-1-0-0-1"
                                                                                       }
                                                                                     ],
                                                                                     "layoutProperties": {
@@ -4280,7 +4351,7 @@
                                                             "commandType": "2"
                                                           }
                                                         ],
-                                                        "path": "0-0-0-0-1-0-0-0-4-0-1-0-1"
+                                                        "path": "0-0-0-0-1-0-0-0-5-0-1-0-1"
                                                       }
                                                     ],
                                                     "layoutProperties": {
@@ -4555,8 +4626,7 @@
               "md": 12,
               "sm": 12,
               "xs": 12
-            },
-            "path": "0-0"
+            }
           }
         ],
         "layoutProperties": { "lg": 12, "md": 12, "sm": 12, "xs": 12 },
@@ -4580,8 +4650,8 @@
     "gitBranchName": "master",
     "_id": "SkzIkpCvq1E-lW1HYl_G5",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4650,8 +4720,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4729,8 +4799,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4783,8 +4853,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -4812,8 +4882,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -4881,8 +4951,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5024,8 +5094,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5091,8 +5161,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5148,8 +5218,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5221,8 +5291,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5271,8 +5341,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5298,8 +5368,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5408,8 +5478,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5470,8 +5540,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5520,8 +5590,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5547,8 +5617,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5609,8 +5679,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5643,8 +5713,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5717,8 +5787,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5767,8 +5837,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5794,8 +5864,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5856,8 +5926,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -5890,8 +5960,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -5963,8 +6033,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6013,8 +6083,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6040,8 +6110,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6102,8 +6172,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6136,8 +6206,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6205,8 +6275,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6278,8 +6348,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6328,8 +6398,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6355,8 +6425,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6465,8 +6535,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6527,8 +6597,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6577,8 +6647,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6604,8 +6674,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6666,8 +6736,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6695,8 +6765,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6769,8 +6839,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6819,8 +6889,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6846,8 +6916,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -6908,8 +6978,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -6937,8 +7007,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7010,8 +7080,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7060,8 +7130,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7087,8 +7157,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7120,6 +7190,18 @@
           "componentId": "ymq_bnoY33ySuluqaXmZj",
           "componentType": "20002",
           "order": 1
+        },
+        {
+          "layoutProperties": {
+            "xl": 12,
+            "lg": 12,
+            "md": 12,
+            "sm": 12,
+            "xs": 12
+          },
+          "componentId": "eYI-Oq-ZFqyL2TU6Awgi5",
+          "componentType": "20002",
+          "order": 1
         }
       ],
       "label": "Header",
@@ -7149,8 +7231,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7173,13 +7255,16 @@
       "label": "bankName.bankName",
       "cssClassNames": [{ "cssClassName": "Label_Type_Detail_Css" }],
       "searchInState": true,
-      "storeType": 1
+      "storeType": 1,
+      "hideCondition": {
+        "logic": { "!=": [{ "var": "currentScreen.qrCode" }, null] }
+      }
     },
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7187,6 +7272,57 @@
     "component": { "content": "Label", "type": "20002" },
     "events": [],
     "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-1-0-2-1-0-0-0",
+    "screenId": "SkzIkpCvq1E-lW1HYl_G5",
+    "subType": "component",
+    "projectId": "640ee2a26ead56231ce8350b",
+    "gitBranchName": "master",
+    "createdBy": "masood",
+    "updatedTimestamp": "0000-00-00T00:00:00+00:00"
+  },
+  {
+    "id": "eYI-Oq-ZFqyL2TU6Awgi5",
+    "status": "ACTIVE",
+    "name": "Label",
+    "attributes": {
+      "variant": "body1",
+      "name": "Label",
+      "mandatory": false,
+      "layoutProperties": {
+        "label": { "//": "Use this class to style label component." },
+        "prefix": { "//": "Use this class to style prefix." },
+        "postfix": { "//": "Use this class to style postfix." },
+        "mainContainer": "label",
+        "xl": 12,
+        "lg": 12,
+        "md": 12,
+        "sm": 12,
+        "xs": 12
+      },
+      "label": "qrCode.content.bankName",
+      "hideCondition": {
+        "logic": { "==": [{ "var": "currentScreen.qrCode" }, null] }
+      },
+      "searchInState": true,
+      "storeType": 2,
+      "cssClassNames": [
+        {
+          "cssClassName": "Label_Type_Detail_Css ",
+          "key": "Label_Type_Detail_Css "
+        }
+      ]
+    },
+    "icon": "FaFont",
+    "group": "Form",
+    "type": "20002",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
+    "order": 15,
+    "version": "1.0.0",
+    "isLatest": true,
+    "projectType": "web",
+    "component": { "content": "Label", "type": "20002" },
+    "events": [],
+    "path": "0-0-0-0-1-0-0-0-0-1-0-0-0-0-1-0-2-1-0-0-1",
     "screenId": "SkzIkpCvq1E-lW1HYl_G5",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",
@@ -7254,8 +7390,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7302,8 +7438,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7329,8 +7465,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7390,8 +7526,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7419,8 +7555,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7495,8 +7631,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7543,8 +7679,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7570,8 +7706,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7631,8 +7767,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7660,8 +7796,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7786,8 +7922,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7835,8 +7971,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7864,8 +8000,8 @@
     "icon": "FaFont",
     "group": "Form",
     "type": "20002",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -7927,8 +8063,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -7938,8 +8074,8 @@
     "name": "OTP",
     "icon": "FaLock",
     "group": "Security",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "type": "20052",
     "attributes": {
       "smsOtpLabel": "Sms Otp",
@@ -8032,8 +8168,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8067,8 +8203,8 @@
     "icon": "AiOutlineLoading3Quarters",
     "group": "Advanced",
     "type": "20060",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 15,
     "version": "1.0.0",
     "isLatest": true,
@@ -8129,8 +8265,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8165,8 +8301,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -8204,8 +8340,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8288,8 +8424,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8337,8 +8473,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8377,8 +8513,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -8458,8 +8594,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8478,8 +8614,8 @@
     "version": "1.0.0",
     "gitBranchName": "master",
     "createdBy": "masood",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "updatedTimestamp": "0000-00-00T00:00:00+00:00"
   },
   {
@@ -8514,8 +8650,8 @@
     "group": "Form",
     "type": "20006",
     "Documentation": "<div>components 12344</div>",
-    "updatedAt": "10/17/2024",
-    "createdAt": "10/17/2024",
+    "updatedAt": "10/23/2024",
+    "createdAt": "10/23/2024",
     "order": 1,
     "version": "1.0.0",
     "isLatest": true,
@@ -8530,7 +8666,7 @@
         "serviceType": "16"
       }
     ],
-    "path": "0-0-0-0-1-0-0-0-4-0-1-0-1",
+    "path": "0-0-0-0-1-0-0-0-5-0-1-0-1",
     "screenId": "SkzIkpCvq1E-lW1HYl_G5",
     "subType": "component",
     "projectId": "640ee2a26ead56231ce8350b",

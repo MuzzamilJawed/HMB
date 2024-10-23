@@ -1,0 +1,403 @@
+{
+  "id": "1FCfNu3L93aih1nhb7tD-",
+  "_id": "tlE0AkFcd9d7wawUoq7hK",
+  "gitBranchName": "master",
+  "name": "QR_TRASNFER_OTP_VALIDATE",
+  "projectId": "640ee2a26ead56231ce8350b",
+  "services": [
+    {
+      "type": "16",
+      "command": {
+        "type": "2",
+        "attributes": {
+          "validationList": [
+            {
+              "bindingKey": "smsPin",
+              "storeType": 1,
+              "messageBindingKey": "OTP is Required",
+              "isRequired": true,
+              "requiredMessage": "OTP is Required",
+              "regEx": "^\\d{5}$",
+              "regExMessage": "OTP is Required",
+              "JSONLogic": [{ "logic": true, "logicMessage": "OTP REQUIRED" }]
+            }
+          ],
+          "failureTrigger": {
+            "id": "qfGMpdqhqEcmSwmBnqk5J",
+            "gitBranchName": "master",
+            "name": "OTP_VALIDATE_ERROR_MODAL",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "services": [
+              {
+                "type": "9",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "widgetId": "nBXLLPV-hWhoFuZ61US8x",
+                    "content": "",
+                    "type": "",
+                    "modalId": "g_UYBYjqHVTO4W5YxIQOe",
+                    "toastContentType": "custom"
+                  }
+                }
+              }
+            ],
+            "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+            "_id": "sMStfUAzTSxX0YBNE9xRJ",
+            "updatedAt": "10/2/2024",
+            "createdAt": "10/2/2024",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "addFailureTrigger": true,
+          "successTrigger": {
+            "_id": "C0DV3CQZSJ8PqZmCcROkL",
+            "id": "bQG3Utn1yjfR1moHztNvK",
+            "projectId": "640ee2a26ead56231ce8350b",
+            "gitBranchName": "master",
+            "name": "Transfer bene Chain Trigger",
+            "old_name": "Transfer bene Chain Trigger",
+            "status": "ACTIVE",
+            "services": [
+              {
+                "type": "2",
+                "command": {
+                  "type": "1",
+                  "attributes": {
+                    "delay": "",
+                    "triggers": [
+                      {
+                        "id": "b4I-sIb7qNe0x51VjkpQ2",
+                        "name": "Roshan Validation",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "services": [
+                          {
+                            "type": "11",
+                            "command": {
+                              "type": "6",
+                              "attributes": {
+                                "storeType": "",
+                                "selectedObjectBindingKey": "selectedObject",
+                                "dataType": "",
+                                "destinationBindingKey": "validation",
+                                "sourceBindingKey": "form",
+                                "sourceStoreType": 2,
+                                "destinationStoreType": 2,
+                                "filterList": [
+                                  {
+                                    "key": "emailPin",
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.emailPin"
+                                    }
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": {
+                                      "var": "currentScreen.form.smsPin"
+                                    },
+                                    "key": "smsPin"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, false, false] },
+                                    "key": "splitOtp"
+                                  },
+                                  {
+                                    "changeValueConditonally": true,
+                                    "logic": { "if": [true, "OTP", "OTP"] },
+                                    "key": "validationType"
+                                  }
+                                ],
+                                "targettedType": "object"
+                              }
+                            }
+                          }
+                        ],
+                        "csrf": "0.bs5kkihgkt9IOT2m03BOnQtR4HDBRrNp",
+                        "_id": "N1ms69_tV-dBYbFJaqOxl",
+                        "updatedAt": "10/3/2023",
+                        "createdAt": "10/3/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      },
+                      {
+                        "id": "riYoMjC_p2Zs3J3_G509g",
+                        "_id": "seXZ43sIH28_qGOktqi54",
+                        "projectId": "640ee2a26ead56231ce8350b",
+                        "gitBranchName": "master",
+                        "name": "Instant transfer via bene ",
+                        "old_name": "Instant transfer via bene ",
+                        "status": "ACTIVE",
+                        "services": [
+                          {
+                            "type": "8",
+                            "command": {
+                              "type": "1",
+                              "attributes": {
+                                "loaderWidgetIds": [906070],
+                                "messageWidgetIds": [906070],
+                                "responseStateKey": "response",
+                                "url": "/transfer",
+                                "checksum": true,
+                                "encryption": true,
+                                "isDeviceDetails": false,
+                                "loginTrigger": false,
+                                "formData": false,
+                                "logoutTrigger": false,
+                                "headers": {
+                                  "Content-Type": "application/json",
+                                  "channel_key": "001"
+                                },
+                                "requestBody": [
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "amount",
+                                    "value": "amount"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "accountId",
+                                    "value": "fromAccount.accountId"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "actualAmount",
+                                    "value": "amount"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "amountInWords",
+                                    "value": "PKR ONE"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "bankIMD",
+                                    "value": "selectedObject.bankIMD"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "bankName",
+                                    "value": "selectedObject.bankName"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "beneficiary",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "exchangeRate",
+                                    "value": "1"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "executionType",
+                                    "value": "PAY_NOW"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountIban",
+                                    "value": "fromAccount.iban"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountNumber",
+                                    "value": "fromAccount.accountNumber"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromAccountTitle",
+                                    "value": "fromAccount.accountTitle"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "fromCurrency",
+                                    "value": "fromAccount.currency"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "rda",
+                                    "value": "fromAccount.rda"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "instrumentType",
+                                    "value": "A"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "noOfOccurrences",
+                                    "value": "0"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "otpVisible",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "purposeOfPayment",
+                                    "value": "purpose"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestDate",
+                                    "value": "getData.requestDate"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "requestNumber",
+                                    "value": "getData.requestNumber"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "returnBalance",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "saveAsBene",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "state",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "toAccountNumber",
+                                    "value": "getData.accountNumber"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "toAccountTitle",
+                                    "value": "getData.accountTitle"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "toCurrency",
+                                    "value": "fromAccount.currency"
+                                  },
+                                  {
+                                    "type": 1,
+                                    "name": "Form",
+                                    "key": "transactionCurrency",
+                                    "value": "fromAccount.currency"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "transferToOption",
+                                    "value": "other"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "localIsRaast",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "isRaast",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "isByCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "byCard",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "raast",
+                                    "value": "false"
+                                  },
+                                  {
+                                    "type": 4,
+                                    "name": "Static",
+                                    "key": "transferType",
+                                    "value": "D"
+                                  },
+                                  {
+                                    "type": 2,
+                                    "name": "Current screen",
+                                    "key": "validation",
+                                    "value": "validation"
+                                  }
+                                ],
+                                "baseURL": "6502f5a7c9bf2957746c9973",
+                                "storeType": 2
+                              },
+                              "responseHandler": []
+                            }
+                          }
+                        ],
+                        "csrf": "0.sm7r9q5nr1bRUIiz7fcz6--ux8GMj71t",
+                        "updatedAt": "10/9/2023",
+                        "createdAt": "10/9/2023",
+                        "createdBy": "masood",
+                        "updatedBy": "masood"
+                      }
+                    ],
+                    "triggerIds": [
+                      "b4I-sIb7qNe0x51VjkpQ2",
+                      "riYoMjC_p2Zs3J3_G509g"
+                    ]
+                  }
+                }
+              }
+            ],
+            "csrf": "0.egq681s74vwu0HpRxTzcEEHvsjCRtsl7",
+            "updatedAt": "10/9/2023",
+            "createdAt": "10/9/2023",
+            "createdBy": "masood",
+            "updatedBy": "masood"
+          },
+          "encryptionType": "encryption"
+        }
+      }
+    }
+  ],
+  "csrf": "0.8ol3akhptiuoZYWgue6FNaioYONwk1in",
+  "updatedAt": "10/23/2024",
+  "createdAt": "10/23/2024",
+  "createdBy": "masood",
+  "updatedBy": "masood"
+}
